@@ -1,0 +1,470 @@
+{
+  "metrics": {
+    "model_key": "gemma-2-9b",
+    "model_name": "Gemma 2 9B",
+    "model_id": "google/gemma-2-9b-it:free",
+    "provider": "Google DeepMind",
+    "params": "9B",
+    "benchmark": "lambada_dev",
+    "total_passages": 50,
+    "correct": 0,
+    "errors": 50,
+    "accuracy": 0.0,
+    "error_rate": 1.0,
+    "avg_latency_s": 0.105,
+    "total_time_s": 5.25,
+    "timestamp": "2026-02-24T23:37:49.572416"
+  },
+  "predictions": [
+    {
+      "idx": 0,
+      "context_snippet": "all of our arenas are most probably throwbacks to that earlier era , although the activities in modern centers are tamed down somewhat from the bloodthirsty times gone past ... at least , a little bit . after learning about a game known as ` bull poker ' , though , i have my doubts . four men sit at",
+      "target": "wins",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.102,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 1,
+      "context_snippet": "it 's the largest provider in italy , covers about ninety-five percent of the country . '' til take it . '' neal slid down the lower part of the cover to reveal a full keypad . the clerk explained , `` it 's best to hold it with both hands and type with the thumbs . you ca n't fit all ten fingers on",
+      "target": "keypad",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.099,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 2,
+      "context_snippet": "`` this is just what i 'd expect from little grace . i know all about you . you 've fooled the others , maybe , but iseeright throughyou . '' what she did n't see was j.lo creeping up behind her . he 'd found a new sheet , and was in ghost costume again . i was trying to think how i might signal him",
+      "target": "push",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.099,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 3,
+      "context_snippet": "and when he looked shocked , she added , `` i could tell that by the look on her face . '' `` i do n't think there 's any point in you talking about things that you know nothing about . '' `` you think i know nothing of love ? you wait until i am ready and then i will show you all about",
+      "target": "love",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.068,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 4,
+      "context_snippet": "`` i-i need to shower real fast and get changed . give me just a minute . '' the music had died away . the end of her routine . the spin was the end . her steps were soundless as she walked across the floor . `` you do n't limp . '' her stride faltered . `` i 've been watching you carefully for week",
+      "target": "limp",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.1,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 5,
+      "context_snippet": "she waved him up . `` now you . '' `` oh man , '' complained alejandro . but he made his hand into a stirrup . brian put his foot in alejandro 's hands and stood . sami reached down and took brian 's hand to help him get higher . when he also had his feet on alejandro 's shoulders , he was standing ",
+      "target": "sami",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.117,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 6,
+      "context_snippet": "each of you have been called upon for something greater '' he turned to sam `` i did n't mean to scare any of you when i grabbed you . i just needed to get the message out before it was to late . i figured if i knew about you they would as well '' `` they ? '' sam asked . `` the aliens . may years a",
+      "target": "aliens",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.104,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 7,
+      "context_snippet": "`` at least he sounds happy , '' vianez said and stood up and grabbed her robe . `` wish me luck . '' she bumped into tam on her way to the stairs . they glanced at each other for a moment then turned their attention to their parents who had walked into the house carrying annon . `` you found him ! ",
+      "target": "stairs",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.102,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 8,
+      "context_snippet": "a call to conner set the process in motion . `` what 's up , boss ? '' asked his partner . `` thought you 'd be in by now . '' `` dr. holmes is doing the autopsy at 9:00 a.m. on our john doe . i told you i 'd handle this one . '' `` with an ulterior motive , '' laughed",
+      "target": "conner",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.087,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 9,
+      "context_snippet": "sunlight caught the loose strand of hair turning it to gold . she beckoned and he followed her onto a balcony . the smell of wisteria surrounded them . on either side of the balcony heavy stone planters held the vines . they curled and wound around the white balcony rails , flowing over the edge in ",
+      "target": "perfume",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.103,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 10,
+      "context_snippet": "`` i 've no notion what to do with you , '' he admitted . `` just kiss me . '' rhys bent his head , hovering only a hair 's breadth away . `` tell me your name . '' `` abby . '' he licked her lower lip . `` i want to see you again ,",
+      "target": "abby",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.102,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 11,
+      "context_snippet": "she opened her eyes , sat up in slow motion . and there she was , as majestic and flawless as ever , wrapped in the perfection of the emerald chiffon creation she 'd worn during the ceremony . stella the serpent , as phoebe and julia called her . phoebe got up , circled the malevolent presence . `` ",
+      "target": "stella",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.084,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 12,
+      "context_snippet": "i was about to ask her what she had said when mrs. connor spoke , `` do n't worry , dear . we 'll play along . it is n't our business to share . and it really is n't any of hers . '' when patrick returned with becca , me , lindsey and mrs. connor were laughing hysterically . patrick put his keys on ",
+      "target": "becca",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.1,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 13,
+      "context_snippet": "sebastian , as he was now my self-appointed lawyer , had demanded that i show him all legal documents regarding my great-uncle 's last will and testament , and he was now pouring over them , a pastry in one hand that he kept on going to bite , pulling away from it every time he flicked a new page . ",
+      "target": "pastry",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.083,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 14,
+      "context_snippet": "`` and the students , '' charles said . `` she said she enjoyed all those happy youthful faces wherever she turned . '' `` dessert anyone ? '' our waitress snuck up behind me . everyone looked up and gave gestures that said ` no thanks , i 'm too full . ' `` well , then , how about",
+      "target": "coffee",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.1,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 15,
+      "context_snippet": "one of them asked . `` yes . '' `` please come with us , we have some questions for you . '' `` what 's this all about ? '' he asked . milo was taken to a secure location inside the facility and was instructed to take a seat . one of the guardians , agent archimedes , entered the room , exchanged wo",
+      "target": "milo",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.102,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 16,
+      "context_snippet": "please do n't call me theodore . i hate that . also , the principal frowns on the first-name thing . so you can call me mr. theo . '' he winked . `` come on , class ; let 's give her a big old welcome . '' oh , no . `` hello , ember , '' said the",
+      "target": "class",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.097,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 17,
+      "context_snippet": "nevertheless , he was still vulnerable to their magic . a powerful wizard of that order could still subdue him . if he could find another and eat him , then he , gwaum would be invincible . with the spirits and power of three wizards of the golden star , his dominance would be complete . on the othe",
+      "target": "wizards",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.104,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 18,
+      "context_snippet": "`` i 'm nervous , '' julia said . `` what if you do n't like the names i pick ? '' `` do n't worry , i have nicknames already planned out just in case , '' damien said , smiling . `` but it 's your right as a mother . besides , you already know how terrible i am with",
+      "target": "names",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.101,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 19,
+      "context_snippet": "i ca n't believe your mother is here ... somewhere . think about it , abbs , you 're not from new york -- maybe even earth . '' her face fell . i nudged her gently to break the mood . `` so i 'm an alien from the jungle , '' i said , looking around . `` technically , here -- you 're the",
+      "target": "alien",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.083,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 20,
+      "context_snippet": "`` why are you always apologizing after kissing me ? '' she asked , slowly moving to sit up . i laughed bitterly . `` because i should n't be kissing you , nat . '' `` but i thought you liked me . '' `` liked you ? '' i roared causing her to scurry back against the headboard . `` i do n't just like ",
+      "target": "nat",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.101,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 21,
+      "context_snippet": "`` actually , what i 'm trying -- '' `` shut up , tristan . '' tristan sighed . `` i like my version better . '' `` i 'm sure you do , brother . i 'm sure you do . '' `` and me ? '' i asked . `` you simply go with her and mind-fuck them , '' said",
+      "target": "tristan",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.089,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 22,
+      "context_snippet": "when i walked in , chloe was sitting on the bed and jackson was standing next to her . `` hey guys , what 's going on ? '' i asked . nothing looked wrong . `` umm , can you get mom ? yeah , you get mom . '' jackson said `` kenzie , my water broke . '' chloe told me . `` umm , yeah , i 'll get",
+      "target": "mom",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.084,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 23,
+      "context_snippet": "since you 're cheerleader and you need to stay in shape and since i feel like a slug from sitting on my butt in meetings and in the car all day , i was wondering if you have time for a bike ride when i get home before dinner . '' `` sounds good . when will you be home ? '' `` forty-five minutes . it",
+      "target": "homework",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.101,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 24,
+      "context_snippet": "stowik glanced to his right to rest his bloodshot eyes . his dilated pupils settled on his earpiece , which now lay dissassembled on his worktable . it was transmitting , always transmitting . stowik knew that could only mean one thing . he 's following my movements . does he know that i was in the ",
+      "target": "already",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.118,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 25,
+      "context_snippet": "`` you 're talking as if i was a minor who was seduced by a dirty old man , jules . he did n't coerce me into anything . '' `` but he 's coercing you now , is n't he ? tell me he is . you ca n't be that stupid twice in a lifetime with the same man . '' `` he 's not as bad as you think ,",
+      "target": "jules",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.104,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 26,
+      "context_snippet": "okay ! '' margie began crying . `` em , i 'm so - '' `` do n't call me em ! only garrett calls me that . do n't you dare call me that . '' the officer took me gently by the arm and began walking me to his car . i looked back and shouted , `` i hate you ,",
+      "target": "margie",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.338,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 27,
+      "context_snippet": "`` if it was up to me -- '' `` i 'm losing , '' otis stopped ethan . `` it 's not necessary to talk , it 's obvious and there 's no point denying the truth . '' `` i 'm sorry , '' was all ethan could say . the surroundings did n't exactly encourage enthusiasm . otis lifted himself out of the wheelch",
+      "target": "ethan",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.332,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 28,
+      "context_snippet": "she was almost sorry to see the ride end so quickly . she directed jason to her vacant parking spot , and claire let out a loud groan before thinking . `` what 's the matter ? '' asked jason . `` oh it 's just my neighbor , billy . i can never seem to get into my apartment anymore without him stoppi",
+      "target": "claire",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.091,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 29,
+      "context_snippet": "they were almost identical in appearance and when faye dyed her hair purple yuna did the same to keep the similarity going . they both had beautiful smiles and the main difference was that yuna 's eyes were slightly thinner and her nose was raised up slightly at the end . were it not for these chara",
+      "target": "faye",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.09,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 30,
+      "context_snippet": "who i eat lunch with is my business and i wo n't be sitting down with him for lunch ! '' said candace . `` it is alright , mr. austin . candace is angry right now . i will leave so things will cool down , '' said leo . `` i will move my car so you can leave , '' said",
+      "target": "candace",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.107,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 31,
+      "context_snippet": "and there was hardly any rest for anyone , and nothing could be cooked and nothing could be dried , and one man was lost overboard , and they never saw the sun . when it was over eustace made the following entry in his diary . `` 3 september . the first day for ages when i have been able to write . ",
+      "target": "twelve",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.083,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 32,
+      "context_snippet": "vicky thought about refusing the offer , but the man was right . by the time she got back , the noodles would be mushy and unpleasant . `` that 's very kind of you , mr. ritter , '' she thanked him . an odd grin curled the edges of darien 's mouth . it had been some time since anyone had sincerely t",
+      "target": "kind",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.115,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 33,
+      "context_snippet": "my heart started pounding in my chest and i barely noticed where i was going as i wound around the outskirts of campus to fin 's apartment complex . i was right to leave colton like that . we did n't have a future together . but that did n't mean fin and i did either . panic settled in my chest as i",
+      "target": "fin",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.085,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 34,
+      "context_snippet": "i move to take a step back when sebastian 's arm dashes out and grabs mine . his eyes stay focused on vanessa . `` i actually made plans with mia tonight . we 're going to sit in her room and watch a movie . we just came in the kitchen to grab something to eat . '' vanessa looks at my arm and then l",
+      "target": "sebastian",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.082,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 35,
+      "context_snippet": "`` i do n't think that guy likes me , '' luis said , helping cole to the stairs and sticking the gun back into his waistband . in the distance , a siren cut through the night air . cole sat on the second step of the stairs and put his head down between his legs . `` i 'll see you around , amigo . ''",
+      "target": "luis",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.103,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 36,
+      "context_snippet": "`` well , uh , your honor , we , uh , can prove our allegations if given the chance . we , uh , believe what we 've said in the petition - '' `` i certainly hope so , '' harry sneered . `` yes sir , and we know that this child is impeding an investigation . yes sir , we are confident we can prove wh",
+      "target": "alleged",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.085,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 37,
+      "context_snippet": "as the piece of rock fell off and was accelerating its way to the ground , he kicked it toward the robot and destroyed it upon contact . lance watched on the screen through the point of view of the last robot as the rock flew speedily toward it and then his screen cut into black . a soldier quickly ",
+      "target": "lance",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.107,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 38,
+      "context_snippet": "`` i 'm going there to work , nothing more , '' defended claire . `` umm hmmm , is that what they call it these days ? '' `` it 's not like that , and we wo n't be alone ; grayson will be there and probably others as well . it 's strictly professional so get your mind out of the gutter , '' said",
+      "target": "claire",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.095,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 39,
+      "context_snippet": "he squeezed his eyes shut and then opened them . i could see the battle he was having with himself . `` nothing . '' hunter smiled his pantie-dropping smile at the bartender , and she came over . `` hey hot stuff , what can i get ya ? '' `` i 'll take my normal . '' he looked at me and winked , then",
+      "target": "bartender",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.087,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 40,
+      "context_snippet": "`` jack wants to adopt you , and then both of us will have a new last name , '' jessie told her son . `` would you like that ? '' danny bobbed his head . the three of them hugged and jack wiped away danny 's tears . `` do i get to call you daddy ? '' jack 's smile lit up the room . `` i 'd love it i",
+      "target": "daddy",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.083,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 41,
+      "context_snippet": "`` there is a certain similarity , '' said steve , without taking his eyes off the screen . `` yes , they are visually similar , '' said clive , echoing this opinion . `` now we have to check it analytically . if they coincide ... you could easily write a hundred doctorate theses on the subject , ''",
+      "target": "clive",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.122,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 42,
+      "context_snippet": "then one by one , the race will appear . '' `` in that case , why not make the activation of the station automatic ? it has so many automatic attributes already - '' `` you have n't thought it through , roi . we have . not all spots on the surface of planet x may be suitable . if the inhabitants are",
+      "target": "station",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.084,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 43,
+      "context_snippet": "fifty-two years , and what 's to show for a career of bilking clients , chasing secretaries around the office , putting the squeeze on slimy little politicians , working seven days a week , ignoring three surprisingly stable children , crafting the public image , building the boundless ego , pursuin",
+      "target": "marco",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.094,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 44,
+      "context_snippet": "say this person from an academic background , say she had already served one meal to this man who 's good with tools . '' `` yes , dear ? '' `` say that what she fed him was leftovers , '' leonora said grimly . `` would that be a problem ? has she already shot herself in the foot ? '' gloria put her",
+      "target": "leftovers",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.098,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 45,
+      "context_snippet": "they continued to drive them down their corridor into the waiting ambush . by that point the enemy troops had been significantly reduced so the waiting robots did not have much trouble destroying them . while the battle continued to rage inside the base the bashers and other ships continued to hit t",
+      "target": "craters",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.087,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 46,
+      "context_snippet": "she asked . `` does there need to be an occasion to cook the mother of my children her favorite foods ? '' `` i guess not . but , you did n't cook . '' she winked at me . `` but i thought up all your favorite foods , sweetheart . next time , i promise i 'll",
+      "target": "cook",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.087,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 47,
+      "context_snippet": "honestly , all we have to do is show a certain amount of adaptability . '' drake said , `` sure , just a little adaptability ! the hawkinsites breathe cyanide . we 'll just adapt ourselves to that , i suppose ! '' `` he carries cyanide in a little cylinder . you wo n't even notice it . '' `` and wha",
+      "target": "notice",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.104,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 48,
+      "context_snippet": "cassie broke off abruptly when a shadow fell across the table . leonora followed her gaze . `` leo , '' kyle said with a hearty enthusiasm that rang painfully false . `` i 've been looking for you . where have you been ? i called your house several times , but you never answered the phone . '' `` i ",
+      "target": "kyle",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.069,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    },
+    {
+      "idx": 49,
+      "context_snippet": "suddenly , a shot rang out , and the old man crumpled on the step . two bullets flew past paul 's head . paul was fast . his revolver was in his hand and he put six shots into the door of the cabin before they knew what happened . that gave him some time which allowed him a few seconds to turn his h",
+      "target": "cabin",
+      "prediction": "",
+      "correct": false,
+      "latency_s": 0.086,
+      "error": "HTTP 404: {\"error\":{\"message\":\"No endpoints found for google/gemma-2-9b-it:free.\",\"code\":404},\"user_id\":\"user_2xjA7KEuHHOBjP6ntWYFAnd0gYq\"}"
+    }
+  ]
+}

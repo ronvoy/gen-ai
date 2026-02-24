@@ -1,0 +1,760 @@
+ sir israel gollancz lecture 1936 read 25 november 1936 in 1864 the reverend oswald cockayne wrote of the reverend doctor joseph bosworth , rawlinsonian professor of anglo-saxon : ' i have tried to lend to others the con-viction i have long entertained that dr. bosworth is not a man so diligent in his special walk as duly to read the books ... which have been printed in our old english , or so-called anglosaxon tongue . 
+ he may do very well for a professor . ' 
+ -lcb- 1 -rcb- these words were inspired by dissatisfaction with bosworth 's dictionary , and were doubtless unfair . 
+ if bosworth were still alive , a modern cockayne would probably accuse him of not reading the ` literature ' of his subject , the books written about the books in the so-called anglo-saxon tongue . 
+ the original books are nearly buried . 
+ of none is this so true as of the beowulf , as it used to be called . 
+ i have , of course , read the beowulf , as have most -lrb- but not all -rrb- of those who have criticized it . 
+ but i fear that , unworthy successor and beneficiary of joseph bosworth , i have not been a man so diligent in my special walk as duly to read all that has been printed on , or touching on , this poem . 
+ but i have read enough , i think , to venture the opinion that beowulfiana is , while rich in many departments , specially poor in one . 
+ it is poor in criticism , criticism that is directed to the understanding of a poem as a poem . 
+ it has been said of beowulf itself that its weakness lies in placing the unimportant things at the centre and the important on the outer edges . 
+ this is one of the opinions that i wish specially to consider . 
+ i think it profoundly untrue of the poem , but strikingly true of the literature about it . 
+ beowulf has been used as a quarry of fact and fancy far more assiduously than it has been studied as a work of art . 
+ it is of beowulf , then , as a poem that i wish to speak ; and though it may seem presumption that i should try with swich a lewed mannes wit to pace the wisdom of an heep of lerned men , in this department there is at least more chance for the lewed man . 
+ but there is so much that might still be said even under these limitations that i shall confine myself mainly to the monsters-grendel and the dragon , as they appear in what seems to me the best and most authoritative general criticism in english-and to certain considerations of the structure and conduct of the poem that arise from this theme . 
+ there is an historical explanation of the state of beowulfiana that i have referred to . 
+ and that explanation is important , if one would venture to criticize the critics . 
+ a sketch of the history of the subject is required . 
+ but i will here only attempt , for brevity 's sake , to present my view of it allegorically . 
+ as it set out upon its adventures among the modern scholars , beowulf was christened by wanley poesis-poeseos anglo'saxonica egregium exemplum . 
+ but the fairy godmother later invited to superintend its fortunes was historia . 
+ and she brought with her philologia , mythologia , archaeologia , and laographia . 
+ -lcb- 2 -rcb- excellent ladies . 
+ but where was the child 's name-sake ? 
+ poesis was usually forgotten ; occasionally admitted by a side-door ; sometimes dismissed upon the door-step . 
+ ` the beowulf ' , they said , ` is hardly an affair of yours , and not in any case a protege that you could be proud of . 
+ it is an historical document . 
+ only as such does it interest the superior culture of to-day . ' 
+ and it is as an historical document that it has mainly been examined and dissected . 
+ though ideas as to the nature and quality of the history and information embedded in it have changed much since thorkelin called it de danorum rebus gesfis , this has remained steadily true . 
+ in still recent pronouncements this view is explicit . 
+ in 1925 professor archibald strong translated beowulf into verse ; -lcb- 3 -rcb- but in 1921 he had declared : ` beowulf is the picture of a whole civilization , of the germania which tacitus describes . 
+ the main interest which the poem has for us is thus not a purely literary interest . 
+ beowulf is an important historical document . ' 
+ -lcb- 4 -rcb- i make this preliminary point , because it seems to me that the air has been clouded not only for strong , but for other more authoritative critics , by the dust of the quarrying researchers . 
+ it may well be asked : why should we approach this , or indeed any other poem , mainly as an historical document ? 
+ such an attitude is defensible : firstly , if one is not concerned with poetry at all , but seeking information wherever it may be found ; secondly , if the so-called poem contains in fact no poetry . 
+ i am not concerned with the first case . 
+ the historian 's search is , of course , perfectly legitimate , even if it does not assist criticism in general at all -lrb- for that is not its object -rrb- , so long as it is not mistaken for criticism . 
+ to professor birger nerman as an historian of swedish origins beowulf is doubtless an important document , but he is not writing a history of english poetry . 
+ of the second case it may be said that to rate a poem , a thing at the least in metrical form , as mainly of historical interest should in a literary survey be equivalent to saying that it has no literary merits , and little more need in such a survey then be said about it . 
+ but such a judgement on beowulf is false . 
+ so far from being a poem so poor that only its accidental historical interest can still recommend it , beowulf is in fact so interesting as poetry , in places poetry so powerful , that this quite overshadows the historical content , and is largely independent even of the most important facts -lrb- such as the date and identity of hygelac -rrb- that research has discovered . 
+ it is indeed a curious fact that it is one of the peculiar poetic virtues of beowulf that has contributed to its own critical misfortunes . 
+ the illusion of historical truth and perspective , that has made beowulf seem such an attractive quarry , is largely a product of art . 
+ the author has used an instinctive historical sense-a part indeed of the ancient english temper -lrb- and not unconnected with its reputed melancholy -rrb- , of which beowulf is a supreme expression ; but he has used it with a poetical and not an historical object . 
+ the lovers of poetry can safely study the art , but the seekers after history must beware lest the glamour of poesis overcome them . 
+ nearly all the censure , and most of the praise , that has been bestowed on the beowulf has been due either to the belief that it was something that it was not-for example , primitive , pagan , teutonic , an allegory -lrb- political or mythical -rrb- , or most often , an epic ; or to disappointment at the discovery that it was itself and not something that the scholar would have liked better-for example , a heathen heroic lay , a history of sweden , a manual of germanic antiquities , or a nordic summa theologica . 
+ i would express the whole industry in yet another allegory . 
+ a man inherited a field in which was an accumulation of old stone , part of an older hall . 
+ of the old stone some had already been used in building the house in which he actually lived , not far from the old house of his fathers . 
+ of the rest he took some and built a tower . 
+ but his friends coming perceived at once -lrb- without troubling to climb the steps -rrb- that these stones had formerly belonged to a more ancient building . 
+ so they pushed the tower over , with no little labour , in order to look for hidden carvings and inscriptions , or to discover whence the man 's distant forefathers had obtained their building material . 
+ some suspecting a deposit of coal under the soil began to dig for it , and forgot even the stones . 
+ they all said : ` this tower is most interesting . ' 
+ but they also said -lrb- after pushing it over -rrb- : ` what a muddle it is in ! ' 
+ and even the man 's own descendants , who might have been expected to consider what he had been about , were heard to murmur : ` he is such an odd fellow ! 
+ imagine his using these old stones just to build a nonsensical tower ! 
+ why did not he restore the old house ? 
+ he had no sense of proportion . ' 
+ but from the top of that tower the man had been able to look out upon the sea . 
+ i hope i shall show that that allegory is just-even when we consider the more recent and more perceptive critics -lrb- whose concern is in intention with literature -rrb- . 
+ to reach these we must pass in rapid flight over the heads of many decades of critics . 
+ as we do so a conflicting babel mounts up to us , which i can report as something after this fashion . 
+ -lcb- 5 -rcb- ` beowulf is a half-baked native epic the development of which was killed by latin learning ; it was inspired by emulation of virgil , and is a product of the education that came in with christianity ; it is feeble and incompetent as a narrative ; the rules of narrative are cleverly observed in the manner of the learned epic ; it is the confused product of a committee of muddle-headed and probably beer-bemused anglo-saxons -lrb- this is a gallic voice -rrb- ; it is a string of pagan lays edited by monks ; it is the work of a learned but inaccurate christian antiquarian ; it is a work of genius , rare and surprising in the period , though the genius seems to have been shown principally in doing something much better left undone -lrb- this is a very recent voice -rrb- ; it is a wild folk-tale -lrb- general chorus -rrb- ; it is a poem of an aristocratic and courtly tradition -lrb- same voices -rrb- ; it is a hotchpotch ; it is a sociological , anthropological , archaeological document ; it is a mythical allegory -lrb- very old voices these and generally shouted down , but not so far out as some of the newer cries -rrb- ; it is rude and rough ; it is a masterpiece of metrical art ; it has no shape at all ; it is singularly weak in construction ; it is a clever allegory of contemporary politics -lrb- old john earle with some slight support from mr. girvan , only they look to different periods -rrb- ; its architecture is solid ; it is thin and cheap -lrb- a solemn voice -rrb- ; it is undeniably weighty -lrb- the same voice -rrb- ; it is a national epic ; it is a translation from the danish ; it was imported by frisian traders ; it is a burden to english syllabuses ; and -lrb- final universal chorus of all voices -rrb- it is worth studying . ' 
+ it is not surprising that it should now be felt that a view , a decision , a conviction are imperatively needed . 
+ but it is plainly only in the consideration of beowulf as a poem , with an inherent poetic significance , that any view or conviction can be reached or steadily held . 
+ for it is of their nature that the jabberwocks of historical and antiquarian research burble in the tulgy wood of conjecture , flitting from one tum-tum tree to another . 
+ noble animals , whose burbling is on occasion good to hear ; but though their eyes of flame may sometimes prove searchlights , their range is short . 
+ none the less , paths of a sort have been opened in the wood . 
+ slowly with the rolling years the obvious -lrb- so often the last revelation of analytic study -rrb- has been discovered : that we have to deal with a poem by an englishman using afresh ancient and largely traditional material . 
+ at last then , after inquiring so long whence this material came , and what its original or aboriginal nature was -lrb- questions that can not ever be decisively answered -rrb- , we might also now again inquire what the poet did with it . 
+ if we ask that question , then there is still , perhaps , something lacking even in the major critics , the learned and revered masters from whom we humbly derive . 
+ the chief points with which i feel dissatisfied i will now approach by way of w. p. ker , whose name and memory i honour . 
+ he would deserve reverence , of course , even if he still lived and had not ellor gehworfen on frean ware upon a high mountain in the heart of that europe which he loved : a great scholar , as illuminating himself as a critic , as he was often biting as a critic of the critics . 
+ none the less i can not help feeling that in approaching beowulf he was hampered by the almost inevitable weakness of his greatness : stories and plots must sometimes have seemed triter to him , the much-read , than they did to the old poets and their audiences . 
+ the dwarf on the spot sometimes sees things missed by the travelling giant ranging many countries . 
+ in considering a period when literature was narrower in range and men possessed a less diversified stock of ideas and themes , one must seek to recapture and esteem the deep pondering and profound feeling that they gave to such as they possessed . 
+ in any case ker has been potent . 
+ for his criticism is masterly , expressed always in words both pungent and weighty , and not least so when it is -lrb- as i occasionally venture to think -rrb- itself open to criticism . 
+ his words and judgements are often quoted , or reappear in various modifications , digested , their source probably sometimes forgotten . 
+ it is impossible to avoid quotation of the well-known passage in his dark ages : a reasonable view of the merit of beowulf is not impossible , though rash enthusiasm may have made too much of it , while a correct and sober taste may have too contemptuously refused to attend to grendel or the fire-drake . 
+ the fault of beowulf is that there is nothing much in the story . 
+ the hero is occupied in killing monsters , like hercules or theseus . 
+ but there are other things in the lives of hercules and theseus besides the killing of the hydra or of procrustes . 
+ beowulf has nothing else to do , when he has killed grendel and grendel 's mother in denmark : he goes home to his own gautland , until at last the rolling years bring the fire-drake and his last adventure . 
+ it is too simple . 
+ yet the three chief episodes are well wrought and well diversified ; they are not repetitions , exactly ; there is a change of temper between the wrestling with grendel in the night at heorot and the descent under water to encounter grendel 's mother ; while the sentiment of the dragon is different again . 
+ but the great beauty , the real value , of beowulf is in its dignity of style . 
+ in construction it is curiously weak , in a sense preposterous ; for while the main story is simplicity itself , the merest commonplace of heroic legend , all about it , in the historic allusions , there are revelations of a whole world of tragedy , plots different in import from that of beowulf , more like the tragic themes of iceland . 
+ yet with this radical defect , a disproportion that puts the irrelevances in the centre and the serious things on the outer edges , the poem of beowulf is undeniably weighty . 
+ the thing itselfis cheap ; the moral and the spirit ofit can only be matched among the noblest authors . 
+ -lcb- 6 -rcb- this passage was written more than thirty years ago , but has hardly been surpassed . 
+ it remains , in this country at any rate , a potent influence . 
+ yet its primary effect is to state a paradox which one feels has always strained the belief , even of those who accepted it , and has given to beowulf the character of an ` enigmatic poem ' . 
+ the chief virtue of the passage -lrb- not the one for which it is usually esteemed -rrb- is that it does accord some attention to the monsters , despite correct and sober taste . 
+ but the contrast made between the radical defect of theme and structure , and at the same time the dignity , loftiness in converse , and well-wrought finish , has become a commonplace even of the best criticism , a paradox the strangeness of which has almost been forgotten in the process of swallowing it upon authority . 
+ -lcb- 7 -rcb- we may compare professor chambers in his widsith , p. 79 , where he is studying the story of ingeld , son of froda , and his feud with the great scylding house of denmark , a story introduced in beowulf merely as an allusion . 
+ nothing -lsb- chambers says -rsb- could better show the disproportion of beowulf which ` puts the irrelevances in the centre and the serious things on the outer edges ' , than this passing allusion to the story of ingeld . 
+ for in this conflict between plighted troth and the duty of revenge we have a situation which the old heroic poets loved , and would not have sold for a wilderness of dragons . 
+ i pass over the fact that the allusion has a dramatic purpose in beowulf that is a sufficient defence both of its presence and of its manner . 
+ the author of beowulf can not be held responsible for the fact that we now have only his poem and not others dealing primarily with ingeld . 
+ he was not selling one thing for another , but giving something new . 
+ but let us return to the dragon . ' 
+ a wilderness of dragons . ' 
+ there is a sting in this shylockian plural , the sharper for coming from a critic , who deserves the title of the poet 's best friend . 
+ it is in the tradition of the book of st. albans , from which the poet might retort upon his critics : ` yea , a desserte of lapwyngs , a shrewednes of apes , a raffull of knaues , and a gagle of gees . ' 
+ as for the poem , one dragon , however hot , does not make a summer , or a host ; and a man might well exchange for one good dragon what he would not sell for a wilderness . 
+ and dragons , real dragons , essential both to the machinery and the ideas of a poem or tale , are actually rare . 
+ in northern literature there are only two that are significant . 
+ if we omit from consideration the vast and vague encircler of the world , miogarosormr , the doom of the great gods and no matter for heroes , we have but the dragon of the volsungs , fafnir , and beowulf 's bane . 
+ it is true that both of these are in beowulf , one in the main story , and the other spoken of by a minstrel praising beowulf himself . 
+ but this is not a wilderness of dragons . 
+ indeed the allusion to the more renowned worm killed by the walsing is sufficient indication that the poet selected a dragon of well-founded purpose -lrb- or saw its significance in the plot as it had reached him -rrb- , even as he was careful to compare his hero , beowulf son of ecgtheow , to the prince of the heroes of the north , the dragon-slaying walsing . 
+ he esteemed dragons , as rare as they are dire , as some do still . 
+ he liked them-as a poet , not as a sober zoologist ; and he had good reason . 
+ but we meet this kind of criticism again . 
+ in chambers 's beowulf and the heroic age-the most significant single essay on the poem that i know-it is still present . 
+ the riddle is still unsolved . 
+ the folk-tale motive stands still like the spectre of old research , dead but unquiet in its grave . 
+ we are told again that the main story of beowulf is a wild folk-tale . 
+ quite true , of course . 
+ it is true of the main story of king lear , unless in that case you would prefer to substitute silly for wild . 
+ but more : we are told that the same sort of stuff is found in homer , yet there it is kept in its proper place . 
+ ` the folk-tale is a good servant ' , chambers says , and does not perhaps realize the importance of the admission , made to save the face of homer and virgil ; for he continues : ` but a bad master : it has been allowed in beowulf to usurp the place of honour , and to drive into episodes and digressions the things which should be the main stuff of a well-conducted epic . ' 
+ -lcb- 8 -rcb- it is not clear to me why good conduct must depend on the main stuff . 
+ but i will for the moment remark only that , if it is so , beowulf is evidently not a well-conducted epic . 
+ it may turn out to be no epic at all . 
+ but the puzzle still continues . 
+ in the most recent discourse upon this theme it still appears , toned down almost to a melancholy question-mark , as if this paradox had at last begun to afflict with weariness the thought that endeavours to support it . 
+ in the final peroration of his notable lecture on folk-tale and history in beowulf , given last year , mr. girvan said : confessedly there is matter for wonder and scope for doubt , but we might be able to answer with complete satisfaction some of the questionings which rise in men 's minds over the poet 's presentment of his hero , if we could also answer with certainty the question why he chose just this subject , when to our modern judgment there were at hand so many greater , charged with the splendour and tragedy of humanity , and in all respects worthier of a genius as astonishing as it was rare in anglo-saxon england . 
+ there is something irritatingly odd about all this . 
+ one even dares to wonder if something has not gone wrong with ` our modern judgement ' , supposing that it is justly represented . 
+ higher praise than is found in the learned critics , whose scholarship enables them to appreciate these things , could hardly be given to the detail , the tone , the style , and indeed to the total effect of beowulf . 
+ yet this poetic talent , we are to understand , has all been squandered on an unprofitable theme : as if milton had recounted the story of jack and the beanstalk in noble verse . 
+ even if milton had done this -lrb- and he might have done worse -rrb- , we should perhaps pause to consider whether his poetic handling had not had some effect upon the trivial theme ; what alchemy had been performed upon the base metal ; whether indeed it remained base or trivial when he had finished with it . 
+ the high tone , the sense of dignity , alone is evidence in beowulf of the presence of a mind lofty and thoughtful . 
+ it is , one would have said , improbable that such a man would write more than three thousand lines -lrb- wrought to a high finish -rrb- on matter that is really not worth serious attention ; that remains thin and cheap when he has finished with it . 
+ or that he should in the selection of his material , in the choice of what to put forward , what to keep subordinate ` upon the outer edges ' , have shown a puerile simplicity much below the level of the characters he himself draws in his own poem . 
+ any theory that will at least allow us to believe that what he did was of design , and that for that design there is a defence that may still have force , would seem more probable . 
+ it has been too little observed that all the machinery of ` dignity ' is to be found elsewhere . 
+ cynewulf , or the author of andreas , or of guthlac -lrb- most notably -rrb- , have a command of dignified verse . 
+ in them there is well-wrought language , weighty words , lofty sentiment , precisely that which we are told is the real beauty of beowulf . 
+ yet it can not , i think , be disputed , that beowulf is more beautiful , that each line there is more significant -lrb- even when , as sometimes happens , it is the same line -rrb- than in the other long old english poems . 
+ where then resides the special virtue of beowulf , if the common element -lrb- which belongs largely to the language itself , and to a literary tradition -rrb- is deducted ? 
+ it resides , one might guess , in the theme , and the spirit this has infused into the whole . 
+ for , in fact , if there were a real discrepancy between theme and style , that style would not be felt as beautiful but as incongruous or false . 
+ and that incongruity is present in some measure in all the long old english poems , save one-beowulf . 
+ the paradoxical contrast that has been drawn between matter and manner in beowulf has thus an inherent literary improbability . 
+ why then have the great critics thought otherwise ? 
+ i must pass rather hastily over the answers to this question . 
+ the reasons are various , i think , and would take long to examine . 
+ i believe that one reason is that the shadow of research has lain upon criticism . 
+ the habit , for instance , of pondering a summarized plot of beowulf , denuded of all that gives it particular force or individual life , has encouraged the notion that its main story is wild , or trivial , or typical , even after treatment . 
+ yet all stories , great and small , are one or more of these three things in such nakedness . 
+ the comparison of skeleton ` plots ' is simply not a critical literary process at all . 
+ it has been favoured by research in comparative folk-lore , the objects of which are primarily historical or scientific . 
+ -lcb- 9 -rcb- another reason is , i think , that the allusions have attracted curiosity -lrb- antiquarian rather than cri ֧ cal -rrb- to their elucidation ; and this needs so much study and research that attention has been diverted from the poem as a whole , and from the function of the allusions , as shaped and placed , in the poetic economy of beowulf as it is . 
+ yet actually the appreciation of this function is largely independent of such investigations . 
+ it does not seem plain that ancient taste supports the modern as much as it has been represented to do . 
+ i have the author of beowulf , at any rate , on my side : a greater man than most of us . 
+ and i can not myself perceive a period in the north when one kind alone was esteemed : there was room for myth and heroic legend , and for blends of these . 
+ as for the dragon : as far as we know anything about these old poets , we know this : the prince of the heroes of the north , supremely memorable-hans nafn mun uppi meoan veroldin stendr-was a dragon-slayer . 
+ and his most renowned deed , from which in norse he derived his title fafnisbani , was the slaying of the prince of legendary worms . 
+ although there is plainly considerable difference between the later norse and the ancient english form of the story alluded to in beowulf , already there it had these two primary features : the dragon , and the slaying of him as the chief deed of the greatest of heroes-he was wreccena wide marost . 
+ a dragon is no idle fancy . 
+ whatever may be his origins , in fact or invention , the dragon in legend is a potent creation of men 's imagination , richer in significance than his barrow is in gold . 
+ even to-day -lrb- despite the critics -rrb- you may find men not ignorant of tragic legend and history , who have heard of heroes and indeed seen them , who yet have been caught by the fascination of the worm . 
+ more than one poem in recent years -lrb- since beowulf escaped somewhat from the dominion of the students of origins to the students of poetry -rrb- has been inspired by the dragon of beowulf , but none that i know of by ingeld son of froda . 
+ indeed , i do not think chambers very happy in his particular choice . 
+ he gives battle on dubious ground . 
+ in so far as we can now grasp its detail and atmosphere the story of ingeld the thrice faithless and easily persuaded is chiefly interesting as an episode in a larger theme , as part of a tradition that had acquired legendary , and so dramatically personalized , form concerning moving events in history : the arising of denmark , and wars in the islands of the north . 
+ in itself it is not a supremely potent story . 
+ but , of course , as with all tales of any sort , its literary power must have depended mainly upon how it was handled . 
+ a poet may have made a great thing of it . 
+ upon this chance must be founded the popularity of ingeld 's legend in england , for which there is some evidence . 
+ -lcb- 10 -rcb- there is no inherent magical virtue about heroic-tragic stories as such , and apart from the merits of individual treatments . 
+ the same heroic plot can yield good and bad poems , and good and bad sagas . 
+ the recipe for the central situations of such stories , studied in the abstract , is after all as ` simple ' and as ` typical ' as that of folk-tales . 
+ there are in any case many heroes but very few good dragons . 
+ beowulf 's dragon , if one wishes really to criticize , is not to be blamed for being a dragon , but rather for not being dragon enough , plain pure fairy-story dragon . 
+ there are in the poem some vivid touches of the right kind-as ba se wyrm onwoc , wroht was geniwad ; stonc after stane , 2285-in which this dragon is real worm , with a bestial life and thought of his own , but the conception , none the less , approaches draconitas rather than draco : a personification of malice , greed , destruction -lrb- the evil side of heroic life -rrb- , and of the undiscriminating cruelty of fortune that distinguishes not good or bad -lrb- the evil aspect of all life -rrb- . 
+ but for beowulf , the poem , that is as it should be . 
+ in this poem the balance is nice , but it is preserved . 
+ the large symbolism is near the surface , but it does not break through , nor become allegory . 
+ something more significant than a standard hero , a man faced with a foe more evil than any human enemy of house or realm , is before us , and yet incarnate in time , walking in heroic history , and treading the named lands of the north . 
+ and this , we are told , is the radical defect of beowulf , that its author , coming in a time rich in the legends of heroic men , has used them afresh in an original fashion , giving us not just one more , but something akin yet different : a measure and interpretation of them all . 
+ we do not deny the worth of the hero by accepting grendel and the dragon . 
+ let us by all means esteem the old heroes : men caught in the chains of circumstance or of their own character , torn between duties equally sacred , dying with their backs to the wall . 
+ but beowulf , i fancy , plays a larger part than is recognized in helping us to esteem them . 
+ heroic lays may have dealt in their own way-we have little enough to judge by-a way more brief and vigorous , perhaps , though perhaps also more harsh and noisy -lrb- and less thoughtful -rrb- , with the actions of heroes caught in circumstances that conformed more or less to the varied but fundamentally simple recipe for an heroic situation . 
+ in these -lrb- if we had them -rrb- we could see the exaltation of undefeated will , which receives doctrinal expression in the words of byrhtwold at the battle of maldon . 
+ -lcb- 11 -rcb- but though with sympathy and patience we might gather , from a line here or a tone there , the background of imagination which gives to this indomitability , this paradox of defeat inevitable yet unacknowledged , its full significance , it is in beowulf that a poet has devoted a whole poem to the theme , and has drawn the struggle in different proportions , so that we may see man at war with the hostile world , and his inevitable overthrow in time . 
+ -lcb- 12 -rcb- the particular is on the outer edge , the essential in the centre . 
+ of course , i do not assert that the poet , if questioned , would have replied in the anglo-saxon equivalents of these terms . 
+ had the matter been so explicit to him , his poem would certainly have been the worse . 
+ none the less we may still , against his great scene , hung with tapestries woven of ancient tales of ruin , see the haleo walk . 
+ when we have read his poem , as a poem , rather than as a collection of episodes , we perceive that he who wrote haleo under heofenum may have meant in dictionary terms ` heroes under heaven ' , or ` mighty men upon earth ' , but he and his hearers were thinking of the eormengrund , the great earth , ringed with garsecg , the shoreless sea , beneath the sky 's inaccessible roof ; whereon , as in a little circle of light about their halls , men with courage as their stay went forward to that battle with the hostile world and the offspring of the dark which ends for all , even the kings and champions , in defeat . 
+ that even this ` geography ' , once held as a material fact , could now be classed as a mere folk-tale affects its value very little . 
+ it transcends astronomy . 
+ not that astronomy has done anything to make the island seem more secure or the outer seas less formidable . 
+ beowulf is not , then , the hero of an heroic lay , precisely . 
+ he has no enmeshed loyalties , nor hapless love . 
+ he is a man , and that for him and many is sufficient tragedy . 
+ it is not an irritating accident that the tone of the poem is so high and its theme so low . 
+ it is the theme in its deadly seriousness that begets the dignity of tone : lif is lane : eal scaceo leoht and lif somod . 
+ so deadly and ineluctable is the underlying thought , that those who in the circle of light , within the besieged hall , are absorbed in work or talk and do not look to the battlements , either do not regard it or recoil . 
+ death comes to the feast , and they say he gibbers : he has no sense of proportion . 
+ i would suggest , then , that the monsters are not an inexplicable blunder of taste ; they are essential , fundamentally allied to the underlying ideas of the poem , which give it its lofty tone and high seriousness . 
+ the key to the fusion-point of imagination that produced this poem lies , therefore , in those very references to cain which have often been used as a stick to beat an ass-taken as an evident sign -lrb- were any needed -rrb- of the muddled heads of early anglo-saxons . 
+ they could not , it was said , keep scandinavian bogies and the scriptures separate in their puzzled brains . 
+ the new testament was beyond their comprehension . 
+ i am not , as i have confessed , a man so diligent as duly to read all the books about beowulf , but as far as i am aware the most suggestive approach to this point appears in the essay beowulf and the heroic age to which i have already referred . 
+ -lcb- 13 -rcb- i will quote a small part of it . 
+ in the epoch of beowulf a heroic age more wild and primitive than that of greece is brought into touch with christendom , with the sermon on the mount , with catholic theology and ideas of heaven and hell . 
+ we see the difference , if we compare the wilder things-the folk-tale element-in beowulf with the wilder things of homer . 
+ take for example the tale of odysseus and the cyclops - the no-man trick . 
+ odysseus is struggling with a monstrous and wicked foe , but he is not exactly thought of as struggling with the powers of darkness . 
+ polyphemus , by devouring his guests , acts in a way which is hateful to zeus and the other gods : yet the cyclops is himself god-begotten and under divine protection , and the fact that odysseus has maimed him is a wrong which poseidon is slow to forgive . 
+ but the gigantic foes whom beowulf has to meet are identified with the foes of god . 
+ grendel and the dragon are constantly referred to in language which is meant to recall the powers of darkness with which christian men felt themselves to be encompassed . 
+ they -lcb- 14 -rcb- are the ` inmates of hell ' , ` adversaries of god ' , ` offspring of cain ' , ` enemies of mankind ' . 
+ consequently , the matter of the main story of beowulf , monstrous as it is , is not so far removed from common mediaeval experience as it seems to us to be from our own . 
+ ... grendel hardly differs -lcb- 15 -rcb- from the fiends of the pit who were always in ambush to waylay a righteous man . 
+ and so beowulf , for all that he moves in the world of the primitive heroic age of the germans , nevertheless is almost a christian knight . 
+ -lcb- 16 -rcb- there are some hints here which are , i think , worth pursuing further . 
+ most important is it to consider how and why the monsters become ` adversaries of god ' , and so begin to symbolize -lrb- and ultimately to become identified with -rrb- the powers of evil , even while they remain , as they do still remain in beowulf , mortal denizens of the material world , in it and of it . 
+ i accept without argument throughout the attribution of beowulf to the ` age of bede ' - one of the firmer conclusions of a department of research most clearly serviceable to criticism : inquiry into the probable date of the effective composition of the poem as we have it . 
+ so regarded beowulf is , of course , an historical document of the first order for the study of the mood and thought of the period and one perhaps too little used for the purpose by professed historians . 
+ -lcb- 17 -rcb- but it is the mood of the author , the essential cast of his imaginative apprehension of the world , that is my concern , not history for its own sake ; i am interested in that time of fusion only as it may help us to understand the poem . 
+ and in the poem i think we may observe not confusion , a half-hearted or a muddled business , but a fusion that has occurred at a given point of contact between old and new , a product of thought and deep emotion . 
+ one of the most potent elements in that fusion is the northern courage : the theory of courage , which is the great contribution of early northern literature . 
+ this is not a military judgement . 
+ i am not asserting that , if the trojans could have employed a northern king and his companions , they would have driven agamemnon and achilles into the sea , more decisively than the greek hexameter routs the alliterative line-though it is not improbable . 
+ i refer rather to the central position the creed of unyielding will holds in the north . 
+ with due reserve we may turn to the tradition of pagan imagination as it survived in icelandic . 
+ of english pre-christian mythology we know practically nothing . 
+ but the fundamentally similar heroic temper of ancient england and scandinavia can not have been founded on -lrb- or perhaps rather , can not have generated -rrb- mythologies divergent on this essential point . 
+ ` the northern gods ' , ker said , ` have an exultant extravagance in their warfare which makes them more like titans than olympians ; only they are on the right side , though it is not the side that wins . 
+ the winning side is chaos and unreason ' - mythologically , the monsters - ` but the gods , who are defeated , think that defeat no refutation . ' 
+ -lcb- 18 -rcb- and in their war men are their chosen allies , able when heroic to share in this ` absolute resistance , perfect because without hope ' . 
+ at least in this vision of the final defeat of the humane -lrb- and of the divine made in its image -rrb- , and in the essential hostility of the gods and heroes on the one hand and the monsters on the other , we may suppose that pagan english and norse imagination agreed . 
+ but in england this imagination was brought into touch with christendom , and with the scriptures . 
+ the process of ` conversion ' was a long one , but some of its effects were doubtless immediate : an alchemy of change -lrb- producing ultimately the mediaeval -rrb- was at once at work . 
+ one does not have to wait until all the native traditions of the older world have been replaced or forgotten ; for the minds which still retain them are changed , and the memories viewed in a different perspective : at once they become more ancient and remote , and in a sense darker . 
+ it is through such a blending that there was available to a poet who set out to write a poem-and in the case of beowulf we may probably use this very word-on a scale and plan unlike a minstrel 's lay , both new faith and new learning -lrb- or education -rrb- , and also a body of native tradition -lrb- itself requiring to be learned -rrb- for the changed mind to contemplate together . 
+ -lcb- 19 -rcb- the native ` learning ' can not be denied in the case of beowulf . 
+ its display has grievously perturbed the critics , for the author draws upon tradition at will for his own purposes , as a poet of later times might draw upon history or the classics and expect his allusions to be understood -lrb- within a certain class of hearers -rrb- . 
+ he was in fact , like virgil , learned enough in the vernacular department to have an historical perspective , even an antiquarian curiosity . 
+ he cast his time into the long-ago , because already the long-ago had a special poetical attraction . 
+ he knew much about old days , and though his knowledge-of such things as sea-burial and the funeral pyre , for instance - was rich and poetical rather than accurate with the accuracy of modern archaeology -lrb- such as that is -rrb- , one thing he knew clearly : those days were heathen-heathen , noble , and hopeless . 
+ but if the specifically christian was suppressed , -lcb- 20 -rcb- so also were the old gods . 
+ partly because they had not really existed , and had been always , in the christian view , only delusions or lies fabricated by the evil one , the gastbona , to whom the hopeless turned especially in times of need . 
+ partly because their old names -lrb- certainly not forgotten -rrb- had been potent , and were connected in memory still , not only with mythology or such fairy-tale matter as we find , say , in gylfaginning , but with active heathendom , religion and wigweorbung . 
+ most of all because they were not actually essential to the theme . 
+ the monsters had been the foes of the gods , the captains of men , and within time the monsters would win . 
+ in the heroic siege and last defeat men and gods alike had been imagined in the same host . 
+ now the heroic figures , the men of old , haleo under heofenum , remained and still fought on until defeat . 
+ for the monsters do not depart , whether the gods go or come . 
+ a christian was -lrb- and is -rrb- still like his forefathers a mortal hemmed in a hostile world . 
+ the monsters remained the enemies of mankind , the infantry of the old war , and became inevitably the enemies of the one god , ece dryhten , the eternal captain of the new . 
+ even so the vision of the war changes . 
+ for it begins to dissolve , even as the contest on the fields of time thus takes on its largest aspect . 
+ the tragedy of the great temporal defeat remains for a while poignant , but ceases to be finally important . 
+ it is no defeat , for the end of the world is part of the design of metod , the arbiter who is above the mortal world . 
+ beyond there appears a possibility of eternal victory -lrb- or eternal defeat -rrb- , and the real battle is between the soul and its adversaries . 
+ so the old monsters became images of the evil spirit or spirits , or rather the evil spirits entered into the monsters and took visible shape in the hideous bodies of the byrsas and sigel-hearwan of heathen imagination . 
+ but that shift is not complete in beowulf-whatever may have been true of its period in general . 
+ its author is still concerned primarily with man on earth , rehandling in a new perspective an ancient theme : that man , each man and all men , and all their works shall die . 
+ a theme no christian need despise . 
+ yet this theme plainly would not be so treated , but for the nearness of a pagan time . 
+ the shadow of its despair , if only as a mood , as an intense emotion of regret , is still there . 
+ the worth of defeated valour in this world is deeply felt . 
+ as the poet looks back into the past , surveying the history of kings and warriors in the old traditions , he sees that all glory -lrb- or as we might say ` culture ' or ` civilization ' -rrb- ends in night . 
+ the solution of that tragedy is not treated-it does not arise out of the material . 
+ we get in fact a poem from a pregnant moment of poise , looking back into the pit , by a man learned in old tales who was struggling , as it were , to get a general view of them all , perceiving their common tragedy of inevitable ruin , and yet feeling this more poetically because he was himself removed from the direct pressure of its despair . 
+ he could view from without , but still feel immediately and from within , the old dogma : despair of the event , combined with faith in the value of doomed resistance . 
+ he was still dealing with the great temporal tragedy , and not yet writing an allegorical homily in verse . 
+ grendel inhabits the visible world and eats the flesh and blood of men ; he enters their houses by the doors . 
+ the dragon wields a physical fire , and covets gold not souls ; he is slain with iron in his belly . 
+ beowulf 's byrne was made by weland , and the iron shield he bore against the serpent by his own smiths : it was not yet the breastplate of righteousness , nor the shield of faith for the quenching of all the fiery darts of the wicked . 
+ almost we might say that this poem was -lrb- in one direction -rrb- inspired by the debate that had long been held and continued after , and that it was one of the chief contributions to the controversy : shall we or shall we not consign the heathen ancestors to perdition ? 
+ what good will it do posterity to read the battles of hector ? 
+ qyid hinieldus cum christo ? 
+ the author of beowulf showed forth the permanent value of that pietas which treasures the memory of man 's struggles in the dark past , man fallen and not yet saved , disgraced but not dethroned . 
+ it would seem to have been part of the english temper in its strong sense of tradition , dependent doubtless on dynasties , noble houses , and their code of honour , and strengthened , it may be , by the more inquisitive and less severe celtic learning , that it should , at least in some quarters and despite grave and gallic voices , preserve much from the northern past to blend with southern learning , and new faith . 
+ it has been thought that the influence of latin epic , especially of the aeneid , is perceptible in beowulf , and a necessary explanation , if only in the exciting of emulation , of the development of the long and studied poem in early england . 
+ there is , of course , a likeness in places between these greater and lesser things , the aeneid and beowulf , if they are read in conjunction . 
+ but the smaller points in which imitation or reminiscence might be perceived are inconclusive , while the real likeness is deeper and due to certain qualities in the authors independent of the question whether the anglo-saxon had read virgil or not . 
+ it is this deeper likeness which makes things , that are either the inevitabilities of human poetry or the accidental congruences of all tales , ring alike . 
+ we have the great pagan on the threshold of the change of the world ; and the great -lrb- if lesser -rrb- christian just over the threshold of the great change in his time and place : the backward view : multa putans sortemque animo miseratus iniquam . 
+ -lcb- 21 -rcb- but we will now return once more to the monsters , and consider especially the difference of their status in the northern and southern mythologies . 
+ of grendel it is said : godes yrre bar . 
+ but the cyclops is god-begotten and his maiming is an offence against his begetter , the god poseidon . 
+ this radical difference in mythological status is only brought out more sharply by the very closeness of the similarity in conception -lrb- in all save mere size -rrb- that is seen , if we compare beowulf , 740 ff . 
+ , with the description of the cyclops devouring men in odyssey , ix-or still more in aeneid , iii . 
+ 622 ff . 
+ in virgil , whatever may be true of the fairy-tale world of the odyssey , the cyclops walks veritably in the historic world . 
+ he is seen by aeneas in sicily , monstrum horrendum , informe , ingens , as much a perilous fact as grendel was in denmark , earmsceapen on weres wastmum ... nafne he was mara bonne anig man ooer ; as real as acestes or hrothgar . 
+ -lcb- 22 -rcb- at this point in particular we may regret that we do not know more about pre-christian english mythology . 
+ yet it is , as i have said , legitimate to suppose that in the matter of the position of the monsters in regard to men and gods the view was fundamentally the same as in later icelandic . 
+ thus , though all such generalizations are naturally imperfect in detail -lrb- since they deal with matter of various origins , constantly reworked , and never even at most more than partially systematized -rrb- , we may with some truth contrast the ` inhumanness ' of the greek gods , however anthropomorphic , with the ` humanness ' of the northern , however titanic . 
+ in the southern myths there is also rumour of wars with giants and great powers not olympian , the titania pubes fulmine deiecti , rolling like satan and his satellites in the nethermost abyss . 
+ but this war is differently conceived . 
+ it lies in a chaotic past . 
+ the ruling gods are not besieged , not in ever-present peril or under future doom . 
+ -lcb- 23 -rcb- their offspring on earth may be heroes or fair women ; it may also be the other creatures hostile to men . 
+ the gods are not the allies of men in their war against these or other monsters . 
+ the interest of the gods is in this or that man as part of their individual schemes , not as part of a great strategy that includes all good men , as the infantry of battle . 
+ in norse , at any rate , the gods are within time , doomed with their allies to death . 
+ their battle is with the monsters and the outer darkness . 
+ they gather heroes for the last defence . 
+ already before euhemerism saved them by embalming them , and they dwindled in antiquarian fancy to the mighty ancestors of northern kings -lrb- english and scandinavian -rrb- , they had become in their very being the enlarged shadows of great men and warriors upon the walls of the world . 
+ when baldr is slain and goes to hel he can not escape thence any more than mortal man . 
+ this may make the southern gods more godlike-more lofty , dread , and inscrutable . 
+ they are timeless and do not fear death . 
+ such a mythology may hold the promise of a profounder thought . 
+ in any case it was a virtue of the southern mythology that it could not stop where it was . 
+ it must go forward to philosophy or relapse into anarchy . 
+ for in a sense it had shirked the problem precisely by not having the monsters in the centre-as they are in beowulf to the astonishment of the critics . 
+ but such horrors can not be left permanently unexplained , lurking on the outer edges and under suspicion of being connected with the government . 
+ it is the strength of the northern mythological imagination that it faced this problem , put the monsters in the centre , gave them victory but no honour , and found a potent but terrible solution in naked will and courage . 
+ ` as a working theory absolutely impregnable . ' 
+ so potent is it , that while the older southern imagination has faded for ever into literary ornament , the northern has power , as it were , to revive its spirit even in our own times . 
+ it can work , even as it did work with the goolauss viking , without gods : martial heroism as its own end . 
+ but we may remember that the poet of beowulf saw clearly : the wages of heroism is death . 
+ for these reasons i think that the passages in beowulf concerning the giants and their war with god , together with the two mentions of cain -lrb- as the ancestor of the giants in general and grendel in particular -rrb- are specially important . 
+ they are directly connected with scripture , yet they can not be dissociated from the creatures of northern myth , the ever-watchful foes of the gods -lrb- and men -rrb- . 
+ the undoubtedly scriptural cain is connected with eotenas and ylfe , which are the jotnar and alfar of norse . 
+ but this is not due to mere confusion-it is rather an indication of the precise point at which an imagination , pondering old and new , was kindled . 
+ at this point new scripture and old tradition touched and ignited . 
+ it is for this reason that these elements of scripture alone appear in a poem dealing of design with the noble pagan of old days . 
+ for they are precisely the elements which bear upon this theme . 
+ man alien in a hostile world , engaged in a struggle which he can not win while the world lasts , is assured that his foes are the foes also of dryhten , that his courage noble in itself is also the highest loyalty : so said thyle and clerk . 
+ in beowulf we have , then , an historical poem about the pagan past , or an attempt at one-literal historical fidelity founded on modern research was , of course , not attempted . 
+ it is a poem by a learned man writing of old times , who looking back on the heroism and sorrow feels in them something permanent and something symbolical . 
+ so far from being a confused semi-pagan-historically unlikely for a man of this sort in the period-he brought probably first to his task a knowledge of christian poetry , especially that of the cadmon school , and especially genesis . 
+ -lcb- 24 -rcb- he makes his minstrel sing in heorot of the creation of the earth and the lights of heaven . 
+ so excellent is this choice as the theme of the harp that maddened grendel lurking joyless in the dark without that it matters little whether this is anachronistic or not . 
+ -lcb- 25 -rcb- secondly , to his task the poet brought a considerable learning in native lays and traditions : only by learning and training could such things be acquired , they were no more born naturally into an englishman of the seventh or eighth centuries , by simple virtue of being an ` anglo-saxon ' , than ready-made knowledge of poetry and history is inherited at birth by modern children . 
+ it would seem that , in his attempt to depict ancient pre-christian days , intending to emphasize their nobility , and the desire of the good for truth , he turned naturally when delineating the great king of heorot to the old testament . 
+ in the folces hyrde of the danes we have much of the shepherd patriarchs and kings of israel , servants of the one god , who attribute to his mercy all the good things that come to them in this life . 
+ we have in fact a christian english conception of the noble chief before christianity , who could lapse -lrb- as could israel -rrb- in times of temptation into idolatry . 
+ -lcb- 26 -rcb- on the other hand , the traditional matter in english , not to mention the living survival of the heroic code and temper among the noble households of ancient england , enabled him to draw differently , and in some respects much closer to the actual heathen haleo , the character of beowulf , especially as a young knight , who used his great gift of magen to earn dom and lof among men and posterity . 
+ beowulf is not an actual picture of historic denmark or geatland or sweden about a.d. 500 . 
+ but it is -lrb- if with certain minor defects -rrb- on a general view a self-consistent picture , a construction bearing clearly the marks of design and thought . 
+ the whole must have succeeded admirably in creating in the minds of the poet 's contemporaries the illusion of surveying a past , pagan but noble and fraught with a deep significance-a past that itself had depth and reached backward into a dark antiquity of sorrow . 
+ this impression of depth is an effect and a justification of the use of episodes and allusions to old tales , mostly darker , more pagan , and desperate than the foreground . 
+ to a similar antiquarian temper , and a similar use of vernacular learning , is probably due the similar effect of antiquity -lrb- and melancholy -rrb- in the aeneid-especially felt as soon as aeneas reaches italy and the saturni gentem ... sponte sua veterisque dei se more tenentem . 
+ ic ba leode wat ge wio feond ge wio freond faste worhte , aghwas untale ealde wisan . 
+ alas for the lost lore , the annals and old poets that virgil knew , and only used in the making of a new thing ! 
+ the criticism that the important matters are put on the outer edges misses this point of artistry , and indeed tails to see why the old things have in beowulf such an appeal : it is the poet himself who made antiquity so appealing . 
+ his poem has more value in consequence , and is a greater contribution to early mediaeval thought than the harsh and intolerant view that consigned all the heroes to the devil . 
+ we may be thankful that the product of so noble a temper has been preserved by chance -lrb- if such it be -rrb- from the dragon of destruction . 
+ the general structure of the poem , so viewed , is not really difficult to perceive , if we look to the main points , the strategy , and neglect the many points of minor tactics . 
+ we must dismiss , of course , from mind the notion that beowulf is a ` narrative poem ' , that it tells a tale or intends to tell a tale sequentially . 
+ the poem ` lacks steady advance ' : so klaeber heads a critical section in his edition . 
+ -lcb- 27 -rcb- but the poem was not meant to advance , steadily or un-steadily . 
+ it is essentially a balance , an opposition of ends and beginnings . 
+ in its simplest terms it is a contrasted description of two moments in a great life , rising and setting ; an elaboration of the ancient and intensely moving contrast between youth and age , first achievement and final death . 
+ it is divided in consequence into two opposed portions , different in matter , manner , and length : a from 1 to 2199 -lrb- including an exordium of 52 lines -rrb- ; b from 2200 to 3182 -lrb- the end -rrb- . 
+ there is no reason to cavil at this proportion ; in any case , for the purpose and the production of the required effect , it proves in practice to be right . 
+ this simple and static structure , solid and strong , is in each part much diversified , and capable of enduring this treatment . 
+ in the conduct of the presentation of beowulf 's rise to fame on the one hand , and of his kingship and death on the other , criticism can find things to question , especially if it is captious , but also much to praise , if it is attentive . 
+ but the only serious weakness , or apparent weakness , is the long recapitulation : the report of beowulf to hygelac . 
+ this recapitulation is well done . 
+ without serious discrepancy -lcb- 28 -rcb- it retells rapidly the events in heorot , and retouches the account ; and it serves to illustrate , since he himself describes his own deeds , yet more vividly the character of a young man , singled out by destiny , as he steps suddenly forth in his full powers . 
+ yet this is perhaps not quite sufficient to justify the repetition . 
+ the explanation , if not complete justification , is probably to be sought in different directions . 
+ for one thing , the old tale was not first told or invented by this poet . 
+ so much is clear from investigation of the folk-tale analogues . 
+ even the legendary association of the scylding court with a marauding monster , and with the arrival from abroad of a champion and deliverer was probably already old . 
+ the plot was not the poet 's ; and though he has infused feeling and significance into its crude material , that plot was not a perfect vehicle of the theme or themes that came to hidden life in the poet 's mind as he worked upon it . 
+ not an unusual event in literature . 
+ for the contrast-youth and death-it would probably have been better , if we had no journeying . 
+ if the single nation of the geatas had been the scene , we should have felt the stage not narrower , but symbolically wider . 
+ more plainly should we have perceived in one people and their hero all mankind and its heroes . 
+ this at any rate i have always myself felt in reading beowulf ; but i have also felt that this defect is rectified by the bringing of the tale of grendel to geatland . 
+ as beowulf stands in hygelac 's hall and tells his story , he sets his feet firm again in the land of his own people , and is no longer in danger of appearing a mere wrecca , an errant adventurer and slayer of bogies that do not concern him . 
+ there is in fact a double division in the poem : the fundamental one already referred to , and a secondary but important division at line 1887 . 
+ after that the essentials of the previous part are taken up and compacted , so that all the tragedy of beowulf is contained between 1888 and the end . 
+ -lcb- 29 -rcb- but , of course , without the first half we should miss much incidental illustration ; we should miss also the dark background of the court of heorot that loomed as large in glory and doom in ancient northern imagination as the court of arthur : no vision of the past was complete without it . 
+ and -lrb- most important -rrb- we should lose the direct contrast of youth and age in the persons of beowulf and hrothgar which is one of the chief purposes of this section : it ends with the pregnant words ob bat hine yldo benam magenes wynnum , se be oft manegum scod . 
+ in any case we must not view this poem as in intention an exciting narrative or a romantic tale . 
+ the very nature of old english metre is often misjudged . 
+ in it there is no single rhythmic pattern progressing from the beginning of a line to the end , and repeated with variation in other lines . 
+ the lines do not go according to a tune . 
+ they are founded on a balance ; an opposition between two halves of roughly equivalent -lcb- 30 -rcb- phonetic weight , and significant content , which are more often rhythmically contrasted than similar . 
+ they are more like masonry than music . 
+ in this fundamental fact of poetic expression i think there is a parallel to the total structure of beowulf , beowulf is indeed the most successful old english poem because in it the elements , language , metre , theme , structure , are all most nearly in harmony . 
+ judgement of the verse has often gone astray through listening for an accentual rhythm and pattern : and it seems to halt and stumble . 
+ judgement of the theme goes astray through considering it as the narrative handling of a plot : and it seems to halt and stumble . 
+ language and verse , of course , differ from stone or wood or paint , and can be only heard or read in a time-sequence ; so that in any poem that deals at all with characters and events some narrative element must be present . 
+ we have none the less in beowulf a method and structure that within the limits of the verse-kind approaches rather to sculpture or painting . 
+ it is a composition not a tune . 
+ this is clear in the second half . 
+ in the struggle with grendel one can as a reader dismiss the certainty of literary experience that the hero will not in fact perish , and allow oneself to share the hopes and fears of the geats upon the shore . 
+ in the second part the author has no desire whatever that the issue should remain open , even according to literary convention . 
+ there is no need to hasten like the messenger , who rode to bear the lamentable news to the waiting people -lrb- 2892 ff . -rrb- . 
+ they may have hoped , but we are not supposed to . 
+ by now we are supposed to have grasped the plan . 
+ disaster is foreboded . 
+ defeat is the theme . 
+ triumph over the foes of man 's precarious fortress is over , and we approach slowly and reluctantly the inevitable victory of death . 
+ -lcb- 31 -rcb- ` in structure ' , it was said of beowulf , ` it is curiously weak , in a sense preposterous , ' though great merits of detail were allowed . 
+ in structure actually it is curiously strong , in a sense inevitable , though there are defects of detail . 
+ the general design of the poet is not only defensible , it is , i think , admirable . 
+ there may have previously existed stirring verse dealing in straightforward manner and even in natural sequence with beowulf 's deeds , or with the fall of hygelac ; or again with the fluctuations of the feud between the houses of hrethel the geat and ongentheow the swede ; or with the tragedy of the heathobards , and the treason that destroyed the scylding dynasty . 
+ indeed this must be admitted to be practically certain : it was the existence of such connected legends-connected in the mind , not necessarily dealt with in chronicle fashion or in long semi-historical poems-that permitted the peculiar use of them in beowulf . 
+ this poem can not be criticized or comprehended , if its original audience is imagined in like case to ourselves , possessing only beowulf in splendid isolation . 
+ for beowulf was not designed to tell the tale of hygelac 's fall , or for that matter to give the whole biography of beowulf , still less to write the history of the geatish kingdom and its downfall . 
+ but it used knowledge of these things for its own purpose-to give that sense of perspective , of antiquity with a greater and yet darker antiquity behind . 
+ these things are mainly on the outer edges or in the background because they belong there , if they are to function in this way . 
+ but in the centre we have an heroic figure of enlarged proportions . 
+ beowulf is not an ` epic ' , not even a magnified ` lay ' . 
+ no terms borrowed from greek or other literatures exactly fit : there is no reason why they should . 
+ though if we must have a term , we should choose rather ` elegy ' . 
+ it is an heroic-elegiac poem ; and in a sense all its first 3,136 lines are the prelude to a dirge : him ba gegiredan geata leode ad ofer eoroan unwaclicne : one of the most moving ever written . 
+ but for the universal significance which is given to the fortunes of its hero it is an enhancement and not a detraction , in fact it is necessary , that his final foe should be not some swedish prince , or treacherous friend , but a dragon : a thing made by imagination for just such a purpose . 
+ nowhere does a dragon come in so precisely where he should . 
+ but if the hero falls before a dragon , then certainly he should achieve his early glory by vanquishing a foe of similar order . 
+ there is , i think , no criticism more beside the mark than that which some have made , complaining that it is monsters in both halves that is so disgusting ; one they could have stomached more easily . 
+ that is nonsense . 
+ i can see the point of asking for no monsters . 
+ i can also see the point of the situation in beowulf . 
+ but no point at all in mere reduction of numbers . 
+ it would really have been preposterous , if the poet had recounted beowulf 's rise to fame in a ` typical ' or ` commonplace ' war in frisia , and then ended him with a dragon . 
+ or if he had told of his cleansing of heorot , and then brought him to defeat and death in a ` wild ' or ` trivial ' swedish invasion ! 
+ if the dragon is the right end for beowulf , and i agree with the author that it is , then grendel is an eminently suitable beginning . 
+ they are creatures , feond mancynnes , of a similar order and kindred significance . 
+ triumph over the lesser and more nearly human is cancelled by defeat before the older and more elemental . 
+ and the conquest of the ogres comes at the right moment : not in earliest youth , though the nicors are referred to in beowulf 's geogoofeore as a presage of the kind of hero we have to deal with ; and not during the later period of recognized ability and prowess ; -lcb- 32 -rcb- but in that first moment , which often comes in great lives , when men look up in surprise and see that a hero has unawares leaped forth . 
+ the placing of the dragon is inevitable : a man can but die upon his death-day . 
+ i will conclude by drawing an imaginary contrast . 
+ let us suppose that our poet had chosen a theme more consonant with ` our modern judgement ' ; the life and death of st. oswald . 
+ he might then have made a poem , and told first of heavenfield , when oswald as a young prince against all hope won a great victory with a remnant of brave men ; and then have passed at once to the lamentable defeat of oswestry , which seemed to destroy the hope of christian northumbria ; while all the rest of oswald 's life , and the traditions of the royal house and its feud with that of deira might be introduced allusively or omitted . 
+ to any one but an historian in search of facts and chronology this would have been a fine thing , an heroic-elegiac poem greater than history . 
+ it would be much better than a plain narrative , in verse or prose , however steadily advancing . 
+ this mere arrangement would at once give it more significance than a straightforward account of one king 's life : the contrast of rising and setting , achievement and death . 
+ but even so it would fall far short of beowulf . 
+ poetically it would be greatly enhanced if the poet had taken violent liberties with history and much enlarged the reign of oswald , making him old and full of years of care and glory when he went forth heavy with foreboding to face the heathen penda : the contrast of youth and age would add enormously to the original theme , and give it a more universal meaning . 
+ but even so it would still fall short of beowulf . 
+ to match his theme with the rise and fall of poor ` folk-tale ' beowulf the poet would have been obliged to turn cadwallon and penda into giants and demons . 
+ it is just because the main foes in beowulf are inhuman that the story is larger and more significant than this imaginary poem of a great king 's fall . 
+ it glimpses the cosmic and moves with the thought of all men concerning the fate of human life and efforts ; it stands amid but above the petty wars of princes , and surpasses the dates and limits of historical periods , however important . 
+ at the beginning , and during its process , and most of all at the end , we look down as if from a visionary height upon the house of man in the valley of the world . 
+ a light starts-lixte se leoma ofer landa fela-and there is a sound of music ; but the outer darkness and its hostile offspring lie ever in wait for the torches to fail and the voices to cease . 
+ grendel is maddened by the sound of harps . 
+ and one last point , which those will feel who to-day preserve the ancient pietas towards the past : beowulf is not a ` primitive ' poem ; it is a late one , using the materials -lrb- then still plentiful -rrb- preserved from a day already changing and passing , a time that has now for ever vanished , swallowed in oblivion ; using them for a new purpose , with a wider sweep of imagination , if with a less bitter and concentrated force . 
+ when new beowulf was already antiquarian , in a good sense , and it now produces a singular effect . 
+ for it is now to us itself ancient ; and yet its maker was telling of things already old and weighted with regret , and he expended his art in making keen that touch upon the heart which sorrows have that are both poignant and remote . 
+ if the funeral of beowulf moved once like the echo of an ancient dirge , far-off and hopeless , it is to us as a memory brought over the hills , an echo of an echo . 
+ there is not much poetry in the world like this ; and though beowulf may not be among the very greatest poems of our western world and its tradition , it has its own individual character , and peculiar solemnity ; it would still have power had it been written in some time or place unknown and without posterity , if it contained no name that could now be recognized or identified by research . 
+ yet it is in fact written in a language that after many centuries has still essential kinship with our own , it was made in this land , and moves in our northern world beneath our northern sky , and for those who are native to that tongue and land , it must ever call with a profound appeal-until the dragon comes . 
+ appendix -lrb- a -rrb- grendel 's titles the changes which produced -lrb- before a.d. 1066 -rrb- the mediaeval devil are not complete in beowulf , but in grendel change and blending are , of course , already apparent . 
+ such things do not admit of clear classifications and distinctions . 
+ doubtless ancient pre-christian imagination vaguely recognized differences of ` materiality ' between the solidly physical monsters , conceived as made of the earth and rock -lrb- to which the light of the sun might return them -rrb- , and elves , and ghosts or bogies . 
+ monsters of more or less human shape were naturally liable to development on contact with christian ideas of sin and spirits of evil . 
+ their parody of human form -lrb- earmsceapen on weres wastmum -rrb- becomes symbolical , explicitly , of sin , or rather this mythical element , already present implicit and unresolved , is emphasized : this we see already in beowulf , strengthened by the theory of descent from cain -lrb- and so from adam -rrb- , and of the curse of god . 
+ so grendel is not only under this inherited curse , but also himself sinful : manscaoa , synscaoa , synnum beswenced , he is fyrena hyrde . 
+ the same notion -lrb- combined with others -rrb- appears also when he is called -lrb- by the author , not by the characters in the poem -rrb- haben , 852 , 986 , and helle hafton , feond on helle . 
+ as an image of man estranged from god he is called not only by all names applicable to ordinary men , as wer , rinc , guma , maga , but he is conceived as having a spirit , other than his body , that will be punished . 
+ thus alegde habene sawle : par him hel onfeng , 852 ; while beowulf himself says oar abidan sceal miclan domes , hu him scir metod scrifan wille , 978 . 
+ but this view is blended or confused with another . 
+ because of his ceaseless hostility to men , and hatred of their joy , his superhuman size and strength , and his love of the dark , he approaches to a devil , though he is not yet a true devil in purpose . 
+ real devilish qualities -lrb- deception and destruction of the soul -rrb- , other than those which are undeveloped symbols , such as his hideousness and habitation in dark forsaken places , are hardly present . 
+ but he and his mother are actually called deofla , 1680 ; and grendel is said when fleeing to hiding to make for deofla gedrag . 
+ it should be noted that feond can not be used in this question : it still means ` enemy ' in beowulf , and is for instance applicable to beowulf and wiglaf in relation to the dragon . 
+ even feond on helle , 101 , is not so clear as it seems -lrb- see below -rrb- ; though we may add wergan gastes , 133 , an expression for ` devil ' later extremely common , and actually applied in line 1747 to the devil and tempter himself . 
+ apart , however , from this expression little can be made of the use of gast , gast . 
+ for one thing it is under grave suspicion in many places -lrb- both applied to grendel and otherwise -rrb- of being a corruption of gast , gest ` stranger ' ; compare grendel 's title cwealmcuma , 792 = walgast , 1331 , 1995 . 
+ in any case it can not be translated either by the modern ghost or spirit . 
+ creature is probably the nearest we can now get . 
+ where it is genuine it applies to grendel probably in virtue of his relationship or similarity to bogies -lrb- scinnum ond scuccum -rrb- , physical enough in form and power , but vaguely felt as belonging to a different order of being , one allied to the malevolent ` ghosts ' of the dead . 
+ fire is conceived as a gast -lrb- 1123 -rrb- . 
+ this approximation of grendel to a devil does not mean that there is any confusion as to his habitation . 
+ grendel was a fleshly denizen of this world -lrb- until physically slain -rrb- . 
+ on helle and helle -lrb- as in helle gast 1274 -rrb- mean ` hellish ' , and are actually equivalent to the first elements in the compounds deabscua , sceadugengea , helruna . 
+ -lrb- thus the original genitive helle developed into the middle english adjective helle , hellene ` hellish ' , applicable to ordinary men , such as usurers ; and even feond on helle could be so used . 
+ wyclif applies fend on helle to the friar walking in england as grendel in denmark . -rrb- 
+ but the symbolism of darkness is so fundamental that it is vain to look for any distinction between the bystru outside hrothgar 's hall in which grendel lurked , and the shadow of death , or of hell after -lrb- or in -rrb- death . 
+ thus in spite of shifting , actually in process -lrb- intricate , and as difficult as it is interesting and important to follow -rrb- , grendel remains primarily an ogre , a physical monster , whose main function is hostility to humanity -lrb- and its frail efforts at order and art upon earth -rrb- . 
+ he is of the fifelcyn , a byrs or eoten ; in fact the eoten , for this ancient word is actually preserved in old english only as applied to him . 
+ he is most frequently called simply a foe : feond , lao , sceaoa , feorhgeniola , laogeteona , all words applicable to enemies of any kind . 
+ and though he , as ogre , has kinship with devils , and is doomed when slain to be numbered among the evil spirits , he is not when wrestling with beowulf a materialized apparition of soul-destroying evil . 
+ it is thus true to say that grendel is not yet a real mediaeval devil-except in so far as mediaeval bogies themselves had failed -lrb- as was often the case -rrb- to become real devils . 
+ but the distinction between a devilish ogre , and a devil revealing himself in ogre-form-between a monster , devouring the body and bringing temporal death , that is inhabited by an accursed spirit , and a spirit of evil aiming ultimately at the soul and bringing eternal death -lrb- even though he takes a form of visible horror , that may bring and suffer physical pain -rrb- - is a real and important one , even if both kinds are to be found before and after 1066 . 
+ in beowulf the weight is on the physical side : grendel does not vanish into the pit when grappled . 
+ he must be slain by plain prowess , and thus is a real counterpart to the dragon in beowulf 's history . 
+ -lrb- grendel 's mother is naturally described , when separately treated , in precisely similar terms : she is wif , ides , aglac wif ; and rising to the inhuman : merewif , brimwylf , grundwyrgen . 
+ grendel 's title godes andsaca has been studied in the text . 
+ some titles have been omitted : for instance those referring to his outlawry , which are applicable in themselves to him by nature , but are of course also fitting either to a descendant of cain , or to a devil : thus heorowearh , dadhata , mearcstapa , angengea . -rrb- 
+ -lrb- b -rrb- ` lof ' and ` dom ' ; ` hell ' and ` heofon ' of pagan ` belief ' we have little or nothing left in english . 
+ but the spirit survived . 
+ thus the author of beowulf grasped fully the idea of lof or dom , the noble pagan 's desire for the merited praise of the noble . 
+ for if this limited ` immortality ' of renown naturally exists as a strong motive together with actual heathen practice and belief , it can also long outlive them . 
+ it is the natural residuum when the gods are destroyed , whether unbelief comes from within or from without . 
+ the prominence of the motive of lof in beowulf - long ago pointed out by earle-may be interpreted , then , as a sign that a pagan time was not far away from the poet , and perhaps also that the end of english paganism -lrb- at least among the noble classes for whom and by whom such traditions were preserved -rrb- was marked by a twilight period , similar to that observable later in scandinavia . 
+ the gods faded or receded , and man was left to carry on his war unaided . 
+ his trust was in his own power and will , and his reward was the praise of his peers during his life and after his death . 
+ at the beginning of the poem , at the end of the first section of the exordium , the note is struck : lofdadum sceal in magba gehware man gebeon , the last word of the poem is lofgeornost , the summit of the praise of the dead hero : that was indeed lastworda betst . 
+ for beowulf had lived according to his own philosophy , which he explicitly avowed : ure aghwylc sceal ende gebidan worolde lifes ; wyrce se oe mote domes ar deabe : bat bio dryhtguman after selest , 1386 ff . 
+ the poet as commentator recurs again to this : swa sceal man don , bonne he at guoe gegan penceo longsumne lof : na ymb his lif cearao , 1534 ff . 
+ lof is ultimately and etymologically value , valuation , and so praise , as we say -lrb- itself derived from pretium -rrb- . 
+ dom is judgement , assessment , and in one branch just esteem , merited renown . 
+ the difference between these two is not in most passages important . 
+ thus at the end of widsith , which refers to the minstrel 's part in achieving for the noble and their deeds the prolonged life of fame , both are combined : it is said of the generous patron , lof se gewyrceo , hafao under heofonum heahfastne dom . 
+ but the difference has an importance . 
+ for the words were not actually synonymous , nor entirely commensurable . 
+ in the christian period the one , lof , flowed rather into the ideas of heaven and the heavenly choirs ; the other , dom , into the ideas of the judgement of god , the particular and general judgements of the dead . 
+ the change that occurs can be plainly observed in the seafarer , especially if lines 66-80 of that poem are compared with hrothgar 's giedd or sermon in beowulf from 1755 onwards . 
+ there is a close resemblance between seafarer 66-71 and hrothgar 's words , 1761-8 , a part of his discourse that may certainly be ascribed to the original author of beowulf , whatever revision or expansion the speech may otherwise have suffered . 
+ the seafarer says : ic gelyfe no bat him eorowelan ece stondao . 
+ simle breora sum binga gehwylce ar his tid -lsb- d -rsb- ege to tweon weorbeo : adl obbe yldo obbe ecghete fagum fromweardum feorh oobringeo . 
+ hrothgar says : oft sona bio bat bec adl oooe ecg eafobes getwafeo , oooe fyres feng , oooe flodes wylm , oooe gripe meces , oooe gares fliht , oooe atol yldo ; oooe eagena bearhtm forsiteo ond forsworceo . 
+ semninga bio bat bec , dryhtguma , deao oferswyoeo . 
+ hrothgar expands preora sum on lines found elsewhere , either in great elaboration as in the fates of men , or in brief allusion to this well-known theme as in the wanderer 80 ff . 
+ but the seafarer , after thus proclaiming that all men shall die , goes on : ` therefore it is for all noble men lastworda betst -lrb- the best memorial -rrb- , and praise -lrb- lof -rrb- of the living who commemorate him after death , that ere he must go hence , he should merit and achieve on earth by heroic deeds against the malice of enemies -lrb- feonda -rrb- , opposing the devil , that the children of men may praise him afterwards , and his lof may live with the angels for ever and ever , the glory of eternal life , rejoicing among the hosts . ' 
+ this is a passage which from its syntax alone may with unusual certainty be held to have suffered revision and expansion . 
+ it could easily be simplified . 
+ but in any case it shows a modification of heathen lof in two directions : first in making the deeds which win lof resistance to spiritual foes-the sense of the ambiguous feonda is , in the poem as preserved , so defined by deofle togeanes , secondly , in enlarging lof to include the angels and the bliss of heaven . 
+ lofsong , loftsong are in middle english especially used of the heavenly choirs . 
+ but we do not find anything like this definite alteration in beowulf . 
+ there lof remains pagan lof , the praise of one 's peers , at best vaguely prolonged among their descendants awa to ealdre . 
+ -lrb- on soofastra dom , 2820 , see below -rrb- . 
+ in beowulf there is hell : justly the poet said of the people he depleted helle gemundon on modsefan . 
+ but there is practically no clear reference to heaven as its opposite , to heaven , that is , as a place or state of reward , of eternal bliss in the presence of god . 
+ of course heofon , singular and plural , and its synonyms , such as rodor , are frequent ; but they refer usually either to the particular landscape or to the sky under which all men dwell . 
+ even when these words are used with the words for god , who is lord of the heavens , such expressions are primarily parallels to others describing his general governance of nature -lrb- e.g. 1609 ff . -rrb- 
+ , and his realm which includes land and sea and sky . 
+ of course it is not here maintained-very much the contrary - that the poet was ignorant of theological heaven , or of the christian use of heofon as the equivalent of caelum in scripture : only that this use was of intention -lrb- if not in practice quite rigidly -rrb- excluded from a poem dealing with the pagan past . 
+ there is one clear exception in lines 186 ff : wel bio bam be mot after deaodage drihten secean , ond to fader fabmum freooo wilnian . 
+ if this , and the passage in which it occurs , is genuine-descends , that is , without addition or alteration from the poet who wrote beowulf as a whole-and is not , as , i believe , a later expansion , then the point is not destroyed . 
+ for the passage remains still definitely an aside , an exclamation of the christian author , who knew about heaven , and expressly denied such knowledge to the danes . 
+ the characters within the poem do not understand heaven , or have hope of it . 
+ they refer to hell-an originally pagan word . 
+ -lcb- 33 -rcb- beowulf predicts it as the destiny of unferth and grendel . 
+ even the noble monotheist hrothgar-so he is drawn , quite apart from the question of the genuineness of the bulk of his sermon from 1724-60-refers to no heavenly bliss . 
+ the reward of virtue which he foretells for beowulf is that his dom shall live awa to ealdre , a fortune also bestowed upon sigurd in norse -lrb- that his name a mun uppi -rrb- . 
+ this idea of lasting dom is , as we have seen , capable of being christianized ; but in beowulf it is not christianized , probably deliberately , when the characters are speaking in their proper persons , or their actual thoughts are reported . 
+ the author , it is true , says of beowulf that him of hreore gewat sawol secean soofastra dom . 
+ what precise theological view he held concerning the souls of the just heathen we need not here inquire . 
+ he does not tell us , saying simply that beowulf 's spirit departed to whatever judgement awaits such just men , though we may take it that this comment implies that it was not destined to the fiery hell of punishment , being reckoned among the good . 
+ there is in any case here no doubt of the transmutation of words originally pagan . 
+ soofastra dom could by itself have meant simply the ` esteem of the true-judging ' , that dom which beowulf as a young man had declared to be the prime motive of noble conduct ; but here combined with gewat secean it must mean either the glory that belongs -lrb- in eternity -rrb- to the just , or the judgement of god upon the just . 
+ yet beowulf himself , expressing his own opinion , though troubled by dark doubts , and later declaring his conscience clear , thinks at the end only of his barrow and memorial among men , of his childlessness , and of wiglaf the sole survivor of his kindred , to whom he bequeathes his arms . 
+ his funeral is not christian , and his reward is the recognized virtue of his kingship and the hopeless sorrow of his people . 
+ the relation of the christian and heathen thought and diction in beowulf has often been misconceived . 
+ so far from being a man so simple or so confused that he muddled christianity with germanic paganism , the author probably drew or attempted to draw distinctions , and to represent moods and attitudes of characters conceived dramatically as living in a noble but heathen past . 
+ though there are one or two special problems concerning the tradition of the poem and the possibility that it has here and there suffered later unauthentic retouching , -lcb- 34 -rcb- we can not speak in general either of confusion -lrb- in one poet 's mind or in the mind of a whole period -rrb- , or of patch-work revision producing confusion . 
+ more sense can be made of the poem , if we start rather with the hypothesis , not in itself unlikely , that the poet tried to do something definite and difficult , which had some reason and thought behind it , though his execution may not have been entirely successful . 
+ the strongest argument that the actual language of the poem is not in general the product either of stupidity or accident is to be found in the fact that we can observe differentiation , we can , that is , in this matter of philosophy and religious sentiment distinguish , for instance : -lrb- a -rrb- the poet as narrator and commentator ; -lrb- b -rrb- beowulf ; and -lrb- c -rrb- hrothgar . 
+ such differentiation would not be achieved by a man himself confused in mind , and still less by later random editing . 
+ the kind of thing that accident contrives is illustrated by drihten wereda , ` lord of hosts ' , a familiar christian expression , which appears in line 2186 , plainly as an alteration of drihten wedera ` lord of the geats ' . 
+ this alteration is obviously due to some man , the actual scribe of the line or some predecessor , more familiar with dominus deus sabaoth than with hrethel and the weder-geatish house . 
+ but no one , i think , has ventured to ascribe this confusion to the author . 
+ that such differentiation does occur , i do not attempt here to prove by analysis of all the relevant lines of the poem . 
+ i leave the matter to those who care to go through the text , only insisting that it is essential to pay closer attention than has usually been paid to the circumstances in which the references to religion , fate , or mythological matters each appear , and to distinguish in particular those things which are said in oratio recta by one of the characters , or are reported as being said or thought by them . 
+ it will then be seen that the narrating and commenting poet obviously stands apart . 
+ but the two characters who do most of the speaking , beowulf and hrothgar , are also quite distinct . 
+ hrothgar is consistently portrayed as a wise and noble monotheist , modelled largely it has been suggested in the text on the old testament patriarchs and kings ; he refers all things to the favour of god , and never omits explicit thanks for mercies . 
+ beowulf refers sparingly to god , except as the arbiter of critical events , and then principally as metod , in which the idea of god approaches nearest to the old fate . 
+ we have in beowulf 's language little differentiation of god and fate . 
+ for instance , he says gao a wyrd swa hio scel and immediately continues that dryhten holds the balance in his combat -lrb- 441 -rrb- ; or again he definitely equates wyrd and metod -lrb- 2526 f. -rrb- . 
+ -lcb- 35 -rcb- it is beowulf who says wyrd oft nereo unfagne eorl , bonne his ellen deah -lrb- immediately after calling the sun beacon godes -rrb- , which contrasts with the poet 's own comment on the man who escaped the dragon -lrb- 2291 -rrb- : swa mag unfage eaoe gedigean wean ond wracsio , se oe wealdendes hyldo gehealdeb . 
+ beowulf only twice explicitly thanks god or acknowledges his help : in lines 1658-61 , where he acknowledges god 's protection and the favour of ylda waldend in his combat under the water ; in his last speech , where he thanks frean wuldurcyninge ... ecum dryhtne for all the treasure , and for helping him to win it for his people . 
+ usually he makes no such references . 
+ he ascribes his conquest of the nicors to luck-hwabre me gesade , 570 ff . 
+ -lrb- compare the similar words used of sigemund , 890 -rrb- . 
+ in his account to hygelac his only explanation of his preservation in the water-den is nas ic fage ba gyt -lrb- 2141 -rrb- . 
+ he does not allude to god at all in this report . 
+ beowulf knows , of course , of hell and judgement : he speaks of it to unferth ; he declares that grendel shall abide miclan domes and the judgement of scir metod ; and finally in his last examination of conscience he says that waldend fira can not accuse him of moroorbealo maga . 
+ but the crimes which he claims to have avoided are closely paralleled in the heathen voluspa , where the grim hall , nastrondu a , contains especially menn meinsvara ok morovarga -lrb- perjurers and murderers -rrb- . 
+ other references he makes are casual and formal , such as beorht beacen godes , of the sun -lrb- 571 -rrb- . 
+ an exceptional case is godes leoht geceas 2469 , describing the death of hrethel , beowulf 's grandfather . 
+ this would appear to refer to heaven . 
+ both these expressions have , as it were , inadvertently escaped from christian poetry . 
+ the first , beacen godes , is perhaps passable even for a heathen in this particular poem , in which the theory throughout is that good pagans , when not tempted or deluded by the devil , knew of the one god . 
+ but the second , especially since beowulf himself is formally the speaker , is an item of unsuitable diction-which can not be dismissed as a later alteration . 
+ a didactic reviser would hardly have added this detail to the description of the heathen king 's death : he would rather have removed the heathen , or else sent him to hell . 
+ the whole story alluded to is pagan and hopeless , and turns on blood-feud and the motive that when a son kills his brother the father 's sorrow is intensified because no vengeance can be exacted . 
+ the explanation of such occasional faults is not to be sought in christian revision , but in the fact that before beowulf was written christian poetry was already established , and was known to the author . 
+ the language of beowulf is in fact partly 're - paganized ' by the author with a special purpose , rather than christianized -lrb- by him or later -rrb- without consistent purpose . 
+ throughout the poem the language becomes more intelligible , if we assume that the diction of poetry was already christianized and familiar with old and new testament themes and motives . 
+ there is a gap , important and effective poetically whatever was its length in time , between cadmon and the poet of beowulf ' . 
+ we have thus in old english not only the old heroic language often strained or misused in application to christian legend -lrb- as in andreas or elene -rrb- , but in beowulf language of christian tone occasionally -lrb- if actually seldom -rrb- put inadvertently in the mouth of a character conceived as heathen . 
+ all is not perfect to the last detail in beowulf . 
+ but with regard to godes leoht geceas , the chief defect of this kind , it may be observed that in the very long speech of beowulf from 2425-2515 the poet has hardly attempted to keep up the pretence of oratio recta throughout . 
+ just before the end he reminds us and himself that beowulf is supposed to be speaking by a renewed beowulf maoelode -lrb- 2510 -rrb- . 
+ from 2444 to 2489 we have not really a monologue in character at all , and the words godes leoht geceas go rather with gewat secean soofastra dom as evidence of the author 's own view of the destiny of the just pagan . 
+ when we have made allowance for imperfections of execution , and even for some intentional modification of character in old age -lrb- when beowulf becomes not unnaturally much more like hrothgar -rrb- , it is plain that the characters and sentiments of the two chief actors in the poem are differently conceived and drawn . 
+ where beowulf 's thoughts are revealed by the poet we can observe that his real trust was in his own might . 
+ that the possession of this might was a ` favour of god ' is actually a comment of the poet 's , similar to the comment of scandinavian christians upon their heathen heroes . 
+ thus in line 665 we have georne truwode modgan magenes , metodes hyldo . 
+ no and is possible metrically in the original ; none should appear in translation : the favour of god was the possession of magen . 
+ compare i272-3 : gemunde magenes strenge , gimfaste gife oe him god sealde . 
+ -lcb- 36 -rcb- whether they knew it or not , cubon -lrb- or ne cubon -rrb- heofena helm herian , the supreme quality of the old heroes , their valour , was their special endowment by god , and as such could be admired and praised . 
+ concerning beowulf the poet tells us finally that when the dragon 's ruinous assault was reported , he was filled with doubt and dismay , and wende se wisa bat he wealdende ofer ealde riht ecean dryhtne bitre gebulge . 
+ it has been said that ofer ealde riht , ` contrary to ancient law ' , is here given a christian interpretation ; but this hardly seems to be the case . 
+ this is a heathen and unchristian fear-of an inscrutable power , a metod that can be offended inadvertently : indeed the sorrow of a man who , though he knew of god , and was eager for justice , was yet far estranged , and ` had hell in his heart ' . 
+ -lrb- c -rrb- lines 175-88 these lines are important and present certain difficulties . 
+ we can with confidence accept as original and genuine these words as far as helle gemundon on modsefan-which is strikingly true , in a sense , of all the characters depicted or alluded to in the poem , even if it is here actually applied only to those deliberately turning from god to the devil . 
+ the rest requires , and has often received , attention . 
+ if it is original , the poet must have intended a distinction between the wise hrothgar , who certainly knew of and often thanked god , and a certain party of the pagan danes - heathen priests , for instance , and those that had recourse to them under the temptation of calamity-specially deluded by the gast-bona , the destroyer of souls . 
+ -lcb- 37 -rcb- of these , particularly those permanently in the service of idols -lrb- swylce was beaw hyra -rrb- , which in christian theory and in fact did not include all the community , it is perhaps possible to say that they did not know -lrb- ne cubon -rrb- , nor even know of -lrb- ne wiston -rrb- , the one god , nor know how to worship him . 
+ at any rate the hell -lrb- of fire -rrb- is only predicted for those showing malice -lrb- slione nia -rrb- , and it is not plain that the freooo of the father is ultimately obtainable by none of these men of old . 
+ it is probable that the contrast between 92-8 and 175-88 is intentional : the song of the minstrel in the days of untroubled joy , before the assault of grendel , telling of the almighty and his fair creation , and the loss of knowledge and praise , and the fire awaiting such malice , in the time of temptation and despair . 
+ but it is open to doubt whether lines 181-88 are original , or at any rate unaltered . 
+ not of course because of the apparent discrepancy-though it is a matter vital to the whole poem : we can not dismiss lines simply because they offer difficulty of such a kind . 
+ but because , unless my ear and judgement are wholly at fault , they have a ring and measure unlike their context , and indeed unlike that of the poem as a whole . 
+ the place is one that offers at once special temptation to enlargement or alteration and special facilities for doing either without grave dislocation . 
+ -lcb- 38 -rcb- i suspect that the second half of line 180 has been altered , while what follows has remodelled or replaced a probably shorter passage , making the comment -lrb- one would say , guided by the poem as a whole -rrb- that they forsook god under tribulation , and incurred the danger of hell-fire . 
+ this in itself would be a comment of the beowulf poet , who was probably provided by his original material with a reference to wigweorbung in the sacred site of heorot at this juncture in the story . 
+ in any case the unleugbare inkonsequenz -lrb- hoops -rrb- of this passage is felt chiefly by those who assume that by references to the almighty the legendary danes and the scylding court are depicted as ` christian ' . 
+ if that is so , the mention of heathen beaw is , of course , odd ; but it offers only one -lrb- if a marked -rrb- example of a confusion of thought fundamental to the poem , and does not then merit long consideration . 
+ of all the attempts to deal with this inkonsequenz perhaps the least satisfactory is the most recent : that of hoops , -lcb- 39 -rcb- who supposes that the poet had to represent the danish prayers as addressed to the devil for the protection of the honour of the christengott , since the prayers were not answered . 
+ but this attributes to the poet a confusion -lrb- and insincerity -rrb- of thought that an ` anglo-saxon ' was hardly modern or advanced enough to achieve . 
+ it is difficult to believe that he could have been so singularly ill instructed in the nature of christian prayer . 
+ and the pretence that all prayers to the christengott are answered , and swiftly , would scarcely have deceived the stupidest member of his audience . 
+ had he embarked on such bad theology , he would have had many other difficulties to face : the long time of woe before god relieved the distress of these christian danes by sending scyld -lrb- 13 -rrb- ; and indeed his permission of the assaults of grendel at all upon such a christian people , who do not seem depicted as having perpetrated any crime punishable by calamity . 
+ but in fact god did provide a cure for grendel-beowulf , and this is recognized by the poet in the mouth of hrothgar himself -lrb- 381 ff . -rrb- . 
+ we may acquit the maker of beowulf of the suggested motive , whatever we may think of the inkonsequenz . 
+ he could hardly have been less aware than we that in history -lrb- in england and in other lands -rrb- , and in scripture , people could depart from the one god to other service in time of trial-precisely because that god has never guaranteed to his servants immunity from temporal calamity , before or after prayer . 
+ it is to idols that men turned -lrb- and turn -rrb- for quick and literal answers . 
+ 1 the shrine , p. 4 . 
+ 2 thus in professor chambers 's great bibliography -lrb- in his beowulf : an introduction -rrb- we find a section , 8 . 
+ questions of literary history , date , and authorship ; beowulf in the light of history , archaeology , heroic legend , mythology , and folklore . 
+ it is impressive , but there is no section that names poetry . 
+ as certain of the items included show , such consideration as poetry is accorded at all is buried unnamed in 8 . 
+ 3 beowulf translated into modern english rhyming verse , constable , 1925 . 
+ 4 a short history of english literature , oxford univ. . 
+ press , 1921 , pp. 2-3 . 
+ i choose this example , because it is precisely to general literary histories that we must usually turn for literary judgements on beowulf . 
+ the experts in beowulfiana are seldom concerned with such judgements . 
+ and it is in the highly compressed histories , such as this , that we discover what the process of digestion makes of the special ` literature ' of the experts . 
+ here is the distilled product of research . 
+ this compendium , moreover , is competent , and written by a man who had -lrb- unlike some other authors of similar things -rrb- read the poem itself with attention . 
+ 5 i include nothing that has not somewhere been said by some one , if not in my exact words ; but i do not , of course , attempt to represent all the dicta , wise or otherwise , that have been uttered . 
+ 6 the dark ages , pp. 252-3 . 
+ 7 none the less ker modified it in an important particular in english literature , mediaval , pp. 29-34 . 
+ in general , though in different words , vaguer and less incisive , he repeats himself . 
+ we are still told that ` the story is commonplace and the plan is feeble ' , or that ` the story is thin and poor ' . 
+ but we learn also at the end of his notice that : ` those distracting allusions to things apart from the chief story make up for their want of proportion . 
+ they give the impression of reality and weight ; the story is not in the air ... it is part of the solid world . ' 
+ by the admission of so grave an artistic reason for the procedure of the poem ker himself began the undermining of his own criticism of its structure . 
+ but this line of thought does not seem to have been further pursued . 
+ possibly it was this very thought , working in his mind , that made ker 's notice of beowulf in the small later book , his ` shilling shocker ' , more vague and hesitant in tone , and so of less influence . 
+ 8 foreword to strong 's translation , p. xxvi : see note 3 . 
+ 9 it has also been favoured by the rise of ` english schools ' , in whose syllabuses beowulf has inevitably some place , and the consequent production of compendious literary histories . 
+ for these cater -lrb- in fact , if not in intention -rrb- for those seeking knowledge about , and ready-made judgements upon , works which they have not the time , or -lrb- often enough -rrb- the desire , to know at first hand . 
+ the small literary value of such summaries is sometimes recognized in the act of giving them . 
+ thus strong -lrb- op . 
+ cit . -rrb- 
+ gives a fairly complete one , but remarks that ` the short summary does scant justice to the poem ' . 
+ ker in e. lit . 
+ -lrb- med . -rrb- 
+ says : `` so told , in abstract , it is not a particularly interesting story . ' 
+ he evidently perceived what might be the retort , for he attempts to justify the procedure in this case , adding : ` told in this way the story of theseus or hercules would still have much more in it . ' 
+ i dissent . 
+ but it does not matter , for the comparison of two plots ` told in this way ' is no guide whatever to the merits of literary versions told in quite different ways . 
+ it is not necessarily the best poem that loses least in precis . 
+ 10 10 . 
+ namely the use of it in beowulf , both dramatically in depicting the sagacity of beowulf the hero , and as an essential part of the traditions concerning the scylding court , which is the legendary background against which the rise of the hero is set-as a later age would have chosen the court of arthur . 
+ also the probable allusion in alcuin 's letter to speratus : see chambers 's widsith , p. 78 . 
+ 11 this expression may well have been actually used by the eald geneat , but none the less -lrb- or perhaps rather precisely on that account -rrb- is probably to be regarded not as new-minted , but as an ancient and honoured gnome of long descent . 
+ 12 for the words hige sceal be heardra , heorte be cenre , mod sceal be mare be ure magen lytlao are not , of course , an exhortation to simple courage , they are not reminders that fortune favours the brave , or that victory may be snatched from defeat by the stubborn . 
+ -lrb- such thoughts were familiar , but otherwise expressed : wyrd oft nereo unfagne eorl , bonne his ellen deah . -rrb- 
+ the words of byrhtwold were made for a man 's last and hopeless day . 
+ 13 foreword to strong 's translation , p. xxviii . 
+ see note 3 . 
+ 14 this is not strictly true . 
+ the dragon is not referred to in such terms , which are applied to grendel and to the primeval giants . 
+ 15 he differs in important points , referred to later . 
+ 16 i should prefer to say that he moves in a northern heroic age imagined by a christian , and therefore has a noble and gentle quality , though conceived to be a pagan . 
+ 17 it is , for instance , dismissed cursorily , and somewhat contemptuously in the recent -lrb- somewhat contemptuous -rrb- essay of dr. watson , the age of bede in bede , his life , times , and writings , ed . 
+ a. hamilton thompson , 1935 . 
+ 18 the dark ages , p. 57 . 
+ 19 if we consider the period as a whole . 
+ it is not , of course , necessarily true of individuals . 
+ these doubtless from the beginning showed many degrees from deep instruction and understanding to disjointed superstition , or blank ignorance . 
+ 20 avoidance of obvious anachronisms -lrb- such as are found in judith , for instance , where the heroine refers in her own speeches to christ and the trinity -rrb- , and the absence of all definitely christian names and terms , is natural and plainly intentional . 
+ it must be observed that there is a difference between the comments of the author and the things said in reported speech by his characters . 
+ the two chief of these , hrothgar and beowulf , are again differentiated . 
+ thus the only definitely scriptural references , to abel -lrb- 108 -rrb- and to cain -lrb- 108 , 1261 -rrb- , occur where the poet is speaking as commentator . 
+ the theory of grendel 's origin is not known to the actors : hrothgar denies all knowledge of the ancestry of grendel -lrb- 1355 -rrb- . 
+ the giants -lrb- 1688 ff . -rrb- 
+ are , it is true , represented pictorially , and in scriptural terms . 
+ but this suggests rather that the author identified native and scriptural accounts , and gave his picture scriptural colour , since of the two accounts scripture was the truer . 
+ and if so it would be closer to that told in remote antiquity when the sword was made , more especially since the wundorsmibas who wrought it were actually giants -lrb- 1558 , 1562 , 1679 -rrb- : they would know the true tale . 
+ see note 25 . 
+ 21 in fact the real resemblance of the aeneid and beowulf lies in the constant presence of a sense of many-storied antiquity , together with its natural accompaniment , stern and noble melancholy . 
+ in this they are really akin and together differ from homer 's flatter , if more glittering , surface . 
+ 22 i use this illustration following chambers , because of the close resemblance between grendel and the cyclops in kind . 
+ but other examples could be adduced : cacus , for instance , the offspring of vulcan . 
+ one might ponder the contrast between the legends of the torture of prometheus and of loki : the one for assisting men , the other for assisting the powers of darkness . 
+ 23 there is actually no final principle in the legendary hostilities contained in classical mythology . 
+ for the present purpose that is all that matters : we are not here concerned with remoter mythological origins , in the north or south . 
+ the gods , cronian or olympian , the titans , and other great natural powers , and various monsters , even minor local horrors , are not clearly distinguished in origin or ancestry . 
+ there could be no permanent policy of war , led by olympus , to which human courage might be dedicated , among mythological races so promiscuous . 
+ of course , nowhere can absolute rigidity of distinction be expected , because in a sense the foe is always both within and without ; the fortress must fall through treachery as well as by assault . 
+ thus grendel has a perverted human shape , and the giants or jotnar ^ even when -lrb- like the titans -rrb- they are of super-divine stature , are parodies of the human-divine form . 
+ even in norse , where the distinction is most rigid , loki dwells in asgaror , though he is an evil and lying spirit , and fatal monsters come of him . 
+ for it is true of man , maker of myths , that grendel and the dragon , in their lust , greed , and malice , have a part in him . 
+ but mythically conceived the gods do not recognize any bond with fenris ulfr , any more than men with grendel or the serpent . 
+ 24 the genesis which is preserved for us is a late copy of a damaged original , but is still certainly in its older parts a poem whose composition must be referred to the early period . 
+ that genesis a is actually older than beowulf is generally recognized as the most probable reading of such evidence as there is . 
+ 25 actually the poet may have known , what we can guess , that such creation-themes were also ancient in the north . 
+ voluspa describes chaos and the making of the sun and moon , and very similar language occurs in the old high german fragment known as the wessobrunner gebet . 
+ the song of the minstrel iopas , who had his knowledge from atlas , at the end of the first book of the aeneid is also in part a song of origins : hic canit errantem lunam solisque labores , unde hominum genus et pecudes , unde imber et ignes . 
+ in any case the anglo-saxon poet 's view throughout was plainly that true , or truer , knowledge was possessed in ancient days -lrb- when men were not deceived by the devil -rrb- ; at least they knew of the one god and creator , though not of heaven , for that was lost . 
+ see note 20 . 
+ 26 it is of old testament lapses rather than of any events in england -lrb- of which he is not speaking -rrb- that the poet is thinking in lines 175 ff . 
+ , and this colours his manner of allusion to knowledge which he may have derived from native traditions concerning the danes and the special heathen religious significance of the site of heorot -lrb- hleiorar , at hargtrafum , the tabernacles -rrb- - it was possibly a matter that embittered the feud of danes and heathobeards . 
+ if so , this is another point where old and new have blended . 
+ on the special importance and difficulty for criticism of the passage 175-88 see the appendix . 
+ 27 though only explicitly referred to here and in disagreement , this edition is , of course , of great authority , and all who have used it have learned much from it . 
+ 28 i am not concerned with minor discrepancies at any point in the poem . 
+ they are no proof of composite authorship , nor even of incompetent authorship . 
+ it is very difficult , even in a newly invented tale of any length , to avoid such defects ; more so still in rehandling old and oft-told tales . 
+ the points that are seized in the study , with a copy that can be indexed and turned to and fro -lrb- even if never read straight through as it was meant to be -rrb- , are usually such as may easily escape an author and still more easily his natural audience . 
+ virgil certainly does not escape such faults , even within the limits of a single book . 
+ modern printed tales , that have presumably had the advantage of proof-correction , can even be observed to hesitate in the heroine 's christian name . 
+ 29 the least-satisfactory arrangement possible is thus to read only lines 1-1887 and not the remainder . 
+ this procedure has none the less been , from time to time , directed or encouraged by more than one ` english syllabus ' . 
+ 30 equivalent , but not necessarily equal , certainly not as such things may be measured by machines . 
+ 31 that the particular bearer of enmity , the dragon , also dies is important chiefly to beowulf himself . 
+ he was a great man . 
+ not many even in dying can achieve the death of a single worm , or the temporary salvation of their kindred . 
+ within the limits of human life beowulf neither lived nor died in vain-brave men might say . 
+ but there is no hint , indeed there are many to the contrary , that it was a war to end war , or a dragon-fight to end dragons . 
+ it is the end of beowulf , and of the hope of his people . 
+ 32 we do , however , learn incidentally much of this period : it is not strictly true , even of our poem as it is , to say that after the deeds in heorot beowulf ` has nothing else to do ' . 
+ great heroes , like great saints , should show themselves capable of dealing also with the ordinary things of life , even though they may do so with a strength more than ordinary . 
+ we may wish to be assured of this -lrb- and the poet has assured us -rrb- , without demanding that he should put such things in the centre , when they are not the centre of his thought . 
+ 33 free as far as we know from definite physical location . 
+ details of the original northern conception , equated and blended with the scriptural , are possibly sometimes to be seen colouring the references to christian hell . 
+ a celebrated example is the reference in judith to the death of holofernes , which recalls remarkably certain features in voluspa . 
+ cf. judith 115 : wyrmum bewunden , and 119 : of oam wyrmsele with vol . 
+ 36 sa 's undinn salr orma hryggjum : which translated into o.e. would be se is wunden sele wyrma hrycgum . 
+ 34 such as 168-9 , probably a clumsily intruded couplet , of which the only certain thing that can be said is that it interrupts -lrb- even if its sense were plain -rrb- the natural connexion between 165-7 and 170 ; the question of the expansion -lrb- in this case at any rate skilful and not inapt -rrb- of hrothgar 's giedd , 1724-60 ; and most notably lines 175-88 . 
+ 35 of course the use of words more or less equivalent to ` fate ' continued throughout the ages . 
+ the most christian poets refer to wyrd , usually of unfortunate events ; but sometimes of good , as in elene 1047 , where the conversion of judas is ascribed to wyrd . 
+ there remains always the main mass of the workings of providence -lrb- metod -rrb- which are inscrutable , and for practical purposes dealt with as ` fate ' or ` luck ' . 
+ metod is in old english the word that is most nearly allied to ` fate ' , although employed as a synonym of god . 
+ that it could be so employed is due probably to its having anciently in english an agental significance -lrb- as well as an abstract sense -rrb- , as in old norse where mjotuor has the senses ` dispenser , ruler ' and ` doom , fate , death ' . 
+ but in old english metodsceaft means ` doom ' or ` death ' . 
+ cf. 2814 f. where wyrd is more active than metodsceaft , in old saxon metod is similarly used , leaning also to the side of the inscrutable -lrb- and even hostile -rrb- aspects of the world 's working . 
+ gabriel in the h ¨ ºliand says of john the baptist that he will not touch wine : so habed im uurdgiscapu , metod gimarcod endi maht godes -lrb- 128 -rrb- ; it is said of anna when her husband died : that sie thiu mikila maht metodes todelda , uured uurdigiscapu -lrb- 511 -rrb- . 
+ in old saxon metod -lrb- o -rrb- giscapu and metodigisceft , equal fate , as o.e. metodsceaft . 
+ 36 compare , for instance , the intrusive commentary in fostbrand # 339 ; ora saga which observes in a description of a grim pagan character : ekki var hjarta hans sem foam i fugli , ekki var bat bloofult , sva at bat skylfi af hraoslu , heldr var bat hert af enum hasta hofuosmio i ollum hvatleik -lrb- ch . 
+ 2 -rrb- ; and again almattigr er sa sem sva snart hjarta ok ohratt let i brjost borgeiri ; ok ekki var hans hugpryoi af monnum ger ne honum i brjost borin , heldr af enum hasta hofuosmio -lrb- ib . -rrb- . 
+ here the notion is explicitly -lrb- if unseasonably and absurdly -rrb- expressed . 
+ 37 it is not strictly true to say , as is said , for instance , by hoops that he is ` identified ' with their heathen god . 
+ the christian theory was that such gods did not exist , and were inventions of the devil , and that the power of idols was due to the fact that he , or one of his emissaries , often actually inhabited them , and could be seen in their real hideousness if the veil of illusion was removed . 
+ compare aelfric 's homilies on st. bartholomew , and st. matthew , where by the power of an angel or saint the devil residing in idols was revealed as a black silhearwa . 
+ 38 similarly it is the very marked character already by the poet given to hrothgar which has induced and made possible without serious damage the probable revision and expansion of his sermon . 
+ well done as the passage in itself is , the poem would be better with the excision of approximately lines 1740-60 ; and these lines are on quite independent grounds under the strongest suspicion of being due to later revision and addition . 
+ the actual joints have , nevertheless , if that is so , been made with a technical competence as good as that which i here assume for the earlier passage . 

@@ -1,0 +1,1523 @@
+ the dragons dean williams published by dean williams at smashwords copyright 2014 dean williams this e-book is licensed for your personal enjoyment only . 
+ this e-book may not be re-sold or given away to other people . 
+ if you would like to share this book with another person , please purchase an additional copy for each recipient . 
+ if you 're reading this book and did not purchase it , or it was not purchased for your use only , then please return to smashwords.com and purchase your own copy . 
+ thank you for respecting the hard work of this author . 
+ dedication this book is dedicated to my good friend and colleague toru iwama . 
+ more than anyone else , he has shown me the importance of having an inquiring mind , and of never , ever , giving up . 
+ acknowledgements the outstanding cover art was done by c. adachi , a university student . 
+ for the foreign poetry , i took my best shot at the german poem myself . 
+ the japanese translation was done by ayumi hayashinaka , and the french poem was translated by pierre flamand . 
+ there were two korean translators , one of whom was mifa ryo , the other preferring to remain anonymous . 
+ my thanks to them all . 
+ i also wish to acknowledge a certain large crow that i saw perched on a branch right outside my window about a year ago . 
+ you started it all , my glossy brother ! 
+ preface it is a foolish thing to make a long prologue , and to be short in the story itself . 
+ apocrypha -lrb- the second book of the maccabees , 2:32 -rrb- this is a story about the end of one world , and the beginning of another . 
+ it does have dragons in it , but i regret to say , not very much action . 
+ it certainly does n't have sorcery , or swordplay , or scantily clad women in need of rescue . 
+ so if you are looking for a fast , entertaining read , one with a plot that propels you forward like a porsche on the autobahn , your hair streaming backward while beside you the voluptuous heiress to the siemens fortune leans seductively backwards , fingers idly playing on your knee ... now i am just teasing you . 
+ for such a reader , this will probably not be your cup of tea . 
+ what this piece does have , however , is ideas . 
+ lots and lots of ideas -- i dare say too many ! 
+ in the end , i suppose i am more of a teacher than a writer . 
+ but i like to think that there are readers out there who are hungry for ideas , for notions , thoughts , inklings , and even dreams of all kinds . 
+ so , if you are that rare type of bird , and you are willing to overlook a fair degree of jejune if well-intentioned prose , you could very well find something to like in my little tale . 
+ one or two more things . 
+ i do n't know where the idea of putting songs into the story came from . 
+ at some point they just appeared , and like boorish , obtuse house guests who just do n't get the message , they refused to disappear . 
+ but being stuck with them , i resolved to make the most of the situation . 
+ the poet marianne moore wrote of `` imaginary gardens with real toads in them '' . 
+ there is a granularity in good writing ; it 's the grit in the oyster that with any luck might turn into a pearl . 
+ the songs are my quirky , earnest attempt at putting some verisimilitude into the narrative . 
+ of course you must be the judge of whether i have succeeded or not . 
+ even if you think that i have made a hash of it , try to sing some of them ! 
+ you might be surprised at the result . 
+ i wo n't tell you which is my favorite . 
+ but i will say that i believe the rap , the composing of which filled me with justifiable terror , turned out better than i had feared . 
+ there is a quotation in the text , `` out of the crooked timber of humanity '' , for which i did not want to give the source at that point . 
+ the full quote is `` out of the crooked timber of humanity , no straight thing was ever made . '' 
+ immanuel kant wrote it , but i believe it was popularized by isaiah berlin . 
+ he even has a volume of essays with that title . 
+ similarly , in chapter 23 there is a reference to humans as `` the storytelling animals '' ; that comes from alasdair macintyre 's after virtue . 
+ and can you find the phrase lifted from shakespeare ? 
+ it comes very early on . 
+ the story 's price is calculated solely on the basis of its length . 
+ it is a longish short story -- almost a novella -- by an amateur writer . 
+ -lrb- but look up the etymology of that much-maligned word : amateur ! -rrb- 
+ however , i want to go on record as saying that online publishers , readers , and writers are going to have to come up with a more satisfactory pecuniary arrangement than the one that currently exists for the e-book market . 
+ the access to the global market is much appreciated , but there is something wrong when an aesthetic commodity 's own creator has no idea what to charge for the fruit of his or her labor . 
+ finally , i will tell you what i really want for christmas : reviews . 
+ fair , objective , thoughtful reviews . 
+ you have heard that old saw about even negative publicity being better than no publicity ? 
+ it 's true . 
+ dean williams kyoto , japan , july 2014 the dragons i have cast fire upon the world , and see , i am guarding it until it blazes . 
+ gnostic gospel of thomas -lrb- 10 -rrb- the greeks possessed a knowledge of human nature we seem hardly able to attain without passing through the strengthening hibernation of a new barbarism . 
+ georg christoph lichtenberg we live in fact in an exploding universe of mechanical and electronic invention , whose parts are moving at a rapid pace ever further and further away from their human centre , and from any rational , autonomous human purposes ... in short , our civilization is running out of control , overwhelmed by its own resources and opportunities , as well as its super-abundant fecundity . 
+ lewis mumford ` tis magic , magic , that hath ravished me . 
+ dr. faustus -lrb- christopher marlowe -rrb- and , without illusions , what greatness can exist or be hoped for ? 
+ giacomo leopardi behold the people , how nothing will be restrained from them , from what they have imagined to do . 
+ genesis , 2:6 something instituted by humans is superstitious if it concerns the making and worshipping of idols , or the worshipping of the created order or part of it a if it were god ... . 
+ st. augustine -lrb- from on christian teaching -rrb- thou shalt not bow down thyself to them , nor serve them : for i the lord thy god am a jealous god . 
+ exodus , 20:5 verily those who have disbelieved of the people of the book and the polytheists are in the fire of gehenna to abide therein -- they are the worst of creation . 
+ koran , 98:5 summoned or not , god will be here . 
+ carl jung rebellion against tyranny is obedience to god . 
+ benjamin franklin 1 now that everything has changed and we are one , so many things from our past appear mysterious to us . 
+ like faces in faded photographs from a bygone era , they are at once familiar and unsettlingly alien . 
+ the intervening years , few though they might be , have worked their inevitable magic , throwing a distorting veil over all that we once considered normal and customary , and transforming it into something rich and strange . 
+ after the gatherings , when the rituals are over and we have reluctantly left the warmth and reassuring presence that pervades every inch of the temple , we stroll back on narrow , tree-lined paths to the modest dwellings we all live in now . 
+ when the moon is full we will sometimes catch a glimpse of the brooding hulk of an abandoned skyscraper or factory , one of the few that remain standing . 
+ and we then turn to our brothers and sisters and ask with astonishment , `` was the world really so ? 
+ did people actually build things like that ? 
+ it ca n't be true ! '' 
+ and we shake our heads and laugh ruefully , because of course we are speaking about our own younger selves . 
+ but the truth is that those poor unfortunates have as little to do with us as creatures from another star . 
+ no one can remember just when it was that the visitors first began to appear . 
+ that bothers some of us -- that we ca n't recall the first one we saw . 
+ our records are of little help . 
+ research as one might in archives that grow dustier by the day , no newspaper article , tv report or online source can be found which was the first to unequivocally state what has in the fullness of time become so clear : that they had come to live amongst us . 
+ at first we thought they were some unknown type of bird . 
+ from a distance they certainly looked like birds . 
+ dark grey and about the size of a large pigeon , they congregated in trees or on the tops of buildings and statues -- anything that commanded a view . 
+ there they would perch , uttering their peculiar purling cries and leisurely cleaning themselves with long dark tongues . 
+ the city 's pigeons , sparrows and crows did n't seem to mind their presence in the least . 
+ they behaved as if they had always been there . 
+ but they were n't birds , and this soon became apparent . 
+ their heads were smaller than a bird 's and sported a set of erect , foxlike ears . 
+ their necks were much longer and they had grey , featherless , scaly skin that had a slight sheen in direct sunlight . 
+ the creatures had striking , deep-set blue eyes that gleamed like amethysts . 
+ they did n't appear to have any young . 
+ in fact , they were all , so far as we could tell , indistinguishable from one another , having exactly the same size and coloration . 
+ they did n't behave as birds did either . 
+ first of all , they were never seen to eat or drink . 
+ and no amount of birdfeed , grain , raw or cooked meat , fruits or vegetables could bring them closer to the ground than about 5 meters . 
+ not that this stopped people from trying . 
+ officials finally had to make televised appeals in which they asked people to stop leaving food for them , as it had begun to draw rats and other vermin . 
+ they did n't seem to interact like normal animals : no communicating , breeding , or fighting could be observed . 
+ the creatures appeared to be indifferent to the weather , favoring neither hot climates nor cold , sunny areas nor rainy locales . 
+ and when they did start to show up , it was worldwide , although they seemed to be more numerous in larger cities . 
+ another strange thing was that they were never seen at night . 
+ around dusk they would rouse themselves , flap off heavily , and disappear . 
+ their numbers would dwindle gradually until by nightfall not one could be found . 
+ and no one knew where they went . 
+ enormous undiscovered caves , abandoned areas of the subway system , secret government installations -- every possible explanation , however unlikely , had its champions . 
+ the creatures moved altogether slower than birds do ; they possessed none of their vivacity and nervous , hopping grace . 
+ instead , their movements were slow , almost languorous . 
+ watching the creatures for extended periods of time gave one the distinct impression that the air surrounding them was more viscous than normal . 
+ things seemed to simply slow down around them . 
+ the leaves did n't so much flutter as lazily nod ; brisk winds softened to slight breezes ; and the very light altered , taking on a slight yellowish tint that made it appear that the beasts had been dipped in amber . 
+ even sounds produced in their immediate vicinity became muted and indistinct , as if they were coming from a great distance . 
+ this dimming and blurring could not be observed in photographs , where the beasts showed up as sharp as a tack . 
+ all this dulled the senses . 
+ indeed , it had such a powerful soporific effect on people that if no one came along to disturb them , they would lose track of time and sit and gaze at the creatures for hours . 
+ this psychological phenomenon became so common that it developed a name . 
+ it came to be called , `` being in the dragon 's eye '' . 
+ for , inevitably , that is what we wound up calling the creatures . 
+ by tacit consent it was a term we had avoided when they began to show up . 
+ to say the word , or even think it , would be to irrevocably acknowledge something just too ridiculous to be true . 
+ dragons were the stuff of myths , fairy tales , and fantasy novels . 
+ they were n't , could n't be , real . 
+ so we referred to the creatures as `` the visitors '' or `` the new ones '' , or just `` them '' . 
+ this made us feel a bit better at first . 
+ but once they had appeared in all the world 's major cities , using these euphemistic phrases came to seem not just artificial but simply wrong . 
+ it was our children who taught us this . 
+ soon after the beasts ' appearance , some of the more adventurous -lrb- or foolhardy -rrb- parents allowed their children to watch them in the parks and open places where the they could be found . 
+ almost without exception , the child , after staring in wonderment at one of the creatures perched high overhead , would turn to a parent and exclaim something like , `` look , mom , it 's a dragon ! '' 
+ it was the only word that fit , and so that is what we began to call them . 
+ 2 world governments , after a brief , rather understandable `` what the hell ? '' 
+ phase , stayed true to form by attempting to execute some version of a contain-and-control strategy . 
+ they cordoned off the parks and public places where the dragons were . 
+ then they blanketed the web , the airwaves and the print media with anodyne statements designed to reassure the public and isolate the situation : `` the unidentified species of bird or reptile which has recently appeared in our public areas is being monitored and analyzed by the authorities . 
+ your government is making every effort to identify these animals , as well as their origin , and ascertain whether or not they present a danger to humans . 
+ so far they have given us no indication that they mean us harm . 
+ however , we strongly advise all members of the public to keep their distance from these creatures until we can be absolutely confident that they are not hazardous . 
+ we regret to inform you that until further notice the following areas are off-limits : ... '' leaders viewed their top priorities as 1 -rrb- protecting their citizens ; and 2 -rrb- ensuring that their own power and authority were not threatened by these unforeseen and unwished-for agents . 
+ they would n't have thought of it in precisely those terms ; indeed , they would have bitterly protested any implied authoritarianism or harboring of ulterior motives . 
+ `` it 's our sworn duty to keep our people safe , and we do n't know anything about these things . 
+ anyway , someone has to take charge of this situation , do n't they ? '' 
+ exactly . 
+ god forbid that they just let events unfold , that they for once refrain from creating an enemy where perhaps none need have appeared . 
+ the fact that most people accepted the validity of the government 's self-serving rationale is an indication of the vast gulf that lies between those times and our own . 
+ in any event , all plans our leaders might have had about keeping the public away from the dragons quickly proved to be impractical . 
+ there were just too many of the little creatures , and they were gathering in precisely the same places we liked to . 
+ when there are miniature dragons perched on the top of the forbidden palace , the arc de triomphe , the kremlin , big ben and the lincoln memorial , not to mention every patch of green space that boasted a tree or structure taller than 5 meters , it is rather challenging to `` maintain a sanitized environment '' , or convince your citizens that nothing out of the ordinary is happening . 
+ something quite definitely out of the ordinary was happening , and within a few weeks everyone on the planet who was n't either comatose or in solitary confinement knew it . 
+ the media of course had a field day . 
+ one could almost see the infotainment overlords drooling as they realized the enormity of the story . 
+ `` ` dragons in central park !! ' 
+ it 's a goldmine ! 
+ there 's no telling how many units we 'll sell , how high we can jack up our advert rates ! 
+ why , this is the biggest thing since a was caught cheating on b ! 
+ yippee ! '' 
+ they threw every reporter with a pulse and any device capable of recording sound and image into the parks and squares where the dragons were . 
+ the public had been flocking to these areas since people actually realized we were sharing the planet with flying reptiles . 
+ following their standard playbook , the networks , newspapers and other sectors of the media and entertainment industry -lrb- no doubt with the silent collusion of governments -rrb- had done their best to ratchet up the pressure to the point where something , somewhere , was bound to explode . 
+ on a warm spring day about a month after their arrival , all the elements seemed in place for a showdown . 
+ one should really step back and take a moment to fully appreciate the drama of the scene : the dragons surrounded by silent , expectant crowds of people ; the electronic eyes of the world riveted on the unprecedented spectacle of these mysterious beings which had suddenly appeared out of nowhere in huge numbers to quietly occupy our major urban centers ; in new york the security council meeting behind closed doors ; local officials urging calm even as tanks and artillery rumbled into position , ready to counterattack if need be ... . 
+ the world held its breath . 
+ and -- nothing happened . 
+ the dragons yawned , blinked , and phlegmatically jostled for position with pigeons and crows for space on limbs and dead generals and politicians ' marble heads . 
+ the sun crawled across an indifferent sky . 
+ people started to doze where they stood . 
+ babies fretted ; someone 's stomach growled . 
+ then , some some local dignitary grumbled loudly , `` hell , these little bastards ai n't gon na do squat ! '' 
+ the crowd laughed , and the tension was broken . 
+ people on the outskirts of the crowd began drifting away . 
+ this tableau was repeated in its essentials across the globe that day , pacing the sun . 
+ it became known as `` the great nothing '' , and now one could just as easily visualize the media mandarins gnashing their teeth in disappointed fury as their anticipated windfall flew away with the drowsy flap of a dragon 's wings . 
+ 3 the whole affair turned into an unmitigated disaster for the media , for reasons that were both simple and instructive . 
+ for perhaps the first time in modern -lrb- meaning , televised -rrb- history , the general public could see with its own eyes the huge gulf between the story the 24/7 media machine had concocted and the simple , incontrovertible truth . 
+ in the story , there was an enemy , and thus the reassuring possibility of heroism ; a confrontation was in the cards , so alluring violence could not be far behind ; and to top it off , a neat , happy ending -lrb- those bizarre invaders driven off ! -rrb- 
+ seemed likely , which always made one feel better about the universe . 
+ the story was conceived , packaged and sold in the same cheerily amoral manner that countless ` products ' had been sold before . 
+ individual citizens never had a chance to touch any event directly , except for that tiny minority of people who were directly involved . 
+ as soon as it came to the attention of the media , a piece of news , no matter how genuine or unique the original story might be , acquired a patina of artificiality , of something contrived and unreal . 
+ nothing was good enough on its own , in its pure form ; it had to be made spicier , or sweetened , or mixed with something else more appealing . 
+ and so an actual event , involving a real person or phenomenon -- an election , a coup , an affair , a business move -- was transmogrified into a fungible product , a packaged construct that could be sold by its purveyors and bought and consumed by the people . 
+ at the dawn of the modern era it was all more or less innocent : tabloid newspapers , fighting rambunctiously like teenaged boys for market share by trying to come up with bigger and bolder headlines . 
+ but by the turn of the 20th century this high-spirited exaggeration had become `` you furnish the pictures and i 'll furnish the war '' , and other types of jingoistic nonsense and intentional misdirection less celebrated if no less egregious . 
+ and a hundred years later , media consolidation , the accelerating concentration of wealth and power concomitant with unrestrained capitalism , and the sheer technological sophistication and reach of cutting-edge it had created a ravenous , hydra-headed monster that no one could control . 
+ of course the people at the top thought that they could . 
+ a mantra like `` if it bleeds , it leads '' was seen not only as an honest description of industry sop but as a valid and useful insight into human nature . 
+ the industry used every trick of the trade to carefully ` position ' the public , to create the perfect ensemble of conditions that would lead to ... . 
+ what ? 
+ what nefarious scheme were all these machinations in service of ? 
+ potato chips ! 
+ or cars , or dishwashers , or a new brand of jeans -- take your pick . 
+ the daily global extravaganza of frantic buying and selling , the consumer show , had to keep its top ratings at all costs . 
+ beyond this admittedly banal but undeniable rationale one searched in vain for a deeper , more diabolic , conspiracy . 
+ it 's true that regimes all over the world took it for granted that world events , social and business trends , statistics , etc. were there to be ` finessed ' and ` managed ' . 
+ it 's also true that certain nations and individual leaders were far more aggressive than others in the extent to which they manipulated and filtered the raw data of the world . 
+ but such overly enthusiastic displays were mere blips on the vast coruscating screen that now formed the electronic warp and woof of the world . 
+ in retrospect , when one considers the enormity of the entire enterprise -lrb- by which is meant the toxic brew of rapacious corporations , militarized , elite-serving governments , and hyper-commercialized media -rrb- one almost feels a grudging admiration for its creators and perpetrators . 
+ the sheer scale of the thing ! 
+ in the late twentieth century scientists had discovered that the largest single organism in the world was not a magnificent blue whale or a towering redwood . 
+ it was a slow-growing fungus that covered nearly 4 square miles -lrb- 10 square kilometers -rrb- of oregon mountainside . 
+ the system under which we all lived now was like that fungus : subtle , obscure , rarely revealing the true dimensions of its size and power . 
+ and , like the fungus , the complex of forces that controlled every aspect of our lives was fundamentally parasitic and self-perpetuating . 
+ how much it had already accomplished ! 
+ it had with single-minded determination transformed means into ends . 
+ it had trained us to like what was offered us while hypnotizing us into discarding many of our most cherished and traditional values . 
+ it had turned politics into an arena sport and reduced government to an often despised service provider . 
+ it had raised technique and efficiency to the status of virtues . 
+ it had ruthlessly co-opted new modes of technology such as the internet while smothering every potential dissent in the soft , deadly embrace of electronic distraction and relentless consumerism . 
+ it had subverted and suppressed local ways in favor of a monolithic world culture . 
+ perhaps gravest of all , it had kept us firmly focused on what was , as opposed to what should have been . 
+ scientists theorized that the oregon fungus was at least 2,000 years old , perhaps much older . 
+ no doubt those who were running things were hoping they could control the world for a similarly long timespan . 
+ and they had every reason to be optimistic : it seemed highly unlikely that anything could ever loosen the elite 's tentacular grip on the reins of power , or on our hearts and minds . 
+ which explains the veritable frenzy of schadenfreude that erupted when the visitors refused to play ball . 
+ simply by sitting and doing nothing they had given the lie to the power elite 's initial depiction of them as hostile , malevolent creatures spoiling for a showdown with humanity . 
+ that characterization was patently false . 
+ they were , if anything , passive and innocuous to the point of invisibility . 
+ one really had to be on the look-out to spot them in a scrum of cooing , statue-splattering pigeons . 
+ the more we watched the dragons the more ridiculous it seemed that they could ever harm us . 
+ actually , they tended to grow on one ; they were cute in the same way that a snuffling , irascible english pug dog could be said to be . 
+ all this became more or less clear to the public over the course of that single long afternoon . 
+ but the fires that had been so assiduously stoked by the media and the government were not to be so easily put out : all that psychic energy had to go somewhere . 
+ and with the dragons out of the picture , there was no other target around except the media itself . 
+ so on that day something truly unprecedented happened : journalists and newscasters all over the world were jeered , scolded , and had their live broadcasts disrupted by every manner of indignity and insult . 
+ one well-coiffed female reporter who had formerly been known for the adroit use of her knowledge of politicians ' dirty laundry to gain access to information was reduced to tears when she found her commentary being simultaneously parroted and refuted by the crowd . 
+ `` it 's a tense scene down here at the mall ... . '' 
+ `` no it 's not ! 
+ it 's completely chill ! '' 
+ ... `` uhh , government troops are on alert nearby , waiting for the word to -- '' `` that 's utter bullshit ! 
+ those dudes went home hours ago !! '' 
+ and so on . 
+ the people loved every minute of it . 
+ more canny reporters just turned the microphones over to the public in a bid to defuse the tension and negative energy they had belatedly recognized as being directed at them . 
+ this worked reasonably well in some cases but not in all . 
+ in london the nation 's top tv broadcaster was forced to undergo a lengthy , ribald kangaroo court in which he , his network , and the industry in general were accused in no uncertain terms of willfully distracting the public from more important issues , of creating conflict where none had existed before , of constantly protecting the rich and powerful , and `` just generally fucking things up , you wankers !! '' 
+ all in all , it was n't a very good day for corporate media . 
+ the war of the worlds devolved into a million dates and ballgames , impromptu picnics , and parties . 
+ the talking heads beat a hasty retreat . 
+ and above it all , the plump dragons indifferently blinked and yawned , apparently unaware that they had won their first battle with the great and the mighty . 
+ the most important consequence of the entire debacle , one that was to have far-reaching repercussions , was that henceforth the mainstream media quarantined itself from the dragons . 
+ except for a few independent journalists , the parks became reporter - and tv camera-free zones . 
+ this meant that the public was free to develop its relationship with the dragons slowly and naturally , without any interference . 
+ and that was to make all the difference in the world . 
+ 4 so we all went on with our lives . 
+ once it had been determined that our diminutive visitors were not going to shoot laser beams with their eyes , hypnotize world leaders into launching missiles on each other , or do much of anything at all , we rather quickly adjusted to their presence . 
+ it would be going too far to say that we became used to them ; they were too exotic , too strange , for that to happen . 
+ but for the moment people continued to go to work , hang out with friends , and spend their time in the same ways they always had . 
+ but we did have a spirited debate over where they had come from , and why they were here . 
+ oh the theories , the speculations , the conjectures and just plain crackpot ideas we came up with ! 
+ they were aliens . 
+ they were the mutant progeny of a genomics experiment gone horribly awry . 
+ they were part of an incredibly sophisticated advertising campaign for a movie or product that was yet to be revealed . 
+ they were state-of-the-art robots designed by our corporatist state for surveillance of an increasingly restive population . 
+ they were the bio-weapon shock troops of a foreign enemy . 
+ they were some kind of huge practical joke , a hoax being perpetrated by some reclusive billionaire genius who just wanted to watch us squirm . 
+ they were instruments of vengeance , sent down by a wrathful god to punish us . 
+ they were hallucinations , figments of the collective unconscious of a media - and thrill-addled public . 
+ no one knew . 
+ had we been able to catch one , our questions might have been answered , but we could n't . 
+ all of our amazing , advanced technology proved unequal to the seemingly simple task of capturing one of those little grey beasts . 
+ nets closed over empty air or bewildered pigeons ; tranquilizer darts or thrown objects like stones went just shy . 
+ the dragons were mainly found in the center of our most populated areas , so bombs , missiles , or other powerful weapons such as lasers were out of the question . 
+ we stopped short of shooting them , which is in itself an enduring mystery . 
+ it is true that government at all levels had at various stages ordered , warned , and pleaded with people to not use firearms against the dragons until their provenance and capabilities had been fully ascertained , but such official admonitions had never proven particularly effective in the past . 
+ throughout history , vigilantism , mob behavior , or just the primeval male propensity for violence had overwhelmed any frail edicts by the authorities against `` taking the law into your own hands '' . 
+ yet it is a fact that no case was ever recorded of any person in any place , whether alone , in a group , drunk , sober , habitually peaceful or pugnacious , ever using a firearm of any kind against a dragon . 
+ as those first months wore on , we continued to throng into parks to ogle them , we photographed and sketched them , we occasionally even threatened them or threw stones or other small objects at them , but we never shot at them . 
+ later , once our relationship to the dragons had changed , harming them in any way became of course unthinkable . 
+ indeed , any individual then foolhardy enough to hurt a dragon , or even speak disrespectfully of one , would have swiftly suffered the violent end at the hands of an enraged mob that one would have earlier predicted the dragons themselves would experience . 
+ the dragon 's eye effect possibly had something to do with our inexplicable reluctance to use lethal force against the creatures . 
+ as was noted , staring at them for extended periods of time had a mild hallucinatory effect . 
+ sometimes a group of men or youths would -lrb- often with the aid of some ` liquid courage ' -rrb- psych themselves up to go `` catch one of those crazy creatures once and for all ! '' 
+ and head off , full of fire , to the nearest park . 
+ but when actually in close proximity to that indifferent , slender figure which seemed never to stop curving around itself , those piercing blue eyes which were following your every move even as the dragon itself remained motionless -- well , it was the rare group of would-be gallants which did n't finally decide to follow more pacific pursuits . 
+ most of the time the men wound up on the grass or a bench , staring bemusedly at the beasts , just like all the others caught in the dragon 's eye . 
+ in the beginning , their invulnerability to all our human wiles was certainly humbling . 
+ why , had n't we read it a thousand times , imbibed it with our mother 's milk ? 
+ that comforting tale about how homo sapiens ' superior intellect had allowed our species to outwit every fierce and powerful beast on land or in the sea . 
+ outwit , domesticate , consume , control . 
+ and along with this triumphalist account of our rise to dominance over every non-microbial life form on the planet had come a natural pride in our mastery , as well as a certain disdain towards the snarling leopard and gasping tuna , which had let themselves be conquered so easily . 
+ but we could n't catch the dragons . 
+ to this day , no human has ever put their hands on one . 
+ and that has made all the difference . 
+ had even one dragon been captured , put in a cage , displayed for all to see like the wild creatures which had had the misfortune to come within our grasp , then at once we could have categorized them . 
+ then we would have briskly assigned them a place in one of the coldly analytical taxonomical schemes which our kind formerly found so necessary to construct . 
+ they would have inevitably been reduced to the level of object -- a bit odd , even unique , but classifiable nonetheless . 
+ but the uncapturable dragons were able to maintain their quiet , seemingly harmless mystery . 
+ 5 but at this point that did n't mean we had given up on getting our hands on one of them . 
+ one of the last popular tv shows -lrb- how strange to write those words , stranger still that they are true ! -rrb- 
+ was called hangin ' with st. george 's crew . 
+ the title of course referred to the dragon-slaying english saint . 
+ the program faithfully followed all the conventions of the reality-show genre . 
+ it relied on gobs of blaring narration and non-stop , flashily-cut , substance-free interviews . 
+ themselves digitally captured in their native habitat of living room , back yard , or front stoop , the soon-to-be heroes would wax poetic about how their inimitable combination of brains , guts , group loyalty -lrb- `` der ai n't nothin ' i would n't do for deez guys ! 
+ nothin ' ! '' -rrb- 
+ and sheer can-do spirit was going to be the difference between their ` crew ' and all those other losers . 
+ it was rawly hilarious , it was touching , it was classic man-on-the-street tv . 
+ then there were more interviews with their -lsb- please select -rsb- : -lrb- long - suffering / shrill / affable / dimwitted -rrb- spouses , and still more interviews with their offspring , who fell somewhere on that infinite scale which ranges from charming cherub to loathsome brat . 
+ as was usually the case in that era , the content of the show , what was actually happening on the screen , did n't matter very much . 
+ all that people cared about was that it hold off the boredom for a short while and help sate our apparently endless appetite for titillating details of other people 's lives . 
+ oh , how mind-numbingly bored we were in those days , brothers and sisters ! 
+ there was no form of entertainment too vacuous , no pastime too asinine or degrading for our over-sexed , over-stimulated , unspeakably weary souls . 
+ stuck in jobs we usually hated and in relationships with people we did n't really know , hooked on mindless , environment-ravaging consumption , strung out on endless hours of television and internet ` surfing ' , -lrb- what a consequence-free , bubbly euphemism for the reality of our addict 's stagger across that dark , deceptive landscape ! -rrb- 
+ we moved about in what one insightful observer called , `` a state of continuous partial attention '' . 
+ we were a lost people , adrift on a shallow , lonely sea . 
+ all of which helps explain the ensuing events . 
+ the st. george show ended every week as all such popular fare did : in a chaotic , anti-climactic jumble . 
+ `` the boys came , they saw , they were conquered , '' summarized every episode , whether it was taped in portland , miami , or kansas city . 
+ the boisterous group march to the park ; a few minutes of farcical play-acting and pantomime as the men ` demonstrated ' like male gorillas , pounding their chests and prowling dangerously about , far underneath the hunched , impassive figures of the dragons ; the gradual falling-off of high spirits and tension ; the sitting-down that signaled the end was near : this formed the inevitable arc of the story . 
+ a cultural critic presciently noted that we were following a script whose beginning was written by us , but whose conclusion was penned by the dragons . 
+ most people agreed that the best part of the show was the very end , when the sheepish men were confronted with the video of themselves staring slack-jawed at their erstwhile foes , who had never for a moment halted their incessant preening . 
+ one poor gentleman in san antonio , texas , acquired the unenviable sobriquet of `` drooling dave '' after footage of him ... well , drooling -- went viral on the web . 
+ st. george had a brief afterlife in the guise of an international version -lrb- `` this week : st. george in rio ! 
+ watch the boys from the favela try to catch a dragon for the carnaval ! '' -rrb- 
+ but the moment for such diversions had passed . 
+ after the turning , time was simply not something to be wasted on sitting on a couch watching the foolish , programmed antics of strangers . 
+ 6 as the months passed , we began to incorporate the dragons into our routines . 
+ many urbanites had always enjoyed eating their lunch outside or going for a stroll in a nearby park or plaza ; now an overworked secretary or harried boss could get away from it all for a few precious minutes of dragon-induced relaxation . 
+ for it should not be imagined that the dragon 's eye effect was an unpleasant or mind-addling , anaesthetizing experience . 
+ reader , let me paint you a picture ... . 
+ envision yourself sprawled in the center of an endless , flower-carpeted meadow . 
+ a warm sun is bathing you with its golden rays , while a soft breeze caresses your brow . 
+ there is birdsong , and something else besides : an indescribable humming or soft fluting sound that gently rises and falls like swells on a calm sea . 
+ you are n't hungry , or thirsty , or worried . 
+ you are n't anything at all . 
+ your consciousness , every prickly , self-absorbed , chronically nervous bit of it , is slowly and deliciously dissolving into the grass , the flowers , the birds ; and all the while that haunting , half-familiar fluting is gradually growing louder , filling every fiber of your being with a powerful sense of peace and fulfillment ... . 
+ not bad for ten minutes on a park bench ! 
+ as the new yorker put it , `` this is the new pot . '' 
+ and , unbelievably , recreational drug use as well as alcohol consumption did decline moderately . 
+ more than one early afternoon meeting had to be rescheduled because too many of the people who were supposed to be there -- were n't . 
+ interestingly , it was `` the least among us '' , the homeless , mentally disturbed , alcoholics , and other on the periphery of our society who saw their fortunes change the most in the months following the dragons ' arrival . 
+ not to put too fine a point upon it , since they were often unemployed and spent a lot of time in parks and public places anyway , they were in a perfect position to soak up all the beneficial effects of the dragon 's eye . 
+ it was really an unforgettable , eerie sight : clusters of hard-bitten , roughly-dressed men and women , people who , as lincoln in describing himself had written `` had seen a great deal of the back end of life '' sitting or lying peacefully in clusters around the somnolent dragons . 
+ in fact , they were the first ones to discover the phenomenon of `` flavor '' . 
+ it turned out that although the dragons were , as noted before , seemingly physically identical , the dragon 's eye effect they engendered in us was not . 
+ there were subtle differences involving the length and strength of the experience , as well as in the general tone or quality . 
+ some dragons seemed to induce a richer but slightly darker high ; others a milder but brighter experience . 
+ there were other delicate variations difficult to describe to one who has not been in the eye . 
+ the general public learned of all this when the police , parole officers , social workers and others who made it their business to keep track of such citizens noticed that their daily routines had changed , and that they could now be found in some places and not others . 
+ `` smokey , why do n't i see you near the newspaper kiosk anymore ? 
+ why are you always near the fountains now ? '' 
+ `` hell , cap’n , cuz i do n't truck with no mellow yellow ! 
+ i 'm pure red !! '' 
+ and once the laughter had died down , ` smokey ' , aided enthusiastically by his fellow brothers-of-the-bottle , duly explained the concept of flavor . 
+ it turned out that not only had smokey and his pals identified a pattern but they had given names to the variations . 
+ mellow yellow was the dragon near the newspaper kiosk , red the one near the fountain of this particular urban park . 
+ the animals were nothing if not creatures of habit : they evidently chose exactly the same perches every day . 
+ each dragon 's sobriquet was fanciful but did give some rough indication of the psychic experience one could expect from spending time in close proximity to it . 
+ now , where there is an opportunity and motivation for a new business to appear , it usually will . 
+ the smokeys of the world wasted no time in parlaying their connoisseurship into cold hard cash . 
+ `` now sir , what would you be wanting this fine morning ? '' 
+ `` well , i 'll tell you , i 've been having some problems with my lower back -- '' `` say no more ! 
+ i 've got just the thing : sweet dreams ! 
+ this little fellow will have you turning cartwheels in no time !! '' 
+ or : `` ma’am , i do n't wish to pry but you do seem down . 
+ might i inquire as to the nature of your trouble ? '' 
+ `` oh , it 's this job -- i 've been bucking for a promotion but ... . '' 
+ the good woman might be referred to new dawn if she wanted a real pick-me-up , or hawaiian surf if she just wanted to relax . 
+ the spectrum of emotions evoked by the different dragons was not that wide ; it really only ranged from a mild pleasurable sensation of lassitude to a rather more intense feeling of optimism and confidence . 
+ but it was sufficient to satisfy the customers , and to keep them coming back . 
+ occasionally there were arguments and even altercations over who ` owned ' a particular dragon and thus had guide rights . 
+ actually one would have expected far more of that sort of thing , given the unfortunate past proclivities of many of the guides . 
+ it 's true that there were more than enough beasts to go around . 
+ but more crucial was the general calming effect that the dragons were beginning to have on us . 
+ it was noticeable . 
+ crime was dropping , and not just felony offenses like murder and robbery , but everyday punch-your-neighbor-when-you-are-drunk misdemeanors too . 
+ life was still unsatisfactory for most of us -- too much pressure , not enough time or money or opportunity -- but at least now there was an easily accessible off-ramp that allowed anyone to reduce their stress level without resorting to drugs , alcohol , or violence . 
+ 7 city halls worldwide scrambled for resources as the usage rate at their parks and public facilities skyrocketed . 
+ people wanted to be near the dragons , and not everyone was content with sitting on the ground . 
+ that meant benches , lots and lots of benches . 
+ for the dragon 's eye to fully take hold , the animals had to be completely visible . 
+ so structures and tree branches that might obstruct the public 's view had to be removed . 
+ this was arduous , expensive public work , and local governments grumbled , then levied bonds to cover the cost . 
+ for once , citizens paid without complaints . 
+ at the national level , governments watched and waited , hoping that it was all just a bizarre passing phase , like hula hoops or beatlemania . 
+ they saw our gatherings in the parks and public areas as a needless security risk : `` all those people ... just mixing and , and , sitting around looking at damned dragons ! '' 
+ and the industrialists and ceos were none too thrilled at the loss of productivity caused by increasing numbers of people leaving work early , coming in late , or not showing up at all . 
+ but there was little the authorities and the plutocrats could do . 
+ perhaps they started to feel slightly uneasy when they realized that none of the normal blandishments or penalties was going to have the slightest effect on us . 
+ initially manifested in the simple act of defiance of not showing up to work , people were starting to become less docile , and less likely to just accept what was offered them . 
+ at first going to the dragons was something you did alone ; it was a slightly guilty pleasure one indulged in a bit sheepishly . 
+ but as the months wore on we gradually came to realize that there was nothing to be embarrassed about , that whatever the provenance of the dragons ' power over our sensory systems , it was both modest in scope and entirely natural . 
+ ahh , that is a term -- natural -- whose meaning has evolved even as its stock among the people has soared ! 
+ reader , will you kindly forgive an inveterate language lover for his lexicographical musings ? 
+ here are a few salient senses of the word from a pre-dragon dictionary : 1 -rrb- based on the innate moral sense , instinctive ; 2 -rrb- constituted by nature , as in `` a natural year '' ; 3 -rrb- normal , conformable to the ordinary course of nature ; 4 -rrb- physically existing , not spiritual ; 5 -rrb- not artificial ; 6 -rrb- destined to be such by nature , as in `` natural enemies '' ; 7 -rrb- not enlightened or communicating by revelation . 
+ i would only point out that in a world where a five-minute walk will confront you with a creature you had always thought existed only in fables , people must inevitably expand their understandings of senses 2 and 3 . 
+ senses 4 and 7 would also inevitably shift , but that took a little longer . 
+ to return to our story , the point is that from the beginning the people accepted the dragons ' presence , and adapted to co-existence far more rapidly and with less fuss than one would have thought possible . 
+ we gradually came to see them as -- natural , as living beings which god or some as-yet unrevealed force had chosen for some reason to put in our path . 
+ once we had become comfortable interacting with them as individuals , we started to involve larger groups of people . 
+ first , couples and families started to quietly plan fine weekend afternoons around `` a visit to the park '' , then circles of friends began to include a little dragon 's eye in their picnics and ball games . 
+ schools incorporated it into their field trips ; the more enlightened ones even into their curriculums . 
+ at some point we looked around and said something to the effect of `` who are we kidding ? 
+ this is fun , let 's go . '' 
+ we did n't realize it then , but this was a big moment , because it marked the point when individual psychological satisfaction and social welfare , the needs of the community , came to be linked , as they had at times been in the past . 
+ humanity had begun its long trek back from the isolating technological morass in which it had become mired . 
+ looking back on the entire chain of events , there is almost no part which does n't appear improbable , even miraculous . 
+ how was it possible for a political , socioeconomic , and military power structure that was so deeply entrenched , so firmly in control of all the levers of authority and control , to crumble so quickly ? 
+ what killed the fungus ? 
+ if you could have stopped someone on the street then and described the world we live in today , a mere 30 years later , they would never have believed it was a vision of their own future you were painting . 
+ and it is a curious fact that we ourselves , who have lived through it all , can not really account for the speed of the change , or the ease at which we cast off an entire layer of existence and replaced it with something so radically different . 
+ but perhaps it is not so mysterious . 
+ the rulers of the world might have had a thousand tools at their disposal to dominate , divide and distract us , each more cunning and irresistible than the last . 
+ they could employ these tools as weapons to distort the laws in their favor , to confuse us and keep us so busy toiling , consuming and playing that we did n't have the time or mental space to look around and see the truth . 
+ they could fabricate enemies out of thin air . 
+ they could make us eat and drink poison and pay for the privilege . 
+ they could even lock away the dangerous , destabilizing ideas of justice and equality in a box high on a dusty shelf where none of us could ever hope to find them . 
+ but they could n't do the simplest , yet most important thing of all : they could n't make us happy . 
+ and that simple fact was the root of all that was to come . 
+ underneath all the smoke and mirrors being conjured by the technocratic sorcerers of the modern world , humanity still existed , a small child looking around with grave , uncomprehending eyes . 
+ 8 entire neighborhoods began to go to the dragons together . 
+ that required some amount of coordination , and one of the myriad aspects of our psychological and social evolution that was so fascinating and unexpected was that for that coordination we tended to go door-to-door and not use the phone or some slick digital technology . 
+ we actually stepped out of our houses and apartments and walked next door , or down the street , to arrange the day and time with our neighbors . 
+ unbelievable ! 
+ the merchants of electronica and ` social media ' -lrb- an oxymoron if there ever was one -rrb- were nonplussed , to say the least . 
+ this was n't supposed to happen ! 
+ everything had been going in the opposite direction , toward the corporate-themed sanctity of the atomistic individual , toward hedonistic choice , toward an ever-increasing frantic fluidity in human relations : social engineering as brownian motion . 
+ it was an austere and terribly efficient vision of society and human motivation , and now we were spoiling it by suddenly hanging around on our stoops , wasting gobs of time with our friends and neighbors , and trooping off to a park to ogle some damned reptiles . 
+ worst of all , none of this could be sold . 
+ developers tried of course to pump out dragon-themed apps and computer games , but they were all dismal failures . 
+ the dragons never did anything , so the standard commodifying approaches -- cute , quirky , erotic , violent , or some combination of those -- did n't work . 
+ one start-up attempted to market a dragon 's eye app , but it was laughed off the digital shelves . 
+ in this particular case , people were not willing to accept electronic substitutes for the real thing . 
+ the lonely , stepford-wives impression one used to get when walking down residential streets became a thing of the past . 
+ street corners grew lively again ; cafes , street vendors , buskers and sidewalk musicians did a booming business as people began to take their first , tentative steps back to a more communal social life , one based outdoors . 
+ neighborhood league athletics , picnics , street games , festivals , concerts and theatre , amateur talent shows , street art exhibitions -- any activity that got people off their bums and interacting in public was rediscovered . 
+ along the way , fun was rediscovered too . 
+ we relearned many things that our ancestors had known perfectly well . 
+ being together with people you know is fun . 
+ meeting new people , lots of new people , is fun . 
+ meeting people who are possible romantic partners is really fun . 
+ forming stable bonds of friendship and affection with people who live near you , or who share your interests , is fun . 
+ getting together with these people and engaging in various activities like dumb games or athletic contests at which you might broaden that circle of friends -- this too is fun . 
+ the electronic replication and virtual manipulation of humanity 's deepest , most fundamental social and emotional processes -- how cold , artificial and just plain unnecessary it was all coming to seem now ! 
+ this is what we discovered when we opened our doors and our hearts to the other : people are fun . 
+ 9 and corporate titans , except those lucky enough to be in the sports equipment business , continued to pull out their hair . 
+ the infotainment industry , still licking its wounds after the great nothing , made a few timid , half-hearted forays into this new market . 
+ beyond the handful of obligatory reality shows -lrb- `` who is the best busker ? '' 
+ ; `` street bands of berlin '' ; `` london pub crawl '' ; `` softball champs of new york '' -rrb- there were one or two sharply-written , intelligent urban dramas produced . 
+ they represented the best the industry had to offer . 
+ they were the kinds of shows people had only recently gone nuts over , binge-watched , tweeted about , etc. . 
+ and they were spectacularly , unequivocally ignored , lasting less than a season . 
+ it must have been around this time that the men and women who occupied corner offices and penthouse suites began to have emergency meetings with their staffs . 
+ the media also tried to cover the burgeoning movement as straight news , but even that did n't go very well . 
+ news teams doing perfectly innocuous stories on street festivals and sports tournaments were harassed and even chased away by the locals . 
+ `` what the hell do you guys want ?! 
+ we 're sick of you !! '' 
+ shouted one irate spectator at a street gathering to a news team prepping their equipment . 
+ bewildered television reporters and media personalities who had grown accustomed to kid-glove treatment could do little but retreat . 
+ the public seemed to have lost its tolerance for the casual intrusion of privacy and objectification that had been part and parcel of modern media operations . 
+ one should be careful not to exaggerate matters . 
+ we were not suddenly living in a socialist free-love commune . 
+ there was still crime and addictions of all kinds ; people still watched tv and spent time existing vicariously on the internet . 
+ but we now had begun to do less of these things . 
+ incidentally , this trend of people worldwide to consume their leisure-time less electronically and more face-to-face soon acquired a name : the analog movement . 
+ it was both a precursor and a harbinger to the later , greater revolution that was to transform our world . 
+ we had also lost our patience for our government spying on us . 
+ this too flew in the face of the conventional wisdom . 
+ leaders , policymakers and pundits had been united in their belief that the public was willing to accept a considerable degree of electronic monitoring in exchange for ` security ' against crime and terrorism . 
+ all major cities were festooned with cameras and surveillance equipment ; internet and cell phone use was tracked and logged ; and this tower of info-babel was then stored by a semi-secret consortium of government agencies and private security firms . 
+ like that fungus the construct was self-propagating : any occurrence of violence could easily be portrayed by the government as an act of terrorism or public disorder that merited increased security measures . 
+ the enhanced monitoring and control both raised the baseline insecurity level of the populace and provided more opportunities for the government to identify , and attempt to rein in , divergent behavior . 
+ it was a vicious cycle , and gained in intensity with every iteration . 
+ as with the larger construct constituted by the business-media-government axis , one need not expend too much energy looking for power-hungry despots or sinister proxies for big brother . 
+ with the exception of a few totalitarian regimes whose leaders really did have as their one and only priority staying in power , the architects and operators of these systems saw themselves as protectors of the citizenry and of public order . 
+ and , with some abuses and overreaching taken into account , perhaps they were . 
+ but as with capitalism , the media and the entire cavalcade of technological and social ` progress ' , it had all gone too far , too fast . 
+ it turned out that people were n't ready to re-skill themselves every few years in a desperate attempt to stay employable . 
+ they were n't willing to live out their lives in a virtual electronic cocoon . 
+ they did n't want to be constantly looking over their shoulder for some imaginary enemy or threat . 
+ and they were really tired of having their shopping trips monitored , or their conversations with their grandmothers recorded . 
+ `` if all this is true , why did people tolerate it for so long ? 
+ indeed , why did they even seem to ask for it , in a myriad of ways ? '' 
+ a fair question . 
+ the short answer is that humans are not perfect , either as individuals or in the aggregate . 
+ they are excitable , lazy , irrational , selfish beings susceptible to snake oil salesmen and demagogues of all stripes . 
+ and they are often insufferably arrogant , self-righteous , short-sighted , intolerant , violent , and even cruel to boot . 
+ yet , for all that , humans are `` a little lower than the angels , '' as psalm 8:5 reminds us . 
+ pico della mirandola , in his oration on the dignity of man , has god tell humanity : thou , constrained by no limits , in accordance with thine own free will , in whose hand we have placed thee , shalt ordain for thyself the limits of thy nature . 
+ we have set thee at the world 's center that thou mayest from thence more easily observe whatever is in the world . 
+ we have made thee neither of heaven nor of earth , neither mortal nor immortal , so that with freedom of choice and with honor , as though the maker and molder of thyself , thou mayest fashion thyself in whatever shape thou shalt prefer . 
+ thou shalt have the power to degenerate into the lower forms of life , which are brutish . 
+ thou shalt have the power , out of thy soul 's judgment , to be reborn into the higher forms , which are divine . 
+ perhaps at some primal species level we had sensed that the constellation of civic , social , and economic forces had reached a tipping point , and would soon have put us irrevocably on the side of the brutes . 
+ 10 so we , the people , began to resist . 
+ we began by getting rid of the cameras . 
+ no one knows why we started with them ; it could have been because of their sheer ubiquity . 
+ and they were such obvious symbols of `` the occupation '' , as some of us had begun to call our own governments . 
+ the public was gentle but implacable -- once the first cameras fell , we did n't stop until the last one was gone . 
+ initially governments thought it was the work of the usual teen vandals or some new dissident or nihilist group . 
+ the cameras were quickly replaced , and just as quickly destroyed or stolen again . 
+ the police tried arresting selected individuals whom they had caught red-handed , but in the time it took to process their paperwork , a hundred more cameras were taken out of commission . 
+ it became a kind of game : everyone got in on the fun , including white-collar workers and respectable members of the community . 
+ in the several months it took for the process to run its course , -lrb- meaning , when there were no more cameras to destroy -rrb- it was not unusual to see a cluster of polished-looking women in business skirts chatting as they daintily picked up rocks and hurled them at an inoffensive traffic camera . 
+ the authorities pleaded for people to stop but we were no longer listening . 
+ when government representatives asked why people were doing it , they were met with a baffling range of responses , none of which fully explained why millions of law-abiding citizens had suddenly taken it into their heads to demolish the state 's surveillance and security apparatus . 
+ `` everyone else is doing it ! '' 
+ `` analog , hell yeah !! '' 
+ `` i just felt like it ... '' and most ominously , `` i never liked those damned things . '' 
+ the dragons did not come up in these exchanges and interrogations . 
+ no one said , `` we do n't want to be recorded while we are with the dragons . '' 
+ yet that was the inevitable result . 
+ in the space of a few months , almost every government in the world had lost its ability to monitor , and thus control , the movements and activities of its citizens . 
+ this process took longer of course in authoritarian states . 
+ people in such countries -lrb- and there were only a handful -rrb- tended to ignore the cameras , or adopt more passive measures like erecting huge screens in front of the cameras in and around the parks . 
+ the leaders ' conundrum was simply the sheer number of ` criminals ' : even the harshest regimes could not arrest all of its citizens . 
+ the problem was fated to disappear for the simple reason that eventually there would no longer be anyone on the viewing end of the cameras . 
+ it was laughably anticlimactic how this tumultuous tapestry of human variety , social interaction and civil disobedience was transformed into a tame , kittenish snooze-fest as soon as we reached the parks and plazas . 
+ removing the cameras had provided a brief bit of excitement , and our days were also fairly hectic while all those new benches were being put in and the land around the dragons was being cleared . 
+ but once this was over things really settled down . 
+ it was just us and the dragons , which at this stage meant lots of ball games , picnics and concerts in the park , and dragon 's eye lazing . 
+ yes , i will be the first to admit it : some of us did feel let down . 
+ all that feverish socializing , the reclaiming and revitalizing of our streets and neighborhoods , the thrill of successful resistance against the supposedly impregnable security state -- it had all been so unexpected , so liberating , so invigorating . 
+ now here we were , shaken and stirred , as it were , and gathered together in public venues all over the globe . 
+ were we really going to sit on our keisters and doze en masse ? 
+ apparently , yes . 
+ for the present , once we had entered the parks and squares , there was a relaxation of monumental proportions as the dragon 's eye took its inevitable effect . 
+ cotton-candy clouds scudded silently overhead ; the wind whispered to the leaves ; birds sang and crickets chirped . 
+ and , for the first time in a long time , humanity was quiet , and dreamed . 
+ 11 no one knows now which humble citizen in which neighborhood in which country first came up with the idea of the dragon song . 
+ initially it might have simply been a natural response to masses of people moving in unison to the parks . 
+ or perhaps some military veteran , more creative than most , looked around as his block straggled haphazardly along like napoleon 's army retreating from moscow , and decided that a bit more discipline and esprit de corps would n't do any harm . 
+ and it is a fact that the first dragon songs were basically rip-offs of military `` jodies '' . 
+ jodies were simple chants that soldiers sang together as they marched or ran . 
+ trainers used them to keep the soldiers in step and generally raise their spirits . 
+ typical jodies extolled the bravery or exploits of the particular unit , or lamented the hardness of a soldier 's life : they say that in the army the coffee 's might fine . 
+ it looks like muddy water and tastes like turpentine . 
+ or recounted some humorous story : saw an old lady running down the street , had a chute on her back , jump boots on her feet ... these first , martially-inspired dragon songs could never be accused of excess originality . 
+ containing a full measure of male braggadocio and a liberal topping of obscenity , they seemed to be more than anything else expressions of neighborhood pride . 
+ they say that catching dragons is really hard to do but they do n't know about boyle st. and their dragon-catching crew . 
+ by now we did n't really want to catch any dragons . 
+ we had grown too addicted to the eye for us to risk `` killing the golden goose '' by manhandling or irritating them . 
+ but we did somehow feel the need to respond to them in some public , original way . 
+ and as the stony ground of a failing modernity began to be replaced with a new , richer soil , such expressions of creativity started to pop up everywhere , like flowers in the spring . 
+ the outpouring was multigenerational . 
+ for example , the young boys and teens tagging along with the neighborhood teams started to come up with their own lyrical contributions . 
+ their chants relied more on the african-american tradition of `` doing the dozens '' , a kind of ritual taunting of one 's rival : i saw them flat creek boys walking down the street , could n't catch no dragons , no shoes on their feet . 
+ or : yo , what time is it ? 
+ time for harbor to get the hell out the way and let cumberland go to work ! 
+ the dragons were n't neglected either : roses are red violets are green that 's the weirdest dragon i ever done seen ! 
+ wives and girlfriends , who had mainly been relegated to the back of the pack with the picnic baskets and younger children , began to make their presence felt . 
+ a particular type of street performance developed where the women would ritualistically move up to flank the men ; then would ensue a series of sung exchanges which often took the form of good-natured ribbing : women : my man said he 'd catch that dragon , catch that dragon ... men : woman , you know it 's true . 
+ women : but i 'm still waiting to pet that dragon , pet that dragon ... man : woman , i 'm telling you ... . 
+ in america , the original creators of so much that was good , vital and alive in national as well as in world culture , african-americans , were certainly not going to be outdone by a bunch of suburbanites . 
+ after all , the dragons were clustered right in the areas where they often lived , in the heart of the city . 
+ so they responded with vigor : with a wham ! 
+ bam ! 
+ thank you ma’am ! 
+ we knocked your crew back , now why do n't you scram cuz you 're busted , crusted , even your mama 's disgusted with all that you 've done to be so distrusted . 
+ the whole world knows our neighborhood 's fly clean streets , good schools -- we 're american as apple pie ! 
+ where you stay it 's lookin ' sci-fi empty lots and hoodlums -- it 'd make darth vader cry . 
+ our dragon , hell : it wears versace y ' all got a lizard , blotchy and splotchy . 
+ in our park , we ca n't help braggin ' , one glimpse of your reptile people start gaggin ' . 
+ face it : we 're the revolution you 're a pollution we 're the solution you 're lilliputian , facing retribution and a bloody conclusion . 
+ take that ! 
+ 12 within a year of the dragons ' appearance , weekends and holidays had been transformed into a new mass social phenomenon that was a combination of parade , concert , community meeting and picnic . 
+ every block boasted a dragon-song team ; as time went on matching t-shirts and caps became de rigueur . 
+ some wit had the idea of splashing paint on a pillowcase for a make-shift flag , and the dragon banner was born . 
+ these grew to be enormous , brocaded affairs , as large as a shop window , gorgeously illustrated with the street or neighborhood name , and sporting a logo , often an animal , chosen to represent some desirable trait such as bravery or fierceness . 
+ typical examples include the `` clairmont lions '' or the `` hillsdale eagles '' . 
+ but not all neighborhoods selected such conventional names : there were the `` bethany spinners '' , the `` gravesend rowdies '' , and even the `` laurel heights wastrels '' , to choose just a few examples from america . 
+ each banner was mounted on a hand-carved wooden staff and sat in a gimbaled belt . 
+ the lucky bearer more often than not had to out-drink all his neighbors for the honor of carrying the banner . 
+ later on , wearing a t-shirt near a dragon would have been considered blasphemous . 
+ but let us not get ahead of ourselves ! 
+ at this point , the garment and textile industries were just thanking their lucky stars for the coming of the dragons and the new business opportunities they represented . 
+ the full secular flowering of the dragon song achieved the status of true folk-songs . 
+ these natural outpourings and expressions of the populace 's hopes , fears and passions became an indelible part of our popular culture and they were recorded , anthologized , and analyzed by ethnographers and musical historians in countless languages and countries . 
+ like the dragons themselves , they were compelling but more than a little mysterious in form and provenance . 
+ some were simple , humorous , and did n't appear to have too much at all to do with the dragons : ate all my spinach , but i 'm not so strong , saturdays are short , mondays are long , told my boss to shove it , i got the boot , it do n't matter , cuz life 's just a hoot ... . 
+ or : got beer , got snacks , so i 'm all set . 
+ got a dragon on the tv , keep it as a pet . 
+ with a rousing refrain of `` hey , hey , what the hell !! '' 
+ these amusing ditties had n't strayed far from their roots as marching chants . 
+ similar in tone were songs in which the dragons appeared as figures of fun , or as foils to the fantastic , baron münchhausen-like exploits of the protagonist : i 've flown around the world in a pink balloon , sailed the seven seas in a plastic spoon finally found a dragon i could call my own now we 're living large in a trailer home ! 
+ lighthearted pieces like this one typically went on for many verses . 
+ many of the lyrics were improvised , and people liked to sing them at a window-rattling volume . 
+ 13 but as time went on the songs began to touch on darker themes . 
+ people started to sing about their families , about unrequited love ; they sang about the difficulty of making a living , about war , about all the vicissitudes of human life . 
+ it was also around this time that the dragon songs began to acquire names . 
+ before they had been referred to as `` that spinach song '' , or `` the one about the drunk guy '' , and the like . 
+ but these more serious lyrics called for the dignity of titles . 
+ here is one of the first songs with an anti-war message , a topic that became increasingly popular . 
+ its title was `` coat of sadness '' : she wore a coat of sadness for her man had gone off to war . 
+ she cried out , it was madness that her man had gone off to war . 
+ once the songs began to move in the direction of protest music their progress was rapid and unstoppable . 
+ it was as if the people had only been waiting for an opportunity to express their feelings of dissatisfaction , disappointment , and anger at their political and economic leaders over a host of issues . 
+ and although the circumstances under which these songs were being performed were new -- masses of people marching to a park to hang out with dragons -- the tone and message owed a lot to the past . 
+ a protest song like `` standing in the rain '' would not have been out of place at a 60 's campus sit-in : when a man 's done his level best but got nothing for his pains ... when there 's no money in his pocket and he 's standin ' in the rain ... . 
+ the authorities became worried as this type of song became more prevalent . 
+ worry turned to real fear when the neighborhood teams started to combine , creating moving masses of hundreds and even thousands of citizens , chanting and carrying their gigantic banners . 
+ even in so-called democracies , popular unrest leading to violent revolutions had been known to arise from far less incendiary conditions . 
+ with the surveillance cameras gone and corporate media no longer welcome among the people , they could no longer sit back and monitor the situation from the comfort of a computer operations center . 
+ they had to send actual people out into the street to monitor the situation and contact them with radio or cell phones . 
+ and that simple action now carried its own risks , because people had begun to behave differently in public . 
+ it 's rather difficult to put in words , but one was distinctly conscious when walking down the street of a new energy in the air . 
+ people were far more communicative than before , much more willing to stop a friend or acquaintance in the street , begin a conversation , and sustain it . 
+ the frantic multitasking , the clutching of a smart-phone as if it were a magic amulet , became yet another vanishing sight from our recent , unlamented past . 
+ as if the healing aura surrounding the dragons had spread everywhere , things just slowed down . 
+ express trains still ran , people continued to eat fast food , but our everyday social behavior had begun to alter in ways that militated against these practices and habits . 
+ this civilizational deceleration revealed itself in forms large and small . 
+ we talked to each other a lot more now . 
+ we even looked at each other more . 
+ people felt themselves to be more connected than formerly , not just to their family and friends , but to casual acquaintances and even strangers . 
+ once could almost perceive the emotional sinews of human society growing tighter and stronger every day . 
+ because we were spending more time with each other , we developed increasingly sensitive social antennae . 
+ before , people had found it normal , even psychologically necessary , to ignore the annoying other . 
+ no longer . 
+ the substitute world that we had through our own passivity and inaction let metastasize around us began to fade out , bit by plasticine bit . 
+ and as it did so , we were regaining our innate propensity and talent for awareness of other human beings . 
+ inconveniently for the security state , this meant that it was no longer a simple matter to station strangers on street corners to watch us . 
+ the category of `` legitimate nonparticipant '' was not recognized by communities any more . 
+ just as we now did n't accept being under surveillance or being ` covered ' by news organizations , we no longer tolerated outsiders being present when we gathered . 
+ `` join us -- you 're more than welcome . 
+ or leave . '' 
+ that was now our message to every stranger who entered our neighborhood . 
+ this was the hard fist hiding under the soft , pleasing fabric of our emerging , hyper-interactive civilization . 
+ togetherness was what we now yearned for , togetherness and real belonging . 
+ and any aspect of modern life that detracted from this unity , no matter how indispensable it might have seemed before , began to be remorselessly eliminated . 
+ yet something was still lacking -- that mysterious element that must be present for a citizen to join a demonstration or even to leap up and volunteer to man a barricade rather than retreat into the anonymous security of the crowd . 
+ that missing ingredient , it would turn out , was love . 
+ for the moment , no matter how loud and enthusiastic the crowd , the inevitable conclusion of our mass marches was not a bang but a whimper . 
+ rather than head for the nearest large public area and take the demonstration to the next level , at some point the people always broke up into their neighborhood teams and headed peacefully to their customary park or small square , where the dragons were waiting . 
+ one could almost hear the sigh of relief from the police and the political leadership . 
+ later they were to find that their reaction was premature , to say the least . 
+ 14 the dragon songs continued to evolve . 
+ one could now hear songs that did n't fit in any traditional category . 
+ they were n't social or political critiques , nor were they romantic or humorous in nature . 
+ they seemed to occupy a new and hybrid genre , one that was springing up in the strange , fertile space the dragons seemed to have opened up in our collective consciousness . 
+ the haunting `` thousand eyes '' is a good example : the city has a thousand eyes but none have eyes for me . 
+ the busy street , the crowded bar , and who is there for me ? 
+ it shares a certain speculative , meditative tone with the other songs being created at this time . 
+ our marching style altered accordingly : the exuberant , bouncing rhythm gave way to a slower , more measured cadence . 
+ and we stopped clowning around during the march , drinking alcohol , passing around snacks , etc. . 
+ we just took the whole thing more seriously . 
+ it was noticed that elderly people seemed to participate in greater numbers when people were singing this type of song . 
+ and once they came out into the streets to join in , they stayed with us . 
+ for a period of about six months the dragons themselves had a decidedly more marginal presence in the lyrics of the songs . 
+ it was as if we humans had things to work out amongst ourselves before we could return to them , before we could confront , clear-eyed and without distractions , these new and enigmatic additions to our world . 
+ and this seemed essential suddenly : that our view of them be as lucid and objective as possible . 
+ we had begun to feel that the dragons were somehow important . 
+ as imperceptibly as spring turns to summer , they had ceased being mere spectacles and curiosities of nature , alien creatures useful for the mild high they gave us . 
+ the dragons had become linked to us in a strange and unexpected way . 
+ and there were now those among us who believed that their coming had awakened a force deep inside humanity ; that something had begun to sluggishly stir , something that would have been unimaginable just a short time before . 
+ it must be noted that no part of the public 's response to the dragons was ever controlled , planned or coerced in any way . 
+ every phase , every step forward -lrb- and it was progress , was n't it , brethren ! -rrb- 
+ arose from a deep , instinctive place in the hearts and minds of the people . 
+ and it was all so mysterious ! 
+ like the dragons themselves , which had so suddenly and unexpectedly appeared in our world , our response to their presence , be it the songs , the formation of neighborhood marching groups , or our reluctance to engage with the dragons physically , remained a source of puzzlement not only to professors and pundits , but to us , the participants , as well . 
+ nothing like this had ever happened before : a worldwide movement drawing in millions , then tens of millions , then hundreds of millions of people , all marching , chanting , organizing , and generally acting with an unprecedented degree of unity and collaborative spirit . 
+ from what dark , secret spring , what hitherto unsuspected fount of fervor and devotion did all this public ardor stem from ? 
+ i mean of course ardor for the dragons . 
+ for that was the most striking aspect of what came to be called `` the turning '' : our sea-change in feeling toward the creatures . 
+ the transformation was so fundamental that it was more akin to an alteration in our physical perception of the dragons than a mere shift in opinion . 
+ we simply saw them differently now . 
+ whereas before they were undeniably interesting , but still alien and even somewhat repellent , suddenly they were alluring , captivating . 
+ humanity seemed to wonder now , `` how could we not have noticed the luster in those turquoise eyes of yours ? 
+ or the way the sunlight seems to spend an extra moment resting on your skin , gently burnishing it -- why did n't we ever see that before ? 
+ and you 're so quiet and modest , never bothering anyone or anything , when you surely have every right to boast , as clever and charming as you are ! 
+ see how the birds try to snuggle up to you while you ignore them -- they can sense there 's something special about you ! '' 
+ yes , there 's no other way to say it : we woke up one morning to find ourselves infatuated with the dragons . 
+ not everyone cared to go along on the honeymoon . 
+ as always when one is dealing with `` the crooked timber of humanity '' , there were a few contrarians , the congenitally stubborn , who looked on with increasingly dismay as the world they knew was transformed seemingly overnight . 
+ `` has humanity lost its collective mind ? '' 
+ famously lamented one prestigious public intellectual on a talk show . 
+ but such dissenting voices were rare , and over time became even harder to find . 
+ it has been speculated that these unfortunate people suffered from a genetic condition which made them immune to the eye . 
+ whatever the reason for their recalcitrance , we could not allow such people to abide with us . 
+ we had gone too far and risked too much to permit unbelievers to attend our gatherings . 
+ they were driven out -- out of the neighborhood , out of the city , out of our sight . 
+ perhaps i should just admit here that tolerance of certain kinds of diversity was one of the more regrettable casualties of the revolution soon to come . 
+ 15 the first wave of songs that appeared after the turning were , appropriately enough , love songs . 
+ charming and catchy , they were a bit of a chimera , with one foot planted in the old world of traditional humor and romance , and one in the new world , in which the dragons had become central to our culture . 
+ the three songs below , from , respectively , france , japan , korea , and germany , amply demonstrate the international nature of the phenomenon . 
+ france there 's a shop down the lane just past the florist 's and they have dragons for sale . 
+ big dragons , cute dragons , plump dragons , shy dragons ... oh my darling , wo n't you buy one for me ? 
+ il y a un magasin en bas de la ruelle juste après celui du fleuriste et ils ont des dragons à vendre . 
+ des grands dragons , des dragons mignons , des dragons potelés , des dragons timides ... oh ma chérie , ne voudrais-tu pas en acheter un pour moi ? 
+ japan tomoko 's got a boyfriend but i do n't care . 
+ chihiro 's super rich and i do n't care . 
+ nana 's grades are always top yet i do n't care . 
+ cuz ' i 've got a dragon and it loves me . 
+ tomoko ga kareshi wo tsukutta yo demo dou demo ii jyanai ? 
+ chihiro no ie wa chou kanemochi ma dou demo ii koto yo . 
+ nana wa itsu demo seiseki toppu hora dou demo ii wa yo ne . 
+ datte watashi wo dai suki na doragon soba ni ite kureru . 
+ トモコが彼氏を作ったよ でもどうでもいいじゃない ？ チヒロの家は超金持ち まあどうでもいいことよ ナナはいつでも成績トップ ほらどうでもいいわよね だって私を大好きな ドラゴンそばにいてくれる korea my love has brown eyes warm as a summer 's day . 
+ my love has black hair dark as the velvet night . 
+ my love has white skin purer than snow . 
+ my love has red lips red as berries red as maple leaves . 
+ my love and i wander to the park . 
+ there we sit , hand-in-hand , underneath eyes bluer than the sky . 
+ nne yoja chingunun kalsek nuntongja yolm nal cholom tatuttada ne yoja chingunun komun moli udan pam cholom komta ne yoja chingunun hayan pibu nunpoda alumdapta ne yoja chingunun palgan ipsul talgi cholom palgatta urinun konwonnuro kologa annunda sonul solochabumyonso ku nuntongjanun hanulpoda tto puluda 내 여자 친구는 갈색 는동자 여름 날 처럼 따뜻하다 내 여자 친구는 검은 머리 우단 밤 처럼 검다 내 여자 친구는 하얀 피부 눈보다 아름답다 내 여자 친구는 빨간 입술 딸기 처럼 빨갛다 우리는 공원으로 걸어가 앉는다 손을 서로 잡으면서 그 눈동자는 하늘보다 더 푸르다 germany where is there to go ? 
+ what is there to do ? 
+ all the dragons have gone away leaving me here with you . 
+ wohin gibt 's zu gehn ? 
+ was gibt 's zu tun ? 
+ die drachen sind alle verschwunden und sie lassen mich bei dir bleiben . 
+ delightful as they were , this was the final generation of songs to not place the dragons firmly at the heart of the lyrics . 
+ and they were probably the last ones that a person living in the pre-dragon era would even recognize as being a song : that is , a performative act meant for popular consumption and lighthearted enjoyment . 
+ 16 for there was a new seriousness in the air , a new sense of resolve . 
+ we all felt something momentous had happened and were simultaneously happy and anxious , like a bride on her wedding day . 
+ in the parks and on the street , we would look directly at each other and nod shyly , as if we were children sharing a secret . 
+ our excited , unsure mental state accounts in part for the extraordinary millenarian intensity of the songs appearing at that time . 
+ `` the dazzle and the doom '' , for example , took our particular city by storm : the dazzle and the doom , the dazzle and the doom ! 
+ my only friends are dragons , the dazzle and the doom ! 
+ one hesitates to conjecture how the public might have reacted to such a song only a short year before . 
+ with giggles , probably , or just bewilderment . 
+ but we were n't laughing . 
+ these works have more in common with gregorian chants than with popular secular songs . 
+ they are more than a little cryptic and well-nigh inaccessible to outsiders . 
+ here are two more : the end is coming , brother -- shadows will cover the sun . 
+ our names are written in water oh , each and every one , yes , each and every one . 
+ and the thread of life has broken love 's scattered like the clouds the eye has set its judgment on us all , us all ... . 
+ along with these rather somber tidings came several new developments . 
+ the first was that we had begun to carry on singing inside the parks as we gathered in front of the dragons . 
+ and this in turn led to an increased formality and heightened sense of communal ritual , because we were now standing and not moving , and we were facing each other . 
+ anyone who has sung in a church choir in front of the congregation will understand . 
+ add to this the sheer power engendered by thousands of people standing in vast concentric rings amidst the trees , fervently and solemnly chanting in unison , with some of humanity 's most historic structures as dramatic backdrop . 
+ this was humanity 's nexus now ; here was the stage on which the next act would be played . 
+ the second change was that the eye was becoming stronger . 
+ slowly , almost imperceptibly , but unmistakably stronger . 
+ whether the dragons were at long last responding to us in some way , or whether it was psychosomatic , a form of mass hypnosis brought on by all the abrupt changes in our lives , no one could say . 
+ what we did know was how it felt -- more intense , emotionally more evocative , longer-lasting . 
+ the mental images were more vivid , the sounds more vibrant , the overall psychic impact more powerful . 
+ and there was something else , something new . 
+ it was vague and nebulous , a shadow hiding in a greater darkness . 
+ but it was there . 
+ after coming out of the eye , we would look at the neighboring person and ask , `` did you see that too ? '' 
+ they had . 
+ there was someone -- or something -- in there with us now . 
+ unfortunately for smokey and his business model , the phenomenon of flavor began to disappear around this time . 
+ it seemed that the dragons now wanted to speak to us with one voice . 
+ the third development concerned daily rituals such as greetings and farewells . 
+ even relatively ` loose ' cultures such as the north american began to acquire an aura of formality , of ceremoniousness . 
+ jocular phrases like `` yo ! '' 
+ or `` whazzup ? '' 
+ were now frowned upon . 
+ instead , we started to use longer , more ornate structures such as `` i 'm with you '' , accompanied by a hand gently placed on the person 's shoulder . 
+ friends meeting each other in the city might part with a heartfelt `` see you in the eye ! '' 
+ or `` stay in the eye ! '' 
+ not only were we not embarrassed by this renewed observance of etiquette , we depended on it . 
+ we were spending far more time in close quarters now , marching to the parks and congregating there for the eye . 
+ not resorting to the artificial safety valves of ` going online ' or withdrawing into television-land was making us stronger , but it did require a heightened sense of community and decorum . 
+ we were evolving . 
+ 17 we now had a new purpose and an altered perspective on many things in life . 
+ when you love someone -lrb- and how we did adore them now , those plump little beasts ! -rrb- 
+ there 's nothing you wo n't sacrifice for them -- nothing . 
+ money , time , comfort : it will all be cheerfully relinquished at the drop of a hat if it is for the benefit of your loved ones . 
+ and so the things which had loomed so large in our minds before -- getting that promotion , having the latest gadget , knowing the name of a pop star in a country halfway around the globe -- suddenly seemed to dwindle in significance . 
+ like anything thrown in a fire , their true nature had been ineluctably revealed . 
+ and that fire was our newfound love for the dragons , which had appeared like angels in our hour of need to redeem our polluted souls . 
+ had n't they been the ones to bring us out of our self-imposed materialistic death-spiral and technological isolation ? 
+ was n't it they who , simply by giving us an initial reason to come out into the public again and unite , had set in motion the entire chain of events that now had presidents , ceos , media czars , and all the other false prophets of our deluded age trembling with fear ? 
+ for they were now , as they saw their power and influence wane daily . 
+ shock , rage , disbelief and panic fought for space in their fevered , venal minds . 
+ `` who the hell do these peasants think they are ? 
+ this ca n't be happening ! '' 
+ but it was . 
+ pick a metric : factory out put , consumer demand , voting rate , home loan applications , military sign-ups , movie tickets bought ... every single measure of the global population 's participation in the officially approved fun fair showed a precipitous decline . 
+ we were n't buying it anymore . 
+ and it had been the phlegmatic dragons , whom no one had ever seen do anything other than yawn , doze , and flap lumberingly off into the dusk , to deliver undeserving humanity from the clutches of these people and the forces of dehumanization they represented . 
+ now , what would you do for someone you felt had saved you ? 
+ who had given you back your humanity ? 
+ or rather , what would n't you do ? 
+ would n't you do everything in your power for them ? 
+ and would you tolerate anyone trying to restrict your access to your loved ones ? 
+ or , eye forbid , harm them in any way ? 
+ no , you would n't . 
+ and neither did we . 
+ 18 when the end came , it came quickly , over the course of about a month . 
+ four weeks to shake off the shackles of mammon and mars . 
+ four weeks to transform the face of the globe , to turn everything upside down ; to destroy the old , in order to create the new . 
+ this was the revolution . 
+ the people 's revolution , long-prophesied , long-awaited ! 
+ why had it come ? 
+ and why did this one succeed , when so many popular revolutions had failed before ? 
+ it came because the bright promise of democracy had been tarnished and then destroyed by men and women who had proven themselves to be inherently incapable of safeguarding the public 's trust . 
+ it came because capitalism 's promises had turned out to be lies that had only led us into a sterile , self-destructive dead end . 
+ it came because the unbridled greed and arrogance of the wealthy and powerful had blinded them to the simple fact that only they , a vanishingly small minority of the population , wished for things to stay as they were . 
+ it came because , despite the undoubted courage and dedication of many fine journalists , the media as a system had simply failed to do its job : objectively report the news and protect the weak and innocent . 
+ it came because we had finally realized that a way of life predicated on extracting every last morsel of the earth 's exploitable resources could no longer be sustained . 
+ it came because the undeniable improvements in the material living conditions of those lucky enough to live in developed countries had not been matched by any commensurate progress in our emotional or spiritual welfare . 
+ and it came because at long last the people had allies who could help us fight the concerted power of the authorities , the oligarchs , and the generals . 
+ those allies were the dragons , sleeping in the trees . 
+ it is paradoxical but nonetheless true . 
+ given the raw power , cunning , and ruthlessness of the forces arrayed against reform , forces which had only grown stronger with the advances in communications technology , weaponry , and organizational sophistication , we would n't have stood a chance if we had n't had some additional help , something to change the equation . 
+ whether we were actually hypnotized , as some still assert , or merely emboldened by the thousand-fold increase in communal spirit that singing , marching , and gathering in the parks had engendered , one thing is clear : the dragons had tipped the scales . 
+ so we stopped the motor of the world . 
+ production lines slowed , then came to a standstill , because the workers were no longer showing up . 
+ classrooms and offices fell silent , and airports , stadiums , and shopping malls became hushed and still . 
+ trains and buses ran on reduced schedules , then stopped altogether . 
+ cars were parked and abandoned by the side of the roads with the keys still in the ignition . 
+ as for the internet , e-commerce and the ` knowledge economy ' , suddenly the curtain in the corner was drawn back , exposing billions of bored people staring at a glowing screen . 
+ when they went away , so did the web . 
+ television and cable continued to broadcast for a few weeks longer , but at some point there were n't enough talking heads or technicians to keep the systems running . 
+ screens turned to static , then went dark . 
+ and it was only then that the regimes of the world , ` democratic ' or otherwise , along with their military and business cronies , finally realized the threat that the dragons posed to them , to their entire potemkin village of avarice and naked power . 
+ perhaps if the world leaders had acted more quickly and in concert , it all would have turned out differently . 
+ perhaps it would have been a close thing , with hard-fought battles . 
+ they still had nominal control of all the organs of power and control , including the media , military , legal and legislative systems . 
+ but they no longer had the manpower . 
+ when they finally picked up the phone to give the order to move on the parks and public areas , it was too late . 
+ there just were n't enough men with guns on the other end of the line . 
+ but they did make a desperate , last-ditch effort to regain control . 
+ afterwards we wondered at their bravery . 
+ we found it almost admirable . 
+ there were so few of them , and so many of us . 
+ it 's true that they had weapons , but we had something even stronger -- belief . 
+ those among them whom we could convince to give up their weapons escaped with their lives . 
+ those we could n't , did not . 
+ the ` leaders ' themselves did what soft , weak things always do under pressure : melt away and disappear . 
+ we did n't need politicians anymore , or business moguls , or talking heads . 
+ we had no reason to watch ` the news ' at all . 
+ what was it but a lie , a bit of cheap tinsel thrown in our faces to distract us from the truth ? 
+ we did n't need to seek refuge in addictions , or competition , or mindless entertainment , or materialism . 
+ we did n't need to go on vacations , or paint our house , or drive around in a new , fancy car . 
+ there was nowhere we had to go , nothing we wanted to buy . 
+ everything we needed was waiting for us in a neighborhood park or local square . 
+ the motors of the world had indeed been stopped , but not by any creative capitalistic elite . 
+ we , the people , had accomplished it all . 
+ inconceivable ? 
+ a wise roman , pliny the elder , once wrote , `` how many things are considered impossible until they are actually done ? '' 
+ and we had done it . 
+ we had killed the fungus . 
+ nationalism , too , proved to be an idea whose time had come and gone . 
+ it would have been interesting to see what would have happened if the dragons had appeared a hundred or even fifty years earlier , before the rise of hyper-capitalism . 
+ as it was , the once-strong ties that bound citizens to the motherland had been so weakened by the corrosive acid of the relentless commodification of every aspect of human existence , by the marketing , by the outsourcing and downsizing , that they simply snapped under the strain of events . 
+ the political class grasped too late the faustian nature of the bargain they had struck with the industrialists and their minions . 
+ every backroom deal , every loosening of a regulation or loophole cleverly inserted into a law , inevitably undermined the state , and thus the rationale for the politicians ' very existence . 
+ after all , who needs governors , senators , prime ministers or presidents when the ceos , lobbyists and bankers are the ones calling the shots ? 
+ in their hour of need , our ` public servants ' discovered the hard way that loyalty has to be earned ; it can not be bought . 
+ and religion ? 
+ how could the ancient and mighty power of the one god , of yahweh and allah , be vanquished by ... dragons ? 
+ people of faith , perhaps it will be simpler for you to just regard us as animist pagans and heretics . 
+ it is true that under the irresistible call of the eye , the pulpit and minaret have fallen silent . 
+ perhaps we are a smaller people than we once were , less bold in our spiritual aspirations . 
+ a renaissance thinker once wrote to his friend , a priest , `` you follow infinite objects ; i follow the finite ; you place your ladder in the heavens , i on earth , that i may not seek so high or fall so low . '' 
+ and if i were to tell you that we have found your god in the silent , beating heart of the eye ? 
+ no matter , believe what you must and do as your conscience bids . 
+ know only that we have done the same . 
+ thus , a system based on preserving the power and influence of the financial and technocratic elite by suppressing the will of the vast majority of the population was supplanted by something altogether more exotic and unpredictable : human values . 
+ all this no doubt strikes you as improbable . 
+ but you live in a brilliant but shattered world , teeming with countless self-absorbed individuals , all of them desperate to get ahead , to express themselves , realize a fond dream , have their moment in the sun . 
+ but that is no longer our world . 
+ and those who have not been able to adapt to the new state of affairs have met with the same fate as all other living beings who found themselves on the wrong side of evolution . 
+ 19 it is not quite accurate to say that all our needs were met by our new community and the strengthened eye . 
+ people still had to eat , some amount of healthcare was necessary , and our children still needed to be educated in some way . 
+ for all of these requirements three concepts were , and remain , paramount : local , simpler , and less . 
+ doctors , nurses , and other healthcare providers were still mostly willing to take care of sick people . 
+ in fact , this is one of the few professional fields in which people are still active . 
+ in exchange for their services , these specialists are released from the greening and other construction tasks . 
+ of course healthcare is free , because everything is free . 
+ it 's undoubtedly true that people who suffer from rare diseases , or have some complicating health factors , do not receive the same level of care they would have in the pre-dragon era . 
+ -lrb- assuming they were wealthy enough to obtain it -rrb- on the other hand , basic care has been expanded to cover every single person on the planet . 
+ in countries where that would today seem tragically out-of-reach , we found that the personnel and material resources had always been there ; indifference , corruption and greed had just kept them out of the people 's hands . 
+ our population stabilized some years ago and now seems to be declining . 
+ it 's difficult to be sure : global communications are beginning to break down , and even in our own regions the degradation of our computer records does not allow for precision in such matters . 
+ the exact causes of the decline are also unclear . 
+ certainly the absence of organized religion has played a large role . 
+ yet , one suspects far more significant has been the change in our psychological and material living conditions . 
+ we are simply happier than we used to be , far more relaxed and hopeful about the future . 
+ having many children was often at some level an act of desperation for parents who could n't be sure the children they already had would survive . 
+ finally , one irony of history is that it took an invasion of dragons for humans to achieve a genderless society . 
+ women -- all people -- are equal in the presence . 
+ and when women have power over their own bodies , the population usually drops to a more sustainable level . 
+ keeping that population fed was very difficult at first , especially in our largest cities . 
+ global supply chains had broken down , which meant that the complex web of agribusiness and other food producers , transportation links and retail stores that had made our ` just-in-time ' economy function was now severed . 
+ that did n't matter anymore for stonewashed jeans or knickknacks , but it certainly did for food . 
+ there were some desperate months , and that first winter was terrible . 
+ but strict rationing and canned stores got us through , buying us just enough time for the greening to begin to have an effect . 
+ the greening was the massive campaign of targeted de-urbanization that we embarked upon once all the governments had fallen . 
+ in plain english , we knocked down and cleared vast numbers of non-residential buildings and structures . 
+ factories , stores , stadiums , government administration buildings , offices , and parking lots were demolished and the rubble carted off . 
+ if you could n't live in it , it was destroyed . 
+ but the main objects of our attention were roads and highways . 
+ roads represented fast , frictionless mobility , the streamlined quantification and mechanization of humanity . 
+ roads meant freedom as escape , as a solipsistic , opportunistic flight from responsibility and communal ties . 
+ they were everything we now hated , and we uprooted them methodically , gleefully . 
+ of course one of the first orders of business was to get rid of the global arsenal -- a task every bit as dangerous and difficult as knocking down all those skyscrapers . 
+ you have probably heard that passage from the bible about `` beating swords into plowshares '' ? 
+ well , that is what we did . 
+ the trickiest part was to disarm all those nuclear warheads . 
+ we had to act quickly , before records were misplaced or destroyed and our nuclear engineers had lost their skills . 
+ we were successful , almost unreasonably so . 
+ however , there were several submarines with tactical nuclear missiles that vanished during the chaos and fighting of those final days . 
+ they now lie , along with their crews , at the bottom of the oceans . 
+ may the eye protect us ! 
+ houses of worship were left mainly unscathed . 
+ it seemed somehow wrong to destroy them . 
+ also , museums , libraries , some power plants and other vital parts of our infrastructure were spared . 
+ this forest of concrete was replaced with real forests -- and farms , meadows , parks , and small garden plots , as well as fresh water in the form of ponds , canals , and artificial lakes . 
+ we live now surrounded by trees , gardens , and cool water . 
+ this , our simpler and more modest diet , and our incomparably healthier lifestyle , have allowed us to realize the cherished dream of creating an ecologically and psychologically sustainable civilization . 
+ for the record , our addiction to meat has been greatly curbed if not entirely eliminated . 
+ this means that land is no longer being cleared for livestock grazing . 
+ and because our power consumption is only a tiny fraction of what it was , we have been able to build a power grid based solely on renewables . 
+ the last nuclear power plant was shut down about ten years ago . 
+ unfortunately , these changes were made too late to completely prevent climate change . 
+ we suffer under extreme weather , including unbearable heat waves , -lrb- vast parts of the american southwest and many areas in africa and asia are essentially no longer habitable -rrb- droughts , flooding , and hurricanes . 
+ the thermohaline ocean circulation system has been greatly weakened , paradoxically leading to colder winters in northern europe , although overall it is warmer than before even there . 
+ rising sea levels have already led to the loss of whole swathes of coastline , and the actual submersion of many low-lying islands . 
+ countless species of plants and animals have disappeared . 
+ -lrb- rough estimates range from 25 to 40 % of all terrestrial species -rrb- entire ecosystems have been obliterated and replaced with monocultures -- hardy but unvarying landscapes in which the complex web of life has been sadly reduced to a shadow of itself , with only a handful of plant and animal species . 
+ centuries will pass before the earth recovers from the fever humanity brought on . 
+ and so our children , and their children 's children , are fated to suffer because of the selfishness of a sick civilization that very nearly took the entire planet past the point of no return . 
+ the following song , `` morning '' , reveals more eloquently and concisely than any prose description ever could how we think about nature and our place in the world now . 
+ one morning i woke up early got dressed and went outside . 
+ the sky had just turned on , and the stars had begun to hide . 
+ i paced the sleeping town with the heart of a joyful child . 
+ and every single thing i saw seemed innocent , and wild . 
+ a breeze blew crisp and cool , trees stood silent and serene . 
+ lakes lay deeply calm and blue , i felt i wandered in a dream . 
+ the east was now a gorgeous fire , the sky had become one prayer . 
+ my pain dissolved like snow in spring and i bid farewell to care . 
+ to wander now is my repose as i heed the beckoning sky , and all i know , and all i am rests in the dragon 's eye . 
+ 20 when it came to education after the turning , we faced a problem . 
+ simply stated , what and how should we teach our children ? 
+ every culture must solve this foundational challenge : it is arguably the most critical set of decisions a society must make . 
+ children are the future , plain and simple . 
+ but normally this process plays out over decades and is built on the substrate of the former system . 
+ in our case there was no former system because we had just decisively and irrevocably destroyed it . 
+ clearly the traditional ` factory model ' was no longer viable . 
+ that meant our young people sitting silently in rows like soldiers , being lectured at by an adult whose job it was to cheerfully pretend that every one of them was identical in talent , interest , and character , and to drill and test them into submission , all for the purpose of neatly fitting them into one of the slots our economy had so thoughtfully prepared . 
+ `` but what an uncharitable depiction of school and all those hardworking teachers ! '' 
+ you might say . 
+ no doubt . 
+ but true revolutionaries will spare no one and nothing in their relentless quest to turn their vision into reality . 
+ as t.e. lawrence wrote , `` the dreamers of the day are dangerous men , for they may act out their dreams with open eyes , to make it possible . '' 
+ and by now we had all become dreamers . 
+ schooling had to reflect who we were now , not what we had been . 
+ we were determined not to make the same mistakes we had made before . 
+ after much trial and error , we settled upon the following approach . 
+ it is less an organized system than a loose system of methods and practices , based on rather more-solid principles . 
+ you would probably be bewildered by our schools . 
+ `` where are the bells , the tests , the worksheets ? 
+ where are the principals , the school boards ? 
+ for that matter , where are the classrooms ? '' 
+ they are gone , torn down like all the other concrete and steel prisons we had grown tired of cowering in . 
+ we have kept some science labs and libraries , but that is all . 
+ we also have no need for the gladiatorial arenas , the tracks and gyms that used to hold hostage the days and dreams of our teenagers . 
+ with all the walking and manual labor they do , our youth , like all of us , are a hundred times more fit than people in your world . 
+ our children spend almost all day outside . 
+ we took the hint from schools in the developing world and built simple , cottage-like structures open to the land and sky . 
+ there , surrounded by trees and gardens , our children come together in joy and companionship to learn , to play , to grow . 
+ the constant , terrible pressure to maintain that gpa to enter that university in order to get a ` good ' job so you do n't starve on the street -- that pressure is gone . 
+ -lrb- oh humanity , how could you have been so callous to your own children for so long ? -rrb- 
+ now we can relax , take our time , and focus on developing each child 's potential ... surely the real mission of education . 
+ no longer addicted to the siren calls of the tv and the computer , our young are literature and numerate . 
+ to what end ? 
+ to learn stories , important ones . 
+ you see , the mistake we made before was to lose sight of who we were , where we were , and how we had gotten there . 
+ in short , we had forgotten our story . 
+ those who ran and profited from the prevailing system urged new narratives upon us . 
+ they were easy to understand ; so simple , in fact , that they could be summarized in one-sentence maxims : `` work hard and believe in yourself and you will always succeed . '' 
+ `` honesty is the best policy . '' 
+ `` humanity is naturally divided into distinct ethnic and racial groups . '' 
+ `` our nation is special . '' 
+ `` science and logic will allow us to figure everything out . '' 
+ `` the earth , the whole universe , was created for us to do with as we please . '' 
+ but however straightforward these cultural , national , and species myths were , no matter how tirelessly they were promulgated , they suffered from one fatal flaw : they were demonstrably untrue . 
+ there were too many poor people for them to be true . 
+ corruption , inequality , and injustice were too prevalent for them to be true . 
+ the fact that we were all brothers and sisters under the skin was too obvious -lrb- despite the manipulators ' feverish attempts to divide us -rrb- for them to be true . 
+ and the glorious , diamond-hard certainty of the dragon 's existence shattered once and for all the twin myths of comprehensibility and human superiority . 
+ in the end , perhaps that has been their greatest gift to us : the restoration of mystery , and consequently , of humility . 
+ so , no more hand-me-down lies . 
+ no more quizzes , no more grades ; we have even dispensed with grade levels . 
+ the teenagers help teach the little ones . 
+ the lessons are almost all oral . 
+ `` in the beginning was the word ... . '' 
+ we live by this creed . 
+ we are slowly reclaiming the ancient lore from our past -- the tales , chronicles , fables , songs , and myths -- and braiding them into a single oral epic . 
+ centuries ago , thomas aquinas acknowledged the power inherent in this fabulist 's approach to life when he wrote , `` i fear the man of one book . '' 
+ a magnificent synthesis , our civilizational song will include everything that humans have thought and done , their ideas about the universe and god , their glorious achievements and terrible mistakes . 
+ and it will end as it must : with the coming of the dragons , and the new civilization that they , through the presence , have helped us to build . 
+ conceived in the language of old belief , it will be the story of our time , for all time . 
+ and our laws and customs shall flow from it , as a river does from a spring . 
+ this is what our children are learning in school . 
+ 21 a thoughtful woman i know said the single most insightful thing i have ever heard about the influence the dragons have had on human society . 
+ she remarked that they have given us time and taken away money . 
+ on the subject of money , the less said the better . 
+ it was an unmitigated evil for whose abolition we daily thank the eye . 
+ ah , but time , time , that fire in which we all were burning , that precious golden gift , that daily lengthening shadow ... . 
+ we had trapped ourselves in a lightless cell from which there was no escape . 
+ the bars were made of work , pressure , fear , conformity , envy , greed : all the evils of our soul-crushing age . 
+ for perhaps the first time in its existence , humanity has time . 
+ time to rest , time to love , time to master a skill , to think . 
+ time to live . 
+ we have thrown away the clock , that devil 's tool , and the calendar too . 
+ we have gone back to the natural rhythms of the day , the lunar month , and the growing season . 
+ we do n't even distinguish between the days of the week any longer . 
+ why should we , when all days wear the same bright face and the mountain does not change its shape one bit in a thousand human lives . 
+ there are no more business meetings to attend , no appointments to keep , no production goals to reach . 
+ humanity is no longer on a deadline . 
+ sit in the sun by the river and think , just think about the darting flight of the birds her eyes the green smell of summer ... your hand idly tasting the waters while the universe streams tranquilly by . 
+ you , the hapless servant of an unrelenting minute and hour , can scarcely imagine the calm , leisurely pace of our days . 
+ ours is now a profoundly local civilization ; we rarely venture far from our community , so we do n't need to move very quickly . 
+ we have mercifully outgrown that frantic , twentieth-century compulsion to be somewhere else than where we are at the moment . 
+ most travel occurs on foot , or using bicycles , public transportation 100 % powered by renewables , and horses . 
+ that 's right : horses . 
+ in southern climes , we have heard , communities have begun breeding camels and even elephants for transportation and labor . 
+ large cities exist in name only on fading maps and sunbleached billboards . 
+ they have been broken up into numberless communities , each striving for maximum self-sufficiency , and separated from the others by bands of verdant forest and farmland that grow thicker and more established by the year . 
+ 22 and what do we do with all of the hours we have clawed back from the industrialists , marketers , and media mannequins . 
+ why , we learn basket weaving , embroidering and woodcarving ; we attempt to master the tea ceremony ; and we spend hours watching the clouds change shape as they drift by . 
+ really ! 
+ no longer distracted by an obsession with churning out products or increasing profits , we have been able to reclaim our birthright : a life lived in freedom , security , and quiet dignity . 
+ there is hard work to be done in our homes , the fields , small factories , and workshops , but when it is accomplished we are absolutely at liberty to pursue our own private interests . 
+ and what are n't we interested in ! 
+ but that is a weak , twentieth century term : `` interested '' . 
+ it 's the word of a cubicle drone who has at most 4 or 5 hours on a weekend to cram in a few good memories before he or she has to clock back in on monday . 
+ `` i 'm interested in photography . '' 
+ `` i 'm interested in motorcycles . '' 
+ `` gardening is my hobby ! '' 
+ these are the words of a time-parched slave whose life is not his or her own , who is allowed only a few scanty drops of sustenance when a vast sea lies before us all . 
+ we do n't have hobbies ; we have avocations . 
+ we are n't interested in things ; we are absorbed , intrigued , and enchanted by them . 
+ we cultivate ourselves in our own good time as the nurturing soil does crops . 
+ bloom , sun -- trace your golden path . 
+ one day 's journey and i 've forged a knife for my man . 
+ swell , moon -- from a crescent to a pale dish . 
+ this month i 've fashioned silver earrings for my girl . 
+ grow , tree -- straight up to the sky . 
+ one day when you 're tall enough you 'll make a fine boat for my little boy . 
+ like the fabled smithies of the emperor , the people are fashioning their own byzantium , . 
+ we have entered a new age of craftsmanship , of artisanry , of slow and patient apprenticeship of hand , eye , and heart . 
+ some of us learn to carve in wood , others stone ; still others work in metal , pottery , glass or fabric . 
+ our clothes are handmade , as are our shoes , furniture and tools -- each piece unique and made with care and scrupulous attention to detail . 
+ gift-giving has flourished as a social art , as has a fairly efficient barter system . 
+ `` efficient '' in the sense of `` satisfying the basic needs of commerce while not placing an undue burden on those who do the work or on the environment '' . 
+ how quaint -- bartering , cottage industries , no economies of scale , no growth imperative . 
+ perhaps so . 
+ to not desire to live under a system that recognizes nothing , absolutely nothing , outside of its own rapacious , world-destroying hunger ... perhaps this is quaint . 
+ so be it . 
+ our energy and skill extend far beyond traditional handicrafts . 
+ it is every family 's ambition to design their own home of stone or wood , and then to build it themselves with the community 's help . 
+ those homes are resplendent with paintings , sculpture , wall hangings and tapestries , stained glass , decorative carvings and pottery . 
+ and books , lots and lots of books , many of them handsewn . 
+ one of the many side-benefits of the revolution was the consequent abolishment of television -- indeed , of all electronic media that relied on the image for the portrayal of meaning . 
+ we want to see with our own eyes . 
+ if it is image we seek , it must be found in our own minds . 
+ the endless hours of freedom we have gained ! 
+ if the dragons had accomplished only that for us , it would have been sufficient cause for gratitude . 
+ and so we are remaking the world , with all things beautiful . 
+ 23 however , it is not only in the broadening and deepening of our artisanal skills , in the fabrication of precious objects , that we are carving a new path . 
+ the social fabric had been grievously torn over the last hundred years and needed to be repaired . 
+ for that matter , our souls had been hurt too . 
+ we were weary , so sick and weary -- of everything . 
+ ceremonies of innocence were desperately needed , secular sacraments to heal us , bind us together and make us whole again , to reweave the tattered tapestry of civilization . 
+ the gatherings in the parks became the focal point of our spiritual and communal day . 
+ it is there that layers of false consciousness are stripped away and we are washed clean as the proverbial lamb . 
+ we emerge relaxed and ready and eager to -- well , to have fun . 
+ as was noted before , the analog movement led to our rediscovery of the pleasure inherent in the company of other people . 
+ for every person 's a flower petals gently glowing in the sun , and every person 's a mirror revealing what you yourself have done . 
+ so once the dust of had settled we were primed , one might say , to take our social energy and creativity to the next level . 
+ but even we are sometimes astonished at the extent to which we have transformed ourselves into an arts - and live performance-based culture we have become avid participants and spectators of our own on-going show , part of a community which values the aesthetically expressed self above all else . 
+ we are entering nothing less than a new golden age of the visual and plastic arts , of dance and theatre , poetry and song , and music of every imaginable variety . 
+ our shaded lanes hum and buzz with snatches of lyric and verse ; performance halls and squares are alive with the mutterings , retorts , and declaiming tones of amateur thespians , singers , and dancers rehearsing for their next performance . 
+ the term `` amateur '' means here `` performing without expectation of financial compensation '' ; by no means does it signify a lack of polish or skill . 
+ reader , did you every watch or listen to a professional in the arts strut their stuff and muse to yourself , `` geez , she 's good . 
+ i wonder , if i gave it my all , could i ... . ? '' 
+ it turns out that most people , if they work hard over a span of years and receive some amount of informed tutelage , can attain a surprisingly high level skill in music , dance , theatre , or art . 
+ all that 's required is the desire , some discipline and training , and the time . 
+ and at the risk of becoming repetitive , please remember : no tv , no internet , no overtime . 
+ we have succeeded in completely altering the fundamental conditions of our lives . 
+ if one were to pick a metaphor for the great body of humanity , in the twentieth and early twenty-first centuries one might have chosen a company or corporation . 
+ nowadays it would more accurate to think of human society as one giant performing troupe . 
+ this unhurried cultivation and enculturation of the mind , spirit , and body we do not consider to be entertainment , a light diversion and distraction from the main event . 
+ it is the main event . 
+ and our storytellers tie it all together . 
+ in the beginning of this century , no human art seemed a less likely prospect for a rebirth than the very first one . 
+ but all the twists and turns of our history , the ` advances ' , technological encrustations , and atavistic relapses into spectacles of gore and desire -- none of this has altered human nature one iota . 
+ we remain intensely social creatures , in almost all cases preferring to go through life in the company of our fellows , no matter how troublesome they might be . 
+ and we seem hardwired to grasp almost all experience as a narrative . 
+ one writer characterized humans as `` the storytelling animal '' . 
+ we remember things better if they are in a story form , because stories engage us emotionally as well as cognitively . 
+ the forward-leaning plot that quickens the pulse ; the vivid image that stimulate the imagination ; even the rhythmic patterning of sound : it all comes together in the everyday miracle that is the tale . 
+ even in the darkest decades of modernity we had not totally lost contact with our primal roots . 
+ the vast and profitable edifices of hollywood , bollywood , and disney , not to mention a million love ballads , were built squarely upon its sturdy foundations . 
+ so story-telling is enjoying a renaissance . 
+ and while all of us try our hand at it while we go about our daily business , it is those rare individuals who possess the combination of bardic heart , mind , and voice who are raising the ancient skill to a high art again . 
+ nights we gather round our communal halls and listen , spellbound , as a new breed of story-teller gives us back our world , transformed into spoken poetry and song . 
+ they are the only ones beside doctors whom we allow to leave the community and journey around the land , to spread our modern myths and tales and bring new ones back home to us . 
+ you could say these wandering bards and chroniclers now constitute our sole remaining ` export ' . 
+ and the oral tapestry they weave flashes green , red and gold with the magic lantern glow of creation 's greatest gift to humanity : the word . 
+ i can not conclude this chapter without saying at least a few words about our parades , fairs , and festivals . 
+ at some point after the turning the neighborhood marches to the dragons began to dwindle in significance . 
+ there were several reasons for this . 
+ first , they had simply outlived their usefulness . 
+ people did n't need to be convinced any more by a display of fervor or number of participants to come to the parks . 
+ second , the greening played logistical havoc with any attempt move masses of people from one point to another . 
+ there was too much debris in the roads , and the roads themselves were being demolished . 
+ finally , in sheer terms of performance aesthetic and group dynamic , we had moved on . 
+ to parades ! 
+ question : what 's better than singing and marching in groups ? 
+ answer : singing and marching in groups while wearing elaborate home-made costumes , performing `` walking plays '' -lrb- impossible to describe to anyone who has n't seen one -rrb- , stopping for impromptu speeches and dance contests , all the while cutting capers . 
+ the best part of the parades ? 
+ it 's someone 's job to organize them . 
+ yes , in the present time someone actually is responsible for making a free parade happen every few days . 
+ reader , now would be an appropriate time for envy . 
+ as for the fairs and festivals , it is enough to say that they vary by region , that they are constantly growing both in number and size , and that they are fun , fun , fun . 
+ our festivals are absolutely jam-packed with every possible bit of performative passion and skill , small-scale entrepreneurial energy and flair , and community spirit and hospitality . 
+ not to mention creativity and even quirkiness : a community not so far from here that is based in the remnants of a smallish city decided several years ago to inaugurate a cloud-watching celebration . 
+ it has become quite popular with all the neighboring communities . 
+ people come to trade goods , to eat , drink and dance , and to look for that special someone . 
+ then , on soft green meadows that were once parking lots and office buildings , they all lie down and gaze at the silver battalions drifting high overhead . 
+ and those still sober enough to see clearly vie for the crown of `` cloud queen or `` cloud king '' by being the first to spot a cloud that looks the most like -- a dragon . 
+ 24 we are almost at the end our story . 
+ for some time after the turning , we were understandably preoccupied with consolidating our victory and ensuring that a counter-revolution could never occur . 
+ this was not a good time to be a reactionary or a nonbeliever . 
+ they were mercilessly hunted down and cast out . 
+ if any such apostates survive today , they have done so by fleeing into the desert or other remote areas . 
+ may the eye abandon them ! 
+ then we realized that the dragons were changing . 
+ the first thing we noticed was that they had begun to shift where they perched during the day . 
+ whereas before they had crowded together in the same places we did -- big towns and cities -- now they were distributing themselves more evenly throughout the land and could be found in even the smallest hamlet . 
+ but they did n't seem to increase their numbers , which meant that there were far fewer of them in the cities . 
+ each park and plaza , no matter how large , now had only one dragon . 
+ and this , in turn , obliged us to reorganize our gatherings . 
+ in large urban areas , smaller informal groupings gave way to massive assemblies numbering in the thousands , all centered around one dragon . 
+ and the bigger the gathering became , the more powerful the eye . 
+ at some point the need arose for some kind of leadership . 
+ this was the origin of the callers , may the eye protect them . 
+ some of their duties and powers you would find familiar : organizing and conducting worship , counseling and teaching , etc. . 
+ other functions and roles you would not . 
+ reader , you must remember that we are all one under the eye now . 
+ and those pure and gifted enough to approach closer to the sacred center of that aleph are duly recognized as the holy elect among us . 
+ then some of the dragons began to grow . 
+ it was barely noticeable at first , but after about a year there could be no doubt : the dragons at the center of the larger gatherings had become substantially bigger than their fellows in the smaller towns . 
+ we could only take this as a sign . 
+ all our sacrifices had not been in vain ! 
+ we had been right all along . 
+ although they were still pretending to ignore us , our beautiful companions knew we were in their presence , honoring them , and had decided to respond to us . 
+ it made sense : they wanted to be equally visible to everyone . 
+ so those individuals around whom larger congregations had formed needed to grow . 
+ such a simple , elegant solution ! 
+ and so our precious dragons went from strength to strength in their long , subtle campaign to conquer the human heart . 
+ they had done this for us ; how could we reciprocate ? 
+ one wet and miserable fall day , as we gazed up at our dragon 's blinking , drowsy figure , it came to us in a flash : we could build a shelter for it ! 
+ we would build an enormous roofed structure , expansive enough to hold our dragon and the entire gathering . 
+ but we could n't very well construct something so massive around our dragon : it might scare it off . 
+ there was nothing for it -- we would build it close by and hope our dragon could be enticed somehow into entering its new home . 
+ we quickly assembled those among us who had architectural and design experience . 
+ as they debated the thousand and one possible shapes the structure could take , we began to realize that what was called for was no mere shelter from the weather . 
+ we had to build a temple . 
+ every gathering in the world would have to build a gorgeous temple for their dragon . 
+ and so we did . 
+ around the time we embarked on this great project , the eye shifted yet again . 
+ we suddenly found we were no longer alone in there : our brethren , all of them , were present as well . 
+ you , with your faith invested in cold circuits , colder capital , or a deity you can not see , would probably call it mind-reading or magic . 
+ we call it togetherness in the presence , and it was the final key to the door that released humanity from a dark , solitary existence into a luminous world of peace and communion . 
+ blessed be the eye ! 
+ togetherness made it possible for gatherings worldwide to agree on the exact form of the temple . 
+ with allowances for variations in dimension and local materials , the same , classically severe temple today proudly stands in every park and open area around the globe . 
+ the last element built was the column for the dragon . 
+ carefully constructed to be precisely 5 meters in height , to bring the dragon as close as possible to us , ours was gilded and shone in the sun on the day we had decided to invite our dragon inside . 
+ it had been determined that we would encircle it as usual and then slowly withdraw into the temple , chanting as we went . 
+ a special song had been written for the event : blessed are those who come to them be our glory and our shield ! 
+ heaven awaits those who bow to them you 're our glory and our shield ! 
+ eternal joy for those who serve them praise to our glory and our shield ! 
+ the tension in the air was palpable . 
+ what if our dragon would n't come ? 
+ after all , despite the unarguable reality of the eye , and the fact that some of them had grown larger , we had no evidence they truly cared what we thought or did . 
+ having spent a long , sleepless night , many of us were pale and trembling as we marched into the enormous temple . 
+ the caller took her rightful place at the base of the column . 
+ a deep hush fell over our congregation . 
+ from the inside , despite the lofty opened portals , we could n't see our dragon . 
+ we could only wait , hearts pounding . 
+ and then a sigh passed through our ranks , which swiftly became a roar of exultation : it had come ! 
+ it had actually come ! 
+ with strong , steady wingstrokes our dragon flew overhead and landed lightly on its pedestal . 
+ it had come home . 
+ dear reader , i am not embarrassed to tell you that even now recollecting that fateful moment causes me to lose my composure . 
+ you see , our magnificent dragon was not done giving . 
+ as we stared at its splendid figure in awe , it suddenly lifted its head , opened its pale eyes wide , and spread its wings to their fullest extent . 
+ and as it opened its mouth to give a piercing cry , a tongue of pure fire issued forth . 
+ we live in the warmth of that fire even now . 
+ afterword well , you have made it this far , i must have done something right . 
+ since you have been good enough to grant me so much of your time , let me take a few minutes more . 
+ about the story itself , it might add to your enjoyment -lrb- or confirm you in your dissatisfaction -rrb- to know a bit about the genesis and development of the piece . 
+ about a year and a half ago , i saw a large crow perched outside my window . 
+ except , for a second it did n't look like a crow , it looked ... well , like a dragon . 
+ do n't ask me why ; i swear i was as sober as a church mouse . 
+ and everything flowed from that one brief moment of delightful visual discombobulation . 
+ the piece grew far beyond my original conception of it as a quirky , twilight zone sort of `` what if . . '' 
+ tale about strange creatures suddenly appearing in our midst . 
+ unless your politics aligns with mine , you will probably feel this is an unfortunate development . 
+ and i must confess that in my mind 's eye i sometimes catch tantalizing glimpses of that pure , lean , ur-dragon , as it soars through the buoyant air of a greater talent , unencumbered by leftist screeds , homegrown socioeconomic critiques and bromides , and mr. smarty-pants classical allusions . 
+ oh , my once and never dragon , did your master clip your wings ? 
+ so the magical creature was given a prickly undergarment of socialist diagnosis , and then , by way of cure , a rather oversized utopian overcoat . 
+ and this entire matryoshkan amalgamation was constructed fitfully over the course of a long year , like a building project that keeps losing its financial backers . 
+ i fear the seams show . 
+ i would like to think it is a triptych : a work composed of three parts , all of which are interrelated and necessary for the piece to work . 
+ but in my darker moments i have suspected it is more like chitty chitty bang bang , kept flying , barely , by ingenuity and a father 's love . 
+ or even worse , that the whole project is just ... silly . 
+ well , if it is , it is . 
+ but i stand on firmer ground when it comes to the importance of integrating topical social , economic , and political issues into works of general fiction . 
+ here is george orwell , who accomplished precisely that , and better than anyone : `` and looking back through my work , i see that it is invariably where i lacked a political purpose that i wrote lifeless books and was betrayed into purple passages , sentences without meaning , decorative adjectives and humbug generally . '' 
+ so , my bird is heavy but at least it 's trying to fly in a definite direction . 
+ beyond problems of structure and general writing skill , i have other concerns . 
+ one is that i feel i was not fair either to teachers or journalists . 
+ it proved impossible to rework the story so that they could emerge as more than negative stereotypes . 
+ in both cases they were swept up in the tide of anti-establishment invective i myself created . 
+ i apologize to both groups of professionals . 
+ it will be clear to the reader that i do n't think much of our current political and economic system . 
+ i understand that capitalism has brought more people out of poverty in a shorter time period than any other socioeconomic force could conceivably have done . 
+ and i acknowledge that representative government , democracy , offers the best chance for societies to thrive and progress , now and in the future . 
+ the problems lie not in the conception , but in the execution . 
+ to put it bluntly , the world has been hijacked . 
+ our grand and most painfully-won large-scale civilizational achievements -- democracy and free enterprise -- at present do not belong to us any more than the land a medieval serf toiled on belonged to him . 
+ who is holding the deed to the soil ? 
+ i think i make it quite clear in the story who is . 
+ do n't take it from me , listen to a certified member of the 1 % , nick hanauer , super-entrepreneur and investor , who has a great piece in politico magazine entitled `` the pitchforks are coming ... for us plutocrats '' . 
+ he puts it better than i ever could : `` capitalism , when well managed , is the greatest social technology ever invented to create prosperity . 
+ but capitalism left unchecked tends toward concentration and collapse . '' 
+ so i stand by my diagnosis of the problem , even if my vision for how things might be improved seems far-fetched or pie-in-the-sky . 
+ but i will confess to some uneasiness about the religious elements of the piece . 
+ the last thing i would want to do is offend people of faith by producing yet another thoughtless , contemptuous , secular screed casting scorn upon any and all parts of human culture having the slightest element of religiosity . 
+ this way of thinking is not merely impolitic and short-sighted ; it is itself an irrational , kneejerk response to the admittedly vexing problem -lrb- and it is a problem , not an ` issue ' or a ` challenge ' -rrb- we all face of how to mend the deep fracture that currently exists in humanity between those who believe in god and ... those who do not . 
+ i just wanted to tell you that i have thought seriously about this aspect of the story , and that although i am not a person of faith , i do believe in belief . 
+ the human capacity to trust , to have faith in some principle , -lrb- justice , democracy ... -rrb- or in the existence of something you have never seen but are nevertheless absolutely convinced exists -- where would we be without that ? 
+ when a teacher does n't give up on a less-than-stellar young student -- what is that but belief , the conviction that this rebellious , self-centered kid is worth not giving up on ? 
+ for that matter , is n't the whole concept of education predicated on the notion that there exist forms of knowledge and skills worth conveying ; that people are actually capable of both teaching and learning them ; and -lrb- most unlikely of all -rrb- that there will be a future in which the instruction will still be of value ? 
+ this is just to choose the case of education . 
+ i contend that every time you put on your shoes and walk out the door , you are virtually floating in a cloud of assumptions and presumptions , hunches and theories . 
+ life is an act of faith , a brave leap into the dark . 
+ and organized religion , say what you will about it , is the example par excellence of a reified belief system . 
+ it is millennia old and has proved false every prediction of its imminent demise . 
+ my entirely unscientific , anecdotal interpretation of this rather remarkable fact is that we humans are hardwired for belief : we need to believe just as we need to feel physically secure and loved by others . 
+ make room , professor mazlov ! 
+ religion is a human construct , and like literature or art or politics , it deserves the same amount of attention , analysis , and thoughtful reflection that we afford these other syntheses of human hopes , fears , and passions . 
+ john of salisbury wrote : `` for not without the anguish of the struggle shall the face of truth be seen . '' 
+ and he also wrote that we might seek to become people `` to whom religion is not the mask of desire , but the countenance of that eternity which doeth ever besiege our life . '' 
+ all this is not meant as an apology for the specific belief that there exists an omniscient , omnipotent deity , or for the related doctrine that we are in possession of certain holy texts which comprehensively and accurately describe the universe , and prescribe how one must live in that god-created dominion . 
+ religion has a lot to answer for -- historically , for what its followers have done in its name ; and culturally/philosophically , for the outsized impact it has had on human civilization . 
+ organized religion is inherently , unapologetically insular , recognizing no truth outside of its own officially sanctioned sources , which of course it claims are divine . 
+ st. augustine : `` whatever knowledge man has acquired outside holy writ , if it be harmful it is there condemned ; if it be wholesome , it is there contained . '' 
+ this is a recipe for being incurious , and also for accepting institutional injustices such as monarchy , aristocracy , and other elements of a class-based system . 
+ the heavenly order is to be replicated here on earth , with people occupying the station god has assigned them . 
+ jesus 's egalitarian , almost socialist message seems to have gotten lost in the translation from aramaic . 
+ and martin luther , the revolutionary who set the protestant reformation in motion , was anything but progressive in his political and social views . 
+ but it is the lack of intellectual curiosity encouraged by a strict adherence to the spirit of religion that has been criminally damaging to humanity , and that is so out of sync with a post-enlightenment world . 
+ progress itself has often seemed to be the enemy of faith . 
+ `` what do a physical life , health , science , literature , and philosophy amount to compared to the salvation of the soul ? 
+ why read the poets when the precepts of the gospel should be pondered ? 
+ why make life on earth agreeable and comfortable when it is but an insignificant prelude to eternal life elsewhere ? 
+ why seek to answer questions about natural phenomena when the nature of god and the relation of the human soul to god are yet to be explored and understood ? 
+ it is but a step to the conclusion that all learning is impious and heretical . '' 
+ this from the mathematician and intellectual historian morris kline . 
+ here i can only state my belief : the monotheistic faiths must adapt to our present perilous circumstances by expanding their definition of righteousness to include some form of ecological stewardship of the earth and all its living creatures . 
+ this has to be baked in the cake , part of the machine language of modern religion , standard operating procedure . 
+ if not , the faithful , as well as the faithless , can kiss goodbye whatever portion of eden they still think exists . 
+ it 's just numbers : the vast majority of people on the planet subscribe to some religion . 
+ if the church changed its position , people would follow . 
+ hardcore environmentalists , perhaps 1 % or less of the population , are not going to be enough to save the day . 
+ we all have to save the day . 
+ if it sounds like i 'm a bit all over the place regarding faith and organized religion , it 's because i 'm a bit all over the place regarding faith and organized religion . 
+ forgive the diatribe ; this is meant to be a gentle reminder that these things are at least worth thinking about , and that we should all attempt to transcend the limitations of the specific milieu that has shaped our own belief systems . 
+ in my own case , after reading a fair amount of the world 's sacred texts , in addition to as much of the classics of literature and philosophy as a late twentieth-century education has made possible , i felt compelled to write a story about miniature dragons , a world revolution , and paganism . 
+ go figure . 
+ whew , i do tend to go on . 
+ i do hope you enjoyed all this . 
+ and now a final confession . 
+ believe it or not , i did try to make the whole utopian vision hang together and seem as realistic as i could . 
+ how people would live , what they would do with their time once the daily grind and the electronic jungle were taken away : i really attempted to paint a fairly detailed picture of the future . 
+ imagine my shock and panic when , in the very last stages of editing , i realized i had completely left out a very important aspect of modern life ; indeed , for many people the key to their daily routine and even emotional well-being : pets ! 
+ in my dragon-haunted , post-technological society , what would become of fido and mittens ? 
+ with everyone working on the farm or discovering their inner shakespeare , there would be little time or energy left for pet-pampering services , gourmet doggie/kittie food , and the like . 
+ perhaps -- horror of horrors ! 
+ -- the evidently vegan dragons would suddenly reveal a taste for small domestic quadrupeds , as part of a sacrifice for access to the eye ! 
+ but i believe i will stop right there , before i make enemies of yet another influential demographic . 
+ see you in the eye ! 
+ the author odds and ends intended for the afterword which seemed , despite their considerable merits , to be contributing to the unreasonably long nature of said afterword 1 . 
+ just as i was preparing to put the story online , i came across this passage . 
+ it 's from freeman dyson 's the scientist as rebel . 
+ it can be found in the last chapter , `` religion from the outside '' , p. 350 , -lrb- nyrb edition -rrb- , which is itself a review of daniel dennett 's breaking the spell : religion as a natural phenomenon . 
+ i thought an entire paragraph was worth quoting : let me state frankly my own philosophical prejudices in opposition to dennett as human beings , we are groping for knowledge and understanding of the strange universe into which we are born . 
+ we have many ways of understanding , of which science is only one . 
+ our thought processes are only partially based on logic , and are inextricably mixed with emotions and desires and social interactions . 
+ we can not live as isolated intelligences , but only as members of a working community . 
+ our ways of understanding have been collective , beginning with the stories that we told one another around the fire when we lived in caves . 
+ our ways today are still collective , including literature , history , art , music , religion , and science . 
+ science is a particular bunch of tools that have been conspicuously successful for understanding and manipulating the material universe . 
+ to understand religion , it is necessary to explore it from the inside , as william james explored it in the varieties of religious experience . 
+ i would only add that freeman dyson was a scientist of the first rank , and by no stretch of the imagination an ill-informed crank or purveyor of spiritual mumbo-jumbo . 
+ 2 . 
+ many books went into the writing of this story . 
+ one a bit off the beaten track that i am sure the interested reader would find profitable is jacques ellul 's the technological society . 
+ 3 . 
+ in this age of hyper-specialization , a broad , humanistic education remains the best , indeed the only , antidote to propaganda , hucksterism , and general malicious misuse of language . 
+ 4 . 
+ i scan the news nightly , primarily through the internet , doing my best to include sources `` from the other side '' . 
+ when i read an article title like , `` obama 100 % for the border crisis '' , or `` it 's official : the gop is racist '' , i ask myself , `` what would my worldview have to be for me to believe that particular statement ? 
+ what are the moral , political , psychological , and philosophical underpinnings of that specific assertion ? '' 
+ and what i find interesting , and disturbing , is that , in almost all cases , the more extreme the belief , the closer the antecedent beliefs lie to it , and to each other . 
+ imagine a person 's belief system forming a tree . 
+ then someone who only sees one side of various issues would have a narrow fir tree , with all its limbs being packed tightly together , while a tolerant , open-minded person would have a spacious oak , with branches spreading luxuriantly far apart from each other . 
+ such a cultivated observer of life can entertain disparate and even contradictory thoughts in their head at the same time , without judging or deciding prematurely . 
+ keats , in a famous passage from a letter : `` ... and at once it struck me what quality went to form a man of achievement , especially in literature , and which shakespeare possessed so enormously -- i mean negative capability , that is , when a man is capable of being in uncertainties , mysteries , doubts , without any irritable reaching after facts and reasons . '' 
+ reader , we should be able to dwell in mystery , to abide in its bracing air , like the sherpas in the himalayas . 
+ that is what frightens me so much about the dogmatists today on all sides : they acknowledge no mystery , they have no questions . 
+ people should have questions . 
+ 5 . 
+ if the secular worldview were more attractive to the general public then organized religion would n't find it so easy to gain followers . 
+ but people all over the world have been flocking to christianity and islam for centuries . 
+ do you know why ? 
+ obviously , primarily because monotheistic faiths have compelling narratives that tap into the human psyche . 
+ that mysterious , troublesome instrument seems to require that some supervening order , some more meaningful , palatable pattern be placed over the chaotic scrim and welter of the world . 
+ but there is a socioeconomic aspect to religion 's continuing ability to attract adherents as well . 
+ here it is in a nutshell : jesus is fair . 
+ he stands up for the little guy . 
+ in fact , he is positively blue-collar . 
+ remember all that about throwing away your belongings , and how it 's easier for a camel to be threaded through a needle than for a rich person to enter the kingdom of heaven ? 
+ as for islam , allah is just , and merciful . 
+ muslims are required to give alms to the poor , and generally be compassionate and supportive toward those in need . 
+ i stress that this is a formal requirement , not an option . 
+ formal religions are accepting of all -- all ! 
+ -- who accept the creator 's word . 
+ name any other group in modern society , whether it be social , political , economic , what have you -- that is as egalitarian , as welcoming , as humane as the major religions are in theory . . 
+ -lrb- bonus points for the one major world religion to which you can not convert . -rrb- 
+ yes , yes , i know : the positively medieval , patriarchal superstructure that has wrapped itself around the religions like a strangler vine , the behavior and mores of the believers themselves ... these factors more often than not seem sufficient cause to dismiss the whole endeavor . 
+ still , look at the actual statistics : most people in the world believe in a supreme being , and most regard themselves as being at least loosely affiliated with one of the major religions . 
+ and again , i ca n't help but think that if global social and economic conditions were better -- more fair , more just , with opportunity evenly distributed -- the secular path would be more appealing to citizens of all kinds . 
+ because secular has somehow devolved into economic laissez-faire , which means walmart , wall street , and amazon run the world . 
+ do those institutions have at their core -- or even at the periphery , or faintly visible on the horizon -- a self-imposed mandate to care for the welfare of others ? 
+ and if the secular way is so superior , then why are governments failing so miserably to meet the major challenges of our time ? 
+ environmental challenges , economic challenges , educational challenges ... here , do your best version of a modern-day diogenes : go around the world and try to find one citizen who is truly satisfied with the job his or her government is doing . 
+ why not ? 
+ plenty of people are perfectly happy with their local grocery store , their cable provider , even their kid 's school . 
+ but not their government . 
+ think about it : if global citizen were asked to pick the aspect of their lives which they were least satisfied with , many if not most would pick their own leaders and the political institutions . 
+ the reasons are multifarious -lrb- regulatory capture and plain corruption , extreme , system-jamming partisanship , etc. -rrb- , but probably most prominent is the simple , incontrovertible fact that governments are failing to provide better lives for their citizens . 
+ and , to hopefully return us full circle to our starting point , organized religion , which is the natural enemy of any rational , individualistic and truly democratic political or social structure , wastes no time in stepping into the breach . 
+ `` they wo n't take care of you ? 
+ we will . '' 
+ the ironic thing is that the church does n't even do a great job anymore of taking care of people 's physical needs , things like food and shelter . 
+ they do n't have to ; they merely have to make it look like they are trying hard and acting in good faith , while coldhearted governments flounder . 
+ 6 . 
+ there is no getting around the central fact that for us , a butterfly is an amazing natural organism whose existence is made even more astounding and meaningful by its aleatory , darwinian nature . 
+ roll the dice again and that gorgeous monarch you see on the leaf would not exist ; or at a minimum , there would be differences in coloration or behavior . 
+ to us , everything , no matter how essential , beautiful , or fascinating it might be , is necessarily contingent . 
+ it 's part of the philosophical worldview of a rational secular humanist , and not always the easiest part . 
+ it could be compared to having to tolerate hate speech in america , which is protected under the first amendment . 
+ not easy , but got ta be done . 
+ hewing to science means hitching your wagon to a star , a real star , magnificent but remote and absolutely indifferent to all human concerns . 
+ this of course is anathema to the true believers . 
+ in their universe , there is a prime mover and thus a master-plan . 
+ that monarch gently opening and closing its gorgeous wings could not be other than what it is . 
+ omniscience and omnipotence leave not the slightest sliver of room for accident , for chance . 
+ and all parts of nature must be connected to us somehow , because after all , we are the jewel in the crown . 
+ 7 . 
+ so to them , we are simply godless , and thus lost . 
+ to us , they are dupes , adults who still believe in santa claus . 
+ let us agree on our side for a moment that , sadly enough , there is no santa claus busy in his workshop . 
+ fellow seculars , i want you to take a short imaginary journey with me . 
+ pretend it 's late december , and you are walking down the streets of any north american city . 
+ i will spare you a description of all the christmas paraphernalia , but assume it is there in full force . 
+ now , find your average child , pining for xbox , a bicycle , etc. . 
+ he has just written a letter to the north pole , asking for said toy of his dreams . 
+ look into his eyes , dancing with visions of ... errr , not sugarplums , but first-person shooters -- well , you get the idea . 
+ can you honestly say that santa does n't ... . 
+ exist ? 
+ `` but that 's cheating , of course he exists in people 's minds ! 
+ so do ufo 's and unicorns and big foot ! '' 
+ exactly . 
+ these beings , to which the cosmos -lrb- carl sagan 's cosmos , and yours and mine -rrb- is absolutely indifferent , live in people 's minds . 
+ and where , pray tell , do you live ? 
+ `` but in my mind there 's no magic jesus , or all-powerful guy with white hair being jealous all the time and calling all the shots , or unicorns for that matter ! '' 
+ more 's the pity . 
+ about the unicorns , i mean . 
+ all joking aside , i am simply trying to carve out a bit of space , a narrow niche or ledge of humaneness , if you will , on which i now precariously rise to say : the things that other people believe -- wacky or misguided or unsupported by any of the laws of the observable universe as they might seem to us -- come from humanity itself , from people 's hopes , fears , and passions . 
+ they are not nothing . 
+ at least acknowledge that , my fellow devotees of logic and the scientific method . 
+ be humane , secular humanists . 
+ 8 . 
+ it has also not escaped my attention that , as the thoughtful reader will have discerned , `` there 's trouble in paradise . '' 
+ my little utopian society contains inherent contradictions , primarily in the tensions that would inevitably arise between the public good and the private . 
+ more specifically , in the realm of freedom . 
+ life nowadays is certainly needlessly stressful and lacking in any sense of communal spirit , or appreciation of `` the family of man '' . 
+ thus the gatherings , the emphasis on constant cultural performances , etc. . 
+ but this is precisely why planned communities or societies never work , no matter how imaginative and benevolent the founders , or how well-thought-out the enterprise is . 
+ at some point -- and it is usually fairly quickly -- the individual desire for self-expression rebelliously sprouts up like a glorious weed , in blithe disregard for the orderly ranks of the collective 's orchard . 
+ and it is precisely a society 's most creative elements , the very people who come up with the cultural canon the rest of us set feverishly to learning , who have the least tolerance for group - or centrally-ordained projects . 
+ composers rarely make the best ensemble players . 
+ and so i am afraid it would n't be very long before my misty vision of a cultural shangri la , pacifically floating on a sea of collaborative self-actualization , would founder on the sharp , treacherous shoals of good ` ole human nature . 
+ but all is not lost ! 
+ you see , that 's the advantage of writing in the fantasy and science fiction genre : the author can at any time erect a magic bulwark against pesky reality . 
+ in this case , the mass-hallucination-inducing dragons are just the ticket to guarantee a friction-free community . 
+ 9 . 
+ let me try to tie a few of these themes together . 
+ a.people need to believe in something . 
+ b.that `` something '' ideally has all of these characteristics : positive , achievable , compelling , fairly specific . 
+ a goal like `` peace on earth '' strikes one as neither specific nor immediately achievable , thus its current status as a semi-joke . 
+ any religion , even a minor cult that is run out of someone 's garage with only a handful of believers , can do a far better job presenting its belief structure . 
+ c.science does a bang-up job describing as well as explaining the world we exist in . 
+ someone , i have unfortunately forgotten who , once characterized science as the first intellectual system in history that was not centered around humans . 
+ thus its explanatory power : it is not limited by our concerns or even our presence . 
+ we posit the existence of black holes , and build whole cosmological theories around their existence , although no human has ever seen one , and perhaps ever will . 
+ -lrb- er , technically speaking it 's impossible to see them because of the whole so-massive-they-don ' t-even-let-light-escape thing . -rrb- 
+ and of course science 's endlessly clever servant , technology , has made modern civilization possible . 
+ science works . 
+ d.however , the answers science gives are almost always provisional , and rarely comforting . 
+ `` where did everything come from ? '' 
+ an infinitesimal , cataclysmic explosion billions of years ago that jumpstarted time and space . 
+ `` what was before that ? '' 
+ do n't bother asking . 
+ you 'll get the cosmologists ' clever answer : `` time started after the big bang so your question makes no sense , hehehehe ! '' 
+ `` how did we get here ? '' 
+ sheer dumb luck . 
+ billions of years of brutal , churning evolutionary roulette , with the odd climate catastrophe and species-obliterating asteroid serendipitously in our ancestors ' corner . 
+ one less ice age , a smidgen more resilience in this or that dinosaur species , and we would n't be here . 
+ `` why are we here ? '' 
+ you might as well ask why there are garden slugs . 
+ science can not even process questions like that . 
+ it irritably shakes its head at them like a horse trying to get rid of a fly . 
+ after snorting scornfully , science personified will peer at you over the top of -lrb- its ? -rrb- 
+ bifocals , and in a thoroughly nasty tone , sneer , `` i hope you realize that there 's nothing special about our species at all . 
+ we 're not at the top of some evolutionary tree , nor are we the pinnacle of creation . 
+ nature was n't ` heading ' toward us ; nature does n't ` head ' toward anything , ever . 
+ our ancestors , depilated primates with a sneaky knack for survival , were just in the right place at the right time . 
+ and , if we are so great , why do humans go insane all the time , or develop heart disease , and cancer , and , and ... crow 's feet ? 
+ anyway , parrots and turtles live longer than we do , and the cockroach has been around for 350 million years , and humans for only 200,000 . 
+ your god has a funny way of treating the ` crown of creation ' ! '' 
+ `` what is our fate ? '' 
+ hoo , boy . 
+ are you ready ? 
+ in the best-case scenario , we eke out a few more million years of precarious existence before we mutate into something else or , much more likely , die out like the 99.9 % of other species that have ever existed . 
+ that figure is not hyperbole , by the way ; it 's the actual scientific estimate . 
+ in the worst case scenario , there will still be humans in a few hundred years , but they will be vastly reduced in numbers , clinging to the surface of a environmentally-depleted earth like cockroaches on a bit of flotsam from the titanic , dreams of future glory drowned in an intergenerational genocidal eco-cataclysm . 
+ and all indications are that we are much closer to that end of the probability scale . 
+ sir martin rees , great britain 's astronomer royal , published a book in 2003 with the charming title , our last hour . 
+ i wish i could say he was an ignorant crank ; i would sleep better at night . 
+ even if , by some star trek stretch of the imagination we manage to make it through the social and ecological bottlenecks of the next 100 to 200 years , and then through some even more unlikely chain of events humans could adapt to the rigors of outer space , master interstellar travel , and spread our kind throughout the galaxy ... then what ? 
+ humanity would remain -- human , no matter how outlandish the sky color , or how many moons were in that sky . 
+ that means interminable quarrelling , machiavellian maneuvering , jealousy -- the whole usual pandora 's box of human foolishness . 
+ `` hell is other people , '' as sartre wrote . 
+ ad astra per aspera : `` a rough road leads to the stars . '' 
+ if my latin were better i would change that phrase to something like , `` you really want to take these savages into outer space ?! '' 
+ if our distant descendants really could achieve some transcendent level of tolerance , self-control , communal spirit , and universal enlightenment ... well , could one still regard them as humans ? 
+ by the way , if we hang out in our solar system long enough we can look forward to the sun running out of fuel and , like an emotionally exhausted middle-aged man going through his second childhood , bloating out to the orbit of venus and cooking earth to cinders . 
+ and beyond that , the ultimate thermodynamic downer : the heat death of the universe . 
+ just saying . 
+ e.you can see that science does have answers , and deep ones too , but they are rarely final and even more rarely comforting . 
+ now , let 's compare organized religion 's account of humanity 's place in the cosmos . 
+ an all-powerful supreme being created you , along with everything else in this universe . 
+ this creator loves you , cares about you , and has a wonderful fate planned for you , as long as you follow a few simple rules : 1 -rrb- believe in him , privately , in your heart , and publicly , by praying , joining a congregation and professing the truth of your faith 's holy book , the bible or koran ; 2 -rrb- follow the specific set of rules your faith prescribes , things like praying 5 times a day , fasting during certain times , etc. ; 3 -rrb- respect the same general code of ethics that nonbelievers ascribe to : no killing , stealing , lying , or being nasty to your fellow humans . 
+ that 's about it , except for some very infrequent special requests such as agreeing to participate in a holy war , expunging infidels from the face of the earth , giving the church some of your money , and so on . 
+ as long as you follow these commandments , you have it made in the shade . 
+ eternal peace and contentment , surrounded by all your loved ones , -lrb- well , the ones that are dead -rrb- angels , not to mention infinitely closer access to the creator himself . 
+ or herself . 
+ you know what i mean . 
+ the fate of the world , why evil exists , why ca n't you tickle yourself ... all that is somebody else 's problem . 
+ believe , do no evil , and let the program work for you ! 
+ f.i ask you , which is the more appealing story . 
+ if organized religion and the scientific worldview were clubs in high school , religion would be the football team , the über -- cool , beating heart of student life , while science would be -- well , the science club . 
+ a few geeks and the dutiful children of asian tiger moms , already working on their westinghouse science talent search projects the first week of school . 
+ 10 . 
+ it is a bit of a puzzle , actually , one that i suspect drives many seculars batty . 
+ why is religion still so damned popular ? 
+ 11 . 
+ if you have something very important to say about the real world , try putting it into a work of fiction . 
+ for , as all children know , the truest stories are the made-up ones . 
+ quotations that wish they were at the front is not belief the true god-announcing miracle ? 
+ novalis technology is the real metaphysics of the twentieth century . 
+ ernst jünger love too shall yield to me . 
+ ovid for god forbid that we should give out a dream of our own imagination for a pattern of the world . 
+ francis bacon nothing of him doth fade / but doth suffer a sea-change / into something rich and strange . 
+ from the tempest -lrb- william shakespeare -rrb- perfection consists in becoming something rather than in having something . 
+ matthew arnold where there is no vision , the people perish . 
+ proverbs , 29:18 we must begin to choose afresh , for the pure , great truth ... but there must be a new heaven and a new earth , a clearer , eternal moon above , and a clean world below . 
+ so it will be . 
+ d.h. lawrence for , behold , i create new heavens and a new earth . 
+ isaiah 65:17 the death of democracy is not likely to be an assassination from ambush . 
+ it will be a slow extinction from apathy , indifference , and undernourishment . 
+ robert maynard hutchins we hold the future still timidly , but perceive it for the first time , as a function of our own action . 
+ having seen it , are we to turn away from something that offends the very nature of our earliest desires , or is the recognition of our new powers sufficient to change those desires into the service of the future which they will have to bring about ? 
+ desmond bernal knowledge without conscience is the ruin of the soul . 
+ rabelais reason is the enemy of all greatness : reason is the enemy of nature : nature is great , reason is small . 
+ giacomo leopardi had i a mighty gun / i think i 'd shoot the human race / and then to glory run ! 
+ emily dickinson the historic development of kingship seems to have been accompanied by a collective shift from the rites of fertility to the wider cult of physical power . 
+ this displacement was never complete , for osiris , bacchus and kybele lived on and even reclaimed their old position . 
+ but at the opening of civilization it brought about a change of outlook , accompanied by a progressive loss of understanding of the needs of life , and a gross over-estimation of the role of physical prowess and organized control as determinates of communal life , not just in a crisis but in the daily routine . 
+ backed by military force , the king 's word was law . 
+ the power to command , to seize property , to kill , to destroy -- all these were , and have remained , ` sovereign powers ' . 
+ thus a paranoid psychal structure was preserved and transmitted by the walled city : the collective expression of a too heavily armoured personality . 
+ lewis mumford o god ! 
+ that one might read the book of fate , and see the revolution of the times make mountains level , and the continent , weary of solid firmness , melt itself into the sea . 
+ from henry iv , part 2 -lrb- william shakespeare -rrb- ... glints of the evil that one sees in the power of this world . 
+ robert duncan the fact that one can not comprehend how god could be is evidence for his existence . 
+ søren kierkegaard i am confident it must be the poor , the simple and mean things of this earth that must confound the mighty and strong . 
+ richard overton , leveller bring me my bow of burning gold ! 
+ bring me my arrows of desire ! 
+ bring me my spear ! 
+ o clouds , unfold ! 
+ bring me my chariot of fire ! 
+ william blake -lrb- from jerusalem -rrb- has some vast imbecility mighty to build and blend but impotent to tend , framed us in jest , and left us now to hazardry ? 
+ or come of an automaton unconscious of our pains ? 
+ ... or are we live remains of godhead dying downwards , brain and eye now gone ? 
+ thomas hardy naught in the world keeps an immortal stay , the earth , nor mortal kingdoms , golden rome , nor sea , nor land , nor the star fires of heaven . 
+ he that begat all things hath set one day irrevocable when the ultimate flame shall in its torrent sweep away the world . 
+ juvencus belief , as unbelief before , shakes us by fits ... just when we are safest there 's a sunset touch , a fancy from a flower-bell , someone 's death , a chorus-ending from euripides , -- and that 's enough for fifty hopes and fears as old and new at once as nature 's self , to rap and knock and enter in our soul , take hands and dance there , a fantastic ring , round the ancient idol , on his base again , -- the grand perhaps ! 
+ robert browning there are no masses , only ways of seeing people as masses . 
+ raymond williams the bare emptiness of life without belief . 
+ ifor evans to go to rome , much labour , little profit . 
+ the king whom thou desirest , if thou bringest him not with thee , thou wilt find him not . 
+ thesaurus paleohibernicus -lrb- translator whitley stokes -rrb- man in his capacity for love touches divinity . 
+ kenneth knickerbocker i never may believe these antique fables , nor these fairy toys . 
+ lovers and madmen have such seething brains , such shaping fantasies , that apprehend more than cool reason ever comprehends from a midsummer night 's dream , william shakespeare the absolute test by which revolution can be distinguished , is the change in the form of activity of a society , in its deepest structure of relationships and feelings ... a society in which revolution is necessary is a society in which the incorporation of all its people , as whole human beings , is in practice impossible without a change in its fundamental forms of relationships . 
+ revolution remains necessary , in these circumstances , not only because some men desire it , but because there can be no acceptable human order while the full humanity of any class of men is in practice denied . 
+ raymond williams the poorest folk are our neighbors if we look about us -- the prisoners in dungeons and the poor in their hovels , overburdened with children , and rack-rented by landlords . 
+ for whatever they save by spinning they spend on rent , or on milk and oatmeal to make gruel and fill the bellies of their children who clamour for food . 
+ and they themselves are often famished with hunger , and wretched with the miseries of winter -- cold sleepless nights , when they get u to rock the cradle cramped in a corner and rise before dawn to card and comb the wool , to wash and scrub and mend ... there are many more who suffer like them -- men who go hungry and thirsty all day long , and strive their utmost to hide it -- ashamed to beg , or tell their neighbors of their need . 
+ i 've seen enough of the world to know how they suffer , these men who have many children and no means but their trade to clothe and feed them . 
+ for many hands are waiting to grasp the few pence they earn ... . 
+ william langland -lrb- from piers the plowman -rrb- note for sheer egotistical reasons i wish to call the reader 's attention to my poetry blog : http://puritano.wordpress.com/ . 
+ check it out ! 
+ also , i have a free e-book entitled `` the tv monsters '' which you can retrieve at https://www.smashwords.com/books/view/383466 and believe it or not , i think there 's a graphic novel in this whole thing crying to get out . 
+ i think . 
+ if you feel the same way and are a graphic artist , contact me at heianwilliams65@yahoo.com . 
+ or , if you feel inspired to write me a gushing fan letter , by all means do so . 
+ but please , do n't beg me to co-author a fantasy novel with george r.r. martin . 
+ i wo n't do it , no matter how many times he asks . 
+ ********* a few years ago i experimented with developing simple , content-based websites with some audio . 
+ the target audience was my students , who are learning english as a second language . 
+ the stuff is still up there -- free , spotty in quality , but possibly useful to anyone homeschooling their children . 
+ wonderofknowledge.wordpress.com heianstories.wordpress.com ********** i listened to some ambient music from karl verkade while writing this . 
+ support our indie musicians ! 

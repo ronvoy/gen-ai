@@ -1,0 +1,2015 @@
+ astraeus 5 by graham m. phillips copyright graham m. phillips 2013 smashwords edition smashwords edition , licence notes thank you for downloading this ebook . 
+ you are welcome to share it with your friends . 
+ this book may be reproduced , copied and distributed for non-commercial purposes , provided the book remains in its complete original form . 
+ if you enjoyed this book , please return to smashwords.com to discover other works by this author . 
+ thank you for your support . 
+ chapter 1 will hunt was looking forward to the weekend . 
+ he 'd finished at commbase 2 , having fixed the interstellar communications equipment and got it working again and was , at last , on his way back to base . 
+ his commscreen flashed . 
+ it was despatch , no doubt with bad news . 
+ `` accept call '' he said . 
+ beth somers , one of the despatch staff , looked back at him . 
+ `` hi will , we 've just had a prompt from commbase 3 . 
+ there 's been a voltage spike that 's taken out several key circuits . 
+ fortunately , only in-system comms are out and have been switched to the other commbases , so we 're covered for a few hours . 
+ can you get over there and take a look ? '' 
+ is n't there anyone nearer ? 
+ i 'm on my way back to shackleton for the weekend . '' 
+ `` sorry , will . 
+ everyone else is tied up or is further from 3 than you are . 
+ anyway , you 're the best senior tech we have . '' 
+ `` flatterer . 
+ ok , will do . 
+ thanks , beth . 
+ i 'll repay the favour some time . '' 
+ beth smiled back and said `` thanks , will . 
+ you 're a star '' as the screen went blank . 
+ will sighed , then settled back in his seat and punched in the coordinates for commbase 3 . 
+ it was going to take him a few hours to get there . 
+ the aquarius solar system comms hub consisted of four identical comm rooms , evenly spaced around the system . 
+ between them , the comm rooms provided the communication hubs to link the inhabited planets and bases within the aquarius system , as well as linking aquarius to the rest of the inhabited galaxy . 
+ they were located on whatever was convenient . 
+ commbase 1 was on the planet ohio , the main planet of occupation in the system , commbase 2 was on the mining planet derwent . 
+ commbase 3 was on a large asteroid , theta 4 , that had so far avoided being pulled too far towards any one of the six planets in the system . 
+ commbase 4 was a standalone free-floating station , as there was nothing in that part of the system that could be utilised to cover that area . 
+ in addition , there were a number of geostationary satellites orbiting ohio and derwent that were used to ensure full planetary coverage but these very rarely needed maintenance . 
+ he got up and went back into the body of his ship . 
+ he was feeling jaded and decided to have something to eat and drink en route to the asteroid , as well as catching a few zzz 's -- it had been a long day already and it would be a while now before he could finish for the day . 
+ the ship was a rook class transporter , designed and built to get anywhere within the system quickly , although its outward design suggested otherwise , being basically a cabin with a large box attached to the back of it . 
+ apart from the engines , there was a cockpit with two seats -lrb- although it was rare for both to be occupied -- the company only sent out two technicians if one was a rookie , or there was an absolute necessity for the job to be two-handed -rrb- , a small galley , a bunk room with two bunks and a small amount of storage for clothes and personal items , a compact washroom , complete with shower , washbasin and toilet , a work space , including a work bench , and a large storage area , complete with the most commonly needed spares . 
+ access to and from the ship was by means of a two person airlock . 
+ in an emergency , the ship could be lived in for a month or so but the company had always managed to get to anyone who had had a breakdown within a week at most , however far out of range they had travelled . 
+ when he got to the galley , he chose a lasagne and a coffee from the vending machine , then took them back to the cockpit to eat . 
+ that way , he could look at the stars and let his mind wander . 
+ despite all the years he had spent as a comms technician , he had never tired of the view . 
+ whilst it could get lonely at times , as he travelled between jobs , it did give him plenty of time to study . 
+ his passion was the start of the electronics age , especially the 20th and 21st centuries , when man was still confined to earth . 
+ he had discovered that there were technicians such as him even back then , travelling between jobs in vans . 
+ what he still could n't get his head around was that in those early days there were lots of different communications networks and several different companies with their own infrastructure to repair and maintain . 
+ nowadays , because the human galaxy could n't function without good comms , it was all done by galactic comms , which was responsible directly to the galactic council . 
+ it was jointly owned by all the governments in each of the systems , as well as having private shareholders across the galaxy . 
+ once he had finished his meal , he went back to the galley and dropped the cutlery , plate and mug in the recycler . 
+ once that had been done , he went to his bunk and had a lie down for a short nap , confident that the auto-pilot would get him to commbase 3 safely -- it was perfectly capable of using its proximity sensors to detect and avoid either anything in the way , or on a collision course with the ship . 
+ if anything happened that it decided it could n't handle , it would sound an alarm that was loud enough to wake anyone not totally deaf or dead . 
+ there was also a system of flashing lights built into the walls that would give you a headache if you did n't deal with it promptly . 
+ the audible and visual sensory attack would n't stop until he got back into the cockpit to turn it off . 
+ two hours later he awoke and realised that he must be near to commbase 3 . 
+ he had obviously been more tired than he had thought , as he 'd only expected to be asleep for ten or fifteen minutes . 
+ he sat up , ran his fingers through his hair to get it into some semblance of tidiness and scratched his beard . 
+ both were getting a bit long -- he already looked a bit wild at times as it was . 
+ feeling slightly more awake he got up and went and wiped his face with a damp cloth , to wake him a bit more . 
+ he would have loved to have splashed water in his face but that was out of question in the zero gee environment of his ship . 
+ feeling more refreshed , he wandered to the cockpit and sat down in the pilot 's seat , so he could try and work out where he was . 
+ hitting a button , he displayed the star chart , which showed him he was only about fifteen minutes from his destination . 
+ he went back to his bunk room and put on the spacesuit he would need to travel the short distance from the ship to the comms building once he had landed . 
+ because of the very limited gravity on the asteroid , he also readied the power pack that would propel him -- whilst he enjoyed kangaroo hopping on low gravity moons , this lump of rock 's gravity was so low that any false move on his part would have him floating helplessly in space . 
+ suited up , he went back to the cockpit , in readiness to land the ship . 
+ whist the ship would do all the hard work , he liked to be available in case something went wrong . 
+ on this occasion , nothing did , and the ship came to stop as close as was safely possible . 
+ that still meant that he would have to cross fifty feet of open space . 
+ once the ship had landed safely , he killed the engine and said `` call despatch '' . 
+ the comm unit called despatch and a few seconds later , beth looked back at him . 
+ `` hi will . 
+ how 's it going ? '' 
+ `` just thought i 'd let you know i 've landed at commbase 3 . 
+ i 'll give you a call when i 've finished '' . 
+ `` ok , thanks , will . 
+ good luck in there . 
+ beth out . '' 
+ he went to collect the power pack and put it on . 
+ once securely strapped into it , he put on his helmet and did an air leak test -- the last thing he wanted was to breathe space . 
+ the suit proved leak-proof , so he stepped across to the inner air lock door , pressed the `` door open '' button and , once it was open , entered it . 
+ he closed the inner door , clipped himself to the adjacent clip hook and pressed the button to empty the airlock into space . 
+ as the air escaped , he was jerked towards the door slightly , but his restraining strap kept him secure . 
+ once it was safe , he unclipped the strap and moved towards the outer door , looked out and jumped the few feet to the asteroid 's surface . 
+ he remembered the first time he had done this , when he had forgotten to push himself gently from the top of the door frame and had drifted across the surface , landing forty feet away and feeling somewhat sheepish -- much further and he could have hit the outer wall of the comm room and hurt himself , or worse . 
+ using the power pack , he gently glided over to the comm room outer airlock door , arriving about fifteen seconds later . 
+ entry to the squat building was almost the opposite of what he had just done at the ship , except that he was putting air into the airlock this time , not venting it . 
+ as he closed the outer door , the artificial gravity and the lights in the building slowly came on , so that he slowly drifted towards the floor . 
+ as the inner door opened , he was quickly into the lobby just inside the airlock . 
+ he checked that there was breathable air . 
+ having confirmed there was , he removed his helmet , power pack and space suit and hung them on the hooks near the airlock door . 
+ it was still somewhat cold but the heating would soon sort that out , so he did n't mind . 
+ in front of him was the door into the comm room . 
+ he hit the `` door open '' button to the right of the door and walked into the room . 
+ he immediately wished he had n't . 
+ his eyes and nose instantly recognised that the problem was a lot more than despatch had said -- in two or three places around the room , there were sparks flying and the strong smell of burning electronics and insulation and he could see small flames at the far end of the room . 
+ as he turned to his left to hit the equipment master power switch , a piece of equipment on one of the racks next to it exploded and threw him across the aisle . 
+ he was thrown so hard that he hit his head against the door frame , knocking him out . 
+ unfortunately , he had n't managed to hit the switch before the explosion , so the fire continued unabated . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ billy hunt idly scratched his stubble -- covered chin and then ran his hand through his neatly cropped hair . 
+ a few hours ago , he 'd had a strange call from the office , asking if he could go have a look at the communications facility on ` roid 2 -lrb- they used to call them asteroid but that had been shortened years ago to ` roid -rrb- . 
+ apparently , the self-monitoring system there had reported that movement had been detected within the equipment room , activating the artificial gravity or agrav , lights and heating . 
+ despite his 20 years ' experience in the field , this was a first and he wondered what had happened to cause the system to report such a thing , especially as there was a security system for the external door , to stop , or at least discourage , the theft of expensive equipment from the base . 
+ ten minutes out from the ` roid , he started to ready himself for landing , putting on his eva suit . 
+ as he landed his ship , he could n't see anything that would cause the report -- he had thought that maybe someone had crash landed or had needed to land in a hurry and needed the sanctuary of the base but there was no sign of a ship on the ` roid 's surface . 
+ as he left the ship , he was still at a loss as to what might have happened but decided that he would find out in a few minutes anyway . 
+ as he left the station 's inner airlock he found that he was n't alone . 
+ on the floor of the communications room , he could see a pair of legs , sprawled on the floor . 
+ as he entered the room , he found they belonged to a man , about his height , lying on his back on the comm room floor . 
+ he had blood on his left temple and a dried rivulet of blood down his face , caking his somewhat bushy beard and some of the hair that partially covered his face . 
+ he was wearing a navy blue coverall with a company logo on the left side of the chest . 
+ it was a stylised picture of the galaxy , with the words `` galactic comms '' running around the outside . 
+ just below it was the name `` hunt '' . 
+ whilst billy worked for galacticomm , the logo was n't one he recognised . 
+ he was intrigued by the name , though , being the same as his own . 
+ he removed his helmet and bent down to check whether the man was breathing . 
+ whilst his breathing was fairly shallow , it was regular . 
+ he shook the man 's shoulder gently and said `` hey there . 
+ are you ok ? '' 
+ there was no reaction , so he tried again . 
+ the man reacted , albeit sluggishly . 
+ billy decided that , as the man was alive , he would give him a few minutes to come to . 
+ whilst waiting , he decided to strip off his eva suit , revealing his company uniform underneath -- it was warm in the equipment room , so he did n't need the suit for now . 
+ he then sat down to wait . 
+ after about five minutes , the man stirred , his left hand moving slowly to his forehead , feeling tentatively at the dried blood there . 
+ his eyes slowly blinked open but he clearly could n't focus as yet -- there was no reaction from him as to his surroundings , or at the sight of billy watching him intently . 
+ over the next few minutes , his vision returned and he realised he was n't alone . 
+ `` where am i ? '' 
+ he mumbled . 
+ `` you 're in the communications centre on ' roid 2 '' replied billy . 
+ `` where the hell is that ? '' 
+ grumbled will `` never heard of it . 
+ last i knew i was in commbase 3 . '' 
+ he managed , after a bit of struggling , to sit upright on the floor , with his back to the wall . 
+ `` ok , i think introductions are called for . 
+ my name 's billy hunt . 
+ i work for galacticomm as a senior repair operative . 
+ this is one of the company 's communications centres . 
+ as there was no ship on this lump of rock when i got here , i 'm intrigued as to how you got here . '' 
+ `` the handle 's will hunt . 
+ i 'd been called out to sort out an electrical problem at commbase 3 , which provides hub comm services for the aquarius system and on to the rest of known space . 
+ when i got inside , there were sparks everywhere and i got thrown against something . 
+ from the way my head feels , i guess i got knocked out . '' 
+ `` that does n't explain how you got here . 
+ you obviously did n't walk , ` cos we 're on an asteroid in the middle of nowhere . 
+ there 's no sign of any transport , you 're not wearing a suit and there 's nothing i 've seen anywhere to suggest you have one . 
+ you look kind of familiar , though . 
+ ever shave that thing off or have a haircut ? '' 
+ `` funny , i was thinking the same about you . 
+ you look a bit like my brother . 
+ i like the beard and the hair . 
+ where i come from , most of the men have them outside of the navy . 
+ it 's easier than shaving every day , especially when i 'm on a job . '' 
+ he paused . 
+ `` my suit 's in the lobby , along with my helmet and power pack . 
+ my ship , a rook class transport called bella , is parked outside . 
+ surprised you did n't see them . '' 
+ `` i do n't want to be the bearer of bad news but the only ship outside 's mine and there 's no suit , or anything else wearable out in the lobby that i did n't put there . 
+ never heard of the rook class . '' 
+ `` this gets odder by the minute . 
+ before we carry on , any chance i could clean up and have a drink ? 
+ this floor 's not getting any warmer or any comfier . 
+ are there any chairs in this place we could sit on ? '' 
+ with that , he managed to get himself on his feet , although billy was n't convinced at first that he was going to make it , or that he would stay upright for long . 
+ `` yeah , over in that corner '' said billy `` through that door is a small washroom where you can pretty yourself up . 
+ if you need a medkit , there 's one on the wall in there . 
+ if you need a hand , i 'll be out here . 
+ fancy a drink ? 
+ nothing alcoholic , though . 
+ the company does n't want anyone in here having had any booze inside ` em . 
+ who knows what damage they could do ? '' 
+ will moved unsteadily in the direction of the washroom door `` a coffee , white and no sugar would be great if that 's possible . '' 
+ `` no problem . 
+ it 'll be ready by the time you 're out of there . '' 
+ will closed the washroom door and turned to face the mirror . 
+ it was only then that he realised how much blood he had on his face and matted in his hair . 
+ whilst there was also a fair bit of blood on his shirt , there was n't much he could do about it just now . 
+ he ran some water and sluiced it over his hair , face and beard , so that he could remove as much as possible . 
+ it made a big difference to his appearance , as well as made him feel a little better . 
+ he looked back at the mirror , and saw he had a one inch gash on his forehead , as well as a graze below it and a developing bruise on his left cheek , just below his eye . 
+ he was amazed how much blood could come from such a small cut . 
+ he then rewashed his face , this time using some cleansing liquid from a wall dispenser . 
+ this made the wound sting but also cleansed the remaining blood from his face and beard . 
+ all that was needed was something to seal the wound . 
+ he walked over to the medkit on the opposite wall , opened the door and saw a can of spray-on skin repair . 
+ the brand was n't one he had heard of but that was n't surprising , as he had no idea where he was . 
+ that done and feeling slightly better , he made his way out to see billy putting the finishing touches to a couple of hot drinks . 
+ billy looked across at will `` before we carry on , fancy a bite to eat to go with the drink ? '' 
+ `` sounds good . 
+ what 've you got ? '' 
+ `` how about a stew -- there are some packs in the freezer ? '' 
+ will nodded his approval . 
+ billy went over to the freezer , removed a pair of stew packs and pulled the tab on the lid that made them heat up . 
+ a few seconds later he said `` grub 's up . 
+ have a seat and we can get acquainted . 
+ if you open that drawer by the coffees , there are some spoons we can use to eat this . '' 
+ will got the spoons and picked up the drinks , taking them across to the small table that billy was putting the stews onto . 
+ once they had both eaten , will was feeling much better . 
+ `` what intrigues me is that i got knocked out and seem to be somewhere different . 
+ do you have a view screen or a window so i can look outside ? '' 
+ `` you 're not the only one who 's intrigued . 
+ we 're on an asteroid in the middle of nowhere . 
+ you do n't have a ship , so could n't have flown here unless someone brought you and cleared off . 
+ there 's also no sign of a suit , so unless this is some kind of prank where you got so drunk at a bachelor party and your friends thought it would be a laugh to drop you off here , then i 'm also at a loss as to how you got here . 
+ added to that is the remarkable resemblance you have to me . 
+ it 's all a bit of a mystery at the moment . 
+ there 's a viewscreen behind that rack '' he said , pointing to the rack in question . 
+ they both went over and stood in front of the viewscreen , where billy said `` screen on '' . 
+ the screen came to life and they both saw the view outside the base . 
+ will was stunned by what he saw . 
+ `` whoa ! 
+ that looks like the view from commbase 3 . 
+ there 's shackleton over there '' he exclaimed , pointing to a small space station circling a nearby planet . 
+ `` can you change the view from here ? '' 
+ `` i can connect to different cameras , if that 's what you mean . 
+ that 's columbus , though , not shackleton '' said billy , switching to other camera views . 
+ `` can you zoom in on shackleton , er , i mean , columbus ? '' 
+ asked will . 
+ as billy did so , will realised that it did n't look right . 
+ the station he was looking at had more levels , had extra port jetties than shackleton and there was much more space traffic than he was used to seeing . 
+ `` this is getting scary now . 
+ i was in commbase 3 but this is n't the same room as there . 
+ on top of that , with that close-up view , that does n't look like shackleton . 
+ it 's as if everything has been completely rebuilt whilst i was out cold . 
+ i do n't understand why there are references to galacticomm either . 
+ galactic comms owns this building . 
+ what i really do n't understand is how i got here , only to be woken up by someone who looks like he could be my brother . '' 
+ `` either you 've had some kind of breakdown or there 's more to this than meets the eye . 
+ what 's the last thing you can remember from before i found you on the floor ? '' 
+ `` all i can really remember is that , when i opened the door into the ops room , there were sparks flying everywhere . 
+ as i came into the room , there was an almost overpowering smell of burnt electronic components . 
+ then i was thrown by an explosion and hit my head . 
+ it all happened at once , so i did n't get a chance to take it all in . '' 
+ will noticed a row of four cupboards that the staff used to store personal possessions and which had a number of images on the front . 
+ most he did n't recognise but did spot one with a younger version of billy , flanked by a pair of older adults , a male and a female , looking very proud , as he wore what looked like a graduation outfit . 
+ as he looked more closely , he realised that the older couple looked exactly the same as his own parents , apart from their hairstyles and clothes . 
+ like will , will 's father had a beard and moustache , albeit neatly trimmed , whereas the man in the image was clean shaven . 
+ just to add to the strangeness , they were flanked by a young man and a teenage girl , who looked like they could easily pass for his own siblings . 
+ `` your parents look like mine . 
+ weird , or what '' he asked billy . 
+ `` sorry , miles away . 
+ you say your parents look like mine ? 
+ now that is a coincidence . '' 
+ `` i 'll show you '' said will removing his comm device from his pocket . 
+ he flicked through and found the holographic image he was looking for and showed it to billy . 
+ `` oh . 
+ my . 
+ god , i see what you mean '' said billy by way of response `` they 're pretty much identical . 
+ i reckon they could each pass as a pair of twins . 
+ the other two look much like my own brother and sister , alan and susan . '' 
+ `` i think there are too many odd things going on here . 
+ you think you 're in commbase 3 , the local station is shackleton and we 're in the aquarius system , even though i know we 're not . 
+ added to that , we have family who look as though someone has edited the pictures to make their hairstyles and clothes look different , never mind the fact that , hair and beard apart , we could pass as twins . 
+ i think it 's about time that we got to know more about each other . 
+ my full name is william robert hunt . 
+ i was born on the columbus space station over there . 
+ i 'm 37 next january . 
+ the planet columbus is circling is called new oregon and we 're in the lincoln system . 
+ my parents are called jim and eliza '' said billy . 
+ `` wow ! 
+ my full name 's william richard hunt and i 'm the same age as you . 
+ shackleton goes round the planet ohio in the aquarius system . 
+ as far as i can tell from here , ohio looks identical to new oregon . 
+ my parents are called james and elizabeth . 
+ just to add to the coincidences , my sister is called suzanne and my brother is called allen . '' 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ beth somers had been trying to get hold of will , without success . 
+ she called melvyn smith on the commnet . 
+ `` hi mel . 
+ will was sent to have a look at a problem at commbase 3 and got there about an hour and a half ago . 
+ i was expecting him to call in and give me an update on how it was going up there half an hour ago . 
+ i 've been trying to call him since then but he has n't responded . 
+ i tried to look at the base using the cameras but ca n't see him , although the one in the equipment room is n't working , so he could be in there . 
+ shortly after he arrived , i got a warning that showed that all the comm systems had gone down there , not just the in-system ones that he had gone to work on and had to switch things around to maintain coverage . 
+ knowing he was there , i left it ` cos i assumed that he had had to kill the power to all the comms , but now i 'm wondering if something more serious has happened . 
+ i 'm getting worried about him . 
+ before we call security , can you go see if he 's ok ? '' 
+ `` that 's not like will . 
+ he 's pretty good at keeping in touch . 
+ i 'll just put the finishing touches to this job and will be off as soon as i can . 
+ should be about quarter of an hour , tops , in finishing , if that 's ok '' replied mel , also starting to worry about his friend and colleague . 
+ if anyone did n't call in when expected or did n't reply to calls from anyone in the team , then one of the others would go and try to find out what had happened . 
+ if no-one was nearby , they would call security and ask them to check on them . 
+ often it was simply that the team member was stuck in a cable conduit or they had left their comm unit somewhere they could n't reach quickly . 
+ whilst there was a limit to what could be done if there was a medical emergency , each commbase had a medkit that could cope with most minor emergencies . 
+ if there was a real emergency that was beyond what the medkit and their medical training could n't cope with , each commbase was also equipped with a statis chamber that could be used to put the injured person into suspended animation but that was very much a last resort . 
+ a few hours later , mel was in sight of commbase3 . 
+ he could see will 's ship parked alongside the squat structure , so was reassured that will was still around . 
+ `` call despatch '' he said to his comm unit , as he approached commbase 3 . 
+ `` hi mel . 
+ any news on will ? '' 
+ asked a worried-looking beth . 
+ `` hi beth . 
+ just approaching the asteroid now . 
+ will 's ship is parked up next to the comm block , so he should be here somewhere . 
+ i 'll let you know more once i get inside and have had the chance to take a look around . '' 
+ with that , he closed the call and prepared for landing . 
+ once landed , he moved across to will 's ship and saw the open airlock , so knew he would n't be inside -- the inner door would n't close unless the outer door was firmly sealed , to stop the air inside from being lost and to stop anyone and anything inside from being sucked into space . 
+ he propelled himself the short distance across to the low building and entered the airlock door , cycled the air and opened the interior door . 
+ when he entered the lobby just inside the airlock , he saw will 's suit , helmet and power pack hanging there , so entered the door into the equipment room . 
+ as he did so , a scene of chaos met him . 
+ smoke and fire had damaged large sections of the room . 
+ apart from the lingering burning smell , the fire had gone out , just leaving smoke and the mess behind . 
+ just to be sure , though , he went to the master power switch at the end of the lobby to turn off the power to the communications equipment racks , and put the air purifiers up to their maximum setting to clear the air . 
+ `` will , are you there ? '' 
+ he called . 
+ as there was no response , he called again . 
+ again , there was no sound from will . 
+ after about thirty seconds , he re-entered the room and walked across to the far wall , looking at the floor beyond the racks as well as in the aisle he was in , in case will was lying on the floor on the other side . 
+ as there was no sign of will , he checked in the washroom and the store room . 
+ there were no signs of life in either . 
+ in fact , mel had n't seen anything to suggest that will had ever been in the room . 
+ as he turned around to face the door he had come through , he noticed that there was a small amount of blood on the door frame and on the floor nearby . 
+ he moved to investigate further . 
+ he was no expert but there seemed to be a lot more there than if will had simply cut himself . 
+ he was perplexed . 
+ `` call despatch '' he said into his comm unit . 
+ after a few seconds , beth replied `` hi mel . 
+ success ? '' '' 
+ ` fraid not , beth . 
+ i 've looked around the comm building and there 's no sign of will . 
+ there 's a small pool of blood just inside the equipment room door . 
+ it 's almost dry , which suggests it has n't been there all that long . 
+ i do n't understand it . 
+ i think we need security to have a look , after all . '' 
+ `` are you sure ? 
+ `` his suit 's in the lobby , so he has n't gone outside as i 'd thought might have happened and his ship 's outer airlock door is open , so he 's not in his ship . 
+ i do n't know where else he can be if he 's not in the building and there 's nowhere in here that he can be that i have n't looked . '' 
+ `` ok , i 'll call them out . 
+ i 'll get them to call you as they get near . 
+ while you wait for them , can you look at the equipment ? 
+ it 's being shown as entirely offline now . '' 
+ `` the room was full of smoke , and the damage is quite extensive . 
+ there 's obviously been a lot more damage here than you thought when you asked will to have a look . 
+ i turned the power off the systems to be safe but the fire seems to have already knocked most of them out anyway . 
+ it 's going to take me a while to figure out what 's happened , what 's failed and what needs fixing . 
+ i just hope we have the spares up here to fix everything but i very much doubt it . 
+ i 'll start on that while i wait for security to turn up . '' 
+ `` oh , hell ! 
+ thanks , mel . 
+ keep me posted . 
+ good luck . 
+ beth out . '' 
+ it was clear that it would take some time , even with the spares he had in the storeroom , as well as on both his and will 's ships . 
+ some of the damage was so extensive that the usual method of simply replacing damaged parts could n't be done and if he did n't have the spares he might have to go back to shackleton once he had a clear idea of what would still be needed , unless he could get someone to bring the stuff up to him . 
+ along with sorting out what needed repairing inside the commbase , he would also have to check the antenna farm outside to make sure they were all working properly . 
+ otherwise , the comm relay network might still not work . 
+ all in all , he reckoned he was going to be here for a few days at least . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ security sergeant bridget `` bridg '' powell was more than a little bored . 
+ she had signed up for a life of adventure but spent most of her time staring into space . 
+ she had enjoyed the view at first , but after 25 years on the job , the magic of it had palled somewhat . 
+ her job was to help patrol the aquarius system and keep an eye on the rookie on her left , officer aurelius truran . 
+ whilst he was a rookie cop , he was going on thirty years old and had been a lab rat for several years , undertaking backroom forensic work for the service . 
+ he had requested a change of assignment which , unusually , had been granted . 
+ since they started their shift four hours ago , absolutely nothing of interest had happened . 
+ it was as if everyone in the system was asleep , even though it was now mid morning , ohio time . 
+ the comm unit squawked `` sergeant powell , please respond to a call about a missing person from the ` roid theta 4 . 
+ a galactic comm technician , melvyn smith , is already there and will fill you in with the details when you arrive . '' 
+ `` will do . 
+ we 'll be there in about an hour '' responded bridget , as enthusiastically as she could . 
+ `` at last , something to get our teeth into , aury '' she exclaimed , looking at her partner . 
+ neither felt particularly enthusiastic but it was better than nothing . 
+ bridget steered the patrol ship towards the asteroid and set off at full speed . 
+ `` can you grab us some food and a drink ? 
+ might as well make sure we get something inside us before we land . 
+ these things can drag on and i hate working on an empty stomach '' she said to aurelius . 
+ `` no problem , sarg . 
+ anything in particular , or your usual ? '' 
+ `` the usual will be fine , thanks . '' 
+ ten minutes later , he returned with a tray with a vegetarian bolognese and a steaming mug of white coffee for each of them . 
+ like most people living on the shackleton space station , most of their meals were vegetarian . 
+ real meat was too expensive a luxury for most people , at around three times the price of meat substitutes , making it something of a luxury . 
+ meat substitutes were normal , although it also made it a lot easier to feed everyone this way , when the station residents and visitors held a wide range of religious and ethical views , some of which forbade meat-eating . 
+ whilst meat could be obtained for those determined enough to get it , few on the station did so on a regular basis , unless they were trying to impress someone . 
+ as they ate , they discussed what little they knew and tried to guess what they would be dealing with when they arrived on theta 4 . 
+ once they were able to see the asteroid , bridget called the commbase to let the waiting melvyn know they were almost there , then did a routine sweep of the immediate area with a scanner , to see whether there was any sign of any unusual activity around the comm station . 
+ all they identified was the usual space dust , a few small lumps of rock and the two space ships resting on the asteroid . 
+ satisfied that there was nothing floating around the area that would help or hinder either her landing or investigation , she manoeuvred the patrol cruiser into position next to the two galactic comms ships and killed the power . 
+ as she and aurelius always travelled suited up , it was then a quick task to put on their helmets and propulsion systems . 
+ that done , they both made their way across to the small building on the asteroid 's surface and entered the airlock . 
+ once inside they were greeted by mel , hand extended `` at last , you 've arrived . 
+ i 'm mel . '' 
+ `` good afternoon , mel . 
+ i 'm sergeant powell and this is officer truran . 
+ what can you tell us ? '' 
+ `` should we go through ? 
+ we can sit down and have a drink , if you 'd like one . '' 
+ `` that would be good . 
+ i 'd like a tea , white , no sugar and officer truran usually has black coffee , one sugar '' `` no problem , sergeant . 
+ follow me and we can kick things off . '' 
+ as he made the drinks from the dispenser in the small staff room beyond the main comms room , mel said `` all i can really tell you is that i was asked to come and have a look around because our dispatch could n't contact our technician , will hunt , who had been called out to sort out a major communications failure problem . 
+ you can see the mess it left behind , with a fairly serious fire in the main room . 
+ fortunately , this room 's undamaged . 
+ i 've looked around and ca n't find him . 
+ his ship is outside and his suit , helmet and power pack are all hanging in the lobby . 
+ none of the emergency suits are missing and his ship 's outer airlock door is open , so i 've assumed that he 's not gone back on board . 
+ however , there is a small amount of blood over by the door that was still damp when i got here a few hours ago . 
+ it 's probably dry by now . '' 
+ as she took her drink from mel , bridg said `` thanks . 
+ cheers . 
+ we 'll have a look in a minute . 
+ did you check inside his ship , in case there was a failure of the outer door ? '' 
+ `` with the outer door open , i assumed that he could n't be , because the inner one 's still closed and overrides stop them both being open at the same time . 
+ his is the one nearest to us , by the way . '' 
+ `` whilst that 's normally the case , i have seen it happen on a couple of occasions . 
+ i 've even seen one case where both inner and outer doors failed simultaneously . 
+ very unfortunate and messy , to say the least . 
+ took a while to clear up all the stuff that got sucked out , including the pilot and her passenger who were n't strapped in when the accident happened . 
+ have you looked around the asteroid , in case he 's fixing something outside ? '' 
+ `` i 've called him on the radio and had a look using the outside cameras and ca n't see anything . 
+ because the light levels are so low here , they use a combination of infra red and natural light , so the clarity is pretty good once the computer has done its thing with the image . 
+ no sign of him that i 've found . '' 
+ `` ok . 
+ it sounds like we need to have a good look around and see if there 's anything we can spot that you 've missed . 
+ we 'll start in here . 
+ can you show us around , please ? '' 
+ they finished their drinks and mel showed them around the small comm station . 
+ the few doors there , including the larger storage cupboards , were opened , without anything new being discovered . 
+ because of the station 's compact size , it only took about thirty minutes to fully examine the interior of the building , chatting the while . 
+ as they left the main room , bridget bent down and checked the blood on the floor . 
+ `` looks fairly fresh . 
+ aurelius , can you check the blood 's dna ? '' 
+ aurelius moved his scanner across the blood . 
+ a few seconds later the scanner had finished and aurelius said `` the scanner shows that the blood belongs to william robert hunt of shackleton . 
+ the sample was created less than twenty four hours ago . 
+ the absorbent floor material makes it impossible to be more precise . '' 
+ even before man first started to travel between the stars , fingerprints , retinal scans , full body tissue images and dna were automatically recorded so that , should an accident occur , any human remains found in space could be positively identified . 
+ in the early days , when the original solar system was opened up to regular space travel , several spaceships were lost due to collisions with space debris or equipment failures . 
+ because of the vastness of space , it was several years before some were located and boarded . 
+ it was generally a grim task identifying those that had perished . 
+ at least the scans and dna allowed identification to be possible , so that families could be informed and the appropriate decision taken as to what should be done with the remains . 
+ `` well that confirms he 's been here and not so long ago . 
+ i noticed that there were a number of shards of equipment littering the room . 
+ has there been some kind of explosion in here ? '' 
+ she asked mel . 
+ `` i 've been more interested in trying to work out what i need to do to fix everything but now you point it out , there does seem to have been something like that . 
+ i 'll need to have a closer look to be sure , though . '' 
+ `` ok , can you have a look around and see what might have happened in here ? 
+ it might give some explanation for the blood , although it does n't explain where your colleague has gone . '' 
+ `` wo n't take long . 
+ i 'll let you know shortly '' `` thanks for the tour , mel . 
+ we 'd better check for any more dna , then we 'll need to check outside . 
+ we 'll also need to look in your ship as well , just to make sure '' declared bridget . 
+ bridget and aurelius then started to process the base , looking for any dna that was n't either will 's or mel 's . 
+ whilst some old dna was found , it was identified that it was a company employee and could n't have been involved in will 's disappearance . 
+ no other fresh clues were found during their search . 
+ once they had finished , aurelius packed away their test equipment and he and bridget went outside . 
+ she decided to start with will 's ship . 
+ once they had entered it , it took only a few minutes to realise that he was n't on board , even having searched through the work and storage areas at the rear of the ship . 
+ they then had a look around mel 's ship but , as expected , that did n't have will on board either , so they set off to look around the rest of the asteroid . 
+ whilst the asteroid was quite small , it took them almost three hours to cover it adequately and had seen no sign of will , either visually or with their scanners , so returned to the comm base . 
+ whilst they were outside , mel had started to look into bridget 's idea that there had been an explosion . 
+ having looked around in detail , he discovered , a few feet in from the entrance door , an equipment rack where equipment seemed to have thrown against the opposite wall . 
+ having examined the debris , he formed a clear view as to what had happened , so mentally prepared his findings for bridget . 
+ he then resumed his work on sorting out the mess made by the short-circuit for the purposes as he worked through the room , it became clearer what he needed to do , as well as start to clarify in his mind what was going to take a while to repair . 
+ unfortunately , much more than he would like was in the latter category . 
+ he had discovered a few problems with all the comms systems . 
+ he did want to check the antenna systems , though , as there may have been a problem created in the cabling to the antennas or a voltage surge could have damaged the circuitry at their bases . 
+ whilst the checking routines he had been able to carry out had n't revealed any problems , he liked to check . 
+ past experience led him to realise that a failure to do this would mean that he would have to come back again in a couple of days or less when something failed that could have been picked up on his test programme . 
+ he knew he would have to wait until the two security officers had done with him before that could happen -- they would n't want him to go outside whilst they were still on the asteroid looking for clues . 
+ once bridget and aurelius had returned inside the comm base , mel explained to bridget what seemed to have exploded , confirming bridget 's earlier observation on the subject . 
+ bridget then told mel that in the absence of any evidence as to what had happened to will , for now there was nothing further they could do except record him as missing due to unexplained circumstances . 
+ she asked mel to let her know if anything should happen , or if will or anyone else contacted either mel or the company , so that they could close the case . 
+ for the time being , however , the case would remain open . 
+ she then thanked mel for his assistance and cooperation and then returned to their cruiser with aurelius . 
+ whilst mel was somewhat unhappy with bridg 's verdict , he had to agree with her assessment . 
+ much as he hated to think it , will seemed to have vanished into thin air . 
+ once they had cleared the outer airlock , mel reported back to beth . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ `` whilst you were cleaning yourself up , i thought that , as i 'm here , i ought to give the equipment a quick check-over , and found a transmission on a frequency we do n't use . 
+ i have n't had a chance to find out more yet . 
+ maybe we could have a look into it together ? '' 
+ `` happy to be of help . '' 
+ `` ok , thanks . 
+ i just brought up the diagnostic software on the computer and it found the signal . 
+ it 's very weak , though . 
+ as there 's no sign of any kind of a break-in to the base , i can only assume that the signal is coming from the surface of the ` roid . 
+ we 'll need a couple of highly directional receivers that will receive only on the transmitter 's frequency and have their sensitivity increased as we get nearer to the source . 
+ the signal is on 1,957.5 megahertz . 
+ there should be something we can rustle up . 
+ it 's not as if we 're short of electronics in here '' smiled billy , as he moved across to his workbench . 
+ as will looked on , unable to assist , billy started to build a collection of assorted test equipment , circuit boards and electronics components on the work bench from various parts of the room . 
+ `` ok . 
+ i 've found a receiver i can use but it does n't work on the signal 's frequency , plus gathered together some other bits and bobs so i can build a receive converter that will change the signal frequency so that the receiver can work with it . 
+ it wo n't look pretty but it should do the job . 
+ once i 've built one converter , i should be able to copy the circuit fairly easily . 
+ whilst i get to work on this , fancy making us another coffee ? 
+ it 's going to take a while and i 'm starting to get thirsty . '' 
+ by the time will returned with two hot mugs of coffee , billy had made a good start on putting together his modified receiver . 
+ the smell of a hot soldering iron and melted solder filled the air near to billy . 
+ `` you seem to be making good progress '' said will , as he put one of the mugs on the bench near to billy , before he sat down to billy 's left . 
+ `` it 's been a while since i had to do anything like this but it seems to be coming back to me better than i thought . 
+ i might be able to give it a quick try in about ten minutes . 
+ while i 'm working on this , could you have a look around and see if you can find another receiver ? 
+ we 're going to need one each when we get outside . '' 
+ twenty minutes later , he sat back , looking pleased with himself . 
+ `` the moment of truth '' he said , plugging the working prototype into the nearby portable power pack . 
+ to both their relief , it seemed to come to life . 
+ `` let 's see what we have . '' 
+ despite making various adjustments with the volume control and the receive frequency , all they could hear was a sort of an electrical burble . 
+ `` looks like it might be scrambled in some way . 
+ let 's see whether we can do something with it '' he muttered , moving to the computer keyboard and switching on the computer screen . 
+ he opened a program and tried a few of the modes that the company routinely used to transmit information . 
+ none worked . 
+ `` hmm , they 're not using any of the usual stuff . 
+ i wonder if they 're using anything a bit unusual '' he said , looking to see if he could try any of the old modes that had stopped being used by commercial services . 
+ all of a sudden , the screen started to show a stream of images , although they did n't make much sense . 
+ `` hah ! 
+ progress , nearly there . 
+ they seem to be using a mode used commercially but abandoned decades ago . 
+ it 's using vestigial sideband to modulate the signal . '' 
+ the images were now clear and were flashing through at a very high speed . 
+ `` right , nearly there . 
+ let 's see if i can slow it down so that we can see what 's being transmitted . '' 
+ after pressing a few keys on the keyboard , will and billy were able to see a stream of images on the screen . 
+ `` why on earth are they collecting this information ? 
+ it 's all freely available anyway '' said will , surprised by what he was seeing . 
+ `` no idea but we need to know where the transmitter is for this thing . 
+ now you 've find another receiver , i just need to knock up another receive converter '' said billy , rising from his seat `` that way , we can start to work out why it 's of use to anyone . 
+ before i do , though , do feel up to going outside with me to check it out ? '' 
+ `` now i 've had some food and something to drink , i 'm feeling much better , thanks . '' 
+ half an hour later , the second receiver was built and both devices boxed and ready to be used outside . 
+ `` you 'll need to suit up . 
+ there 's a spare suit in the storeroom that you can use . 
+ it wo n't be a great fit but it will be about right . '' 
+ will collected the suit and put it on . 
+ it was a slightly different design to the one he was used to , so billy helped him , to make sure it was fully sealed and that he could breathe properly . 
+ once they were both ready , they left the communications building and moved over to the collection of antennas and parabolic dishes used by the company to receive and retransmit the signals across space . 
+ `` the signal may be pretty hard to find unless we get quite close to the transmitter . 
+ the best way to hide it is to use an antenna hidden amongst our regular dishes , so we 'll start over there . 
+ it will need a clear view of wherever the signal is being broadcast to and should look newer than the rest of the stuff out here '' said will . 
+ `` i agree . 
+ i would expect it to be highly directional , so we 're looking either for a long beam antenna or a dish that looks different to the usual ones on the asteroid '' responded billy , as they reached the antenna `` farm '' . 
+ `` i suggest we split up and look at different areas , otherwise this will take ages '' suggested will . 
+ `` ok , no problem . 
+ i 'll go down this way , if you want to carry on a little way . '' 
+ as they walked carefully through the collection of dishes and antennas , will was surprised how different it seemed to the area outside commbase 3 . 
+ about twenty minutes later , will called billy . 
+ `` i think i 've found it . 
+ there 's a strong signal here on 1957 megs and looks completely out of place . 
+ unlike the rest , it seems to have a few external cables . 
+ all of the company 's are put inside trunking to protect them . 
+ the mechanism for moving it looks different , as well . '' 
+ `` i 'll be there in a moment '' replied billy , who had been starting to wonder if they were ever going to find what they were looking for but realising , from will 's words , that they might have had some luck . 
+ when he arrived at will 's side , he bent down and looked closely at the antenna and equipment will was examining . 
+ `` that 's odd . 
+ there 's writing on the side that 's unfamiliar . 
+ all the stuff the company uses has markings in english . 
+ i do n't recognise this '' said billy , pointing to the label in question . 
+ there was a white label with the words `` farita en hispanujo '' written on it , in red capital letters . 
+ `` that 's not a language i 've ever come across '' said will . 
+ `` me neither , even though we use stuff from all over the known universe '' agreed billy . 
+ `` i wonder what it means . 
+ at the moment , though , i 'm more concerned where this is currently transmitting , so we can work out where the signal is going '' taking careful measurements of the direction the antenna was currently pointing . 
+ `` now i know where to look , we need to go back inside so i can see if there 's anything i can pull out of the computer to see what there might be in the way of its signal . '' 
+ as they returned to the communications centre door , will asked `` i wonder what that language is and what it means . '' 
+ `` same here . 
+ once i know the location of the other end of the signal , i 'll contact my hq and let them know something odd 's going on here . 
+ i 'll give them all the information i can , so that the head of operations can decide what to do next . 
+ do n't worry , though , your presence wo n't be mentioned . '' 
+ once they were back inside the building , they removed their helmets and moved to the computer terminal , where billy entered the details from his measurements . 
+ a few seconds later , a detailed three-dimensional image of the local solar system was displayed , with a narrow cone overlaid upon it , with its point at the asteroid and broadening out as it went into the distance . 
+ `` well , well , well . 
+ i should have realised , judging from the direction of the antenna '' exclaimed billy . 
+ `` it seems to be pointed at astraeus 5 , the outermost planet of the system . 
+ it 's a dead , barren planet and no-one has found a use for it yet , so it 's uninhabited . 
+ it 's only about 5,000 kilometres across , so it 's pretty small . 
+ there was a long debate as to whether it was big enough to call it a planet but once it was discovered that it only goes around the sun , rather than another body , it was agreed that it was the only suitable category for it . 
+ at the moment , it 's only about 250,000 kilometres from here , so there is no real loss of signal strength to speak of , making it easy to transmit a large amount of data there without noticeable losses . 
+ it moves quite slowly around the sun , so pointing an antenna at it is a fairly safe bet '' `` it 's odd . 
+ i 've been to this asteroid loads of times and have never been anywhere near that planet , although we call it zeon 5 . 
+ is there any way of being any more precise as to where it will be on astraeus 5 ? 
+ a diameter of 5,000 kilometres still gives us a large area to search for the receiver '' asked will . 
+ `` i have a small laser light source i sometimes use when i 'm aligning dishes and other stuff that i can use to narrow it down a bit . 
+ whilst there will be a small amount of dissipation because of the distance , it wo n't be much , as there 's no atmosphere for the light to go through . 
+ unfortunately , the receivers will pick up the signal over quite a large area when we get there , which wo n't limit the search enough to make them useful , although they 're probably worth taking anyway , so we can listen in as we go . 
+ the surface of the planet is almost totally flat , apart from a few small craters caused by space debris , so when we get fairly close , i can use our zoom camera to look at the surface to get an idea , programme the details into the ship 's navigator and that will get us fairly close to the receiver . 
+ that 's the best i can do , though , so we 'll need to use our eyes after that '' replied billy . 
+ `` what about a heat sensor ? 
+ the receiver might give off a little bit of heat that can be detected when we get fairly close to the planet . '' 
+ `` it 's unlikely that there will be enough heat generated by the receiver but you never know , i suppose . 
+ the receiver will need to do something with the info it 's getting , so there may be enough kit to give off some heat . 
+ as it 's relative to the background , it might just be enough if i set the receiver to be on high sensitivity . 
+ good idea . 
+ at the same time , i 'll link it to an infra-red camera system , which will let us look at the surface , rather than just rely on the detector . '' 
+ with that , billy felt he had enough information to call his control back on columbus . 
+ he asked will to stay where he was , so that he would n't be in view of the camera , then moved over to the communicator . 
+ he pressed the call button and the monitor display changed from the company logo to the middle-aged face of the senior operator , joe willmore . 
+ `` hi joe . 
+ there is something weird going on . 
+ someone has fixed a small transmitter and a beam antenna outside pointing to astraeus 5 . 
+ the odd thing is , all it seems to be doing is sending routine entertainment broadcast streams there . 
+ there seems to have been no attempt to intercept any private messages , which is a bit odd in the circumstances but that would require knowledge of the encryption methods we use , so might be beyond the technical knowledge of whoever fixed up the transmitter . 
+ i took some video recordings and they 'll be with you in a few seconds . 
+ it could be a hermit who 's set up on astraeus but it all seems a little odd . 
+ just to add to the strangeness , one of the bits of equipment on the surface has a label on it with writing on it in a language i 've never come across before . 
+ have a look at the video and photos i 'm sending you . 
+ any suggestions as to what you want me to do ? '' 
+ `` hi billy . 
+ that does sound odd . '' 
+ he hit a few buttons on the computer keyboard , `` the photos are here . 
+ give me a couple of minutes to give me a chance to have a look at them , and i 'll call you back . '' 
+ a few minutes later , there was a chime from the communicator speaker . 
+ `` hi joe . 
+ what do you reckon ? '' 
+ asked billy . 
+ `` i agree . 
+ it 's most unusual . 
+ what i ca n't understand is why they 're only streaming freely available stuff and are n't trying to get hold of anything confidential . 
+ maybe they were in a rush and did n't have the time . 
+ i have fed the words on that label into the main computer here and it translated into `` made in spain '' . 
+ apparently , the language is one that surfaced in the late 1800 's on earth , called esperanto , although it 's evolved over the years . 
+ the original idea was to have a common language to create harmony between different creeds and nationalities . 
+ eventually , several million people used the language across the planet but it never became the main language in any country . 
+ whilst it still has users on earth , there are only a few other users in other systems . 
+ what i really do n't understand is how the part got onto ` roid 2 . 
+ as far as i know , all the planets that use the language are purely agrarian or mining and do n't produce electronic goods . 
+ i suggest that you go over to astraeus 5 and see what 's at the other end of the signal path . 
+ i 've called the cops and asked them to meet you over there , so expect a call from them soon . 
+ are you ok with that ? '' 
+ `` fine by me . 
+ i 'll get over there and have a look . 
+ i need to cobble together a few bits of kit , though , so i can have some hope of pinning down exactly where the signal is going to . '' 
+ `` ok , whatever you need . 
+ the cops will take a few hours to get there anyway , as they 're currently in sector 3 , near to ` roid 1 . 
+ joe out . '' 
+ `` billy out . '' 
+ billy turned to will and said `` let 's see what we can rustle up so we can narrow down our destination . 
+ some of it will already be on my ship , so we only need a few of the more obscure items from here . '' 
+ with that , he gave a list of things that he thought they would need to will . 
+ once they had everything billy could think of , he said `` we 'd better get out of here . 
+ before we do , can i take a holo-image of us both , for my collection ? 
+ it 's a hobby of mine . 
+ `` i 'd like to do the same , if that 's ok '' replied will . 
+ `` yeah , sure . 
+ might be hard to explain to someone else , though ! '' 
+ when they left the comm building , they carried the items they had collected and placed them next to billy 's ship , then returned to the out-of-place communications antenna where billy attached a small laser light to the main arm , and made sure it was pointing in the correct direction , as well as he could . 
+ they then went back to billy 's ship and carefully put the items they had left alongside it on board . 
+ as a two-seater clarion class transport vehicle , accommodation on board would cause no hardship for either of them . 
+ as they left the asteroid , will took a good look around , to see what the base looked like . 
+ `` i ca n't get over how similar this place is to my commbase 3 . 
+ there are some small differences , such as the shape of the building . 
+ also , in my case , the roof is red and the walls are white , unlike this one . 
+ the size and location of the antennas is also different but there 's no doubt that this is the same lump of rock . 
+ this ship is very different to my ship , though . 
+ much more spacious and streamlined . 
+ it makes mine look positively overweight . 
+ mine 's more like a big box with a cab at the front . '' 
+ two hours later , they had set up the various receivers and detectors they felt they needed ready to help them when they arrived at astraeus 5 and were most of the way to the small planet , when billy said `` security are only expecting me so , if they ask , i 'll introduce you as my cousin and say that you 're on your way to work on tharl in the pinnacle system , setting up a new comm setup . 
+ when we eventually get back to columbus , i 'll introduce you to kate and peter . '' 
+ `` who are kate and peter ? '' 
+ asked will . 
+ `` my wife and seven year old son . 
+ she was kate brown until we married just over 8 years ago '' `` wow , you 're married with a son . 
+ i remember dating a kathy brown but it only lasted a few months before we split up . 
+ she was n't happy that i spent so much time in space . 
+ whilst i lived with someone for a few years and have dated a few women since , i 'm currently single . '' 
+ `` that sounds like the kate i married ! 
+ she was n't happy at first but we had a long chat about it and she came round to the fact that the job paid well and by being married we would get decent quarters on columbus , although she would like to move back to ohio when we can . 
+ for now , we go down once every month , in accordance with station requirements , to make sure our muscles and bones do n't deteriorate in the lower gravitation of the station . 
+ as a matter of interest , who did you live with ? '' 
+ `` her name 's becky williams . 
+ she works in the spaceport admin section on shackleton . 
+ we lived together for about five years but split up last year . 
+ no kids , though , which made it simpler when we did break up . '' 
+ `` i remember a rebecca williams . 
+ if i remember rightly , she was a bottle brunette , of average height . 
+ always wore jeans and a tee shirt , even to formal occasions . 
+ a bit of a tomboy , to say the least . 
+ we were close friends at college but we never dated '' responded billy . 
+ `` yep , that sounds like her , although she did n't dye her hair , as far as i know . 
+ whilst i saw becky around at college , we did n't move in the same circle of friends at that stage . 
+ i met her at a party about six years ago and we just sort of clicked , if you know what i mean . 
+ it 's amazing , is n't it ? 
+ we 're both essentially the same person and do a similar job and have had similar lives but some small decision means they 're different . 
+ some of the differences are quite small , like our chosen profession and others , like you marrying kate , have taken us in a different direction . 
+ `` ok , now we 're as ready as we can be for when we get to astraus 5 i 've set the autopilot , we 'd better get you into something more suitable for after we land . 
+ we need to get you out of those coveralls , as they could invite unwanted attention from security , never mind when we finally get back to columbus , unless you 're wearing something suitable underneath ? '' 
+ asked billy . 
+ `` unfortunately , i do n't tend to wear much other than a tee shirt and underwear under the coveralls , so will need to borrow some of your clothes . 
+ fortunately , we 're the same size as each other so that anything of yours should fit me , assuming you have anything to spare . '' 
+ on hearing this , billy said `` in that case , we 'd better see what there is in my locker , then '' as he left his seat and turned towards the rear of the ship . 
+ they were able to find a pair of jeans and a fresh shirt , which would help make will feel more in keeping with his new surroundings . 
+ the company logo on his tee shirt would definitely have attracted attention from security , assuming they met face to face . 
+ by the time they had found the clothes , it was almost time to start looking for the receiver on astraeus 5 , so billy left will to get changed and returned to the cockpit , so that he could start to get things ready for when they were close enough to start their search of the planet . 
+ when will joined billy a few minutes later , billy explained what he had done in will 's absence . 
+ `` i 've turned the detector and receiver on , and checked we 're still following the line of the laser light by ejecting a small amount of water , so that the light can illuminate it . 
+ i 've also switched on the infra red and the heat detector , in readiness for when we get closer . 
+ in about five minutes , we 'll be close enough to start looking visually and keeping an eye on the sensors . '' 
+ `` is there anything in particular you want me to do or will we both try to see what turns up ? '' 
+ `` since it 's likely to be like looking for a needle in a haystack , it would be best if we both work on the same thing . 
+ the detectors will chime if they detect anything unusual but they will need to be fairly close to whatever we 're looking for to react . '' 
+ as they approached the small planet , billy and will looked out of the ship 's main port with the infra red and the heat sensor immediately to its left . 
+ the low light , this far from the system 's sun , meant that the details were far from clear . 
+ what was apparent , however , was that the surface was almost totally featureless , with surprisingly few craters considering the absence of an atmosphere . 
+ it reminded will of mercury , in the original solar system , although it was going to be a lot colder than it would be on mercury this far away from the sun . 
+ whilst he knew it was being optimistic , billy decided to start to search where the computer advised was where the laser they had been following seemed to be pointed . 
+ however , there was nothing that either of them could see that did n't look as if it belonged there . 
+ neither was surprised , as the radio signal would cover a wide area from where the laser pointed , even assuming that billy had attached it to the antenna properly . 
+ having covered the most optimistic option , billy decided to cover the likely area in successive sweeps of the ship , first going north , relative to the ecliptic , flying at around one kilometre above the surface . 
+ they hoped that they were n't too high to see what they were seeking but were concerned that , if they were too low , they could take what would feel like forever to cover the area . 
+ after what seemed like an eternity later , when both billy and will were beginning to wonder whether they would ever get to find anything , will spotted something on the lower edge of the infra-red image monitor screen . 
+ `` what 's that ? '' 
+ he asked . 
+ `` let 's take a closer look '' replied billy , as he steered the ship in the direction of the bright spot on the monitor . 
+ as they closed in on the brighter part of the image , they moved closer to the surface and were rewarded by being able to identify a rectangular shape about one metre square . 
+ billy switched on the external lights and was able to see that there was also an antenna next to the rectangle , pointing back to ` roid 2 . 
+ `` looks like we 've found it . 
+ i 'm going to land so we can get a good look at it . 
+ better suit up '' said billy . 
+ chapter 2 the parts mel had needed had been organised and were due to be delivered to him at any time . 
+ whilst waiting , he sipped at yet another coffee and looked around the comm room . 
+ whilst some parts of the room were tidy , there were areas where there were circuit boards and cables hanging from the equipment racks , rather than being tucked neatly away or clipped to the frames . 
+ however , he was aware that , whilst some of the local systems were working again , the inter-stellar comms were still out . 
+ considering the damage he 'd found when he had entered the room , though , he was pleased with progress . 
+ all he needed now was the parts so he could carry on . 
+ as if on cue , he heard the airlock recycling the air , so went through into the lobby to greet his visitor . 
+ once the caller had removed his helmet , mel realised it was john-joseph bowker or `` jj '' , who had worked with mel from time to time in the past . 
+ mel greeted his colleague `` hi jj , how was the journey over ? 
+ did you manage to bring everything i asked for ? '' 
+ as john-joseph put his helmet on the vacant hook in the lobby , he said `` yup . 
+ just hope it covers everything . 
+ we need to get it over together , though , as there 's way too much for me to manage on my own . '' 
+ with that , he strolled across to the doorway leading into the comm room . 
+ `` wow , what a mess . 
+ i can see why you think you need as much as you do , now . 
+ sod 's law has meant that , with this place going down , some of our emergency backups elsewhere needed to be brought online and are proving less than reliable . 
+ i need to get out of here asap , so i can take a look at a problem that 's appeared over on ` roid 4 . 
+ it only affects three of the news channel info . 
+ feeds at the moment but the news channel bosses are getting uppity about the loss of service . 
+ did the cops ever get back to you about will ? '' 
+ `` not so far . 
+ it 's all a bit of a mystery as to where he 's got to . 
+ it 's not as if he could just walk out of here . 
+ give me a couple of minutes while i suit up . '' 
+ an hour later , an exhausted jj put the last of the boxes of spares onto the pile of crates and boxes now filling the lobby . 
+ whilst the pile was n't massive , the lobby was n't all that big . 
+ what had taken the time was that the ship and base airlocks had to be negotiated , which was quite a slow progress when several trips were required . 
+ fortunately , whilst they were on the surface of the ` roid , there was next to no gravity to fight against , although this changed once they were in the artificial gravity area of the station , making everything much heavier . 
+ `` right . 
+ now you 've got everything , i need to get off to ` roid 4 . 
+ if you need any more help , do n't call me , call hq . '' 
+ `` thanks , jj . 
+ much appreciated . 
+ looking at this lot , i 'm going to be sleeping in the ship for a few more days before i can get this place fully operational . 
+ at least you can see what i 'm up against . '' 
+ with a cheery wave , jj re-entered the airlock and said `` good luck . 
+ rather you than me . 
+ hope they 're paying you a lot of overtime for this one . '' 
+ `` they 'd better be ! 
+ safe journey . '' 
+ alone again , mel decided that it was time for a meal , so went into the comm room , so that he could find something he fancied to eat . 
+ after he had eaten , he felt like starting up again , sighed deeply and stood up . 
+ `` oh well , the sooner i start , the sooner i 'll get out of this place '' he said to the room . 
+ having had jj 's company for a short while , he was starting to feel a little lonely , so turned on some music . 
+ the air was filled with the heavy guitar playing of `` moon rock '' by phantom heads , before their mezzo-soprano singer started singing the ballad of a lovelorn spaceman . 
+ as he started to work , mel began to sing along to the symphonic metal band , a favourite of his . 
+ mel realised that , whilst he had all the equipment he thought he needed , the speed with which jj had to get away meant that there was no logic to the way in which the stuff in the lobby was arranged , so decided that the first job was to get the various circuit boards and boxes into the area where they would be needed . 
+ much box shuffling later , he decided that the spares were in the best places he could manage at this stage . 
+ he looked at the clock and realised that it had been over twelve hours since he had been left by bridg and aurelius , so decided to call it a day . 
+ as he entered the airlock of his ship he realised just how tired he was . 
+ he stripped off his spacesuit and went to lie down on his bunk , with the intention of having a short rest before he had something to eat and drink . 
+ whilst he was hungry , he fell into a deep sleep as soon as his head hit the pillow . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ as will 's eyes became accustomed to the darkness , he realised that there seemed to be a low building a hundred metres from the antenna . 
+ `` it looks like there 's a building over there '' he said pointing in its direction . 
+ `` you 're right . 
+ i thought this place was unoccupied . 
+ obviously wrong , there . 
+ in this light i 'm surprised you could see it , as there 's no heat being radiated from it and it 's trying to hide in the rocks . 
+ we might learn something from it . 
+ if nothing else , we 'll see where the signal is being sent '' he said , turning in the building 's direction . 
+ a few minutes later they were standing in front of a drab-looking building , the rear of which was hidden underground . 
+ it looked like it had been made from some form of concrete , topped by a pair of sloping roofs . 
+ it had a large , obviously heavy door running most of the building 's width . 
+ they noticed , however , a small access door to the left of this large door and headed towards it . 
+ `` do n't you think we should wait for security to turn up ? '' 
+ asked will , feeling slightly nervous of entering the building , fearful of what might be in there . 
+ `` we 're in the middle of nowhere . 
+ what could go wrong ? '' 
+ `` just saying . 
+ if nothing else , they ought to know there is a building here . 
+ whilst they can find the ship , they might not spot this place . '' 
+ `` good point . 
+ ok , i 'll give them a shout . '' 
+ with that , will changed the frequency of his suit radio to that used by the local police and told them about the building and the direction of it with respect to the ship . 
+ `` they have a cruiser on its way , which has five personnel on board and should be here within the hour . 
+ right , let 's see who or what there is in there . '' 
+ said billy , turning to the door . 
+ a few seconds later , will and billy were inside . 
+ `` odd , i would have expected an airlock '' said billy . 
+ whilst their suits were equipped with head-height lights , they did little to dispel their first impression that they had entered a very large space . 
+ will looked around the door , to see if there was something that resembled a light switch . 
+ a few feet from it was a grey circular knob that seemed to be what he was looking for . 
+ as he turned it , a number of lights flickered on . 
+ around the sides of the large space were a number of work benches and racks . 
+ at the far end was another large door , similar to the one they had passed through on the way in . 
+ what dominated the space , however , was a pair of large navy blue spaceships . 
+ `` wow , this place is huge '' he exclaimed . 
+ `` i 'd like to have a closer look at that ship '' said billy , pointing towards the nearest . 
+ `` i do n't know about you but i 've never seen anything like that before . '' 
+ `` no , neither have i . 
+ but then again , i had n't seen anything like your ship either until today . 
+ what i can say , though , is that this is not something that a hermit is going to use . 
+ they look like they can carry a few hundred people , at least '' replied will . 
+ as they moved round to the side of the ship , billy saw an image of a pale blue circle , with two planets enmeshed within it , with some large white lettering running around the outside , saying `` prometheus '' on the side . 
+ along each side and on the nose were what looked like weapons , although neither had any ideas as to what they were , never having been this close to a military spaceship before . 
+ towards the rear of the ship was a ramp , at the top of which was a massive airlock that looked like it could accept up to fifty people at a time . 
+ as they approached the top of the ramp , they could see , next to the inner door , a sign above a large red button , which said `` premu por coklo airlock '' that they took to be the button for closing the outer door . 
+ as the inner door opened , will suggested that they try to find the cockpit or , judging from the size of the ship , the bridge . 
+ fortunately , the ship 's systems seemed to be automatic and the lights were illuminated , so they did n't need to use their suit lights . 
+ the airlock seemed to have been cycling air , so billy announced `` i 'll just see if the air 's breathable in here . 
+ it will save our own supplies '' then , checking the gauge on his left wrist `` looks good . 
+ we can take our helmets off . 
+ we 'll be able to see better as well . '' 
+ as they walked down the corridor , they were struck by just how many doors there were , on both sides . 
+ `` let 's have a look in one or two of these doors . 
+ there may be clues in them that help us build a picture of what this tub is for '' suggested billy , as he approached the nearest door . 
+ as the door opened , the lights inside came on and they could see what looked like a bunk room , with bunks for twenty or so people . 
+ there were large signs along one wall , which said `` gloro al la venkinto ! '' 
+ in the upper left corner , with a stylised image of a soldier of some sort , holding a weapon high in the air . 
+ `` i think we need a photo of that . 
+ i 've no idea what it says but it looks like something warlike '' said billy , as he recorded an image of the sign . 
+ as they advanced down the corridor , they saw a sign that said `` ponto '' and decided to follow the arrow beneath it . 
+ at the end of the corridor was a wide doorway , with double doors barring their way . 
+ however , as they approached the doors , they opened from the middle outwards and they could see that they had reached the bridge . 
+ `` i guess that `` ponto '' means `` bridge '' in this language '' said will , looking around the various controls and consoles `` better get more photos . '' 
+ towards the rear of the room , adjacent to the one they had entered through , billy spotted another sign saying `` armiloj kontrolo '' and said `` that could mean `` arms control . 
+ worth a look ? '' 
+ `` i see what you mean . 
+ definitely '' responded will , heading towards the door after billy . 
+ as they entered the room , there were seats for six , with monitors in front of each , as well as control panels below , complete with a variety of icons , which looked like they could control a whole battery of weapons . 
+ `` this room definitely needs photographing . 
+ then , i suggest we 'd better get out of here . 
+ do n't want to overstay our welcome '' said billy , taking several photographs . 
+ `` i 'm going to have a look around these racks and what-not . 
+ they might give us a clue as to who these things belong to '' said will as they left the ship . 
+ with that , he walked over to the side of the hangar . 
+ most of the racks and benches simply had tools and equipment on them , which appeared to be for maintaining space ships . 
+ as he approached the rear corner of the hanger and rounded a large rack , he saw an open door . 
+ `` i 'm going to call the cops again . 
+ they should be here shortly but they need to know about this . 
+ i 'll send them the pictures i 've taken , so they can see if the ship 's in their database or can contact the navy to see if this is part of their fleet '' said billy . 
+ with that , he called them and told them what they had found and sent them the pictures he had taken . 
+ before they could reply , will called him `` hey , billy . 
+ there 's another door back here . 
+ might give some more clues . 
+ as billy rushed towards him , will went through the door . 
+ the light came on as will entered the room . 
+ the room looked like an office . 
+ there was a desk in the middle , with a computer monitor on it , along with a keyboard built into the desktop , so that it could be used in vacuum and whilst wearing a spacesuit , if necessary . 
+ along the rear wall were shelves containing ornaments , lumps of rock and crystal and a photograph of a snow-covered mountain , with the title `` tango monto en vintro . '' 
+ will was surprised that , despite what looked like state of the art spaceships in the hangar , the equipment here looked positively old-fashioned compared to what he was used to . 
+ someone had obviously tried to personalise it a bit with the ornaments , although it did n't detract from the overall starkness of the room . 
+ as billy approached the room , he realised that the door could be sealed air-tight if necessary , as the door was several centimetres thick and had edges that overlapped those of the door frame . 
+ as he came into view , will said `` what do you reckon to this lot ? 
+ it looks antiquated to me . '' 
+ `` it 's not exactly cutting edge is it ? 
+ reminds me of the first computer i had as a kid , although even that was more advanced than this one . 
+ i guess that whoever owns this place has either been here a while or else it does what they want and they have n't felt the need to update it . 
+ have you had a look through that door ? '' 
+ billy said , nodding towards the door in question . 
+ `` no , not yet , i was trying to get my head around this room first '' replied will , moving towards the door being referred to . 
+ billy paused and held up his right hand and said `` hang on a sec . 
+ , getting a message from the police . '' 
+ a few moments later , he said that they 'll be landing in about five minutes . 
+ they also asked that , before we explore any further we wait for their arrival . '' 
+ `` let 's have a quick look through here and see if there are any further clues as to what 's going on . 
+ what i do n't understand is that this place looks good to go , yet seems deserted . 
+ at least , we have n't seen anything that would suggest current activity , despite the data feed coming over here and the ships out there '' said will , as he disappeared through the door . 
+ as he went through the door , more lights came on . 
+ the room was at least a hundred metres long and fifty metres wide . 
+ down one side was a variety of weapons , stacked neatly in racks . 
+ along the other side was a collection of personal shields , amongst a number of crates , some with the lids ajar , some closed . 
+ like the other door , the door out of the room also looked like it could be sealed if necessary , even if it was n't at the moment . 
+ upon leaving he room , he moved towards the large doors adjacent to it and realised they were for a massive airlock , which had n't registered with him on his travels through the hangar . 
+ `` oh , my god . 
+ there 's enough weaponry here for a small army '' said a stunned billy behind him . 
+ `` i really , really do n't like the look of this '' replied a worried-looking will , as he backed into the office he had just left . 
+ as he entered the room , he reversed into billy who , in turn , bumped the rack next to the door . 
+ a small box fell to the floor , which he bent to pick up . 
+ the world suddenly changed . 
+ they became aware that there was activity in the large room they had just left . 
+ will looked carefully around the edge of the door and was stunned to see the rear hangar full of people busying themselves , wearing black military-looking space suits . 
+ `` do n't look now but the place is crawling with military types . '' 
+ `` what ? 
+ how ? '' 
+ replied a disbelieving billy , trying to see what will was referring to . 
+ once he had taken a look of his own and had confirmed what he had been told , billy eased back into the room and walked carefully towards the door into the hangar and looked out carefully . 
+ `` this one 's full , as well . 
+ now what do we do ? 
+ we seem to have jumped into yet another reality . '' 
+ `` we ca n't stay here too long . 
+ we 're going to be discovered sooner or later . 
+ whoever this office belongs to is going to come in here '' replied will . 
+ will realised they were n't alone . 
+ in the corner of his eye , he had spotted movement a few metres behind him . 
+ he looked round quickly and saw one of the black-suited individuals heading towards him , his mouth moving . 
+ in his suit , though , will could n't make out what he was saying , although could only assume it was n't something he would either want to hear or would understand , being in the language of those from this reality . 
+ `` billy , we 've been spotted . 
+ better get out of here , now ! '' 
+ shouted will , as he ducked back into the room . 
+ `` oh shit , that 's all we need '' responded billy , running towards the other door . 
+ will followed as best he could but , in his haste , ran into the corner of the desk , which , with the lower than familiar gravity , was enough to send him crashing headlong to the floor . 
+ as billy ran into the now occupied hangar , he dived behind a shelf rack , so that he could , he hoped , keep out of sight of the people milling about in the hangar . 
+ he looked back , but could n't see will . 
+ as he started to return to the office , will called out `` keep going billy . 
+ i ca n't get away from this guy . 
+ i tripped and before i could get up , he pulled a weapon on me and there 's no way i can get out of here . '' 
+ `` i 'll see if there 's anything i can do '' he replied . 
+ knowing he had few , if any , options , billy edged back towards his hiding place , aware that it would only buy him a few minutes of safety . 
+ he looked around him for some kind of weapon but getting to anything he could see would have meant him being clearly visible to those in the hangar , so he crept along the outside wall , keeping as low as possible and hoping he would n't be spotted . 
+ as he moved along the wall , he was keeping a close eye on someone nearby , with their backs to him at the moment , hoping they would n't turn around and spot him , when he lost his footing and fell over . 
+ as he put his hands out to stop his helmet hitting the ground , he must have bumped the small box he had picked up earlier . 
+ he had put it in one of the small pockets that were attached to the outside of his suit and were used to carry spares and tools when he was working in airless environments . 
+ as he picked himself up , his heart was beating faster than he had thought possible , hoping his fall had n't been noticed . 
+ as he looked up , he looked straight into the midriff of someone . 
+ `` oh , hell ! '' 
+ he muttered , slowly standing up , raising his hands into a surrender pose . 
+ once he had stood up , he realised that , rather than looking at one of the black-suited strangers , he was looking at someone in a police suit . 
+ `` what are you doing ? '' 
+ asked the cop . 
+ `` sorry , i tripped . '' 
+ `` what were you doing down there anyway , and what 's with the hands ? '' 
+ `` this is going to get complicated . 
+ can we go somewhere we can talk without having to use a radio ? 
+ i suggest we go into one of the ships , since they have breathable air in them . 
+ by the way , i 'm billy hunt '' responded billy , holding out his right hand to the officer . 
+ `` yeah , ok . 
+ i 'm lieutenant sarah hirst . 
+ before we do , though , we 've looked through our database and those things are n't in it '' she said , nodding at the two ships . 
+ `` i suggest you put someone in to guard them from intruders and send someone into there and remove as many of the weapons that you can '' replied billy , pointing towards the back of the hangar . 
+ `` what for ? 
+ this place is deserted except for us . '' 
+ `` you 've presumably seen the photos . 
+ by the time i 've explained what else we 've seen , you 'll understand why . '' 
+ `` ok , i 'll play along , for now . 
+ sergeant , can you have a look through there , taking norgrove with you , and let me know what there is back there ? '' 
+ `` yes , ma’am . '' 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ after he had picked himself up , will looked at the man who had followed him into the room . 
+ apart from the vicious-looking weapon pointing directly at him , the man did n't look like the kind to mess with , so will slowly raised his hands to show submission . 
+ the man 's lips were moving but , as they were both wearing space suits in the vacuum , he had no idea what was being said . 
+ eventually , the man , realising that will was n't able to hear him , gestured him towards the rear space using the weapon . 
+ will carefully edged past the man , so that he was now in front , and entered the large space . 
+ two more individuals approached them , both with raised weapons . 
+ one fell in behind will , alongside his fellow , with one leading the small group . 
+ as they walked along , will looked around . 
+ now that he had more time , he realised that the space looked much the same as the hangar that held the two space ships but was swarming with people , all dressed in black military-looking space suits . 
+ as far as he could tell , looking at the one leading them , and the ones he had seen close up , a range of insignia was visible , which he assumed showed their rank . 
+ high on the left shoulder , they all wore a small version of the logo he and billy had seen on the space ships . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ after billy and lieutenant hirst and her remaining crew member had entered the ship , billy directed them to the bridge . 
+ `` ok , now you can see what this thing looks like inside . 
+ over there is what looks like a weapons control room . 
+ there are stations for six , which suggests that this thing means serious business '' said billy , pointing at the door marked `` armiloj kontrolo . '' 
+ before sarah could reply , billy went on `` if you think this is bad , you need to know that this place seems to be some kind of hub between two parallel universes . 
+ whilst that may seem far fetched , will and i have been onto the other side . 
+ this device lets you switch between them just by pressing the button on top . '' 
+ `` why should that make any sense and who 's will ? '' 
+ will realised that his original idea of introducing will as his cousin just was n't going to work , now that will was trapped in the alternate universe . 
+ `` you 've seen this ship . 
+ it 's not navy and the signs are all in a language that is n't used in this system . 
+ as the sergeant will soon discover , there 's what looks like a large stockpile of weapons in the rear hangar area . 
+ will is from yet another alternate reality and is my doppelganger , apart from a few minor details such as hair and beard . 
+ i have a photo here , taken in our comm room on ` roid 2 '' bill showed her the picture on his data communicator . 
+ sarah looked carefully at the picture and compared the eyes , nose and mouth between billy and will , in line with her training . 
+ `` you do look remarkably similar apart , as you say , from the hair and beard . 
+ how did he get here ? '' 
+ `` we have no idea . 
+ in his reality , they have a communications centre in the same place we do . 
+ whilst it 's designed slightly differently , they 're essentially the same . 
+ i had a callout saying the lights had come on and the sensors showed someone was present . 
+ when i got there , he was on the floor . 
+ he was n't wearing a suit , there was n't one in the place , nor was there a ship on the ` roid that he could have arrived in . 
+ he said that he had been knocked unconscious . 
+ he was still out when i got there . 
+ as we discussed things , we realised that he was n't from this reality . 
+ whilst we came here looking for where they were transmitting the news feeds , we have n't seen anything that looks like a communications centre where i 'm assuming the data will be processed . '' 
+ `` ok . 
+ is there any way you can show me the other reality ? '' 
+ `` it could be dangerous . 
+ as far as will and i could tell , the layout and what-not are near enough identical between realities . 
+ what that implies is that , if we can find a nice quiet corner somewhere where we can hide ourselves , we can have a quick look and , hopefully , get back here without being spotted . 
+ i suggest that we find a pile of containers or shelves to lurk behind . 
+ we might even find a storeroom in the ship we could use . 
+ you wo n't need to see a lot to get the picture . 
+ what i suggest after that , assuming you agree , is to get to know the layout of this base . 
+ if will has been taken prisoner , they will have him in a cell or something . 
+ no idea where they would be , though , as we 've only seen a small part of the base . '' 
+ `` ok . 
+ seems reasonable . 
+ let 's have a look around the ship . 
+ if what you say is true , then their version of the ship will probably be busy . '' 
+ with that , they left the bridge and were starting to look for somewhere they might hide , when sarah 's radio burst into life `` lieutenant , take a look at this . 
+ there 's enough weaponry and ordnance for someone to attack columbus and do some serious damage to the station ! '' 
+ it was sergeant mcdowell reporting on his investigation into the rear hangar . 
+ his comm unit sent an image from his suit camera to sarah . 
+ `` i see what you mean , sergeant . 
+ you can get back here now '' replied sarah . 
+ `` billy , you were n't kidding when you suggested we take a look . '' 
+ `` i did n't realise there was that much . 
+ will and i did n't get much chance to take a good look . 
+ on top of that , we 're communications engineers , not military bods , so would n't know that there was that much stuff in there , although what we did see scared the hell out of us . 
+ when we were trying to get out of there , will bumped into me and that 's when it all fell apart . '' 
+ `` i suggest we split up . 
+ i 'll meet you on the bridge in ten minutes . '' 
+ `` ok , no problem . 
+ i 'm happy to let you have a look . 
+ it might help inform you as to where we go from here . '' 
+ about two minutes after sarah left him , billy opened a door and discovered a food storage area , with food boxes piled high near one corner that he felt they could hide behind . 
+ having satisfied himself that this looked a suitable hiding place , he reorganised the boxes to create more hiding space , then returned to the bridge . 
+ he called her and told her where to find him , so that he could show her his findings . 
+ `` i think that looks suitable . 
+ what do reckon ? '' 
+ he asked . 
+ `` i agree '' responded sarah . 
+ she called the others on her radio . 
+ once they had all congregated outside the storeroom , she said `` sergeant mcdowell , i want you and harling to guard this door and make sure that we 're the only ones who get back here and , if there 's a problem , can provide backup . 
+ we 're only going to have a quick look , so do n't expect to be gone more than a few minutes . 
+ norgrove , i 'd like you to go back to the bridge and see if you can see how we might fly this thing . 
+ from what i can gather , the language is esperanto . 
+ your suit translator should be able make sense of most of it . 
+ you 'll need to make up some labels so the rest of us can cope with it . 
+ the translator may not be able to handle everything , though , so you may need to fill in a few blanks . 
+ parsons , see if you can find a galley . 
+ i could murder a coffee . '' 
+ `` you heard the lieutenant '' ordered mcdowell , looking at harling , norgrove and parsons . 
+ norgrove , parsons vanish . '' 
+ addressing the sergeant and harling , sarah asked `` any questions ? '' 
+ `` what exactly might we be expecting , lieutenant ? '' 
+ asked harling . 
+ `` if i knew , i 'd tell you . 
+ all i know is that if we 're spotted , we might not be alone and may need your help . 
+ if we do n't return within ten minutes , i want you to call hq and get some real backup . 
+ i want this place destroyed . 
+ it wo n't help us but might stop any attack before it happens . 
+ if we do n't get back in time , whilst you 're waiting for the navy , remove these ships and get as much ordnance as you can onto the planet 's surface . 
+ if need be , use the ordnance to blow the place . 
+ if we 're trapped on the other side , so will they , at least for now . 
+ if there are no more questions , we 'd better get moving '' `` ma’am . 
+ good luck '' replied mcdowell . 
+ billy and sarah re-entered the storeroom and crouched behind the pile of food storage boxes . 
+ billy pressed the button and the world swirled briefly . 
+ they could hear distant voices but they were too indistinct to make out what was being said . 
+ the storeroom was dark , with the door now closed . 
+ `` let 's take a peek '' whispered sarah . 
+ `` better get out your firearm before we leave here . 
+ from past experience , these guys do n't seem overly friendly '' whispered billy by way of response . 
+ as sarah opened the door slightly and peered out , she saw the back of a man walking away from her , arguing about something into a communicator . 
+ as he was speaking esperanto , she had no idea what the argument was about , nor did she want to . 
+ as he disappeared into a doorway further down the corridor , she heard a voice shout `` oi , vi en la provizejo '' from not too far away . 
+ she turned to see a dark haired man walking towards her then , as she did n't react , he started to run towards her , trying to pull a weapon from its holster on his waist . 
+ he shouted again as sarah ducked back inside the storeroom . 
+ from behind her , billy saw him turn , too late , still running , towards the door and falling against it . 
+ as sarah was still close to the doorway , she was sent crashing to the floor by the impact , with the man landing on top of her . 
+ `` shit ! 
+ get us out of here , billy '' she shouted . 
+ billy pressed the button and the room changed , and billy saw a confused pair of cops looking at them . 
+ `` get him '' called billy , without hesitating . 
+ without thinking , sergeant mcdowell shot the assailant in the shoulder . 
+ as the man groaned on the floor , the sergeant went over to him , removed the weapon and bound his wrists and ankles . 
+ `` it wo n't kill you . 
+ it will hurt for a while , though '' he said to the man . 
+ the man looked back , uncomprehendingly . 
+ looking at the lieutenant , he said `` not being sure what to expect , i set it to light stun . 
+ if anyone did follow you through , i assumed we would want to be able to interrogate them . 
+ so what did you find , lieutenant ? '' 
+ `` we did n't get to see a lot but we saw or heard two individuals , including this one . 
+ bearing in mind this is likely to be a fairly quiet part of the ship , i hate to think how many of them there are on board . 
+ let 's get matey here to the bridge so we can ask a few questions of him . '' 
+ the sergeant and harling bent down and lifted the man to his feet . 
+ he groaned as the arm near the wound was grabbed . 
+ as they entered the bridge , sarah pointed to an empty chair and said `` sergeant , fasten him to that and we 'll see what we can find out . 
+ norgrove , how 's it going with this ship ? '' 
+ `` standard-looking controls , lieutenant . 
+ whilst the layout is different to what we 're used to , there should n't be a problem flying it . 
+ i 've made some labels in english to show what 's what , so we do n't have to keep translating the originals . '' 
+ `` good work . 
+ now i need your translating skills over here , so that we can ask this character a few questions . 
+ can you set it to speak esperanto , not just translate labels ? '' 
+ `` no problem , lieutenant . '' 
+ `` parsons , did you find a galley ? 
+ that coffee i mentioned earlier is looking even more tempting . '' 
+ `` yes ma’am . 
+ it 's just off the main access corridor , a few doors down . 
+ should i get something for our guest ? 
+ anyone else want anything ? '' 
+ `` i think something cold for our friend here . 
+ i do n't fancy anything hot being thrown in my face . '' 
+ after the other three officers told him what they wanted , parsons disappeared off to the galley . 
+ looking at the prisoner , she said `` ok , simple things first . 
+ what 's your name ? 
+ i am lieutenant hirst . 
+ the translator repeated the question . 
+ `` ok , simplaj aferoj unue . 
+ kio estas via nomo ? 
+ mi leŭtenanto hirst . 
+ the prisoner glared back at her but gave his name as james meredith . 
+ this is going be a long session , as everything has to be translated from what both she and james meredith said , thought sarah . 
+ shortly afterwards , parsons returned with a tray of drinks and handed them round , with the sergeant releasing one of the prisoner 's hands , so that he could have his drink . 
+ harling , can you see if you can find a brig on this ship so we can keep the prisoner safe once i 've interviewed him ? '' 
+ asked sarah . 
+ `` yes , ma’am . '' 
+ around an hour later , harling returned and informed sarah that , whilst he could n't find an official brig , he had found a room which could be used for the purpose where the prisoner could be observed through a window into the adjacent corridor . 
+ the only thing lacking was toilet facilities but these were available a couple of doors away from the room . 
+ he did , however , remind sarah that they could always use the brig on their ship , although they would need to find a spacesuit for their prisoner . 
+ `` i think we 'll use the room on this ship for now , although i 'll review that when we 're ready to move these ships outside . 
+ it would be helpful if you could see if there are any suits anywhere on board . 
+ i would expect there to be some to allow any damaged suits to be replaced . 
+ now we 've had this interruption , a short break for our prisoner and i would be helpful . 
+ parsons , can you take billy and rustle up some more drinks and cold food for us all , including mr. meredith ? 
+ biscuits or similar will be fine . 
+ another cold drink for mr. meredith . '' 
+ two hours later , sarah felt that she had managed to extract as much information as she needed for now , so decided to have a break both for the prisoner and for herself . 
+ `` norgrove , can you and harling take mr. meredith to the room we 're going to use as the brig and give him some food and a drink ? 
+ on your way there , invite him to use the toilet facilities . 
+ harling , stay behind and keep an eye on him . 
+ norgrove , once you 've finished there , can you go across to the other ship and see if it looks like this one inside ? 
+ i would hate to find it was different . 
+ whilst you 're there , you 'll need to sign up those controls as well , so that we can fly both ships . 
+ sergeant , can you join billy and me so we can sort out some kind of plan ? 
+ i need to get my head around this before i call the captain and seek backup . '' 
+ whilst norgrove was releasing the prisoner , she spoke into the translator , so that he understood what was happening . 
+ he nodded to her , by way of acknowledgement , as he was taken away by the two officers . 
+ looking at the sergeant and billy , she said `` if what the prisoner told us was true , we should be able to get will out of there fairly easily . 
+ my main concern is that we risk letting the hounds of hell loose upon us . 
+ any thoughts ? '' 
+ the sergeant spoke first `` seems to me that the first thing we need to do is to get these ships onto the surface and lock them down , along with our ships . 
+ if they ca n't use them , they 're stuck here until they can get more ships through from their universe . 
+ if nothing else , we can slow them down , even if we ca n't stop them on our own . '' 
+ `` for myself , i would also like to be able to help will get back to us '' added billy . 
+ over the next half hour , sarah , the sergeant and billy identified several matters they felt needed addressing and worked out a rough plan for dealing with them . 
+ at the end of their discussion , sarah said `` billy , can you see if parsons could use an extra pair of hands ? 
+ sergeant , can you see how harling is getting on with the prisoner and then see if norgrove needs a hand with the other ship ? 
+ in fact , it would make sense if you can to get the front doors open and get that thing out of here , along with moving billy 's ship . 
+ we can move the others once you get back . 
+ you do n't need to go far , a kilometre will be fine . 
+ use our ship as a shuttle to bring parsons back to the base and then get him to fly billy 's ship out to the parking zone . 
+ once you 've finished with those , we can move this one out of the way as well . 
+ that will just leave our ship on hand should we need it . '' 
+ `` will do '' said billy , disappearing out of the door , followed moments later by the sergeant . 
+ having set up a recorder , sarah sat down in the captain 's chair to record her report for hq . 
+ knowing they would n't believe her , she decided that she needed to show photographs of the base , the ship they were on and the recording made of her interview with james meredith , as well as how and why they had him in their custody . 
+ she decided that the captain needed all the information she had , so included billy 's references to will in the report . 
+ having recorded her report , she sent it to her captain . 
+ because of the distances involved , it would take an hour or so for him to get it and have the chance to review it and let her know his decision . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ will was taken to the back of the rear hangar and through an airlock . 
+ once through , the guards removed their helmets and gestured for will to do the same . 
+ he was n't unhappy to do so . 
+ whilst he had worked in space a long time , he had always felt that spacesuits were more a necessary evil than a pleasant experience and he always tried to be fully suited for as little time as possible . 
+ as he removed his helmet , he took a deep breath . 
+ whilst the smell was n't unpleasant , the air recyclers were clearly not fully coping with the various odours brought about by human habitation in a closed environment . 
+ helmets removed and clipped below the power pack on their backs , the guards moved him down a corridor towards a large , imposing door . 
+ one knocked on the door and waited patiently . 
+ eventually , a loud shout was heard from within and one of the guards opened the door and they all entered . 
+ behind a large desk stood a stern-looking individual . 
+ the man had a shaved head and a thick , grey beard . 
+ two circular gold earrings were inserted into his left earlobe . 
+ he wore a dark grey military uniform , with no markings other than the insignia the others had on their shoulders . 
+ he did n't look like someone to be messed with . 
+ two of his guards stood , weapons ready , just behind will . 
+ the other guard moved in front and to one side of him , saluted , then said to the man `` la spiono , Ĝenerale , kiel ordonis . 
+ the man moved from behind the desk and stood in front of will , looking him up and down . 
+ apparently satisfied , he suddenly punched will in the stomach and shouted `` klu vi estas ? 
+ kiel vi ricevis en mia bazo ? 
+ will doubled up in agony . 
+ it took him a few seconds to recover his breath before looking blankly back at the man , not having understood the question . 
+ the man moved towards him , staring menacingly . 
+ `` mi demandis al vi demandon . 
+ respondu al mi . 
+ nun ! '' 
+ he shrieked , grabbing will by his spacesuit collar and moving his head to within a few inches of will 's face . 
+ he was so close , that will could smell the man 's last meal . 
+ `` i have no idea what you 're saying . 
+ i do n't speak your language '' replied will , trying desperately not to appear intimidated . 
+ the man stepped back , away from will . 
+ addressing the room he said `` ha ! 
+ the spy can speak , after all ! 
+ now , i asked you how you got here . 
+ now you can understand the question , perhaps you can answer it . 
+ start by telling me your name . 
+ you will call me sir . 
+ before you answer , you should know that i am exalted general willem gott . '' 
+ whilst the man 's english was excellent , he had a distinct accent that will could n't quite place . 
+ `` my name 's will hunt . 
+ i do n't entirely know how i got here . 
+ i was on astraeus 5 , looking for minerals , when i found a building i did n't expect to find . 
+ somehow , i found myself being chased by one of your men and was captured '' will lied . 
+ will was taken by complete surprise when a guard hit the back of his head with the butt of his rifle , sending him forward . 
+ `` what was that for ? '' 
+ asked will , rubbing the point of impact , trying to regain his composure . 
+ `` you will always address me as sir . 
+ failure to do so will mean further blows to your head . 
+ is that understood ? '' 
+ answered the general , who continued `` your suit has the name galacticomm on the sleeve . 
+ that does n't sound like the sort of company name i would have expected on any kind of mining or survey company uniform . 
+ i think you 're lying . 
+ trust me on this , i do n't like people lying to me '' came the menacing response `` ok . 
+ i 'm a radio communications engineer and billy and i found a signal being transmitted from a nearby communications centre to here and were intrigued as to why . 
+ sir . '' 
+ there was an edge to the way will said ` sir ' . 
+ it sounded almost insulting , like you might get from a fawning shop assistant , who somehow made the word sound more like they had said ` cur ' . 
+ the general did n't seem to notice . 
+ whilst his english was good , he was clearly not experienced enough with the language to detect nuances in the way words had been used . 
+ in his noticeable accent , he continued `` now , that was n't so difficult . 
+ the truth is so much simpler . 
+ as you can see , ignoring me leads to pain and suffering . 
+ so , only you and this billy came here ? '' 
+ `` yes , sir . 
+ but we have n't found out where the data was being sent , or why . '' 
+ `` i assume that you have managed to work out that you are in a different reality . 
+ the explanation for the datastream is very simple . 
+ we wanted intelligence on what was happening in your reality and our techs found that this was a simple way of doing so . 
+ we have been monitoring your transmissions for some time . 
+ your free press even seems happy to provide details of naval movements within the system . 
+ most obliging of them . 
+ now tell me , what happened to your friend , this billy . '' 
+ `` i do n't know what happened to him , sir . 
+ one moment he was behind me , then he was n't '' replied will , truthfully . 
+ `` was it just the two of you ? '' 
+ `` yes , sir . '' 
+ `` and what might this billy be doing now ? '' 
+ `` if i were him , i would panic at first then think about jumping back to this reality to see if i could be found . 
+ i would be very nervous about doing so , though , because of all your military personnel about and the risk of getting caught myself , sir . '' 
+ `` so he could be watching us now ? 
+ `` i doubt it , sir . 
+ he would n't be able to find us in your office . 
+ he 's probably getting worried by now , though . 
+ at this , the general moved away and stared at a large map on the wall . 
+ after a few minutes , he turned back to the room and addressed the senior guard . 
+ `` prenu tiun personon al la ĉeloj kaj petu lieŭtenanto wilds vidi . 
+ the guard saluted and turned around to face will . 
+ he then raised his weapon and gestured for will to leave the room . 
+ will could only assume that the general had decided that there was nothing to be gained by interrogating him further and probably had more productive things to do . 
+ the guards took him back towards the airlock they had entered a short while before but continued on past it towards a plain grey door that will had n't previously noticed . 
+ this time , his guards did n't hesitate and went straight through the door . 
+ beyond , there was another guard seated at a small desk . 
+ one of his guards spoke and the new guard went to a nearby door and opened it . 
+ will was shoved towards it and pushed inside . 
+ the new guard then shouted `` suit . 
+ off '' although it was said with a very strong accent and seemed to be a struggle for the man to say . 
+ unfortunately , will did n't fully understand what had been said , so did n't respond immediately . 
+ one of the guards behind him slammed the butt of his weapon into the back of his head and sent him reeling . 
+ the guard repeated the instruction `` suit . 
+ off . '' 
+ this time , will did understand and slowly removed his suit and handed it to the guards , who hung it up across the corridor outside his new home . 
+ with that , the guards left and the door slammed shut behind them . 
+ will looked around his cell and suddenly felt dejected . 
+ sitting on the shelf that doubled as both a bed and a seat , he looked around . 
+ the cell was about four metres square , with a toilet in a slightly closed-off area in one corner . 
+ the light was dim but sufficient for him to see the worn and well-used look it had . 
+ it looked , and smelled , like a prison cell . 
+ fortunately , it was n't cold . 
+ if anything , he felt quite warm , although he found himself doing an involuntary shudder . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ whilst mel had been making good progress , when he tried to check the inter-system communications , they were clearly not working . 
+ he had gone over all the equipment in the comms room several times but had been unable to find any faults . 
+ he had checked the cables and junction boxes as best he could but , again , had n't been able to find any problems . 
+ he was beginning to think he would never get to the bottom of what was wrong . 
+ as it was , he 'd already spent one night sleeping in his ship and did n't fancy another . 
+ whilst it was n't unpleasant in there , he was missing out on what he had planned would be a busy weekend with his family . 
+ his only conclusion was that the problem lay outside , which would make it harder to locate and fix the problem , as he would need to work in his suit . 
+ attached to the outer wall of the building there was a junction box which distributed the cables from inside the comm building to the various dishes and aerials , so he decided that he had little choice but to check it out . 
+ as he approached it , he could see that , since he had first checked it , a small meteorite had gone straight through the door and into the cabinet . 
+ as soon as he opened the door , he could tell immediately that the whole thing was fried . 
+ `` damn ! '' 
+ he exclaimed `` there 's no way i can fix that in any kind of a hurry . '' 
+ the damage in the junction box was so extensive that everything in it would need to be replaced and he knew he did n't have the spare parts with him , other than , possibly , one circuit board . 
+ under normal circumstances , he might have been in with a chance but with all the other repairs he had had to do , his spares collection was now minimal . 
+ he closed the door and returned to the comm building , so that he could see if he could get someone to bring a replacement controller box . 
+ even if there was one back at hq it would be a while before anyone could get one to him and them it would take several hours more to install it . 
+ so much for his weekend plans ! 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ sarah was relieved . 
+ she had just had a reply from her captain and after reviewing her report , he had agreed that help was needed . 
+ he had asked for the navy to assist and they were sending a battlecruiser to them . 
+ fortunately , it was currently nearby , although it would take up to two hours to arrive . 
+ she called the others back to the bridge and told them what had been agreed `` you 'll be pleased to know , gentlemen , that the cavalry is on its way , in the form of the battlecruiser hms sea lion and will arrive in the next hour or two . 
+ whilst we wait , i would like us to search this base . 
+ in particular , i want to find the cells , so we can find will hunt and , if we can , find any offices or communications facilities , to see if we can gather any intel . 
+ there was no sign of anything in this hangar , so i suggest we go straight through to the rear . 
+ billy can come with me to look at the rear of the hangar , whilst sergeant mcdowell can take parsons and go down the left side when looking towards the rear . 
+ norgrove and harling can make up the final pair and go down the right side . 
+ keep in touch and be ready in case you come across non-friendlies . 
+ sergeant , is the prisoner secure and safe ? '' 
+ `` yes , lieutenant . 
+ at the moment , he 's asleep , having had a good meal and a drink '' replied mcdowell . 
+ they all paired up as instructed and , having put on their helmets , left the ship together and walked towards the office that billy had left only a few hours earlier and where he had last seen will . 
+ as they entered the rear hangar , sarah was relieved that the lights came on automatically . 
+ at least they would n't be searching in limited lighting . 
+ as they headed into the hangar , billy heard sergeant mcdowell exclaim `` just look at all this stuff . 
+ they certainly mean business . 
+ the sooner the navy gets here , the happier i 'll be . '' 
+ sarah asked `` before we start our search , can we look to see if we can get these hangar doors open , so it will be easier to clear this place when the navy get here ? '' 
+ a few minutes later , parsons spotted a green control lever just beyond the far end of the door . 
+ he pulled it towards him and the door slowly opened , with much creaking and small patches of dust falling . 
+ inside , he found another lever and , having also pulled that , the doors to the front hangar also opened . 
+ now that doors had been opened , as they headed for the rear of the hangar , sarah and billy spotted an airlock door . 
+ `` looks like we might be in business '' said sarah . 
+ as they went through the airlock , they entered a corridor leading in both directions . 
+ sarah checked the sensor readout on her right wrist . 
+ `` breathable air , so we can take off our helmets . '' 
+ once they were removed , she continued `` hmm , a bit stale but better than nothing . 
+ we 'll try this way . 
+ it looks as good as any '' said sarah , heading to the right . 
+ as they passed down the corridor , they opened all the doors they passed but were unable to find anything of interest . 
+ however , as they passed through the large door at the end of the corridor , they could tell immediately that this office was occupied by someone of importance . 
+ there were no doors set into the sides of the rear hangar , so it did n't take long for the other two pairs to join billy and sarah in the large office . 
+ `` sergeant , i would like you , norgrove and parsons to search this room for intel . 
+ looking around , there would seem to be plenty here . 
+ see if you can get any information on their plans for our universe . '' 
+ turning to harling , she said `` harling , i 'd like you to join billy and me , so we can look down the other end of this corridor . '' 
+ with that , she left the room , trailed by billy and harling . 
+ as they passed the airlock , they again started to open doors . 
+ when they reached the door at the end of the corridor , they realised they had found the cells . 
+ `` wonder which one will 's in ? '' 
+ said billy . 
+ `` once we get in here to investigate , we 'll just have to hope we get lucky . 
+ fortunately , there are n't that many cells . 
+ let 's just hope there are n't too many prisoners in here if we get it wrong . '' 
+ `` if we can wait ` till night time , we might find them asleep '' suggested harling . 
+ `` that would be true if we knew when their days and nights were . 
+ whilst we use one set of time rules , they may use something completely different for all we know '' pointed out billy . 
+ `` our prisoner might be able to help out . 
+ if nothing else , his timepiece will tell us what time it is in his universe . 
+ that would give us a fifty fifty chance of hitting night-time if we chose a time that would either be afternoon or early morning '' said sarah . 
+ `` on the other hand , the sooner we can clear this place out , me included , the happier i 'll be . '' 
+ bending to talk into her radio , she said `` sergeant , how 's the intel search going ? '' 
+ `` we 've already gone through most of the furniture and are getting ready to take the computers , so should be completed in ten to fifteen , ma’am . '' 
+ `` good news . 
+ ok . 
+ i think there 's a limit to what we can do at this end . 
+ we 've found the cells , so know where to look for will . 
+ sergeant , we 'll join you in a couple of minutes , so we can get everything ready for the navy . '' 
+ an hour later , they had transferred all the intelligence they could carry onto the patrol ship . 
+ norgrove and harling were taken to the two the enemy ships , in case they needed to be moved in a hurry . 
+ norgrove was also guarding the prisoner , who had remained on board due to the lack of a suitably-sized spacesuit . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ as the sea lion approached the planet , major auryn truran was keen to get off the ship . 
+ his marines were ready and itching for some action . 
+ for far too long , it seemed , they had been training but had n't seen anything more exciting than supporting civilians undertake various scientific surveys for several months and they were getting bored , with minor arguments regularly flaring up into full-blown fights . 
+ all he needed was the go ahead from captain vandelden as soon as they were close enough for the bay doors to be opened to let them out , so they could get to the surface and see what all the fuss was about . 
+ whilst the briefing he had had an hour or so ago talked of alternate universes and an attack on the system , he was sceptical . 
+ it all seemed somewhat far-fetched to him . 
+ his thoughts were interrupted by a radio call from the captain `` major , we 're three minutes from the lz . 
+ the cops already here are using standard police frequency six and know we are about to land . 
+ i 'm advised that they have taken two enemy fighters to a point about a kilometre from the landing zone and i 've suggested that , now we 're here , it would be best if they were airborne and brought into the vicinity of the ` lion . 
+ `` yes , sir . 
+ all noted '' replied the major . 
+ now that he knew they were about to arrive , he instructed his troops to embark onto the landers filling the landing bay . 
+ each lander could hold twenty troops and the ship had five landers on board , which he thought should give him more than enough firepower should there be a problem . 
+ shortly after the final marine was on the landers , the large bay door slowly opened and they were , finally , able to head for the surface . 
+ it seemed that almost as soon as they had set off , they landed and the lander door opened to reveal the doors to the hangar , which had been left open after the two fighters had been flown out . 
+ he jumped onto the ground and ran across to the hangar as fast as the low gravity would allow , where a small group of people were waiting . 
+ as he approached the group , one of them said over his radio speaker `` major truran , i presume ? '' 
+ `` lieutenant hirst ? '' 
+ he replied , holding out his right hand . 
+ `` am i pleased to see you , major . 
+ this is billy hunt and these are sergeant mcdowell and officer parsons '' she said , pointing in turn to the relevant figure . 
+ `` officers harling and norgrove are in the two fighters you have been informed of . 
+ norgrove also has on board our prisoner from the alternate reality and i 'm anxious for him to be released into the navy 's care . 
+ you will need a suit for him , though , as none of ours fit him . 
+ i do n't know what you 've been told but there are three immediate priorities . 
+ firstly , we need to rescue will hunt from the alternate reality , remove what ordnance we can from this base , then close this gateway to the alternate . 
+ did the captain share the details of the interview we had with our prisoner ? '' 
+ `` yes , lieutenant , he did . 
+ i have to say , i found it hard to take in the very concepts involved and do n't fully understand the concerns you have for this place . 
+ whilst we should have known about this base , it seems deserted and does n't appear to pose much of an imminent threat . '' 
+ `` looks can be most deceptive , major . 
+ i can assure you that the threat is most real and needs addressing as a matter of some urgency . 
+ this base forms the epicentre of a sort of bridge between two alternate realities and those in the other reality are preparing for an attack , which could take place at any time . 
+ the immediate priority is to rescue will , however , so we can get him back here safely . 
+ just to confuse matters even further than they may seem already , will is from yet a third reality and is an alternate to billy . 
+ an image of will with billy was included with my report . '' 
+ `` do you know where he is ? '' 
+ `` not for certain but we do know the layout of the base and our prisoner seemed pretty sure that it is identical to the one in the alternate . 
+ he 's an engineer who was involved in the design of it and oversaw elements of the building programme and this was of great importance to him . 
+ his argument was that otherwise there would be the risk that anyone passing through the gateway could finish up inside a wall or floor or outside the base entirely . 
+ not very reassuring to the troops making the trip ! 
+ as regards will , we have found the cells and have been working on the assumption that he is likely to be in one of them . 
+ however , not only do we not know which cell but we have no idea what the level of security there is on the other side . 
+ we will need to go in hot and ready to lock down the prison corridor as soon as we have made the trip . 
+ i do n't want anyone injured , though , so i would suggest stun settings only . 
+ we 're trying to get will , not kill off his guards . '' 
+ `` that should n't be a problem . 
+ we have some stun grenades that our suits are immune from but which will knock out anyone within thirty metres . 
+ is that enough of a range ? 
+ it does mean that you wo n't be able to join in the fun on the other side , as your suit wo n't give you any immunity from the grenades . 
+ we 'd just knock you out with the guards . '' 
+ `` the corridor we found is less than that , so they should be ok . 
+ if any of the guards are in a cell , would they be affected ? '' 
+ `` if the door is open , yes , but if it 's closed , then it depends on what the door is made of . 
+ if they 're metal , it may work -- it depends on the door . 
+ if it 's an energy field , the stun grenades wo n't get through it . 
+ we would have to pick them off using our stun rifles . '' 
+ `` the doors are metallic , although we have n't tested them to see what sort of metal . 
+ billy and i can guide you to the cells . 
+ whilst we show you the cells , my sergeant can show your second in command round the base . 
+ for what it 's worth , i 'd like as much of the ordnance that 's lying about to be removed but that there be enough left in strategic locations so that we can destroy this base and , therefore , this gateway to our universe if we have to . 
+ whilst this is n't a permanent solution to the threat of invasion , it should slow down the enemy sufficiently that we can have time to prepare for their arrival . '' 
+ a figure stepped forwards from behind the major `` captain lockwood at your service , ma’am . '' 
+ `` good to meet you , captain . 
+ sergeant , please escort the captain round and show her as much as you can . 
+ i suggest that we met up again in the large office that we found in thirty minutes and decide how we are going to tackle the rescue operation . 
+ major , please follow me '' replied sarah , as she headed towards the rear of the base . 
+ as sarah , billy and auryn and the small group of marines he had asked to follow him left the airlock at the rear of the base , sarah and billy removed their helmets and gestured for the marines to do the same . 
+ sarah moved towards the cells and , as they entered the main cellblock corridor , showed auryn round . 
+ having shown him around , sarah led auryn to the main office . 
+ as he entered , he was taken aback by the scale and grandeur of it . 
+ `` there was a lot of intel in here but it 's been removed by my team and is on board my ship '' explained sarah . 
+ a few minutes later , they were joined by sergeant mcdowell and captain lockwood . 
+ `` if anyone would like a drink , there 's a working drinks machine on the table in the far corner '' explained sarah , pointing to the machine `` major , do you think we can get will out safely ? '' 
+ `` yes , i think we can , but he 'll probably be unconscious when we do , so we 'll need to carry him . 
+ also , i do n't know how long it will be before they realise there 's something happened in the cell corridor . 
+ if they do realise , they may decide to start the attack immediately . 
+ we need to make sure that , if we 're compromised , then it 's only an inconvenience , not a major setback . 
+ does he have a suit ? '' 
+ `` he was wearing one when he was captured but we 've no idea whether he 's still wearing it or , if not , where it is . 
+ i suggest we need to make sure by having a spare ready , just in case . '' 
+ `` no problem . 
+ captain , how easy would it be to set this place to blow ? '' 
+ responded auryn . 
+ `` there 's enough ordnance in this place to blow it sky high . 
+ a few well-placed bombs will trigger a cascade and take everything out . 
+ if anything , we need to remove as much as we can , otherwise the crater the explosion would make would be visible from space , even out here . '' 
+ `` ok . 
+ get onto it , captain . 
+ i need a small team , say five marines , to help me out . 
+ any more and we would be tripping over each other in the cell block . 
+ can you liaise with captain vandelden to get the four ships on the surface airborne , so we do n't have to worry about them then , with sergeant mcdowell organise readying the base for destruction . 
+ as soon as we get back , i want to be able to get out of here and back into space . 
+ once there , we can set it off by radio . 
+ i do n't want anyone of ours to be hurt . 
+ how long will it take you to set charges ? '' 
+ `` not long , major . 
+ the slow part will be to get rid of the excess ordnance . '' 
+ `` can we use the landers to move it to a safe distance ? '' 
+ `` that should n't be a problem , now the forward hangar is fairly empty . 
+ if we do that , we should be able to reduce the amount to be sufficient in about an hour or so . '' 
+ `` ok , have two teams , a small team to set the charges and the rest to remove as much of the ordnance as we can . 
+ you have one hour to remove as much as possible . 
+ at that time , i 'll take my team onto the other side and effect the rescue . 
+ any non-essential personnel should be shipped out but need to be near enough to help us escape safely ourselves . 
+ to speed up our withdrawal , get a shuttle to the rear hangar , with a pilot ready to take off at a moment 's notice . 
+ i want all the other landers and marines to be on the surface about a hundred metres from the base ready to take off at a moment 's notice but near enough to help us out should it be necessary . 
+ sarah , billy , i think it would be best if you were to get to the sea lion as quickly as possible -- this could get messy and our suits are armoured , whereas yours are n't . '' 
+ `` ok , captain . 
+ it would only confuse matters if we were all involved at that stage . 
+ i think a quick getaway is called for and i would hate to get in the way '' replied sarah . 
+ `` i certainly do n't want to be here when it all starts up -- i 'm a radio engineer after all and i ca n't think of any good reason why i should be here when you get back , other than to greet will '' replied billy . 
+ `` ok . 
+ i suggest you see what you can do to help out and then leave the base in about three quarters of an hour . '' 
+ fifty eight minutes later , standing in the cell corridor , auryn called captain lockwood on the radio `` everything set , captain ? '' 
+ `` yes , major . 
+ my unit is waiting to assist just outside the airlock to the admin area you 're in . 
+ the rest of our troops are now back on the surface in the landers as you asked . 
+ the lander you asked for is ready and waiting . 
+ bombs are primed and ready for radio triggering in a staggered pattern once we leave the area , with the rearmost set to go off first , with the rest following at fifteen second intervals , which should give plenty of time to get out of here . 
+ i have the trigger . 
+ all the police officers and billy been taken to the lion and will meet us there . '' 
+ `` excellent . 
+ thank you , major . 
+ lieutenant , it 's time to go . '' 
+ as soon as he closed the link , auryn looked to his group of marines , said `` time to go '' and pressed the button on the remote that would , he had been assured , send him to the alternate reality . 
+ as he did so , his surroundings changed so that , instead of just the six of them , there were also three guards at various points along the corridor , including one at a computer workstation . 
+ `` now '' he shouted to his sergeant . 
+ in response , the sergeant threw a primed stun grenade to the floor , expecting the guards to fall to the floor almost immediately . 
+ nothing happened . 
+ `` what the hell happened there ? '' 
+ asked auryn . 
+ `` must have misfired , sir . 
+ we 've had a few recently . 
+ i suspect a faulty batch '' replied the sergeant . 
+ by now , any thoughts of a stealthy attack were long gone , as the guards opened fire . 
+ what was more disconcerting was that the guard at the workstation had managed to trigger the alarm , so it was only a matter of time before they would be joined by other guards . 
+ `` defensive positions '' screamed auryn , firing back at the enemy . 
+ fortunately , the armoured marine 's suits could protect them from small arms for a few minutes but he still found it disconcerting when they were being fired upon . 
+ within a few minutes , the three guards were lying on the floor , having been hit by the stun rounds the marines were using . 
+ `` that did n't go quite according to plan . 
+ sergeant , make sure that no-one can get in here . 
+ the last thing we need is for their friends to join the party . 
+ let 's find will and get the hell out of here '' said auryn heading for the nearest cell door . 
+ his suit was equipped with a small speaker-microphone , that allowed him to use it to talk to those not using his suit radio system and he used it to call out will 's name . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ hearing the gunfire and general commotion outside his cell door , will moved to it to try to work out what was going on . 
+ unfortunately for him , the marines were fully suited , as they had expected to need the protection they afforded from the stun grenade , and were communicating by their suit radios . 
+ not knowing what was happening , he moved away from the door and tried to hide as best he could , although the design of the cell gave him no real options in this regard . 
+ although quiet , he could hear someone calling `` will . 
+ will , where are you ? 
+ give me a sign as to which cell you 're in . 
+ we need to get out of here and quick . '' 
+ realising this was likely to be a friend , rather than someone from this alternate universe , he moved to the door and beat it with his fists , hoping he was right . 
+ after a minute or so , he heard the voice call `` ok , i think i have you . 
+ move away from the cell door . 
+ i 'm coming in . '' 
+ as asked , will moved away from the door , just in time for it to open and see a fully suited individual standing there brandishing a weapon , pointing at him . 
+ `` will ? '' 
+ said the figure . 
+ slightly surprised , will could only nod at the figure . 
+ `` good . 
+ we need to get out of here , now . 
+ i 'm major auryn truran and my team are here to make sure we get out of here safely . 
+ do you have a suit ? 
+ if not , we have a standard one you can use . '' 
+ `` i do n't have mine . 
+ they took it off me '' replied will . 
+ `` ok . 
+ we 'll sort that out . '' 
+ switching to the radio , he called his team so they were all together and pressed the button on the remote , sending them back . 
+ pointing at the spare suit on the floor , auryn said `` ok , will . 
+ get this on and do n't hang about . 
+ we need to get out of this base as quickly as we can . 
+ one of the guards managed to trigger the alarm and it wo n't take them long to work out what 's happened and follow us here . '' 
+ as will started to put the suit on , auryn used his radio to say `` captain lockwood . 
+ got him . 
+ however , i 'm expecting incoming at any moment so we need to get out of here . 
+ be ready to repel enemy troops . '' 
+ `` yes , major '' was the brief response . 
+ as soon as will was suited up , auryn moved him to the airlock and they went through to the rear hangar . 
+ once clear of the airlock door , auryn started to jog towards the lander . 
+ as he approached it , he heard the sound of gunfire from behind him . 
+ he turned to look behind and saw the hangar now contained a number of enemy soldiers chasing them , firing in their direction . 
+ fortunately , at the moment , they were currently far enough away that their shots were mostly missing them . 
+ whilst his suit and that of the other marines would protect them from this level of gunfire , will 's suit was only a standard emergency suit and offered no protection from it . 
+ ducking behind a workbench , he was able to get a better view and estimated that there were around twenty or thirty enemy troops heading their way at full speed . 
+ `` sergeant , we need to get will out of here . 
+ make sure that you protect his back . 
+ all we need is a stray shot to hit his suit and we 're going to have a problem getting him out of here . 
+ take three people with you . 
+ the rest stay with me and we 'll slow this lot down a bit while you get will to the lander . 
+ `` yes , sir '' replied the sergeant , ushering will towards the lander . 
+ as they turned to enter the doorway , will was briefly unprotected by his support troops and was hit in the right shoulder , sending him forward . 
+ the agony was intense and he nearly fell over . 
+ however , there was enough support nearby to stop him falling all the way . 
+ `` will , you need to grip your suit , to make sure the air does n't escape any faster than it can be replaced '' advised the sergeant . 
+ holding back the pain , will clutched his shoulder as tightly as he could . 
+ as he squeezed the suit 's fabric , though , the pain became more intense and he cried out in agony . 
+ `` sorry , will , forgot to mention that '' called the sergeant , and helping will to sit down on one of the benches , moving towards will to apply a sealing patch to his suit . 
+ whilst it would n't do anything for his gunshot wound , it would keep his air supply intact . 
+ the suit 's air supply would quickly replace that lost through the damage . 
+ `` major , we 're on the lander '' he said . 
+ `` thanks , sergeant . 
+ we 'll retreat . '' 
+ with that , he threw a stun grenade towards the enemy troops and was relieved to see that this one went off . 
+ the amount of gunfire coming towards them immediately dropped off , although someone seemed to have escaped the grenade 's effects , as the gunfire did n't stop entirely . 
+ he felt , however , that it was low enough for him and the remaining troops to get safely to the lander . 
+ moments later , the marines were safely on board , although one had fallen en-route and had twisted their ankle . 
+ `` let 's go '' he called and the lander lifted from the ground and shot towards the main hangar doors and out into the open . 
+ `` everyone else get out of here , now . '' 
+ `` captain , once the landers are clear , you know what to do . '' 
+ as he saw the base explode through one of the lander windows , the major breathed a deep sigh of relief . 
+ he regretted the loss of the lives of the soldiers who had pinned them down but recognised that there was little he could do about it . 
+ `` will , just hang on there . 
+ we 'll be at our ship in a couple of minutes . 
+ once we 're there , medics will deal with your wound and give you something to numb the pain . '' 
+ a combination of the pain and the reduced level of oxygen caused by the hole in his suit made it so that will was feeling a little light-headed , so did n't quite know what to say in reply , so just nodded . 
+ he 'd never been shot before and had n't realised just how painful it was . 
+ five minutes later , the lander entered the landing bay of the sea lion and set down . 
+ as the lander door opened , a pair of medics entered and helped will out . 
+ the marine who had twisted her ankle was helped out by one of her colleagues , heading for the sick bay . 
+ chapter 3 an hour later , resting on a sick bay bed , will was pleased to see a small group of visitors approach him . 
+ billy moved forward `` am i pleased to see you again , will . 
+ let me introduce you to a few friends . 
+ these are lieutenant sarah hirst of the police and major auryn truran of the marines . 
+ between them , they got you out of the other universe . '' 
+ `` you had us worried back there , getting shot like that '' said auryn , holding out his hand to will . 
+ `` glad to have you here , will '' said sarah , also offering her hand . 
+ `` i must say , i 'm really happy to see this universe again . 
+ i 'd be even happier to get back to my own universe , though , but ca n't see that happening any time soon . '' 
+ `` thanks to you and billy , we 've been able to thwart an attack on the system . 
+ whilst we know that the problem may come back , we now have a lot of information that we did n't have before , as well as an ability , we hope , of catching them before they can do any damage here . 
+ their leader 's office had loads of data in it that will keep our intelligence section busy for quite some time . 
+ we also have a device that will let us visit their universe , although finding anyone to volunteer to be the one to go there is n't going to be all that straightforward ! '' 
+ said auryn . 
+ `` you mean the office of the exalted general willem gott . 
+ ca n't say i took to him '' replied will `` so , what happens now ? 
+ whilst i guess i 'm stuck here , i have no job , no money and no identity . '' 
+ `` once you 're up to it , i think a debrief is in order , so we can learn what you picked up over there . 
+ we also have a prisoner ourselves when billy and sarah went through to have a quick look , as well as their two spaceships , which our military designers are no doubt anxious to have a look at . 
+ i think we can get you started , at least . 
+ i think we can probably sort out a reward that will give you a bit of money '' said auryn . 
+ `` and i think we ought to be able to get you an id and some accommodation at columbus . 
+ it wo n't be classy but at least it will be somewhere you can call home until you can get yourself sorted out . 
+ we ought to be able to sort out some sort of a job although it is n't likely to be exactly what you 're used to . '' 
+ `` wow ! 
+ thank you guys '' was all will could say . 
+ at that moment , doctor david fullerton approached and asked will 's guests to leave `` we just need to give him a final check and then he 's all yours '' he said , ushering them towards the door . 
+ `` ok , no problem , doc . 
+ will , once you get out of here , there will be a guide outside who will escort you to the captain 's office . 
+ he would like to meet you '' said auryn , as he left the sick bay . 
+ half an hour later , will was outside the captain 's office . 
+ his guide , tom , knocked on the door . 
+ there was a call from within `` enter '' . 
+ as he entered the captains office , will was struck by how opulent it was compared to the rest of the ship they had passed through from the medical centre . 
+ that said , he also noted how subdued it was compared to the office of general gott . 
+ `` welcome , will . 
+ pleased to meet you . 
+ i 'm captain george vandelden . '' 
+ said the captain , holding out his right hand in greeting . 
+ `` hello captain . 
+ thank you for asking to see me . 
+ i 'm intrigued as to why , though . '' 
+ `` i thought it would be good to see who has put us through the last few hours of action and , at the same time , thank you for helping us become aware of the invasion that we were , in the circumstances , completely unaware of . 
+ please take a seat . 
+ would you like a drink ? '' 
+ `` coffee , white with no sugar would be lovely , thanks '' replied will , feeling slightly confused . 
+ the captain called his steward `` two coffees , please , henry . 
+ mr hunt would like his white with no sugar . '' 
+ turning to will , he said `` from what i understand , you have had quite an exciting few days . 
+ i 'm sure that over the next few days our intelligence team will want to have a detailed chat with you about the people who held you captive . 
+ before then , though , it would be most helpful if you could give me a quick run-through . 
+ to keep it simple , i wo n't ask questions until you 've finished . 
+ take as long as you like . 
+ this is n't a formal interview , although it will be recorded . 
+ once henry has brought you your coffee , please run through what has happened . 
+ it would be helpful if you could give as much information as you can . 
+ whilst we think we have stopped the invasion for now , we need as much information as we can to make sure that this is the case . 
+ a lot of lives are potentially at stake . '' 
+ at that moment , henry entered carrying a tray with two coffees and some delicious-looking food . 
+ will realised just how hungry he felt and decided that he needed at least one sandwich inside him before he began . 
+ an hour and a half later , he had told the captain everything he could about how he had been transported into this universe , how he and billy had gone to astraeus 5 , found the two ships and the rear hangar , how he had been captured and what had happened in the other reality , including his , thankfully brief , interrogation by general gott , and the captain had asked several questions seeking clarification on several points . 
+ satisfied that they had exhausted everything for now , the captain said `` thank you , will . 
+ that was most helpful . 
+ now , on a lighter note , we need to get you some papers and some means of surviving here for a while . 
+ unfortunately , we ca n't publicly reward you . 
+ in fact , your experiences of the past few days and the fact that you 're from another reality must remain strictly confidential . 
+ if this information became general knowledge , there would be more questions asked than we would want to answer . 
+ there are only so many ways of denying something . 
+ i gather that your background is in communications , similar to billy 's . 
+ i can offer you a job on this ship if that would be of interest . 
+ good communications technicians are , curiously , hard to get hold of . 
+ i must warn you , though , that that would mean having a haircut and your beard trimmed . 
+ if not , we may be able to sort something out with something on the station , although that may open a can of worms that may be best left sealed , at least for now . 
+ either way , we can provide you with some funds for you to get set up here but that will take a couple of days to finalise . '' 
+ `` it 's all been a bit of a shock to the system , captain , so i 'd like to think about it a little before i agree , although it sounds interesting . 
+ i would n't mind a change of career , although i would have preferred to have done it in my own reality . 
+ is that ok ? '' 
+ `` yes , i understand . 
+ that 's not a problem . 
+ i would like to return you into the care of major truran for now , as we will be arriving at columbus shortly and i should be on the bridge . '' 
+ the captain called henry again `` henry , please ask major truran to come and escort will to his office . '' 
+ `` yes , sir '' replied henry a few minutes later , auryn arrived to collect will and took him to his office two floors below the captain 's . 
+ as they entered , will was pleased to see both billy and sarah were there . 
+ auryn ushered will to sit in the remaining empty chair . 
+ `` ok , folks . 
+ our priority is to come up with a cover story as to why will is here . 
+ i 'm also authorised to give both will and billy a reward for finding out about the invasion . 
+ without their involvement , we would by now be fighting a war that we would have started very much on the back foot . '' 
+ before we start , though , some food would be in order . 
+ whilst i gather you had a snack whilst you were with the captain , will , i would think that you would be looking for something a bit more substantial . 
+ he pressed the communicator button on his right shoulder and a few minutes later , two navy personnel brought in a large trolley laden with all kinds of food and laid it on the table in auryn 's office . 
+ once the two personnel had left , they moved to the table and started to eat , discussing the cover story the while . 
+ after two hours , they all agreed that the story they had produced seemed to be the most likely to arouse the least level of suspicion when they landed back at the station . 
+ for now , pending his decision regarding the captain 's offer a job on the ship , will would wear the uniform of a navy communications technician . 
+ as they left the office , will was taken to the storeroom by a young marine and they chose a suitable uniform for him to wear . 
+ will changed clothes as soon as he could and took his non-naval clothing to put on billy 's ship . 
+ as he arrived , billy was there to greet him . 
+ `` sarah and her crew are about to return to her ship . 
+ she did n't think it would look right if she landed with the navy . 
+ she said she would meet up with us again as soon as she can , once we 've landed . '' 
+ explained billy , as will approached him . 
+ `` oh , ok . 
+ i 'd hoped to thank her for all her help but i guess it can wait . 
+ did she say where she would meet us ? '' 
+ `` no , but i gave her my contact details , so she can get in touch . 
+ i need to get going , or i 'll be trapped on board . 
+ i 'll meet you at the navy dock , and we 'll go on to my place from there . 
+ if i 'm not there in time , just wait . 
+ ok ? '' 
+ `` understood . 
+ no problem . 
+ see you shortly . '' 
+ five minutes later , billy 's ship left the hold and flew in a gently curved trajectory , so that he could approach the company docks on the other side of columbus . 
+ as they approached , billy called the port and told them he was on his way to dock at the company dockings and asked if there was anything he needed to know about regarding other traffic . 
+ whilst there was some routine traffic , there was nothing unusual that required him to wait or take a different trajectory . 
+ having docked thousands of times on the station since he started work for the company , he pulled into the dock he usually used and killed the engines . 
+ having docked cleanly , billy quickly shut down his ship , grabbed his bag and ran to the navy dock , three levels below the civilian docks and further round the station . 
+ as he arrived at the entrance to the dock , he could see will standing there and rushed to meet him . 
+ as will looked around at the docking lobby , what struck him was how similar , yet how different it all looked compared to shackleton . 
+ now he was outside the naval docks , the lobby was a public area and the colour scheme , the wall and floor coverings and even the lighting design were different to what he was used to . 
+ it was almost as if he had gone to a different space station that had been built using the same plans as the ones used for shackleton but which had been decorated by a different interior designer . 
+ in effect , that was what had happened , except that it occupied essentially the same location in space . 
+ if will thought that there were lots of differences between the two dock areas , what he saw when he cleared the doors of the docks area surprised him even more . 
+ instead of the dull colours he was used to on shackleton , columbus was a riot of colour , with deep red flooring , brightly coloured doors and walls and a white ceiling . 
+ just to add to it all , the lighting was much brighter than the much lower-level lighting on shackleton and there were moving advertisement signs along the walls , along with localised music and voices to go with them , making it even louder than he was used to . 
+ he was glad he did n't have a headache , although he thought he might get one before he got used to the bright colour scheme and the high level hubbub . 
+ all he could say was `` wow . '' 
+ `` different to shackleton i take it ? '' 
+ replied billy . 
+ `` and then some . 
+ shackleton is all greys and beiges and the adverts are silent , unlike this place . 
+ i might need sunglasses '' said will , shielding his eyes from the unaccustomed colour scheme . 
+ as they walked along , will spotted someone he knew well and shouted `` hi there , frank . 
+ how 's it going ? '' 
+ the man addressed was somewhat surprised , as he did n't recognise either the bearded man hailing him , or his companion . 
+ he was also somewhat taken aback that the stranger seemed to know who he was . 
+ in the circumstances , he felt that the safest thing was to carry on walking as if he had n't heard the call . 
+ `` hey frank . 
+ what 's the matter ? 
+ still rattled that you missed the big party ? '' 
+ frank started to walk even quicker . 
+ billy , realising what had happened , put his hand gently on will 's arm . 
+ `` whilst he may be a ringer for the frank you know , he is n't the same person . 
+ he clearly has n't a clue who you are or what you 're talking about . 
+ better drop it before he calls security . '' 
+ `` this is going to take some getting used to '' said will quietly , realising that frank was moving away as quickly as he could without drawing attention to himself . 
+ will called after him `` sorry , there . 
+ thought you were someone else . '' 
+ as they rounded a corner , billy nudged will and said `` i think you need to remember that you do n't actually know anyone here . 
+ if you just think of yourself as a visitor , you 'll be ok . 
+ it 's not going to be easy , though , as a lot of people here are likely to have doppelgangers in your reality . '' 
+ `` i 'll try but i ca n't guarantee that it 'll always work . 
+ if i have a memory lapse , you might need to cover for me . '' 
+ as they reached the central hub of the station , billy moved towards a group of elevators that would take them to the residential section . 
+ a few minutes later , they arrived at the residential level that billy and his family lived on . 
+ `` just down here , will '' informed billy `` we 'll be there in about five minutes . '' 
+ as they walked down the wide corridor , they were passed by people going both ways using a variety of means of transport , from anti-gravity cycles to powered roller-skates , as well as the occasional jogger . 
+ will was surprised how many people there were in what would have been a quiet area on shackleton . 
+ just as billy had predicted , they arrived about five minutes after leaving the elevator . 
+ as billy opened the door , there was a loud childish scream of `` daddy ! '' 
+ will assumed it was from peter . 
+ as he entered the doorway , billy picked up the wriggling child , who had wrapped himself around his father . 
+ billy introduced him to peter `` hey there buddy . 
+ i want to meet my cousin will . '' 
+ `` hello will . 
+ do you want to play my computer game ? '' 
+ responded peter . 
+ `` in a moment , peter . 
+ i 'd like to say hello to your mum first , if that 's ok '' `` oh , ok '' replied the excited child , pleased that he had someone different to play against . 
+ with that , he dropped down from his father 's arms and ran into the apartment shouting `` mummy , mummy , daddy 's brought someone home with him . 
+ he 's going to play lunar buggy with me '' with that , kate came out of the living room . 
+ `` hello , dear . 
+ who 's your friend ? '' 
+ `` hello , love '' said billy , kissing his wife on the right cheek . 
+ this is my long-lost cousin will . 
+ he 's en route to the tharl system . '' 
+ whilst there was a slight look of disbelief on kate 's face , she accepted the explanation , at least for now -- after all , the visitor looked similar to her husband , albeit one with a lot more hair . 
+ `` and where are you staying whilst you 're in the neighbourhood , will ? 
+ she asked . 
+ `` the navy has some quarters i can bunk up in , although they wo n't be overly luxurious . '' 
+ `` could he stay here ? 
+ it would be a bit of a squeeze but i think peter would enjoy will 's company . 
+ he could sleep on the fold-up settee '' asked billy . 
+ overhearing the conversation , peter ran up to the three adults and pleaded for will to stay . 
+ kate was forced to agree , albeit reluctantly . 
+ `` thanks , both . 
+ it 'll give us a chance to get to know more about each other . 
+ i need to go back to the accommodation section and sort things out , though , as well as get my stuff , not that there 's a lot -- i always like to travel light '' will lied , knowing there was no luggage and he had no idea where accommodation was . 
+ `` i 'll show you the way back there '' billy offered , recognising the problems that will faced . 
+ after saying their goodbyes to kate and peter , will and billy left the apartment and returned to the elevator . 
+ as the door closed , will turned to billy and said `` thanks for the support there , billy . 
+ i really needed it . 
+ where 's a good place to get some clothes and a bag to put it all in ? '' 
+ `` i know a good place . 
+ it 's not too expensive either , which is just as well , as i doubt you will be able to pay for anything , as your accounts back in your reality do n't exist here and the funds captain vandelden mentioned wo n't be available for a couple of days . 
+ you can pay me back when you get access to your account . '' 
+ an hour later , both men had bought what they thought would be enough to convince kate that will had come equipped for a short holiday and returned to the apartment . 
+ as before , they were greeted by an excited youngster `` are you able to play with me now , will ? '' 
+ he asked , enthusiastically . 
+ `` if your mum and dad do n't mind , sure , peter . 
+ you 'll have to show me how to play the game , though , as it 's a new one on me '' replied will , picking up the youngster and carrying him through to the lounge . 
+ when they got to the lounge , peter squirmed to the floor and ran to get the two controllers they would need to play the game . 
+ `` you need to press this button to go forward and just turn the wheel to go in the direction you want '' peter explained , passing the other controller to will . 
+ `` i 'll set you up '' said peter , with a smirk . 
+ he pressed a button on his controller and two hologrammatic buggies appeared in the air in front of them . 
+ will noticed that peter had chosen a very masculine buggy for himself , with a rather large alien in the driving seat , whereas he had selected a very feminine mauve buggy , driven by a twenty-something blonde-haired young woman in a flowing pink dress for him . 
+ `` that 's an interesting avatar you 've chosen for me , young man . 
+ are you trying to put me at a disadvantage ? '' 
+ asked will , smiling at peter . 
+ with as straight a face as he could muster , peter said `` no , i just thought you would like this setup . '' 
+ `` hmm , i 'm not so sure myself '' will said slowly , feigning anger . 
+ as the game progressed , will started to get the hang of how the game was played , although he regularly crashed or ran off the edge of the course into a crater , or into a deep ravine , so needed rescuing by the game 's breakdown shuttle on an all-too regular basis . 
+ after about half an hour , he found that he actually won a race , much to peter 's irritation . 
+ pacing the floor , the boy kept saying `` it 's only a game . 
+ it does n't matter if you do n't win '' over and over but looking as though he 'd lost his favourite toy . 
+ as will was simply trying to do his best and actually survive the course , he found this faintly amusing , not realising just how competitive a seven-year old could be . 
+ as the results became more evenly matched , will was somewhat relieved when kate came into the room and announced that it was dinner time and told both peter and will to clean up and move to the table for dinner . 
+ whilst the smell pervading the apartment of cooked food reminded him that he was hungry , will was a little nervous about having dinner , as it would give kate an opportunity to quiz him . 
+ at first all went well and will started to relax and enjoy the meal . 
+ without warning , though , as they were finishing a rather tasty dessert of a selection of ice-creams , kate asked innocently `` what 's the tharl system like , will ? '' 
+ having never even heard of the system before today , he knew he would have to be somewhat vague about his response . 
+ at the same time , he knew he could neither lie outright , nor admit the truth . 
+ `` i gather that it 's much the same as this system . 
+ the main planet in the system , though , ohio , is very similar to new oregon . 
+ because i have a job that keeps me off-planet a lot of the time , i 'll also be living on a space station , called shackleton . 
+ whilst it has a lot in common with columbus , it seems slightly smaller and is much less brightly coloured . 
+ i would even go so far as to say that it 's a bit drab in comparison . '' 
+ replied will . 
+ `` one thing intrigues me , though . 
+ one of my cousins is in the navy and has to have a regulation haircut and has to be clean shaven , so i 'm intrigued by your long hair and beard '' responded kate . 
+ will knew this would come up , so was able to answer with the reply that had been worked out on the sea lion `` the ohio planet-dwellers are deeply religious and men must wear their hair long and have a full beard . 
+ women have to wear their hair long as well . 
+ when the base was first opened , one or two men did go down clean shaven but it seemed to offend some of the locals , to the extent that there were some serious injuries to naval personnel , so it was decided that we should try to blend in as well as we could . 
+ any new male recruits to the base are only allowed to go down to the planet once they have at least a passable beard . 
+ if anyone 's hair is n't long enough , male or female , they can be fitted with wigs until their hair is long enough to go without . 
+ men are allowed to wear what they call a full set in the navy , but these days few do . 
+ i was told to let my hair grow long when i got the transfer , to speed up my ability to go planet-side once i get there '' he hoped that his `` explanation '' would sate her curiosity . 
+ whilst peter had been very quiet throughout the brief discussion , he suddenly asked if will could play another game with him before he had his pre-bedtime shower . 
+ will and billy were both relieved by the distraction and , before kate could speak , billy said `` sure , peter , until your mum and i have finished the dishes but be kind to him . 
+ he 's had a tiring day . '' 
+ peter grabbed will 's hand and dragged him back into the living room , before thrusting the game controller into his other hand . 
+ as they sat down , will asked peter what he had been doing that day . 
+ `` being cute '' was the odd reply . 
+ slightly bewildered , will replied `` okay , i guess that makes sense . 
+ so , what are you expecting to do tomorrow , apart from going to school ? 
+ `` i do n't know . 
+ i ca n't tell the future ! '' 
+ was the slightly incensed response . 
+ bemused and amused , will had mixed feelings about playing another game with the excitable youngster but at least it staved off any further awkward questions from kate for a while . 
+ a short while later , when will was starting to feel the pressure of playing the unfamiliar racing game with peter , kate entered the room and said to peter `` when this race ends , dear , it 'll be your bedtime . 
+ it 's already later than normal and you have school tomorrow . '' 
+ whilst he did n't deliberately crash , will tried hard to let peter win without the young boy realising it . 
+ a few minutes later , a reluctant seven year-old was led away . 
+ before he had gone more than a couple of feet , though , he asked if will could read to him once he was in bed . 
+ `` if he does n't mind , dear '' replied kate `` then it will be lights out and you settle down for sleep , though . 
+ you 've had plenty of excitement this evening . 
+ is that ok ? '' 
+ she asked him . 
+ `` yes , mummy '' he said , unsure whether to be pleased or not , as he normally played quietly in his room until he was actually tired , rather than because it was bedtime . 
+ realising he needed to say something , will said that he would be happy to read to peter . 
+ after about ten minutes , the pyjama-clad boy came into the living room and pulled will towards his room . 
+ it had been a long time since will had been into such a room . 
+ he had thought his room was unkempt but realised that , in comparison with peter 's , it was positively tidy . 
+ the main problem , in will 's limited experience of such things , was simply the sheer quantity of stuff that peter had in there . 
+ almost every surface , including most of his bed , was awash with a wide variety of toys and books . 
+ after looking round briefly , peter picked up a book ` the adventures of space explorer jim ' then pushed it into will 's hands . 
+ quickly reading the synopsis , will discovered that it was about a boy who had accidentally found himself alone in a spaceship , without any adults around . 
+ on his adventures he met several aliens and made lots of new friends , as well as getting the better of some space pirates , before returning safely home . 
+ he made sure there was a clear space for him to sit down on the bed , then invited peter to sit next to him , so that he could read the story to him . 
+ whilst the story was quite long , he finished reading it after about fifteen minutes and then called kate and billy into the room , so that they could make sure that peter actually went to bed . 
+ as he left the room , he saw a reluctant child crawling under the bedclothes and put his head on his pillow . 
+ `` goodnight , peter '' he said . 
+ `` goodnight , will . 
+ thanks for reading to me '' replied peter . 
+ feeling suddenly quite weary , will left the others and went into the living room to sit down . 
+ he awoke with a start . 
+ the room was dark and he was covered with a duvet . 
+ he had obviously been more tired than he had realised and either billy or kate had covered him . 
+ he looked at the clock and discovered that it was 02:00 . 
+ he 'd been asleep since 20:00 . 
+ he laid down and snuggled into the cosy bedding and promptly fell asleep again . 
+ chapter 4 mel was making good progress with the repairs . 
+ apart from a few isolated problems , he was almost in a position to test the final circuits and systems to make sure that everything was working again . 
+ after a couple of hours , mel decided that it was time to go through what he hoped was the final set of tests . 
+ before he did , though , he realised just how hungry he was , so decided that it made sense to have a break and something to eat before he started the tests . 
+ it would also make sure that he was feeling fresh and mentally alert . 
+ with that , he went to the food cabinet and withdrew a meal pack and peeled back the lid . 
+ within seconds , his meal was hot and ready to eat . 
+ deciding he wanted a drink with it , though , he went back to the cupboard and took out a bottle of peach flavoured water . 
+ a quick twist of the lid was all that was required to open it . 
+ after the meal , he sat relaxing for a few minutes before picking up the empty containers and putting them in the recycler . 
+ `` right , better get started . 
+ then i can get home '' he said , to no one in particular . 
+ he crossed over to the control panel and switched everything back on , except the switch that would allow the systems to connect to the outside . 
+ before doing that , he first wanted to make sure that everything was working within the commbase . 
+ a quick check of the readings on the monitor confirmed that everything seemed to be doing what he would have expected , so called the office . 
+ `` hi mel '' smiled the operator , natalie `` got everything working ? '' 
+ `` sure hope so , nat . 
+ just done a diagnostic check and everything here 's working ok . 
+ are you able to set everything at your end , so we can check that we can reroute everything through here again ? '' 
+ `` no problem , mel '' she replied , as she hit the relevant buttons on her console . 
+ `` done -- she 's all yours . '' 
+ mel hit the final buttons that switched the transmitters on . 
+ to his utmost relief , it all worked . 
+ he had been worried that , with all the damage , something had failed that he had n't picked up with his diagnostic routines . 
+ `` looking good , here , nat . 
+ how 's it looking from your end ? '' 
+ `` looks good here , too . 
+ good job , mel . 
+ i 'll make the necessary changes and then commbase 3 will be back online . '' 
+ mel looked at the clock . 
+ it was 04:00 and he was feeling somewhat weary after his very long shift . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ will awoke with the feeling that he was n't alone . 
+ he looked to his left and saw the back of a sleeping form , but could n't make out any detail in the dark , the light of the clock being insufficient to make out any details . 
+ he focussed on the clock and saw that it was 04:00 . 
+ slightly odd , he thought , as the last thing he could remember was going to sleep on a settee , and he was definitely alone . 
+ with that thought , he fell asleep again , still feeling tired from his long day . 
+ he was rudely awoken . 
+ `` who the hell are you and how did you get into my bed , never mind my apartment ? '' 
+ screamed the woman standing at the foot of the bed , dressed only in her underwear . 
+ he rubbed his eyes and tried to focus . 
+ half asleep , all he could say was `` where am i ? '' 
+ `` you 're in my apartment , bone head ! 
+ what i do n't know is who you are or how you got here . 
+ i remember getting a bit drunk at the party last night but i do n't remember coming home with anyone . 
+ i must have been more drunk than i thought though if i came home with you . 
+ you 're not my type . '' 
+ `` pleased to meet you too . 
+ i 've no idea how i got here , either . 
+ my name 's will , will hunt , by the way '' he replied . 
+ `` well will hunt , you had better get out of there , pronto . '' 
+ `` say , are n't you kathy brown ? '' 
+ he asked . 
+ `` your hair 's different , though , and you 've filled out a bit . '' 
+ `` no , i 'm katarina brown and i hope you do n't think i 've put on weight '' she said , challengingly , putting her hands on her hips . 
+ `` no , no . 
+ all i can say is that you clearly need a little more , er , support , than you used to '' she looked down and realised what he meant -- what little she was wearing singularly failed to hide her figure . 
+ `` i 'll take that as a compliment , i think . 
+ so , how do you think you know me , exactly ? 
+ i do n't remember you at all ? '' 
+ `` it was meant as one . 
+ it was a long time ago , we were at college together and you and i dated for a while . 
+ that was before i moved to shackleton permanently to work as a senior technician for galactic comms . '' 
+ `` i do n't date men . 
+ where 's shackleton ? '' 
+ `` are n't we on it now ? 
+ it 's a space station orbiting ohio in the aquarius system . 
+ what do you mean , you do n't date men ? '' 
+ he said , starting to work through the sleep-filled fog in his head . 
+ he swung his legs out of the bed and realised he was still dressed in the navy uniform apart from the boots , which he vaguely remembered taking off before he lay down on the couch in billy 's apartment . 
+ `` no idea what you 're talking about . 
+ trust me , we 've never even met , never mind dated . 
+ i 've live my entire life here on cantabrigia . 
+ i 've never even been planetside . 
+ i only dated a boy once , when i was fourteen . 
+ all i can say is that i 've only been with girls ever since . 
+ anyway , how come you 're almost fully dressed and i 'm wearing next to nothing ? '' 
+ asked katarina . 
+ `` not sure you 'd believe me if i could explain it . 
+ i 'd better leave you in peace '' he said , backing towards the apartment door , the while thinking back to the rather strange day or so he 'd had in the other reality . 
+ he was beginning to think it had all been a dream , when he realised he had a small toy in his pocket , which he could only assume had been put there at some stage by peter . 
+ he was also beginning to feel somewhat uneasy , being clearly in yet another reality . 
+ `` what , just like that ? 
+ you get into my bed without any explanation and think you can just walk away ? '' 
+ `` ok . 
+ i 'll try to explain . 
+ i do n't expect you to understand , though '' he replied . 
+ `` try me '' she countered , challengingly . 
+ `` first of all , it involves alternate universes . 
+ with me so far ? '' 
+ `` i think you 're right . 
+ you 're bullshitting me . 
+ you 'd better get out of here before i report you to the cops '' she said , somewhat angrily , pointing towards the door . 
+ `` hang on . 
+ does n't the navy uniform give the game away , even just a little ? '' 
+ `` wrong colour , buster ! 
+ the navy wear black uniforms , not blue . 
+ out ! '' 
+ she responded , still pointing at the door . 
+ `` ok , ok '' countered will , moving backwards towards the door . 
+ hang on a sec ' . 
+ i think i have some holo images that might help . 
+ he flicked through the collection on his organiser and picked one of him with kathy . 
+ `` here 's one of me and kathy together a few years back '' he announced , hoping the image would , at least , generate some understanding . 
+ as she watched the moving image , with will and kathy talking casually to the image-taker , she was intrigued `` how exactly does that thing work ? 
+ i work in a research lab for a tech company and i 've never seen anything with that level of clarity in a holo . 
+ the ones we 're working on are grainy , jerky and slightly out of focus , and that 's bleeding edge technology . 
+ that looks like you 're actually looking at the subjects . 
+ you could almost be there . '' 
+ `` sorry , no idea . 
+ this is just a basic camera kit from where i come from . 
+ hang on a mo , whilst they 're just still images , i have some pictures of kate , her husband billy and their little boy peter that i took yesterday with the camera application . 
+ peter was hard to pin down , as he 's only seven and very lively , so i could n't capture a holo . '' 
+ as he showed her the images , she started to relent , realising that he was n't quite as mad as she had first thought . 
+ `` ok , these look genuine and the girls do look like my twins . 
+ that billy does look kinda like you . 
+ perhaps there 's something in your madcap story of alternate universes . 
+ tell you what , if you 'll let me examine your organiser , i might be able to at least help you out a little . '' 
+ `` is there any way that can be done without me losing the contents ? '' 
+ `` hmm . 
+ i need to discuss this with my boss . 
+ we might be able to come to some kind of arrangement . 
+ that thing is streets ahead of what we have here and i 'd love for us to be able to have a good look at it . '' 
+ `` ok , we might have a deal . 
+ however , i 'm shoeless , homeless and moneyless , never mind jobless so , for now , i think we might have to come to some kind of arrangement so that , if nothing else , i have some chance of being self-sufficient . 
+ changing the subject , is there any way to easily see if there is a william hunt in this reality ? '' 
+ `` no probs . 
+ i 'll have a quick look on the station contact database . 
+ by the way , my friends call me kat '' replied katarina . 
+ as kat moved towards her computer terminal , will said `` ok , kat . 
+ if there is a version of me in this reality , i 'd like to try to hook up with him . '' 
+ kat sat down in front of her terminal and said `` helen . 
+ please look up william hunt in the resident database . 
+ if there is n't a william , use any variation of william . '' 
+ the terminal image changed from a rotating image to that of an attractive young woman . 
+ within seconds , the image said `` i have two possible hunt 's in the database . 
+ please select the one you wish . '' 
+ the uppermost image was one of a middle-aged man , who looked nothing like will . 
+ the one below it , however , was an image of a man who looked almost identical to will , although he had slicked-back hair and a moustache . 
+ his name was shown as bill hunt . 
+ `` oh my god '' exclaimed kat `` he looks like your brother . '' 
+ `` my brother has very short hair and is clean shaven but i know what you mean . 
+ any chance of calling him and seeing if he would be willing to see me ? 
+ i suggest somewhere fairly public , such as a café or bar . '' 
+ `` helen , please contact bill hunt '' said kat . 
+ a few seconds later , the call was answered by a woman who looked , to will , a lot like becky williams `` hello . 
+ can i help you ? '' 
+ `` is it possible to speak to bill , please ? '' 
+ replied will . 
+ as the woman looked closely at will , she looked visibly surprised `` who are you ? '' 
+ `` my name 's will hunt and what i would like to discuss with bill would be better face to face . '' 
+ `` he 's in the kitchen . 
+ i 'll call him '' she replied , still looking bemused by will 's appearance . 
+ a few seconds later , bill came into view `` hello ? '' 
+ he said . 
+ as he looked into will 's face , he looked confused . 
+ will explained the need to meet with bill and asked if this would be possible . 
+ a few minutes later , they had agreed a location which kat assured will she would take him to . 
+ as it was a weekend , bill was n't working , which meant that they would meet in two hours time . 
+ after they had closed the connection , kat turned to will and informed him that she needed to shower and dress , after which they could have some breakfast , then go meet bill and his wife . 
+ in the meantime , she had a friend who should be able to lend will a pair of shoes he could wear until he could buy some of his own , so contacted him and asked if this would be possible . 
+ an hour and a half later , fed , watered and wearing shoes , will escorted kat towards the lift that would take them to the main station concourse and their rendezvous with bill . 
+ despite the uncertainty , will was feeling positive and walked with some anticipation towards the forthcoming meeting . 
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ `` mummy , mummy . 
+ will 's gone '' shrieked peter into kate 's left ear . 
+ blearily , she said `` whoa , slow down , dear . 
+ say that again , slowly this time . '' 
+ `` i just went into the living room and will was n't there . 
+ i 've even looked in the washroom '' explained an excited peter . 
+ she nudged her husband , who had somehow managed to stay asleep during the brief exchange . 
+ `` your cousin has disappeared , billy '' she informed him . 
+ `` maybe he could n't sleep and went for a walk '' he suggested , not being entirely sure how will would have managed such a feat but , in his sleepy state , it made sense to him . 
+ `` better go have a look '' he said , reaching out for peter 's hand . 
+ as they entered the living room , he realised that peter was correct . 
+ there was no sign of will . 
+ the duvet that he had covered him with last night was still there , still thrown over the settee as if will was still under it -- it had n't been thrown back when he got up . 
+ there was also a pair of naval-issue boots on the floor where they had been left by will when he laid down on the settee . 
+ billy 's heart sank . 
+ he had a feeling they 'd never see will again . 
+ the end about the author graham m. phillips was born in england around 60 years ago . 
+ he is married with two adult children and has lived in cambridgeshire , england for over 30 years . 
+ he is a retired accountant and wrote this book to prove to himself that he could do it ! 

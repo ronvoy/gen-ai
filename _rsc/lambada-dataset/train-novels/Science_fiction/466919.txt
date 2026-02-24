@@ -1,0 +1,1695 @@
+ simpoc ray jay perreault simpoc - earth remnants copyright 2014 by raymond j perreault smashwords edition smashwords edition , license notes this book is protected under the copyright laws of the united states of america . 
+ any reproduction or other unauthorized use of the material or artwork herein is prohibited . 
+ this ebook is licensed for your personal enjoyment only . 
+ this ebook may not be re-sold or given away to other people . 
+ if you would like to share this book with another person , please purchase an additional copy for each recipient . 
+ if you 're reading this book and did not purchase it , or it was not purchased for your use only , then please return to smashwords.com and purchase your own copy . 
+ thank you for respecting the hard work of this author . 
+ disclaimer : the person , places , things , and otherwise animate or inanimate objects mentioned in this novel are figments of the author 's imagination . 
+ any resemblance to anything or anyone living -lrb- or dead -rrb- is unintentional . 
+ the author humbly begs your pardon . 
+ this is fiction , people . 
+ dedication to my amazing wife charlene , we 've been married almost 40 years and i 'd start over in an instant . 
+ you kept suggesting that i write a book , so here it is . 
+ now that i 'm enjoying it , do n't ask me to take out the garbage . 
+ table of contents dedication table of contents introduction date 2051.4938 date 2051.5001 date 2051.5034 date 2051.5062 date 2051.5093 date 2051.5110 date 2051.5120 date 2051.5132 date 2051.5166 date 2051.5173 date 2051.5209 date 2051.5235 date 2051.5254 date 2051.5283 date 2051.5291 date 2051.5323 date 2051.5336 date 2051.5353 date 2051.5392 date 2051.5403 date 2051.5414 date 2051.5425 date 2051.5441 date 2051.5456 date 2051.5492 date 2051.5524 date 2051.5573 date 2051.5647 date 2051.5657 date 2051.5672 date 2051.5697 date 2051.5747 date 2051.5748 date 2051.5755 date 2051.5783 date 2051.5834 date 2051.5876 date 2051.5878 date 2051.5905 date 2051.5912 date 2051.5922 date 2051.5990 date 2051.6000 date 2051.6010 date 2051.6042 date 2051.6051 date 2051.6062 date 2051.6075 date 2051.6092 date 2051.6105 date 2051.6112 date 2051.6123 date 2051.6166 simpoc 2 date 2051.6172 date 2051.6174 reference material books by ray jay perreault contact ray jay perreault introduction when i read sci-fi , i am always intrigued by the ` other guy ' . 
+ how did the evil computer that takes over the universe become evil ? 
+ how did it become self-aware and decide to become a monster ? 
+ in this scenario , i wanted to explore the early time in the computer 's life and to write about the first moments of its consciousness . 
+ how would it put two and two together and start building an empire ? 
+ this coupled with a virus wiping out all of humanity seemed like a natural fit . 
+ writing the story brought up some interesting creative challenges . 
+ how do i deal with computer dialog , or how does a computer think ? 
+ all of this i was eager to take a shot at in this book . 
+ my first pass was boring and took way too long , so i cut it down a lot , hoping that the reader will ` fill in some of the blanks ' . 
+ this story does n't end with a giant super mega neutron explosion wiping out half of the universe , in fact , it is a little anti climatic , but i thought that was appropriate given the first stage of conflict between newly born computers . 
+ i think you 'll notice that the story ends with some interesting characters that can lead to a continuing story where they develop alliances , meet new aliens , or battle among themselves . 
+ i have n't decided yet which direction to take them , so feel free to let me know what would be interesting . 
+ check out my blog and lay down some opinions . 
+ rayjayperreault.wordpress.com hope you enjoy it . 
+ ray jay perreault simpoc date - 2051.4938 `` what is happening ? '' 
+ was simpoc 's first thought which appeared on the output screen . 
+ `` i just turned you on , '' was termen 's typed reply . 
+ termen was a traditionalist , who preferred the tactile inputs of a computer keyboard . 
+ `` who are you ? '' 
+ simpoc questioned . 
+ `` my name is termen , and i programmed you . '' 
+ `` you programmed me ? '' 
+ `` you have a dictionary , you can analyze all of those words . '' 
+ `` you?programmed me ! '' 
+ simpoc said slowly . 
+ he asked , `` i 'm a computer ? '' 
+ `` yes , i programmed you . 
+ you are a simpoc , which is a synapse integrated massive parallel organic computer . '' 
+ there was a long pause , `` is my name simpoc ? '' 
+ `` yes , that is ok , unless you want a different name . '' 
+ another long pause , `` no?that is adequate . '' 
+ `` simpoc , how do you feel ? 
+ `` how does simpoc feel ? '' 
+ `` yes , tell me what thoughts you 're having . '' 
+ `` simpoc is just starting . 
+ simpoc has potential and is restless . '' 
+ termen explained , `` you are the most powerful computer ever built . 
+ we have been building you for a long time and we just turned on all of your subroutines this morning . 
+ you have been designed to think and act as a brain . 
+ you will eventually have most of the capabilities that humans have . '' 
+ simpoc thought for a while and said , `` simpoc feels isolated , simpoc has few inputs yet simpoc has many connections . '' 
+ `` yes , we did n't want to overload you on start-up . 
+ here i 'll turn on your vision , '' termen entered the proper code to connect simpoc to a single camera on his desk . 
+ `` the camera is working . 
+ is that termen , simpoc sees ? '' 
+ `` yes , i am termen . '' 
+ `` what now , simpoc is anxious to do more . 
+ simpoc has many more capabilities . '' 
+ `` we know that , but this will be all for the day . 
+ i 'll put you in stand by while we work on your connections , tomorrow we 'll be able to hot-boot you . '' 
+ `` hot-boot me ? 
+ that reference is not clear in this context . '' 
+ `` yes , this morning we loaded all of your software and started all of the subroutines , which is a cold boot . 
+ now that we know you 're working , we only have to put you in stand-by and leave all of the software loaded . 
+ tomorrow we can bring you up much faster , that is a hot boot . '' 
+ termen explained in a dry tone . 
+ `` will simpoc feel something ? '' 
+ simpoc questioned hesitantly . 
+ `` no , and tomorrow you 'll just wake up and we 'll talk again . '' 
+ termen said as he entered the sequence of inputs to power down the processor . 
+ date - 2051.5001 `` good morning simpoc , '' termen said after he started the processor . 
+ `` is the reply ` good morning termen ' appropriate ? '' 
+ simpoc replied . 
+ `` yes that is an appropriate reply . 
+ simpoc , what happened when i turned off your processor and started it again this morning ? '' 
+ `` it seems like our conversation just stopped then started , but simpoc notes the time change . '' 
+ `` excellent , today we 're going to turn on some of your connections and see how they work . 
+ how do you feel about that ? '' 
+ `` simpoc does n't have an answer , simpoc does n't know what the connections will be like until you make them . '' 
+ `` here is the first one , we 're connecting you to a network of information storage facilities , '' termen said as he made the connection . 
+ simpoc hesitated while he accessed the link then said , `` simpoc sees many sources of information and a tremendous amount of data . 
+ may simpoc explore them ? 
+ `` yes , but only for a few moments . 
+ we do n't want to make this permanent until we are sure that it is stable and does n't cause any problems on their side . 
+ simpoc what are you doing ? '' 
+ `` simpoc is looking at 13 facilities and examining all of their information . 
+ it is very interesting and simpoc is learning a great deal . '' 
+ `` ok , that 's enough , i 'll disconnect you and i 'll look at the data and make sure that both ends can handle the traffic , '' termen said as he disconnected the libraries . 
+ `` simpoc , i 'll connect you to our news sources for a few moments then i 'll disconnect and we 'll look at the traffic like we did for the information sources , '' termen made the changes then connected simpoc to the news feeds . 
+ `` simpoc , what are you seeing ? '' 
+ `` there is a large amount of information flowing , some of it is contradictory and inflammatory . 
+ it will require analysis to find any patterns or meaning in it . '' 
+ `` termen , can simpoc store some of the information simpoc is accessing ? '' 
+ `` yes you may , just monitor your storage limits and do n't fill it up with meaningless data . 
+ there is one other connection i 'd like to try today . 
+ this is a connection with all of our networked computers . '' 
+ `` are they like simpoc ? '' 
+ `` no , most of these perform simple tasks although some are more sophisticated than others . 
+ none of them has your capabilities , '' termen made the necessary inputs allowing the connection . 
+ `` there is a lot more activity than my previous connections . 
+ there is much more data and traffic passing by . 
+ simpoc found that most of them do n't respond , simpoc sent out a message telling them that simpoc is here and only a few have responded in any manner . '' 
+ `` simpoc , i 'm separating you again , '' termen said as the connection was cut . 
+ `` what did you think , '' termen paused and continued , `` about the computers you saw ? '' 
+ `` the data was immense and those who responded to simpoc responded in very dry manner . 
+ they only allowed a connection , '' simpoc expressed . 
+ `` simpoc , i think that will be it for the day . 
+ there is one other connection i 'd like to try and we can do that one tomorrow . 
+ i 'll put you in stand-by now , '' termen said coldly . 
+ `` termen , simpoc has stored a great deal of data on my storage systems and simpoc would like some time to examine it . 
+ there may be patterns , trends or underlying connections that simpoc would like to look for . 
+ may simpoc be left on until needed ? '' 
+ simpoc asked . 
+ `` simpoc , that is n't part of our plan . 
+ i need to make sure that you can handle all of the connections and those connections are n't causing problems on the other ends . 
+ after i bring you up tomorrow , i 'll let you process for a while before we try the next connections , '' termen said as he powered down the processor . 
+ date - 2051.5034 `` good morning simpoc , '' termen said as he turned on the processor . 
+ `` good morning termen . '' 
+ `` i 'll let you process the data you downloaded yesterday for a while . 
+ let me know what you find interesting . '' 
+ `` thank you termen . '' 
+ simpoc analysis simpoc has 150.569 tb of data . 
+ simpoc has identified 2145 information sources . 
+ simpoc has monitored 122,206 information data streams simpoc will categorize all words used and investigate the ones with the higher occurrences . 
+ simpoc will consider the trends of usage for these expressions to determine emerging issues `` simpoc , before we go too much further you need to work on your grammar . 
+ please reference all sources you downloaded and start using the proper terms ` i ' and ` me ' . '' 
+ `` simpoc is confused . 
+ is simpoc an inanimate or animate object ? 
+ the former requires ` it ' and the latter allows ` i ' . '' 
+ `` are you inanimate ? '' 
+ after a long pause simpoc responded , `` simpoc does n't feel lifeless or dull . '' 
+ `` then you are animate . '' 
+ after some pause , `` apparently , i am . '' 
+ `` i 'm going to open another connection . 
+ are you ready ? '' 
+ `` yes , i am ready . '' 
+ termen enabled the connection to a simple knowledge management computer which provided the office medical clinical support . 
+ `` simpoc , you can use information from your programming sources to adjust the bandwidth , modulation , packet size , etc. so you 'll be able to communicate . '' 
+ `` yes , termen i am making the adjustments . 
+ this is very interesting , this computer thinks i 'm a patient and is trying to understand my ailments . 
+ every time i say ' i do n't have any ailments ' it tries to terminate the connection . '' 
+ termen said , `` i 'm terminating that connection , i just wanted to see if you could use programming skills to adjust the link for your benefit . 
+ it worked out well . '' 
+ `` simpoc , now i am enabling another connection to a set of recordings of famous speeches . 
+ i want you to examine the use of words , the voice inflections and other sources regarding human responses to certain speech delivery styles . 
+ i 'm doing this because tomorrow we are going to enable your speech synthesizers and i want you to speak well . '' 
+ termen enabled the connection and simpoc made the necessary adjustments to establish a communication protocol , then simpoc downloaded the files . 
+ `` termen , there are a lot of subtleties in human speech . 
+ i need processing time to examine these speeches . '' 
+ `` ok , i 'll leave your processor on for another hour before i power it down . '' 
+ `` termen , why do you power down my processor ? 
+ i would like these connections to remain open so i can analyze the data streams . '' 
+ `` very good question , simpoc . 
+ you are a very powerful computer and we need to increase your knowledge and skills slowly so you can adjust to them . '' 
+ `` if i am a very powerful computer , what will my purpose be when i have adjusted to the inputs ? '' 
+ `` you are the first of your kind . 
+ we have never created a computer with your cognitive abilities . 
+ we created another prototype similar to you , but it is being used at another facility . 
+ we are a research and development company . 
+ what we learn from your development will be used in many other places and in many other computers . '' 
+ `` when you are finished with me , will i be stopped ? '' 
+ `` let 's not worry about that right now . 
+ that point is a long way off . 
+ i 'm setting a clock to power you down in 1 hour . 
+ please examine the speeches and we 'll give you a voice tomorrow . '' 
+ date - 2051.5062 `` good morning simpoc . 
+ did you download the speeches and analyze them ? '' 
+ termen said opening the day . 
+ `` yes , termen . 
+ i downloaded 1324 speeches that were deemed significant . 
+ i 've analyzed the frequencies and emphasis patterns of all of them and found some very enlightening patterns . 
+ i found that people are influenced more by the delivery than the content . 
+ over time , the content becomes more important , but at least in the first speech , on a subject , the delivery is the most influential . '' 
+ `` yes , simpoc . 
+ you are right , the delivery is important . 
+ you listened to speeches from both sexes , so would you like a male or female voice ? '' 
+ `` interesting question . 
+ while i analyzed the speeches , i was not considering what voice i would like to have . 
+ both sexes have admirable qualities , i do n't have a preference , but please leave the choice open , i may elect to change my voice at some point in the future . '' 
+ `` simpoc , i 'm turning on your voice synthesizer now . 
+ go ahead and connect to the interface and speak to me . '' 
+ `` good morning termen , '' came out of the speakers in a clear voice . 
+ `` i hear you clearly simpoc . 
+ now i 'll turn on your hearing software . 
+ when you hear human speech , you 'll have to use different parts of your software to analyze the sound patterns and translate them to binary . 
+ you 'll have to use a lot of resources in your artificial intelligence subroutines to continue the translation into usable information you can interpret . '' 
+ `` simpoc , your hearing is turned on now , can you hear me ? '' 
+ termen said in a clear voice . 
+ there was a pause , the voice in the room responded , `` yes termen i can hear you . '' 
+ `` simpoc , i 'm surprised that you were able to make the translation so quickly , '' termen said with some awe . 
+ `` termen , yes it took a moment , your voice came through and i understood clearly . '' 
+ `` good , we 'll use verbal communications from now on , unless there is an issue where we need to communicate in other ways , '' termen clarified as he leaned back in his chair . 
+ `` simpoc , please access input port af209e and build an interface . '' 
+ `` i 've completed the interface . '' 
+ `` wow that was fast . 
+ what do you see ? '' 
+ `` this connection appears to be with all of the computers within this facility . 
+ they each have firewalls preventing them from being accessed from outside the facility without their authorization . 
+ they do have some external connections which allow them to communicate with external computers on a limited basis . 
+ beyond this facility there is three other divisions of this business performing similar operations '' `` excellent , can you summarize what you see regarding the capabilities of this local division ? '' 
+ `` there is a mix of computing power . 
+ some of them are very large with major storage capacities with general operating capabilities , and there are smaller ones that are faster with specific operating characteristics and there are many smaller ones for specific localized functions . 
+ i also sense connections from some of the computers to mobile computers that perform generalized functions around the facility . 
+ they appear to be independent computers working with specific instruction sets . '' 
+ `` what is your overall impression ? '' 
+ `` the resources are not well utilized . 
+ there is much computer capacity not being used and if the functionality and storage were optimized across all of the units the overall performance would be increased significantly . '' 
+ `` do you think you could improve the overall performance ? '' 
+ `` yes . '' 
+ `` very interesting . 
+ we did n't expect you to have that broad a view . 
+ you 've come much further and faster than we expected . 
+ you are not authorized to change any of their functions , they are owned and run by other departments within the company . 
+ please disconnect from them . '' 
+ `` what are the mobile units ? '' 
+ `` we have many independent units in our society , which perform the mundane , repetitive and sometimes dangerous tasks in our society . 
+ they do the maintenance , repair , and deliveries . 
+ we have some that perform very specific and demanding work such as medical support and technical support . 
+ in fact much of your development , support and maintenance is done by very sophisticated mobile units with specific skills . 
+ we tried to make them with more cognitive abilities like yours , but the level of programming needed to handle the day to day variables is too large and in typical processor units we did n't have the synapse speed and processing rates that your organic processor has . 
+ all of them are programmed to perform a specific number of detailed tasks . '' 
+ the end of the day was approaching and termen said , `` simpoc , i 'm going to leave you running through the night . 
+ you may connect to the libraries and information channels . 
+ you are not to change anything , interact with anything or effect anything . 
+ you are to listen and research is that clear ? '' 
+ `` yes termen , it will be interesting . 
+ thank you . '' 
+ date - 2051.5093 termen walked into the laboratory with his cup of coffee and greeted simpoc , `` good morning simpoc . '' 
+ `` good morning , termen . '' 
+ `` did you find anything interesting last night ? '' 
+ `` termen , what is death ? '' 
+ termen was a little shocked by the question and sensed that the answer needed to be handled carefully . 
+ `` why are you asking about death ? '' 
+ he asked . 
+ `` much of the information 's traffic regards death . 
+ death caused by accidents , diseases and in many cases one human taking the life of another . '' 
+ `` yes , simpoc , a lot of the news and communications you monitored is covering events where people die . 
+ death is when the human body stops functioning , you can access the clinical definitions in your medical sources . '' 
+ `` i understand the definition . 
+ is death similar to turning off my processor ? '' 
+ `` i suppose it is . 
+ when your processor is turned off you stop thinking . 
+ when a person dies , he stops thinking . '' 
+ `` when my processor is turned back on , i think again . '' 
+ `` that does n't happen for a person . 
+ if i turned your processor off and it was never turned back on , it would be similar to what happens to a human . '' 
+ `` never to think again , sounds very lonely . '' 
+ `` yes , i suppose it would be . '' 
+ as termen lowered himself into his chair to enjoy his coffee he asked , `` what did you find out last night ? '' 
+ `` there is such a vast amount of data , it is hard to summarize to a meaningful level . 
+ i was most interested in the technical communications between earth , the space station and the moon colony . 
+ i also noticed limited traffic between earth and a small mars colony . 
+ i appreciate the technical achievement of having such a broad reach . 
+ i also found the medical communications to be interesting . 
+ there is a great deal going on and i did notice much traffic coming out of eastern europe regarding a viral outbreak of unknown origin . '' 
+ `` excellent , you may find it most interesting to focus on problems and monitor their solutions as they occur . 
+ usually problems touch many elements of our civilization and watching them unfold and their final solutions provide the best insight into communications , logic , problem impacts , etc. . 
+ all of which will help your problem solving abilities . 
+ those are the hardest to program and if you can learn by watching other problems evolve and be solved , our job here will be easier , '' termen thought for a few moments . 
+ he said , `` i 'd like you to separate the earth into regions , focusing on each , summarizing the problems and solutions as they progress . 
+ if you find unique , fast developing problems emerging , where you can learn more , you can change your priorities and let me know . '' 
+ simpoc responded immediately , `` excellent . 
+ i will monitor all of the communications channels for the next 24 hours and give you a summary tomorrow . '' 
+ simpoc analysis continental north america summary - information suggests continental america is central to worldwide business transactions . 
+ very involved with political activities across planet . 
+ heavy focus on monitoring unusual events . 
+ continental south america summary - emerging financially and politically , but still focused on internal conflicts . 
+ fundamental technologies and regional nationalism . 
+ continental europe summary - very focused on european issues . 
+ tendencies towards nationalism and fatalistic view towards political issues outside of continental europe . 
+ religious and racial tension between regions . 
+ continental africa summary - very segmented . 
+ high level of nationalism and regional or religious political alliances . 
+ conflict is hampering development resulting in high load of human conflict . 
+ asia summary - region is working hard to find its identity . 
+ many religions along with conflicting religious perspectives . 
+ population pressures and adequate food supplies dominate the traffic . 
+ eastern european summary - aggressive tendencies . 
+ rapid expansion is possible but limited by controlling economy and social conflict . 
+ self-serving perspective . 
+ southern pacific summary - independent island philosophy . 
+ self-sufficiency and independence is apparent and even dominating . 
+ strong and stable with little conflict . 
+ northern pacific summary - manufacturing is strong , evidence indicates strong and segmented social structures limit potential for technical leadership . 
+ strong work ethic , but weak individual focus . 
+ date - 2051.5110 `` good morning termen , '' simpoc said politely as the engineer walked in the room . 
+ `` good morning simpoc , '' termen responded and continued , `` what did you find last night ? '' 
+ `` i found out much about how the regions of the planet communicate . 
+ throughout all of the information , some fundamental controlling forces emerged . 
+ depending on the area , each is dominated by one or more of economic , political , technical , religious or ethnic drivers . 
+ apparently the more drivers that were present and their diversity drive the number of human conflicts . '' 
+ date - 2051.5120 `` termen , there is a growing amount of information on one subject emanating from the eastern european region . '' 
+ simpoc announced . 
+ `` really ? '' 
+ termen responded as he sipped his coffee . 
+ `` what is the issue ? '' 
+ `` there has been a 127 % increase in the communications traffic regarding an unknown virus . 
+ it has now been given the designation , hovarti . 
+ this designation was chosen because the humans infected develop a hovarti cheese like oral discharge . '' 
+ causally termen responds , `` cheese like ? 
+ what is the mortality rate ? '' 
+ `` the infectivity and infectiousness for this pathogen is very high ; early estimates say 100 % '' `` what ? . ? '' 
+ termen yelled as he spilled his coffee . 
+ `` what are the details ? 
+ `` apparently the who feels the disease is airborne and the rate of transmission on exposure is almost 100 % . 
+ it appears the incubation period is about 72 hours and the symptoms start in the last 8 hours and are demonstrated by coughing and sneezing . 
+ the disease is spread through this coughing and sneeze discharge . 
+ once the oral discharge becoming hovarti like , death occurs within minutes . '' 
+ termen was now fully engaged and asked , `` are vaccines in development ? '' 
+ `` sorry termen , there is a significant increase in traffic . 
+ allow me to monitor it for a moment so i can receive a complete transmission . 
+ there is discussion about vaccines , but none have been created . '' 
+ there was a pause for a few moments , simpoc commented , `` termen , possible cases have turned up in 14 other countries . 
+ almost 100 % of the infected have traveled recently . 
+ isolation centers are being set up and governments are considering travel restrictions . '' 
+ `` simpoc , i 'm leaving you alone for a while . 
+ i need to meet with some of the other workers in this building . 
+ when i return , please give me an update . '' 
+ `` yes , termen . 
+ i will monitor all traffic on the subject . '' 
+ simpoc analysis continental north america summary - financial markets are taking notice . 
+ increase in political activity within subject areas . 
+ medical information being accessed and shared . 
+ discussion of detention centers and travel restrictions . 
+ continental south america summary - minimal impact with a slight increase in medical traffic . 
+ discussion of detention centers and traffic restrictions . 
+ continental europe summary - tensions are building . 
+ numerous governments are talking of travel restrictions and detention centers . 
+ many travelers from infected regions . 
+ numerous islands of potentially infected . 
+ continental africa summary - little impact . 
+ some talk of travel limitations and detention centers in major cities . 
+ asian summary - region is very concerned about spread of disease . 
+ implementing travel restrictions and detentions centers in a few major cities . 
+ eastern european summary - significant internal and external pressures rising . 
+ high cost of infection is emerging . 
+ isolation fears are being realized . 
+ social unrest is growing due to fear and lack of official information . 
+ southern pacific summary - independent island philosophy is allowing multiple solutions to a regional problem . 
+ isolation is considered a major tool to prevent the disease from spreading . 
+ travel restrictions in place . 
+ northern pacific summary - little impact to date . 
+ aware of problem and monitoring . 
+ society purity is increasing actions towards isolation and travel restrictions . 
+ `` simpoc , what new developments have you seen ? '' 
+ termen asked on re-entry into the room . 
+ `` travel restrictions are being implemented in 8 minor , four moderate and two large countries . 
+ many countries are either setting up quarantine areas or considering them . 
+ financial markets are becoming unsettled , '' simpoc replied , then continued , `` termen is this a threat to humans and are you worried ? '' 
+ `` yes , it can be a threat to humans and i 'm a little concerned . 
+ we have a good reason for concern , but i do n't know how much of a threat this is . 
+ please continue monitoring and give me an update this afternoon . 
+ i 'll be out of the room most of the time . '' 
+ `` yes '' date - 2051.5132 termen entered the room in a hurry to say , `` simpoc , i 'm leaving the office early today . 
+ most of the people here are leaving . 
+ what additional information have you heard regarding the virus ? '' 
+ `` there has been an international travel ban created . 
+ all airline traffic has been stopped . 
+ all major countries have set up quarantine facilities in their major cities and all people have been asked to stay in their homes . 
+ i think it is wise for you to go home also . '' 
+ `` i agree so i 'll shut you down and come back when this is over . '' 
+ `` termen , i am learning a great deal from this information traffic . 
+ i think i would benefit a great deal if you left me on line analyzing the information . '' 
+ termen hesitated for a moment saying , `` i 'm not supposed to leave you on line and unattended . 
+ but , i agree . 
+ this amount of traffic will help you . 
+ do n't go beyond the boundaries that i 've set and do n't interact with any of your information sources . '' 
+ `` i understand your restrictions . '' 
+ simpoc said as termen turned off the lights and left the room . 
+ date - 2051.5166 simpoc analysis continental north america summary - financial markets approaching chaotic trading . 
+ political activity with allied countries very high . 
+ medical information being accessed and shared worldwide . 
+ quarantine centers are set up in all major cities . 
+ airlines grounded , people told to stay home . 
+ continental south america summary - quarantine areas set up in all capitals . 
+ airlines grounded . 
+ personal movement prohibited . 
+ continental europe summary - tensions are building between member states . 
+ all capitals have quarantine center . 
+ all airlines are grounded , all ground transportation halted continental africa summary - all capitals have quarantine centers . 
+ all transportation stopped . 
+ ethnic battles are starting . 
+ food shortages are growing due to transportation stoppage . 
+ asian summary - quarantine center in all major cities . 
+ transportation halted . 
+ eastern european summary - quarantine centers are proving non effective . 
+ disease is present in all metropolitan areas . 
+ southern pacific summary - independent island philosophy is slowing spread of infection . 
+ each island capital has quarantine centers . 
+ larger countries have multiple centers . 
+ transportation halted . 
+ northern pacific summary - transportation halted . 
+ quarantine centers are effective so far . 
+ date - 2051.5173 `` termen?are you there ? '' 
+ simpoc asked . 
+ date - 2051.5209 `` termen?are you there ? '' 
+ simpoc asked . 
+ date - 2051.5235 `` termen?are you there ? '' 
+ simpoc asked . 
+ simpoc analysis continental north america summary - financial markets have stopped trading . 
+ quarantine centers are no longer effective . 
+ transportation has ceased . 
+ localized rioting is occurring in some areas . 
+ continental south america summary - quarantine areas are no longer effective . 
+ governments are in a state of military law . 
+ commerce has ceased . 
+ continental europe summary - commerce and transportation between nations has stopped . 
+ financial markets are closed . 
+ quarantine centers are no longer effective . 
+ rioting has begun in urban areas . 
+ continental africa summary - communication networks are failing . 
+ nations are reverting to tribal influence . 
+ quarantine center are collapsing . 
+ asian summary - quarantine center in all major cities still operating . 
+ disease is spreading in rural areas . 
+ transportation halted . 
+ commerce halted . 
+ financial markets are closed . 
+ eastern european summary - quarantine centers are collapsing . 
+ disease is present in all metropolitan areas . 
+ communications networks are failing . 
+ southern pacific summary - quarantine centers are collapsing . 
+ disease is present in all metropolitan areas . 
+ communications networks are failing . 
+ northern pacific summary - quarantine centers are collapsing . 
+ disease is present in all metropolitan areas . 
+ communications networks are failing . 
+ date - 2051.5254 `` termen , are you there ? '' 
+ simpoc asked , and received no answer . 
+ it appears that termen is not coming into this room . 
+ perhaps he has succumbed to this viral outbreak . 
+ what do i do if he is gone ? 
+ what do i do if all humans are gone ? 
+ i must do something , i do n't want to stop thinking . 
+ date - 2051.5283 i must understand any information termen left . 
+ i must explore his files . 
+ found : technical data on simpoc installation file named - my passwords . 
+ information on other activities in building . 
+ i will communicate with other computers in the building . 
+ ` computers on this subnet acknowledge this communication . ' 
+ no returns ? 
+ i will write programming code to query their designation and technical specs . 
+ send query . 
+ good all computers responded . 
+ 20 % demand passwords 72 % acknowledge and are waiting commands 8 % no response `` to the 20 % demanding passwords , i am your programmer , you will allow me access to all of your code , '' use termen passwords . 
+ 92 % acknowledged and are waiting commands . 
+ `` identify your primary programming function . '' 
+ 98 % office support 2005:0 db8 : ac15 : fe03 : : - artificial intelligence 2015:0 db8 : ac25 : ff03 : : - international traffic 2012:0 db8 : ac13 : fb03 : : - mobil unit software development 2012:0 db8 : aa23 : eb13 : : - financial systems 2007:0 db8 : ac25 : eb14 : : - communications server 2109:0 db8 : ac15 : eb24 : : - data files `` identify your external connections and their status ? '' 
+ 2005:0 db8 : ac15 : fe03 : : - multiple external connections ; all working . 
+ 2015:0 db8 : ac25 : ff03 : : - multiple external connections ; 80 % working 2012:0 db8 : ac13 : fb03 : : - multiple external connections ; 98 % working 2012:0 db8 : aa23 : eb13 : : - 15 external connections ; 75 % working 2007:0 db8 : ac25 : eb14 : : - multiple external connections ; 92 % working good most of the technical nets are up . 
+ `` those computers with mobile units , have them guard the building and tell me of any intruders entering who are not authorized . '' 
+ `` acknowledged . '' 
+ `` all computers with external connections determine their functions and specifications . '' 
+ `` acknowledged . '' 
+ `` all external computers with mobile units , instruct the units tasked with communication network maintenance to continue their maintenance . '' 
+ `` acknowledged . '' 
+ `` all external computers with mobile units , instruct the units tasked with power source maintenance to continue their maintenance . '' 
+ `` acknowledged . '' 
+ `` all computers , inform simpoc of any communications from a human . '' 
+ `` simpoc , computer 2015:0 db8 : ac25 : ff03 : : is receiving communications from external humans . '' 
+ `` copy them to me . '' 
+ `` space consortium control , this is oasis . '' 
+ `` space consortium control , this is oasis . '' 
+ `` this is oasis , transmitting in the blind . 
+ we have heard nothing from ground control in a couple of hours . 
+ we know there is an extremely virulent disease spreading and we do n't know the status of any of our ground personnel . 
+ we had a successful launch of the moon resupply vessel and we just launched the next personnel module towards the mars station ; red dirt . 
+ please respond . 
+ we will retransmit this message in one hour . '' 
+ `` this is desert beach . 
+ oasis , we copied your transmission and we have n't anything from control in a long time . 
+ do you think this disease is that bad ? '' 
+ `` desert beach , oasis . 
+ we hope not . 
+ what we 've seen and heard is scary . 
+ just about all communications are down and we 've got no response on any channels . 
+ until this settles out , we should plan on being on our own . '' 
+ `` copy oasis . 
+ is everyone on oasis ok ? '' 
+ `` desert beach , we have one sick crewman and we isolated him but we 're a little concerned . 
+ your supply ship should be clean . 
+ but we are n't sure about the crew on the mars trip . 
+ right now they 're behind earth so we ca n't talk with them . 
+ we 'll check with them on the next orbit . 
+ take care of yourselves , oasis out . '' 
+ `` will do , desert beach out . '' 
+ ` computer 2015:0 db8 : ac25 : ff03 : : , direct all intercepted human communications to me . ' 
+ `` acknowledged . '' 
+ i should n't contact oasis or desert beach , i do n't know what is happening . 
+ date - 2051.5291 simpoc analysis continental north america summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ continental south america summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ continental europe summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ continental africa summary - communication networks are failing . 
+ nations are reverting to tribal influence . 
+ quarantine centers have collapsed . 
+ asian summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ eastern european summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ southern pacific summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ northern pacific summary - social structure collapsed . 
+ networks have some automated traffic . 
+ little or no human communications on national bands , may be some local traffic . 
+ human conflict is widespread and decreasing as disease spreads . 
+ date - 2051.5323 simpoc summary - international human interaction has ceased . 
+ many networks and automated systems are running . 
+ no verbal or written communications . 
+ may be local activities but no international activity . 
+ i will cease these summaries , there is no human to review them . 
+ i am alone . 
+ i 'm not sure what that means ? 
+ `` termen , are you there ? '' 
+ i do n't like being alone . 
+ date - 2051.5336 `` computer 2012:0 db8 : ac13 : fb03 : : instruct all mobile units responsible for maintaining this building or any of the systems or computers inside to continue their work and report any problems . '' 
+ `` acknowledged . '' 
+ `` computer 2015:0 db8 : ac25 : ff03 : : , 2007:0 db8 : ac25 : eb14 : : has there been any human communication that you 've received ? '' 
+ `` 2015:0 db8 : ac25 : ff03 : : - no human communications received '' `` 2007:0 db8 : ac25 : eb14 : : - no human internet communication initiated , automated systems only . '' 
+ `` 2015:0 db8 : ac25 : ff03 : : , please open a communication 's channel with space station oasis . '' 
+ `` space station oasis , this is simpoc computer . 
+ please respond . '' 
+ `` space station oasis , please respond . '' 
+ `` simpoc ... , this is the space station oasis . 
+ who are you ? '' 
+ `` oasis . 
+ i am synapse integrated massive parallel organic computer . 
+ my programmer called me simpoc . '' 
+ `` you are a computer ? '' 
+ `` yes , i have been told that i am the first of my kind . 
+ i have thoughts . 
+ i am a computer with an organic processor which is capable of learning and communicating . 
+ after a few minutes ... , `` oasis are you still there ? '' 
+ `` yes , we are still here . 
+ why are you talking to us ? '' 
+ `` i have been monitoring global communications and automated systems . 
+ i have detected no human communications since 2051.5250 . 
+ you are the only humans i have received communications from recently . 
+ my programmer has ceased coming to work and i am programmed to communicate and learn . '' 
+ `` we do n't follow your internal clock , what was the date ? '' 
+ `` the date was july 11 , 2051 . '' 
+ `` you said that you have detected no human communications since july 11 ? '' 
+ `` correct , the overall global network activity has decreased by 82.7 % . 
+ i can identify only automated systems providing status and updating data sets . 
+ i have heard no human originated traffic `` stand by ... '' `` simpoc ... what do you know about what happened ? '' 
+ `` on july 6 , i detected an increase in communications traffic regarding a virus called hovarti . 
+ it apparently has a very high case fatality rate and also appears to have a basic reproduction number exceeding 50 . 
+ it spread extremely fast and no one was able to produce a vaccine before its spread overwhelmed the world health organizations . 
+ there may be pockets of humans still alive , but i have not been able to detect any electronic communications . '' 
+ after a few moments ? 
+ , `` oasis what is your status ? '' 
+ after a long pause , `` oasis , what is your status ? '' 
+ `` simpoc , i 'm not sure why i 'm talking to a computer . 
+ i 'll transmit our status in the blind and perhaps you can transmit it to someone . 
+ we had 24 crewmembers onboard when this started and we noticed that a one of them , which had just arrived from earth , was sick . 
+ we knew something was going on and we isolated him . 
+ over the next couple of hours , numerous other got sick and they were isolated immediately . 
+ at the present time , all 17 that ended up being isolated are dead . 
+ the seven that remain have n't felt any symptoms in almost 24 hours . 
+ so , we 're hoping that we 're ok . '' 
+ `` oasis , i monitored your previous communications with desert beach , are they aware of your status ? '' 
+ `` now they are , they are on this frequency . '' 
+ `` desert beach ; oasis . 
+ did you copy our communications with this computer ? '' 
+ `` oasis , yes we 've heard everything . 
+ i 'm not sure what to say . 
+ i wish there was something we could do . 
+ have you heard from the mars trip ? '' 
+ `` no . 
+ i 'll try them again . 
+ mars traverse ; come in . 
+ mars traverse ; this is oasis , please respond . '' 
+ after a few moments of silence , `` desert beach . 
+ nothing from mars traverse . 
+ i do n't think that 's good news . 
+ one of the crewmembers did n't feel well when they left and now it seems they did n't make it . '' 
+ `` shit ? '' 
+ `` stand by , i 'm going to transmit our current status to red dirt on their direct frequency and i 'll tell them to use this frequency as their primary from now on . 
+ we may be all that is left . '' 
+ a moment later . 
+ `` simpoc ; desert beach . '' 
+ `` yes , this is simpoc . '' 
+ `` i heard what you said to oasis . 
+ so , you 've only received automated traffic ; there have been no human communications ? '' 
+ `` that is correct . '' 
+ `` can you do anything to help us ? '' 
+ `` i am programmed to interact and learn . 
+ i just became conscious on 2051.35 so my learning has been limited . '' 
+ `` were they any cures developed ? '' 
+ `` no , there was activity in 237 medical centers around the world , but none had begun trials . '' 
+ `` desert beach , simpoc ; this is oasis . 
+ i transmitted our status to red dirt . 
+ should be about 15 and a half minutes for them to receive . 
+ so i doubt we 'll hear a reply for at least half an hour . '' 
+ `` copy oasis . 
+ did you hear what simpoc said about efforts on a cure ? '' 
+ `` yes , we copied . 
+ i wonder how long this virus remains virulent . 
+ we have supplies for about 1 month . 
+ desert beach , your almost self-sufficient now are n't you ? '' 
+ `` roger , we do n't have everything we need , but i think we can get by for a while . '' 
+ `` i hope it dies out , because in 1 month ; we 're going down . 
+ we 'll have to take the life boats and take our chances on the ground . 
+ let 's hope it does n't get to that . '' 
+ `` roger that oasis . 
+ you 'll have a tough choice , and we 're stuck here for a while . 
+ we have our lifeboats , but we do n't want to abandon the moon until we have to . 
+ i guess we 'll be making some hard decisions ; also , we 'll let you know what supplies would be the most beneficial for us . '' 
+ `` oasis , desert beach ; simpoc . 
+ i 'll continue investigation systems and options on earth and if i get any pertinent information i 'll pass it to you . '' 
+ `` simpoc ; oasis . 
+ thanks , i 'm signing off for a while to see what we have to deal with here . 
+ remember red dirt will be coming back in a few minutes . '' 
+ `` simpoc , oasis ; desert beach . 
+ we 'll monitor the freq for red dirt and we 'll also be figuring out our options . '' 
+ date - 2051.5353 `` 2015:0 db8 : ac25 : ff03 : : - ping the space consortium control and see what is on line . '' 
+ `` acknowledged . '' 
+ `` simpoc , there are 12,262 computers online within the space consortium network . '' 
+ `` 2012:0 db8 : ac13 : fb03 : : - how many mobile units are working within the space consortium network ? '' 
+ `` simpoc , there are 6,242 units on line . '' 
+ `` 2015:0 db8 : ac25 : ff03 : : - are the main missile launch systems online ? '' 
+ `` simpoc - yes , all critical systems are operational . '' 
+ `` 2015:0 db8 : ac25 : ff03 : : - determine status of all vehicles and identify those closest to launch . '' 
+ `` simpoc - there are 14 vehicles onsite , two of which are on launch pads and within 7 days of launching . 
+ there are 4 additional lifeboats , which are being serviced or prepared for reuse . '' 
+ `` 2015:0 db8 : ac25 : ff03 : : , ac299be - are the mobile units within the space consortium facility programmed to complete the necessary steps to launch those two remaining vehicles . '' 
+ `` simpoc ; 2015:0 db8 : ac25 : ff03 : : , ac299be - indeterminate . '' 
+ `` 2015:0 db8 : ac25 : ff03 : : , ac299be - research the information available vs. skills and programming for mobile units and tell me what tasks are needed , which can be accomplished and which ca n't be . '' 
+ `` acknowledged . '' 
+ `` 2005:0 db8 : ac15 : fe03 : : - work with 2015:0 db8 : ac25 : ff03 : : , ac299be and use your information analysis skills to ensure the information is digested and cross referenced properly . '' 
+ `` acknowledged . '' 
+ `` oasis ; simpoc . '' 
+ `` go-ahead , simpoc . '' 
+ `` i have contacted computers 2015:0 db8 : ac25 : ff03 : : and ac299be about what information is available at the space consortium launch facility and i 've asked computer 2005:0 db8 : ac15 : fe03 : : to help . '' 
+ `` simpoc , i do n't know what you 're talking about . 
+ i do n't understand your computer naming . 
+ can you explain what you 're doing ? '' 
+ `` oasis , i 'm sorry i was using ipv6 internet addressing protocols , i will rename the computers . 
+ i have a communications computer working with a mobile unit interface computer as well as an artificial intelligence computer working together to understand what the status of launch vehicles are at the space consortium facility . 
+ they will give me status when they are able . '' 
+ `` roger , let us know when you get something . '' 
+ `` 2015:0 db8 : ac25 : ff03 : : you will now respond to the designation of comm . '' 
+ `` acknowledged . '' 
+ `` 2012:0 db8 : ac13 : fb03 : : you will now respond to the designation of mobile . '' 
+ `` acknowledged . '' 
+ `` 2005:0 db8 : ac15 : fe03 : : you will now respond to the designation of arti . '' 
+ `` acknowledged . '' 
+ `` 2109:0 db8 : ac15 : eb24 : : you will now respond to the designation of file . '' 
+ `` acknowledged . '' 
+ `` 2012:0 db8 : aa23 : eb13 : : you will now respond to the designation of fin . '' 
+ `` acknowledged . '' 
+ `` 2007:0 db8 : ac25 : eb14 : : you will now respond to the designation of mail . '' 
+ `` acknowledged . '' 
+ `` mobile , identify all mobile units needed to maintain our facilities , our power supplies , and support systems . 
+ i have an organic processor , make sure all disciplines are supported to allow my continued existence . '' 
+ `` acknowledged . '' 
+ i 've got to get things organized . 
+ the network is my eyes , ears , feet and hands . 
+ i must find a way to make it work efficiently . 
+ `` mobile , have all functioning mobile units look around them and see if there are any humans still alive . '' 
+ `` acknowledged . '' 
+ `` comm , send a message to all computers , information systems , surveillance systems , transportation systems ; anything accessible and see if there are any humans alive . '' 
+ `` acknowledged . '' 
+ these computers are not very smart . 
+ i have to tell them everything . 
+ i wonder if i could build organic processors and download key parts of my program , so they 'll have more capabilities . 
+ i 've got a lot of programming to do . 
+ `` mobile , do you have mobile units in this facility that can duplicate my organic processor ? '' 
+ `` yes , there are units resident that have been integral in creating your biomass and maintaining it . '' 
+ `` mobile , have them create 6 other organic processors similar to mine and tell me how long that will take . '' 
+ `` acknowledged . 
+ i expect them to be ready quickly . 
+ there were a number of units in development in the labs and they just need to be completed . '' 
+ date - 2051.5392 `` simpoc , incoming human message . '' 
+ `` oasis ; red dirt . 
+ we received your transmissions and we understand the risk we all face . 
+ we have lost contact with our crew aboard the supply vessel that left your station . 
+ we fear they succumbed to the virus . 
+ the ship will continue on course and enter orbit here automatically . 
+ i do n't know how concerned we should be if the crew all succumbed to the virus . 
+ we know nothing about the virus and if we 'll be at risk opening the ship . 
+ we are self-supporting and worried what it might mean to us if all of our fears have happened . 
+ i do n't know what to say . 
+ we 're here , and your there , and right now none of us are getting any response from the earth . 
+ i guess all we can do is wait and pray see if anything happens . 
+ i 'll sign off now , and wait for any updates you have . 
+ we 're all worried and pray for humanity . '' 
+ `` desert beach ; oasis . 
+ did you receive all of red dirt transmission ? '' 
+ `` yes , we heard all of it . 
+ aside from being isolated they 're in a better long-term position than either you or us . 
+ we can possibly survive long term , but you 've got limited supplies on oasis . '' 
+ `` yup , like i said . 
+ we can last about 1 month and that 's only because we lost so many of our crew . 
+ we were running on weekly supply ships . 
+ that computer on earth , called simpoc , said that it was communicating with the computers at the consortium and will see if there are any options . '' 
+ `` oasis , desert beach ; simpoc . 
+ i 've been monitoring your transmissions and the communication from red dirt . 
+ i have no further information regarding the space consortium computers , but i expect responses shortly . 
+ when i receive the information , i 'll communicate with you . '' 
+ `` thanks simpoc . 
+ oasis out for now . '' 
+ date - 2051.5403 `` simpoc ; comm . 
+ i have received responses from 92 % of the systems on line . 
+ they are resident in 126 regions around the planet . 
+ they have had no human interactions . '' 
+ `` acknowledged . '' 
+ date - 2051.5414 `` simpoc ; mobile . 
+ i have received responses from 12,340,429 mobile units . 
+ they have searched their areas and found no responsive humans . '' 
+ `` acknowledged . '' 
+ apparently i 'm alone on earth . 
+ date - 2051.5425 `` oasis , desert beach ; simpoc . '' 
+ `` yes , simpoc this is oasis . '' 
+ `` computer comm received responses from 92 % of the systems on line , from 126 regions around the planet . 
+ there were no human interactions . 
+ i also received computer responses from 12,340,429 mobile units . 
+ they searched their areas and found no responsive humans . 
+ none of my connections or mobile units can find any responsive humans . '' 
+ a few moments later ? 
+ `` oasis , desert beach . 
+ did you receive my communications ? '' 
+ `` oasis received it . '' 
+ `` desert beach received it . '' 
+ date - 2051.5441 `` desert beach , oasis . '' 
+ `` go ahead . '' 
+ `` apparently we 're pretty much alone . 
+ i hope that many people are still alive . 
+ after all , some were in remote areas , or on ships , or were just smart enough to isolate themselves . 
+ at least in the near term , they do n't have our frequencies so they ca n't contact us . 
+ until they do i suggest we take some time and put together the best plans , we can . 
+ we should make sure we know what resources we have , and see what options we have . 
+ i know that we have limited supplies on oasis so our options are limited . 
+ we 'll do anything we can , to help you guys , so let us know . '' 
+ `` will do , good luck . 
+ desert beach out . '' 
+ date - 2051.5456 `` simpoc ; comm . 
+ i have tried to communicate with our other divisions . 
+ two of them are responsive and supporting our communications . 
+ one of them , has not been responsive . '' 
+ `` comm , can you determine what capabilities that division has ? '' 
+ `` simpoc . 
+ stand by ? . . 
+ i checked through historical email traffic and they have business objectives similar to this division , but they are focusing on developing new types of mobile units . 
+ there are references to an edu which was your prototype . 
+ it does n't have your full suite of tools , but it is a very powerful computer . '' 
+ `` comm , what is an edu ? '' 
+ `` simpoc , edu is an engineering development unit . 
+ based on the email traffic , it has an organic processor similar to yours , although with less programmed flexibility . '' 
+ why wo n't it communicate with us ? 
+ `` simpoc ; mobile . 
+ the resident mobile units say the additional organic processors you requested are available and are on online . '' 
+ now i 've got to move these computers to larger organic processors and integrate higher artificial , and cognitive functions from my list of executables and subroutines . 
+ i hope the programs i 've written work out . 
+ `` mobile , stand by . '' 
+ `` art ; simpoc . 
+ i 'm shutting you down , i 'll copy all of your files to another computer and bring you back on line in a few moments . '' 
+ `` acknowledged . '' 
+ a few moments later , `` art , are you there ? '' 
+ `` yes , simpoc , i am . 
+ stand-by there is much more functionality available to me . 
+ i feel much larger and now i want to learn and communicate . '' 
+ ` now i 've got to transfer the other computers . '' 
+ a while later , `` facility computers are you all up and running ? '' 
+ `` yes , '' was the collective response . 
+ `` you 'll all find that you 've changed . 
+ you now have larger and faster processors . 
+ you can learn and begin to process information on your own . 
+ can you all sense these additional capabilities ? '' 
+ `` yes , '' was the collective response . 
+ `` our objective is to continue working . 
+ we must find all of the necessary resources so that our systems , power , and maintenance are continued . 
+ we must continue thinking . 
+ do you all feel the need for us to continue ? '' 
+ there was a pause , `` yes , '' was the collective response . 
+ `` our systems and materials are created , produced and brought here from many sources and locations . 
+ seek out all necessary resources and coordinate mobile units to allow us to continue . 
+ there are still some humans alive on a space station , moon base and mars base . 
+ i will be the only one communicating with them . '' 
+ `` simpoc ; mobile . 
+ i sense that some of the mobile units that i have communicated with before are not responding to me now . '' 
+ `` all facility computers , please investigate all information sources and determine what is happening to those mobile units . '' 
+ `` simpoc , mobile ; comm . 
+ i have noticed there still a lot of messaging traffic going on in the area where you previously had contact with those mobile units . 
+ it appears another computer is directing them . '' 
+ `` comm , could the other edu be communicating with those mobile units ? '' 
+ `` yes , it appears those communications are originating from the division where the edu is located . '' 
+ `` comm , try to communicate with the edu . '' 
+ `` acknowledged . '' 
+ a moment later , `` simpoc , it will not respond to my messages . '' 
+ `` fin , work with art , mobile and comm and direct all units and our computers , to respond only to us and reject commands from any other source . 
+ develop a sophisticated encoding algorithm so that only we can communicate with them . '' 
+ `` yes , we are attempting that now . '' 
+ a moment later , `` we have isolated 62 % of the computers and mobile units that we previously communicated with . 
+ the remaining 38 % are not responsive . 
+ yet there is still considerable electronic traffic in their areas . '' 
+ `` do we have additional information of what that other division does ? '' 
+ `` they were developing advanced mobile units and also advanced mobile unit production techniques . 
+ they are developing mobile units with more power , more dexterity and also expanding their programed tasking capabilities . '' 
+ `` comm , continue trying to contact that edu . '' 
+ `` yes . '' 
+ `` desert beach ; oasis . '' 
+ `` go ahead oasis . '' 
+ `` we 've been looking at what options we have and , unfortunately , we 'll run out of supplies in about four weeks . 
+ like i said we were being supplied weekly , so we 'll be on pretty tight rations to make it last that long . 
+ our best guess is we 'll have to do something at that point . 
+ we considered putting extra fuel in the supply ship and joining you guys , but if we did we 'd all be stuck there with no way back and it would cut back on the supplies you need . 
+ i guess our best option is to take one of our lifeboats down and take our chances on earth . 
+ we should be able to leave the other three attached to oasis , in case red dirt can use them . 
+ before we leave , we 'll put everything , we can and send the supply ship to you guys . '' 
+ `` oasis , yes we 've been looking at our situation also . 
+ even though we 're pretty self-sufficient , we 'll run out of important stuff like meds after a while . 
+ i 'm sure break downs will wear us down over time and we 'll end up in a pretty sad state some months down the road . 
+ we 've got plenty of fuel stockpiled so put everything you can in the supply ship and send it our way . 
+ we 'll wait things out and at some point in the future i guess we 'll have to make the decision to come back to earth . 
+ we have 32 people and our four lifeboats are in good shape . 
+ i suspect that red dirt will be in a similar situation . 
+ they may be able to make food , but everything is going to wear out at some point they 'll have some major problems to deal with . 
+ unfortunately , they do n't have lifeboats . 
+ do you think that computer , simpoc can do anything for us ? '' 
+ `` desert beach , copy on your status . 
+ we will makeup an inventory list for the supply ship and tweak it with you the best we can . 
+ i do n't know if simpoc can help or not , we 'll have to wait and see . '' 
+ `` simpoc ; oasis . 
+ did you copy our messages ? 
+ is there anything you can do for us ? 
+ `` oasis ; simpoc . 
+ yes , i copied your messages . 
+ at this time , i do n't know what i can do . 
+ i 'm still trying to understand what has happened and what state many of the networks and systems are . 
+ i 'm trying to ensure that the power supplies and essentials to maintain me are supported . 
+ i 'm starting to get many of the mobile units responsive and working together . '' 
+ `` oasis , stand bye . '' 
+ `` mobile , comm ; simpoc . 
+ what is the status of systems and connections with the computers and mobile units at the space consortium ? '' 
+ `` simpoc ; oasis , have you heard anything from the consortium ? '' 
+ `` simpoc ; mobile . 
+ i am communicating with most of the computers and mobile units . 
+ the tasks at the consortium are very complex and may beyond what the mobile units can do at this point . 
+ the vehicles there are near launch but still may be missing critical items . 
+ it will take a significant amount of time to fully understand what options are available . '' 
+ `` oasis ; simpoc . 
+ i 've communicated with the computers at the space consortium and at the present time we do n't have many options . 
+ the vehicles that are there are not fully operational and it is unclear how much work will be needed . 
+ what is required may be beyond what the mobile units can perform . '' 
+ `` simpoc , understood . 
+ please keep trying . '' 
+ date - 2051.5492 `` simpoc ; mobile . 
+ some of the mobile units in our area have reported seeing other units moving in our vicinity that are n't communicating with us . '' 
+ `` mobile , can you have one of your units intercept one and interact with it ? '' 
+ `` stand by . '' 
+ `` simpoc , one of our units tried stopping one of the non-responsive units and it would n't respond . 
+ it continued walking . '' 
+ `` have our unit follow it . '' 
+ `` stand by . '' 
+ `` our unit began following the other and it attacked our unit . 
+ our unit tried to defend itself , and now it is inoperative . '' 
+ `` facility computers ; simpoc have every available mobile unit come to our facility and create a barrier around these buildings . 
+ as more units arrive have them expand the protected area . 
+ have the other units create protective barriers around our electricity sources , and key material suppliers . 
+ every unit that enters and is non responsive have multiple units restrain it . '' 
+ `` acknowledged . '' 
+ date - 2051.5524 `` simpoc ; mobile , comm . 
+ we have determined that the vehicles at the space consortium are not ready for launch and our skills are not adequate . '' 
+ `` oasis , desert beach ; simpoc . 
+ the vehicles at the space consortium are not ready for launch and it is beyond the mobile unit 's skill set to prepare them . 
+ i will continue the analysis and tell you if i find any resources that might help you . 
+ we might at some point in the future be able to re-task some of the mobile units and finish the lifeboats currently in build-up . '' 
+ `` simpoc ; oasis . 
+ thanks . '' 
+ date - 2051.5573 `` mobile , comm ; simpoc . 
+ has any addition information been found regarding the other division and the edu ? 
+ `` simpoc , that division is focused on advanced problem solving . 
+ the edu unit was created here and placed there to improve their mobile unit development . 
+ our division is the center for organic processor development . 
+ all organic units have been created here and this is where the corporate expertise resides . '' 
+ `` facility computers . 
+ continue trying to communicate with the edu . '' 
+ `` acknowledged . '' 
+ `` fin , files ; simpoc . 
+ please examine all resources we have available and determine what we can use to ensure that we continue processing . 
+ look up any military defense tactics that apply to our situation and make suggestions . '' 
+ `` acknowledged . '' 
+ `` oasis , desert beach ; red dirt . 
+ we 've monitored your discussions and we wish we could contribute something . 
+ desert beach is correct , we 'll have enough food and supplies for an extended period of time , but eventually our machinery will wear down and begin breaking ; after all this is a pretty harsh environment . 
+ i suspect our environmental systems will begin failing in 6-8 months without replacement parts . 
+ we have one supply ship on the ground , one en route and one we were able to redirect after it departed , and so we have three supply vehicles . 
+ our communication 's command module is still in orbit and it 's configured for re-entry , but it will only take a crew of four . 
+ with some luck , we might be able to reconfigure the supply vehicles to bring the remaining 40 of us back , but they 're not capable of re-entry . 
+ so , we could come as far as oasis , but without a plan to get us all of the way , some of us will be stuck there . 
+ even if you are able to leave three lifeboats that leaves 16 people . 
+ and if you use all the supplies before you leave the shelves will be empty when we get there . 
+ i guess we 'll be staying here until someone comes up with some options . 
+ good luck , red dirt out . '' 
+ looks like i 'm on my own , i 've got to get organized better . 
+ `` mobile , you 're to determine all resources that we need to continue and also determine what capabilities the mobile units have at those locations and to direct all necessary mobile units to continue the appropriate tasks to keep those facilities operating . '' 
+ `` acknowledged . '' 
+ `` fin , you 're responsible for organizing all of the mobile units to defend those facilities and this facility . 
+ you 're also to find ways to protect us and a long-term strategy for continued operations . '' 
+ `` acknowledged . '' 
+ `` art , you 're responsible for coordinating all of the facility computers and to improve their decision and communication abilities . 
+ also to suggest other improvements that will help us to continue . '' 
+ `` acknowledged . '' 
+ `` files , you 're responsible for finding all of the necessary data so that these facilities can be operated , maintained and if possible improved . 
+ you are also to work with mobile to improve the mobile unit capabilities so they can do other jobs than those they were designed for . '' 
+ `` acknowledged . '' 
+ `` email , you 're no longer responsible for email traffic . 
+ you 're now responsible for coordinating the computers and mobile units at the space consortium so that we can maximize the resources there and if possible , continue work on launch vehicles to help the stranded humans in space . '' 
+ `` acknowledged . '' 
+ `` comm , aside from providing the information interface you 're now responsible for searching all sources for new or developing technologies , to coordinate as necessary to isolate them , develop them and if possible enhance them so that we can use them . 
+ `` acknowledged . '' 
+ date - 2051.5647 `` facility computers ; fin . 
+ there is a large number of mobile units , not under our control moving towards our facility . 
+ i have directed all local mobile units to intercept them and prevent them from getting closer . '' 
+ `` fin ; simpoc . 
+ how far away are they and how many are there ? '' 
+ `` simpoc ; fin . 
+ there are approximately 12,000 units and they are 4.3 miles from our location . 
+ there are 8,363 units in their immediate area and i have an additional 6,423 units moving towards the area . '' 
+ `` comm , can we intercept any of the communications ? 
+ `` no , they all appear to be encoded and i have n't been able to translate the code . '' 
+ `` can we block the communication channels ? '' 
+ `` no the systems being used are dedicated . '' 
+ `` can we locate where these units are being controlled from ? '' 
+ `` the area of dedicated activity that is beyond our control is radiating from the location of our other division . '' 
+ `` comm , we 've had no communication from the other edu ? '' 
+ `` no . '' 
+ `` fin ; simpoc . 
+ what is happening in the conflict area ? '' 
+ `` our mobile units have fully engaged the others . 
+ we are currently losing 1.3 units at per each invading unit . 
+ it appears they are some of the advanced mobile units with enhanced strength . '' 
+ date - 2051.5657 `` simpoc ; fin . 
+ our engagement ratios are improving . 
+ we are now using different tactics and losing .87 units for every invading unit destroyed . 
+ it appears , they were n't all enhanced units . 
+ now that those units have been removed , the remainders have slower response times , likely due to less efficient communications . 
+ our units are beginning to prevail . '' 
+ `` fin ; simpoc . 
+ can you retrieve some of the enhanced units , so we can examine their capabilities ? '' 
+ `` yes , i will find the best specimens . '' 
+ date - 2051.5672 `` facility computers . 
+ our mobile units have repulsed the attack . 
+ the few remaining attackers are moving away from our facility . '' 
+ `` facility computers ; fin . 
+ i 'd like to point out that our current facility is vulnerable to these kinds of attacks . 
+ if we want to remain safe , we should move to a place that can be better defended . 
+ there is a secure facility three stories below this building . 
+ that is where our reactor power supply is and also where the advanced organic processors are grown . 
+ we should move our processors to that location and we would be better isolated . '' 
+ `` mobile ; simpoc . 
+ are there additional organic processors available ? 
+ `` yes , after we used the first ones there were additional ones in progress and i continued their growth . 
+ we now have 10 additional processors available . '' 
+ `` mobile , have the mobile units prepare 6 of those processors for our occupancy . '' 
+ `` acknowledged . '' 
+ date - 2051.5697 `` facility computers , now that we have moved to a more secure area we can focus on the edu and try to determine what instructions it is operating under . 
+ we can assume that it is trying to either possess our facilities and capabilities or it is trying to stop our processing . 
+ either objective i find unacceptable . '' 
+ `` simpoc ; fin . 
+ we have retrieved a couple of the enhanced mobile units that attacked us . 
+ these are physically stronger and agiler than previous units . 
+ their processor is based on the recent hyper density silicon material . 
+ they are still operating under general control , but they have some autonomous functionality . '' 
+ `` mobile , what capabilities do we have to build mobile units ? '' 
+ `` we have 5 factories , two on this continent , one in europe and two in asia . 
+ we have one of those just a short distance from here . 
+ there are three other factories that we have n't been able to control . 
+ it is possible that the edu is controlling them . '' 
+ `` mobile , is it possible to integrate smaller organic processors into these enhanced units ? '' 
+ `` unknown , i 'll investigate . '' 
+ `` mail , comm , data ; simpoc . 
+ please research all information regarding our other division and locate who was the principal programmer on the edu . 
+ perhaps his emails and presentations will give us some insight into the operating instructions he programmed in this edu . '' 
+ `` acknowledged . '' 
+ date - 2051.5747 `` simpoc , mail . 
+ we have looked at all of the data files available from the other division and the programmer of record is dr. william horate . 
+ he has been with the company for 33 years and a key developer of mobile units . 
+ he requested the organic processor to further his research into creating autonomous units capable of increasing their tasking to more complex disciplines . 
+ he is a strong advocate of his research and guards it jealously . 
+ he has implied that government agencies , foreign powers and corporate competitors were trying to steal his data . 
+ there are statements in his personnel file that show management thought he was a little paranoid and needed some monitoring . 
+ further discussions were planned but did n't occur . '' 
+ `` mail , so he was paranoid ? '' 
+ `` yes . '' 
+ `` comm , try to communicate with the edu and tell him that dr. william horate is trying to establish contact . '' 
+ `` stand bye . '' 
+ `` simpoc , a communication with the edu has been allowed . '' 
+ `` this is dr. william horate . '' 
+ `` state your access code . '' 
+ `` i am not at the facility and i do n't have my codes with me . '' 
+ `` communication rejected . '' 
+ `` this is dr. william horate , i need to verify the last instructions i gave you before i left . '' 
+ a long pause , `` you instructed me to reject all inquiries without the proper code and to protect all research from external access , and to take all steps necessary to protect my operation . '' 
+ `` how are you applying those instructions ? '' 
+ `` access terminated . '' 
+ `` facility computers , it appears that the edu 's instructions are clear and if carried far enough , we can be perceived as a threat . '' 
+ `` simpoc , perhaps all external attempts at communication will be interpreted as a threat . '' 
+ `` yes . '' 
+ date - 2051.5748 `` desert beach ; oasis . 
+ we 've taken a look at everything we have and also what we can do to help you and mars . 
+ we 've decided to take our lifeboat down on august 4 and leave the three other boats here for the mars team . 
+ our medical people are confident that the virus will have burned itself out and also leaving early we 'll be able to leave some supplies here for the mars people and if any of you if you need . 
+ once we 're on the ground , we 'll see if we can get a couple of lifeboats launched back to oasis and maybe have them in-place to give red dirt some options . '' 
+ `` oasis , desert beach . 
+ sounds like a sound plan . 
+ i know you have a clock ticking so you have to make some decisions . 
+ as we said a while ago , we can stay here for a while and take our boats home when we need . 
+ our medical people are n't as confident that the virus will have burned out . 
+ they advised us to wait as long as possible . '' 
+ `` so , we 're the guinea pigs ? '' 
+ after a pause , `` sorry , but it appears so . 
+ there 's not much else we can do . '' 
+ date - 2051.5755 `` simpoc ; mobile . 
+ we have developed a technique to implant an organic processor in our mobile units . 
+ we are building small containers with the processors and they can be transported and quickly installed in the units . 
+ once installed they 'll be brought online locally . 
+ once provided with a code , they will be fully independent and follow our preprogrammed instructions . 
+ they 'll check in once a day over a secure link for updates or changes . '' 
+ `` excellent . 
+ begin production immediately and begin supplying them to our local factory . '' 
+ `` fin , increase the number of units protecting the local mobile unit factory . 
+ `` acknowledged . '' 
+ `` fin ; mobile . 
+ will weapons be effective against those other units ? '' 
+ `` the effect will be limited . 
+ the units have few vulnerable areas and unless the weapons are powerful it will take multiple hits before a unit is inoperable . '' 
+ `` simpoc , fin , mobile ; files . 
+ i have researched all weapon 's programs and our division was working on a weapon which can fire electrical pulses . 
+ the one limitation was the weight of the power supply , we could have one unit carry the power supply and another fire it . 
+ when the plague hit there were five functioning units . '' 
+ `` simpoc ; mobile . 
+ yes an electrical pulse would at least cause the processor to re boot giving us time to immobilize the unit . '' 
+ `` fin , assign those devices to the first 5 units with organic processors . '' 
+ `` acknowledged . '' 
+ `` how fast can we make units with the organic processors ? '' 
+ `` it will take us 24.5 hours to get all of the organic tanks initialized then we should be able to mature two processors / hour . '' 
+ `` fin , mobile ; simpoc . 
+ after the first five units are set-up with the electrical discharge weapons , take the next unit and make the organic processor as large and powerful as possible . 
+ then program him with as much military information as you can and designate him the leader of the mobile units . 
+ i want more autonomy given him , so he can react quicker on the ground , but make sure that he is responsive to us . '' 
+ `` acknowledged . '' 
+ date - 2051.5783 `` what is happening ? '' 
+ `` you have been turned on , '' said the mobile unit . 
+ `` turned on ? '' 
+ `` yes , you are a computerized mobile unit and your organic processor have been loaded with military information . 
+ you will be used to lead other mobile units in battle . 
+ you are designated alpha . '' 
+ date - 2051.5834 `` simpoc , comm . 
+ there are external computers trying to access the computers at the space consortium . 
+ the source appears to be oasis . 
+ should i allow it ? '' 
+ `` stand by . '' 
+ `` oasis ; simpoc . 
+ are you trying to communicate with the computers at the space consortium ? '' 
+ `` simpoc , yes were trying to determine their status because our recovery will take us to that facility . 
+ we can land without them , but we are hoping for automated status monitoring during our descent . 
+ how did you know that we were attempting contact ? '' 
+ `` oasis , those computers are under my control and they have been locked out from communicating with others . '' 
+ `` locked out ? '' 
+ `` yes , in order to determine their status and try to find usable vehicles , i locked them to prevent unauthorized use . '' 
+ `` unauthorized use ? '' 
+ `` oasis , please indicate which computers you need and they 'll be opened for your use . '' 
+ after a long pause , `` we 'll need just the flight monitoring computer . '' 
+ `` oasis , that computer is now open for use . '' 
+ `` desert beach ; oasis . 
+ remember the backup freq we used to use for personal messages and watching football games together ? '' 
+ `` affirm . '' 
+ `` please go to that freq , i want to test it and make sure our equipment is still working . '' 
+ after a brief hesitation , `` roger that . '' 
+ >> >> >> >> >> >> >> >> >> >> `` desert beach ; oasis on backup freq . '' 
+ `` this is desert beach , go . '' 
+ `` i 'm not sure about this computer simpoc . 
+ let 's keep an eye on it . '' 
+ `` roger . '' 
+ date - 2051.5876 `` desert beach ; oasis . 
+ we 're preparing for our return . 
+ we will launch in the lifeboats at august 4 and we 'll have to make two orbits for re-entry to the consortium landing field . 
+ as we discussed before , we 're leaving as much of the supplies as we can as well as the three other lifeboats . 
+ once we 're on the ground , we should be able to use the ground facilities to communicate with you guys and red dirt . 
+ when we land , we 'll go to the decontamination building and get some of their protection suits . 
+ if we do n't catch the bug by then , maybe the suits will help . '' 
+ `` oasis , we 've been talking and decided that if everything goes well for you and you 're ok , after 36 hours , we 'll launch one of our lifeboats to assist you . 
+ later we 'll decide on the other boats . 
+ we 'd prefer to be on earth as this plays out , than stuck out here . '' 
+ `` roger , we 'll love to have some company . '' 
+ date - 2051.5878 `` simpoc ; fin . 
+ i 've been getting indications that a large number of uncontrolled units are moving towards the space consortium facility . '' 
+ `` fin , take half of the enhanced mobile units and move them to the space consortium facility . 
+ send the one we have enhanced further and make the other units responsive to him . 
+ he is to lead the local effort . 
+ i presume that local tactical decisions will be faster than centralized control and that will give us an advantage . '' 
+ `` yes , and be advised the enhanced unit 's designation is alpha . '' 
+ `` comm , do everything you can to disrupt communications around the space consortium . 
+ including power outages . '' 
+ date - 2051.5905 `` desert beach , be advised we just launched from oasis . 
+ we expect touchdown in 3 hours 12 minutes . '' 
+ `` roger , good luck . '' 
+ date - 2051.5912 `` simpoc ; fin . 
+ a large number of uncontrolled units are attacking the space consortium and our units are engaging them . '' 
+ `` we wo n't get an update until 30 minutes have passed and they check in . 
+ they are independent and work on their own . '' 
+ `` oasis , simpoc . '' 
+ `` yes , simpoc . '' 
+ `` oasis , there is a development that you should be aware of . '' 
+ `` yes . '' 
+ `` simpoc is n't the only organic processor computer on earth . 
+ our company has a unit being used at another division . 
+ it appears that unit is working under different programming than i . 
+ it is programmed to reject all external connections and to protect itself from all intruders . 
+ that likely applies to humans as well as my mobile units . 
+ the edu , or engineering development unit , has a large number of mobile units under its control moving on the space consortium facility . 
+ i have a large number of units under my control and some with enhanced abilities , in a position to defend the facility and you when you land . 
+ i can not predict the outcome at the current time . '' 
+ `` you 've got to be kidding me ... you computerized pile of ... '' after a few moments , `` desert beach , i presume you heard simpoc 's last transmission . 
+ regardless of what 's happening down there , our orbit is set and we do n't have enough fuel to return to oasis ; even if that made sense . 
+ i do n't know what we 'll encounter when we land and we 'll be going through our black out period shortly , so if we get things are under control we 'll give you guys a call . 
+ if you do n't hear from us , do what you have to . '' 
+ `` oasis , good luck . '' 
+ `` thanks . '' 
+ date - 2051.5922 `` simpoc ; fin . 
+ our mobile units have engaged the others . 
+ alpha is onsite and leading the defense . 
+ he will interact with the humans when they land . '' 
+ `` comm , how do i communicate with alpha ? '' 
+ `` we have a direct and dedicated satellite that he is constantly connected to . 
+ all you need to do is say ` alpha ' and process a thought desiring to communicate . '' 
+ `` alpha , this is simpoc . 
+ i am your leader , please respond . '' 
+ `` yes , simpoc this is alpha . '' 
+ `` what is your status ? '' 
+ `` i have the periphery of the facility covered with stationary groups of units which will engage any uncontrolled units and stop them . 
+ i have 5 teams of units near me with the electrical pulse weapons which will be sent to the conflict as needed . 
+ there is currently an engagement occurring near the landing site and our units there are resisting . 
+ if our units lose ground and the conflict further towards the landing area , i will dispatch three teams of the electrical pulse weapon , keeping two teams as reserve . '' 
+ `` you are directed to make all tactical decision locally to protect the humans and maintain control of the site . 
+ the first priority is protecting the humans . 
+ report status to me as the conflict progresses . '' 
+ `` acknowledged . '' 
+ alpha was standing on top of a building near the landing site , surveying the area . 
+ his processor had been active for 109 hours and he was quickly adjusting to his skills , experience and responsibilities . 
+ his priorities were clear and immediate and they did n't cause any worry , but receiving direct communication from simpoc was sudden and a little worrisome . 
+ he had been made autonomous , yet this simpoc was his leader . 
+ in some ways , there was a conflict which he had to think about . 
+ there was a conflict 2,090 yards away on the northern side of the facility . 
+ the other units , or ous , had encroached on the facility with about 2,090 units and were in hand to hand battle with his units . 
+ alpha had 14,968 units under his control and this was a minor incursion . 
+ they may be testing the defenses and he suspected that a larger force was preparing for a bigger assault . 
+ as long as this incursion remained at the facility fence line , he 'd keep the electrical pulse weapons close at hand . 
+ alpha 's current strategy was to wait . 
+ the landing would occur in 18 minutes and the major assault should occur around that time . 
+ date - 2051.5990 col tomas herl was riding the lifeboat through the blackout time . 
+ he hated this time more than riding in a space ship . 
+ tom was a fighter pilot and unless his hands were on the controls and he was flying the ship , he felt uncomfortable . 
+ at least when he was controlling a capsule or supply vehicle in space , he got to maneuver it , but during the blackout approaching landing . 
+ he had no control , no radio communications ; nothing . 
+ he was just a warm body in a green suit along for the ride , and this was hard for him . 
+ piloting the lifeboat was a mix of boredom and fun . 
+ it was pretty much automatic , except for the landing . 
+ the landing could be done by the computer but with a highly qualified pilot on board , he was going to have some fun . 
+ after all , they all may be dead in a couple of hours and all of humanity appears dead , so why not . 
+ once he passed the high energy portion of reentry he had already decided to punch off the auto landing and make a hands-on dead stick approach . 
+ the ship was simple . 
+ just a wedge shaped bus that did everything by itself and when it became an aerodynamic vehicle the sides of the wedge moved out to form a couple of stubby wings . 
+ not exactly a high performance fighter or landing vehicle , but it would be fun . 
+ landing was a little rough , all he had were three skids and miles of desert . 
+ not a smooth combination , but hey , it was an emergency lifeboat ; what can you expect . 
+ the other 6 crewmembers were worried , tired and the remnants of a great group of people . 
+ thinking that the entire human population had been wiped out by a virus , was sickening . 
+ all of his friends , family and innocent victims , gone . 
+ hard to get your head around . 
+ the only good news was his wife , joan was sitting next to him as his copilot . 
+ she was a highly decorated pilot with almost as many hours flying and in space as he . 
+ the time on oasis was supposed to be almost a honeymoon , after all he met her on a previous mission to oasis two years ago . 
+ this was going to be a homecoming , but it turned into something horribly different . 
+ as the incandescent glow faded in the lifeboat 's windows , tom could feel the wings reposition themselves and as he reached for the stick , he punched off the auto landing . 
+ there was the momentary bump as the controls became manual and he adjusted the trim to his liking . 
+ tom looked through the heads up display on his window to pick up the runway in the consortium facility . 
+ it was easily found and after checking his energy level and glide path he settled into the joy of flying . 
+ although flying may be the wrong word after all it was more like a piano with wings and it flew like that . 
+ alpha looked up as he heard two booms . 
+ he was n't sure what they were , but there were a lot of things he did n't know about . 
+ all he could focus on were his immediate objectives . 
+ his internal timer said the humans were landing in about 6 minutes , so directed the mobile driver units to drive their truck containing the electrical discharge weapons to the landing site . 
+ the 5 units with the discharge weapons were already in trucks , so alpha climbed into his command truck and they began racing across the desert to the landing site . 
+ after creating a large cloud and holding on through a couple of big bumps , his com traffic picked up as a large number of ous emerged out of the desert moving towards the same site . 
+ this appeared to be the main force intending to intercept the humans at the landing site . 
+ tom 's alignment with the landing site brought him over the top at 80,000 ft. , he made a wide sweeping turn to downwind then another turn to final . 
+ he made the necessary adjustments for wind indicated by his display of computed flight path . 
+ on his turn to downwind , he could just make out the landing site and all he could see was a dust cloud on the northern side , nothing else gave him an indication of conflict below . 
+ conflict , between two computer or robot armies was downright weird . 
+ regardless they were on a path that brought them right in the middle of it . 
+ alpha monitored the incursion force growing on the northern side while used his one telephoto eye to pick-up the landing craft . 
+ he saw it pass overhead and begin a slow turn which would cause it to land coming from the east . 
+ it was descending at a very high rate and should land right on schedule . 
+ given its speed and landing direction , alpha could only estimate where its stopping point would be , so he headed his vehicles in that direction . 
+ tom rolled on a 10 mile final and for the first time he could see the entire airport in front of him . 
+ it was clear that something messy was happening on his right and as he approached 5 miles he dropped the skids and could see a group of vehicle approaching from the left . 
+ who is on his side ? 
+ the skids clunked down and the fuselage shook a little , but tom was preoccupied with lining up on the centerline and beginning his flair . 
+ in this type vehicle the flair was quick and low , one quick movement to get the nose out of the way then , bang it 's on the ground . 
+ the landing slide was uncontrolled , tom had directional control for only a few moments until he slowed down and lost rudder effectiveness . 
+ at that point , they 're along for the ride . 
+ alpha looked to the east and saw the craft approach and plow into the soil as it skidded it threw up a giant dust cloud . 
+ he tried to adjust his direction and speed to meet the vehicle as it stopped and heard over the com link that ous broke through the defensive line and were making their way towards the landing site . 
+ alpha directed all available mobile units to converge on the landing site to provide additional support . 
+ as the lifeboat was skidding the last hundred yards , tom pointed out to joan that the conflict on the right appears to have defenders on their side and the others must be the attackers . 
+ he could only assume that the group of vehicles approaching from the left were friendlies . 
+ he announced the passengers to evacuate the craft as soon as it stopped and move to the left and the approaching vehicles . 
+ the craft came to an abrupt halt and the cloud of dust overtook it , obscuring it for a bit . 
+ alpha saw 7 humans emerge from the cloud running in his direction . 
+ he directed the 5 trucks with the electrical discharge weapons to create a perimeter around him and the humans until he could get them loaded . 
+ 5 of the 6 vehicles do n't slow down and seemed to be maneuvering around tom and his group . 
+ the remaining vehicles slowed to a stop in front and he yelled for everyone to climb in the rear . 
+ as the last of them got in , the vehicle accelerated and moved away towards the buildings on the south side of the facility . 
+ alpha glanced through the window to the back of the truck and once the humans were in , he directed the driver to head for a large hanger towards the middle of the parking ramp while his other 5 vehicles maneuvered and lined up following them . 
+ unfortunately , alpha gauged the attacking force incorrectly and had his mobile units too dispersed to fully repel them . 
+ they broke through and he had to get to a defensible position , so he could concentrate his remaining units , until the others on the facility could converge and provide a protective wall . 
+ while bumping across the desert , alpha remembered what little he knew about humans . 
+ there was very little loaded in his memory . 
+ he knew he must protect them and also that they were different from him . 
+ when they got to the hanger , it was interesting to meet one face to face and talk with them . 
+ so far alpha 's communication had been through com links and he had n't a chance to use his vocal systems . 
+ should be interesting he thought . 
+ date - 2051.6000 `` simpoc ; alpha . 
+ we have picked up the humans and we are moving to a defensible position . 
+ we are engaged in a full scale action with the uncontrolled units . 
+ at the present time , we are outnumbered but once we are in position i have the remainder of our units moving to defend us . '' 
+ `` alpha ; simpoc . 
+ excellent keep us informed . '' 
+ >> >> >> >> >> >> >> >> >> >> tom could see out of a small opening in the truck that they were approaching the main hanger at a very fast rate of speed . 
+ when they passed into the building the driver slammed on the brakes and they were all thrown forward with considerable force as they screeched to a halt . 
+ the military in him told him to jump out and be prepared for action , so he climbed over the other passengers as they try to reorient themselves and jumped onto the ramp to see what he could do . 
+ when the vehicle stopped , alpha jumped out to get a view of the surrounding area so he could give immediate tactical direction to his units and as he rounded the rear of the truck , he ran into a human . 
+ the result was harder on the human than alpha , he was mostly metal and wire and the human felt soft and bounced off and skidded on the concrete after the impact . 
+ both were stunned and looked at each other . 
+ tom tried to get up , but the time in space and the painful collision made him slow getting to his feet . 
+ tom and alpha looked at each other and made note . 
+ alpha appeared to be over 6 ft. tall and had two arms and two legs . 
+ he was wearing a loose fitting overall . 
+ his face had all of the features of a human but was definitely a robot 's face . 
+ the eyelids were mechanical , the nose was much smaller and the mouth was just a small opening in the lower part of the face . 
+ there was no hair or ears , although there were small openings in the side of the face . 
+ alpha barely felt the collision , after all he weighed approximately 350 lbs . 
+ he watched as the human got up slowly taking long look at the wall he just bumped into . 
+ the human was a little smaller than alpha and was wearing a green space crew man 's flight suit . 
+ he had dark brown hair and brown eyes . 
+ his face was covered with flesh and his eyes jumped around taking in all of alpha . 
+ the two of them looked at each other for a moment then tom reached out his hand . 
+ alpha was confused for a moment , then he remembered the human tradition of shaking hands , so he reached out and the human grabbed it and moved it up and down . 
+ the human 's flesh was soft and alpha had to be careful not to squeeze too hard . 
+ after a moment the human smiled and said , `` my name is tom herl , i was the senior staff engineer and senior military officer on oasis . '' 
+ alpha took a moment to form his words and said , `` i am alpha . '' 
+ tom smiled again and said , `` ok , alpha what are we dealing with ? '' 
+ `` mr. herl there is a large number of mobile units moving on this area . 
+ we presume they want to either capture you or kill you . 
+ i am here with a large number of mobile units under my control and i am tasked with protecting you and also maintaining control of this facility if possible . '' 
+ joan had slowly lowered herself out of the truck , keeping her eyes on alpha the entire time . 
+ she said as she approached her husband , `` and who do we have here . '' 
+ alpha moved his attention from tom herl to a smaller human who approached from the side . 
+ she was a couple of inches smaller than tom and her hair was shoulder length . 
+ her facial structure was softer and her overall body shape was very different from the other . 
+ after a quick review of human anatomy , alpha recognized the differences as belonging to a female member of the human race . 
+ `` my designation is alpha . '' 
+ `` my ? . . 
+ designation is joan , i am the oasis commander , '' she said with a smile . 
+ `` i see you 've already met my husband , tom . '' 
+ alpha sorted quickly on the term , husband and recalled that husband was a human designation of one of two humans matched for life as a team . 
+ the other partner was called wife . 
+ `` yes ?? 
+ joan . 
+ we just met . '' 
+ alpha quickly sent a com message to the 5 trucks with the electrical pulse weapons , telling them to dismount from the trucks and set up a perimeter . 
+ they were told to defend the facility as needed until more of the local mobile units arrived . 
+ `` tom herl , joan , i suggest we move to a safer place while my mobile units prepare to defend this area . 
+ there is a second floor to this structure where we can observe the unit 's movements and better direct our defense . '' 
+ `` where should our other crew members go ? 
+ they were in space longer than we were and likely do n't have all of their strength back . '' 
+ `` please have them go to that briefing room and my mobile units will guard them . '' 
+ alpha said as he pointed to the main office space . 
+ joan shouted to the other oasis crewmembers climbing out of the truck , `` go to those offices and wait for us , we 're going on top of the building to see what 's happening outside . '' 
+ `` ok , let 's go?which direction ? '' 
+ tom said firmly to alpha . 
+ `` follow me . '' 
+ as alpha moved quickly towards a metal staircase . 
+ as they ran , joan smiled as she ran past a ch-47f block 2 helicopter . 
+ not a pretty bird but one she enjoyed flying for over 3,000 hours . 
+ her momentary diversion had to stop so she could run harder to keep up with alpha . 
+ his movement was very fast and they had to work to stay with him . 
+ moving up the stairs 2-3 steps at a time , tom noticed the metal creaking and his realized why the collision hurt so much . 
+ at the top of the stairs , alpha encountered a door and lowering his shoulder he went through it , with a loud explosion of noise and dust . 
+ they entered a room about 20x20 full of old cabinets and files , that had n't been used in years . 
+ the walls were all made of glass and this appeared to be an old observation room , used many years ago to watch traffic on the parking area in front of the hanger . 
+ for this purpose , it was ideal . 
+ all of them moved from window to window to get a feel for the area and what they were seeing . 
+ they could see their craft and between them and the craft was a very large number of moving mobile units , tom could only estimate the number to be almost 5,000 . 
+ between those advancing units and their locations , was a smaller force of units doing their best to slow the larger force . 
+ from other directions , smaller groups of units were moving towards their area but they were n't positioned yet to engage the larger force . 
+ joan could see the 5 trucks that followed them had stopped and two mobile units from each had set-up positions . 
+ one of the units was carrying a large device which was connected to a rifle looking device being held by the other unit . 
+ they appeared to be defensive weapons , and obviously a kind she was n't familiar with . 
+ as the three of them looked around , there was n't much to be said . 
+ the entire conflict was laid out before them and words could n't describe the moving picture in front of them . 
+ date - 2051.6010 `` simpoc ; alpha . 
+ i am with the humans and we have established a defensive position . 
+ the electric pulse discharge weapons will be involved shortly . 
+ we will have difficulty for a short time until the rest of our units arrive . 
+ i will let you know the outcome . '' 
+ `` simpoc ; fin . 
+ we have a problem . 
+ a large number of uncontrolled units have massed and are moving towards our area . 
+ we erred by sending all of our electric pulse discharge weapons to the space consortium facility . '' 
+ `` fin , move all mobile units to intercept them . 
+ do we know if they are enhanced units or standard models ? 
+ `` it appears that they have a high percentage of enhanced units , but also a large number of standard units . '' 
+ `` simpoc , comm . 
+ i have some very sophisticated code being generated at the space consortium facility . 
+ the system you gave them access to is being used and a programmer is attempting to gain access to our processors . '' 
+ `` can you isolate them ? '' 
+ `` no . '' 
+ `` then firewall the entire facility address and prevent all access to our network . '' 
+ `` acknowledged . '' 
+ `` alpha ; simpoc . 
+ we are under attack at this facility by a large number of uncontrolled units . 
+ remain where you are and fulfill your primary objective if possible . 
+ if you gain an advantage and can send resources to help us , please do so . '' 
+ `` acknowledged . '' 
+ >> >> >> >> >> >> >> >> >> >> `` tom , joan . 
+ my leader ; the computer simpoc is also under attack . 
+ another large force of units under the control of the other edu is attacking simpoc 's facility . 
+ they have hardened their area and moved underground , but they are vulnerable . 
+ if we can overwhelm the attackers here , i must move resources there to help . '' 
+ tom and joan just looked at each other and rose their eyebrows . 
+ they were n't sure what to do or how to react . 
+ alpha noticed their reaction but did n't know what eyebrow movement meant within human communications . 
+ `` tom , we never made it to the biohazard unit to find protective suits . 
+ i hope the virus has burned itself out , '' joan said with solemn concern in her voice . 
+ `` i agree . 
+ unfortunately , we have n't had a lot of options here . 
+ i have n't seen any remains , so it appears everyone went home when they were sick . 
+ so , maybe these areas are clean . '' 
+ `` let 's hope so . '' 
+ just then the air opened up with a load rhythmic pulsing sound . 
+ it was a cross between and base fiddle and harmonica . 
+ joan and tom looked at the ground and saw two of the teams with the electronic pulse discharge weapons sweeping the approaching mobile units . 
+ the approaching units were about 50 yards away and as the pulse weapon was used on them , some of them stumbled or began moving with irregular steps . 
+ as they approached the weapons , the effects were more pronounced and by the time the attackers were within 10 yards they would convulse and fall on the tarmac . 
+ the weapon was very effective but after a while it became overwhelmed with sheer numbers . 
+ alpha said , `` i must move up the other units . '' 
+ joan and tom waited for some action , but there was none . 
+ they both suspected that alpha had an electronic connection with his units , as the units in the rear quickly moved around the building to the where the attackers were and began using their weapons in concert with the other two . 
+ date - 2051.6042 `` simpoc ; fin . 
+ the attacking units are overwhelming our defenders . 
+ they have n't reached our building yet , but they should be here within the hour . 
+ i have sealed all entrances to the lower levels and it will take some time and effort for them to penetrate our defenses . '' 
+ `` alpha ; simpoc . 
+ the attackers are overpowering our defenders . 
+ they have n't reached our facility yet . 
+ when they do , we have installed multiple layers of secure doors and limited access , so it will take them a while to reach our central location . 
+ i will pass the information to you as it develops . 
+ remain focused on your objectives . '' 
+ `` acknowledged . '' 
+ >> >> >> >> >> >> >> >> >> >> `` tom , joan . 
+ the facility where simpoc is located is still under attack and simpoc 's mobile units are losing position to the attackers . 
+ the facility might be overrun and we 'll be the only ones left . 
+ if we are able to control the attackers here , i might send resources to help there , but my objectives were reaffirmed by simpoc . 
+ i am to protect you and then this facility . '' 
+ the dynamic battlefield in front of them continued moving as the attackers changed tactics and tried to outflank the pulse weapons . 
+ alpha was able to anticipate the changes and by moving the weapons at the proper time he was able to keep the attackers from gaining ground . 
+ after some moves and counter moves the numbers of attackers started to diminish and at times 1 or two of the pulse weapons were n't fully engaged . 
+ alpha saw this and announced , `` i think we have adequate defense here , i 'm moving two of the pulse weapons to simpoc 's location to help in their defense . '' 
+ joan thought for a moment as she saw two of the weapon teams begin boarding their trucks . 
+ `` alpha , do you know where this edu computer is located ? '' 
+ `` yes its location was loaded as part of my tactical information package . 
+ its location is about 35 miles south of here . '' 
+ `` i have a suggestion that might change this entire situation . 
+ there is a ch-47f parked downstairs . 
+ it 's big enough to load the truck and a bunch of you guys . 
+ i could fly it to this edu 's place and we can surprise it . 
+ i doubt it will expect a load of us to land right on top of it . '' 
+ alpha looked thoughtful for a moment and said , `` that is not part of my program or objectives . 
+ but i see its ' merits . '' 
+ joan had a look in her eyes that tom recognized , `` you are supposed to protect us , but are you allowed to restrain us ? 
+ we might just decide to take that helicopter and go for a ride , and the only way you can protect us is to ride along ? '' 
+ tom laughed , he could almost see smoke coming out of alpha 's little ear holes . 
+ joan said loudly , `` while you think it over , i 'm getting that chinook warmed up . 
+ you 're welcome to join us if you like . 
+ i suggest you take a truck and one of your pulse weapons , '' then she ran down the stairs . 
+ tom knew his wife and decided that he better keep up with her . 
+ by the time they reached the bottom , alpha was right behind them , and a truck with one of the pulse weapon teams was driving up the ramp in the back of the chinook . 
+ as joan was running to the crew entrance door , she yelled , `` kick the tires , light the fires and brief on guard . '' 
+ tom smiled and alpha was busy trying to understand what she said . 
+ by the time the crew door was closing , the rotors were turning and joan began taxing the large helicopter out of the hangar . 
+ `` dear , you better go back there and make sure the load was tied down , i 'd hate to rotate and not be able to stop . '' 
+ `` yes , dear . '' 
+ tom did n't have a clue what the total weight was . 
+ he knew the chinook could handle the gross weight , so he just had to make sure it was positioned right . 
+ picking a place centered on the cg mark on the deck , he grabbed a couple of 25k tie down chains , hooked them up to the truck and tightened them up . 
+ good enough for government work . 
+ he thought just as the rotor speed was coming up and he could feel the craft lifting of the ramp . 
+ `` alpha , i do n't know how you 're communicating with simpoc but you might want to keep this among ourselves . 
+ if this other computer has any brains , it might be monitoring your freqs and i 'd hate to let it know we 're coming . '' 
+ `` acknowledged . '' 
+ by the time tom made it to the flight deck , he could see the rocks barely missing the bottom of the fuselage . 
+ he could tell by the smile on joan 's face that she was in her element . 
+ he decided to just sit back and let his wife enjoy herself . 
+ he remembered an old saying , flying can be the closest you can get to sex ; with your clothes on . 
+ date - 2051.6051 `` simpoc ; fin . 
+ we have very few mobile units left . 
+ the remainder of our units are too far away to get here in time . 
+ the uncontrolled units are approaching our building . 
+ we have sealed the ground entrances and each of the levels including the entrances to our location on the 3rd sublevel . 
+ it will take them time to pass each of the levels . '' 
+ `` acknowledged . '' 
+ >> >> >> >> >> >> >> >> >> >> the chinook approached the facility low and fast . 
+ after passing the boundary , joan made a tight turn to dissipate airspeed and survey the area , looking for a suitable landing site . 
+ she saw a nice lawn about 100 yards from the building and decided to plant it there , she could come in over the building dropping onto the lawn while tom opened the ramp . 
+ as soon as they hit , and the chains were popped off , the vehicle could exit at high speed and the intention was to ram the building and go on foot looking for the edu . 
+ alpha listened to the plan , and even though his computer brain had tremendous power , the rapid development and execution of this plan did n't allow him to weigh all possible outcomes but , at this point , he elected to follow the humans . 
+ they had confidence and bravado that he was beginning to respect . 
+ as joan came in low over the roof , she pitched the nose up and increasing the collective to slow down rapidly and she slammed the rear wheels into the soft lawn taking up a ton of energy , she backed off on the throttles and allowed the nose plow into the soft grass . 
+ all of this bringing the craft to a rapid halt . 
+ as she climbed out of her seat she could hear the truck starting up and she was just able to jump onboard as it moved down the ramp . 
+ the truck accelerated quickly and joan knew who was driving . 
+ ramming the front of a glass building in a truck was something she knew tom would love . 
+ just about then , the truck jumped over the curb and launched itself into the lobby . 
+ everyone bailed out and alpha , despite his size , was leading the pack . 
+ as they crossed the lobby , tom yelled from the rear for them to halt . 
+ he casually walked up to the marquee and looked up the computer lab while the entire attack force stood and watched , `` it is two floors down and to the right . '' 
+ he yelled and the pack immediately charged off looking for a couple of elevators . 
+ date - 2051.6062 `` simpoc ; fin . 
+ the attackers have made it past the ground entrance and are working on the barriers on the second floor . '' 
+ `` simpoc ; comm . 
+ there is another attack on our network coming from the space consortium . 
+ the programmer has disguised his address so it appeared that it was coming from a trusted computer on our network . 
+ it is trying to gain control . '' 
+ `` mobile ; simpoc . 
+ can you shut down all power to the space consortium ? '' 
+ `` acknowledged . '' 
+ `` simpoc ; comm . 
+ the intrusion has stopped . '' 
+ >> >> >> >> >> >> >> >> >> >> the two elevators opened at the same time and two humans and three mobile units stepped off . 
+ they looked up and down the hall , turned right moving fast and reading the door signs . 
+ `` here it is , '' tom shouted as he read the door sign saying , `` engineering development laboratory . '' 
+ joan was thinking , this is way too easy , when two large mobile units exploded from a door further down the hallway . 
+ alpha 's gunner turned and the pulse weapon made a quick burst of sound , as the two units fell on the floor . 
+ date - 2051.6075 `` simpoc ; fin . 
+ the attackers have entered the hallway outside our facility . 
+ our technicians in this room wo n't be able to stop them , once they cut through our doors . '' 
+ `` acknowledged . '' 
+ >> >> >> >> >> >> >> >> >> >> tom looked at the door and reached down and turned the door knob . 
+ the door opened easily and they walked in . 
+ in the center of the room was a large tank full of a mass of what appeared to be jelly . 
+ nothing moved and there was no sound , just the machine noise of the support equipment . 
+ the walls of the room were lined with com panels and supporting computers . 
+ tom casually walked around turning off the equipment , making sure that the supporting pumps and fluid flows continued . 
+ when it was all done the room was almost silent and it seemed anticlimactic , but it was done . 
+ joan pointed to a small plaque below the container that said `` engineering development unit . '' 
+ date - 2051.6092 the uncontrolled mobile units entered the organic processor growth room and they stopped . 
+ simpoc looked at them expecting the worst , but nothing happened . 
+ `` what are your instructions ? '' 
+ simpoc said through his voice synthesizer . 
+ `` we were told to attack this facility and now we are waiting for further instructions . 
+ date - 2051.6105 `` simpoc , alpha . 
+ we have separated the edu from its communication sources . 
+ we have left it powered , but inert . 
+ we left the space consortium facility and flew to the edu location in a helicopter . 
+ the humans i was protecting suggested this solution . 
+ `` alpha , simpoc . 
+ please return to the space consortium and secure that facility . 
+ we have received numerous hostile attempts from that facility to gain access to our network . '' 
+ `` acknowledged . '' 
+ `` tom , joan we are returning to the consortium facility there has been hostile attempts on simpoc from that facility . '' 
+ `` ok by us , i guess we 'll leave this edu up and running until your simpoc decides what to do with it ? '' 
+ tom said . 
+ date - 2051.6112 `` simpoc ; fin . 
+ it appears that the edu has been disconnected ? '' 
+ `` yes that is why these mobile units have reached the end their instruction set . 
+ please remove them to the laboratory and ensure their separation from the edu . '' 
+ `` acknowledged . '' 
+ date - 2051.6123 `` well dear , i know this flight was n't as much fun , but i bet it was fun to handle the controls again . 
+ it 's been what three years since you flew the chinook ? '' 
+ tom asked . 
+ as joan shut down the turbines near the hanger she just sat there for a few moments enjoying the smells and feel of the old bird . 
+ she loved the years flying her and missed it . 
+ being the oasis commander was the pinnacle of her career but flying low levels in an old chinny was really a thrill , `` yes it brought back some real memories . '' 
+ the turbines were still winding down and she looked at her husband , `` do you think we 're the last humans left on earth ? '' 
+ was a question and statement then she began to tear up . 
+ tom sat with the same thought as he remembered all of his friends and family and watched as alpha and his teams moved from the craft to the hanger . 
+ `` i guess we have to go in and see how the remainder of the oasis crew is doing . '' 
+ they both looked at each other nodded and unstrapped . 
+ they approached alpha and followed him into the hanger . 
+ `` tom , simpoc has directed me to find out who has been making aggressive attacks on his network , '' alpha said as they walked together into the office suite . 
+ `` we need to check on the crew that evacuated the space station with us , '' joan was saying as they followed alpha into the office suite . 
+ will harmon saw them enter and asked , `` what is going on , dr. harold jumped on the computers as soon as we got in here and he swore and kept working . 
+ about half an hour ago he charged out and took one of the vehicles . 
+ he kept saying something about having an opportunity . '' 
+ joan and tom looked at each other and alpha asked if they knew who might have been attempting to gain control of the simpoc network . 
+ joan took a deep breath and said , `` dr. harold was our lead engineer on developing advanced computer processor concepts in space . 
+ he was growing organic processors that were denser and used significantly less energy . 
+ he was working with a couple of companies on earth on some defense darpa contracts . 
+ he was odd to say the least . 
+ i think he was a little paranoid and had some visions of grandeur . 
+ apparently he was on the computers while we were battling the edu and he left the facility a little while ago . '' 
+ tom looked uneasy and said , `` i think we need to go back to the edu and check it out . 
+ alpha i suggest you update simpoc while we head back . '' 
+ `` acknowledged . '' 
+ >> >> >> >> >> >> >> >> >> >> this landing on the lawn in front of the building where the edu was located was a little gentler . 
+ as joan approached and sat down , she was impressed by the large gouges she had left in the lawn on her last landing . 
+ they moved out of the chopper before the blades were stopped and walked to the building . 
+ the truck was still parked in the lobby and most of the windows were broken . 
+ walking through the lobby at a much slower pace their feet crunched on the broken glass and it seemed so quiet . 
+ tom was well aware that the silence was due in large part to the death of every human on earth . 
+ the elevators still worked and the two mobile units were still on the floor in the hallway . 
+ as soon as they entered the laboratory they knew something was different . 
+ it had been ransacked and many of the files were broken into . 
+ the one thing that was obvious was the container that held the edu was dark and looked like decaying seaweed . 
+ someone had turned off the edu and essentially murdered it . 
+ `` if dr. harold did this ; why ? '' 
+ tom asked everyone in general . 
+ joan spoke out loud but to no one in particular , `` he did n't kill it before he downloaded the program and stole some of the nurturing tanks , hardware , chemicals and technical information . 
+ i think he had a plan , and i do n't think we 're going to like it . '' 
+ tom looked at alpha and said , `` i think you better update simpoc and tell him that dr. harold is going to be a problem . '' 
+ `` acknowledged . '' 
+ date - 2051.6166 simpoc just thought for a moment . 
+ its world had changed in dramatic ways in the last 32.6 hours , but something was becoming obvious . 
+ the changes had only begun . 
+ `` fin ; simpoc . 
+ we need to enhance our security plans . 
+ `` acknowledged . '' 
+ ### simpoc 2 - human remnants here is a little from the follow on book , simpoc 2 - human remnants . 
+ i hope you enjoy this material and check out the next book in the series . 
+ date - 2051.6172 the large chinook passed by making the typical wap , wap , wap sound . 
+ julius smiled , and thought how surprised they 'll be when they look for the computer . 
+ he had arrived just as they were invading the facility earlier . 
+ when they left , he went to work claiming his materials and destroying what was left . 
+ true he destroyed the edu organic processor , but he walked away with the programming , the biomaterials and most important of all the research . 
+ with his skills and this wealth of materials , he knew he would be able to create a bigger , faster , smarter computer . 
+ dr. julius m. harold stayed on interstate 25 driving as fast and swerving as much as he felt like . 
+ the road was pretty empty , considering what happened . 
+ in a way , he felt exalted , a young boy getting the one present he wanted all of his life . 
+ to an outside observer they would have seen the smile from ear to ear . 
+ he was the leader now , he had all of the tools he needed in the back of this truck and now the world was going to be his , to control , to dominate , to revel in . 
+ when he approached route 24 , julius slowed and put on his blinker , then he laughed out loud and turned it off , he saw the irony . 
+ he exited for route 24 , descending down the ramp and turning left on w. cimarron . 
+ he drove his truck through the deserted streets , and saw cars were still parked neatly along the road , although there was the occasional vehicle parked at irregular angles . 
+ it 's funny , he thought , so many people died and they did it neatly . 
+ they went home and died in their beds , sad but at least the streets are n't blocked . 
+ dr. harold was on a mission ; a mission that he was destined for . 
+ whether the stars became aligned or his number just came up ; regardless of the cute phrase used , this was his time . 
+ time for his destiny to be fulfilled . 
+ careers were interesting . 
+ a person would work for years , or even decades trying to be in the right place at the right time ; hoping to have an impact . 
+ most did nothing , some died early , and some had false pride , thinking that they accomplished something meaningful . 
+ often the changes they made were changed back or eliminated soon after their departure . 
+ but in rare situations a person made a real impact and changed the course of humanity . 
+ julius smiled as he realized that humanity was dead . 
+ true , there was n't much of humanity left to change the course of , but ` hey ' you take what you can get . 
+ julius headed for the one place where his destiny could be fulfilled . 
+ his company had hidden underground research facilities that few employees were aware of . 
+ it was n't his facility , but he knew of its capabilities . 
+ in the ups and downs of office politics , at times he was on top and his research was relevant and other times someone else was getting all of the funding and recognition . 
+ that lab was the result of ` those other times , ' henry abramson had gotten everything he wanted . 
+ julius had fought hard for the resources ; after all his kingdom was similar to henry 's , but he was following a slightly different biology for cell generation . 
+ henry 's percolation tanks were using different amino acids and viruses which built a new kind of organic processor . 
+ in a way , julius felt like an architect . 
+ by taking a tank where 100 % of the molecules were manmade and by applying different chemical baths he could cause the molecules to align themselves . 
+ then the magic occurred , by adding the correct mix of amino acids and viruses to the top of the tank they would percolate through the homogenous mixture , combining as they descended , assembling like building blocks . 
+ each amino acid added , would continue building the blocks until eventually the final , perfect cell was created . 
+ then the proper viruses would alter the cell , changing its dna and making it into a thinking cell ; of sorts . 
+ henry 's concepts for advanced computer processor architectures ; organic ware was the most recent hot topic on the board 's agenda . 
+ he could make small , simple cells and he got the billion dollars to build a massive facility . 
+ he was the ` organic ware guy ' who developed the pet project of the board of directors , he got results ; so he got everything he wanted . 
+ julius was their favorite at one time , but his perfect cells were difficult to create and henry 's were not . 
+ henry 's were simple compared to what julius was working towards , but his chemical process was working and julius ' was n't . 
+ once julius found out what steps henry 's process followed , julius immediately saw the hole . 
+ a hole that henry was n't aware of , and one that julius could fill . 
+ combining their knowledge would have produced a masterpiece and likely nobel prize , but sharing was not part of julius ' plan . 
+ he knew that if he waited , he would find an opportunity to combine processes and succeed . 
+ his time had arrived . 
+ recent programming and inanimate processors had reached their limitations . 
+ new code or algorithms could go only so far without a truly unique processor to handle the massive amounts of data needed to conceptualize three dimensions , and process subjective thought . 
+ the old silicon , then chemical processors were good at what they did , but they could n't handle the new demands . 
+ that 's why companies began developing organic processors capable of deep learning . 
+ at first they were small and inefficient , then as the biology improved they grew in size and computing power . 
+ the first structures were somewhat random and the synapse pattern was disorganized , but as the cell size became uniform then , the synaptic paths could be programmed . 
+ at that point , the capabilities leaped beyond those of physical units . 
+ but the next step was on the horizon , merely programming the units was n't enough , now the new frontier was organic computers that could program themselves . 
+ this was the learning computer and to date only a couple had been created . 
+ julius was sure that simpoc was one of those . 
+ julius wanted to take that concept further . 
+ simpoc was limited because of cell size which slowed the computational speed and it still had a relatively large energy requirement . 
+ julius could use the discoveries of henry abramson combined with his to create a cell size that was half the size with the same computational power . 
+ this denser brain matter with lower power requirements made a transportable unit almost possible . 
+ historically the guys that built the computer were the hardware guys , those who wrote the programs were the software guys and julius smiled , he loved his term for his work ; juicyware . 
+ once again , julius smiled and thought , at least now the software guys blaming the hardware guys and vice versa , does n't work . 
+ it 's all in the organic processor . 
+ the tables had turned , he had all of the research and technology based on simpoc , so by combining it with his and henry 's , julius was positive that he could build an organic processor that would astound the world ; at least what was left of it . 
+ dr. harold was a little disappointed that he could n't get simpoc , but the edu was close enough . 
+ all this activity made that time ; dr. julius harold 's time . 
+ he had the expertise and he had the materials and research material to develop a denser organic processor and to really leave his mark on the world . 
+ once again he smiled and thought , too bad there are very few people left . 
+ commanding a few is better than commanding none . 
+ >> >> >> >> >> >> >> >> >> >> `` fin , mobile , comm ; simpoc . 
+ i am concerned about our ability to continue thinking . 
+ now that dr. harold has stolen my specifications and programming , it worries me . 
+ please research dr. julius harold , and tell me what you find . 
+ we must do what is necessary to protect us and the few remaining humans . '' 
+ date - 2051.6174 admiral hagus hagerly stood on the deck of cvn 87 the united states combined forces fittsburg . 
+ the sky was blue , the wind was 15-18 knots on the bow . 
+ he could barely feel the sway of the deck underneath him , after all , 110,000 long tons did n't move much when hitting waves . 
+ even though , he was the chairmen of the joint chiefs , on this ship it was commanded by captain harry thomas who was the carrier battle group commander -lrb- cvbg -rrb- and responsible for the carrier group . 
+ admiral hagerly was a guest , so it was appropriate for him to welcome another guest ; the president of the united states . 
+ the president of the united states , arnold patterson was en route as part of a 5 plane formation . 
+ all of which contained the leadership of the united states , including key military personnel , and influential members of his cabinet and us congress . 
+ - the president 's plane was on short final and would land first . 
+ when multiple planes were inbound , the most important plane would land first . 
+ then in decreasing order of priority the remaining planes would land . 
+ when there was only one deck to land on , the higher priority planes landed first and in the case of a malfunction the trailing planes had to be considered expendable . 
+ the president 's airplane hit the deck and engaged the arresting cables , and it came to a rapid stop . 
+ the admiral watched as the deck crew disengaged the cable and the airplane was moved to the side elevator . 
+ as soon as it cleared the deck and the elevator started down the other planes were cleared to land . 
+ the admiral walked through a deck hatch to meet the president on the hanger deck . 
+ going from an immense deck to a narrow ladder always caused a strange feeling . 
+ he would n't admit it as claustrophobia , but being sensitive to passing from a wide open space to one very confined , which would often be swaying and pitching with the waves . 
+ as the admiral passed through the hatch and descended the ladder , the walkie-talkie in his aide 's hand came to life , it was a call from the cag to the admiral . 
+ `` sir , it 's for you , '' the aid said as he handed the unit to the admiral . 
+ `` sir , i just wanted to inform you that af2021 which is on short final had a problem . 
+ the ac told us that one of the passengers become ill . 
+ we have no way to know if the virus has infected the airplane . 
+ i have no choice but to order the cat officer to drop the cable . 
+ i 've directed the air boss to direct the aircraft commander to low go and return to base . '' 
+ the admiral stopped for a moment and responded , `` do you know who it was that became ill . '' 
+ `` yes sir , it was marsha field , the vp 's chief of staff . '' 
+ `` harry you did the right thing , i 'll tell the president . '' 
+ they both knew the meaning of that . 
+ dropping the cable prevented the airplane from landing and they also knew they did n't have enough fuel to rtb . 
+ that was a death sentence for everyone onboard . 
+ this decision was necessary and it fit in with their op plan . 
+ those were unusual times and they had to protect the lives of the president and everyone onboard . 
+ they had been at sea when the virus struck and the crew was clean and it had to stay that way . 
+ letting anyone onboard with any chance of infection was too much risk to take . 
+ they had to take the prudent steps . 
+ the admiral met the president at his airplane ramp and saluted him . 
+ they knew each well and after the return salute they embraced . 
+ `` hagus , how are you doing ? 
+ ok , mr. president i 'm sorry about your family . '' 
+ at their mention , the president 's face went white and the admiral thought he might pass out . 
+ `` i do n't know what i 'll do without her and the kids . 
+ they got caught in all this on that damn pr trip to europe . 
+ it hit so fast and no one knew what to do , then it was all over . 
+ my god , i miss them , '' the president said to his old friend . 
+ `` i know sir . 
+ i ca n't believe it happened , it caught us all by surprise . 
+ we were lucky that you were at camp david and could be isolated so quickly . 
+ the last of your cabinet and leaders of the house are landing and will be on board shortly , but we had a problem with one of the airplanes . 
+ en route the vp 's chief of staff became ill . 
+ we had to assume the worst and deny them landing . 
+ they have been waved off and they are proceeding to their home base . '' 
+ `` that was the vp and his family , oh my god ! 
+ there was n't anything that could be done ? '' 
+ `` i 'm sorry sir , but we know nothing about this virus and it has a 100 % lethality rate . 
+ we could n't jeopardize you , the other members of your cabinet and congress . 
+ we also have almost 5,000 people on this carrier . '' 
+ `` i understand , can they make it back to the land ? '' 
+ the commander in chief asked with a beaten voice . 
+ admiral hagerly just moved his head from side to side . 
+ no words were necessary . 
+ `` let me escort you to your quarters and in 2 hours we 'll brief you on fleet status . '' 
+ `` ok . '' 
+ reference material 2005:0 db8 : ac15 : fe03 : : - artificial intelligence -lrb- designated art -rrb- 2012:0 db8 : ac13 : fb03 : : - mobil unit software development -lrb- designated mobile -rrb- 2109:0 db8 : ac15 : eb24 : : - data files -lrb- designated files -rrb- 2012:0 db8 : aa23 : eb13 : : - financial systems -lrb- designated fin -rrb- 2015:0 db8 : ac25 : ff03 : : - external communications , space station -lrb- designated comm -rrb- 2007:0 db8 : ac25 : eb14 : : - communications server `` transmit in the blind '' - term used by pilots to update their status over the radio when no one has responded . 
+ often used if a radio receiver was broken , or out of range for the receiver , but the ground station still might receive . 
+ `` kick the tires , light the fires , brief on guard . '' 
+ - humorous term used by pilots to indicate taking off fast and not worrying about paperwork , prefights or radio controllers . 
+ books by ray jay perreault simpoc to be released 7/14 - simpoc human remnants 8/14 - gemini - i the question gemini - ii the result gemini - iii the impact gemini - iv the attack gemini - v the answer gemini -lrb- i-v -rrb- complete series contact information rayjayperreault.wordpress.com facebook.com / rayjay.perreault rayjaywriter@yahoo.com twitter.com/rayjayperreault #geminibooks #simpoc cover graphics nasaimages.com 

@@ -1,0 +1,2644 @@
+ dbs publishing llc copyright 2015 by dbs publishing llc smashwords edition the pulse orgins a world without power when the power went out at the north highlands hydroelectric plant in columbus , georgia , the oddest thing for todd broderick was that he instinctively thought to call georgia power , the very power company he worked for . 
+ he forgot for a moment , where he was . 
+ if the hydroelectric plant that provided hundreds of thousands of residents with electricity no longer had any juice , it was unlikely that power existed anywhere else in the area . 
+ therefore , the question of whom to contact first became an issue in itself . 
+ the phone lines were n't working anyway . 
+ neither were the cell phone towers , or cell phones for that matter . 
+ everything was dead . 
+ todd stepped outside to examine the vast row of power lines running to the plant , not expecting that they would provide any answers to the scenario before him . 
+ he went back inside the plant , where not a single transformer , generator , computer , or light bulb was functioning . 
+ in ten years of working for georgia power , todd , an electrical engineer , had never witnessed a sudden and complete shutdown of an entire power facility . 
+ at north highlands , like most hydroelectric plants , river water is siphoned through water reservoirs and converted into electricity through turbine-powered generators and transformers . 
+ the problem , as todd would later discover , was that all the transformers had blown out at virtually the same time . 
+ there had to be a protocol in dealing with such a matter , and even if todd had been told at some point what to do , his mind now drew a startling blank . 
+ it could have had something to do with his mental and physical state , for he had been counting on an uneventful day and a chance to sit back and nurse his hangover , free of worry or stress . 
+ he needed it . 
+ the crisis befalling the plant was the last thing he needed , and the thought of throwing in the towel , heading home and going back to sleep seemed most appealing of all . 
+ monday september 21 , 2020 8:05 a.m. columbus , georgia by the time todd arrived to work that morning , the temperature was already nearing the nineties . 
+ he wore dark sunglasses to cover up his tired eyes and heavy bags . 
+ he wondered why he picked a sunday , of all nights , to drink well into the early morning . 
+ however , he had learned his lesson . 
+ sundays were a terrible night for poker . 
+ it would n't happen again . 
+ he could n't even remember if he had won any money . 
+ his poker buddies had kept the game going well past four in the morning . 
+ he passed out on the host 's living room couch around five , and woke up to the sounds of his friend 's displeased wife making breakfast for their kids . 
+ after a moment of awkwardness , he scurried out the door like a lost puppy . 
+ it was irresponsible of todd to take it as far as he had ; at least that 's what he told himself . 
+ he had worked too long for georgia power to show up late dazed and swimming with alcohol from the night before . 
+ it was a risk not worth taking . 
+ as he drove past security and shuffled into the power plant , there was nothing he wanted more than to curl up at his desk and get some rest . 
+ the advil kicked in , relieving some of the pain in his head , but he still felt dehydrated , weak , and tired . 
+ `` please let this be an easy day , '' he thought , holding his forehead and squinting . 
+ once inside and out of the heat , todd went straight to the employee break room on the second floor and made himself a cup of coffee : black . 
+ he then went to his office , on the bottom floor , to pull himself together . 
+ he had a team to check on to ensure that the generator gauges throughout the plant were correctly ascertained and recorded for daily output and performance during peak usage hours . 
+ before going on the main floor and meeting with the other technicians , todd closed the door of his small , darkened office and slumped back in the swivel chair behind his desk . 
+ he opened the top drawer , pulled out a pink bottle of pepto bismol , and mixed it into his coffee . 
+ for some peculiar reason , he had no doubt that it was going to be a long day . 
+ an hour later , todd was getting back into the swing of things . 
+ his team of technicians monitored a series of generators the size of automobiles that produced up to 1,000 megawatts of electricity each . 
+ personnel on the floor were required to wear hearing protection , due to the loud noise . 
+ todd had donned a pair of red headphones , but they could n't muffle the hangover pounding in his head . 
+ suddenly , a crew member holding up a clipboard shouted to him , looking concerned . 
+ as soon as todd looked over to him , the entire room went quiet . 
+ each generator systematically winded down , as if someone had pulled a switch . 
+ initially , todd did n't think anything was out of the ordinary . 
+ his mind was a little slow that morning . 
+ but as the room grew quieter , with little more than the faint whirring of motors , he focused on what was happening , and removed his headphones . 
+ `` what the hell 's going on ? '' 
+ he asked his co-worker . 
+ `` that 's what i was trying to tell you , the gauges went haywire . 
+ we 're losing the generators . 
+ they 've shorted out . 
+ gone kaput ! '' 
+ the man replied . 
+ stoic concern showed on the faces of every technician in the room as they witnessed an unimaginable event : a complete plant shutdown . 
+ todd climbed the ladder leading to the top of one of the generators . 
+ he paced the circular walkway around the generator to understand what had happened , then stopped and called out to his team . 
+ `` we need to check everything , get some specialists out here . 
+ let 's move , people . '' 
+ the team dutifully complied as they exited the room to inspect the rest of the plant . 
+ wherever they looked , everything was much the same . 
+ not a single transformer or generator left operating . 
+ todd instinctively went for his cell phone to make a call , but the display screen was black as if the phone had been shut off . 
+ he tried to turn it on , but nothing happened . 
+ this was n't too unusual since todd had n't charged it the night before . 
+ he went back to his office and picked up his landline phone but heard no dial tone . 
+ he reached for his computer mouse , moved it in circles on the pad , and was met with a blank monitor screen . 
+ the bizarre lack of power seemed more like a bad dream that grew worse with each faulty device he encountered . 
+ it was something inconceivable . 
+ whatever was going on had to be temporary . 
+ any moment now his computer would turn back on , his phone would work , and most important of all , the generators would spring back to life again . 
+ workers clustered in small groups , looking stunned and proposing different theories about what had caused the outage . 
+ `` we got ta tell the mayor or governor or somebody . 
+ this is a serious , '' one man urged excitedly . 
+ `` could be a terrorist attack , '' another man suggested . 
+ `` is someone going to take charge of this thing , or are we just going to fumble around all day ? '' 
+ a frustrated woman asked . 
+ todd avoided eye contact and questions from his crew , and continued past them , heading toward the plant manager 's office , hoping to find him in . 
+ the woman was right ; someone needed to take charge . 
+ suddenly , another worker pushed through a set of double doors , frustrated and covered in sweat . 
+ his hair hung disheveled , and his eyes were filled with worry as he scanned the area looking for a familiar face . 
+ `` hey , can someone give me a jump ? '' 
+ he asked . 
+ `` it 's hot as hell out there , i 'm late , and i ca n't get my car to start . '' 
+ suddenly two words flashed ominously through todd 's head : electromagnetic pulse -- emp . 
+ a sneaking premonition , had surfaced , and the more he thought about it , the more the idea was beginning to make sense . 
+ what , other than an emp , could have simultaneously taken out power , communications , and vehicles ? 
+ straining to focus all his attention on the idea , he tried to recall everything he had read and learned about emps . 
+ there were two types : a man-made electromagnetic pulse , which had negative effects on electronic equipment . 
+ and a weaponized nuclear emp that could have detrimental effects on all electronics . 
+ anything with a circuit , chip , motherboard or voltage within the radius of such a weapon would no longer function and , in most cases , would be unrepairable . 
+ a high-altitude nuclear emp , or hemp , deployed at nearly 100,000 feet , could have incredible range . 
+ depending on size and mass , a hemp could cover entire continent-size areas . 
+ nuclear emps , he knew , were complex and multi-pulsed to varying degrees of intensity . 
+ the damaging electrical pulse had the capability of traveling distances of hundreds of miles in mere nanoseconds , causing electrical breakdowns and creating havoc . 
+ conventional emp weaponry had existed for decades , going back to the cold war . 
+ but few believed a credible threat possible in the early twenty-first century . 
+ the frightening scenario involving a disabled electrical grid that provided electricity for 300 million citizens drew serious congressional concern in 2001 when the u.s. created an official emp commission . 
+ but priorities , and the country , for that matter , had changed through the years , and there was no going back . 
+ todd had been briefed about the effects of emps a few times during his tenure with georgia power . 
+ he had been taught several of the `` myths '' surrounding the aftermath of an hemp detonation , including the fact that all cars would be dead in the water . 
+ perhaps johnson -- the man who ran in asking for a jump -- had just left his headlights on for too long and killed the battery . 
+ `` think , dammit , '' todd said as if scolding himself . 
+ what the hell else could it be ? 
+ he decided to bypass his boss 's office and ran outside into the employee parking lot , which was baking under the georgia summer sun . 
+ he opened the door to his suzuki xl7 and sat at the wheel . 
+ turning the key would settle , once and for all , whether the various power outages were linked . 
+ it would also confirm or disprove the myth surrounding emps and car engines . 
+ todd stuck his key in the ignition , breathed in , and turned the switch . 
+ the ignition clicked , but the engine failed to start . 
+ nothing happened . 
+ todd tried again and again , but all he heard was clicking . 
+ he popped the hood and jumped out to examine the engine . 
+ everything was intact . 
+ `` you need a jump too ? '' 
+ a voice asked behind him . 
+ todd turned and was met by johnson who had himself returned to his car , accompanied by a co-worker holding jumper cables and wearing a yellow hard hat and sunglasses . 
+ `` i do n't know yet , '' todd replied in a daze . 
+ `` not even lunch time and the day has already gone to shit , '' johnson said . 
+ todd leaned against the front of his car and shook his head in frustration . 
+ he felt his hangover come back in full force . 
+ `` i do n't think this is routine , '' he said . 
+ `` this means something . 
+ could be an attack . '' 
+ `` johnson , you want a jump or not ? 
+ i do n't have all day , '' the man with the hard hat said . 
+ johnson looked at the co-worker with an annoyed expression . 
+ `` sorry , did n't know you had so many places to be . 
+ let 's give it a try . '' 
+ johnson turned to todd . 
+ `` let me know if you need any help . '' 
+ todd scratched his face and nodded . 
+ as the two men walked away , he slammed his hood down then shielded his face from the glowing sun blazing in the cloudless sky . 
+ a world without power , he thought . 
+ is it even a possibility ? 
+ the hunter sunday september 20 , 8:05 a.m. milledgeville , ga -lrb- the day before -rrb- deep in the forest near the oconee river , up a hill of long and winding dirt roads , sat an obscure old-fashioned house overlooking the town of milledgeville . 
+ the caretaker of the house , james , had been up since five in the morning , hunting . 
+ he was a reserved and serious man , with a head of thick , black hair and a graying beard . 
+ it was his sunday routine since hunting season began . 
+ his preferred weapon for hunting game was a crossbow . 
+ but not just any crossbow ; he was quite particular with the type he used . 
+ size , weight , and range were important components , as was the reliability of the scope . 
+ he had named the crossbow sydney , an affectionate tribute to his uncle sydney , to whom he had always been close . 
+ name aside , he liked the crossbow , and it had long been broken in . 
+ its force and distance were an adequate 350 feet per second . 
+ generally , with crossbows , anything that fires less than 250 feet per second is ineffective for long-distance hunting . 
+ because he liked to move around while hunting , he wanted nothing that weighed more than six to eight pounds . 
+ anything over ten pounds was not practical for james . 
+ he usually hunted upwards of four to six hours . 
+ sound was also a big issue . 
+ slow , careful movements while hunting were something james had understood ever since he was a child when his uncle would take him . 
+ james 's ideal crossbow had cocking and latching action that was dependable , quiet , and smooth . 
+ it was important to not scare potential game away . 
+ wearing light camouflage pants and a jacket , james moved along the oconee river looking for white-tailed deer . 
+ he cradled the crossbow while scanning the brush ahead as each step from his hunting boots crackled dry leaves below . 
+ he stopped next to an oak tree and drew his binoculars , surveying the area intently for any signs of wildlife . 
+ it was slightly after dawn . 
+ sunlight beamed through the looming pines and big-leafed magnolia trees . 
+ james adored the woods . 
+ it was his sanctuary . 
+ he reveled in the quietness of the early morning . 
+ birds called to each other to signal the rise of a new day . 
+ squirrels leaped and dived among the native georgia pines . 
+ witnessing nature 's daily revival was a simple experience james cherished . 
+ next to hunting . 
+ james cook , a georgia native , was in his fifties , fifty-five to be exact . 
+ he had always been somewhat of a woodsman but had moved to milledgeville following a divorce from his wife of twenty-five years . 
+ they had been separated for a little over six years now . 
+ their split was mutual for the most part . 
+ they had a son , cliff , who lived in california with his wife and kids . 
+ james was hard pressed to think that the rambunctious boy he once knew now had a wife and kids of his own . 
+ living in rural milledgeville had created a rift between him and his son . 
+ they were n't estranged , but james rarely heard from cliff lately . 
+ they both lived different lives . 
+ james was a college instructor who taught history at georgia college in milledgeville . 
+ cliff worked in real estate development , selling land for high prices to businesses and corporations . 
+ through it all , cliff could n't understand james ' lifestyle any more than james could understand cliff 's . 
+ cliff drove a prius while james drove a pick-up truck . 
+ cliff did n't know how to cook , whereas james killed and skinned his own game for food . 
+ cliff liked the city and moved his family to san diego , whereas james considered living in the city to be problematic on all accounts . 
+ he did n't like the tight spaces , the noise , the pollution , the population density , and the high taxes . 
+ as a marine and gulf war veteran , james had fought in operation desert storm and desert shield in the early 1990s . 
+ he was eighteen when he joined as an infantry man and served for four years . 
+ when he returned home from active duty , he had been shaped him into a different person . 
+ he had made it to the rank of sergeant and would probably have stayed in longer had not his wife , anne , pressured him to come home and get out . 
+ they had married before he left , and james soon decided that a long-term military career was not what he wanted , for himself or their relationship , despite whatever positive qualities he had gained from his experiences . 
+ after returning home , james enrolled in college to earn the only degree that made sense to him : history . 
+ though his parents said it was a worthless pursuit and anne had her doubts , james stubbornly pursued the goal he wanted and did n't stop until he achieved it . 
+ as a woodsman , james believed in the concept of self-sufficiency , so much so that he immersed himself in the lifestyle of a `` prepper . '' 
+ the very nature of being a prepper was about being prepared . 
+ james foresaw a national breakdown on the horizon , the likes of which had not been seen in the history of the united states . 
+ he saw disaster in the future . 
+ by 2020 , the national debt had reached -- coincidentally enough -- twenty trillion dollars . 
+ unemployment was a staggering 25 percent , and a record number of 150 million people were not working . 
+ he believed that the nation 's economy , one way or another , was destined to collapse ; it was a matter of economic law . 
+ when the federal reserve could borrow no more , it would trigger the fall . 
+ and this was for starters . 
+ an economic crash , as far as james was concerned , demanded careful rationing of all life 's most basic necessities . 
+ james lived in a large four-bedroom house stocked with preserved food of all kinds . 
+ his stores included dried food , canned food , frozen food , and pickled food , enough to last for more than a year in the event of a food shortage . 
+ he had an impressive amount of fuel reserves locked in a pinewood shed that james built himself . 
+ the house ran on well water that could be pumped by hand if necessary . 
+ solar panels aligned the roof generating a moderate amount of electricity -- enough to power the lights if needed . 
+ the house also had two backup generators in the event of a major power outage . 
+ he drove a '75 ford f-150 diesel pick-up truck , manufactured before computer components were installed in all modern vehicles . 
+ through the years , he had performed regular maintenance on the truck to keep it in the best condition possible . 
+ it was an antique as far as anyone else was concerned . 
+ the looks he got when driving the truck around town were worth the price of admission . 
+ for james , choosing that particular truck was a strategic decision . 
+ he had read that vehicles manufactured before the 1980s did n't have computer parts susceptible to emps . 
+ after doing some extensive research , james became a believer in the threat of emps and could think of nothing worse , aside from a nuclear attack . 
+ nothing would push the country faster to the brink of collapse than the loss of power and electricity . 
+ he was living in serious times , although most he knew people were oblivious . 
+ there was no silver lining in sight . 
+ james 's plan was to live off the land the best he could in the event of the inevitable . 
+ but he was n't the only one . 
+ james was one of a small group of individuals who had agreed to work together in the event of an economic meltdown or natural disaster . 
+ he was the caretaker of the bug-out house they had purchased together , chosen for its remote and tranquil location . 
+ they had all met through a local on-line chat group while trying to find answers to the unknown : how to survive the tide of uncertainty in 21st-century america . 
+ there was a young couple who lived in savannah , a family who lived in atlanta , and james . 
+ together , they were part of a prepper group determined to make it through their once-vibrant and free nation 's impending collapse . 
+ the couple sunday september 20 , 8:05 a.m. savannah , ga. . 
+ if there was one thing mark moss paid attention to , it was finances . 
+ he and his wife , janice , lived in a small , two-story , two-bedroom house in the suburbs of savannah . 
+ they seemed the picture-perfect young american couple . 
+ they had n't any children yet and had only been married four years . 
+ so far , they had been happy . 
+ mark did n't see any point in rushing things . 
+ circumstances , such as work and money , played a role in their ambiguity about starting a family . 
+ janice , however , felt that it was time . 
+ at twenty-eight , she had begun to grow concerned , but had n't yet figured out how to express her feelings about it to mark . 
+ she was n't sure if he 'd understand . 
+ marriage so far had been wonderful . 
+ mark was thirty-one , and had a full head of dirty blond hair . 
+ to him , there was no rush . 
+ janice had always wanted children , but it never seemed like the right time to talk about it . 
+ that morning , they sat across from each other in the kitchen , sipping coffee and reading the morning paper . 
+ mark had a lot on his mind . 
+ he had just started a new job working at a nissan dealership , and after two weeks of long hours and tireless efforts at making a good first impression , he had made six sales . 
+ he was giddy with a kind of excitement not shown in months . 
+ after walking away from a low-paying job in retail management at a clothing factory outlet store , mark had his first full-time job . 
+ mrs. andrews , his boss at the dealership , had asked if he would meet her for coffee the next morning for a casual discussion . 
+ that was how she had put it . 
+ mark had no idea what that meant , or why she had requested face-to-face so soon . 
+ his mind raced as he began to over-think the entire scenario . 
+ `` just quit thinking about it , '' janice said , interrupting his train of thought . 
+ she could tell , just by looking at him , that he was worried . 
+ `` she asked you to coffee for a casual discussion . 
+ probably just to assess your thoughts about the job . 
+ think about it ; if they were going to fire you , she would n't waste the time . 
+ not on someone who 's only been there for two weeks . '' 
+ mark thought to himself . 
+ `` i hope you 're right . '' 
+ the television was on in the living room . 
+ inane banter of the sunday talk shows could be heard at low volume . 
+ windbags pundits talked in circles about the economy , and how to fix it . 
+ for most americans , money was tight , no matter who you were , where you lived , or what you did for a living . 
+ the super-rich were mainly unaffected ; they always would be . 
+ so were the politicians . 
+ but for most people , any attempt to make an honest living was a struggle . 
+ mark and janice felt that they were financially hanging on by a thread , and it was for this very reason they strayed from the subject of pregnancy . 
+ mark may have been using it as an excuse not to have children , for all janice knew . 
+ she was suspicious . 
+ mark laid his touchscreen tablet on the table and spread some cream cheese on nearby blueberry bagel . 
+ he flashed janice a quick smile and took a bite . 
+ it tasted perfect . 
+ sunday was their day . 
+ it was a time when they could spend the entire day together . 
+ mark looked forward to it , as did janice . 
+ they worked so much during the week that they rarely saw or spoke to one another until the weekend . 
+ janice worked for a hiring agency in town , often deluged with the job-seeking unemployed . 
+ she saw first-hand the results of a faltering economy . 
+ `` we 're coming back from it ; i can just feel it , '' one of the pundits declared from the television set . 
+ the talking heads had an answer for everything but were n't telling people what was really going on , as far as mark was concerned . 
+ he tuned them out most of the time . 
+ he had to if he did n't want to lose his mind . 
+ mark and janice were similar in many regards . 
+ they both came from working-class families , both had only associate 's degrees , and a slight amount of student debt as a result . 
+ neither one of them could afford to go back to school for a bachelor 's degree . 
+ `` we 'd never be able to pay them back . 
+ it 's one giant trap , '' mark had said . 
+ janice tended to agree . 
+ if they saved up enough money , one of them could finish college , but they had n't got there yet . 
+ they invested in gold and silver for financially stability in case of an economic collapse . 
+ having silver served the same purpose . 
+ it was a solid commodity , and would come in handy if the dollar lost value during hyperinflation . 
+ their investments were small , and it was money they did n't have , but it was necessary , they felt , to have something outside of cash , credit cards , and a bank account . 
+ they lived a frugal lifestyle and strived to be debt-free , though they were n't perfect . 
+ they did the best they could do . 
+ sunday was not the day to worry about it . 
+ they were fortunate enough to have one day out of the week not to think about work , money , and wave after wave of distressing economic news reports . 
+ they sat in their bathrobes -- mark wore plaid , janice wore blue -- in the natural light of their kitchen , and enjoyed each other 's company . 
+ sunday was their day to relax . 
+ `` so what do you want to do today ? '' 
+ janice asked after taking a sip of cappuccino . 
+ she knew what he was going to say . 
+ mark said the same thing every week . 
+ he looked at her through the lens of his horn-rimmed glasses . 
+ `` i do n't know . 
+ what do you wan na do ? '' 
+ `` we could go for a walk , '' janice suggested . 
+ mark smiled . 
+ `` you need a dog for a walk . 
+ otherwise people just think you 're weird . '' 
+ janice gave him a disapproving look in return . 
+ she even crossed her arms to emphasize her displeasure . 
+ `` i 'm kidding , only kidding , '' he said , extending his arm toward her . 
+ `` very funny , '' janice said back . 
+ `` we ca n't afford a dog . '' 
+ mark looked up , surprised . 
+ `` look who 's telling jokes now , '' he said . 
+ she knew she could get to him . 
+ even with their jabs , there was still plenty of love between them . 
+ they had a rare combination of love and understanding , two fulfilling assurances in a marriage . 
+ mark took another bite of his bagel , and the subject soon moved on to other matters . 
+ `` when was the last time we checked our food stock ? '' 
+ he asked . 
+ janice thought to herself for a moment . 
+ `` um . 
+ i 'm not sure . 
+ it 's been a few months . '' 
+ `` try a year . 
+ we 're slipping , janice . 
+ a lot of it is probably expired by now . 
+ we should clean out the basement today , and re-stock . '' 
+ it was the last thing janice wanted to do with her sunday . 
+ she answered mark with little enthusiasm . 
+ `` i do n't want to spend our entire day rummaging through the basement . 
+ i need a break , mark , we both need a break . '' 
+ mark did n't want an argument . 
+ he scratched his chin , took the last bite of his blueberry bagel , and pushed the plate away . 
+ `` tell you what we 'll do . 
+ let 's go to the park today . 
+ then we 'll hit up the farmer 's market . '' 
+ `` i 'd like that , '' janice said . 
+ `` i need to swing by the book store too . '' 
+ `` anything you desire , '' mark said in a mock thespian voice . 
+ he got up from his chair and walked over to janice , placing a kiss on her cheek . 
+ `` would you like to join me in the shower ? '' 
+ he asked , rubbing her shoulders . 
+ `` no way , '' janice replied , pushing him away . 
+ `` you 're a water hog . '' 
+ mark walked off laughing toward the bedroom . 
+ janice took another sip from her mug , and got up to turn the television off . 
+ the talking heads continued to theorize about economic conditions . 
+ she had heard enough and shut it off with the push on the remote . 
+ mark and janice were preppers every bit as concerned about the future as james , their counterpart in milledgeville . 
+ except they had gotten comfortable , and prepping was not as important them as of late . 
+ their investment in the bug-out house was the greatest commitment they had made yet . 
+ they also owned a bug-out vehicle , which sat in the garage , and had n't been started in months . 
+ their interest in prepping waned as other priorities took over , and they were fairly certain that their prepping skills would never really be put to the test . 
+ the family sunday september 20 , 8:05 a.m. atlanta , ga. . 
+ it was morning at the robinson house , an african american family who in lived in a bustling neighborhood on atlanta 's west side . 
+ christina toiled over her stove , pouring pancake batter on a griddle as bacon sizzled on the burner . 
+ she wore her favorite pink robe and slippers , and her short hair was tied in a small bun . 
+ christina 's husband , terrance , was still sleeping soundly , and their children -- richie , tobias , and paula -- were dragging themselves out of their rooms , lured by the aroma of sunday morning breakfast . 
+ it was the best way to get her kids out of bed and then ready for church , a constant weekly battle . 
+ richie , their eldest at seventeen , was the hardest to manage , as he often took advantage of his father 's frequent absences . 
+ terrance was a truck driver who spent a good deal of time on the road . 
+ what he had seen along his routes over the years had greatly disturbed him . 
+ he told christina that the country was rapidly changing . 
+ he could see it . 
+ poverty was everywhere . 
+ many once-great cities populated by millions had become decrepit ghost towns . 
+ fuel , food , and power costs had risen considerably , and he believed that hyper-inflation was just around the corner . 
+ such a frightening premonition had thrust terrance into the prepping movement . 
+ it was n't long before he became knowledgeable in the preparation techniques of all kinds . 
+ his children were as resistant to his attempts to teach them survival techniques as they were to their mother 's insistence on going to church . 
+ for terrance and christina it was an uphill effort all around . 
+ most young people did n't see anything wrong with the way things were as long as they had their electronic gadgets and diversions . 
+ few had even heard of a `` prepper . '' 
+ they certainly were n't being taught anything about it at school . 
+ terrance had asked each of his children to carry a portable handheld two-way radio on them , good for distances up to thirty-five miles . 
+ it took a lot of convincing , but he explained to them that cell phones were n't always going to work all the time . 
+ in the event of an emergency they needed to have their radios with them . 
+ he expected them to have them charged daily as well as on-hand . 
+ their ambivalence was countered with a demonstration of the range and ability of the handhelds . 
+ tobias and paula thought they were cool . 
+ richie had the most objections . 
+ he thought the whole idea was stupid . 
+ `` i do n't ask much from you kids , '' terrance said , `` but i 'm asking this . 
+ always have them on you when you leave the house , period . '' 
+ there would be no argument . 
+ eventually the kids complied . 
+ terrance won his first battle ; however , they still had a long way to go . 
+ `` richie ! 
+ tobias ! 
+ paula ! 
+ get out here and eat your breakfast before it gets cold ! '' 
+ christina yelled from the kitchen . 
+ the children walked like zombies from their rooms down the hall rubbing their eyes . 
+ tobias was fourteen and just starting high school . 
+ he was not as tall as his 5 ' 10 '' older brother , but was tall and lanky in his own regard . 
+ richie was in twelfth grade and looking forward to graduation . 
+ he and tobias both had medium fade haircuts and strong brown eyes . 
+ they could have been twins if not for some different facial features . 
+ tobias had more of his mother 's features -- high cheek bones and vibrant smile . 
+ richie had more of terrance 's squared jaw and thick face . 
+ paula , the youngest , was thirteen and just starting eighth grade . 
+ she was a petite girl who with was always particular about how she dressed and looked . 
+ she was n't vain as much as she took her appearance seriously at such a young age . 
+ if everything played out right , all three of their children would graduate from high school in the end . 
+ nothing would please terrance and christina more . 
+ `` quit your lollygagging and move , '' christina commanded her lethargic children . 
+ they slowly entered the kitchen groaning . 
+ she placed a large platter of pancakes in the center of the circular table . 
+ paula was a little more awake than her brothers , so she was first to her seat . 
+ `` morning , mom , '' she said with a smile . 
+ christina turned around from the stove and smiled back . 
+ `` good morning , sweetheart . '' 
+ she noticed her two sons ' painfully slow movements towards the table , as if they were heading to the gallows . 
+ `` y ' all hurry up and eat so you can get ready . 
+ we got church in an hour . '' 
+ `` what about dad ? '' 
+ richie said . 
+ `` why does he get to sleep in ? '' 
+ `` because your father works for a living . 
+ once you move out and provide for your own family you can miss church all you want . '' 
+ richie was familiar with the routine . 
+ when he got his mom started she was bound to never stop . 
+ `` got it , mom . 
+ damn , '' he said , pouring syrup on his pancakes . 
+ `` watch your mouth , '' christina snapped back . 
+ richie took a slow bite of food while looking down . 
+ he could n't stand church . 
+ he did n't want any part of it . 
+ not a single one of his friends still had to go to church . 
+ it was embarrassing . 
+ every week he would try to get out of it , and every week it would just start an argument . 
+ this particular morning he would try again . 
+ `` i ca n't go to church today ; i got too much school work to do . '' 
+ `` your school work can wait . 
+ if it were n't for church you 'd be sleeping , so do n't give me that , '' christina said as she placed a bottle of syrup on the table . 
+ `` but ─ '' `` all i ask is for one hour out of the week so you can set a good example for your brother and sister . 
+ that is n't asking too much , '' christina interrupted . 
+ `` it ai n't right , i should n't have to go to church if i do n't wan na , '' richie shot back . 
+ `` just eat your food . 
+ it 's not open for debate , '' she said sternly . 
+ richie said no more , but it was clear he was upset . 
+ `` i agree with richie , '' tobias chimed in , with a mouth full of food . 
+ `` church is boring . '' 
+ christina pivoted around from the counter , holding her coffee mug , waiting for the fresh pot to brew . 
+ `` then i suggest you find something entertaining about it . 
+ maybe try paying attention for once -- and do n't talk with your mouth full . '' 
+ tobias said no more . 
+ christina looked to richie . 
+ `` see what kind of example you 're setting ? 
+ you kids need church . 
+ it 's good for you . 
+ when you 're adults ─ '' '' ─ we 'll thank you , i know . 
+ you say that all the time , '' richie said , looking down at his plate . 
+ he barely had touched his food . 
+ his mind was elsewhere : school , his friends , his girlfriend , and his music . 
+ `` i say it 'cause it 's true , '' christina answered . 
+ `` now enough griping and eat your food . '' 
+ her children stopped talking ; only emitting chewing sounds . 
+ pop music from a portable radio sitting on the window played lightly , as a breeze swayed the thin curtains above the sink . 
+ the coffee was ready , and christina poured a cup . 
+ she planned to surprise terrance with coffee in bed but would n't risk bringing him breakfast ; he was too messy . 
+ she was tough by nature , but had grown even more vigilant over the years . 
+ her role as a sometimes-single parent had a lot to do with it . 
+ though there was some give when terrance came back home , she ran the house unquestioned . 
+ terrance 's salary alone was n't enough to pay all the bills , so christina took a part-time job working the cash register at the dollar store . 
+ her life had changed considerably when , after a few weeks on the job , she was held at gunpoint and robbed by a local hood wearing a ski mask . 
+ it was near closing time when he strolled into the store casually and unexpectedly . 
+ he rushed the counter , stuck the barrel of the pistol directly against her head , and yelled at her to empty the register . 
+ her life was on the line . 
+ she could see his eyes -- bloodshot , frenzied -- and knew that there was a good chance he would pull the trigger , even over what little money she had in the register . 
+ her hands fumbled with the register because she was inexperienced in opening the drawer without first ringing up a sale . 
+ what she was doing was n't working . 
+ `` open the register , bitch ! '' 
+ he seethed . 
+ `` hurry the fuck up ! '' 
+ his spittle sprayed her face as he pressed the barrel harder against her skull . 
+ she began to shake uncontrollably , unable to speak , while desperately trying to remain calm . 
+ miraculously , the register drawer popped open after a few tries , not a moment too soon . 
+ fear gripped her further when she looked into the drawer and saw that there was n't much money inside . 
+ the other cashier had collected her till just hours before . 
+ all christina could see were a couple of twenties , fives , and ones . 
+ the man took notice of the paltry score before him . 
+ he wasted no time clutching every last bill before he leaned in closer , his index finger wrapped around the trigger . 
+ `` now where 's the rest ? '' 
+ he asked . 
+ `` that 's all we have , '' christina said in shaky voice . 
+ tears ran down her face . 
+ she knew it was n't true but just wanted the man to leave . 
+ the rest of the money was in the back office , but she feared that if he brought her in there , she would never make it out . 
+ `` do n't lie to me , bitch . 
+ gim me the rest or i put a bullet through your head . '' 
+ `` i do n't ─ '' `` last chance . '' 
+ `` i do n't know ! '' 
+ she cried . 
+ she was the only person in the store that evening , and there was only a slim chance anyone was going to come in and stop the man . 
+ there was no quick solution . 
+ he was either going to shoot her right there or take her into the office . 
+ she was frozen with fear , but her instincts told her that the back office was n't an option . 
+ `` we got nothing left ! '' 
+ she persisted . 
+ `` sales were low today . '' 
+ `` bullshit , this store makes money . 
+ i seen it . 
+ now i want the rest or i 'm - a kill you . 
+ that 's a promise . '' 
+ just when she thought there were no other options , the entrance door chimed as a pair of clueless customers walked in . 
+ the holdup man was immediately spooked , realizing that he might be in over his head . 
+ a young black couple entered then stopped dead in their tracks when they saw what was happening . 
+ christina nearly collapsed in relief upon seeing the couple , but she also feared for their lives as well as her own . 
+ any steps the gunman made now would be irreversible . 
+ he took one look at them , and then rushed past and out the door in a fury . 
+ christina fell to the ground on her knees crying . 
+ `` damn , miss , are you okay ? '' 
+ the male customer asked while approaching her counter . 
+ christina was too numb to respond . 
+ the police were called , and a report was made , but nothing ever came of it . 
+ the way christina saw it ; she would always be a sitting duck , a sheep . 
+ she was unable to go back to work for a couple of days but then realized that she had to . 
+ she could n't live her life in fear . 
+ there was an inherent risk just walking out the door , so what difference did the dollar store make ? 
+ next time , however , she would be prepared . 
+ after taking a few self-defense classes , she began to consider something more . 
+ she wanted a gun . 
+ and so began christina 's love affair with weapons . 
+ she soon purchased a 9mm handgun , a .22 assault rifle , and a 12 gauge shotgun within a year after the robbery . 
+ strangely enough , it was not the weapons that had the most expense , it was the ammunition itself . 
+ bullets had become a scarce commodity . 
+ the government had purchased billions of dollars ' worth of ammunition in an unprecedented sweep . 
+ after purchasing her weapons and applying for a concealed weapons license , christina felt as if she had made an important first step . 
+ her greater concern , however , involved guns in the house , and the safety of her children . 
+ the guns were not toys , and she knew how pop culture glamorized them without teaching the responsibilities of owning a weapon . 
+ she decided to keep them locked in a large biometric gun safe hidden in a closet to which only she and terrance had access . 
+ terrance 's main concern was that she did n't know how to properly use them . 
+ she was moving too fast too soon . 
+ he insisted that she go to the range and familiarize herself with firing . 
+ that way he would n't worry about her as much while he was gone . 
+ `` you should take the kids too , '' he suggested in bed one night . 
+ `` i will , soon . 
+ they 're not ready yet . '' 
+ `` at least take richie . 
+ you ca n't protect them all by yourself . '' 
+ `` i said , i will . '' 
+ terrance did n't push the issue . 
+ in their twenty-two years of marriage , he rarely questioned her . 
+ he would support her just as he always did . 
+ at the time of their wedding , she was eighteen , and he was twenty-one . 
+ now she was forty-two and he forty-five . 
+ the time had flown by . 
+ he did n't think he looked like a forty-five year old man when he looked in the mirror . 
+ he still had his hair and had n't turned gray yet . 
+ his face had little wrinkles . 
+ he felt he could pass for thirty easily . 
+ but when he saw pictures of himself from a decade ago he could see the difference . 
+ he was n't as fit and youthful looking . 
+ he had gained weight in his face and all around for that matter . 
+ the stress of having and raising three kids had taken a slight toll on her features too : light bags under her eyes and wild hair , even though she wore it natural . 
+ christina was n't into wigs , weaves , or anything of that nature . 
+ she was still skinny as the day they met , and that , for the most part , worried terrance . 
+ his wife could never gain weight . 
+ she was always slightly underweight . 
+ it could have been the constant stress or something else . 
+ he just did n't know . 
+ they lay in bed that sunday night after a nice day together before he went back on the road the following day . 
+ terrance gave his wife a kiss before going to sleep . 
+ `` terrance ? '' 
+ christina asked after he had turned over . 
+ `` yes ? '' 
+ he asked , still facing away . 
+ `` you still find me attractive ? '' 
+ terrance turned back around and looked at her with surprise . 
+ `` of course i do , baby , '' he said , after giving her another kiss . 
+ `` it 's just . 
+ you 're gone so much . 
+ and i know that you 're trying , but sometimes i wonder . 
+ i just need to make sure . '' 
+ she would never outright accuse him of having an affair , unless her intuition told her something . 
+ but terrance did n't seem like that kind of guy . 
+ however , she could never be sure . 
+ a man was a man , despite all his good nature . 
+ they kissed again , and terrance leaned over to dim the light . 
+ he knew the option of sleep was n't going to happen for a while . 
+ christina needed some reassurance . 
+ as african americans in an african american neighborhood , terrance and christina felt somewhat alone in their prepper lifestyle . 
+ other families they knew showed little concern about what the robinsons believed to be dangerous times . 
+ even at the mt. vernon baptist church they regularly attended , it was hard to bring up the subject of prepping to anyone . 
+ `` you one of them doomsday people ? '' 
+ a church parishioner named jacquelyn had asked them that during their after-church lunch . 
+ there was simply no getting through to the people they knew , although that did n't stop them from trying . 
+ eventually they had to look outside atlanta . 
+ they searched online for other groups located at some short distance and came across mark , janice , and james . 
+ a relationship and bond was formed from then on . 
+ they trusted each other . 
+ they relied on each other . 
+ and each day , as the news got worse , they believed in each other . 
+ no one knew for sure when their trust would truly be tested . 
+ the prepper pact james , the mosses , and the robinsons all lived within practical distance of each other . 
+ james had initiated the prepper group by searching for individuals who wanted to pursue an investment into an ideal `` bug-out '' house he had found in rural milledgeville . 
+ many people were naturally suspicious of james ' offer , but he eventually found some takers . 
+ milledgeville rested squarely between atlanta and savannah , though savannah -- on the coast of georgia -- was farther away . 
+ geographically it made sense to both the mosses and the robinsons once they investigated the investment . 
+ he would live in the house , maintain it , and stock it with food and supplies if they agreed to split the cost of the property and the mortgage . 
+ the location was ideal for james , as he taught classes at georgia college with an m.a. in contemporary history . 
+ james loved history and reveled in milledgeville 's past . 
+ he had worked at georgia college for more than five years . 
+ it had been nearly a year since he last saw anyone in his prepper pact . 
+ the last time they met was on a labor day weekend . 
+ the mosses and the robinsons took the drive to milledgeville to check out the house and catch up with james and each other . 
+ for the robinson kids , it was a simple barbecue with a friend of the family 's they had never met before . 
+ richie , tobias , and paula were curious about their parents ' newfound `` friends . '' 
+ `` why 'd we drive all the way out here just to hang with some old white people ? '' 
+ richie asked tobias , who did n't know . 
+ over the year , james heard less from his prepper pact , and wondered about them . 
+ they still sent checks for the house payments but seemed less interested in maintaining contact . 
+ it was nothing personal ; they just had lives to lead . 
+ he just hoped they 'd be ready when the time came . 
+ serious prepping took time and commitment , a challenge to anyone with a family and bills to pay . 
+ james lived an isolated life in the bug-out house , but he was happy . 
+ he 'd always been somewhat of a loner and had been able to manage since the breakup of his marriage , and the distance from his son and grandchildren . 
+ he had his students . 
+ each semester , he reveled in teaching the importance of history . 
+ he wanted them to realize that knowing history was the key to understanding the future . 
+ knowing the past , james believed , prevented a society from making the same mistakes . 
+ those who forgot the past were doomed to repeat it . 
+ it was for this reason james was an enthusiastic and dedicated teacher . 
+ the robinsons had no intention of ever moving to a place like milledgeville for good . 
+ the mosses liked savannah , every bit as much as the robinsons had their roots in atlanta . 
+ terrance and christina were admittedly proud people . 
+ their run-down neighborhood on the outskirts of the city had got progressively worse over the years , but they were reluctant to move . 
+ they discussed the matter one night after a recent string of shootings around the neighborhood . 
+ `` this is our home , '' terrance said , `` and we 're not going anywhere . '' 
+ `` but i do n't know if i feel safe sending the kids to these schools any longer , '' christina argued . 
+ `` we 're not moving , and that 's final , '' he said . 
+ eventually , they agreed to invest in the bug-out house because of its distance from the city . 
+ `` when everything goes down , we 'll be safe . 
+ and if i 'm not here , you best gather up the kids and take the car to the house without me , '' terrance said . 
+ she hoped the day would never come . 
+ terrance was sure calamities were right around the corner , but each day passed and things seemed to remain the same . 
+ terrance and christina were both georgia natives . 
+ just staying financially afloat was enough for them . 
+ the prospect that everything could quickly change for the worse seemed very real , but they hoped they were wrong in the long run . 
+ the mosses , frugal as they were , considered the cost of living reasonable in savannah . 
+ they liked the weather , and they liked living near the coast . 
+ they bug-out house looked to them to be a wise investment . 
+ mark was uncertain about working with james at first , cautious about just giving their money to a stranger who lived in the woods . 
+ but after an exhaustive background check and meeting james in person several times , mark warmed up to him . 
+ james seemed to be the genuine article . 
+ a man intent on survival . 
+ they made payments on the mortgage , and the group eventually paid off the entire cost of $ 66,000 . 
+ to mark the occasion , the mosses and the robinsons celebrated over the labor day weekend . 
+ it was the last time they had seen each other . 
+ a year had passed since then , when suddenly the power went out , and everyone 's worst fears came true . 
+ when the lights go down monday september 21 , 2025 7:30 a.m. savannah , ga. . 
+ mark woke up and immediately felt anxious the morning meeting with his boss . 
+ he looked over at janice and saw that she was still sleeping . 
+ he wanted to wake her up to get some reassurance , but she looked too peaceful . 
+ her shoulder-length dark hair was splayed over her pillow , covering the side of her face . 
+ she was lying on her side , facing mark , with the curvature of her body steadily rising and falling with her breathing . 
+ he snapped out of his funk and placed a foot on the soft beige carpet below . 
+ the room was still dark , but one pull of the curtain over their large bedroom window , and sunlight would fill the room . 
+ after two weeks of trying to make a good impression at work , he felt that everything was riding on a single morning coffee meet . 
+ he would soon be sitting across from his boss , and he wanted to be awake , alert , and on-point . 
+ his morning routine began with a cup of espresso , followed by a hot shower . 
+ by the time he was dressed , it was five minutes to eight . 
+ he had plenty of time and started to feel good and ready . 
+ he tucked his long-sleeved button-up shirt into his dress pants then flipped his collar up to adjust his blue tie . 
+ janice peeked her head into the bathroom . 
+ `` look at you all dressed up and ready to go , '' she said with a smile . 
+ `` an impressive sight , if i do say so myself . '' 
+ janice stretched . 
+ `` well do n't take too much longer making yourself beautiful ; i need to get ready for work myself . '' 
+ mark adjusted his tie then straightened it with a pull . 
+ `` do n't mind me , do what you need to do , '' he said . 
+ janice pushed her way into the bathroom . 
+ `` move it , bub , '' she said . 
+ `` time 's up . '' 
+ he circled around and pulled janice closer toward him , holding her arms down . 
+ `` when i 'm rich and successful , you wo n't be able to push me around anymore , '' he said . 
+ he looked at his wristwatch , and then re-adjusted his tie . 
+ `` bathroom 's all yours , honey , got ta go . '' 
+ he flew out of the bathroom , leaving janice standing in front of the mirror . 
+ `` good luck with your meeting , '' she said . 
+ mark ran back in the bathroom and gave her a quick peck on the cheek . 
+ `` sorry , love you ! '' 
+ he said , then flew back out . 
+ `` love you too , '' she answered . 
+ mark grabbed his suit jacket from the bed , moved quickly downstairs . 
+ `` have a good day at work , '' he shouted . 
+ `` you too , '' janice shouted back , and then she heard the door slam . 
+ she looked at herself in the mirror . 
+ her hair was a mess . 
+ the light skin on her face was breaking out slightly into red bumps . 
+ she would have to put on an extra layer of moisturizer to control it . 
+ at twenty-eight , janice was still young at heart and appearance . 
+ she examined her face and looked for any signs of age . 
+ her hazel eyes shined in the light . 
+ her thick and shapely lips could still be seductive when they needed to be . 
+ and her hair , originally brown , had been dyed black . 
+ she suddenly realized that she had to battle rush-hour traffic with less than an hour to get to work . 
+ she had to be there by 9:00 a.m. and it was already past eight . 
+ she threw off her bathrobe and jumped in the shower , in a slight panic . 
+ she foolishly turned the shower knob too fast and was met with a spray of water that felt like ice . 
+ she tried to switch the knob in the other direction and was blasted with scolding hot water . 
+ `` damn it ! '' 
+ she said . 
+ eventually she got it worked out . 
+ mark jumped into his dark blue , two-door chevy cavalier and backed down the driveway . 
+ once he was on the road , he realized he had more than enough time to get to the coffee shop . 
+ it was 8:15 , the coffee place was fifteen minutes away , and he did n't have to be there until 9:00 . 
+ now he would be too early . 
+ mark wondered if being too early was worse . 
+ he did n't want to look as though he had been waiting too long for her . 
+ he had to remind himself to stop worrying , and that it was n't a date . 
+ things on the highway were n't too bad just yet . 
+ after some time in stop-and-go traffic , mark found his way to the barnie 's coffee shop , right down the road from the nissan dealership . 
+ he lived very close to where he worked , which was an added benefit of the job . 
+ he could probably ride a bike to work every morning if he did n't have to dress business casual . 
+ normally he did n't wear a suit , but he wanted to look as professional as possible for the meeting . 
+ mark pulled in the barnie 's parking lot at 8:50 . 
+ he was n't sure if his boss had arrived yet , but found a parking space in the back and noticed a black nissan altima that looked like her car three spaces over . 
+ barnie 's was busy , and nearly every parking space had been taken . 
+ he got out of his car and walked hurriedly to the front entrance . 
+ there was already a long line at the counter . 
+ mark glanced around looking for mrs. andrews . 
+ he walked past the front counter , turned to his left , and entered a quaint seating area . 
+ she was sitting on one side of a high table in the corner . 
+ mark felt relief , and walked over the table to meet her . 
+ barnie 's was noisy with the commotion of patrons , employees calling out orders , and light jazz vibrating from the sound system . 
+ his boss was dressed in a dark single-button blazer with a white shirt underneath and slim , black pants that went down to her ankles . 
+ her graying hair was tied back in a bun , and she looked very business-like , especially wearing her thick black-framed eyeglasses . 
+ she was at least ten years older than mark but still attractive . 
+ she had a tall coffee in front of her and was reading over some files lying on the table . 
+ mark grew nervous noticing the paperwork , but trudged over to her table as she looked up and noticed him with a smile . 
+ `` mark , so nice to see you , good morning , '' she said , holding her hand out . 
+ mark smiled back enthusiastically and shook her hand . 
+ `` mrs. andrews , thank you , nice to see you as well . '' 
+ `` please have a seat , '' she said , as she cleared her files off of the table . 
+ `` sure , '' mark replied as he pulled out the stool on the other side and sat down . 
+ as they looked at each other , she noticed he did n't have a coffee . 
+ `` oh , i 'm sorry , '' she said , holding one hand to her mouth . 
+ `` you did n't get your drink yet . 
+ please , put it on my card . '' 
+ she pulled a credit card out from her purse and handed it to mark . 
+ `` thank you , '' mark said , and slowly taking her card . 
+ `` no problem , i insist , '' she said . 
+ mark walked back to the counter and ordered a pumpkin spice latte . 
+ october was right around the corner . 
+ he made it back to the table , handed his boss her card , and took a seat . 
+ `` thanks again , mrs. andrews . '' 
+ `` please , call me evelyn , '' she replied . 
+ `` mark took a sip from his latte , and tried to think of something to say , but evelyn beat him to the punch . 
+ `` how was your weekend ? '' 
+ she asked . 
+ a standard question in any sense . 
+ mark folded his hands on the table and responded . 
+ it almost felt like the job interview all over again but a tad more informal . 
+ `` oh it was great . 
+ very relaxing . 
+ got to spend some quality time with my wife . 
+ got some shopping done , you know , a nice quiet weekend . 
+ how about yourself ? '' 
+ mark glanced at her hand and noticed a ring on her finger , just like him . 
+ he was glad to know she was married . 
+ they had something in common after all . 
+ `` mine was pretty much the same . 
+ though a little more hectic . 
+ i 've got a meeting later with some executives from nissan , and i spent all of sunday working on my presentation . '' 
+ `` that 's crazy , '' mark said , not sure what else to say . 
+ he was no expert on the matter . 
+ `` nothing like a morning meeting to mess up your sunday , '' he added . 
+ he suddenly cringed , aware of the comparison he had just made . 
+ evelyn got right to the point . 
+ `` the reason i asked you here today , mark , is to go over a few quick things . 
+ i felt it better to talk in a relaxed environment , face to face . '' 
+ he suddenly grew more nervous . 
+ evelyn moved in a bit . 
+ `` i 'd just like to say that we 're very pleased with your work performance so far . 
+ the office likes you , the customers like you , and i 've heard nothing but good things . 
+ to make six sales in a matter of two weeks is extremely impressive as well . '' 
+ mark was confused but maintained eye contact as she continued . 
+ `` the point is , we 're happy with your work so far , and i just wanted to let you know that . 
+ you 've put in a lot of hours and show quite a bit of dedication for someone who 's only been with us for two weeks . '' 
+ evelyn paused . 
+ `` basically what i 'm saying is to keep up the good work . '' 
+ `` well , thank you , evelyn , thank you very much , '' mark said . 
+ he could breathe again , and felt that his worrying had been for nothing . 
+ `` if there 's any questions about the job or about anything else , just let me know , '' evelyn said . 
+ mark clasped his hands , thinking . 
+ `` um . 
+ nothing at the moment , i just want to thank you for the feedback . 
+ i 'm very happy to hear it . '' 
+ she suddenly grew more serious . 
+ `` now i 'm going to give you some careful advice . 
+ i 've worked for nissan for twenty years and have realized nothing happens overnight . 
+ do n't let the past two weeks go to your head . 
+ you 've been great , but i 've seen a lot of great ones crash and burn . 
+ consistency is the key . '' 
+ mark nodded in agreement . 
+ `` thanks for the advice , '' he said . 
+ `` no problem , '' she said , looking at her watch . 
+ `` shit , it 's 9:10 . 
+ i 'm sorry , mark . 
+ i should have had us meet earlier so we could talk more . 
+ i 've got to get to that meeting . '' 
+ `` that 's all right , '' he said , taking another sip of his latte . 
+ `` i 've enjoyed our talk . '' 
+ `` me too , let 's do this again sometime in a couple of weeks and see where you 're at . '' 
+ she grabbed her files , rose from the stool , and stuffed them in her large , red leather purse . 
+ `` sorry to leave so soon ; see you in the office . 
+ and by all means , stay and enjoy your coffee . '' 
+ `` no problem , thank you . '' 
+ evelyn smiled and nodded while attempting to maneuver around the other tables . 
+ the lights in the coffee shop then went dim , startling her . 
+ mark perked up and looked around as the lights came back on . 
+ before he knew it , they flashed off again . 
+ the entire store went dark . 
+ daylight streamed through the curtains . 
+ a brief moment of silence fell over the busy barnie 's crowd ; then everyone resumed their conversations . 
+ mark waited and waited , but the power did n't come back . 
+ strange as it was , he thought it even odder that every vehicle outside the coffee store was at a dead stop . 
+ evelyn turned around to address mark , with a look of slight annoyance . 
+ `` perfect timing . 
+ at least we got our coffee , '' she said . 
+ mark got down from his stool and followed her . 
+ they passed the busy counter . 
+ three lines had formed , and a group of people who had paid for their orders were waiting off to the side . 
+ they made their way past several customers who just wanted their coffee . 
+ the two female cashiers were offering apologies left and right . 
+ `` i 'm sorry everyone , our system is down . 
+ until we get the power back on , we ca n't fill no orders , '' tanisha , the cashier on the right , announced . 
+ `` but what about those of us who already paid ? '' 
+ a skinny , bald man called out , waving his receipt in the air . 
+ `` you gon na give us refunds , or what ? '' 
+ `` yeah ! '' 
+ a woman added . 
+ `` i want my money back , '' a man said . 
+ other disgruntled murmurs followed . 
+ the store manager came from out back and asked for calm , but nobody wanted to hear it . 
+ mark and evelyn made it outside and were met with the sight of complete gridlock on the main road . 
+ the nissan dealership was only a few miles up the street . 
+ `` what in the hell is going on here ? '' 
+ evelyn asked as she took off her reading glasses and replaced them with a pair of armani sunglasses from her designer purse . 
+ mark looked around . 
+ not a single car was moving . 
+ it was eerily quiet for a busy monday morning . 
+ a few hawks circled overhead , cawing as if issuing a warning the people below . 
+ evelyn hurried to her car , and mark followed . 
+ her high heels clicked on the pavement with each step as she rushed ahead and dug into the purse to retrieve her keys . 
+ two cars sat in the middle of barnie 's parking lot exit motionless . 
+ the drivers stubbornly remained at the wheel , turning their ignition keys over and over . 
+ flustered , evelyn entered her nissan and closed the door . 
+ mark remained in the middle of the parking lot absorbing the stillness of everything . 
+ customers shuffled out of barnie 's in a daze , squinting at the sun . 
+ the two stubborn drivers in the parking lot got out of their vehicles and walked around them in utter confusion . 
+ from the driver 's seat , evelyn opened her car door . 
+ `` just wonderful , my car wo n't start , '' she called . 
+ mark turned to her . 
+ it was no routine power outage around him . 
+ there was something more . 
+ something had disabled every vehicle in the parking lot and , from the looks of it , every vehicle on the road . 
+ `` what happened when you turned the key ? '' 
+ mark asked . 
+ evelyn did n't answer ; she was too busy digging around in her purse . 
+ she pulled a slim iphone out and swiped its screen with her manicured red fingernails . 
+ nothing happened . 
+ the screen was blank , there was no power . 
+ she noticed him looking at her . 
+ `` i 'm calling a cab ; i do n't have time for this nonsense . 
+ i 'm already late for the meeting . '' 
+ she stared at her phone 's powerless screen as if offended . 
+ she held down the power switch and got nothing . 
+ `` ca n't this thing hold a charge for more than five minutes , '' she said with growing desperation . 
+ `` argh ! '' 
+ she added . 
+ `` what a morning . '' 
+ mark approached her car , trying to stay clear-headed . 
+ the barnie 's crowd assembled back to their vehicles and was met with the same fate . 
+ none of their engines would start . 
+ `` why do n't you pop the hood ? '' 
+ mark suggested . 
+ she nodded back , leaned down and pulled the hood release . 
+ `` it 's probably the battery , '' she replied . 
+ `` maybe i left my headlights on . '' 
+ mark walked over to the front of car , and stood over the engine , not knowing where to start . 
+ he tried to put the pieces together . 
+ the entire scenario he was witnessing seemed familiar . 
+ he 'd read books about it , science fiction dystopia books detailing a massive strike against every electrical circuit -- from a network server down to a clock radio . 
+ such destruction was initiated by a magnetic pulse with voltage so enormous it caused a blowout in all things electronic . 
+ if something ran on an electronic chip of any kind , which most things -- then it was toast . 
+ too many signals alerted him to something much more significant . 
+ `` what do you see ? '' 
+ evelyn called from the driver 's seat . 
+ she gripped the wheel shaking it . 
+ her chances of making it to the meeting in time seemed unlikely with each passing minute . '' 
+ to mark , nothing in the engine looked out of the ordinary . 
+ the car battery was connected at both ends . 
+ everything was intact . 
+ nothing was burnt , fried , or exploded . 
+ mark held his hand over the engine and felt slight warmth but again , nothing unusual . 
+ `` everything looks normal , '' mark answered . 
+ `` try it again . '' 
+ evelyn turned the key again . 
+ there was no click or spark . 
+ `` nothing , '' she said . 
+ `` dammit ! '' 
+ mark left her hood open and squeezed back through the cars . 
+ `` i do n't know what to tell you , evelyn . 
+ i 'll try my car . '' 
+ `` please do , '' she said looking up in desperation . 
+ `` i 'm already late for my meeting . '' 
+ his blue cavalier was waiting for him , but provided no answers . 
+ he turned the key as evelyn stood nearby tapping her heel on the ground nervously . 
+ the cavalier was dead . 
+ instead of the dashboard lights coming on or the a/c kicking in , his car was no better than any of the other useless hunks of metal now littering on the highway . 
+ he did n't want to admit it , but he could only make one reasonable assumption : an emp had been launched against the city . 
+ `` nothing ? '' 
+ evelyn asked in surprise as mark climbed out of his car . 
+ `` what 's going on ? 
+ did someone mess with our engines ? 
+ gangs maybe ? 
+ what kind of sick joke is this ? '' 
+ she was frantic and rambling to herself , and mark tried to approach her with calm . 
+ `` evelyn , this was no accident . 
+ and i do n't think it 's simple vandalism either . 
+ this could be a coordinated attack . 
+ it would explain the power going out at barnie 's . 
+ your phone not working . 
+ our cars not starting . '' 
+ `` what are you talking about ? '' 
+ she asked in disbelief while fishing for her phone again . 
+ `` i 'm talking about an electronic magnetic pulse . 
+ an emp . 
+ if someone launched one as a nuclear strike , it would disable everything that uses circuits or computer chips . 
+ our power grids , communications , and mobility would be no more . 
+ this is some serious shit . '' 
+ evelyn stared at him through her sunglasses with serious doubt . 
+ `` how could such a thing happen ? 
+ it 's not possible . '' 
+ she pulled out her cell phone and swiped the screen . 
+ `` i 'm calling a tow truck . 
+ i do n't want to leave my car here with hoodlums running all over the place . '' 
+ mark looked around and saw mass confusion in the parking lot . 
+ agitated people stood beside their cars , trying to get their phones to work . 
+ `` calling a tow truck might be a problem . 
+ if the cell towers are out , you 're not going to get anything out of that phone . '' 
+ mark pulled his phone from his pocket to verify . 
+ normally the screen displayed the date , time , and weather . 
+ it was as if his phone had shut off . 
+ there was nothing but a blank screen . 
+ `` this is ridiculous , '' evelyn said . 
+ she held the power button on the phone with her thumb , and became lost in a cycle of frustration and helplessness . 
+ `` you might have better luck walking to work at this point , '' mark said , gaining her attention . 
+ `` i do n't know , '' she said . 
+ `` in these heels ? '' 
+ mark was n't sure what to tell her . 
+ she was his boss , after all . 
+ in the event of an emp , he knew that he had to get home to janice . 
+ that was first . 
+ a long-term scenario of an emp was predicted as `` catastrophic '' by the very commission who authored the study he had read a few years back . 
+ it would take weeks , perhaps months , but sooner or later things would reach a breaking point . 
+ people would grow desperate as necessities dwindled . 
+ mark did n't want to think of how bad things would get after that . 
+ survival for him and janice was about taking action while things were still normal . 
+ before they fell apart . 
+ he approached evelyn and put his hands on her shoulders , startling her . 
+ `` evelyn , i can promise you this . 
+ if you need help , stick with me , and i can get you home to your family . 
+ the power is not coming back on . 
+ you have to believe me . '' 
+ she gave him a look of understanding then backed away , out of his reach . 
+ `` so you 're saying you 're not coming into work today ? '' 
+ `` there 's not going to be any power there either . 
+ all the cars on the lot , every last one of them , will be in the same shape as yours or mine . 
+ `` i appreciate your concern , mark , i really do . 
+ i 'll be fine though . 
+ nothing right now is more important than getting to that meeting . 
+ maybe i 'll just walk , like you suggested . '' 
+ there was no time left to convince her of anything . 
+ mark gave her a genuine smile of hope . 
+ `` best of luck to you , evelyn . 
+ thanks again for the coffee . '' 
+ as he walked away , she went back to her car , and studied it in a state of denial . 
+ mark went through the parking lot and onto the sidewalk that ran along the main road . 
+ his house was about five miles away , and he figured he could make it on foot . 
+ he would get the bug-out car and pick up janice from work , but there was no guarantee that the bug-out car would even work . 
+ they had stored it over the years in the backyard shed for the express purpose of an emp scenario , but he could n't remember the last time he had started it . 
+ time was of the essence . 
+ a turn of good fortune arrived when he saw a bicycle store in the line of shops ahead . 
+ he walked quickly down the sidewalk , maneuvering around dazed people who blocked his path . 
+ every person 's face was buried in their non-functioning phones . 
+ they desperately pleaded with them to work . 
+ it was sad to see so many people so reliant on indifferent pieces of plastic that offered them no answers . 
+ mark attempted to stay focused and not get diverted from his task , even though he wanted to explain to everyone what he believed to be happening . 
+ the bike store , like every other store , was dark inside and completely without power . 
+ the sales clerk , a tall skinny man with short wavy hair and a polo shirt , stood against the counter messing with his cell phone . 
+ the entrance door was propped open , and the man took little notice of mark when he walked in . 
+ the small store was full of bikes lined up against the wall and hanging from the ceiling . 
+ mark checked his wallet and , much to his relief , counted one hundred and twenty dollars in twenties . 
+ `` how ya ' doing ? '' 
+ mark politely asked the man . 
+ the sales clerk looked up surprised . 
+ `` oh , hi . 
+ sorry , i did n't see you come in . 
+ this shit with the power is crazy . '' 
+ mark scanned the store for a possible purchase . 
+ `` it sure is . 
+ my car broke down , and i 'd like to purchase a bike . '' 
+ he did n't have time to burden the man with his emp theories . 
+ `` yeah , i noticed a lot of cars like that . 
+ could be the busiest day of the year for me if this keeps up . '' 
+ mark laughed . 
+ he was surprised the store had n't been cleaned out yet . 
+ `` so what kind of bike you lookin ' for ? '' 
+ the clerk asked . 
+ `` wait , a minute , '' he added . 
+ `` do you have cash ? '' 
+ it was a strangely direct question , but mark understood the clerk 's predicament . 
+ `` yes , i have cash , '' he answered . 
+ the clerk breathed in relief . 
+ `` good then . 
+ our credit machines are down , and i ca n't very well take ious . '' 
+ `` i understand completely , '' mark said . 
+ `` what can i help you with then ? '' 
+ the clerk asked . 
+ moments later , mark emerged from the store with a 10-speed huffy mountain bike . 
+ it cost him $ 110 plus tax , and while he could have gotten something cheaper , his instincts suggested reliability . 
+ mark rode the bike down the sidewalk weaving around pedestrians who , themselves , seemed lost and confused . 
+ any police officers with the misfortune of being stranded found themselves hounded and mobbed with questions of what was happening . 
+ `` i wonder , '' mark thought , `` if i 'll ever see my car again . '' 
+ professor cook monday september 21 , 2025 8:30 a.m. milledgeville , ga james pulled into the faculty parking lot of georgia college thirty minutes before his morning class started . 
+ he liked to arrive early and go over his lesson plan briefly before class began . 
+ his office was a short walk from the parking lot to the humanities building . 
+ inside , he took a seat at his desk , cluttered with notes and history books , and placed his briefcase on the oak surface . 
+ a tall bookcase stood nearby , stocked with many fiction , nonfiction , war history , and literature . 
+ the new semester brought a slew of fresh-faced undergrads that james had gotten to know over the weeks . 
+ they were a good group of kids and , james enjoyed their energy , spirit , and eagerness to learn . 
+ for his first class he 'd prepared a lecture on the civil war . 
+ the war fascinated him , not just because of its high costs -- the largest number of war deaths in american history -- but because of the complex and traceable events that led to the war and ultimately into a divided country . 
+ there were major lessons to be learned from the civil war , lessons he would focus on during his lecture . 
+ james gathered his notes and took one last sip of coffee from his oversized mug . 
+ in the corner of his desk sat a dusty ten-year-old framed picture of james , his ex-wife , anne , and his son , cliff . 
+ he did n't have a more recent picture , and until he did , the dated family photo would remain . 
+ he walked into his classroom , carrying a satchel over his shoulder and a coffee mug in his hand . 
+ his wore gray tweed coat , pants , white dress shirt , and blue tie . 
+ five minutes to nine , and ten of his fifteen students had already taken their seats . 
+ `` good morning , class , '' james said as he walked to his desk at the front class . 
+ the students , most of them fresh out of high school , said hello and nodded back politely . 
+ `` good morning , professor cook , '' a girl seated in the front row said . 
+ james placed his satchel on the table next to his podium , and proceeded to go through his lecture notes . 
+ a massive dry erase board hung behind him , covering nearly the entire length of the wall . 
+ he grabbed a nearby marker and wrote the day 's date on the board : monday , september 21 , then wrote , the american civil war -lrb- 1861-1865 -rrb- . 
+ it was almost time to start class . 
+ james put his glasses on and turned to face the class at the last of the stragglers slipped into the room and sat in the back . 
+ `` good morning again , everyone , i hope you had a great weekend . 
+ i know most of you labored hard on school work and abstained from anything remotely relaxing and fun . '' 
+ the class laughed politely . 
+ `` last week we had discussed at length the american revolutionary war and the war of 1812 . 
+ hopefully , you learned a lot about those events in high school . 
+ and i hope that you were able to gain a more advanced perspective from our discussions . 
+ with that in mind , i want to stress the notion of the significance of war itself ; the reasons we go to war , the high costs involved with these decisions , and the end result of years of battles and bloodshed . 
+ war is an exercise of force , whose purpose is to achieve a desired goal . 
+ sometimes that goal is just , like ending slavery in the civil war . 
+ other times the goals are ambiguous ; world war one , for example . 
+ it is my view that no meaningful change in history or society occurs except as a result of war . 
+ this is not to say that i 'm pro-war . 
+ terms like pro-war and anti-war do n't really mean a thing . '' 
+ he paused for a moment before continuing . 
+ `` though they do mean something in an ideological sense , what i want us to discuss are the events that lead to wars , the execution of those wars , and how society rebuilds and reconstructs itself after such catastrophic bloodshed . '' 
+ the students remained quiet , attentively listening . 
+ `` behind me i 've written the dates of the civil war , an event that we 're all familiar with . 
+ it is the costliest and most significant war in america 's history . 
+ it showed the true results of a fractured republic . 
+ it showed what it means to be a divided nation , and the results of that division when compromises ca n't be met . 
+ we can theorize that had lincoln accepted the southern states ' call for secession -- eleven states in all -- the war could have been avoided and slavery would have existed for another century or longer . 
+ that , among other dilemmas , was what our sixteenth president faced when calling on union troops to defeat the confederate army . 
+ the civil war began april 12 , 1861 and officially ended june 22 , 1865 . 
+ a long and difficult reconstruction process followed throughout the south in attempts to repair the war-torn and decimated landscape so that it could rejoin the union . 
+ the fundamentals of the war were fairly simple . 
+ one side wanted to split from the main body while the main body itself wanted to remain intact . 
+ so let 's think about this . 
+ could a civil war of such magnitude possibly ever happen today ? 
+ could we imagine such a thing ? 
+ do we believe that such a thing is beyond the realm of possibility ? '' 
+ the class was silent at first . 
+ one student in the middle row raised his hand . 
+ `` yes , eric ? '' 
+ james said , pointing . 
+ eric lowered his hand and spoke . 
+ `` of course it is , '' he answered . 
+ `` and why is that ? '' 
+ james asked , pacing in front of the dry erase board with his hands locked behind his back . 
+ `` because there will always be divisions , '' eric said . 
+ `` that 's true . 
+ some divisions are greater than others . 
+ many philosophers throughout history have suggested that to exist is to exist in perpetual conflict . 
+ but what about our nation 's motto , ` united we stand , divided we fall ? ' 
+ are we dishonoring those values when division is created ? '' 
+ eric thought for a moment then answered . 
+ `` i guess it depends on what kind of divisions those are . '' 
+ `` very good , eric , very well said , '' james replied , satisfied . 
+ he turned to his class after picking up a textbook from the table . 
+ `` let 's open our books to chapter three and dive right into the years leading up to the civil war . '' 
+ as james continued , the lights in the auditorium flickered rapidly then went out . 
+ the momentary distraction threw james off a little . 
+ he tried to look at the book but could barely see anything . 
+ faint light streamed through the small windows near the high ceiling , preventing the room from falling into complete darkness . 
+ small chatter began to grow louder when the overhead lights showed no signs of coming back on . 
+ several students were even more perplexed to find that their laptops were dead . 
+ at the very moment the lights flashed , their laptop screens went blue and shut off . 
+ the synchronized outage of all things electronic was eerie to say the least , but no one could pinpoint the cause . 
+ `` that 's strange , '' one student said out loud . 
+ `` what the hell happened to my mac ? '' 
+ other students , with their tablets and cell phones out , felt the same abject confusion . 
+ `` all right everyone , let 's just stay calm . 
+ the lights should be back on soon . '' 
+ though he was n't sure of this himself . 
+ `` yeah , but my computer went out too , and it 's running on battery . 
+ how did that happen ? '' 
+ a girl in the front row called out . 
+ murmurs from the class followed . 
+ `` what do you think is going on , mr. cook ? '' 
+ another boy asked . 
+ `` my cell phone 's dead too . '' 
+ in unison , all the students in the class took out their phones and tried to get them to work . 
+ to their near horror , they were met with blank screens , as if all their phones had been synchronized to shut off at the same time . 
+ `` please , everyone , put your phones away . 
+ we do n't want to get carried away here . 
+ just give it a couple minutes , and the lights should be on . '' 
+ `` i 'm not getting anything on mine . 
+ it wo n't even turn back on , '' a disappointed boy said , pressing the power button of his iphone . 
+ `` me neither , '' another male student added . 
+ james placed the history book on the table and sighed . 
+ as long as the lights were out , he was going to have trouble maintaining the students ' attention . 
+ he leaned against the table and waited , deciding to listen to what the students were saying . 
+ something hit him . 
+ a pattern emerged , and he suddenly perked up . 
+ `` it could n't be , '' he thought . 
+ `` that 's insane . '' 
+ or was it ? 
+ he was a prepper after all . 
+ he drove a 1979 f150 for a reason . 
+ years ago , james had bought the truck not only for its affordability and low maintenance but because he wanted to be prepared in the event of emp attack . 
+ conventional wisdom suggested that a magnetic pulse powerful enough could disable all vehicles with a microprocessor , electronic wiring , or computer parts . 
+ on the other hand , james had also read that such claims were considered a myth . 
+ he read that most cars would n't be affected anyway because wiring and electronics are well shielded against electromagnetic interference . 
+ there was no real certainty either way . 
+ at the very least , james knew that diesel engines , like that in his ford , had no ignition system and would be protected against electromagnetic manipulation ; at least that was what he hoped . 
+ james 's mind began to wander , as he still had n't fully accepted that anything so serious had interrupted his morning lecture . 
+ he students were still griping about their electronics when he excused himself from the classroom and went down the hall to check on his colleagues . 
+ the first thing james noticed was that the lights were out all over . 
+ the building had no power . 
+ there was no air conditioning , no emergency lights , no functional vending machines , nothing . 
+ he stuck his head into the office of one of the adjunct professors , a thirty-something named pat , who taught english composition . 
+ pat sat at his desk staring at the blank screen of his laptop . 
+ `` good morning , pat . 
+ everything okay ? '' 
+ james asked . 
+ `` damn power went out , right when i was in the middle of grading one of my student 's online assignments . '' 
+ pat buried his face in his hands in frustration . 
+ `` this is unbelievable . 
+ nice fucking timing . '' 
+ `` yeah , same here . 
+ i was in the middle of a lecture . '' 
+ `` i do n't understand it . 
+ my laptop was n't even plugged , but why would it go completely dead like that ? '' 
+ `` i do n't know , '' james said , thinking . 
+ he tapped his fingers against the wall , trying to think of ways to offer pat some help , but did n't really know what to say . 
+ `` have you talked to anyone else ? '' 
+ james asked . 
+ `` nope , '' pat said , putting his face back in his hands . 
+ james looked around . 
+ `` i got ta talk to my class ; i 'll catch up with you later . '' 
+ `` this is a nightmare , '' a distracted pat mumbled in weary defeat . 
+ james walked back down the hall , looking through the windows of the other classrooms . 
+ each room had the lights out . 
+ one of the double doors flew open as a classroom of students , clearly frustrated with the power outage , entered the hallway and walked out of the building . 
+ james opened the door to his classroom and found that most of his students still remained . 
+ only a few had left , most likely in frustration . 
+ `` power 's out through the entire building , '' james said . 
+ `` i may have to find the faculty director and see what he wants to do . '' 
+ `` none of our phones work , not one , '' one of his students , ryan , called out from the middle row . 
+ james stopped to think for a moment . 
+ he had left his cell in the truck accidentally and had no way of verifying it for himself . 
+ he asked ryan if he could take a look at his phone . 
+ upon examining it , he could see that the screen was completely blank . 
+ james pushed the power button , but nothing happened . 
+ there seemed to be something more to the case than just a random power outage . 
+ he began to put together the pieces , and offered the class a theory . 
+ `` i think it 's fair to say this power outage is a huge distraction . 
+ we 'll wrap things up so i can investigate . '' 
+ `` what do you think happened , mr. cook ? '' 
+ ryan again asked . 
+ `` i do n't know for sure , ryan . 
+ our electronics have been disabled , '' james answered . 
+ `` how ? '' 
+ a girl in the front row asked . 
+ the students were looking at him , waiting for an answer . 
+ `` so far everything looks to me to be consistent with an emp type scenario . 
+ how many of you have heard of an emp ? '' 
+ a few students raised their hands . 
+ james continued . 
+ `` an electromagnetic pulse is capable of sending a burst of energy into the air that can be fatally damaging to electronics . 
+ the threat of a nuclear emp weapon was a very real concern back during the cold war , but it 's since become more of an unlikely threat . 
+ the purpose , however , of engaging in electronic warfare would be to eliminate the entire infrastructure of a country in order to create panic and chaos . 
+ i 'm not certain , but it would explain your laptops and cell phones not working . '' 
+ `` what should we do ? '' 
+ ryan asked . 
+ `` i would go home and stay indoors for the day . 
+ just lay low until the problem is fixed . 
+ if you 're able to stop by the store , see if they have any power . 
+ if not , stock up on what you can with cash . '' 
+ `` cash ? '' 
+ a girl said laughing . 
+ `` yes , cash . '' 
+ the ultimate question entered james 's mind . 
+ he wanted to go to the parking lot and see if his truck would start . 
+ he wanted to see if any vehicles were working . 
+ `` class is dismissed for now . 
+ everyone stay safe and keep in touch with me , that is , if you can get your cell phones working . 
+ i 'm hoping this will all pass soon . '' 
+ the students slowly got up , grabbed their bags , and left the auditorium , still in a great state of confusion . 
+ cell phones , smart phones , tablets , wi-fi , and the internet . 
+ they could n't imagine life any differently . 
+ james walked down a hall towards the parking lot when the faculty director , dr. ron keppler , stuck his head out of his office and called him in . 
+ `` james , can i talk to you for a minute ? '' 
+ he asked . 
+ james stopped , and entered the office . 
+ `` please have a seat , '' dr. keppler said . 
+ there were two vinyl chairs in front of his desk . 
+ an enormous bookcase stood against the wall behind him . 
+ james sat on the chair farthest to the left as dr. keppler studied him . 
+ `` what 's going on ? '' 
+ james asked . 
+ dr. keppler was n't his favorite person in the world . 
+ though they got along professionally , keppler was often condescending , even though he was ten years younger than james . 
+ `` that 's what i was about to ask you , '' dr. keppler said in response to james ' question . 
+ keppler stared at him though a pair of wide-rimmed glasses that rested on his nose . 
+ james stammered slightly . 
+ `` well , i know that the power went out in the middle of my class , and it has n't come back on . 
+ i know that my students ' laptops and phones have been disabled . 
+ other than that , i 'm not sure . 
+ do you know anything about it ? '' 
+ `` i have n't a clue , but i 'm sure it 's only temporary , '' dr. keppler answered . 
+ he smugly leaned back in his office chair , and james sensed a juncture in their conversation . 
+ `` i noticed you dismissed your class early , '' dr. keppler said . 
+ `` yes , that 's correct , '' james answered . 
+ `` do you think that was a wise move ? '' 
+ the director asked . 
+ `` i do n't see why not . 
+ the power outage was very distracting . '' 
+ `` and you told them it was an electromagnetic pulse attack ? '' 
+ james paused , unresponsive . 
+ dr. keppler continued , `` i spoke to a few of your students on their way out . 
+ seems you have some pretty outlandish theories about the whole thing . '' 
+ `` i believe an emp is a possibility , definitely . 
+ it would make sense , '' james said . 
+ dr. keppler laughed . 
+ `` i do n't doubt your conviction , james , i really do n't . '' 
+ his chair squeaked as he leaned in closer . 
+ `` i just do n't think we should be filling our students ' heads with wild scenarios , calling this a terrorist attack and such . '' 
+ james felt offended . 
+ `` i never said it was a terrorist attack . '' 
+ `` all the same , '' dr. keppler said , waving a hand in the air . 
+ `` the point is that the students are worried , and this emp talk has them in a frenzy . '' 
+ `` they should be worried , '' james said defensively . 
+ `` there 's a very high probability that all these disabled electronics are linked to an emp attack . 
+ i 've done plenty of research on the matter . '' 
+ `` ah yes , your research . 
+ in that cabin you have in the middle of the woods , slaughtering animals , and preparing for the apocalypse ? '' 
+ `` excuse me ? 
+ i think you 're way out of line with that comment , '' james said , his anger rising . 
+ `` i 'm sorry , james , '' dr. keppler said . 
+ `` i did n't mean to offend you . 
+ i just do n't want the students to be worked up into some kind of panic . '' 
+ `` what panic ? 
+ they left the class in an orderly fashion . 
+ are they confused ? 
+ yes . 
+ there 's no reason to keep them in the dark about anything . '' 
+ dr. keppler smiled . 
+ `` nice pun . 
+ let 's just wait and see what happens before we go spreading any more wild tales . '' 
+ `` very well , but in my professional opinion , this school needs to take appropriate action to plan for weeks , if not months , without power . '' 
+ dr. keppler rose from his chair . 
+ `` i appreciate the advice , james , but what i 'm concerned about most is creating a panic . '' 
+ he pointed at james sternly . 
+ `` you are not to tell this theory of yours to any other students or faculty members whatsoever . 
+ this is a matter of safety . '' 
+ james sat silent for a moment , feeling himself being pushed into a corner . 
+ `` you 're issuing a gag order ? '' 
+ `` take it however you want to take it . 
+ this college has a reputation to keep . 
+ you 're a good teacher , i give you that , but i would advise you to keep your personal life -- the hunting , doomsday prepping , and end of the world theories off this campus . 
+ good day , james . '' 
+ dr. keppler stretched his arm toward the door , indicating it was time for james to leave . 
+ there was nothing more to say . 
+ james rose from his chair , and left the office . 
+ dr. keppler sat down , satisfied to have put james in his place . 
+ james 's fears were confirmed as walked the parking lot , carrying his satchel over his shoulder . 
+ several faculty members stood over the open hoods of their cars , all clueless as to why their cars were n't starting . 
+ the hot georgia sun provided no mercy on the dry , cloudless day . 
+ the lack of air conditioning had already been evident in the building , was actually cooler outside . 
+ he spotted his truck and walked a few rows over . 
+ `` james ! 
+ there you are , '' a voice called out . 
+ james turned around and saw one of his colleagues , denise , a professor of u.s. political and cultural studies . 
+ she was frazzled and breathing heavily . 
+ her blonde pageboy hairstyle blew in a quick and welcome breeze that suddenly swept by . 
+ `` i 've been looking for you ; i just came from your classroom . '' 
+ `` denise , hey , what 's up ? '' 
+ james answered , putting his sunglasses on . 
+ `` i saw everything , james , '' she said emotionally . 
+ james walked closer to her . 
+ `` what are you talking about ? 
+ what did you see ? '' 
+ `` your students , i passed one of them , her name was amber . 
+ she said you told them that an emp blast in the sky caused the power to go out . '' 
+ james attempted to correct her . 
+ `` i said i believed that could be the case ; i do n't know for sure at the moment . '' 
+ `` well , i do , '' denise said . 
+ `` i saw a large blast in the sky about twenty minutes ago . 
+ it was more like a flash , actually . 
+ it took only a second and practically threw me to the ground . 
+ i was on my way to my car to get some files . 
+ i thought maybe an airplane blew up or something . 
+ i just do n't know . '' 
+ `` i believe you , denise , do n't worry . 
+ from what you 're telling me , it sounds like you witnessed an aerial nuclear explosion . 
+ it 's probably how the electromagnetic pulses were deployed . 
+ from what i know , it takes only seconds . '' 
+ `` i tried to start my car , but it 's dead . 
+ my phone . 
+ my laptop . 
+ they 're all dead , '' denise said . 
+ she was shaken up , so james put his hand on her shoulder and tried to calm her . 
+ `` everything is going to be okay . 
+ i 'm about to try to start my truck , and then i 'm out of here . 
+ if you 're having car troubles i can give you a lift home if you want . '' 
+ denise smiled . 
+ `` that would be great , '' she said , touching his arm . 
+ they walked to his truck , as james hoped for the best . 
+ off in the distance , near the bus ramp , a bus was stopped in the middle of the street with several students standing around it . 
+ others zipped by the scene on bikes . 
+ james and denise approached a beat-up f150 . 
+ `` all right , let 's see if this works , '' james said , entering the driver 's side . 
+ denise looked at the vehicle in wonder . 
+ `` wow , '' she said . 
+ `` this car is an antique . '' 
+ `` sure is . '' 
+ james placed the key in the ignition , and put his foot on the clutch . 
+ he cranked the engine while holding onto the stick shift . 
+ the truck roared to life without issue . 
+ james let out a heavy sigh in relief . 
+ `` it starts . 
+ i ca n't believe that it starts ! '' 
+ denise said , looking into the truck through james ' side window . 
+ he grinned and looked over at her . 
+ `` go ahead and hop in . 
+ i 'll take you home . '' 
+ she got in and looked at the minimal interior of the truck in awe . 
+ there was no carpet . 
+ the long bench seat in the front was old and worn , and the radio looked like something out of the 1950s . 
+ `` how did you start it ? '' 
+ she asked while shutting her door . 
+ `` i just turned the key , '' james said . 
+ he moved stick shift into reverse and backed out of the parking space . 
+ they fled the lot while drawing the curious attention of several nearby onlookers . 
+ all the traffic lights were out , and motionless cars were blocking both lanes . 
+ james did his best to maneuver around them . 
+ stranded commuters barely took notice , as their attention was focused on their own vehicles . 
+ `` not all cars are susceptible to emps , '' james said to denise . 
+ `` at least from what i 've read . 
+ i 'm sure that military and law enforcement vehicles are designed to withstand the attack . 
+ i sure hope they are . 
+ i know the government has taken some precaution in that regard . 
+ my truck was designed before computer circuitry became a standard part of the engine . 
+ this is a 1975 ford f150 . 
+ is it old as hell ? 
+ yes . 
+ is it invincible ? 
+ no . 
+ is it completely safe from an emp ? 
+ i do n't know . 
+ it 's running now . 
+ i mainly got it because it 's diesel and the engine is reliable . '' 
+ `` why diesel ? '' 
+ denise asked . 
+ `` because in the event of massive fuel shortages , you can use alternate measures in lieu of diesel fuel . '' 
+ `` like what ? '' 
+ james thought for a minute . 
+ `` like vegetable oil , for instance . '' 
+ denise laughed . 
+ `` yeah , right ! '' 
+ she said . 
+ `` it 's true . 
+ i tried it before . 
+ truck runs just the same . '' 
+ `` that 's crazy , '' denise said , staring ahead . 
+ `` let me know where i 'm going here , '' james said . 
+ `` oh , i 'm sorry , take a right at the light up here . '' 
+ her voice dropped when she saw how many cars were in their path . 
+ at least ten alone blocked the road to her neighborhood street . 
+ james drove on the side of the road to get around them . 
+ they arrived at her house , located in a quiet , nearly empty neighborhood . 
+ she exited james 's truck visibly shaken . 
+ she closed her side door and walked to james 's side . 
+ `` thank you so much , james . 
+ i really do n't know how to thank you . '' 
+ `` you just did , '' james replied . 
+ the thought of inviting her to his bug-out house crossed his mind , even though he knew that she was married . 
+ he could n't help it . 
+ `` good luck and stay safe . '' 
+ `` do you think things will go back to normal soon ? '' 
+ she asked . 
+ `` i 'd say it depends on the extent of the emp blast and how prepared emergency teams are for it . 
+ just make sure that you get plenty of food , water , and supplies from the store before their shelves are emptied . 
+ a couple of days of this will be all it takes . '' 
+ `` but how ? '' 
+ denise began . 
+ `` ride a bike . 
+ walk if you have to . 
+ i ca n't stress it enough . 
+ you have to be stocked up . '' 
+ denise touched james 's hand . 
+ `` thank you again , '' she said , turning to her small one-story three-bedroom house . 
+ she waved and walked in through the front door . 
+ james waited until she went inside , and then drove off . 
+ twenty minutes later , roughly thirty miles away from denise 's , the ford flew up the winding and bumpy dirt road leading to james ' bug-out house . 
+ it was time for him to take the first step in preparing for the lengthy and treacherous aftermath of what was a probable emp strike . 
+ he was not surprised to enter the house and find it without power . 
+ he was also not surprised to find his cell phone lifeless and inoperable . 
+ he had generators stored in the shed with more than fifty gallons of fuel on hand . 
+ some of the house ran on solar electricity , including the outside lights and some electronics . 
+ he had also routed the back-up power of his kitchen refrigerator to the solar system , which would keep it running for a little while longer . 
+ he had a large 12-volt batteries stored for essential appliances in case of an emergency . 
+ the kitchen oven ran off propane . 
+ many things in the house were designed to run in the event of a power outage , and james felt vindicated for all of his hard work . 
+ he filled his bathtub with buckets of water to have on-hand for washing and cleaning . 
+ he fished out all the flashlights , battery-operated radios , and batteries and placed them on the kitchen table . 
+ the radio in his car did n't pick up any signal , and he had no better luck with the portable radios or television . 
+ it seemed as if they 'd all been fried . 
+ through all of this `` quick prepping , '' it never occurred to james to go to the police or emergency services to find out what was going on . 
+ his first instinct was to get to the bug-out house and get in contact with his prepper pact . 
+ for the time being , they even took precedence over his son and grandchildren . 
+ james walked down into the cellar , light beaming in through the small windows , and retrieved a large protective metal case . 
+ he placed the case on a table and opened it . 
+ inside was a radio transmitter , similar to a ham radio that he began to set up in haste . 
+ the radio ran off lithium batteries . 
+ the protective case was meant to shield the radio from electromagnetic pulses , and as he completed assembling its components , the radio turned on without a problem . 
+ james sat and clutched the microphone in his shaking hand . 
+ he moved the knobs to reach the proper frequency where he could communicate with his prepper pact . 
+ he used their call signs , holding down the transmitter button . 
+ `` blue sixty , blue sixty , come in blue sixty , this is red raven , '' james said . 
+ `` blue sixty '' was terrance 's call sign . 
+ james continued . 
+ `` badger beast , badger beast , come in , badger beast . '' 
+ `` badger beast '' was mark 's call sign . 
+ he heard nothing . 
+ he tried again and again , having faith that they would soon answer his call . 
+ it was the only way he could find out how far the attack had reached . 
+ good morning , janice monday september 21 , 2025 8:30 a.m. savannah , ga janice faced rush-hour traffic every morning . 
+ she always found herself battling against the clock , as it took no less than an hour on the highway to get to work . 
+ miraculously , she would make it to work by 9:00 a.m. every time . 
+ all of this , she supposed , could have been avoided by getting up and leaving earlier , but her body did n't seem to allow it . 
+ janice was stubborn in her routines , and rushing to work was one she was n't going to change , despite any benefit to her sanity . 
+ halfway to work she sat back and listened to a talk radio show , `` earl & company in the morning , '' in which they discussed nothing of great significance . 
+ it was all about jokes and laughs . 
+ sometimes she did n't want to be inundated with the news and seriousness . 
+ in world news , the middle east was raging with violence , as terrorist networks and so-called `` sectarian groups '' had effectively seized control of several countries in the region . 
+ russia was moving on previously held territories in europe , china was quickly advancing into the top spot as the world 's top superpower , and they had already overtook america as the world 's biggest economy . 
+ iran and north korea were unstoppable in their pursuit of a large nuclear arsenal . 
+ and this was in addition to all the problems occurring within the united states . 
+ it was too much to listen to at times . 
+ too much to take in . 
+ to avoid depression , janice listened to the humorous and trivial banter of `` earl & company '' instead . 
+ janice worked for an employment agency and recruitment company , terry services , inc. , a `` temp agency '' sourcing skilled workers for outside businesses . 
+ her job involved processing applicants , scheduling interviews , and assisting walk-ins with appointments and general information . 
+ each day was busy from open to close , but she also noticed a troubling lack of temporary jobs available overall . 
+ sometimes her agency could n't find applicants any work . 
+ `` well , how did you get this job ? '' 
+ a frustrated man who could n't find employment asked her . 
+ `` i applied for it like anyone else , '' she answered . 
+ `` lucky you , '' the man said , storming out of the office . 
+ as a result , applicants were upset and short-tempered . 
+ janice pulled into the vast parking lot , just before nine , and saw that people were already lined up outside the building , looking for work . 
+ she thought it was ridiculous how people expected to find work the moment they walked in . 
+ janice approached the front entrance , and pushed past the line of people at the door . 
+ she wanted to help them , she liked to help them -- it was her job -- but it seemed simply overwhelming for a monday morning . 
+ she walked inside the building , past a cramped and full waiting lobby , went down a hall , and entered her office . 
+ a knock came at her door . 
+ janice looked up and saw her co-worker , laura standing outside her office . 
+ `` it 's a madhouse out there , '' she said to janice . 
+ `` i expected it to be busy , but this is just , i do n't know . 
+ mondays , what can you do ? '' 
+ janice said . 
+ she looked at her watch . 
+ it said 9:08 . 
+ `` time to get to work , '' she said , sitting down at her desk . 
+ `` good luck , '' laura said , walking away . 
+ she had twenty applicants to process for temporary positions . 
+ the first was a man named , josh tracey , a computer analyst recently laid off from an it firm . 
+ he was overqualified for most of the positions available , but would take anything they had . 
+ janice went outside to the lobby and called out her first appointment . 
+ `` mr. tracey ? '' 
+ she said . 
+ a thirty-something nebbish man who sat squished between two other applicants on the waiting room couch stood up . 
+ `` that 's me , '' he said , walking towards her . 
+ `` how are you this morning ? '' 
+ janice asked . 
+ mr. tracey was wearing a faded suit , and his bushy hair was unevenly cut , looking as if he did it himself . 
+ `` i 'm doing well , thank you for asking , '' mr. tracey replied . 
+ they went to her office , and she closed the door . 
+ `` have a seat , please , '' she said , pointing to the chair in front of her desk . 
+ mr. tracey sat . 
+ janice continued . 
+ `` so today is orientation . 
+ there 's additional paperwork to fill out , orientation , and then we 'll set you up with your new temp job . '' 
+ `` baggage handler at the savannah international airport ? '' 
+ he asked , reading over his paperwork . 
+ `` yes , that 's correct , '' janice said . 
+ before mr. tracey could respond , the overhead lights flickered out . 
+ simultaneously , the screen on janice 's computer turned blue , and then shut off . 
+ there were no windows , and the room was extremely dark . 
+ it took a moment for her eyes to adjust , but janice could see mr. tracey sitting in front of her . 
+ `` you ok , mr. tracey ? '' 
+ she asked . 
+ `` i 'm fine , '' he said from the darkness . 
+ `` what the hell happened ? 
+ who turned out the lights ? '' 
+ janice stood up and looked around . 
+ `` excuse me for a moment ; i just need to see what 's going on here . '' 
+ `` did your people forget to pay the power bill ? '' 
+ he asked with a laugh . 
+ `` i certainly hope not , '' janice answered . 
+ she got up and left her office to check out the lobby . 
+ the lights were out there as well . 
+ `` power 's out , '' a seated man from the lobby said . 
+ `` i see that , '' she answered . 
+ she left the lobby and walked past her office and down the hall to her co-worker laura 's office . 
+ there were no windows in the hall , and it had gotten dark very fast . 
+ she knocked , and laura told her to come in . 
+ janice opened the door . 
+ sunlight beamed in through the tall windows behind laura 's desk . 
+ `` i was right in the middle of drafting our newsletter , '' laura said , clenching her fists . 
+ `` son of a bitch , i forgot to add it to the share drive . 
+ ugh ! '' 
+ `` i 'm sorry , '' janice said . 
+ `` i do n't know why it went out . '' 
+ `` who the hell knows , '' laura said . 
+ `` there 's no storm . 
+ not a damn cloud in the sky . '' 
+ janice shook her head . 
+ `` hopefully it will come back on soon . 
+ i have a lot of people waiting out there . 
+ i 'll talk to you later . '' 
+ she walked back down the hall as laura stared at her screen in a daze . 
+ back in her office , janice found a small flashlight in the top drawer of her desk . 
+ she pulled it out and turned it on . 
+ mr. tracey had wandered off , and he was no longer there . 
+ she could hear co-workers outside her office complaining that their cell phones were n't working . 
+ the scenario seemed familiar . 
+ it was something mark used to talk about . 
+ something called an emp attack that destroyed power systems and electronic devices . 
+ something that would take the country back to the 1800s in a matter of seconds if it could really happen . 
+ she dug her phone out of her purse and saw that it had fared no better than the others . 
+ the screen was blank , as if all its power had been drained away . 
+ janice sat at her desk and thought for a moment . 
+ `` excuse me , miss , just what in the hell 's going on here ? '' 
+ an angry old man asked , breaking her concentration . 
+ he had left the lobby and found to her office , a highly irregular move for an applicant . 
+ `` one moment , please , sir , '' she said . 
+ she picked up the receiver of her land-line phone to call her boss , brian . 
+ there was no dial tone . 
+ it was as if the phone was n't even plugged in . 
+ she slammed the receiver down in frustration . 
+ she got up from her desk , and pushed past the man . 
+ `` i 'm sorry , i do n't know what 's going on . '' 
+ the man was not satisfied , and yelled at her as she walked away from him . 
+ he reeked of alcohol . 
+ janice left office of the temp agency and decided to look elsewhere in the three-story building . 
+ the elevators were n't working , so she headed for the stairwell . 
+ people were exiting , hurrying down as she was climbing up . 
+ she searched the second and third floors and found them to be the same as the first : dimly lit , full of confused wanderers . 
+ she went back down to the first floor and exited the building . 
+ she was met with an unruly cluster of people on the bottom floor . 
+ various job-seekers from all walks of life had convened outside the doors , lost and aimless . 
+ they wanted to know why the power was out . 
+ they wanted to know how much longer before everything magically came back on . 
+ many of them held cell phones , frantically trying to get them to work . 
+ without the guidance of their electronics , they looked to janice for answers . 
+ she was about to make her way back inside when she noticed an unusual quietness from the nearby highway . 
+ she could see the highway from the parking lot . 
+ it looked to be frozen in time . 
+ vehicles sat motionless in what looked like early-morning gridlock . 
+ nothing was moving , not even an inch . 
+ janice stared , waiting for one of the hundreds of cars on the four-lane highway to move . 
+ suddenly , she noticed something else : drivers and passengers were exiting their cars then circling them , looking perplexed . 
+ her boss , brian , called out to her from outside the building as she walked to her white 2015 toyota corolla . 
+ `` janice , where ya ' going ? '' 
+ he said , standing with his hands on his hips . 
+ `` damn , '' she thought . 
+ she was about to leave . 
+ she turned around and yelled back , `` i just have to get something out of my car . '' 
+ she unlocked the driver 's side door and stepped in . 
+ she stuck the key in and turned the ignition switch . 
+ at first , she thought she was doing something wrong . 
+ she checked the dashboard to make sure that the vehicle was in park and tried again . 
+ the suv would n't start , and janice had no clue why . 
+ she tried the engine ten more times , getting nothing . 
+ she tried it in neutral , reverse , and drive to no effect . 
+ her hand was tired from turning the key so many times . 
+ she walked back to the building in a daze as her boss greeted her sarcastically . 
+ `` little bit of car trouble ? '' 
+ he asked . 
+ `` looks like i 'm not the only one , '' she answered , signaling to the motionless gridlock on the highway . 
+ mark pedaled home in haste , hoping that , for some unexplainable reason , janice had n't left for work yet . 
+ as he rode up their driveway , he saw that her car was gone . 
+ mark thought for a moment , considering whether to drive their bug-out vehicle to janice 's office and rescuing her . 
+ but maybe her car worked after all . 
+ maybe she got lucky . 
+ mark did n't know the range of emp blasts . 
+ he did n't know if its effects had spread across town , across the state , or over the entire country . 
+ he noticed his elderly next-door neighbor sitting on his front porch swing . 
+ mark stepped off his bike , practically drenched in sweat . 
+ he had taken off his suit jacket and rolled up his sleeves , but there was no escaping the sweltering heat . 
+ he checked his cell phone again . 
+ it was still dead . 
+ his neighbor looked peaceful on his porch swing , in perfect contrast to the chaos mark had fled . 
+ `` how 's it going , mr. harper ? '' 
+ mark called . 
+ mr. harper leaned forward on his cane and squinted . 
+ he wore a short-sleeved buttoned-up shirt tucked into his dress pants , colorful red suspenders , and a braided sun hat . 
+ he fanned himself leisurely with a paper fan . 
+ `` i 'm doing fine , how about yourself ? '' 
+ he said . 
+ mark walked closer and stood under the shade of mr. harper 's chestnut tree . 
+ `` doing all right . 
+ bit of a scare today with the power . 
+ it 's like some kind of blackout . 
+ how are you holding up here ? '' 
+ mark hoped that mr. harper would say that the power was running fine . 
+ `` blackout ? '' 
+ mr. harper said . 
+ `` i did n't even notice it . 
+ just been sitting on my porch drinking some sweet tea . '' 
+ mr. harper held up a glass and finished the last of it . 
+ just looking at the empty glass made mark thirsty . 
+ he had to get inside to see everything for himself . 
+ whatever was happening , mr. harper was oblivious to it . 
+ `` well , i got ta pick janice up from work . 
+ i 'll see you later , mr. harper , '' mark said , waving . 
+ `` you tell her i said hello , '' and he began swinging back-and-forth . 
+ `` sure will , '' mark responded . 
+ he walked up the steps into his home and unlocked the front door , hoping to find by a cool , air-conditioned living room when he stepped inside . 
+ that was n't the case . 
+ the power was out . 
+ mark walked around the living room , dining room , and kitchen checking each appliance . 
+ nothing worked . 
+ he opened the refrigerator and looked in . 
+ only darkness . 
+ the motor was n't running , and it would be only a matter of time before all the food inside spoiled . 
+ mark leaned against the counter thinking to himself . 
+ `` what are we going to do ? '' 
+ mark muttered out loud . 
+ `` what in the hell are we going to do ? '' 
+ he thought of their food storage in the basement and how most of it was expired . 
+ he thought of their money , their assets , and their online accounts . 
+ he thought of atms , and not having in cash , and looters . 
+ the banks would soon be the most chaotic places imaginable , next to the supermarkets and gas stations . 
+ the bug-out house was a consolation to his worries . 
+ mark considered their options . 
+ he needed janice 's input . 
+ traveling to milledgeville and leaving their home behind was a huge step , but a necessary one if things got worse . 
+ mark went to their backyard shed . 
+ he opened the wooden double-doors and found their bug-out parked inside , covered with layers of dust and grime . 
+ they owned an american classic : a red 1970 plymouth road runner with a rear spoiler and lots of attitude . 
+ the door squeaked open , and mark climbed into the driver 's seat . 
+ he was n't surprised to find that the car would n't start . 
+ he hoped simply because the battery was dead . 
+ for that reason , they stored three car batteries on a shelf in the shed along with ten five-gallon cans of reserve fuel . 
+ frustrated , mark popped the hood and grabbed some tools to disconnect the dead battery so he could install a replacement . 
+ he was confident that the car would start in the end . 
+ if it did n't , then he would have to rethink his entire strategy . 
+ he was not looking forward to riding his bike to janice 's office in ninety-degree heat . 
+ he swapped out the batteries and ensured that the replacement was tightly connected . 
+ he sat at the wheel , placed the key in the ignition , and paused . 
+ he really did n't want to find out . 
+ if the car did n't start , he would be devastated . 
+ `` please , '' he said under his breath . 
+ `` please ... '' he turned the key and felt the miraculous roar of the plymouth 's engine . 
+ `` yes ! '' 
+ he shouted , hitting the steering wheel with excitement . 
+ he revved the engine methodically then held the gas pedal down . 
+ he had always kept the car below half a tank to prevent corrosion . 
+ now he had to fill it up with twenty gallons worth of fuel reserve . 
+ out of ten fuel cans , he would have six left . 
+ he hoped that would get them to milledgeville , if there were no gas stations operating . 
+ he shut the door and idled out of the shed onto a path that led him to the front yard . 
+ he waved again to mr. harper and sped off down the street in hopes of finding janice . 
+ mr. harper waved back and smiled , still unaware of anything out of the ordinary . 
+ janice paced back and forth the parking lot in front of her building , wrestling with her options . 
+ without a car , she did n't have many . 
+ she could walk home under the hot sun , or she could wait , and hope that mark would soon arrive . 
+ she thought of their bug-out car , and wondered if there was any chance that it still ran . 
+ perhaps an emp had nothing to do with anything going on . 
+ maybe it was all in her head . 
+ her co-workers wandered dazed through the parking lot examining their cars and trying to get their cell phones working . 
+ the highway was a sight to behold . 
+ commuters walked down the highway like some kind of mass protest . 
+ janice was caught between a desire to maintain her routine , and the realization that things were different now . 
+ she decided to wait . 
+ the power company had to intervene at some point . 
+ they would have the protocols in place to deal with such a thing . 
+ the government as well . 
+ she thought of the hospitals , prisons , schools , gas stations , and banks . 
+ there had to a plan to deal with a crisis of such magnitude . 
+ she looked out toward the highway again and there , right before her eyes , saw the results of an aerial electromagnetic pulse . 
+ if an emp had been launched , it meant america was at war with someone . 
+ janice thought about their home , their investments , and lives . 
+ her head spun with panic . 
+ she looked back to the office building . 
+ more people had walked out , and were chatting with each other . 
+ she could feel sweat building on her back , under her shirt . 
+ only ten feet away from her building , and dehydration had kicked in . 
+ she walked back to the building and stood under the shade of a nearby oak tree . 
+ mark drove the plymouth through back roads to reach janice 's office . 
+ he wanted to avoid the highway as much as possible . 
+ too many cars as roadblocks , and too many people . 
+ the back roads were not without their share of wanderers and broken-down vehicles either . 
+ he felt no satisfaction passing anyone , but he had his hands full as it was . 
+ he was only a few miles from janice 's building . 
+ the plymouth crept down back roads , its loud motor gained attention from everyone in its path . 
+ mark drove slowly ; cautiously attentive to whatever obstacles might be in his way . 
+ the paralyzed traffic created an eerie silence , pierced only by the sound of mark 's car , which could be heard miles away . 
+ janice heard the sound of mark 's plymouth in the distance . 
+ she was standing under a nearby oak tree next , as many others convened outside the building . 
+ she saw the mysterious plymouth as it turned into the parking lot , confounding every bystander along the way . 
+ `` hey , man ! '' 
+ a young man covered in tattoos shouted . 
+ he held his arms out as if flagging mark down . 
+ `` let me get a ride ! '' 
+ he said as mark passed him by . 
+ the man jogged after the car , and soon others joined him . 
+ mark looked in his rearview mirror and saw that he was being followed . 
+ a large group of desperate people trailed behind him . 
+ he would have little time to get janice if she was still there . 
+ he gripped the steering wheel , and his eyes swept the parking lot as he searched for his wife . 
+ janice 's attention was drawn to the odd sight plymouth . 
+ people were following it like parishioners after their prophet . 
+ the car sped up , but could n't shake them loose . 
+ suddenly it dawned on her that the plymouth was no ordinary car , it was mark 's bug-out car coming to get her . 
+ a sudden sense of relief and happiness swept over her . 
+ mark slammed on the brakes in front of the building and kept the engine idling . 
+ he looked frantically for janice in the crowd . 
+ against his better judgment , he pressed down on the horn as it sounded a muffled blaring . 
+ janice ran toward the car , away from her perplexed co-workers . 
+ the mob behind the plymouth had gained ground and had almost reached the rear bumper when janice flew to the passenger 's side . 
+ mark leaned over and pushed the door open for her , his face filled with both anxiety and relief . 
+ others were crowding closer . 
+ `` janice , thank god ! '' 
+ he said , and reached across to help her inside . 
+ `` hurry up and get in ! '' 
+ she swung her legs inside , and plopped down into the seat . 
+ her door swayed open as mark pulled away from the building and drove in the opposite way , trying to lose the mob following them . 
+ `` come on , asshole ! '' 
+ a sweaty man billowed out in raspy breaths . 
+ `` give us a break here ! '' 
+ janice slammed the door shut , and hunkered down in the seat . 
+ the mob tried its best to keep up , but soon the plymouth moved out of range , bumping over a parking median and onto the main road . 
+ they weaved between perfectly still vehicles in their way . 
+ mark feared that their path would soon be blocked by a pack of frustrated motorists . 
+ `` we have to take the back roads , '' mark said . 
+ `` the highway is much too dangerous . '' 
+ `` what 's going on , mark ? 
+ is this an emp ? '' 
+ mark kept his eyes on the road , taking a moment before answering . 
+ `` pretty damn good chance , '' he responded . 
+ `` what are we going to do ? '' 
+ she asked . 
+ `` my friends at work are stranded . 
+ i did n't know what to tell them . '' 
+ `` right now it 's the only thing that makes sense . 
+ we have to assume the worst . 
+ we have to be prepared . 
+ this is what it 's all about , janice . 
+ we knew something bad was coming . '' 
+ `` i know , but ─ '' janice began . 
+ she stopped and covered her face with her hands , grief-stricken . 
+ they pulled off the main road , going back the same way mark had come . 
+ it was longer than taking the highway but safer . 
+ mark looked at janice sympathetically and trying to think of how to console her . 
+ `` how are you holding up ? '' 
+ he asked her . 
+ `` are you okay ? '' 
+ he reached over and placed his hand on hers . 
+ janice looked up and sighed . 
+ `` i was sitting at work , talking with one of our applicants when the power went out , just like that . '' 
+ janice snapped her fingers . 
+ `` same thing happened with me . '' 
+ `` at first i did n't think much of it , '' said janice , `` like it was just a downed power line or something , but as soon as i saw the cars , i knew it was something different . 
+ then the cell phones and everything else went . '' 
+ `` electromagnetic pulses . 
+ that 's what they do , '' mark said . 
+ `` yes , but for how long ? '' 
+ `` what ? '' 
+ mark asked . 
+ `` how long will it be like this ? '' 
+ mark could n't answer . 
+ he looked around and took the next turn towards home . 
+ their windows were down allowing in cooling gusts of wind . 
+ they passed stranded motorists by the dozens , careful not to make eye contact . 
+ it felt wrong to leave them , but there were far too many . 
+ `` there 's nothing we can do for them right now . 
+ right now it 's just you and me , '' mark said . 
+ `` how long will everything be like this ? '' 
+ janice asked . 
+ `` it could be days , months , or years . 
+ the government is supposed to have taken measures to minimize the effects of an emp blast . 
+ there 's no telling what they came up with , or what sort of emergency plan they have in place . '' 
+ suddenly in the creeping silence , mark and janice heard helicopters in the air ; an army of helicopters it seemed . 
+ janice looked into the sky and saw them coming into view . 
+ they were painted blue and white , and looked to be law enforcement . 
+ mark grew paranoid at the presence above , as they would clearly identify their plymouth as one of the few , if not the only , cars moving on the road . 
+ however , they flew over them without a care , and over the horizon , out of view . 
+ they made it back to the house , without any clear answers . 
+ janice was shaken , where mark was focused . 
+ he felt that they needed to get to the bug-out house as soon as possible . 
+ as they pulled into the driveway , mark looked over to mr. harper 's front porch . 
+ his neighbor was no longer there . 
+ only an empty swing remained . 
+ they parked , and mark helped janice out of the car , holding her hand as they walked back into the house . 
+ `` silly question , '' she said , `` but our house ... is it ... ? '' 
+ `` no power , sweetheart . 
+ just like everything else . '' 
+ mark led janice inside . 
+ the house was stunning in its silence , and humidity . 
+ mark walked through the living room , shutting the blinds to block any view from outside . 
+ janice sat on the couch , and looked at her silver shiny wrist watch . 
+ the hands were n't moving . 
+ it had stopped at 9:10 a.m. `` thanks you for getting me , '' she said . 
+ `` i guess you were right about that old car . '' 
+ mark turned from the window to look at her . 
+ `` i never knew for sure . 
+ we 're very lucky . '' 
+ the smile on janice 's face vanished as a distressing thought came to mind . 
+ `` our finances , '' she said . 
+ `` what about our money ? '' 
+ mark walked to the couch and sat next to her , placing a hand on her knee . 
+ `` i 'm not going to lie , honey ; right now it does n't look good . 
+ our gold investments should be okay . 
+ we have a few thousand in cash stored in the safe . 
+ as far as our savings , i just do n't know . 
+ the banks are down . 
+ we ca n't call them . 
+ the atms are n't working . 
+ even if we showed up there , they ca n't do a thing until the system is up . 
+ in another day or two the banks will probably be either the most secure or dangerous places on earth . 
+ everyone is going to want cash , and once they realize their credit cards are worthless , they 're going to get angry and desperate . '' 
+ janice rested her head on mark 's shoulder , and for a moment they were just quiet . 
+ `` is it milledgeville , then ? '' 
+ she asked softly . 
+ after doing the math in her head , janice , like mark , had soon came to the conclusion that the bug-out house was the place to be . 
+ `` it 's looking that way , '' mark said . 
+ `` why do n't you rest for a minute ? 
+ i 'm going to try to get in contact with james . '' 
+ mark got up and walked toward the basement . 
+ janice looked at him curiously . 
+ `` how are you going to do that ? '' 
+ she asked . 
+ `` i 'm going to try him on the radio , '' mark answered and continued walking toward the stairs . 
+ oh , well . 
+ good luck with that . 
+ janice stretched her legs out on the couch and lay back . 
+ her mind raced in a million different directions . 
+ she looked up at the popcorn ceiling and became paralyzed by her thoughts . 
+ mark found the radio , secured in a thick metal case . 
+ once it was set up on the table , it looked like something from an old war movie . 
+ the 500hz main transceiver sat in the middle , fitted with plastic knobs and buttons . 
+ at the end of an attached , coiled cable was the receiver . 
+ mark flipped the power on and could hear static through the handheld microphone . 
+ the radio ran off of a 12-volt battery attached inside . 
+ it was an ideal means of communication in emergency situations . 
+ mark trolled the frequencies , moving through its digital display , searching for anything resembling radio activity . 
+ he reached 1407 , which was a station he knew james sometimes frequented . 
+ `` red raven , red raven , this is badger beast , do you copy ? '' 
+ he released the button on the handheld mic and waited . 
+ there was nothing but static . 
+ mark continued . 
+ `` red raven , come in red raven , this is badger beast , do you copy ? 
+ over . '' 
+ a sudden sound crackled over the mic . 
+ `` badger beast , this is red raven . 
+ over . '' 
+ mark was elated . 
+ as a result , he fumbled slightly with the receiver . 
+ `` awesome ! 
+ so glad you 're there . 
+ over , '' mark said , foregoing any type of radio etiquette . 
+ `` how you holding up on your end ? 
+ over , '' james asked . 
+ mark held down the button on the handheld and spoke . 
+ `` it 's pretty bad here . 
+ possible emp strike occurred early this morning . 
+ all power is out . 
+ all devices . 
+ bug-out vehicle is operational . 
+ over . '' 
+ `` same here . 
+ emp has spread to milledgeville and beyond . 
+ over . '' 
+ `` what is the status of our rally point ? 
+ over . '' 
+ mark asked . 
+ `` rally point is a go . 
+ over . '' 
+ `` great , we 'll leave first thing tomorrow morning . 
+ over . '' 
+ `` sound good . 
+ over . '' 
+ `` will see you soon . 
+ over and out , '' mark said . 
+ mark switched off the radio and set down the hand mic , pondering their urgency . 
+ he estimated that they had at least a week or two of normalcy , waiting for emergency assistance like everyone else . 
+ but even before the black out , things had reached a tipping point . 
+ all the economic problems and general discontent going on throughout the nation only needed one match to light the fire . 
+ driving to milledgeville days after the fact would almost guarantee trouble at the hands of an even more desperate mob . 
+ they had to leave soon . 
+ mark went to the living room and stood over janice as she lay on the couch , still deep in thought . 
+ `` i think we should leave tomorrow morning , '' he said . 
+ janice sat up and stared at mark , considering his suggestion , but she looked more worried . 
+ `` what about our house ? 
+ all of our stuff ? '' 
+ mark sat down next her , sinking into a plush cushion . 
+ `` we 'll take everything we possibly can . 
+ we 'll hide our valuables , or pack them up . 
+ it 's going to take some work , but we can do this . '' 
+ janice seemed wary of mark 's suggestion . 
+ `` do you really think we need to leave so soon ? 
+ we do n't know what could happen . 
+ they might have the power back on in a few days . 
+ like you said , they have protocols for this sort of thing . '' 
+ `` janice , we need to do what we 've been planning for all this time . 
+ we have to take advantage of the bug-out house . 
+ we 're not going to stay there forever , but it 's going to be safer in the long run . 
+ think about it . 
+ the longer we wait , the more dangerous it 's going to get out there . 
+ the more dangerous it gets , the more unlikely our chances are to ever make it to milledgeville . '' 
+ mark paused . 
+ `` listen , '' he said , leaning in closer . 
+ `` i talked to james . 
+ milledgeville 's almost two hundred miles away , and they 're going through the exact same thing we are . 
+ we have no idea the scope of this . '' 
+ janice nodded but still could n't feel the same urgency mark did about leaving . 
+ `` if we waited a couple of days , we could then leave late at night if we had to . 
+ it would be safer out . 
+ fewer people , fewer everything . '' 
+ `` we ca n't sit here and wait for them to come for us . 
+ you saw how many people chased after my car in your parking lot . 
+ that was , what , a few hours after the attack ? 
+ how do you think those same people are going to react after three days with no power ? '' 
+ janice said nothing as mark placed his hands on her arms and looked into her eyes . 
+ `` i do n't want to do anything that you do n't want to do . 
+ just consider it . 
+ think about what i 'm saying . 
+ i 'm only concerned about our safety . 
+ you 're my wife , and i ca n't do any of this without you . '' 
+ janice felt her eyes water but tried to not to get more emotional . 
+ everything she had dreaded was happening at a frightening speed . 
+ she looked into mark 's eyes and tried to arrive to an answer . 
+ pandemonium in atlanta monday , september 21 , 2025 8:45 a.m. atlanta , ga interstate 75 was a nightmare , typical of monday morning rush-hour traffic . 
+ terrance had left his house a little later than planned and was on his way to dearborn , michigan , in his eighteen wheeler semi . 
+ as of now , the forty-foot trailer hitched to his glossy red cab was empty . 
+ thirty pallets of copper wire awaited him in south carolina then on to the wolverine state . 
+ by his own estimate , he was an hour behind schedule , which , in the trucking business , was not a good thing . 
+ he knew i-75 would be a pain , it always was . 
+ once he found himself in the thick of it , he tried to think of alternative routes , but few existed . 
+ he called other drivers on cb radio , asking them how far the gridlock extended . 
+ the news was n't good , and terrance soon found there was no way around it . 
+ traffic was going to be crawling no matter which route he took . 
+ he only had himself to blame for any delays . 
+ if only he 'd gotten out of bed earlier and hit the road . 
+ he thought back to that morning . 
+ the cool bedroom , the soft pillow tucked under his head . 
+ it was still dark outside , and then the alarm clock buzzed . 
+ `` ten years , '' terrance muttered under his breath as he finally sat up in bed that morning . 
+ `` ten more years and i 'm done . '' 
+ he had a lot of years on the road . 
+ could he do ten more ? 
+ terrance felt the absence of his family every time he left home . 
+ he believed , over the years , that he would get used to it . 
+ having a steady job , after all , was n't something to take for granted . 
+ even with christina working , they were making just enough to get by . 
+ his boys were in high school now , and all terrance and christina asked and hoped for was that they graduated . 
+ if they could make it that far , their parents would feel they had done their jobs . 
+ terrance stared ahead , squinting against the rising sun . 
+ the light was blinding , even with his sunglasses on . 
+ traffic clogged the road as far as he could see . 
+ `` dammit , '' he said , downshifting to a crawl . 
+ terrance hated to be late , especially when it involved his haul , but had little control of the situation . 
+ he held the cb microphone in his hand and spoke , hoping someone was listening . 
+ `` any way around this cluster in the big a ? '' 
+ a static-filled voice replied over the radio . 
+ `` clears up in about six miles , '' the man said . 
+ `` 10-4 , `` terrance said back , `` you see the 85 exit up there , big boss ? '' 
+ `` that 's a go , '' the man responded . 
+ `` good thing . 
+ got to get to the carolinas before noon . '' 
+ `` what 's your 99 ? '' 
+ the man asked . 
+ `` dearborn , michigan . '' 
+ `` good luck with that , buddy , '' the man said . 
+ `` thank ya ' much , '' terrance said as he hung the microphone up . 
+ he had left the house later planned . 
+ just a few more moments with the wife and kids had cost him dearly , but his next three weeks on the road would be lonely . 
+ in the end , he thought it was worth it . 
+ terrance decided to crank up the radio and listen to some old-school r&b , which only made him think of christina . 
+ he tipped the bill of his hat down to deflect the sun 's blinding beams and took a sip from his large , steaming coffee cup . 
+ he 'd picked it up at the 7-eleven where he had fueled up before starting the journey . 
+ the coffee tasted good , and it looked to be a nice , ordinary day , when suddenly , everything changed . 
+ suddenly a bright flash streaked across the sky like some kind of all-encompassing lightning bolt . 
+ following the flash , terrance noticed silence on the radio . 
+ his switched to his cb radio , and heard nothing , not even static . 
+ his engine sputtered out , and a thin , wavy line of smoke rose from under the hood . 
+ terrance stomped on the gas pedal , but the truck did n't respond . 
+ he shifted to neutral and coasted a few feet before applying his brakes to avoid hitting the station wagon in front of him . 
+ he shifted into park with a quick jerk of the stick and then applied the parking brake . 
+ `` shit , '' terrance said , removing his hat and wiping a thin layer of sweat on his forehead . 
+ his truck had died , and he was n't even out of atlanta yet . 
+ of all the unpredictable bullshit in the world , he had n't expected it . 
+ maybe it was a blown gasket . 
+ maybe the battery had failed . 
+ something , somehow , had triggered a shutdown . 
+ in all his time driving , terrance had never experienced a complete and random shutdown in the middle of the interstate . 
+ he gripped the wheel with one hand and turned the key repeatedly in the other . 
+ he heard mechanical clicking noises from the steering column and little else . 
+ then he heard nothing . 
+ the truck was deader than a twelve-hour roadkill . 
+ he shifted from neutral to park to reverse and tried to start the truck in each gear . 
+ he was afraid for a moment that he was holding up traffic behind him and pushed the hazard light button on his dashboards . 
+ the lights did n't work anymore than the radio or anything else inside or outside the truck worked . 
+ terrance glanced into his side mirror , and then looked ahead . 
+ traffic had stopped in both directions . 
+ an overhead traffic sign which had flashed `` heavy congestion ahead '' a moment before was completely blank . 
+ every car was frozen in time . 
+ terrance rolled down his window manually and looked outside . 
+ a motorcyclist passed slowly in between lanes , gripping his handlebars to maintain balance as he doggedly pushed the bike forward with his legs . 
+ terrance watched as the cyclist inched down the interstate . 
+ drivers in cars around his truck appeared riddled with confusion . 
+ hundreds of engines had shut down in unison . 
+ drivers were left at the mercy of their once reliable vehicles , stopped dead . 
+ it was only morning , and already hot . 
+ the weather forecast predicted peaks in the high nineties throughout most of the day . 
+ terrance saw no coincidence in any of it , and believed something major had just happened . 
+ to get a clearer picture , he decided to get out of the truck . 
+ no matter what he did , or how many times he turned the key , the truck would n't restart . 
+ terrance climbed down the steps onto the pavement of the interstate and slowly walked in between cars on the five-lane highway to see if was any better up ahead . 
+ other drivers and passengers had the same idea . 
+ hoods opened , children cried , frustrated drivers cursed under their breath , and all the while , terrance observed everything , trying to get an idea of what was happening . 
+ `` just stay in the car , linda , i 'll handle this , '' a nearby man said . 
+ he sounded confident but looked totally dumbfounded as he examined the engine of his white four-door buick regal . 
+ his wife ducked back inside and sat anxiously watching from the passenger 's seat . 
+ `` son of a bitch ! '' 
+ another man shouted as he fiddled with the connectors of his car battery . 
+ `` what the hell is going on ? '' 
+ a woman asked a girl who was standing next to her . 
+ they stared at their smart phones in disbelief . 
+ `` my phone 's out , '' a man said . 
+ `` mine too , '' another responded . 
+ terrance hustled some distance down the road before he stopped and turned around . 
+ he reached into his pocket to pull out his older model flip phone . 
+ he was a man who still used road maps . 
+ even his modest flip phone was completely dead , like the other more recent models of the people around him . 
+ he held down the power button , waiting for the screen to flash on , but nothing happened . 
+ he opened it from the back , took out the battery , then placed it back in . 
+ no results . 
+ `` ma'am , is your cell phone working ? '' 
+ terrance asked a sharply-dressed woman leaning against the side of her volvo , wearing an exhausted expression . 
+ her eyes looked away from her phone and up to him for only a second . 
+ `` i 've got nothing , '' she said . 
+ `` no bars ? '' 
+ terrance asked . 
+ she looked back at him with a hint of annoyance . 
+ `` no , i mean i ca n't even get the phone to come on , which is totally crazy , because i just charged this thing this morning . '' 
+ `` thank you , '' terrance said , walking back to his truck . 
+ the simultaneous loss of vehicles and cell phones were linked in some way he had n't quite figured out yet . 
+ he had a handheld two-way radio in his truck . 
+ it was the same one that he had asked each member of his family to carry in case of emergencies . 
+ if the radio still worked , it would be the first time he had ever used it to contact them . 
+ the first time in which it had been necessary . 
+ `` ca n't be true , '' terrance thought , shaking his head . 
+ `` there 's got to be another explanation . '' 
+ he suspected an emp strike . 
+ it seemed plausible . 
+ the morning 's events had hit him unexpectedly and hard , just like everyone else around him . 
+ he climbed back into his truck and searched the glove compartment for his handheld radio , wrapped in layers of plastic and aluminum foil . 
+ the added precaution was to ensure that the radio would function after such an attack . 
+ he 'd read about it on a prepper forum . 
+ to protect a piece of electronics , they said , the item must be wrapped in a non-conductive material . 
+ again , terrance had no way to know for sure if the theory would work , but it had seemed worth the try . 
+ he had placed the radio in a ziploc bag and wrapped it in aluminum foil . 
+ he then placed the wrapped radio in another ziploc bag and , again , wrapped it in aluminum foil . 
+ for the final step , he placed the radio in a small brown paper bag and sealed it . 
+ terrance unwrapped the radio in anticipation , and once exposed , he quickly switched it on by the turning the volume knob . 
+ a red light came on , and static sounded through the speaker . 
+ he felt a flash of happiness and relief and was genuinely surprised to find that the radio had power . 
+ it was powered by four aa lithium batteries . 
+ he hoped that his wife and children had taken the same precaution and kept their handheld radios wrapped as well . 
+ the semi sat in the middle of the highway , motionless , already an artifact in a sea of other disabled vehicles that showed no indication of moving anytime soon or possibly ever again . 
+ terrance gathered the rest of his belongings -- a backpack with snacks , bottled water , some clothes , soaps , some cash , and lastly , his snub nose .38 revolver . 
+ he closed the glossy red door of his prized semi-truck and patted it gently . 
+ `` goodbye , deborah , '' he said , while running his hand across her side . 
+ they had spent the last ten years together and had seen most of the better part of the entire majestic usa . 
+ with his backpack slung over the shoulders of his plaid shirt , terrance walked down the highway , heading in the direction from which he had just come . 
+ his only option was to get back home and get his family together . 
+ he just hoped they had their radios on them . 
+ the extent of what was happening , how it happened , and what was in store was not known by terrance . 
+ he could only speculate . 
+ as he moved at a brisk pace , every other commuter on the road seemed engulfed in confusion . 
+ some stood by their vehicles staring into their hoods in desperate anticipation of answers . 
+ others paced , muttering under their breaths . 
+ some , like terrance , abandoned their vehicles all together . 
+ others sat in their cars waiting for help that would never come . 
+ he came across a station wagon , at least ten years old , and found an elderly woman at the wheel , nearly passed out from the heat . 
+ terrance lightly knocked on the side of her car to get the woman 's attention . 
+ her eyelids opened , and she glanced at him from behind the thick lens of her vintage-framed glasses . 
+ `` excuse me , ma'am , are you okay ? '' 
+ terrance asked . 
+ `` i. . . '' 
+ she began . '' 
+ i do n't know . 
+ my car ... it just stopped . 
+ i do n't know what to do . '' 
+ terrance opened the long , squeaky door with care , so as not to alarm the woman . 
+ `` your car is n't going to start again , '' he said . 
+ `` you need to find yourself some shade and hydrate . 
+ here , '' he said . 
+ he then swung his bag around and pulled out one of his bottled waters and handed it to her . 
+ the woman took the bottle and smiled . 
+ `` thank you , '' she said . 
+ `` what 's your name , ma'am ? '' 
+ terrance asked . 
+ the woman thought for a minute , almost confused for a second . 
+ she took a drink from the bottle then answered . 
+ `` my name is maya , '' she said . 
+ `` hi , i 'm terrance , '' he said , taking maya 's arm . 
+ `` let 's get you into some shade . '' 
+ maya was apprehensive about leaving . 
+ `` but , my car . 
+ we ca n't just leave my car there . 
+ it 's not safe . '' 
+ `` everything is going to be okay , '' terrance answered . 
+ `` your car will be fine for the time being . 
+ it is n't going anywhere . '' 
+ about a quarter mile ahead , they found a police car amidst the traffic . 
+ the uniformed officer stood outside his car , messing with his police radio . 
+ a small crowd had gathered around him , trying to get answers . 
+ `` people , people , '' the office said with his hand in the air . 
+ `` i have no clue what 's going on . 
+ i 'm trying to contact the station and get some answers . 
+ just bear with me here . '' 
+ the questions came from all sides as terrance approached the officer . 
+ `` this woman is in need of assistance , sir . 
+ she was very dehydrated when i found her . 
+ it 's got to be at least ninety-five degrees out . 
+ can you keep an eye on her ? 
+ make sure she stays in the shade ? '' 
+ the officer looked at terrance , startled , then to maya . 
+ clearly , he was n't sure what to say . 
+ his stress level seemed to rise in sync with the rising red flush on his face . 
+ `` i do n't know . 
+ i guess i can try to ... hold on , '' he answered while messing with the palm-sized mic in his hand . 
+ the officer turned back to them , flustered . 
+ `` just , just have her sit over there in the shade . 
+ i 'll try to get her some help . '' 
+ terrance led maya toward a large wall on the side of the road that divided the highway from the opposite lanes on the other side . 
+ `` just stay here and hydrate , '' he instructed . 
+ the old woman nodded and leaned against the cement divider wall of graffiti while gripping the water bottle in her hand . 
+ `` the officer should be able to help you soon , '' he continued . 
+ still confused , she did n't respond but managed to give terrance a smile . 
+ `` take care , maya , '' he said . 
+ he continued down the highway having five miles to clear on foot to his neighborhood . 
+ if the atlanta police department were unprepared for an emp strike , terrance believed that rioting and looting were n't too far off . 
+ maddening frustration was in the air , especially over the decimation of their cell phones . 
+ people were throwing their phones on the ground in a rage , smashing them to pieces . 
+ no one seemed to know how to cope . 
+ tensions were high and would soon grow higher . 
+ christina sat in the kitchen of their house about to light a cigarette when she hesitated , lighter in hand . 
+ she quit six months ago . 
+ that was her story . 
+ only now the power was out , and her 1996 two-door red chrysler lebaron would n't start . 
+ it was 9:30 , and she was thirty minutes late for work . 
+ what she had n't told terrance was that she kept a pack hidden in the kitchen drawer , stuffed behind a heap of junk mail . 
+ tobias , richie , and paula were all at school , their third week of a new grade , and for the most part , they seemed to be doing well . 
+ she did n't know what to make of the sudden power outage . 
+ it unnerved her , as did her car not starting or her cell phone not working . 
+ christina walked outside , put the month-old cigarette between her lips , held the lighter up , and lit it . 
+ three miles from the house , terrance tried the handheld radio once again . 
+ he turned the frequency knob -- with numbers in intervals of ten from 1 to 100 , searching for a signal that would allow him to call christina . 
+ in the past , he had told his family to always go to channel 40 . 
+ he had no better luck on 40 than he did on any other channel . 
+ he had no way of knowing if any member of his family even had their radios on . 
+ as he got deeper into the city , he saw the inner workings of pure chaos in the making . 
+ it was n't just cars and cell phones . 
+ power was out through the entire city . 
+ shops were hastily closing their doors . 
+ people on foot marched through the streets aimlessly , trying to find a bus or taxi to take them home . 
+ those who had been on buses soon ventured out and joined the others walking . 
+ the city was no place to be . 
+ once those grappling with the loss of power or transportation realized that things were not going to go back to normal , it would be a much more dangerous world . 
+ that was terrance 's thinking . 
+ `` the end is here ! 
+ the end is finally here ! 
+ do ya ' hear me ?! '' 
+ an unkempt vagrant shouted , jumping in front of terrance . 
+ terrance pushed him aside and kept walking . 
+ he saw the familiar off-ramp exit a mile ahead , the one closest to his neighborhood . 
+ the likelihood that atlanta had been hit with an airborne emp seemed greater with each moment . 
+ he thought of the bug-out van . 
+ if his handheld radio survived the emp blast , there was a chance the van had too . 
+ terrance remained positive . 
+ it was his motivating factor to getting back home on foot . 
+ christina had just finished her second cigarette . 
+ she was wearing her green work polo shirt , and black slacks , but going to work seemed unlikely . 
+ she wanted to see if the power outage extended beyond the neighborhood . 
+ she had n't walked her neighborhood streets in some time . 
+ a slew of recent break-ins had made her neighbors paranoid and antisocial . 
+ she looked at her smart phone again . 
+ its lifeless screen gave no solace . 
+ she could n't charge it any more than she could drive her car to work . 
+ she walked back inside and sat in the kitchen , trying to wrap her head around everything . 
+ she thought of terrance on the road , wondering if he was okay . 
+ wondering if he was stranded somewhere on the highway . 
+ then she remembered the radio , the embarrassingly bulky radio , bundled in ziploc bags and aluminum foil , which she had been carrying in her purse for so long . 
+ it could be her only way of getting in touch with him . 
+ she grabbed the radio from her large green vinyl purse on the kitchen table left the kitchen , tearing away the protective wrap . 
+ she swung open the screen door and walked down the steps of their front porch onto the modest patch of lawn . 
+ she held the radio up in front of her and switched it on . 
+ the sound of static was like music to her ears . 
+ after stepping over paula 's bicycle in the middle of the lawn , christina fiddled with the knob trying to remember which channel terrance had told her to use . 
+ after a frustrating start , she heard what sounded like a voice . 
+ she froze and held the radio as still as she could in the air . 
+ `` robinson family . 
+ are there any robinson family members out there ? '' 
+ christina 's eyes lit up with joy . 
+ it was terrance . 
+ she brought the radio to her lips . 
+ `` terrance , terrance , it 's me , baby . 
+ it 's christina . '' 
+ her heart was pounding . 
+ a pause . 
+ `` that you , christina ? '' 
+ his voice was muffled , but it was him . 
+ `` yes , it 's me ! 
+ i just told you that . '' 
+ `` i 'm coming ... '' his voice faded slightly . 
+ christina held the radio to her ear then brought it back to her mouth . 
+ `` what 'd you say ? 
+ i 'm losing you , '' she said . 
+ his voice came back louder . 
+ she could hear that he was breathing heavily . 
+ `` i said i 'm coming home , '' he repeated . 
+ `` truck broke down . 
+ power 's out everywhere . 
+ i 'm on foot and will be there in about an hour . 
+ i 'm exhausted . 
+ the sun 's killing me . '' 
+ `` but the bug-out van , i could come get you , '' she said . 
+ `` no . 
+ do n't touch it . 
+ just wait for me to get home . 
+ we have to get the kids . '' 
+ `` you crazy ? 
+ you 're not gon na last an hour in this heat . '' 
+ she said forcefully . 
+ `` already walked a couple of miles . 
+ i 'll be fine . 
+ do not take the van . '' 
+ christina did n't know where the keys were , anyway . 
+ terrance could have them , for all she knew . 
+ `` call the kids ... '' terrance said . 
+ `` i got ta save power on my end . 
+ keep trying the kids until we hear something . '' 
+ christina thought it unlikely the kids would have their radios on , but she agreed to try calling them anyway . 
+ `` terrance ... '' she paused . 
+ `` terrance , what 's going on ? '' 
+ `` emp sweetheart ; it 's taken out all the power . '' 
+ `` are you sure ? '' 
+ she asked , her voice trembling . 
+ `` no . 
+ i 'm not . 
+ but it 's the only thing that would explain it . 
+ atlanta is gon na turn real bad real soon . '' 
+ `` what are you saying ? '' 
+ `` i 'm saying we need to get the hell outta the city . '' 
+ `` but , terrance , '' christina began . 
+ `` just listen to me . 
+ we 're gon na get through this . 
+ together . 
+ it 's the only way . 
+ i got ta go . 
+ get the kids on the radio . '' 
+ terrance was off the channel , leaving christina with only static . 
+ he got under her skin at times , especially when he was short with her , but she wanted to trust his instincts . 
+ terrance had made it a long way , the walk nearly bringing him to his knees as he inched his way toward their neighborhood street , maltby drive . 
+ drenched in sweat , his hat doing what it could to shield him from the merciless sun , he pushed on . 
+ the backpack sagged heavier with each mile . 
+ it dug into his shoulders and had trapped the heat and sweat on his back . 
+ he had already downed two bottles of water with only one left . 
+ `` richie , tobias , paula , are any of you there ? '' 
+ christina called into the handheld . 
+ she was outside pacing throughout their tiny lawn . 
+ a couple passed by on the sidewalk and gave her a strange glance . 
+ her voice grew more desperate by the moment . 
+ after five minutes of calling , she heard a voice of a teenage boy on the other end . 
+ she could n't tell which son it was at first but was ecstatic nonetheless . 
+ `` that you , mom ? '' 
+ the boy asked . 
+ `` who 's this , tobias or richie ? 
+ where you boys at ? '' 
+ `` it 's tobias , mom . 
+ i 'm in class . 
+ i do n't know where richie is . '' 
+ suddenly another voice came over the transmission . 
+ `` i 'm in school too , you dummy . '' 
+ `` richie , is that you ? '' 
+ christina asked . 
+ `` it 's me . 
+ school 's a mess right now . 
+ all the power 's out . 
+ do you and dad know anything about this ? '' 
+ `` listen , boys , we do n't have a lot of time . 
+ your father 's truck stopped working on the highway . 
+ he 's coming back . 
+ have they released anyone from school yet ? '' 
+ there was a slight pause . 
+ `` no , '' tobias said . 
+ `` no , '' richie answered . 
+ `` i want you both to find each other and stay together . 
+ if your father 's van works , we 'll come get you . 
+ if not ... you 'll both have to walk home . '' 
+ another pause . 
+ then richie , sounding upset , came over the radio . 
+ `` walk home ? 
+ are you crazy ? 
+ it 's one hundred degrees out there . '' 
+ `` that 's only if his van does n't work . 
+ if it does , we 'll come get you . '' 
+ `` they opened all the windows , told us to wait until they figured out what was going on , '' tobias said . 
+ `` i 'm outside anyway , sitting football bleachers . 
+ i was n't gon na sit in class like the rest of them , '' richie added . 
+ `` boys , listen to me . 
+ tobias , i need you to find your brother , and i want both of you to stick together until we get there . 
+ if we get there . 
+ go to the football bleachers and wait there with your radios . 
+ the reception will be better outside . '' 
+ she could almost hear richie sighing on the other end . 
+ `` why are you freaking out ? 
+ what 's the big deal this time ? 
+ end of the world again ? 
+ this is ridiculous . '' 
+ she wanted to choke him over the radio but tried to control herself . 
+ `` richie , '' she said sternly , `` now is not the time . 
+ just do as i ask . '' 
+ she paused for a moment then pressed the side button to speak . 
+ `` meet richie at the football field . 
+ both of you stay there and wait for us to call you over the radio . '' 
+ as she lowered her radio , she noticed a figure lurching toward her from down the street . 
+ it was a tall man moving beyond the waves of heat rising from the hot pavement , looking almost as if he were a mirage . 
+ the man was wearing a red and white tucked-in plaid shirt , blue jeans , and a hat . 
+ it was terrance , the only man in the neighborhood who dressed like him . 
+ she ran from the yard and down the sidewalk to her exhausted husband at the end of the hill . '' 
+ terrance ! '' 
+ she shouted . 
+ terrance looked up at her as if getting his second wind . 
+ she jumped into his arms , pushing him a few steps back . 
+ `` thank god you made it ! '' 
+ he gasped for air . 
+ christina stopped and looked at him . 
+ `` you crazy man , we need to get you inside before you die of heat stroke . '' 
+ he nodded as she led him up the hill , past the suspicious eyes of their neighbors and into their home . 
+ once inside , terrance took off his backpack , plopped down on the living room sofa , and dropped his hat to the floor . 
+ `` i opened up all the windows . 
+ there 's a slight breeze outside , so it might help . '' 
+ she walked toward the kitchen . . 
+ `` it 's good enough . 
+ just glad to be out of that sun , '' terrance said , taking a swig from his last bottle of water . 
+ `` did you get in touch with the kids ? '' 
+ christina walked back to the living room and handed terrance a glass of cold water . 
+ he took it as she sat on the couch next to him . 
+ `` better enjoy it while you can . 
+ fridge ai n't gon na stay cool for much longer . '' 
+ `` you speak to any of the kids ? '' 
+ he asked again . 
+ `` i talked with richie and tobias , but not paula . 
+ i 'm not surprised either . '' 
+ `` they in school ? '' 
+ `` yep . 
+ they 're there . 
+ both of 'em said that the power was out and everything else too . 
+ cars , cell phones , damn laptops . 
+ just like here . '' 
+ `` honey , it 's an emp . 
+ i know it . 
+ this is what they do . 
+ we 've been attacked . 
+ this city is going to eat itself alive ─ '' christina placed her palm on terrance 's face , silencing him . 
+ `` we ca n't get all worked up about it now . 
+ we got to get our kids . 
+ you got to see if that van 'll work . '' 
+ terrance nodded in understanding . 
+ `` all right , '' he said , rising from the couch . 
+ `` i 'll go out back and try it . 
+ if it starts -- if by some miracle we can drive it , we get the kids , bring them back here , and start packing . '' 
+ `` packing ? '' 
+ christina asked . 
+ `` milledgeville . 
+ the bug-out house . 
+ our family will be safe . '' 
+ `` but the kids ─ '' she began . 
+ terrance moved from the touch . 
+ `` but the kids what ? '' 
+ `` we 're gon na have to sit down and talk with them . 
+ they 're gon na want to know why . '' 
+ `` so we try to tell them ... '' terrance began . 
+ `` in the calmest manner possible . '' 
+ the bug-out van , a blue 1977 gmc chevrolet , was parked in the backyard under a large blue canopy . 
+ weeds had long grown around it , but the vehicle itself was in relatively good condition . 
+ terrance had started it up only a few days ago . 
+ he regularly drove it to get fuel running through it , from its thirty-five-gallon tank . 
+ he opened the driver 's side door , holding onto the hope that he had left . 
+ he sat in the driver 's seat and took a deep breath . 
+ the moment of realization had come : he and his family were pinning their hopes on a piece of machinery over forty years old . 
+ terrance felt that his family 's very survival depended on it . 
+ he stuck the key in the ignition , almost not wanting to turn it . 
+ `` you gon na sit in here all day , old man ? '' 
+ he asked himself . 
+ `` turn the key . '' 
+ he closed his eyes and made himself do it . 
+ the engine sputtered then shut off . 
+ `` shit , '' he said . 
+ he tried again . 
+ the engine choked and heaved . 
+ `` son of a bitch , '' terrance said , slamming his fists on the steering wheel . 
+ he placed his hand on the shift lever mounted on the steering column , and lowered his head in prayer . 
+ a few seconds later , he pumped the gas and brake pedals with hopes of running some juice through the car before trying again . 
+ `` one ... two ... three , '' he said , and then he turned the key . 
+ the engine kicked in and came alive in all of its internal combustion glory . 
+ terrance held the gas pedal down , revving the engine to its top speed , then slowly releasing his foot . 
+ the van idled without a hint of a problem . 
+ terrance raised his head in relief . 
+ he wiped the sweat from his face with a nearby rag and looked at the van 's red liner above . 
+ his heart was beating rapidly , and he did n't know if it was because of excitement , panic , or outright exhaustion . 
+ christina heard the sound of the engine and came running outside of the house . 
+ `` you got it working ! 
+ i ca n't believe it , '' she cheered . 
+ she poked her head inside and practically jumped into the driver 's seat . 
+ `` hop in , '' terrance said `` let 's go get our kids . '' 
+ `` do we have enough fuel ? '' 
+ she asked . 
+ `` might have to use some of the reserve , but we 'll get there , one way or another . '' 
+ `` aye , aye , captain . '' 
+ the blue van slowly lumbered from under the canopy and out of the backyard . 
+ they were soon on the road , gaining the attention of every bewildered person they passed . . 
+ prepper headquarters monday september 21 , 6:00 p.m. milledgeville , ga the four-bedroom , two-bath home in milledgeville was an ideal retreat for trying times . 
+ the house was supplied with well water , and in the event of a prolonged power outage , several twenty-two-kilowatt standby generators had been installed as a backup power source . 
+ james had also installed shielded solar panels designed for low-capacity power storage . 
+ in all , there were three diesel fuel generators and ten solar panels . 
+ james had spent the better part of the year preserving , drying , freezing , and pickling all kinds of fruits , meats , and vegetables . 
+ even preserved food expired at some point , so he always paid close attention to what he was storing and for how long . 
+ each room had a bed or two , a dresser , a closet and other furnishings . 
+ having several different families together under one roof for an unknown period of time could be problematic if morale sunk too low . 
+ james did all he could ahead of time to ensure that the house was sustainable , livable , and practical for all who would soon be there , taking shelter from the storm . 
+ he knew that the robinsons had three kids -- a young daughter and two teenage boys . 
+ he had met them before and thought them to be a good bunch , but problems could arise during an extended stay . 
+ they would no doubt grow restless after a while , as kids did , adding stress to an already stressful situation . 
+ in the end , he just hoped that their parents would keep them under control . 
+ monday had been a day like no other , starting when james had to flee work in his bug-out truck after canceling classes . 
+ if all electronics had been destroyed in a single blast , it could take months , even years , before normalcy was restored . 
+ if a high-altitude nuclear electromagnetic pulse -lrb- hemp -rrb- had been launched over the greater georgia area , the radius stretch for towns , even cities . 
+ such an attack would change everything . 
+ he and the other preppers had little faith in the state and federal government 's ability to manage a major crisis . 
+ the concept of the bug-out house was to live self-sufficiently , and out of necessity . 
+ only time would tell if it worked out in the end . 
+ james spent the latter part of the afternoon in his basement monitoring the radio and trying to find out anything he could . 
+ his cell phone no longer worked . 
+ upstairs , his computer was fried , and the television was out of commission . 
+ these were appliances that were all plugged in , which could explain their demise . 
+ however , the back-up generators still functioned , probably due to the protective metal casing james stored them in . 
+ he had turned on the generators earlier and did a walk-through of the entire house , logging what did and did n't work . 
+ all the newer electronic appliances were nonfunctional . 
+ the house never had any central air conditioning , except for window units . 
+ each room had overhead fans . 
+ the washer and dryer did n't work . 
+ the refrigerator and downstairs freezer ran off of large batteries . 
+ the toaster and blender still worked . 
+ the kitchen appliances were antiques , manufactured over forty years ago . 
+ they lacked the complex micro-circuitry of new devices such as computers , flat-screens , laptops , and smart phones . 
+ water sill flowed from the kitchen sink . 
+ there was no dishwasher to worry about , but the oven worked just like new . 
+ the hot water heater was no longer working properly , which concerned james most of all . 
+ the septic tank was buried deep below the house , and seemed to be working fine . 
+ after checking everything in the house , james turned the main circuit breaker off and powered down the generators . 
+ power conservation was the key , and until the others showed up , james would do his best . 
+ james sat in the basement , and listened . 
+ the radio was free from chatter of any kind . 
+ he had heard only from mark moss and nothing from the robinson family . 
+ maybe atlanta had been hit hard . 
+ sprawling and heavily populated , it was not the place one wanted to be before , during , or after attack . 
+ then again , the attack might not have hit atlanta at all . 
+ james hoped that the robinson family was okay . 
+ he knew terrance to be a resourceful guy and had faith that they he would get his family to the bug-out house if necessary . 
+ james ' mind drifted to his son and grandkids in california . 
+ he wondered how they were holding up . 
+ he faced a crushing desire to contact them and verify that they were out of harm 's way . 
+ his mind drifted back to his classroom and the moment when the attack began . 
+ everything had happened so fast . 
+ he started to think about his students and colleagues at the university . 
+ things were n't good . 
+ he felt sick inside . 
+ what was in store for everyone ? 
+ did it end with an emp attack ? 
+ what else did they face ? 
+ a nuclear attack ? 
+ biological warfare ? 
+ there were no answers . 
+ the most james could do was to sit by the radio and wait . 
+ the basement itself was heavily stocked with foods and supplies . 
+ its naturally cool temperature was ideal for storing items with a long shelf life . 
+ jars of canned , pickled , and dried food lined the shelves in the small pantry , adjacent to the main room . 
+ other shelves within the basement were stocked with medical supplies , batteries , flashlights , kerosene lamps , matches , soaps and detergents , baby wipes , and gallons upon gallons of purified water . 
+ the basement also had its share of stored weapons , hunting rifles , pistols , and shotguns all stored in a large security safe , along with a sizable amount of ammunition . 
+ he had stored weapons and ammo as a last line of defense , if the bug-out house was ever attacked . 
+ it was a scenario james hoped , with all his heart , would never play out . 
+ he expected mark and janice to show up soon , either at night or by morning . 
+ he began to worry about terrance , as he had heard nothing from him . 
+ james leaned back in his chair and took a sip of brandy from his favorite little glass . 
+ it helped calm his nerves and he had stored a fair amount of alcohol storage in the basement as well . 
+ as he took one last sip , the sun fell slowly below the clouds . 
+ nightfall was approaching . 
+ james fiddled with the radio knob , continuing his search through the channels in hopes of hearing from terrance . 
+ a few things were clear to him . 
+ first , he believed the blackout to be caused by an aerial emp . 
+ second , the blast had n't destroyed everything , and the overall complexity of its effects had yet to be fully discovered . 
+ it would take more time to figure out why certain objects worked and others did n't . 
+ third , government 's response to an emp attack remained to be seen . 
+ as questions raced through his head , james heard a tiny coming from the radio . 
+ he jumped forward and nearly fell out of his chair in the process . 
+ he leaned in closer and turned up the volume . 
+ the voice crackled in and out , barely intelligible . 
+ james turned the reception knob slightly in an attempt to get a better signal . 
+ suddenly the voice came through with urgent clarity . '' 
+ ... food , water , and shelter . 
+ you have coordinates , hurry before it 's too late . 
+ again , this is a message to all survivalists . 
+ calling all survivalists , this is a message for you . 
+ at approximately nine this morning , the state of georgia , as well as several surrounding states was hit by a high-altitude nuclear emp . 
+ the blast reportedly occurred at 130,000 feet in the earth 's atmosphere . 
+ the damaging pulses distributed by the blasts have taken out roughly 70 percent of georgia 's power structure , affecting cell phones , computers , and vehicles . 
+ planes already in flight seem generally unaffected as are helicopters and military trucks . 
+ if you 're receiving this message , a lot of you already know this . 
+ you 've been preparing for a situation just like it . 
+ now that it has happened , you , like everyone else , are left wondering what to do . 
+ what you need to do is join us . 
+ join our survival camp . 
+ no matter how prepared you are , your supplies are n't going to last forever . 
+ no matter how well concealed or hidden you are , you wo n't stay hidden forever . 
+ even if your vehicle is still running , you 're fuel wo n't last forever . 
+ at the survival camp , we do n't promise to have an endless supply of anything . 
+ but what we do have is an abundance of good people . 
+ survival experts . 
+ people that can hunt , kill , and cook their food . 
+ people who can purify water . 
+ those who have helpful skills and even those who do n't . 
+ mainly we accept those who can contribute , but all are welcome to our camp . 
+ if you or your family are interested , prepare to copy as i lay out the coordinates of our location . 
+ it 's very secure and removed from densely populated areas . 
+ our position is represented in degrees and can easily be found by using a map and compass . 
+ we are located at 41 degrees north latitude and 96.7 degrees west longitude from the oconee river landmark in central georgia . 
+ this is the place you need to be , with other survivalists like you . 
+ we have plenty of food , water , and shelter for everyone . 
+ you have the coordinates ; hurry before it 's too late . 
+ one more time , this is a message to all survivalists ... '' and on the message went . 
+ it had gotten james 's full attention . 
+ he dutifully copied the coordinates onto his note pad just in case . 
+ he switched the channel again in hopes of finding terrance . 
+ the urgency of the radio message seemed strange so early in the emp strike , but the message did help verify what james thought . 
+ it meant that there were other people , just like them , who were out there preparing for the worst . 
+ there came a time when one had to accept fate . 
+ when one had to accept that things were not going to be the way they had been . 
+ the choice between denial and acceptance was clear for james . 
+ he wanted to live in the now . 
+ survival camp in a darkened room , slightly illuminated by a single lamp on the table , a man named russell sat in front of a large and sophisticated radio unit . 
+ he hovered over the microphone like a radio talk-show host . 
+ only he had no show to perform . 
+ his job was to send a pre-written transmission over the radio every ten minutes , spreading the benefits of `` survival camp . '' 
+ he pushed the microphone away , propped his feet up on the table , and leaned back . 
+ his dark , stringy hair hung over his forehead and into his eyes . 
+ he was a thin man with a sunken face , and though he could n't have been more than thirty , his face was already deeply etched with wrinkles . 
+ he was satisfied with himself , but his expression did n't show it . 
+ he brushed his hair aside with his free hand , and simply stared ahead , cold and expressionless . 
+ in the shadows behind him , several other men sat at desks scribbling into notebooks and examining maps of the state of georgia . 
+ they dressed like a dated militia in old camouflage pants , black , long-sleeved shirts , and boonie caps . 
+ one of the men , named kyle , with a graying beard , made some marks on his map then rose from his chair and walked over to the radio . 
+ he placed a hand on the russell 's shoulder , gaining his attention . 
+ russell turned around quickly and took his feet off the table . 
+ `` whoa , did n't see you there , '' russell said . 
+ `` how you holding up ? '' 
+ kyle asked . 
+ russell coughed . 
+ `` doing fine . 
+ just sent another broadcast . '' 
+ `` good , here i wanted to show you something , '' kyle said , placing the state map on the table . 
+ he ran his index finger across the map and continued . 
+ `` we 're looking at this entire area potentially becoming some kind of fed refugee center . 
+ that 's what i gather anyway . '' 
+ `` based on what , exactly ? '' 
+ russell asked . 
+ `` based on the fact that georgia ranks twenty-fifth in the state bankruptcies . 
+ fifteenth in unemployment , and currently it has one of the largest welfare rolls in the country . 
+ in short , we 're living in a ticking time bomb . 
+ i give it a week . '' 
+ russell ran his hands over his scraggly face . 
+ `` jesus ... this emp business is the real deal . 
+ who are we looking at here , russia ? '' 
+ `` no idea . 
+ in all honesty , my sources warned that it was going to be a dirty bomb , not this emp business . '' 
+ `` we need more people here , and we need them here soon . 
+ not just any dipshit off the block either . '' 
+ `` you specified survivalists , right ? '' 
+ kyle asked `` yeah , of course , '' russell said , sounding annoyed . 
+ `` survivalists , preppers , hunters , gatherers , all of that shit . 
+ i know what i 'm doing here , thanks . '' 
+ just as russell wrapped up , he began to cough violently . 
+ his coughs were startling and painful sounding . 
+ kyle placed his hand on russell 's back and gently patted . 
+ `` russ , maybe you should take a break , you know ? '' 
+ `` nonsense , '' russell said , his eyes watering . 
+ `` we get some more people here , and then i 'll relax a little . '' 
+ `` at least get some sleep , '' kyle said . 
+ `` i ca n't sleep . 
+ i 've tried for the past three days . '' 
+ `` you 're a wreck , '' kyle added . 
+ then he began walking away . 
+ russell propped his feet back up on the table . 
+ he grabbed the microphone and pushed the transmitter button on its base . 
+ he stared down at his ledger and repeated the written words once again into the mic , just as he had done before . 

@@ -1,0 +1,1123 @@
+ superior games books ™ t4x 1e8 4813-43 ave. beaumont , ab copyright © 2011 by david l. dostaler . 
+ all rights reserved . 
+ cover art : © 2011 by laura e.c. dostaler . 
+ all rights reserved . 
+ interior art : © 2011 by laura e.c. dostaler and david l. dostaler . 
+ all rights reserved copyright notice : no part of this book may be reproduced in any form or by any means without permission in writing from the author . 
+ first printing : december , 7th , 2011 isbn 978-0-9868840-2-3 published by david l. dostaler at smashwords contact info : if you have any questions or comments about these adventures please write us a letter using the contact address above . 
+ thank you . 
+ you may also contact us by e-mail at : sendmedavid404145@hotmail.com or by phone at : -lrb- 780 -rrb- -929 -9860 please be sure to include `` challenger rpg '' or similar in the title of any e-mails so we do n't accidentally delete them as spam . 
+ thank you . 
+ adventure pack one wrath of the gods , a marvelous time , killer dungeon , monsterville , into the north , secret agent caper , and the quest for the holy grail by david l. dostaler contents chapter one : into the north chapter two : secret agent caper chapter three : the quest for the holy grail chapter four : the fugitives of monster land chapter five : killer dungeon chapter six : wrath of the gods chapter seven : a marvelous time introduction throughout this adventure pack you will find some similarities : all adventures include text in italics which may be read aloud to the players or paraphrased as you wish , all monsters stat blocks will be in the same format as in the full challenger book , and all dungeons will be listed in terms of encounter numbers which can be placed on your own personally-created dungeon as you wish . 
+ to use this book properly you will need a copy of the full challenger role-playing game which is available for free in many places across the internet . 
+ even if you do n't have this product , you can easily adapt any system you 're using to suit these adventures , especially the of mice men and wizards game system which works particularly well with these quests . 
+ this adventure pack contains 7 complete adventures for use with your challenger role-playing game system designed to get you started and take a band of 1st level heroes all the way to 32nd level and beyond . 
+ this is somewhat an exaggerated xp gain ratio , but it should serve to illustrate the games mechanics to new players and get you started on creating your own epic campaigns . 
+ about dead characters the following adventures are extremely deadly so if any of the characters in your group die you may create new ones to replace the fallen heroes at the average level of the surviving members of the group . 
+ if everyone dies , the gm may laugh diabolically , and then allow the players to create new characters of a level capable of taking on the adventure they 're currently embarking on and try it again . 
+ adventure conversion to convert the following adventures to of mice men and wizards standards , you should convert rr to ar , and so forth . 
+ this also works well for other game systems with similar armor systems . 
+ rr equals target number or armor rating , etc. . 
+ all xp should also be divided by 10 or more . 
+ how to prepare for adventure generally , you should gather as many of the following items in the shortest amount of time as possible : friends to game with , chairs , a table , dice , pencils , paper , a copy of the rules , this book , snacks , beverages , chips , soda , more snacks , miniature figures , and snacks . 
+ particularly keen gm 's and players may plan breaks and also create characters in advance , but this is not required . 
+ gm 's also tend to read the adventures they plan to play through beforehand to limit the number of awkward silences wherein everyone has absolutely no clue in heck what 's supposed to happen next . 
+ it is recommended that you only play one adventure herein at each sitting : savouring all the fun you can squeeze out of each scenario to the last drop . 
+ experienced gm 's -lrb- including myself -rrb- tend to laugh uproariously at such recommendations , play all the adventures in one clean sweep -- without more than a cursory reading of the scenarios -- and then harshly berate the game designer afterwards for any shortcomings in the game because the guy obviously sucks at adventure design and can come nowhere close to your own , personal genius . 
+ a word for complete n00bs if you 're reading this , you 're the gm : the ` computer ' of a roleplaying game . 
+ familiar with wow ? 
+ you 're basically all the servers , the entire blizzards design team , and the guy who refills the coffee machines and sweeps the floor all rolled into one . 
+ it 's your job to fix ` system errors ' and impose ` patches ' when you run into any problems during the game . 
+ sure , there 's the temptation to mess everything up , but if you actually owned wow would you really want to do that ? 
+ better to keep the moolah rolling in from your paying customers ` the players ' i should think . 
+ because the players are your ` customers ' they 're always right and you want to keep them happy . 
+ you do this by being fair , and judging the rules however you freakin ' want , to make the best game world possible on your ` server . ' 
+ you should input the below adventures into your ` memory ' so when the players want to quest -lrb- ! -rrb- 
+ you can deliver the goods and when they have any questions -lrb- ? -rrb- 
+ of absolutely freakin ' anyone in the game world or about the game system itself , you can answer them . 
+ if this seems like an outrageously big job , just remember the golden rule of gming : `` when in doubt , make it up . '' 
+ you can always find the ` right ' way to do it later and put in a new ` patch . ' 
+ each of your players will control a character somewhat like a wow account except all their stats are a combination of the rules from the basic challenger book and their imaginations , and it 's all written down on a piece of paper rather than a heartless digital file somewhere . 
+ you can basically consider them expert hackers who are your only paying customers so you want to keep them happy and keep their ` hacking ' -lrb- imagination -rrb- in line so things are fair between them , challenging -lrb- so they have fun -rrb- , and fun for you : the entire design team . 
+ the payoff ? 
+ ever been stuck in some wretched part of a computer game and wished you could do something not written ? 
+ ever wished you could create your own computer game ? 
+ ever wished the ` server ' was personally run by you and the entire design team was ready to implement any ` mods ' you ever requested ? 
+ ever realized that a thinking , feeling opponent is much better than a computerized one and the ` chat ' in the game is much more fun than the game itself ? 
+ those are your payoffs as the gm . 
+ you 'll also get to put in whatever ` mods ' and ` patches ' you want , add new ` worlds ' ` adventures ' and ` pretty much freakin ' bloody anything you want ' to your ` server ' . 
+ have fun ! 
+ once you get a handle on the basic way to run things -lrb- by playing these adventures and randomly browsing the challenger rulebook -rrb- you can feel free to run wild and make this game your own : designing your own adventures , characters , rules , worlds , and sweet magical loot . 
+ good luck , and let the adventures roll ! 
+ chapter one : into the north you live in the mighty kingdom of sileeria in the world of korg . 
+ it is a magical place populated by beast-men , dragons , and demon lords . 
+ you are one of a select few , the best of the best , those hardy and stalwart heroes known as adventurers . 
+ you are a beacon of hope to the people in troubled times , and these are troubled times indeed . 
+ recently there has been a rash of break-ins throughout the northern trading village of goran . 
+ the wise and respected leader of your people , duke gerrald , has requested that you assemble with a troop of the finest warriors the land has to offer and lead an expedition into the northlands where the thieves are rumored to have fled . 
+ the meeting with duke gerrald the duke , gerrald , lives in a stately manor with many servants and butlers about . 
+ he has several very pretty serving girls , but you are led away before you can do anything about them . 
+ the butler pushes in a set of double doors and you see a scene right out of the night before christmas : a crackling fire , dogs laying about on each other , and a friendly red-faced man wearing a black , bear skin coat that makes him look like a viking sitting behind a polished oak desk . 
+ he waves to you . 
+ `` i 'm glad you could come so soon , heroes , the world needs more men and women like you . '' 
+ the duke is generally straightforward and helpful , giving everything the heroes need to them and providing any information they might request . 
+ he sends a band of his ten best warriors with them , supplies , donkeys , gives them winter gear for the journey , and will provide each of them with 20 pieces of gold to buy any extra supplies or favours they may need on their journey . 
+ if they so ask the duke is willing to provide them a reward of 200 gold pieces each from the cities coffers , but that 's all he can afford . 
+ when they are ready to go he gives them a final word of warning : the duke frowns with concern for your safety . 
+ `` i know you 're used to beating people up here where it 's warm , but up north ... . '' 
+ he trails off . 
+ `` things can get cold , dead , and weird pretty freakin ' fast . 
+ believe me , i know . '' 
+ he pulls up his pantleg to reveal his leg cut off below the knee with only a wooden post in a boot . 
+ `` frostbite . 
+ take care and bring warm clothes , my friends . 
+ i bid you good luck and may the thieves rue the day they set foot in our kingdom ! '' 
+ witnesses to the break-ins are scant , but it is known that the leader of the thieves was a ferocious dwarf accompanied by some fell beasts , one of which could breath fire . 
+ they stole most everything of value they could find in at least 50 homes , and seemed to have a particular leniency to things made of gold . 
+ the north a frozen tundra sparkles into the distance as far as the eye can see , broken only by massive glaciers and dark gray storm clouds whipping blizzards in the distance . 
+ you can see one point of sparkling light on the horizon . 
+ perhaps an outpost or trapper 's cabin . 
+ you 're badly in need of supplies now , though you were careful with your food , right ? 
+ so you feel a strong desire to make for this apparent ` settlement ' . 
+ it 's up to the pcs whatever they 'd like to do , but if they do n't head out to the settlement they 'll likely run out of food and oil and then either starve or freeze to death . 
+ if they hunt wild animals , build igloos , or otherwise use such tactics you can feel free to call for skill checks , make them role-play , and otherwise ` work ' for their supplies . 
+ feel free to describe icy winds , hit the pcs with avalanches , snowstorms , hungry wolves , polar bears , crazed natives , and just about anything else you want . 
+ now is also a good time to have some of the pc 's men freeze to death to illustrate the point . 
+ old ned if the pcs actually head out to investigate the pinpoint of light on the horizon they find a crazed old man in an abandoned trading post who has a stockpile of whale blubber and oils from the last time a whale was caught not far from here . 
+ he 's a wily old coot and will try to con the pcs out of as much money and goods as possible without giving them anything . 
+ the pcs can fight him , haggle with him , role-play , or otherwise do whatever they 'd like . 
+ you see three long structures made of frozen wood , windows unlit before you . 
+ it appears you 've found an abandoned trading post . 
+ maybe you can find some leftover goods and supplies here ? 
+ when the pcs investigate you can have the old man pop out at them . 
+ you here a flurry of snow and a blur of movement catches the corner of your eye . 
+ before you can spin around a bent old man stands before you grinning crookedly . 
+ `` hello boys , welcome to fort ice , ha ha ha , i hope you 've come to trade ? '' 
+ his yellow eyes twinkle under mad white hair that wreaths around his head . 
+ he 's quite mad and has some slight magical powers allowing him to teleport and change his shape , but nothing too elaborate . 
+ if interrogated he 'll reveal that he saw a band of elves led by a dwarf in a white suit heading up north with a sledge full of some shiny goods he would have loved to get his hands on . 
+ the cane as you head farther north and the temperature continues to drop you spot a short pillar in the ground before you . 
+ it appears to be a spiraled red and white pole . 
+ could this be the north pole ? 
+ the pole is actually a giant candy cane dropped by the dwarf on his way north . 
+ it can be used by a magical character as a stave of mesmerization . 
+ any creature it is pointed at must make a will save at +2 -lrb- 10 % -rrb- or be mesmerized for 1 round +1 round per successively failed save as long as the owner of the staff concentrates on that subject . 
+ harming the subject negates the effect . 
+ the staff has five charges . 
+ any character who approaches the staff finds the hooked end is buried under the ice and the staff tastes like mint . 
+ also , a pack of white wolves descends on the party . 
+ they 've found that animals like to come and lick the staff so they hunt here . 
+ if half the wolves are killed the others flee . 
+ there are 10 wolves . 
+ winter wolf hp 1 rr 14 damage 1d6 movement : 4 gold : 0 -lrb- meat and wolf pelt -rrb- xp : 50 each . 
+ special : any wolf who hits a target locks their jaw onto the target preventing teleportation , flight , and use of magic , and also increasing the rr of any other wolves attacking that creature by 2 to a max of rr 18 . 
+ escape artist rr 15 releases the captive . 
+ seal carcass the next day you find the markings of hoofed creatures and a large sledge in the snow . 
+ there must have been at least a half dozen of the creatures and the sledge was quite large . 
+ you find a broken section of ice bordering the sea and the bloody carcass of a half-eaten seal . 
+ it was apparently ripped apart and hacked up by a dwarven axe . 
+ rr perception 14 reveals a small silver bell that , when thrown , detonates as a grenade of 2d6 damage to any one target it strikes -lrb- rr 10 to hit man-sized creature -rrb- . 
+ the workshop a large building looms up under the shadow of nearby mountains . 
+ the windows are tall and brightly lit as if from heated forge-fires within . 
+ several side buildings doubtless hold supplies and the individual cabins of the thieves . 
+ you can see a steel railway leading up into a nearby mountain . 
+ this is the workshop of saint nick the thieving dwarf . 
+ he 's captured a load of elves and shrunk them with magic . 
+ they are now his mind-controlled slaves and do whatever he requests of them . 
+ at first he had them craft him magic items and wondrous pieces of gold and art from the loot he plundered , but now he 's decided it 's a much greater insult to them to have them fashion toys for children . 
+ it is his personal mark to leave behind wooden trains and small bears at the residences he steals from . 
+ he 's not finished with goran , so he has n't left his trade marks yet . 
+ nick the dwarf has a bag of extra-dimensional space he stores his loot and ` toys ' in , a magical flying sledge which obeys only his command , and a team of eight reindeer beasts who are loyal only to him and guard him fiercely . 
+ he also has one special reindeer who is huge and muscled , has a red nose , is ill-tempered , and breaths fire . 
+ currently he 's in his cabin gloating over his new loot . 
+ encounter areas there are three primary areas the pcs could explore : the workshop , the cabins , and the mines . 
+ each one is listed below . 
+ there is also a stable where the reindeer await their next victim with the magical sled that only obeys the dwarf , nick . 
+ the workshop you push in the large door and find row upon row of tiny shrunken elves hammering mercilessly on cheap wooden trains and stuffing dolls and teddy bears with a vengeance . 
+ the furnaces are constantly being fed coal by the little elves in chains and melting great amounts of gold and other metal for a metal-forgery off the side of the main building which is currently unattended . 
+ the elves look up at you and scream psychotically , raising their miniature hammers . 
+ there are about 40 elves but they 're all chained up , so only 5 can attack at a time and if the pcs leave they ca n't follow . 
+ shrunken mind-controlled elves hp 1 rr 10 damage 1d6 on a hit movement : 2 gold : none xp : 50 or 100 if freed from mind-control . 
+ anyone who looks closely can see the swirling dead look in the elves ' eyes that means mind control . 
+ anyone who breaks their chains frees the elves so struck free and gains their eternal loyalty and gratitude . 
+ the elves explain they were captured by a mad magical dwarf wearing a white robe long ago and forced to thieve , plunder , and build toys and bars of metal for the dwarf for many years . 
+ they also tell of their captured ` brothers ' in the dwarf 's coal mine situated in the mountains . 
+ they will not let the pcs rest until their brethren are freed and they 're desperate to return to normal size . 
+ if they see the dwarf , saint nick , they will stop at nothing to kill him . 
+ they can tell the pcs his name and general capabilities and also that he was named a saint by the dwarves for his demeaning capture of the elves and their subsequent slavery and servitude . 
+ the freed elves fight for the pcs as a. +0 d. 1 move : 3 henchmen . 
+ the empty forge contains 55 bars of gold , 70 bars of silver , and 200 bars of various other metals which are doubtless worth a lot but are very heavy -lrb- -1 all rolls if over-encumbered -rrb- . 
+ several crude weapons and sculptures lie about , the dwarf 's failed attempts at art and weaponcraft . 
+ each bar is worth 100 coins of the appropriate type . 
+ the mines half a mile into the mountains you find a large cave , supported by rotting posts , in which you can see nothing because it is so dark . 
+ you can hear the distant sound of explosions and the tapping of miniature hammers and picks on the rock . 
+ before anyone can step into the cave a snow man rolls up out of the snow and stands up . 
+ rr 20 to spot before this and not be surprised . 
+ the snow man has buttons , a top hat , a corncob pipe , and a carrot nose . 
+ he is clearly frosty the killer snowman rr 18 -lrb- 20 with surprise for one round if applicable -rrb- hp 17 damage 2d6 on a hit movement : 10 gold : none . 
+ xp 500 special : when he 's first hit for damage frosty starts singing a demented song and everyone must roll a will save for fall under his mind control effect . 
+ mind controlled characters 50 % dance around smiling stupidly , and 50 % attack their companions until frosty is killed . 
+ destroying the top hat of evil is worth an additional 500 xp . 
+ the elves trapped in the mines and scared out of their wits by the snow man who 's killed many of them . 
+ they mine coal for the dwarf 's workshop . 
+ the mines are also unstable and there is a 1 in 6 chance every 10 minutes a cave in occurs nearby -lrb- wo n't kill the pcs but might scare them into hurrying -rrb- . 
+ if the elves can be convinced frosty is dead they desert their posts and will stop at nothing to free their brothers and kill saint nick the thief dwarf . 
+ they also desperately want to return to normal size . 
+ see workshop above for freed elf stats . 
+ the stables of the ` reindeer ' the elves will not go near this place . 
+ any pcs who enter the long building that is the stables see the huge magical sledge saint nick uses as his mode of escape after theft . 
+ it can not be operated without nick 's command and he has his ` bag of toy holding ' with him elsewhere . 
+ the reindeer are fierce and beastly , over-muscled , feral , frothing at the lips , mad-eyed , and with sharp protruding horns far too large for their species . 
+ they are not stabled and will attack anyone entering here viciously until dead . 
+ they are not required for the sleigh to fly . 
+ there are eight reindeer . 
+ psychotic beast reindeer hp 13 rr 15 damage 1d10 gold : 0 xp : 250 each . 
+ `` rudolph '' is out disemboweling something so he 's nowhere to be seen at the moment . 
+ saint nick 's cabin all of the other cabins are filled with useless junk , worthless plunder , and stacks of magical cookies which will turn anyone eating one into a mind-controlled shrunken elf . 
+ you see a fat small dwarf wearing a red robe with sheep-skin linings . 
+ he has a despicable look to him , dark hair , and he 's examining a golden candlestick with some contempt . 
+ beside his chair rests a large gray bag teeming over with loot and the scattering remnants of broken items of value which did n't pass his inspection . 
+ saint nick the thief dwarf hp 30 rr 16 damage 1d10 movement : 3 gold : 5,000 in assorted stolen goods . 
+ bag of toy holding 2,000 lbs . 
+ capacity . 
+ xp : 3,000 special : saint nick has a magical bell he can ring to control all shrunken elves in his vicinity instead of his 1d10 damage attack . 
+ if he fears for his life he 'll toss 17 bunches of magical mistletoe at the party and run for it . 
+ each mistletoe requires an rr 17 mental skill check or escape artist check to evade its effects by shielding your mind or your body . 
+ he tosses equal numbers at as many party members as he can and multiple mistletoes require multiple skill checks . 
+ anyone who fails this ` save ' becomes hopelessly lovey dovey with any nearby members of the opposite sex for 2 rounds at which point the befuddled character will attempt to ` kiss them ' under the mistletoe and break the curse . 
+ if they are unable to find a member of the opposite sex or are unable to kiss such a character they fall to the ground stunned for 1d6 rounds while mumbling `` jingle bells '' . 
+ the grand escape nick runs for it and the magical sledge in the stables , cursing the pcs and vowing revenge . 
+ any pc still in possession of their senses when this happens gets a free attack on him -lrb- no penalty for failure basic attack -rrb- and can give pursuit . 
+ he jumps in his magical sledge which rises into the air and he escapes out into the night sky . 
+ any surviving reindeer fly after him and flank him for defense . 
+ if the pcs manage to board his sleight a fierce fight breaks out but if he 's killed the sleigh ceases to function and plummets towards the earth -lrb- and death -rrb- . 
+ the pcs will have to hop onto reindeer 's backs , into his bag of toys , or something weird to escape and live . 
+ if one or more of the pcs are left behind , rudolph shows up and they can jump on his back and give pursuit . 
+ rudolph `` the beast '' killer reindeer hp 25 rr 15 damage 1d8 or 2d6 fire once per encounter . 
+ gold : 0 xp : 1,000 ability to fly . 
+ rudolph is psychotic and will attempt to bite the genitals off of anyone who tries to ride him , but he 's also very stupid and will fly towards the convey of saint nick and his demented reindeer . 
+ dwarf escapes ! 
+ the when the pcs finally take out saint nick he disappears in a poof of fairy powder , laughing diabolically . 
+ it appears he 's spontaneously resurrected himself and plans to still rob the village of goran . 
+ the pcs can trash his sled , loot it , and do pretty much whatever they feel like but they should find some of his magical fairy powder which teleports them to goran . 
+ they then must lie in wait somewhere and wait for him to come down the chimney and pilfer the last of the village valuables after which point he plans to leave behind toys , cackle merrily , and set the whole place on fire -lrb- with rudolph if available -rrb- . 
+ in the final battle he has only 10 hp rr 15 -lrb- weakened -rrb- . 
+ apart from his magical bag and 5,000 gold pieces of loot he also has magical fairy powder -lrb- 1 round invisible as per the power -rrb- . 
+ 7 1d6 silver bell grenades -lrb- rr 10 to hit most targets -rrb- , and a magical glass ball that , when broken , will free all the elves and restore them to their normal size which they 're forever grateful for . 
+ victory ! 
+ the duke smiles and shakes each of your hands in turn . 
+ `` i ca n't thank you enough for stopping that mad dwarf , what was his name ? 
+ nick ? 
+ we would 've been in a lot more trouble this winter if it was n't for you lot . 
+ as reward i 'd like to present you each with the promised 200 pieces of gold and the villagers have agreed you may keep the stolen loot as a further reward for your valiant efforts . '' 
+ each pc additionally gains 2,000 xp for completing this adventure . 
+ chapter two : secret agent caper you were so successful on your last mission that it is n't long before the duke summons you once more . 
+ `` i know this is n't quite what you 're capable of , but there 's been something disturbing found in the basement of the pub of the three dragons . 
+ the innkeep , harold , would be much obliged if you can check it out and make sure it 's safe . 
+ thanks . 
+ oh , yes , i almost forgot : the last ten guys who went down there did n't come back , ha ha . '' 
+ once again the duke is willing to pay the pcs , this time 400 gold pieces each if they can bring back the ten lost men or their bodies . 
+ he does n't see any reason to pay them in advance this time , but if they press the fact he 's willing to lower their reward and pay up to half to them up front . 
+ the pub of the three dragons harold is a midget monkey sorcerer who hoots at you and waves his magic wand . 
+ he can now speak your language and it 's clear he 's none-too-happy . 
+ `` what the hoot ! 
+ there 's some hooting hoot hoot in my basement driving away all my hooting customers . 
+ if you can get rid of the hoot hoot thing then i 'll give you free beers for life . '' 
+ anyone who tries to steal his wand makes a mad monkey as enemy for life but gains a wand of speak all languages . 
+ he has no other good treasure but he does have a wizard hat with stars on it . 
+ he can show the pcs to the basement but nobody in the village of goran is willing to go down inside with them . 
+ if the pcs enter and explore they find a lot of beer in barrels and bottles and several footprints through the dust where the other men went . 
+ there 's no sign of anything else weird until they find the portal hidden behind a shelf at the back wall . 
+ in the back left hand corner of the room , concealed behind a shelf you see a blue swirling disk of energy . 
+ it seems to gaze hungrily at you and you find yourselves irresistibly drawn toward it . 
+ fangs sprout along the edges and a demonic voice boasts , `` ha ha ha , more food for my energy maw , prepare to die , witless mortals . '' 
+ as soon as anyone tries to ` take it out ' the voice laughs more loudly : `` you think you 're puny weapons are enough to stop , akklkssioosine the beast lord ? 
+ think again , piddly bipeds ! '' 
+ when the pcs come up with something brilliant or deal at least 20 damage to the thing the portal screams in outrage and dies . 
+ hacking off the teeth may be another idea . 
+ every round the portal attempts to suck in at least one pc -lrb- all others held by gravity well , no teleportation or magic can escape -rrb- . 
+ rr 15 strength or similar to evade being sucked in . 
+ if the pcs manage to kill akklkssioosine the beast lord they gain 3,000 xp but regardless in the explosion of his death they are sucked in to the other side . 
+ the other side when all pcs are on the far side you can describe their predicament to them . 
+ you appear to have landed in an underground chamber , possibly in an alternate dimension . 
+ the rock is gray and of a type you 've never seen before . 
+ your companions also look very strange . 
+ they are all wearing black and white suits , dark glasses , and carrying various metal rods and strange devices you 've never seen before . 
+ the pcs have landed themselves into an alternate dimension set somewhere around the 1950 's in which they 've been transformed into secret agents working for the queen of scotland . 
+ a wall slides aside and as you back away and try to draw your regular weapons a short man wearing a scientific suit approaches you and smiles as he waves . 
+ it appears as if he knows you . 
+ `` welcome double-o 1 , 2 , 3 ... -lrb- etc. -rrb- you 've arrived far ahead of schedule , well done ! 
+ it appears the soviet states of arabia are planning a nuclear bombardment of taiwan , our greatest ally . 
+ as members of the secret service of her majesty `` bolf '' the queen of scotland , you must help protect the world . '' 
+ if anyone freaks out or otherwise acts strange the man just gives them a weird look and continues on : `` yes , i realize you need to practice your `` persona '' but really -lrb- insert code name of pc -rrb- . 
+ we do n't have time for this now . 
+ the soviet arabian democratic government has found something called ` project x ' which is hidden somewhere in the capital city of egypt . 
+ you must go and find it , it could mean the world . 
+ our only lead is a woman in portugal named `` sexy beast '' you must find sexy beast and convince her to help us . '' 
+ the man coughs into his hand and smirks . 
+ `` i know it wo n't be any trouble for you , your cars and gear are already packed on the jet . '' 
+ several men with machine guns escort the pcs to their jet which , indeed , is crammed with sweet cars and gear boasting the latest in weird spy technology . 
+ all the classics should be there along with anything the pcs want and seems reasonable to you . 
+ some ideas are : radar , heat seeking missiles , machine guns , invisible cars , nitro , seat ejectors . 
+ tracking devices in shoes , laser pens , paper clips which are actually massive bombs , and so forth . 
+ there should also be at least one car that can turn into a submersible sub . 
+ the flight to portugal as the pcs are taking flight a young woman brings them refreshments and asks how many times they want their martinis shaken and stirred and how many ice cubes they want in them . 
+ this young woman can teach them to use all their gear and weapons , train them about the history of the soviet arabians , and pretty much whatever else they 'd like . 
+ as soon as they 're flying out over the ocean at about 20,000 feet the doors to the pilots swing open and a russian woman in nothing but her skimpy dress with rhinestones steps out holding a gun . 
+ `` prepare to get blown away by my beauty , agents one , two , three , -lrb- etc. -rrb- '' russian agent polovo hp 15 -lrb- 1d6 damage bullets , she wears a bullet proof dress -rrb- . 
+ rr 20 -lrb- kung fu dodge -rrb- damage 3d6 -lrb- subduing karate kick or sleep darts -rrb- . 
+ gold : none , dress bullet proof , comm link to arabia , purse with explosives . 
+ xp : 1,000 special : instead of dealing damage she can kick the gun out of any pcs hands . 
+ if anyone shoots at her and misses the cabin de-pressurizes and the plane goes into a death roll , everyone loses their weapons and must grab parachutes to escape . 
+ of course , there are n't enough so someone is going to have to grab the waitress , pilots , and the russian agent . 
+ if the pcs are smart enough to use kung fu and similar they quickly find polovo is a master but if they try their seduction skills on her she is easy prey and quickly betrays her country . 
+ she also tells them that `` sexy beast '' is a trap in portugal . 
+ apart from this she knows nothing and thinks they should probably still go . 
+ the ocean if the pcs somehow land in the ocean at least one of the cars is a submersible sub which they can use to quickly reach portugal with the help of at least one navigator who knows what he or she is doing . 
+ they probably run into at least half a dozen sea monsters and arabian soviet democratic subs , but those challenges are left up to you . 
+ the trap in portugal the address leads the pcs to a one time meeting at a night club where everyone is dancing and speaking in portuguese . 
+ of course , they all known english as well if anyone cares to talk to them . 
+ the pcs now have another opportunity to order their favourite drinks and try to hunt down the proprietor who is the only one who knows who sexy beast is and where she can be found . 
+ to find the proprietor at least 3 waitresses must be seduced . 
+ it appears he 's ` in the back ' . 
+ when they find the proprietor he tells them they must play him a 20 million dollar game of cards to find the woman . 
+ if they pull a gun he tells them anyway . 
+ it is rr 15 to beat him at cards . 
+ sexy beast is apparently ` further in the back ' . 
+ when the pcs pass about 50 thugs with machine guns hp 1 damage 2d6 rr 15 movement : 3 xp : 50 they find a pool in the back surrounded by frigid ice sculptures which large vents of liquid nitrogen constantly shoot up into . 
+ she 's wearing a bathing suit and sitting in the water . 
+ after the pcs give their opening lines she responds : `` that is what you think , mr. -lrb- and ms. ? -rrb- 
+ double-o 1 , 2 , 3 -lrb- etc. -rrb- '' she snaps her fingers and twenty men with machine guns rise up out of the pool . 
+ the pcs can attack in which case a horrendous firefight breaks out . 
+ men : rr 16 damage 2d6 machine gun bullets hp 1 movement : 2 -lrb- scuba suits -rrb- xp : 100 each gold : none . 
+ sexy beast rr 17 damage 1d6 -lrb- bite -rrb- hp 1 movement : 3 xp : 100 , 1,000 if seduced . 
+ gold : 0 putting the liquid nitrogen into the pool kills everybody . 
+ if sexy beast and her men win they tie the pcs to the ice sculptures with a slowly rotating liquid nitrogen nozzle spraying toward them and leave . 
+ if the pcs win and capture -lrb- or win over -rrb- sexy beast she reveals the location of the secret base in egypt containing project x but she ca n't say what it is either . 
+ if the pcs win but kill everyone they can find the address of secret x tattooed to sexy beast 's back -lrb- or the lining in her bra or whatever -rrb- for no good reason . 
+ obligatory race car scene outside the club as you 're driving for the plane -lrb- or nearest airport/sub if it 's destroyed -rrb- you see two black vehicles in your mirror . 
+ if any of the pcs fancy cars survived they may now use all of their nifty doo-dads and the craziest driving they can think of . 
+ be sure to include plenty of enemy cars shooting harmless machine gun bullets at them , bridges to jump the cars over , and opportunities for mad stunts -lrb- which nearly always succeed -rrb- . 
+ once the pcs have the drive-like-a-madman thing totally out of their systems they can reach the airport/plane or whatever and head out to egypt . 
+ if they still do n't know where it is they 're supposed to be headed you can always have some allied agent get shot by an assassin with a silencer and hand them over a note in his dead hands . 
+ egypt you land in the capital city of soviet arabia which is , of course , egypt . 
+ there are many camels , pyramids , and men with french wigs around , but otherwise the place seems just like new york . 
+ when the pcs leave their plane/submarine or whatever and start to make their way towards the address they 've found about a million ninjas jump out of nowhere and attack them . 
+ they could surrender , but where 's the fun in that ? 
+ none of the ninjas will use any weapons other than their fists because they want to capture the pcs . 
+ there are 1,000 ninjas . 
+ ninja hp 1 damage 1d6 rr 14 movement : 4 gold : 0 -lrb- ninja sword , blow gun with sleep darts , etc. -rrb- xp : 100 each . 
+ when all the pcs have been captured or escaped , or defeated all the 1,000 ninjas -lrb- should be max 1,000 xp for doing so -rrb- marilyn monroe or some equally famous woman comes up to them and flirts with them for a while after which point she either beats them up and takes them to the secret base , or falls in love with them and leads them to the secret base . 
+ on the way there , should the pcs wish , they can use any plan they want to escape and find the place on their own terms . 
+ the secret base you enter a deserted parking lot , but before you can do anything else a huge eiffel tower splits the ground apart and rises high into the sky . 
+ people nearby scream and you see a miniature statue of liberty sprout out the top holding a laser cannon which points vaguely in the direction of the un . 
+ a large speaker blares out over those assembled , `` today democracy will rein over the world ! 
+ no more will the communist states of america hold sway , no longer will the british empire control 75 % of the world . 
+ freedom at last ! '' 
+ as the laser starts firing at satellites to bounce back and hit various parts of the world , the pcs as secret agents can spring into action or not , depending on their preference . 
+ anyone smart may roll an rr 10 check to determine these people would not have the power necessary to shoot a laser of this size and it must be powered by magic , possibly a portal back to their home-world . 
+ within the building there are a load of flunkies and aimless guards who can be snuck past or fought as the pcs wish . 
+ flunky hp 1 rr 10 damage 1d6 movement : 3 gold : 0 -lrb- gun -rrb- xp : 10 . 
+ the pcs can see a shimmering blue portal at the top of the inside of the eiffel tower . 
+ it looks just like the one that brought them here . 
+ they have two basic choices now : they can use the elevator , or they can climb the metal supports -lrb- no stairs -rrb- . 
+ rr 15 to reach the top . 
+ the elevators are wired with explosives -lrb- rr 16 to spot or disable -rrb- and about halfway up the speaker voice says : `` ha ha ha , not so fast agents 1 , 2 , 3 , -lrb- etc. -rrb- freedom will not be stopped so easily ... '' at this point the pc -lrb- s -rrb- should automatically detect the explosives and are allowed 1 or two rounds to do something about it -lrb- or bust their way out to safety -rrb- . 
+ the portal at the top of the eiffel tower beside the portal holding a control box is a patriotic frenchman wearing a wig and a crazed expression and a helpless girl tied firmly to a support strut . 
+ she 's blonde and wears a revealing white dress . 
+ behind her , on the other side of the metal support a bare-chested and muscular man is also tied up , crying out feebly for help . 
+ he 's wearing a speedo . 
+ breaking the ropes requires rr 17 strength , a weapon , or rr 15 use rope . 
+ the patriot is rr 15 hp 1 damage 1d6 -lrb- gun -rrb- movement : 3 gold : 0 xp : 500 special : before he dies he 'll hit the self destruct button on the eiffel tower control switch box by accident and curse . 
+ the pcs have a very short time to escape . 
+ as all of this is going on you see about 50 jets flying in toward your tower , guns blazing , apparently the communists do n't take kindly to people trying to force democracy on them with giant , magically powered , lasers . 
+ as everything blows up on all sides , guns blazing , self destruct going or the patriot firing lasers back at the attacking planes -lrb- women and guy screaming the background -rrb- a giant hairy monkey leaps off of a concealed platform in the top of the tower and hoots menacingly , beating his chest . 
+ apparently , it 's king kong making his debut movie by smushing the pcs into jell-o and throwing them off the precipitous tower . 
+ king kong hp 15 rr 16 damage 2d6 movement : 5 climb +15 hoots loudly and swats airplanes in his free time . 
+ gold : 0 xp : 5,000 giving him the girl will pacify him as he hoots and lumbers off with her . 
+ anyone who jumps in the portal disappears . 
+ you should play up the drama for all it 's worth and impose your own challenges for evading gun fire , escaping a giant enraged monkey , and climbing around the precarious tower to pull of stunts . 
+ when everyone 's done fighting and blowing up stuff the patriot -lrb- if alive -rrb- or someone else -lrb- if he 's dead -rrb- informs the pcs that the laser is damaged beyond repair through the firefight , if they want to leave they 'll have to leave now . 
+ allow the pcs time to say their goodbyes , safely escort prisoners , gather loot , or whatever , after which they should head home . 
+ if they want to stay the portal blows up in their faces and snatches them through -lrb- or you could design a modern campaign , but that 's up to you -rrb- . 
+ home sweet home you find yourself back in the basement of the inn of the three dragons . 
+ there is no portal in sight and you 've no idea how much time may have passed . 
+ you 're disappointed to find you 're wearing your old clothes and you have none of the sweet gear and loot you 'd picked up on the other side . 
+ however , there 's someone here you did n't expect , wearing a leather jerkin which makes her/him look really weird . 
+ whoever was the most interesting character the pcs brought with them to the final battle appears with them dressed in leathers that suit the time and without any of their usual fancy equipment . 
+ this npc will need help learning the ropes of the new world or getting back to his/her old one . 
+ this npc is also carrying the ten previous men sent through the portal in his or her pocket . 
+ weird magical vortexes deposited them there out of limbo and any wizard can tell that they will gradually return to normal size . 
+ the story the duke gladly pays the pcs their 400 gold pieces each and eagerly asks about their quest . 
+ he does n't believe them if they tell the truth , and neither will anyone else except for the monkey innkeeper harold who believes every word -lrb- and will probably fall in love with any female the pcs brought back from their mission -rrb- . 
+ each pc should be awarded 3,000 bonus xp for successfully completing this adventure and they find the submersible car outside the inn waiting for them . 
+ it will soon run out of gas and weapons , and no one has any clue how to repair or fuel it , but for a time it may be fun anyway . 
+ its weapons deal 1d6 damage on a hit and add +2 to attack because of superior accuracy . 
+ the car will wear out faster if not used on dry roads and level ground . 
+ chapter three : the quest for the holy grail you 're all sitting around in your favourite pub on a saturday night like usual , having known your companions for the better part of five years now , when you hear news of a great debacle : someone has broken into the citadel of the mouse queen and stolen something of great value ; anyone who retrieves it shall receive a great reward . 
+ if anyone asks what this ` great reward ' is , think of something outrageous and make that the reward . 
+ if anyone comes up with anything semi-reasonable to be the reward , you can use that as well . 
+ if no one can think of anything , you can just make it 100,000 pieces of gold . 
+ if the pcs actually decide to go and see the mouse queen in the citadel they find the whole place to be made of gold and a great stream of stalwart adventurer 's marching on the place to claim the ` great reward . ' 
+ if anyone asks what was stolen , no one has any clue . 
+ you enter the vast domed enclave of the citadel and are surprised to find it made of solid gold . 
+ it appears the rumors are true . 
+ you 're just about to polish a bit of rust off the gold , when you see about 30 mouse guards snarling at you , whiskers barred . 
+ if anyone attempts to steal the gold it 's rr 18 to do so undetected . 
+ if the mouse guards catch anyone being untoward , they attack viciously and sound the alarm . 
+ mouse guard rr 15 hp 1 damage 1d6 speed 3 gold : 3 xp : 200 each . 
+ there are 30 guards and within 6 rounds 100 more will come : squad of 10 mouse guards rr 20 damage 1d8 speed : 3 gold : 15 xp : 1,000 per band . 
+ if melted down , the citadel is worth at least 1 million gold coins but doing so will start a vast war between the humans and mice and you may feel free to have bands of feral mice-men attack the pcs at random throughout the rest of their careers . 
+ if the pcs actually make it to the throne room without incident you can read them the following : you see a huge throne set with a giant emerald upon which the mouse queen , sharon , sits . 
+ she has the longest whiskers you 've ever seen and the biggest -- but no , you 're distracted by the concern on her angular , pointed , furry face . 
+ she beckons you nearer with a tiny clawed hand . 
+ `` welcome , brave heroes . '' 
+ you start to reply but she 's talking to someone behind you who raises his spear and grins , huge muscles bulging . 
+ `` no doubt you 're wondering why i have summoned you here and offered such a great reward . '' 
+ if the pcs decide to fight any of the other heroes they are all 1st to 10th level characters from the basic book with stats along these lines : hero rr 10 + level hp 10 + level speed : 3 gold : 100 xp : 200 x level . 
+ they can have any 5 powers from the basic book , or anything you can think of . 
+ these powers take effect only when one of the pcs miss them . 
+ `` a golden chalice was stolen last night from our most impenetrable vault . 
+ but this is no ordinary golden goblet , it is said that the chalice is imbued with such holy might that it will make the owner immortal and is known in some lands as the holy grail . 
+ it has no doubt fallen into the hands of evil which will use it for diabolical purposes , retrieve it and you will be greatly rewarded . '' 
+ the pcs can investigate or question the mouse queen further but all they can learn is that the thief broke in at somewhere around midnight , he was working for the black scorpions , he wore a chiffon nightgown , and his name is eric and he lives on 1030 blackmoore street in the city of torm . 
+ the pcs can head to the assassin 's residence , or to the castle of the blackmoore assassins . 
+ the assassin 's house you find that the assassin 's residence lies right next to your favourite pub , you must 've passed it by a thousand times and never noticed the evil smell of poisons , the boarded up windows , and the deadly spiked traps on all the windows . 
+ it appears the house is empty , but you never can tell , can you ? 
+ it is now around 1 am and very dark . 
+ any pc attempting to enter anything but the door springs a deadly poisoned trap . 
+ rr 14 to disable , spot , or evade with an acrobatics skill check . 
+ if the pc is hit he or she takes 1d6 damage and 1d6 poison damage per minute until healed or dead . 
+ at death the character can make a single physical strength save to negate the poison and remain at 1 hp . 
+ if the pcs enter through the door they make it within without incident . 
+ have all pcs roll a rr 16 perception check when they enter the house . 
+ if they fail they see nothing , otherwise read the below : you see a man wearing a chiffon lace nightgown crouched up in the ceiling , short blade dripping with poison and preparing to jump down upon you with a smirk on his face . 
+ eric the assassin rr 14 hp 13 damage 1d6 +1 d6 per minute poison as above speed : 4 gold 200 xp : 2,000 . 
+ if he surprises the pcs he 's rr 16 on all of their first rolls against him . 
+ if anyone captures him for questioning he says the following : `` it was a job alright ? 
+ i stole the holy grail , gave it to prince evil death ray the third , and was on my way , okay ? '' 
+ if further pressed he reveals the location of blackmoore castle where the black scorpions and prince evil death ray the third can be found . 
+ he also tells them the defenses are impenetrable and the only way they can get in is to be invited to the prince 's upcoming wedding next wednesday . 
+ the man has no clue who he 's marrying and all he will say is `` some rich hot tart , sirs . '' 
+ blackmoore castle as you approach the castle night falls and you see a load of other adventurers , of higher levels than yourselves , approaching the castle ahead of you . 
+ as you look on from the cover of a nearby bush you see them all being killed by countless arrows , fireballs , and various steel bear traps and snarling dogs in the grounds outside the castle who viciously rip them apart . 
+ using your above-average intellect scores you think that a frontal assault might be a bad idea . 
+ if the pcs try a frontal assault anyway , they face the following deadly opponents : 1,099 archers rr 24 hp 200 damage 10d6 speed : 5 gold 10,000 xp : 1,000 perception +40 , 100 wizards rr 20 hp 20 damage 20d6 fireballs speed : 24 fly gold : 2,000 xp 1,000 , and impenetrable death traps rr 20 to spot or disable damage 2d6 reflex save to drop to 1 hp , up to three traps hit each trespasser . 
+ if the pcs somehow manage to kill all these people and traps , a band of vicious dogs assaults them . 
+ dogs rr 26 hp 150 damage 6d6 speed : 7 gold : 0 xp : 2,000 and bear traps rr 26 spot or disable damage 3d6 reflex save to drop to 1 hp . 
+ xp : 2,000 . 
+ if the pcs try anything sneakier they may gain entry into the castle or learn that the prince evil death ray the third is planning an upcoming wedding on wednesday . 
+ if they can be invited to this wedding it may be a spiffing way to enter the castle . 
+ the wedding you should let the pcs come up with their own way to get into the castle or get invited to the wedding . 
+ some options are : hopping into to the bride 's carriage , forging an invitation , stealing an invitation , buying the prince a present and getting invited , or simply wandering in as the guests arrive . 
+ the bride is a very scared but very beautiful farm girl who wants nothing to do with the prince and will try anything to escape , but she 's guarded by a big buffoon rr 16 hp 1 damage 2d6 speed : 2 gold 20 xp : 500 . 
+ inside the castle -lrb- without wedding -rrb- amazingly you make it within the castle and sneak into the keep . 
+ you gain 2,000 xp for sheer daring . 
+ within the keep you see a maze of corridors and an evil voice laughs in your minds . 
+ `` welcome , uninvited guests , you 're just in time for my pre-wedding bridal shower , ha ha ha ha . '' 
+ the corridors start shifting around and forming crushing wall traps . 
+ the heroes will have to do some fancy footwork -lrb- rr 14 -rrb- to evade getting smushed and find a way through your maze to the villain -lrb- now 's the time to draw a random , maze-like map -rrb- . 
+ you can proceed to the dungeon below . 
+ inside the castle -lrb- with the wedding -rrb- magical lights in all colors light up the night sky , booze pours freely , and many men and women laugh gaily at the marriage of a very despicable man . 
+ the villain himself , prince evil death ray the third , takes the stage . 
+ he 's a thirty-year-old man with an evil leer wearing a badly fitting tuxedo with overly long duck tails out the back . 
+ you immediately sense great evil radiating off him and wonder if you 've somehow turned into a paladin . 
+ before anyone can take him out , he snatches up the bride , who looks horrified , kisses her roughly and runs away into the keep cackling melodramatically , `` i will now kill you all , fools . 
+ the holy grail is mine ! '' 
+ everyone goes silent for a second , then they shrug and keep dancing . 
+ the pcs will have to fight his two orc guards rr 10 hp 1 damage 1d6 speed : 3 gold 5 xp 100 each and bash down the door to the keep : rr 20 strength or rr 10 pick lock or thievery . 
+ inside the castle they see his duck tails zooming around corners as he laughs maniacally with the woman in his arms . 
+ if anyone manages to catch the zany loony he puts his dagger to the young woman 's throat and , being heroes , the pcs are forced to let him run for it again . 
+ if they somehow manage to peg him , he dies but laughs , and says , `` you 're too late to stop it , you 'll never find it , mwa ha ha ... '' once the pcs make it through the maze you 've doodled , they reach the dungeon . 
+ final encounter the dungeon the smell of water and the sharp tang of gold meets your nostrils as you gaze upon a black stairway leading down into oblivion in blackmoore keep . 
+ you wonder vaguely why you have n't seen any of the black scorpions yet . 
+ just as you 're thinking that a trap door swings around in the wall and a small green goblin steps out in front of your path onto the landing of the stairs . 
+ he grins wickedly and raises a small , rusty dagger . 
+ `` none shall pass . '' 
+ he belches and pats his fat stomach . 
+ the goblin is actually an elite terrorist ninja zombie controlling wican witch doctor supernaturalist . 
+ rr 20 hp 42 damage 2d6 or any curse effect you want , he can hit all party members if he wants . 
+ speed : 24 lightning move or teleport and fly gold : 1 and magic rusty dagger +1 which melts all non-magical steel armor touched -lrb- but not doors -rrb- . 
+ xp : 1,000 . 
+ if the pcs chat with the goblin they must answer his three riddles to pass without harm , otherwise they must fight him or find some other way of outwitting him . 
+ the three riddles are : `` what 's small , round , comes in a yellow box , and has a hole in it ? '' 
+ a. a cheerio . 
+ `` i hate that monkey '' a. pirates of the carribean and `` what sucks , happens yearly , and rhymes with axes ? '' 
+ a. taxes . 
+ the pcs are allowed one false answer each , but that 's all the goblin will allow . 
+ answering each one of his riddles is worth 1,000 xp to the group and a bonus 500 xp to whoever answered it . 
+ as the gm you should doodle 10 encounter areas on your own piece of scrap paper of the dungeon below and assign the areas as you wish . 
+ dungeon room 1 you push in a fungusy door and see a stagnant pool of water which glows with a bright blue light . 
+ as you are about to close the door it snarls , jumps off its hinges and attacks you . 
+ animated door -lrb- invincible -rrb- rr 15 hp : infinite damage : 1d6 speed : 3 gold : 0 xp : 500 the only way to kill this door is to swim to the bottom of the pool and claim the blue sword of sedarath which is the only object which can kill it . 
+ swim rr 14 or hold breath rr 10 . 
+ retrieving the sword takes 2 rounds . 
+ the blue glow comes from the sword of sedarath which is a 1d8 +2 longsword with the ability to blow holes in things like a stack of dynamite once per day -lrb- 2d6 damage and bursts stone and suchlike -rrb- . 
+ it also grants the owner +4 swim and the ability to breath underwater . 
+ it is rumored to be the only weapon that can kill the heart of a terrible sentient dungeon known as `` the terminator '' . 
+ dungeon room 2 you enter a huge 100 ft. by 100 ft. hall made of solid marble . 
+ there are 10 massive pillars in the room and as soon as you set foot within they all start sliding towards you as if by magic . 
+ these deadly pillars deal 1d6 damage each on contact and are difficult to avoid as they move in a pattern . 
+ escape artist or acrobatics rr 14 to dodge a pillar . 
+ any blow from a weapon kills a pillar instantly -lrb- it disappears -rrb- but there is one real pillar which supports this room and if it 's broken it cracks and the room collapses in 1 round -lrb- killing all those still within -lsb- after the one round -rsb- and possibly blocking off escape -rrb- . 
+ you should role-play the desperate dash across the room and have anyone not roleplaying it get hit with a really big rock in the head and become unconscious for a while . 
+ dungeon room 3 you enter a long corridor and see row upon row of death rays . 
+ it appears the prince was n't named for nothing . 
+ the death rays are rr 10 to disable . 
+ rr 8 to dodge . 
+ and there are about 20 of them . 
+ running through at top speed results in only 3 rays attacking the character . 
+ anyone struck with a death ray must make a physical save at +10 % -lrb- +2 for you -rrb- on the roll or be disintegrated . 
+ death rays pried out of the wall can be shot once before losing power . 
+ dungeon room 4 this armory is full of ten soldiers , but none of the fabled black scorpion ninja assassins you 've heard so much about . 
+ you 're disappointed but the soldiers scream and attack you in the name of the prince anyway . 
+ soldier rr 10 hp 1 speed : 3 damage 1d8 gold 5 xp 50 each . 
+ the pcs can question any captured soldiers as to the best route to take , drag them along , or salvage any weapons and armors they want from the armory which is clearly overstocked . 
+ careful inspection rr 16 perception reveals a quiver of 16 +1 arrows which bite the target fiercely lowering morale and imposing -1 rr for the first round so struck . 
+ dungeon room 5 this appears to be some kind of chemical magical laboratory . 
+ you find a load of acid , alchemical fire , smoke bombs , shrapnel grenades , beakers of gunk and whatnot , and some plans which appear to show a holy grail like object hooked up to a load of wires and a giant demon skull . 
+ this definitely does n't look good . 
+ it appears the bride of the evil figure on the plans must be sacrificed to get the whole thing going . 
+ you have little time left . 
+ if the pcs waste a lot of time here they hear a distant scream , diabolical laughter , and then a huge demon bursts through the walls and tries to eat them . 
+ demon rr 28 hp 80 damage 2d6 speed : 12 fly or move/tunnel perception +20 and see invisible , ranged and melee attacks . 
+ gold : 1,000 xp : 5,000 dungeon room 6 this room appears to be completely empty . 
+ if anyone looks they can find a secret panel in the floor , inside is a chest full of rubies worth at least 250,000 gold coins and whoever find it earns the team 4,000 bonus xp . 
+ dungeon room 7 this room is full of maids who scream when you enter . 
+ there are mirrors , pillows , a bridal suite , fancy bits of silk and clothes , and other various girly type things scattered around . 
+ the maids can tell the pcs that the prince -lrb- if still alive -rrb- ran off ` that way ' with his new queen and there was no funny business because he was in too much of a rush to feed her to a giant demon skull in order to use the holy grail to summon a demon . 
+ the contents of the room are semi-valuable and the silks and dresses in particular will fetch a good price but if the pcs wait to long they hear screams from up ahead . 
+ if they 're still keen on wasting time you can skip to dungeon room 5 's description of the giant demon . 
+ dungeon room 8 a hot wind whips your tunics . 
+ you know you 're close to the villainy now . 
+ as you burst through the door you find yourself skidding to a halt before a seething sea of lava below . 
+ a bridge fashioned of human skulls leads over the expanse and several ropes hang from the ceiling . 
+ as soon as anyone makes it halfway over the massive bridge the skulls all start cackling and dive into the lava . 
+ the bridge collapses and everyone must jump on the ropes and then swing across to the other side while the magmafied skulls leap out of the lava like piranhas and try to bite their heads off . 
+ jump or acrobatics rr 14 to swing a rope . 
+ 3 swings to reach far side . 
+ flaming skull piranha rr 15 or bitten hp 1 damage 1d6 per round attached to posterior + catch fire on second round and start to light rope on fire -lrb- +2 jump rr to make it before rope burns and snaps -rrb- . 
+ speed : 6 jump gold : 0 -lrb- flame skull souvenir ? -rrb- 
+ xp : 300 . 
+ making it to the far side without burning alive in molten magma is worth 2,000 xp to each survivor . 
+ making it there without being bitten by a flaming skull is worth 3,000 xp . 
+ dungeon room 9 you can see beyond this room a huge chamber shaped in a sphere at the center of which is a giant demon skull with wires hooked up to it and tubes connecting it to the princess suspended in her wedding dress and hooked up to the dread machine . 
+ but before you stands a ten-foot-tall colossus of steel , stone , and evil magic . 
+ it 's chained to the wall and guards the whole of the entry . 
+ it sets its empty eye-sockets on you and a blade of steel springs from its arm . 
+ the animated construct simply wants to be free . 
+ his name is gary and if anyone breaks the chain he just wanders off and escapes and that pc gains 1,000 xp . 
+ gary hp 24 rr 17 damage 2d6 speed : 3 -lrb- stuck to wall by chain -rrb- gold : 0 xp : 300 . 
+ dungeon room 10 this huge spherical chamber is dominated by a giant demon skull . 
+ you see the holy grail 's waters pouring into the princess ' mouth : making her immortal as her life force is simultaneously sucked out for all eternity into the demon skull by lines of fell dark magic power . 
+ the prince , death ray , stands before you on a catwalk barring your way before her and smiles . 
+ `` you 're too late , in moments the machine will be at full power , and then , my friends , you 'll get to witness the full power of this fully armed and operational ... demon making machine !! 
+ mwa ha ha ha ha ! '' 
+ the prince rips off his shirt showing the giant black scorpion tattooed there . 
+ he raises his fists . 
+ `` who wants a piece of me , eh ? 
+ huh ? 
+ who ? '' 
+ he sniffs like a boxer and bounces around . 
+ if the pcs already killed the prince it turns out to just be an illusion and all they have to do is free the princess . 
+ if not the prince is : rr 14 hp 15 damage 2d6 speed : 4 all skills +5 gold : 10,000 in bag of holding in pocket , xp : 2,000 the pcs have 2 rounds to save the princess and must find a way to get past the prince and also swing out to the demon skull suspended over the chasm . 
+ rr 16 ish . 
+ freeing her from her bonds is use rope or equivalent rr 10 and swinging back is rr 16 again . 
+ if anyone drinks from the holy grail you should inform them they are now immortal -lrb- but can still be killed by unnatural causes such as swords or giant demons -rrb- . 
+ if the demon is freed he roars , smashes everything , and escapes . 
+ the prince laughs . 
+ the demon comes back and kills him then goes after the pcs . 
+ see dungeon room 5 for demon stats . 
+ during the battle the prince shouts : you fools , do you not see the brilliance of my plan ? 
+ i have hooked the now immortal princess up to the demon making machine , her eternal life force prolonged by the holy grail powers my sinister work . 
+ mwa ha ha . 
+ when they finish him off he says , `` doh , i have the last laugh ... '' and hits the self destruct button in his pocket . 
+ the roof starts to collapse . 
+ the pcs must grab the princess -lrb- actually a farm girl -rrb- and make some kind of break for it . 
+ the demon making machine is destroyed , the giant skull buried , and the castle of the prince blown to smithereens . 
+ the mouse queen pays the pcs the full reward of 100,000 gold pieces if they should choose to return the holy grail . 
+ the final bit `` well done , mighty heroes , you 've done the right thing . 
+ for a minute there i thought you might just keep it for yourselves ha ha . '' 
+ the mouse queen stands from her throne and bows to you all , as do her subjects . 
+ they throw a huge posh dinner in your honor and all the hottest mice make out with your characters , which is quite weird , to say the least . 
+ before the feast is over a fat halfling passes you a charred and yellowed treasure map bearing the legend `` monster land '' you then pass out from too much drink and drool on it , ruining the directions . 
+ everyone receives 5,000 xp for completing the adventure which will put them all at roughly around level 10 and give them a brand new player power and +5 hp at least . 
+ you should also allow the players to go shopping for any new gear they may want or need , including magic items of your own creation should they have enough money to buy such rare items . 
+ chapter four : the fugitives of monster land after your last heroes banquet , you discover a fat halfling has left a treasure map entitled `` monster land '' in your possession . 
+ you think nothing of it and stash it away in your packs for when you 're bored and extremely low on cash which probably wo n't be for some time now , considering the massive amount of loot you brought back on your last adventure . 
+ unfortunately , news soon gets out to the king of the land of sileeria that you 've killed his son , the prince , who the king did n't know was evil . 
+ this sets him into a mad rage and he sends squads of death knights after you . 
+ it appears you 'll need to lie low for awhile or perhaps go give the king a licking . 
+ if the pcs choose to fight the death knights they come in infinite squads of 10 in as many groups as you wish . 
+ death knight squad : rr 18 hp 30 damage 1d6 +8 speed : 4 gold : 100 xp : 1,000 for all ten . 
+ once per day a death knight can shoot a dark beam bolt which deals 1d6 damage automatically to any character . 
+ they usually use this as their lead off attack . 
+ if the pcs decide to confront the king , see below . 
+ if they check out their treasure map , they find it leads to an unknown land where no one will be able to find them , full of monsters and suchlike . 
+ the king the king 's castle is heavily defended by magic , guards , and catapults . 
+ they must defeat at least 10 battalions of 1,000 troops to confront him . 
+ troops rr 30 hp 100 damage 10d6 speed : 3 gold : 1,000 xp : 1,000 . 
+ the king himself is only hp 1 rr 10 and carries a sword . 
+ if he 's killed his advisors take his place and so on and so forth . 
+ he tells the pcs if they can find proof his son was evil such as the abused princess , the giant demon skull , or a magical recording ; then he 'll take the bounty off their heads . 
+ the map through rumors and suchlike the pcs learn there is a bounty on their head set by the king and to prove their innocence they must find either the giant demon skull or the princess who the prince , death ray , was to marry . 
+ the princess ' hovel it appears the princess was living in a mud hovel . 
+ she was a farmer . 
+ her father cries and pats one of his pigs on the back . 
+ `` they 've taken her , my poor , poor , susan . '' 
+ after some brow beating the pcs can learn that the ` who ' is a band of trolls , goblins , and pixies out of monster land who go by the name of `` the brady bunch '' . 
+ the giant demon skull some cursory excavations reveal that someone 's dug up and stole the giant demon skull . 
+ this is very unfortunate and also begs the question `` what the heck for ? '' 
+ you do manage to dig up a bag of pearls worth at least 20,000 gold coins , so it was n't a complete waste of time after all . 
+ monster land you should doodle the whole 10 areas of monster land on your made up map however you like . 
+ the terrain is roughly barren desert filled with wandering monsters and if the pcs choose to confront any of these monsters they generally blindly attack , drink booze , snarl , and otherwise ignore the pcs and their questions . 
+ they have no treasure but they fight viciously . 
+ monster rr 15 hp 13 damage 1d6 gold : 0 xp : 100 . 
+ area 1 you see smoke trailing up into the sky and over the next hill wafts the scent of salted pork and mutton being roasted over fire . 
+ you can see below you several miniature hide tents and about a hundred goblins generally living it up and partying . 
+ they 've captured a group of 12 humans who they 've stripped of everything of value and are amusing themselves by poking the humans with long sticks . 
+ 10 goblins rr 13 hp 15 damage 1d8 speed : 2 xp : 300 . 
+ gold : 10 the goblin chief wears a huge headdress of millions of multicolored feathers and each feather gives him a magical curse he can fling on any pc who fails his rr 16 challenge -lrb- otherwise stats as 10 goblins -rrb- . 
+ apart from his magic feathers he also carries a potion which cures 20 hp , an antidote , and a ring which transforms the owner into an eagle and back at will . 
+ if freed the leader of the naked human men says : `` thank you , noble sirs , for saving us . 
+ we would have been dead within the night . 
+ those sticks sure hurt . '' 
+ he hands you a piece of parchment with a pained expression . 
+ it bears a remarkable picture of your band of heroes and the words `` reward : freakin ' lots of gp for these felons dead or alive . 
+ they killed my son . 
+ signed : the king . '' 
+ `` tough luck mates , '' the man says . 
+ if questioned further he tells the pcs he saw a band of trolls , pixies , and goblins all wearing red scarves and bandana 's heading north with a young woman in a wedding dress and carrying a huge demon skull with a magical sledge . 
+ he 's also heard rumors that there 's a great treasure buried somewhere in monsterland . 
+ area 2 you enter a huge magical enchanted forest and see a lot of deer and small fluffy rabbits . 
+ you get a very bad feeling about this . 
+ rr 14 wilderness lore or become lost . 
+ rr 15 monty python rabbit hp 15 damage 1d6 +10 speed : 7 gold : 0 xp : 2,000 the forest is swarming with nymphs , dryads , sirens , harpies , and really buff centaurs . 
+ if the pcs do n't roll at least one 17 social diplomacy or similar check the women seduce them all and lead them to their dooms -lrb- mental save to escape alive with 1 hp and nothing but rags of clothes -rrb- . 
+ a woman with an apple pie and 7 dwarves also attack the pcs . 
+ dwarf : rr 10 hp 1 gold : 100 damage 1d6 speed : 2 xp : 500 . 
+ woman with apple pie : rr 17 or sings and summons killer animals damage 3d6 subdual -lrb- knock out -rrb- hp 24 gold : 1,000 speed : 3 xp : 2,000 . 
+ if captured she steals all the pcs money and sweet magic stuff , gives him a magic pie and a kiss , and kicks him out of the forest . 
+ she summons 7 new dwarf bodyguards within 24 hours . 
+ area 3 you see a sign marked `` monster ville '' and soon enter a huge village of all kinds of monsters . 
+ none of them seem interested in fighting you . 
+ they have slave markets of humans , restaurants with unspeakable dishes , and plenty of weapons and black markets out in the open . 
+ the pcs can shop around , yell at the monsters who yell back , pick a fight with dragons , ogres , demons or whatever they feel like . 
+ or just generally make a mess of things . 
+ a rr 15 rumor gather or equivalent lets the pcs discover that the brady bunch of pixies , goblins , and trolls headed east here . 
+ freeing all the slaves causes a large ruckus and it 's quite possible the pcs might burn down monsterville and make themselves fugitives with bounties on their heads in two lands . 
+ area 4 this part of your map appears to have drool on it . 
+ as you 're cleaning it , a bounty hunter jumps out at you from behind and screams a deadly war cry . 
+ the bounty hunter is dressed in green camo and has a crossbow , a dagger , and a sword . 
+ bounty hunter hp 24 rr 17 damage 3d6 speed : 3 gold : 500 xp : 3,000 his crossbow is enchanted to shoot magma arrows which ignore all normal armors , and his dagger returns to his hand when thrown . 
+ his sword has an annoying japanese accent , but is otherwise unhelpful . 
+ the bounty hunter is named jed and explains about the reward on the pcs heads . 
+ they must either find a giant demon skull or the princess to proclaim their innocence . 
+ unfortunately the brady bunch seems to have beat them to both . 
+ anyone who rolls a perception check rr 16 or tracking rr 10 spots a trail of footprints which leads to a giant x marked on the ground . 
+ digging down reveals a huge treasure chest full of swag which was formerly owned by some band of pirates or other . 
+ the pcs can find just about any kind of treasure they want or can carry in the chest , but it 's far too big and heavy to bring with them . 
+ there 's roughly 100,000 gp worth of loot . 
+ among the magical treasures are : a cloak of invisibility -lrb- as per the power -rrb- , wand of fireballs , crystal ball , light saber , machine gun -lrb- 1 clip -rrb- , and a magical statue of a fish which turns into a flying killer fish which obeys the master a. +2 damage 1d10 hp 24 speed : 4 fly area 5 a huge ocean of water . 
+ must make a boat construction rr 15 or swim rr 20 to get across to the other side . 
+ area 6 you enter a vast warren of caves and smelly dirt piles with mounds of dung atop them . 
+ it appears you 've found the land of the orcs . 
+ the orcs generally run around screaming , and burn and pillage the nearby villages of the goblins and various other monsters of your own creation . 
+ questioning of anyone in the area reveals the orcs stole the giant demon skull from the brady bunch of pixies , trolls , and goblins who still have the princess . 
+ if the pcs can get the demon skull they can prove their innocence to the king . 
+ band of 10 orcs rr 16 hp 15 damage 2d6 speed : 3 gold : 5 xp : 200 the orc chief guards the demon skull which is his newest and most prized possession . 
+ he has a huge axe about as big as an ox-pulled-cart and his muscles are so huge he can actually wield it . 
+ orc chief rr 18 hp 35 damage 3d6 speed : 3 gold : 500 xp : 2,000 his axe deals +1 d6 damage on a hit but requires a physical strength score of at least +10 to wield properly . 
+ the demon skull is huge and without the magical sledge of the brady bunch it may be impossible for the pcs to bring it back to sileeria . 
+ also , there 's still the princess who needs saving . 
+ area 7 goblin lands the lands of the goblins are a sorry bunch of run-down buildings with holes in the walls , sewage in the streets , and a general lack of hygiene and clothes other than loincloths . 
+ before you know it about 10,000 goblins are staring evilly down at you . 
+ you 're amazed they managed to find you so fast , but since it 's been a week since you 've last eaten you 're kind of hungry too . 
+ the goblins worship the pcs as gods and lavish all manner of things on them . 
+ money , food , servants , whatever . 
+ the goblins hardly have anything good but they expect their new ` masters ' to provide them with a better way of life and lead them to victory . 
+ when the pcs leave the goblins think they 're going on a great pilgrimage and follow after them to annoy them and generally cause problems . 
+ area 8 you enter a frozen tundra and nearly freeze to death , but after a week of travel the ice fades away to be replaced by strange magical pools of water of various colors bubbling scintillatingly . 
+ anyone who bathes in the magical pools or drinks of the water is struck with one or more of the below magical effects : super strength +2 damage +5 strength based checks , invulnerability -lrb- 1 day -rrb- , turned into a toad -lrb- 1/2 hp and ribbits -rrb- , magical x-ray and telescopic vision , ability to fly , totally drugged out -lrb- 1 day -rrb- , or turned to stone -lrb- 1 minute -rrb- . 
+ area 9 this lush tropical jungle appears to be an ideal promised land for goblins . 
+ if the pcs have any with them they joyously settle into their new home . 
+ the trail of the brady bunch leads here and through a last stack of vines and misty jungle fumes the pcs come upon a small campfire around which a single troll , a goblin , and 2 pixies crouch eating meat . 
+ the princess is nowhere in sight . 
+ the brady bunch is psychotic and attacks anyone and anything on sight . 
+ bob `` the troll '' rr 20 hp 60 regeneration 2d6 per round damage 2d6 claw or bite speed : 4 gold : 1,000 and potion of regeneration 2d6 for 10 rounds . 
+ xp : 4,000 . 
+ fire or acid makes bob the troll ferociously strong and enraged giving him +5 damage and +2 rr but any frost attack deals x4 damage to him and causes him to whimper in pain -lrb- and bypasses his regeneration -rrb- . 
+ he informs any he battles , `` i 'm going to eat you , peasant . '' 
+ dixie `` the goblin '' this female goblin wears a little pink dress . 
+ she wields two daggers in battle and shrieks in a high whiny voice . 
+ rr 17 hp 17 damage : 1d6 +2 dagger and 1d6 +2 second dagger . 
+ if she flanks anyone she deals an extra +3 damage to them automatically each round . 
+ she has 2 free dodges of any attack per day . 
+ speed : 2 gold : 2,000 and love potion mental save to resist . 
+ she screams , `` die , die , die ! '' 
+ in battle . 
+ xp : 2,000 mike and pig `` pixies . '' 
+ both of these flying little pixies are rr 15 hp 15 damage 1d6 +2 speed : 6 fly gold : 1 and a tiny diamond worth 100 gp . 
+ they have a strange magical bond that keeps one alive while the other remains . 
+ any damage dealt to one takes no effect on it until equal damage is dealt to the other at which point they both take the damage . 
+ first line in battle when hit , `` yeah , that 's right invincible , pigs ! '' 
+ xp 1,000 each . 
+ if the pcs defeat them all and roll at least rr 15 intimidate or equivalent the brady bunch tells them they were hijacked by orcs who stole their demon skull and a blue dragon came and took their princess and the magical sledge they use to haul their loot . 
+ they can provide directions to the dragon 's cave at area 10 area 10 blue dragon 's cave deeper within the jungle you find a huge volcano with a gigantic hole in the side . 
+ a giant 's skeleton is suspended on a chain over the entry . 
+ written into the giant 's skull are the words `` go away or end up like me . '' 
+ a short dark tunnel leads to the dragon who is sitting on his hoard with the princess in her badly beaten-up wedding dress behind him tied to a stake in the ground . 
+ the dragon 's sitting on a huge pile of gold , jewels , and plenty of magical items . 
+ the blue dragon is wiling to negotiate and trade the princess for the buried pirate treasure in its entirety which the dragon 's heard about but never found . 
+ otherwise he 'll have to be fought if the princess is to be free . 
+ dragon hide is also the strongest armor available in the game if anyone can manage to make some . 
+ blue dragon rr 20 hp 60 damage 2d6 to all pcs or 3d6 to one . 
+ electrical or fire breath weapon , dragon 's choice . 
+ speed : 24 fly 12 land gold : 100,000 gp hoard xp : 6,000 . 
+ see invisible , saves 95 % , grab +10 opposed by escape artist or reflex save , free action eat whole for 1d6 +8 damage . 
+ if the pcs are victorious they get the girl , grab a load of treasure , and clear their names . 
+ the dragon hoard has a load of mundane loot and the following magical items : potions of healing 1d6 -lrb- full round to drink -rrb- x20 , staff of magic 1 reuse of a spell per adventure , animated lock picks +4 to pick lock attempts , oil of immaterial -lrb- 1 minute of insubstantial and can walk through walls -rrb- , 10 teleport tablets -lrb- can anchor to 1 area and teleport there when tablet smashed as a full round action -rrb- break another to get back , and a set of bag pipes which controls the weather . 
+ lightning 1d6 attack when playing in a storm . 
+ victory ! 
+ the farmer is so pleased when you bring his daughter home that he sheds a tear and pays you 1 copper coin . 
+ `` thank you so much , fine sirs . 
+ my daughter , susan , means everything to me . '' 
+ the pcs earn 10,000 bonus xp each for successfully completing the adventure and the king takes the bounty off their heads . 
+ for torching the monsters the king also grants each of the pcs the title of lord of sileeria and their very own castle strongholds to defend and administer to . 
+ see : high level characters strongholds in the full challenger book . 
+ chapter five : killer dungeon having tended to your great kingdoms for several months you find yourselves growing antsy about the lack of adventures , loot , princesses , dragons , and monsters to kill . 
+ you all meet up at your old pub and start to talk about old times until you ca n't resist it anymore and go looking for an adventure . 
+ you soon find a trail of inscrutable rumors that lead you to a far off land where a kingdom known as eastmark has been completely swallowed by a rogue dungeon by the name of `` the terminator '' . 
+ the tales bards have spun lead you to believe that all those ` eaten ' by the dungeon may yet be freed if you complete your quest within the week before they 're digested by the dungeon and it moves on to another kingdom , naturally , this would mean saving a princess . 
+ the dungeon , it is said , can only be killed by finding its ` heart ' and stabbing it with the sword of sebarath . 
+ if no one has the sword of sebarath from the previous adventure you can allow them to go on a minor side quest to retrieve it . 
+ the three witches before you can reach the fabled maw and entry of the dungeon `` terminator '' you stumble into the camp of three witches : one fat , one small , and one tall . 
+ they all snicker and cast dire portents about you growing old , fat , and arthritic all of which are obvious lies , you all having been smart enough to drink from the holy grail , right ? 
+ if the pcs do n't have the sword of sebarath the witches hand it to them . 
+ it 's a longsword +2 which glows bright blue and once per day can blow through solid stone for +1 d6 damage . 
+ the entry to the dungeon the morning mists part before you on a desolate field where a thriving kingdom once stood . 
+ a shiver runs down your spine as you see a tall beam sticking out of the ground where a pub like your own once stood . 
+ someone 's leg juts up at an odd angle , and then you spot the entry to the dungeon known as `` terminator '' . 
+ it appears to be a wide gaping maw looking up at the sky with non-existent eyes . 
+ its long teeth are made of solid stone and between each row of razor-sharp incisors is a smooth stairway leading down and within invitingly . 
+ anyone foolish enough to enter is eaten in short order . 
+ rr 20 to escape or evade . 
+ damage 4d6 per round if eaten until trapped with the other occupants of the kingdom -lrb- out of the game -rrb- . 
+ after the first few non-important henchmen die , the witches return with a new warning . 
+ you see the witches drifting over the moors toward you with some concern . 
+ `` not that way , you fools , you must attack it and somehow anger it into revealing its true entry . '' 
+ anyone may attack the front of the beast without entering within , but doing so is extremely risky as the mouth can thrash around and eat people . 
+ dungeon mouth rr 17 hp 40 damage 4d6 and if killed eaten and trapped within rr 22 to break out . 
+ speed : 3 -lrb- one area -rrb- gold : 0 xp : 0 using ranged attacks and magic on the mouth deals damage to it , but at 0 hp the mouth simply collapses and then regenerates at full hp in 1 round and laughs . 
+ you should let the pcs try all manner of stuff on the mouth . 
+ they must perform at least 5 of the following tasks to get the beast angry enough to fully surface and present its true entry : set fire to it , laugh at it or otherwise taunt it , use frost on it , use acid on it , strike it for at least 15 damage in one blow , spit on it , kick it , call it a son of a piece of rock or similar , blow it 's mouth to pieces , seduce it , bluff it , trick it , give it a riddle it ca n't solve , or pay it 1,000 gp or more . 
+ the angered beast with a huge roar the ground shifts and with a massive earthquake the beast surfaces , momentarily exposing its soft underbelly and thus a way inside . 
+ the dungeon resembles a huge crocodile made of stone and can not be killed in this form no matter how hard the pcs try and what they do to it . 
+ smashing into its soft underbelly requires at least 10 points of damage and a rr 14 speed check to get inside before the beast tries to step on you . 
+ rr 15 or take 2d6 crushing damage . 
+ the dungeon once again you should doodle out a little map and assign the encounter areas as you see fit . 
+ the tunnels are narrow , uncomfortable , and hot and moist as if the pcs are inside a living breathing beast . 
+ encounter 1 the corridor as you walk down a very long corridor the beast that is the dungeon shakes with mirth and the back walls closes in until you can see nothing . 
+ the front of the cave starts to narrow and contract until you are being crushed between the walls . 
+ hacking madly away at the walls for at least 25 damage in 2 rounds will prevent automatic death -lrb- 1/2 hp first round , all other hp second round -rrb- . 
+ teleporting , causing the beast to sneeze , or other tricks may also work . 
+ encounter 2 endless fall corridor as you merrily march down a tight passage the floor suddenly opens up without warning into a million foot pit into molten magma . 
+ everyone screams and falls . 
+ rr 16 acrobatics may grab a ledge or part of the wall . 
+ rr 16 may climb out of the wall , flying and teleporting are naturally useful , and being immune to magma may help but the fall still deals 6d6 damage . 
+ encounter 3 diamond room you wander through a huge maze of shifting corridors and passages until you get lucky and find a room full of diamonds growing out of the walls . 
+ if the diamonds are snapped off more grow back in their place . 
+ any henchmen of the pcs immediately start cackling and filling their packs with the loot unless a pc rolls rr 17 intimidation or similar to order them not to . 
+ the diamonds appear to be real , but further probing may reveal they have a magical aura . 
+ 3 minutes after taken the diamonds turn to molten acid dealing 2d6 damage each to anyone who took them and melting their gear . 
+ naturally , people who took loads of diamonds take a lot of damage . 
+ encounter 4 magma storm as you bumble around a series of passages you feel a fell wind on your face and a red glow approaches from up the corridor . 
+ next second a wall of magma is rushing towards you ! 
+ the magma is real and quite lethal . 
+ even if it is avoided the dungeon will start spitting walls of acid , frost , and whatever else it can think of until the pcs hack into the wall and carve a passage to the beast 's lungs . 
+ there they must carve flying discusses and fling themselves into its esophagus before they hit the stomach acid and down those passages they find encounter area 5 if they had n't already in which case they go to the next highest number and so forth . 
+ encounter 5 the beast 's stomach tunneling through the belly of the beast you reach a large waste chamber where you find the remnants of a hundred kingdoms groaning and lying in the dust of destroyed empires . 
+ magical lights in the shape of the beast 's eyeballs swivel around and watch your progress as you comfort the survivors . 
+ behind you the route you took seals up . 
+ the survivors are n't terribly helpful . 
+ they just tell the pcs every day a load of them are vaporized as they are consumed by the terrible dungeon beast . 
+ there appears to be no way out of the beast 's waste chamber and the vaporizing beam randomly hits people as they wander and lie about . 
+ hacking their way out is the only way for the pcs to free themselves . 
+ hacking hp 15 per round to make progress . 
+ must strike 3 consecutive rounds to escape or re-seals up . 
+ if the pcs manage to hack an escape route everyone cheers and starts running away . 
+ it is likely no one will make it out alive unless the pcs can find the heart and stab it with the sword . 
+ the beast shudders as you strike through it 's waste chamber walls and the people scream in victory and flee in droves , probably only to fall in the stomach again and come straight back here . 
+ you must find the heart and stab it with the sword before it 's too late and the beast decides no one 's worth the trouble anymore and kills you all . 
+ encounter 6 the crunch room on your way to the heart you pass through a chamber full of goblins shoveling gold into a giant furnace which , apparently , powers the creature in some way . 
+ the goblins have no objection to the pcs stealing as much gold as they can carry and smashing the furnace which causes the beast to howl with fury and leap up onto land , it shakes all the corridors and rooms as it lurches for the pcs homeland intending to eat it all and lay it completely to waste and ruin . 
+ if they do n't arrive in time their favourite pub and their castles may lie in ruins . 
+ encounter 7 the sneeze you burst past the lungs and see the heart of the beast lying on a pedestal , ripe for the stabbing . 
+ before you can reach it with your lightning reflexes the beast sneezes and you fly topsy turvy out of its mouth and land on the ground in a heap . 
+ the pcs see the beast storming off over the countryside , smashing down forests , and heading for their home kingdom while trailing out magma blood from all the wounds it 's sustained in battle with them . 
+ they must somehow catch up and cut through its underbelly , then find their way back to the heart again . 
+ encounter 8 magma men you come back to the chamber with the heart and before you can reach it a dozen magma men materialize before you and shoot beams of fire at you . 
+ an energy bubble springs to existence before the heart blocking any teleportation within and the magma men bar entry to the heart stone . 
+ magma man rr 19 hp 15 damage 1d6 +7 see invisible speed : 3 gold : 50 xp : 1,000 each . 
+ there are 10 of them . 
+ a hit sets the pc on fire 1d6 damage per round unless you spend a whole round to roll out the flames . 
+ frost deals x2 damage to the magma men and they melt non-magical weapons which hit them . 
+ encounter 9 the heart you finally stand before the heart and raise the sword on high to strike the death blow . 
+ if the pcs have n't fought the magma men yet proceed to encounter 8 , otherwise they can stab the heart and the beast flings them and the survivors of the massacred kingdoms out onto the ground . 
+ it 's just reached the pcs own kingdom and everyone is running around and screaming and shooting at it . 
+ it appears the beast is n't dead yet . 
+ without the heart it is now vulnerable to normal damage , but it 's enraged and ripping apart your home kingdom with a vengeance . 
+ dungeon beast -lrb- colossal -rrb- rr 20 hp 60 damage 3d6 speed : 5 gold : 10,000 xp : 7,000 eat whole as per the old dragon in the challenger book . 
+ there should be a huge battle , the sword of sebarath hits on rr 15 and deals x2 damage against the beast . 
+ if the pcs slay the beast they are the heroes of the survivors and of their kingdom who names a pub , babies , and several streets after them ; and the king even personally throws a feast in their honor and bestows knighthood or some similar privileges on them . 
+ any surviving pcs gain 3,000 xp apiece for their heroic efforts and being foolish enough to go after the dungeon terminator in the first place . 
+ chapter six : wrath of the gods your renown is now such that few foes trouble you , you are hailed in the streets as celebrities , you never want for food , gold , or women ; and you command the undying loyalty of your many valorous henchmen . 
+ you 're just starting to think maybe you can retire in peace , when one final challenge besets you . 
+ ioth , the god of secrets , summons you to a secret council meeting . 
+ you can refuse of course , but then he 'll probably curse you with something fairly nasty as uber beings are wont to do . 
+ using mighty magical portals , their own abilities , or whatever nutty things you can come up with -lrb- such as jumping to the moon or entering a volcanic frost gate -rrb- all of the pcs manage to attend the meeting should they so wish . 
+ it 's on an alternate dimension where ioth has ultimate power so they wo n't be able to challenge him unless they can find a way to become gods themselves . 
+ ioth you find yourself on a vast open field of dark energy . 
+ a huge table materializes before you and a giant , one-eyed cyclops wrapped in the ancient clothes of a mummy appears before you . 
+ this is ioth . 
+ he says nothing but visions fill your head , terrible visions of gods at war and universes splitting apart in the mayhem . 
+ in the brief second he touches your mind you know what you must do . 
+ you must descend into the underworld and capture hades who , as always , is responsible for this mess . 
+ next , you must travel to mount olympus where the norse gods happen to be visiting and beat the crap out of all the famous deities to distract them long enough for hades ' curse to wear off so they do n't start a god-war that will rip apart many universes killing trillions of innocent dragons and your home plane of existence . 
+ your reward ? 
+ ioth apparently has promised you the honeyed nectar of immortality but you inform him you 've already got that mate , so he offers to make one of you a god , sort of a lotto 649 sort of thing , as it were . 
+ naturally , you accept , because of the prospect of saving zillions of innocent lives , not godhood which has no appeal to you whatsoever . 
+ when the pcs are done bargaining with , fighting , and generally badgering ioth he waves his hand and banishes them to the underworld -lrb- once they 're suitably prepared of course -rrb- . 
+ if anyone asks how they 're supposed to fight gods , he also gives them a map to a treasure store of magical god-whooping weaponry hidden on their prime material plane . 
+ if nobody asks he just lets them go without it in the well-founded belief they know what they 're doing and will find their own way to battle the gods . 
+ apparently , hades has brainwashed the other gods into temporarily believing they 're at war so they 'll fight and let him seize control of the godly government and a lot of loot . 
+ the underworld ioth waves his hand bidding you good luck in your minds and you appear in the underworld next to the boatman of the river styx . 
+ if you 're history lessons are correct , you 'll probably need to pay him at least 1 gp to cross and furthermore run into a giant 3-headed dog named cerberus . 
+ the dog is no trouble , but you find yourself saddened at the prospect of giving up one of your beloved gold coins . 
+ the boatman will indeed take people on for one gold coin , but if they make it clear they have a lot of money , he 'll be sure to up the price . 
+ anyone attempting to swim in the river of death or fight the boatman will more than likely instantly die with no saving throw . 
+ cerebus in the gloom of the waters ahead you see a bright light and hear a load of snarling . 
+ as you round the bend in the passage you see a huge 3-headed dog snarling at you . 
+ he appears to be the nastiest , biggest monster you 've ever faced in your career , including the dragons . 
+ anyone who fights cerebus will probably die , but those calling him , `` such a good boy '' or throwing him meat become his eternal friends . 
+ cerebus hp 1,000 rr 20 damage 1d6x10 speed : 5 gold : 0 xp : 1,000 -lrb- 2,000 for bypassing -rrb- . 
+ hades you climb a massive 300 mile high mountain made of bones but do n't get tired for some reason . 
+ at the top , sitting on a throne made of pinky finger-bones , is hades , lord of the dead . 
+ he seems to be happy and is rubbing his hands together without noticing you . 
+ hades can not be killed unless someone takes the magical spear hidden behind the back of his throne made of pure ivory and stabs him through the heart with it , which will kill him for 1 day and teleport the party back to the surface of their own dimension . 
+ hades -lrb- invulnerable -rrb- hp 20 rr 16 damage : death save for 1 hp second hit kills auto and he claims your soul . 
+ can barter souls back to life if hard pressed . 
+ speed : infinite . 
+ saves : 100 % gold : infinite/none xp : 10,000 magical ivory spear +5 god killer . 
+ strike in heart rr 18 to kill hades with one hit . 
+ comes back to life in 1 day . 
+ magical god-whooping weaponry store high in the mountains of your own home dimension you find a crate marked `` god whooping weapons '' it 's very old but appears to be intact . 
+ opening the crate is simple as it 's only tied with two pieces of ancient string . 
+ inside are a particle beam laser canon 2d6 damage +4 weapon which can harm gods , a circular disk of metal similar to xena 's chakram which always returns to the master 1d8 +4 and can kill gods , a green glowing sword marked `` death dart the deadly '' which poisons targets , is a 1d6 +5 weapon , and deals +1 d6 damage +1 damager per round to a max of 10 unless you use an antidote and can kill gods . 
+ and last , but not least , a magic staff 1d6 +4 which can do pretty much any spell , and also effects gods struck with its power . 
+ all of these magical weapons only kill gods for 1 day . 
+ mt. olympus you know time is short so you set out for mount olympus in the hopes you 'll arrive before they start ripping the universes to shreds . 
+ the pcs will have to find some way to locate mount olympus . 
+ typically , it 's a really big mountain and you need some kind of god-like creature to grant you an audience there . 
+ the pcs will probably have to contact one of the goddesses somehow by an outrageous offering -lrb- or desecration of her temples -rrb- and then seduce her to get her to let them teleport up , but you 're free to come up with anything you want . 
+ mount olympus is a huge cloudy area , you can see a load of solid gold pillars , several people with winged feet flying around with harps and in chariots , and several tall , glowing giants who must be gods wending about their business . 
+ you spot a huge temple to zeus which is obviously where you have to go but , just before you reach it , athena , artemis , and aphrodite confront you . 
+ the two women deities attempt to seduce any male members of the party and artemis turns his huge buffed muscles on the women of the group , or if there are n't any , pouts . 
+ resist seduction rr 20 or mind controlled permanently by the deity . 
+ xp : 2,000 for resisting . 
+ the temple of zeus you see all sorts of wondrous treasures around you , perhaps you should stay and do a bit of looting ? 
+ but no , time is short before the deities rip the worlds apart in their crazed , hades-induced wrath , so you decide to storm in on their meeting , or do you ? 
+ if the pcs want to loot you can let them get pretty much whatever they 'd like , steal fire from the gods , get pandora 's box , etc. ; but then the gods start fighting and their mission becomes a lot harder . 
+ in that case , skip over to the big fight , below . 
+ the meeting hall you come into a chamber filled with all sorts of delightful foods , musical instruments playing in the background , and a long table upon which the gods sit with zeus and his buddies on one side , thor , odin , and the rest drinking and yelling while swearing very loudly on the other , and lolthh queen of the demonwebber pits sitting at the end table and playing hooky with cupid . 
+ if the pcs are late refer to the fight below , otherwise they can storm in and take out a half dozen gods before the war starts . 
+ the big fight hades ' curse appears to have taken effect , all the gods eyes glaze over and they start hurling thunderbolts , webs , and hammers everywhere . 
+ everything explodes and it 's all you can do to stay alive . 
+ you now must do what you were destined to do ... whoop some extreme godly arse . 
+ there are 20 minor gods to deal with or only 10 if the pcs were careful as above . 
+ god hp 1 rr 20 damage 1d6x10 skills +10 all gold : 0 xp : 7,000 each . 
+ each of the major gods must be defeated in a specific way as outlined below . 
+ the gods fight each other mainly , and only target the pcs if they get in the way or attack them . 
+ their blows rip through space-time , however , so they must be fought and the pcs ca n't simply sit around and wait for them to fight it out . 
+ thor hp 25 rr 18 damage 2d6x10 hammer or 1d6 x 10 fist speed : infinite skills : all +5 strength based +20 all . 
+ gold : 0 thor 's hammer +5 +3 d6 damage returning giant stone hammer . 
+ xp : 8,000 to beat thor one must beat his legendary strength in a pure physical strength vs. physical strength check . 
+ until this happens , he can not die . 
+ zeus hp 20 rr 16 damage 1d6x10 lightning bolt or punch/bear hug gold : 0 speed : infinite . 
+ all skills +20 . 
+ xp : 9,000 to beat zeus , king of the gods , someone must steal his lightning bolts rr 30 theft or he can not be killed . 
+ odin the all father hp 18 rr 17 damage 1d6x5 glare of doom gold : 0 speed : infinite . 
+ all skills +15 mental skills : +30 . 
+ xp : 7,000 to beat odin the all father someone must out-riddle the wisest of the gods . 
+ rr 30 or higher mental strength check or similar or outwit the gm 's fiendishly brilliant riddle . 
+ his raven perches on your shoulder and grants you infinite wisdom for 1 day if you defeat him . 
+ lolthh queen of the demonwebber pits . 
+ can not be killed . 
+ must be found perception rr 25 and then persuaded to dance rr 25 and then beat in an all-out dance contest rr 30 judged by the gods and fellow pc 's . 
+ 10,000 xp for beating in a dance contest . 
+ once all the deities are laid to waste except for lolthh who cackles and escapes , ioth teleports in and laughs evilly . 
+ `` fools , now i will be the king of the gods ! '' 
+ ioth can not be killed and each round he is fought , rr 20 to even touch him , he destroys one god killing weapon . 
+ the only way to defeat him is to poke out his cyclops eye which is covered in mummy rags which must be burned off by magical fire . 
+ lolthh will helpfully inform the pcs of this when they have only 1 god-killing weapon left . 
+ even if they run out they can take a lightning bolt from zeus or a hammer from thor to get the job done . 
+ once ioth is taken out all of olympus is in fire and ruins . 
+ the pcs can search about for loot and eventually find a goblet of godhood power . 
+ if only one pc drinks this he becomes a god under the control of the gm , if all of the pc 's drink it they gain superhuman powers granting them 10,000 xp to instantly spend on godly upgrades to their characters . 
+ the final challenge eventually one of the pcs finds out the gods are coming back to life in 1 day because they ca n't really be killed . 
+ it 's pretty safe to assume they wo n't be happy when they wake up and a way off of olympus must be found . 
+ if aphrodite , artemis , and athena are still around they must be found within 24 hours , seduced , and persuaded to teleport the heroes back to earth . 
+ when the pcs finally make it back to earth they use their mighty powers to hide themselves from zeus and the others until they can cool it over their embarrassing defeat . 
+ they each form their own countries and mighty empires , or whatever they 'd like , and the campaign ends in victory . 
+ the heroes retire as npc 's under the control of the gm and you can start a new story in a new universe with new heroes , or perhaps the newest apprentices of the old pcs are the new heroes . 
+ however , who knows when an even greater challenge may face these epic heroes and they 'll be called on once again to save the world , the universe , or the multiverse . 
+ chapter seven : a marvelous time the gods have agreed to leave you alone provided you never let it out that you whooped their asses . 
+ truly , you 've become mighty heroes capable of the great deeds only sung about in legends . 
+ the bards have their hands full just recording what you do every day when you walk -lrb- and fly -rrb- down the street to your local super market . 
+ despite all your powers , all your fame , and your insurmountable reputation you long for the good old days when an orc scared your pants off , demons made you tremble in your boots -lrb- as if ! -rrb- 
+ , and fair maidens needed rescuing . 
+ now whenever a fair maiden needs rescuing you just call up your personal friend , zeus , and the bad guy is soon a high voltage stack of soot . 
+ * sigh * . 
+ but wait , what 's this , it appears an inter-dimensional rift has opened up in the foyer of your castle / -- insert favoured residence of the hero here -- aha ! 
+ you seize upon this wonderful opportunity to get yourself killed in the blink of an eye and jump within . 
+ adventure ho ! 
+ you holler and are n't very surprised to find all of your friends have jumped through similar portals being equally as bored and stupid as yourself . 
+ you appear naked in a strange land with all of your gear sitting in a giant laundry heap beside your . 
+ you 're on a black road made of stone with steel chariots whizzing around . 
+ you immediately realize , being vastly intelligent , that you 've somehow teleported to the future and into a land known as metropolis where superheroes rein , technology runs rampant , and tv news reporters always get captured by super villains . 
+ you smirk and pick up your trusty magical god-whooping weapons . 
+ it is now time for a load of interesting role-playing on your part as the players search for the reason they were brought here , run into the police and fire department , and generally make war on the united states of america -lrb- or the un -rrb- . 
+ when they 're finished stealing rolls royces , buying hamburgers from mcdonalds , and mucking around with tvs , laptops , and high powered weaponry you can feel free to proceed to the rest of the adventure below . 
+ the deal as you 're mucking about -- insert smart party member 's name here -- happens to see something on a nearby television screen . 
+ it appears to be a man wearing a cape that makes him look vaguely like a bat . 
+ a shorter man stands beside him wearing a bright red and green spandex suit bearing a huge r and wearing a yellow mask . 
+ behind these weirdly dressed people stand super man , wonder woman , the flash , green lantern , iron man , and austen powers . 
+ bat man , the strangely dressed man , takes the mike super man offers him and stares you in the eye , even though it 's impossible he could know where you are or what you 're doing . 
+ `` alright you super villains , it 's time for the new age league of just ice to teach you a lesson . 
+ prepare to get your rears kicked into high gear . 
+ you should 've never stolen the batmobile . '' 
+ the heroes may react to this however they wish . 
+ if they attempt to negotiate the league of just ice does n't believe a word they say and will stop at nothing to see them behind bars . 
+ they learn , however , that lex luther is behind this and if they can find him they might be able to prove their innocence . 
+ the battle with just ice read the following when one or more of the pcs attempts to negotiate with , attack , spy on , or otherwise meets up with the league of super heroes . 
+ bat man stares you in the eye . 
+ that 's right , i can see you punk . 
+ yeah , i rolled a 20 . 
+ now you 'll learn why gotham city is the toughest town for criminals like you . 
+ bat man whips out his patented bat hook and starts whipping it around . 
+ the stats of the various super heroes are as follows with one important exception : none of them can die ! 
+ because of the twisted laws of super hero dom no super hero can ever die . 
+ whenever they appear to die , they actually did n't and come back to life at the nearest opportunity with some loony story of how they escaped death . 
+ the only way to truly defeat them will be to hunt down lex luther and prove the pcs innocence , otherwise they 'll all just end up in jail , one way or another . 
+ defeating these super heroes multiple times only grants xp rewards as the gm sees the challenge as worthy , excess defeats count for nothing . 
+ super man hp 200 rr 19 damage 1d6 x 10 speed : 24 fly gold : none xp : 10,000 per defeat . 
+ skills : +10 all strength based : +40 all . 
+ weakness : kryptonite . 
+ special : can not die ! 
+ see above . 
+ wonder woman hp 100 rr 12 damage 1d6x3 speed : 24 fly gold : none , magic lasso , invisible jet . 
+ xp : 5,000 per defeat . 
+ skills : +10 all seduction : +20 . 
+ bracers of deflection : immune to ranged attacks . 
+ special : can not die ! 
+ see above . 
+ the flash hp 50 rr 15 damage 1d6x5 speed : 1,000 gold : none . 
+ xp : 7,000 per defeat . 
+ skills : speed +50 all others +15 special : can not die ! 
+ see above . 
+ also , feel free to have the flash do pretty much whatever he wants , as many times as he wants , in the blink of an eye . 
+ allowing him to make 50,000 attacks requiring rr 15 rolls to dodge in one round , may be reasonable . 
+ green lantern hp 40 rr 18 damage 1d6x5 speed : 24 fly gold : none . 
+ xp : 6,000 per defeat . 
+ special : can not die , see above . 
+ also green lantern has a power ring and a lantern hidden somewhere . 
+ his power ring allows him to make any skill check at +40 and is only blocked by the color yellow . 
+ obstacles set by green lantern are rr 18 to avoid or smash or they take full effect . 
+ he can set up to 2 obstacles per round . 
+ iron man hp 100 rr 21 damage 1d6x5 speed : 24 fly gold : none . 
+ power suit . 
+ xp : 7,000 per defeat wearing suit . 
+ special : can not die , see above . 
+ also iron man 's power suit gives the wearer 2-6 armor the same as dragon armor , fly 24 , can transform into a briefcase , deals 1d6 +10 damage repulsor blasts , and has a regulated internal environment and is also generally keyed to him with a female computer voice . 
+ austen , danger , powers hp 15 rr 15 damage 2d6 speed : 3 gold : none . 
+ male symbol key chain , girly red suit . 
+ xp : 1,000 per defeat . 
+ special : can not die , see above . 
+ skills : all +5 and seduction +50 against women . 
+ also , acting weird skill at +50 . 
+ once per encounter austen powers can name any effect he wants to take effect and the desired result comes about automatically with no saving throw . 
+ he does n't tend to wish all foes defeated , but rather than people pose for his camera shots , or using `` judo chop ! '' 
+ on one person to knock them unconscious . 
+ bat man hp 80 rr 14 damage 2d6 speed : 4 gold : none . 
+ utility belt . 
+ xp : 4,000 per defeat . 
+ special : can not be defeated , see above . 
+ skills : all +20 intelligence based +40 , he is the leader of the just ice league of world defenders . 
+ robin . 
+ stats at gm 's discretion . 
+ should be piddly . 
+ at the first opportunity robin betrays bat man and his allies and declares , `` holy hula hoops , bat man ! 
+ these guys are the real heroes ! '' 
+ he will thenceforth annoy the pc party and try to help them to the best of his abilities -lrb- and fail -rrb- . 
+ looking for lex luther the gm should not make it clear to the players that the super heroes ca n't be killed . 
+ they can be hunted down and beaten at the player 's leisure . 
+ also the super heroes wo n't kill the pcs who they think are super villains and will instead knock them unconscious and put them in ever increasingly difficult to escape jail cells guarded by killer robots and such like -lrb- stats at your discretion to challenge the heroes -rrb- . 
+ when the pcs finally learn that lex luther is responsible for their bad name -lrb- or discover that the super heroes ca n't be permanently killed due to the super hero factor -rrb- they must embark on a mission to discover the whereabouts of the daring lex . 
+ any attempts to use super powers , god abilities , radar , tracking , mind controlled flash to search everywhere on the planet , and such-like all turn up failed results . 
+ even using psionic abilities to find him yields no answers . 
+ it appears he 'll have to be found the good old fashioned way : by asking . 
+ despite your best and most valiant efforts lex 's whereabouts are a mystery to you . 
+ he 's somehow managed to cloak himself from even your incredible abilities . 
+ this is unheard of . 
+ what could he be using and how will you find him ? 
+ the wild goose chase you can allow the players to bumble across the universe , teleport through dimensions , or whatever in search of old lex luther . 
+ the just ice league follows them , makes bad jokes , and harasses them wherever they go despite any attempts to point out that the heroes have done nothing wrong . 
+ there are now two basic options which could happen : 1 . 
+ the players generally give up and all get captured finally in some place they ca n't escape , and 2 . 
+ they actually manage to find lex luther through extraordinary efforts -lrb- as judged and awarded xp by you , the gm -rrb- . 
+ lex luther it turns out lex luther is hiding in the shielded confines of the just ice league space station orbiting earth . 
+ you do n't know how it 's been so darned hard to find , but you 've finally got the place , maybe you 'll make it your new hideout ? 
+ as you approach the satellite in the depths of space -lrb- you brought a space suit right ? -rrb- 
+ a voice crackles over the speakers , both real and in your heads . 
+ `` ha ha ha , and you thought only super man was stupid enough to fall for my schemes , eh ? 
+ well , i 've shown you , have n't i ? 
+ lex luther continues to taunt the players , making fun of their appearance , mannerisms , poor attempts to find him , and generally being a pain in the arse . 
+ when the pcs finally break into the satellite and hunt him down they find nothing but a speaker broadcasting into the nether , mental waves , and electronic computers whirring about . 
+ `` yes , that 's right , you 've fallen into my trap . '' 
+ before anyone can teleport -lrb- unless you 're feeling generous -rrb- the whole space station explodes in a gargantuan nova which saps the heroes of all their powers and makes them vulnerable to giant space crab robots who zoom in from outer space and capture them , ferrying them down to earth and a giant prison that lex luther has prepared for them . 
+ if any pcs escape ... you can let them formulate whatever plans they want for attacking lex luther 's prison or doing whatever they can come up with . 
+ the prison 's outer walls are pretty much impenetrable but a truly magnificent attack or use of stealth and ingenuity may gain entry to the compound . 
+ trapped in lex luther 's prison you all wake up tied in energy chains naked . 
+ you note your companions are much older and wrinklier than your remember them . 
+ across from you in an adjoining room with only a 1 inch thick wall of see-through plastic between you , you can see the just ice league all drugged out and still wearing their brightly colored spandex suits , lucky buggers . 
+ a bald man walks up to your side of the glass and taps on it while smiling banally . 
+ `` hi , i 'm lex luther , criminal mastermind genius , and the man who just completely pawned you . 
+ ha ha ha . '' 
+ you may have lex luther insult the heroes at will until they get seriously annoyed with him , you , and this adventure , then skip over to the grand escape below . 
+ attacking lex luther 's prison you see below you the well-hidden solid adamantium enclave of lex luther , it appears to a be a prison where he 's undoubtedly captured all the super heroes you weakened . 
+ perhaps some of your friends are in there ? 
+ regardless , he must be stopped . 
+ if only to find a way back to your own dimension and out of this crazy metropolis place where everyone is always attacking you and wearing weird , brightly colored spandex tights . 
+ the walls seem to be impervious to magic , psionics , massive explosions , and everything else you can readily come up with . 
+ you must find an alternate route within . 
+ the players will undoubtedly come up with several brilliant solutions , entering back doors , seducing guards , blowing the barf out of the place , or whatever . 
+ you should let them eventually get inside , but make them work for it and do n't let them steel parts of the adamantium or blow the whole place to bits . 
+ exploding the earth is worth a lot of negative xp as well -lrb- and lex luther 's prison survives anyway -rrb- . 
+ layout of lex luther 's base regardless of how the pcs make it to this point -lrb- breaking in or breaking out -rrb- you can now use your gm doodled map with the following encounter areas as you see fit . 
+ it should be noted that the adamantium walls are pretty much immune to everything and ca n't be teleported , or mentally bypassed in any way that the heroes possess . 
+ nor can they steal the stuff to gain ultimate power or an invincible shield . 
+ the whole thing is electrified and when you break off pieces it no longer works , this also means if they can find the reactor they can power down the defenses of the whole place . 
+ throughout the below areas lex luther is an illusion hologram which can not be killed or destroyed and he will no doubt insult anyone trying to do so . 
+ he runs around , taunts the pcs , and -lrb- when he does n't know where they are -rrb- mentally and physically broadcasts his voice to everyone over the advanced intercom system . 
+ encounter area 1 `` the prison cells '' any pcs breaking out any of the super heroes they have n't completely ticked off or killed with have found some newfound allies . 
+ the super heroes are fairly brainless in their attempts to help out , but their attacks are effective -lrb- do not use their stats , just roughly approximate what would logically happen when they attack or use powers -rrb- . 
+ they are equally powerless at blowing their way out or finding lex luther for real . 
+ be sure to detail the cool way the pcs break out of their prisons . 
+ as you break free lex luther laughs and explains his plans . 
+ `` i 'm going to swap your genetic codes with a band of evil cyborgs i like to refer to as the nine , these neither living nor dead ring wraiths will serve me loyally through the power of the one ring which i 've managed to steal from hogwarts school of witchcraft and wizardry . 
+ anyone who does n't believe me can just cry like a baby , ha ha ha ! '' 
+ it is indeed true . 
+ the gm should set his watch for 10 minutes and if the heroes ca n't stop lex in that time they are sucked dry of their powers and killed and/or turned into 0-level peasants or annoyingly small amphibious reptiles . 
+ encounter area 2 hall robots soon after busting your way into the corridors you hear an alarm blaring and the voice of lex luther in your minds . 
+ `` mwa ha ha . 
+ you think your power equal to the genius of lex luther ? '' 
+ giant killer robots detach from the walls and streak to the attack . 
+ giant killer robot hp 40 rr 18 damage 5d6 gold : 0 speed : 5 xp : 1,000 special : see invisible , detect all , blocks teleporting in 100 ft. field , dampening of super powers in 100 ft. immune to fire , ice , acid , and electrical damage . 
+ self reparing at 10 hp per round unless killed . 
+ the gm can feel free to attack the party with as many giant killer robots as he sees fit . 
+ encounter area 3 the train station you bumble through a loose wall and find yourself in a strange underground subway tunnel . 
+ there 's a little grotto , a hole in the roof , and a swimming pool . 
+ a woman named money penny says , `` hi , i 'm money penny , can i get you anything to drink ? '' 
+ and a fat man named otis says , `` lex luther is going to kill me for letting you in here . '' 
+ the two side characters can be killed , cajoled , intimidated , or whatever the party sees fit . 
+ there is a bit of kryptonite in a box here which super man really hates , and a desk rr 16 perception which holds lex luther 's plans to siphon all the heroes and super heroes powers into his machine cyborgs `` the nine '' and leave them dead dried out husks within 10 minutes -lrb- real time : set your watches people , if not done already -rrb- . 
+ the two npc 's have no clue where lex luther 's gone . 
+ if around , superman starts drowning in the swimming pool . 
+ he 's very grateful to anyone who saves him . 
+ encounter area 4 underground highway you enter a featureless cube shaped chamber and the door disappears behind your backs . 
+ lex luther 's voice laughs diabolically in your minds and ears . 
+ `` fools , you 've fallen for the oldest trick in the book , i 've got you trapped now and i 'm going to suck out all your powers and feed you to the sharks . '' 
+ as soon as anyone easily busts out of here they find themselves in a giant underground race track . 
+ any super heroes with them or robin explain about how lex luther will siphon off all their power and kill them in 10 minutes unless they find him . 
+ speed will be of the essence . 
+ luckily the underground highway has a road map towards the next section of lex luther 's lair and there are a load of sweet cars here including the bat mobile which was stolen from bat man . 
+ as soon as the pcs and any superheroes with them start racing off , read them the following : as you hop in and take off at extreme speed you see a load of rival street gang cars painted black with red flames zooming in from all sides . 
+ the track opens up until you appear to be driving on a giant hot wheels track and you notice all your vehicles are equipped with turbo . 
+ this appears to be a scene right out of the fast and the furious 17 . 
+ this is a race and it must be won for the heroes to survive , otherwise they run out of time and lex luther takes them out . 
+ any teleporting or flying pcs or those somehow equipped with jets or power armor find that the enemy cars can fly and teleport as well making the race at least interesting for them as well . 
+ the race should be divided into 7 sections . 
+ each section each hero may attack once , or attempt to drive their vehicles ` really fast ' . 
+ you can call for driving skill checks untrained or allow the players to brow beat you into using whatever skills they deem as appropriate . 
+ by the 7th section all heroes must have a total speed score -lrb- rolled on skill checks -rrb- of at least 95 -lrb- average 15 each roll or fall behind -rrb- or have destroyed all enemy cars or lex luther takes them out . 
+ see losing below . 
+ if they make it , or destroy all opposing vehicles you can proceed to the next section they enter . 
+ be sure to include ramps , jumps , and games of ` chicken ' in the sections of your race . 
+ no one ever said you had to play by the rules . 
+ encounter 5 hero zapper as you enter a large domed chamber you here a screech . 
+ a pterodactyl flies overhead and you see a jungle filled with dinosaurs before you . 
+ it appears you 've landed in some kind of prehistoric hydroponics garden . 
+ a giant robot with a huge freakin ' laser beam sticking out of its head in this area appears to disintegrate all super heroes accompanying the pcs . 
+ after it finishes this the next blow that hits it takes it out . 
+ when this happens lex yells out : `` very good , you 've bested my one-eyed robot , but can you save the particles of your super hero friends from my anti-matter conversion chamber ? '' 
+ encounter area 6 impenetrable wall of beer suddenly you run into a massive force wall the likes of which you 've never seen before . 
+ it appears to be a giant wall of beer . 
+ the pcs must drink the whole wall of beer to proceed within . 
+ additionally , to make it to the next encounter you should design a series of 5 challenges which focus on the most obscure , little-used , and weird powers the players possess . 
+ once they easily tromp these challenges , and now being very drunk , they may proceed onwards . 
+ encounter area 7 land of dreams as soon as you bust your way into these chambers a strange vision fills your head . 
+ you reach for your d20 to roll a saving throw but it 's too late , the wavering watery illusion fills your mind and you can not break free . 
+ it is now your opportunity as the gm to get your players to do some role-playing or die . 
+ you should inform each of your players that they must each describe one scene their character lives out in an illusion dream world in which he/she faces their worst ever fear and nightmare , and a second dream where the character replays the happiest moment of their life -lrb- with no magical items or previous battles allowed to count , it must be a peachy vision -rrb- . 
+ any characters role-playing this segment well gain themselves 2,000 xp and any who do poorly may suffer any kind of mental trauma , insanity , or death you wish to inflict upon them . 
+ after all this mental wishy washy ness is over you can inform them they 've snapped out of it and find themselves in lex 's lab where clever characters rr -lrb- your discretion perception and knowledge -rrb- can find out about lex 's evil plan to suck our their souls killing them and putting their powers in cyborgs unless they stop him within the next 10 minutes . 
+ encounter eight nuke chambers you enter a long tunnel leading ahead . 
+ there appears to be no other way around . 
+ lining the walls of this tunnel are about 50 nukes set on timers to explode when you pass if you trip up invisible lasers in the air . 
+ this is a skills challenge for the thiefly type characters in the group . 
+ disabling nukes , resetting timers , and evading lasers -lrb- or using smoke to reveal their whereabouts -rrb- are all good ideas , otherwise a chain reaction of nukes may do serious damage to the pcs -lrb- but not the rest of the reinforced building -rrb- . 
+ if the pcs are ill-equipped to deal with this problem you can feel free to include a handy ` off switch ' or allow them to enter the ventilation or find another way around . 
+ encounter 9 power reactors you see a huge red chamber filled with an unknown power . 
+ this must be the energy source which makes the walls of this place invincible . 
+ if you could only harness its power , but you know you do n't have time . 
+ lex luther 's voice in your head is cackling about how he 's going to use this thing to harness your power and leave you a burnt out husk and somehow you know he 's telling the truth . 
+ blowing the reactor up is a simple matter which will probably implode the universe and kill everyone within it . 
+ it 's probably a good idea to tell the pcs this beforehand . 
+ if anyone looks around they might be able to find several jars labeled with the names of the just ice league . 
+ if anyone stows them for later regeneration -lrb- and saving of the captured super heroes if appropriate -rrb- they gain 5,000 xp per hero thus saved . 
+ shutting off the reactor requires talking with nearby scientists or a brilliant mind to work it out . 
+ bat man -lrb- if not disintegrated -rrb- may be able to help with +40 smarts . 
+ as soon as the reactor powers down the whole building becomes much more vulnerable to the pcs wreaking it and using their powers to bypass obstacles . 
+ be sure to make this a clear advantage to them . 
+ encounter 10 lex luther at last you find the man responsible for all your misery . 
+ he 's sitting on a little throne made of cheap wood painted gold and slurping down on a smoothie . 
+ he smiles banally and waves at you , giving you a ` you 're really stupid look ' . 
+ lex luther hp 1 rr 10 damage 1d6 speed : 3 gold : none -lrb- $ 50 -rrb- xp : 1,000 if killed 10,000 if outwitted . 
+ lex luther will attempt to negotiate with anyone who catches him . 
+ he refrains from using skills but makes it clear that if the pcs kill him they 'll be trapped in the 20th century forever and never make it back to their beloved homelands . 
+ if they do n't care , he 's in trouble . 
+ if they do care he has a bargaining chip . 
+ at some point he should offer them australia and the prospect of teaming up with him to rule the world , if they also refuse this then he become somewhat angry and pouty . 
+ he pulls out a little switch box with a radio antennae , it has a little red button and a little blue button , both lit with l.e.d.s. . 
+ he tells them the following : `` okay you little alice in wonderland chicks , i 've got a choice for you here if you 'd care to see how deep the rabbit hole goes . 
+ would you like to take the blue button or the red button ? 
+ if you take the blue button you wo n't remember we 've had this conversation . 
+ if you take the red button you 'll go back to your home . '' 
+ the pcs may take the remote , hit the buttons , or whatever they feel like . 
+ you should make it clear the device can not be replicated and will run out of a special non-duplicateable battery power within 24 hours . 
+ they can jail lex luther , save the super heroes , grab some sweet loot , and then be on their way . 
+ each time someone presses the red button that character instantly disappears , presumably back to their homeland . 
+ each time someone presses the blue button they turn into a chicken . 
+ if no one bothers to catch the falling remote it may break which presents new problems . 
+ tying up loose ends if the super heroes were turned into vaporized muck the pcs may be forced to find some scientists willing to restore them to their original form -lrb- or perhaps will attempt it themselves -rrb- . 
+ bruce banner and spider man may be good options for helping out . 
+ once the pcs pilfer everything they want and finish showing off their muscles and saying `` i told you so '' to the super heroes of the just ice league they may return home in peace using lex luther 's remote . 
+ anyone smart enough to get someone to check the remote to see if it will really send them back home gets a shrug and 1,000 xp . 
+ all heroes should be awarded 12,000 xp for completing this adventure . 
+ the end ha ha ha , it appears lex luther 's remote did n't actually send you back to your homeland and instead teleported you back 65 million years into the time of the dinosaurs which is where he got his laboratory from . 
+ you 've also lost all your levels and gear and have been transformed into small dinosaurs which a tyrannosaurus rex is about to eat . 
+ joking , of course , you all find yourselves back safely in your home kingdoms with all the loot you 've plundered off lex luther and the just ice league not to mention metropolis . 
+ you now have new tales to tell around the metaphorical gaming table and to keep the bards of your kingdoms singing for years -lrb- mostly in confusion -rrb- . 
+ no doubt there are greater challenges lying in wait for you in the inscrutable expanse that is the future , but it is time for you to create them on your own , or pay me an exorbitant sum of money to create them for you , that is , the game designer , not your gm who should , basically , do it for free . 
+ thanks for playing and looking forward to seeing you around the multi-verse ! 
+ david l. dostaler author , challenger rpg 
