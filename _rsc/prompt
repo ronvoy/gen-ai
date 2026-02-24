@@ -1,19 +1,25 @@
 This is a Geneartive AI project where we have to evaluate three small language models of your choice using OPENROUTER API key on the LAMBADA benchmark _rsc/README.md.
 
-Then, make a streamlit dashboard with dropdown to show LLM of choice and with the dataset are in _rsc/lambada-dataset folder and _rsc/rejected-data1,  explain the working principle of each of the choice of LLM, comparision in table, workflow diagram with mermaid diagram rendered and saved in png and displayed in the dashboard, show benchmark comparision their metrics of each LLM under drop down to select in the dashboard with their metrics of performance under LAMBADA or other dropdown choice of benchmark as well.
+dump the idea with the streamlit, just run on the core python script, on a python script with separately by using these three SLMs:
+
+x-ai/grok-3-mini
+mistralai/ministral-14b-2512
+deepseek/deepseek-r1-distill-qwen-32b
+
+and create
+
+1. main script that includes and runs all the script in chornology
+
+2. config with openrouter key, llm selection, temperature etc configuration
+
+3. evaluation_lambada
+
+4. diagram generation
+
+5. inference or report generation
 
 Also in the end make a report on it as an md file under 'report/report.md' with performance metrics of benchmarks and working processflow diagrams in mermaid daigrams and slides with title and description of each important section under 'report/slide.md'
 
-----------------------------
+--------------------------
 
-dump the idea with the streamlit, just run on the core python script, on a python script with separately 
-
-0. main script that includes and runs all the script in chornology
-
-1. config with openrouter key, llm selection, temperature etc configuration
-
-2. evaluation_lambada
-
-3. diagram generation
-
-4. inference or report generation 
+Then in the end also make a streamlit dashboard with dropdown to show LLM of choice and with the dataset are in _rsc/lambada-dataset folder and _rsc/rejected-data1,  explain the working principle of each of the choice of LLM, comparision in table, workflow diagram with mermaid diagram rendered and saved in png and displayed in the dashboard, show benchmark comparision their metrics of each LLM under drop down to select in the dashboard with their metrics of performance under LAMBADA or other dropdown choice of benchmark as well.
