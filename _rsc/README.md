@@ -71,17 +71,8 @@ configs:
       - [Who are the source language producers?](#who-are-the-source-language-producers)
     - [Annotations](#annotations)
       - [Annotation process](#annotation-process)
-      - [Who are the annotators?](#who-are-the-annotators)
-    - [Personal and Sensitive Information](#personal-and-sensitive-information)
-  - [Considerations for Using the Data](#considerations-for-using-the-data)
-    - [Social Impact of Dataset](#social-impact-of-dataset)
-    - [Discussion of Biases](#discussion-of-biases)
-    - [Other Known Limitations](#other-known-limitations)
-  - [Additional Information](#additional-information)
-    - [Dataset Curators](#dataset-curators)
-    - [Licensing Information](#licensing-information)
     - [Citation Information](#citation-information)
-    - [Contributions](#contributions)
+    - [Reference](#reference)
 
 ## Dataset Description
 
@@ -130,7 +121,8 @@ Each training instance has a `category` field indicating which sub-category the 
 An example looks like this:
 
 ```
-{"category": "Mystery",
+{
+ "category": "Mystery",
  "text": "bob could have been called in at this point , but he was n't miffed at his exclusion at all . he was relieved at not being brought into this initial discussion with central command . `` let 's go make some grub , '' said bob as he turned to danny . danny did n't keep his stoic expression , but with a look of irritation got up and left the room with bob",
 }
 ```

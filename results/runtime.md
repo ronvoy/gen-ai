@@ -113,7 +113,7 @@ To launch the interactive dashboard:
   streamlit run app.py
 
 ------------
-Issue:
+Issue / Improvement:
 
 DeepSeek-R1-Distill (0%) — This is a config issue. The model wraps all output in <think>...</think> reasoning tokens. With max_tokens=10, it exhausts its budget on thinking and never outputs the actual answer. Every prediction is "" (empty).
 Ministral-14B (20%) — This is partly a prompt issue. The model does produce predictions, but they're often semantically plausible yet wrong (e.g., target "salzella" → prediction "begin"). A zero-shot single-line prompt doesn't give smaller models enough guidance.
@@ -234,7 +234,8 @@ To launch the interactive dashboard:
   streamlit run app.py
 
 --------------------
-Issue
+Issue / Improvements:
+Increasing max_tokens: 100 and max_tokens_reasoning: 8096
 --------------------
 
 ============================================================
