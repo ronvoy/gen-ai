@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 MODELS = [

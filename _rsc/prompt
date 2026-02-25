@@ -22,4 +22,13 @@ Also in the end make a report on it as an md file under 'report/report.md' with 
 
 --------------------------
 
+also could you make a thorough report in 'report.md' and it's short descriptive title and description slide in 'slide.md' on:
+
+- slm used -> working techniques + process flow diagram of each (mermaid)
+- dataset  overview in tabular form
+- types of benchmarking used, list in tabular form and method description in process flow diagram (mermaid)
+- output of performance metrics generated in the graph from the script, make updates if necessary in the script and attach generated png file in the md
+
+----------------------------
+
 Then in the end also make a streamlit dashboard with dropdown to show LLM of choice and with the dataset are in _rsc/lambada-dataset folder and _rsc/rejected-data1,  explain the working principle of each of the choice of LLM, comparision in table, workflow diagram with mermaid diagram rendered and saved in png and displayed in the dashboard, show benchmark comparision their metrics of each LLM under drop down to select in the dashboard with their metrics of performance under LAMBADA or other dropdown choice of benchmark as well.
