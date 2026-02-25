@@ -102,10 +102,10 @@ simply rely on local context, but must be able to
 keep track of information in the broader discourse.
 
 The LAMBADA dataset is extracted from BookCorpus and
-consists of 10'022 passages, divided into 4'869 development
-and 5'153 test passages. The training data for language
+consists of 10,022 passages, divided into 4'869 development
+and 5,153 test passages. The training data for language
 models to be tested on LAMBADA include the full text
-of 2'662 novels (disjoint from those in dev+test),
+of 2,662 novels (disjoint from those in dev+test),
 comprising 203 million words.
 
 ### Supported Tasks and Leaderboards
@@ -142,9 +142,9 @@ An example looks like this:
 
 ### Data Splits
 
-- train: 2'662 novels
-- dev: 4'869 passages
-- test: 5'153 passages
+- train: 2,662 novels
+- dev: 4,869 passages
+- test: 5,153 passages
 
 ## Dataset Creation
 
@@ -168,38 +168,6 @@ The passages are extracted from novels from [Book Corpus](https://github.com/hug
 
 The authors required two consecutive subjects (paid crowdsourcers) to exactly match the missing word based on the whole passage (comprising the context and the target sentence), and made sure that no subject (out of ten) was able to provide it based on local context only, even when given 3 guesses.
 
-#### Who are the annotators?
-
-The text is self-annotated but was curated by asking (paid) crowdsourcers to guess the last word.
-
-### Personal and Sensitive Information
-
-[More Information Needed]
-
-## Considerations for Using the Data
-
-### Social Impact of Dataset
-
-[More Information Needed]
-
-### Discussion of Biases
-
-[More Information Needed]
-
-### Other Known Limitations
-
-[More Information Needed]
-
-## Additional Information
-
-### Dataset Curators
-
-[More Information Needed]
-
-### Licensing Information
-
-The dataset is released under the [CC BY 4.0](Creative Commons Attribution 4.0 International) license.
-
 ### Citation Information
 
 ```
@@ -220,6 +188,6 @@ Computational Linguistics (Volume 1: Long Papers)},
 }
 ```
 
-### Contributions
+### Reference
 
-Thanks to [@VictorSanh](https://github.com/VictorSanh) for adding this dataset.
+Dataset reference: [https://github.com/VictorSanh](https://github.com/VictorSanh)

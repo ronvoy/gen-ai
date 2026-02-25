@@ -1,0 +1,911 @@
+{
+  "model": "deepseek/deepseek-r1-distill-qwen-32b",
+  "total": 100,
+  "correct": 42,
+  "accuracy": 0.42,
+  "avg_response_time": 42.318,
+  "total_time": 4231.75,
+  "errors": 0,
+  "results": [
+    {
+      "index": 0,
+      "context_preview": "`` gruber , it 's good to talk to you . when i am overcome with the duties of the day , it is pleasant to take a few moments to listen to your philosophy of life . '' `` ah , first minister , it is no...",
+      "target": "philosopher",
+      "prediction": "philosopher",
+      "correct": true,
+      "time": 10.857,
+      "error": null
+    },
+    {
+      "index": 1,
+      "context_preview": "most of the time . `` aye , papa . may i kiss mama good night ? '' ewan smiled . `` of course . '' crispen hurried back over to mairin and allowed her to sweep him into a hug . she kissed the top of h...",
+      "target": "ewan",
+      "prediction": "papa",
+      "correct": false,
+      "time": 18.042,
+      "error": null
+    },
+    {
+      "index": 2,
+      "context_preview": "` curtain goes up again in two minutes , ' said salzella . ` i 'd better go and round up the orchestra . they 'll all be in the stab in the back over the road . the swine can get through half a pint b...",
+      "target": "salzella",
+      "prediction": "",
+      "correct": false,
+      "time": 110.409,
+      "error": null
+    },
+    {
+      "index": 3,
+      "context_preview": "`` you mean , it 's a sweatshirt you stole and never gave back , '' he corrected . it was one of the few things i had taken with me when i left home . i had been leaving the life we planned , but i 'd...",
+      "target": "sweatshirt",
+      "prediction": "sweatshirt",
+      "correct": true,
+      "time": 18.505,
+      "error": null
+    },
+    {
+      "index": 4,
+      "context_preview": "that was when he caught her smiling over the rim of her glass and realized that any illusion he 'd ever had of being in charge of their evening was just that-an illusion . because in a matter of sente...",
+      "target": "megan",
+      "prediction": "",
+      "correct": false,
+      "time": 293.966,
+      "error": null
+    },
+    {
+      "index": 5,
+      "context_preview": "the maitre d’ waited as kathy sat before helping her move closer to the table . `` thank you , '' kathy said . the maitre d’ looked at john and smiled . `` i understand you 're celebrating a special o...",
+      "target": "reservation",
+      "prediction": "reservation",
+      "correct": true,
+      "time": 6.905,
+      "error": null
+    },
+    {
+      "index": 6,
+      "context_preview": "tanner 's muffled shouting seemed to hurt his ears , as he covered them , backing away momentarily , dropping a length of garden hose which hit the floor with a strange heavy thud . tanner saw that it...",
+      "target": "tanner",
+      "prediction": "tanner",
+      "correct": true,
+      "time": 17.84,
+      "error": null
+    },
+    {
+      "index": 7,
+      "context_preview": "she was free-free to love ammar as she knew now she wanted to , love him fully and deeply and completely . and she wanted to tell him so . she watched the room darken and twilight settle on the rollin...",
+      "target": "ammar",
+      "prediction": "him",
+      "correct": false,
+      "time": 14.972,
+      "error": null
+    },
+    {
+      "index": 8,
+      "context_preview": "she could n't blame mack for treating her as someone he had to take care of when she did n't act like a partner , but she had stood on her own and she liked herself . she did n't want to go back . a t...",
+      "target": "mack",
+      "prediction": "",
+      "correct": false,
+      "time": 110.951,
+      "error": null
+    },
+    {
+      "index": 9,
+      "context_preview": "he thought she must be wearing nearly ten sheer layers , and while he could n't see anything but material , he could n't seem to stop trying . he looked back up into eyes that knew exactly what he was...",
+      "target": "reference",
+      "prediction": "letter",
+      "correct": false,
+      "time": 12.887,
+      "error": null
+    },
+    {
+      "index": 10,
+      "context_preview": "`` you think of everything , do n't you ? '' i laugh . `` i try to , '' he says immodestly . `` i get it from dervish and our chess games . he 's always nagging me to maximise my potential and use my ...",
+      "target": "chess",
+      "prediction": "chess",
+      "correct": true,
+      "time": 17.093,
+      "error": null
+    },
+    {
+      "index": 11,
+      "context_preview": "todd replied : no i thought you looked familiar but i ca n't recall . the stranger told todd : i 'm enoch ; we met in your dream . todd looked back again , this time he realized it really was enoch ; ...",
+      "target": "dreaming",
+      "prediction": "dreaming",
+      "correct": true,
+      "time": 20.092,
+      "error": null
+    },
+    {
+      "index": 12,
+      "context_preview": "evalle could count her friends on one hand , and none of them would help kizira find her . `` who told you we 'd be together ? '' tristan asked . `` vladimir quinn . '' evalle swung around , slamming ...",
+      "target": "tristan",
+      "prediction": "me",
+      "correct": false,
+      "time": 42.644,
+      "error": null
+    },
+    {
+      "index": 13,
+      "context_preview": "`` very soon , '' orin said , `` but first is there any way that i can let hardin stay the night ? '' `` he is n't from here ? '' ret looked at me as if for the first time . `` no , i 'll explain tomo...",
+      "target": "orin",
+      "prediction": "but",
+      "correct": false,
+      "time": 16.973,
+      "error": null
+    },
+    {
+      "index": 14,
+      "context_preview": "katrina walked through the house turning on the lights as she went . `` we need you to get your things , we should n't stay here very long . where is your room ? '' asked vasquez . `` up the stairs to...",
+      "target": "vasquez",
+      "prediction": "vasquez",
+      "correct": true,
+      "time": 12.269,
+      "error": null
+    },
+    {
+      "index": 15,
+      "context_preview": "parked near the waiting helicopter and got out . they could hear the groan of the organ and the sound of people singing inside the church . no crowds . no media . it was a dignified scene . there was ...",
+      "target": "helicopter",
+      "prediction": "jeep",
+      "correct": false,
+      "time": 40.659,
+      "error": null
+    },
+    {
+      "index": 16,
+      "context_preview": "`` what a boor , '' she exclaimed , her fingers crumpling the sides of the paper . `` what 's wrong , dear ? '' natasha said , dropping her pen and looking at her angry daughter . she was immediately ...",
+      "target": "article",
+      "prediction": "name",
+      "correct": false,
+      "time": 32.639,
+      "error": null
+    },
+    {
+      "index": 17,
+      "context_preview": "we were about halfway through our meal when we hit a lull in our conversation . i had n't meant to pry , but suddenly i heard myself asking , `` i was wondering what it was about christmas that you di...",
+      "target": "christmas",
+      "prediction": "it",
+      "correct": false,
+      "time": 9.43,
+      "error": null
+    },
+    {
+      "index": 18,
+      "context_preview": "sarah 's next call was to rome 's hotel in los angeles ; he was n't in , but she had n't expected him to be at that time of day . she left a message that she was beginning labor and told him which hos...",
+      "target": "baby",
+      "prediction": "baby",
+      "correct": true,
+      "time": 16.354,
+      "error": null
+    },
+    {
+      "index": 19,
+      "context_preview": "you break breeding rules , you no breed any more . '' `` you think you get kari at breeding ? '' `` who knows ? that 's the whole point . you got ta tell noy you wan na breed to give yourself , not fo...",
+      "target": "breed",
+      "prediction": "know",
+      "correct": false,
+      "time": 15.942,
+      "error": null
+    },
+    {
+      "index": 20,
+      "context_preview": "he paused without turning around . `` you ... '' fin paused , suddenly hesitant , and licked her lips . `` you 're still moving in are n't you ? '' turning , ryan grinned crookedly , but it did n't wi...",
+      "target": "fin",
+      "prediction": "and",
+      "correct": false,
+      "time": 16.129,
+      "error": null
+    },
+    {
+      "index": 21,
+      "context_preview": "the park had not been overly crowded for this event and there were lots of pathways through the corporate tents , and lots of ways through the park to the parking lots and streets . a few people even ...",
+      "target": "tents",
+      "prediction": "locks",
+      "correct": false,
+      "time": 14.24,
+      "error": null
+    },
+    {
+      "index": 22,
+      "context_preview": "katie kept checking her phone and trying to fix her ponytail so it was just messy enough to show people that she did n't care . i mostly ignored them as zack kept sliding his hand up her thigh and try...",
+      "target": "latter",
+      "prediction": "best",
+      "correct": false,
+      "time": 13.139,
+      "error": null
+    },
+    {
+      "index": 23,
+      "context_preview": "as dagdron climbed down the tree , the faintest sound of a twig snapping caught his attention . he glanced toward the clearing and saw a cloaked figure on the border , looking after the enchanters . t...",
+      "target": "clearing",
+      "prediction": "tower",
+      "correct": false,
+      "time": 11.706,
+      "error": null
+    },
+    {
+      "index": 24,
+      "context_preview": "`` wow , captain , can i call you scott ? '' affirmed . `` they actually pay you for this ! by the way , call me rachael . '' `` okay , rachael , but only up here . yeah , this is what every kid dream...",
+      "target": "drive",
+      "prediction": "join",
+      "correct": false,
+      "time": 11.377,
+      "error": null
+    },
+    {
+      "index": 25,
+      "context_preview": "`` my lord , thank you for your willingness to assist . '' `` assist ? '' the duke asked . `` yes ... it would seem that you have quite a few friends who wish to secure your happiness . i 'll let your...",
+      "target": "duke",
+      "prediction": "explanation",
+      "correct": false,
+      "time": 27.199,
+      "error": null
+    },
+    {
+      "index": 26,
+      "context_preview": "his feet were dangling . their fingers were intertwined in the kind of grip that was about to slip away . he 'd fall if she let go . he was handsome , with angular features , brown hair fluttering and...",
+      "target": "pit",
+      "prediction": "edge",
+      "correct": false,
+      "time": 19.94,
+      "error": null
+    },
+    {
+      "index": 27,
+      "context_preview": "in the diagram , he pinched to the left of him , where the ground would be , and pulled up a trail of yellow that formed itself into a seat . argus watched as a small hatch opened up from the floor . ...",
+      "target": "hatch",
+      "prediction": "seat",
+      "correct": false,
+      "time": 17.399,
+      "error": null
+    },
+    {
+      "index": 28,
+      "context_preview": "`` i wish i could stay here longer , hear some more of your music . '' `` stick around , '' said joe . `` we 've got lots of songs in america . just turn on a radio . '' `` radio ? '' mozart had never...",
+      "target": "joe",
+      "prediction": "",
+      "correct": false,
+      "time": 110.45,
+      "error": null
+    },
+    {
+      "index": 29,
+      "context_preview": "i stopped again when i heard the challenge in my grandma 's voice and turned back to peek around the corner . his tanned face flushed , and she stepped toe to toe with the young man . `` no , none at ...",
+      "target": "ivan",
+      "prediction": "",
+      "correct": false,
+      "time": 365.932,
+      "error": null
+    },
+    {
+      "index": 30,
+      "context_preview": "`` i just thought , since you were at the base with my brother , and you do have that italian look to you , that you were from here , '' she replied . `` no , i 'm actually from the same place you are...",
+      "target": "prince",
+      "prediction": "example",
+      "correct": false,
+      "time": 15.736,
+      "error": null
+    },
+    {
+      "index": 31,
+      "context_preview": "and now it 's your drink . '' carolyn moved her head from side to side . `` i do n't think i want to have my own drink . although it is nice to be able to order something my friends back home never dr...",
+      "target": "drink",
+      "prediction": "drink",
+      "correct": true,
+      "time": 23.114,
+      "error": null
+    },
+    {
+      "index": 32,
+      "context_preview": "`` i do , '' he stated simply . hearing it from his own lips made it so much more real to me . `` how much ? '' i asked , finishing the patched sub-roof . he looked at me as he dragged over the pile o...",
+      "target": "shingle",
+      "prediction": "shingle",
+      "correct": true,
+      "time": 10.238,
+      "error": null
+    },
+    {
+      "index": 33,
+      "context_preview": "sadie snorted , `` cisco , please - '' `` is it so difficult to decide ? '' `` well , would you answer directly if somebody asked ` marry me ' ?! '' `` i 'd love to marry you ! '' `` i was n't asking ...",
+      "target": "cisco",
+      "prediction": "",
+      "correct": false,
+      "time": 302.403,
+      "error": null
+    },
+    {
+      "index": 34,
+      "context_preview": "as the trailer passed i stepped blindly back out into the road and immediately heard the screech of tires on the asphalt . a blue four-wheel drive pick-up came to a stop , and i instinctively jumped b...",
+      "target": "truck",
+      "prediction": "truck",
+      "correct": true,
+      "time": 14.788,
+      "error": null
+    },
+    {
+      "index": 35,
+      "context_preview": "she guided clara out to the street where the crowd had swelled and mounted police pranced their horses menacingly around the edges . ` clara ! clara ! ' it was mary pushing through the throng , one ha...",
+      "target": "mary",
+      "prediction": "now",
+      "correct": false,
+      "time": 13.635,
+      "error": null
+    },
+    {
+      "index": 36,
+      "context_preview": "as i neared it , the smell of aged paper stung my nose . my fingers itched to open the dusty cover and touch the wrinkled pages . i leaned in close enough to make out the faded symbols stenciled acros...",
+      "target": "book",
+      "prediction": "book",
+      "correct": true,
+      "time": 9.691,
+      "error": null
+    },
+    {
+      "index": 37,
+      "context_preview": "there was no snow , but everything about the area looked cold and dreary . then he saw something that stopped him . a small building-a tiny , leaning wooden hut just a few hundred feet away . `` just ...",
+      "target": "frozen",
+      "prediction": "frozen",
+      "correct": true,
+      "time": 21.761,
+      "error": null
+    },
+    {
+      "index": 38,
+      "context_preview": "`` what a bucket of kittens that will be , '' i said . sofia began to nod before she realized i was being sarcastic . then , all earnest , she said , `` mom said she might go out with us . '' her face...",
+      "target": "sofia",
+      "prediction": "",
+      "correct": false,
+      "time": 295.107,
+      "error": null
+    },
+    {
+      "index": 39,
+      "context_preview": "over the next few seconds it was touch and go as to whether or not she would throw the cane aside and simply beat me to death with her bare hands . judging by her facial contortions the internal strug...",
+      "target": "cane",
+      "prediction": "cane",
+      "correct": true,
+      "time": 10.48,
+      "error": null
+    },
+    {
+      "index": 40,
+      "context_preview": "i checked my canteen and felt the heavy water sloshing around inside . i 'd barely touched it today . i could make it last . `` i 'm not going to let a storm steal away our answers again , zee , '' i ...",
+      "target": "canteen",
+      "prediction": "canteen",
+      "correct": true,
+      "time": 32.526,
+      "error": null
+    },
+    {
+      "index": 41,
+      "context_preview": "`` i 'll never hear the end of this shit . '' zane laughed and squeezed him close . ty patted his arm and stopped walking . to zane 's surprise , ty was grinning . `` stars and stripes , zane . '' `` ...",
+      "target": "stripes",
+      "prediction": "stripes",
+      "correct": true,
+      "time": 14.765,
+      "error": null
+    },
+    {
+      "index": 42,
+      "context_preview": "she bit down hard on her lower lip . a single tear trickled down izzy 's flushed pink cheek . just one . annie understood . it was what she 'd been hoping for , at least in part . that izzy would see ...",
+      "target": "izzy",
+      "prediction": "said",
+      "correct": false,
+      "time": 44.895,
+      "error": null
+    },
+    {
+      "index": 43,
+      "context_preview": "but as you know , macklin had little experience of powerful feelings . he was convinced it was a near-death experience , and made a mental note to have a cup of licorice tea before going to bed . `` w...",
+      "target": "macklin",
+      "prediction": "food",
+      "correct": false,
+      "time": 23.718,
+      "error": null
+    },
+    {
+      "index": 44,
+      "context_preview": "`` get back to the athena right now ! '' `` screw you . '' renna shook her head , frantically trying to switch off the line . `` do n't come after me , finn . i do n't want to hurt you , but i wo n't ...",
+      "target": "renna",
+      "prediction": "i",
+      "correct": false,
+      "time": 27.677,
+      "error": null
+    },
+    {
+      "index": 45,
+      "context_preview": "i swung the car in a wide right , starting to make the turn , when i saw a small road that split off behind a stand of trees . to the left of the entrance was a wrought iron sign that read haven drive...",
+      "target": "driveway",
+      "prediction": "driveway",
+      "correct": true,
+      "time": 12.234,
+      "error": null
+    },
+    {
+      "index": 46,
+      "context_preview": "can i come over ? '' `` okay . '' i pocket my phone . `` let 's get this over with . '' `` sarah . '' `` what ? '' my mom shakes her head . `` get this over with ... you say it like it 's a chore . ''...",
+      "target": "chore",
+      "prediction": "problem",
+      "correct": false,
+      "time": 43.898,
+      "error": null
+    },
+    {
+      "index": 47,
+      "context_preview": "mark grinned and sat down beside me . `` it 's my sparkling personality , is n't it ? '' i grinned back at him , tongue-tied . sedona licked my hand in greeting . she was a sweet dog who rarely barked...",
+      "target": "treat",
+      "prediction": "treat",
+      "correct": true,
+      "time": 12.342,
+      "error": null
+    },
+    {
+      "index": 48,
+      "context_preview": "* julia opened the door to lizzie 's room and found her little girl listening to mary read her the poky little puppy . she went over to them and sat next to them on the bed . `` listen , honey , i wan...",
+      "target": "julia",
+      "prediction": "the",
+      "correct": false,
+      "time": 13.532,
+      "error": null
+    },
+    {
+      "index": 49,
+      "context_preview": "a minute later she finally found her voice . `` can you , please , order your driver to stop ? i 'll take another taxi . '' `` do you see an abundance of taxis around here ? '' `` that 's my problem ....",
+      "target": "taxi",
+      "prediction": "taxi",
+      "correct": true,
+      "time": 13.531,
+      "error": null
+    },
+    {
+      "index": 50,
+      "context_preview": "when he woke again , mareth was sitting in the chair next to his bed . his dad was asleep on a cot . a couple of nurses propped gregor up a bit with pillows and brought him some broth . mareth volunte...",
+      "target": "mareth",
+      "prediction": "mareth",
+      "correct": true,
+      "time": 16.214,
+      "error": null
+    },
+    {
+      "index": 51,
+      "context_preview": "i examined it a little more closely , wiping away the remainder of my tears with the sleeve of my shirt . it was a recipe for a russian cake . i carefully read the instructions . it was something that...",
+      "target": "recipe",
+      "prediction": "envelope",
+      "correct": false,
+      "time": 10.426,
+      "error": null
+    },
+    {
+      "index": 52,
+      "context_preview": "then he picked up another brick from the box and pressed it down on top of the half-completed chimney . two more bricks followed squarely on top of the first before he discovered how hungry he was and...",
+      "target": "food",
+      "prediction": "food",
+      "correct": true,
+      "time": 12.18,
+      "error": null
+    },
+    {
+      "index": 53,
+      "context_preview": "he worked off the stopper with his teeth , feeling the fires blaze around him . the far wall was nearly gone . the fires crept toward h1im . he drank the contents of the vial , then searched inside of...",
+      "target": "vial",
+      "prediction": "vial",
+      "correct": true,
+      "time": 10.102,
+      "error": null
+    },
+    {
+      "index": 54,
+      "context_preview": "though there were many audio and visual warning signs to stop its movement , seth 's attention was somewhere else . nobody had the temerity to override seth 's action . the sudden stop of any signals ...",
+      "target": "crater",
+      "prediction": "crater",
+      "correct": true,
+      "time": 10.215,
+      "error": null
+    },
+    {
+      "index": 55,
+      "context_preview": "i got offered a faculty position two years ago , and that was when i finally proposed to colette . '' ana looked into vo 's eyes ; they were dark and sad , like a storm of tears might just pour down a...",
+      "target": "vo",
+      "prediction": "she",
+      "correct": false,
+      "time": 17.755,
+      "error": null
+    },
+    {
+      "index": 56,
+      "context_preview": "she had been glancing around the room , but there was nothing suspicious to see except the unusual clutter-the curtains hung motionless over the shut window ; the pile of bedding on the floor was stil...",
+      "target": "jez",
+      "prediction": "i",
+      "correct": false,
+      "time": 18.608,
+      "error": null
+    },
+    {
+      "index": 57,
+      "context_preview": "`` i bet this is the window connor came in and out of when they were here , '' i said , climbing out . i looked down , seeing the ac unit . the infected were following each other to the back of the ch...",
+      "target": "food",
+      "prediction": "someone",
+      "correct": false,
+      "time": 39.556,
+      "error": null
+    },
+    {
+      "index": 58,
+      "context_preview": "in essence , she was creating a therapy that would synchronize everyone : the dying , the devolving , and the rapidly evolving , creating a unified , stable genome . an atlantean-human hybrid genome ....",
+      "target": "relief",
+      "prediction": "satisfaction",
+      "correct": false,
+      "time": 18.413,
+      "error": null
+    },
+    {
+      "index": 59,
+      "context_preview": "`` kaya , what would happen if a wanderer forgot to take water into the desert when she left the village ? '' kaya thought about that as the comb stroked through her long hair . `` i think she would b...",
+      "target": "sorry",
+      "prediction": "sorry",
+      "correct": true,
+      "time": 11.605,
+      "error": null
+    },
+    {
+      "index": 60,
+      "context_preview": "`` but both our jugs for water lay full just there , '' said jayden . `` what was she doing in those woods ? '' `` it matters not ! '' jamison said his voice near screaming . `` my sister is dying and...",
+      "target": "jayden",
+      "prediction": "",
+      "correct": false,
+      "time": 310.397,
+      "error": null
+    },
+    {
+      "index": 61,
+      "context_preview": "`` what are you talking about ? '' `` he told me that the castor bean poison had been mixed into the frosting and that that would make me the best suspect , chemistry and baking . '' david looked a bi...",
+      "target": "frosting",
+      "prediction": "frosting",
+      "correct": true,
+      "time": 20.278,
+      "error": null
+    },
+    {
+      "index": 62,
+      "context_preview": "they want us crazy and lost first . '' `` well , they 're doing a really good job of it , '' i grumbled . `` hey , '' he tilted my chin up and stared into my eyes - all the way in , all the way into m...",
+      "target": "lost",
+      "prediction": "lost",
+      "correct": true,
+      "time": 40.218,
+      "error": null
+    },
+    {
+      "index": 63,
+      "context_preview": "`` if it 's the same thing , then it 's got to be moving . '' `` diesel , '' jacks called . the dog trotted up from the back of the short column . jacks crouched , scratching the dog 's pointed ears ....",
+      "target": "jacks",
+      "prediction": "jacks",
+      "correct": true,
+      "time": 32.314,
+      "error": null
+    },
+    {
+      "index": 64,
+      "context_preview": "she laughed in spite of herself . `` you 're so sick . '' he smiled with pride-gods , how she 'd missed that shit-eating grin of his . `` what about the rest of the family ? are they returning ? '' th...",
+      "target": "return",
+      "prediction": "return",
+      "correct": true,
+      "time": 42.174,
+      "error": null
+    },
+    {
+      "index": 65,
+      "context_preview": "i thought of lying , but decided this group would see right through it . `` because my handlers in startech thought i should see what normal kids my age are like . '' jas snorted and a few other kids ...",
+      "target": "jas",
+      "prediction": "jas",
+      "correct": true,
+      "time": 17.129,
+      "error": null
+    },
+    {
+      "index": 66,
+      "context_preview": "`` make sure your beau here does n't have any unpleasant history . '' involving human police was only going to make things messier . and he certainly did n't have time to sit in jail while the last le...",
+      "target": "zach",
+      "prediction": "",
+      "correct": false,
+      "time": 222.47,
+      "error": null
+    },
+    {
+      "index": 67,
+      "context_preview": "`` they would n't have red in handcuffs . '' `` why not ? the cops whisked him away from the house . '' `` that was probably just for questioning or something like that . '' `` earth to johnny b : how...",
+      "target": "criminal",
+      "prediction": "criminal",
+      "correct": true,
+      "time": 18.351,
+      "error": null
+    },
+    {
+      "index": 68,
+      "context_preview": "i noticed jacob was standing outside with his hands in his pockets . i made sure that my posture was straight as i approached kevin . i opened my purse without saying anything . his jaw was clenched ....",
+      "target": "kevin",
+      "prediction": "kevin",
+      "correct": true,
+      "time": 11.75,
+      "error": null
+    },
+    {
+      "index": 69,
+      "context_preview": "my father was a french noble who inherited brittany from his wife . '' `` your mother . '' `` no . '' she gives a quick , firm shake of her head . `` not my mother . his first wife , the heir to britt...",
+      "target": "brittany",
+      "prediction": "anjou",
+      "correct": false,
+      "time": 13.466,
+      "error": null
+    },
+    {
+      "index": 70,
+      "context_preview": "she yanked the doors open and ran to the wall of elevators in the shiny floored lobby , her sneakers squeaking ear piercingly on the tiles . she jabbed the button with a finger . nothing happened . sh...",
+      "target": "button",
+      "prediction": "key",
+      "correct": false,
+      "time": 12.947,
+      "error": null
+    },
+    {
+      "index": 71,
+      "context_preview": "`` do n't you feel proud of what you did ? '' `` er , sure , '' carlos said and smiled . he handed the clipboard back and the manager smiled as well , all well with the world . `` but i think i can do...",
+      "target": "clipboard",
+      "prediction": "pen",
+      "correct": false,
+      "time": 11.512,
+      "error": null
+    },
+    {
+      "index": 72,
+      "context_preview": "`` yes sir , she 's very beautiful . '' i glared at connor and then smiled at the bellhop . `` darling husband , make sure you tip this nice young man well . '' he pulled out a wad of money from his p...",
+      "target": "bellhop",
+      "prediction": "bellhop",
+      "correct": true,
+      "time": 13.023,
+      "error": null
+    },
+    {
+      "index": 73,
+      "context_preview": "`` can i get you something warm to drink ? '' peggy asked . `` no , thanks . '' his response was gruff , almost unfriendly . `` what brings you out here on a night like this ? '' bob pressed . `` we a...",
+      "target": "bob",
+      "prediction": "him",
+      "correct": false,
+      "time": 27.132,
+      "error": null
+    },
+    {
+      "index": 74,
+      "context_preview": "keith had passed over twenty years on earth since horatius had last seen him . the highlander 's hair had thinned and lost its color , letting his red scalp show through the thin white strands that we...",
+      "target": "keith",
+      "prediction": "him",
+      "correct": false,
+      "time": 11.351,
+      "error": null
+    },
+    {
+      "index": 75,
+      "context_preview": "`` you 're crazy , you know that , right ? '' jesse took a long pull of his beer and stretched his legs out in front of him , crossing them at the ankle . justice shot a look at his younger brother in...",
+      "target": "jesse",
+      "prediction": "",
+      "correct": false,
+      "time": 299.565,
+      "error": null
+    },
+    {
+      "index": 76,
+      "context_preview": "finally , i march across the cobblestone street , my boots splash in a puddle , and i pound firmly on the solid bronze door . *** a fat , dull-silver-colored robot , about half my size , opens the doo...",
+      "target": "robot",
+      "prediction": "robot",
+      "correct": true,
+      "time": 34.843,
+      "error": null
+    },
+    {
+      "index": 77,
+      "context_preview": "surely our twin connection would make the process smooth and quick . he was able to get his magic back from me . i would be able to do the same . and i would return in the morning to offer my magic ag...",
+      "target": "magic",
+      "prediction": "life",
+      "correct": false,
+      "time": 9.148,
+      "error": null
+    },
+    {
+      "index": 78,
+      "context_preview": "nothing is as crucial to my father as his word . '' he pulls me in a hug as i battle to control my erratic chest . `` i wo n't let anything happen to you . i promise . '' `` you knew about this , yet ...",
+      "target": "embrace",
+      "prediction": "hug",
+      "correct": false,
+      "time": 23.61,
+      "error": null
+    },
+    {
+      "index": 79,
+      "context_preview": "just who is going to pay for this special feed grain anyway ? it must cost a bit if it 's that special . '' `` you 're going to pay , obviously , '' replied mitch , `` since your cows will be eating i...",
+      "target": "grow",
+      "prediction": "sell",
+      "correct": false,
+      "time": 6.568,
+      "error": null
+    },
+    {
+      "index": 80,
+      "context_preview": "everyone carries a guitar and writes songs . it 's lonely , but i do n't want to go home . when i turn eighteen , maybe i can visit you in marine . i can meet your friends . another life as brothers ....",
+      "target": "patience",
+      "prediction": "love",
+      "correct": false,
+      "time": 10.602,
+      "error": null
+    },
+    {
+      "index": 81,
+      "context_preview": "he did n't know why he had n't thought of it sooner . he was making a mistake , trying to do it all on his own . he needed help . he should have made nicholas drive him to the closest police station w...",
+      "target": "nicholas",
+      "prediction": "nicholas",
+      "correct": true,
+      "time": 13.899,
+      "error": null
+    },
+    {
+      "index": 82,
+      "context_preview": "he unfolds his wings , the black speckles standing out on his white feathers like ink spilled on paper in the dark . my heart is so heavy with dread and shock , with sadness for anna , with fear for a...",
+      "target": "wings",
+      "prediction": "wings",
+      "correct": true,
+      "time": 8.972,
+      "error": null
+    },
+    {
+      "index": 83,
+      "context_preview": "her eyes were fixed unwaveringly on jack , as if a glance aside would break her power over him . damon fumbled open the briefcase at her feet , unlatching the box he found inside . five needles full o...",
+      "target": "jack",
+      "prediction": "her",
+      "correct": false,
+      "time": 24.996,
+      "error": null
+    },
+    {
+      "index": 84,
+      "context_preview": "dervish returned a few minutes later , but i was safe in my room by then , and had splashed my face with cold water to take away the bright red flush i 'd worked up in the cellar . dervish has spent m...",
+      "target": "cellar",
+      "prediction": "stairs",
+      "correct": false,
+      "time": 11.302,
+      "error": null
+    },
+    {
+      "index": 85,
+      "context_preview": "when cole and robin entered , the labrador lifted his head and wagged his tail in greeting . the fort was n't much bigger than the tent jeff had constructed the night before , and robin was forced to ...",
+      "target": "cole",
+      "prediction": "cole",
+      "correct": true,
+      "time": 15.269,
+      "error": null
+    },
+    {
+      "index": 86,
+      "context_preview": "at least he was n't one of those `` on the make '' guys who kept one in his wallet `` just in case . '' `` hang on , let me go see if i can find one . '' ace let her up . rhea raced to the bathroom an...",
+      "target": "searched",
+      "prediction": "found",
+      "correct": false,
+      "time": 17.565,
+      "error": null
+    },
+    {
+      "index": 87,
+      "context_preview": "i glanced at the clock and willed the next two hours to pass quickly . * * * ten minutes left until my shift ended and sam still was n't there . usually by now , he was , but logan called and asked hi...",
+      "target": "logan",
+      "prediction": "logan",
+      "correct": true,
+      "time": 9.885,
+      "error": null
+    },
+    {
+      "index": 88,
+      "context_preview": "she expected some sign of irritation from leon , as was usually the case when someone said something against his will . instead he smiled sardonically . `` it 's too late to take care of me , '' he sa...",
+      "target": "leon",
+      "prediction": "",
+      "correct": false,
+      "time": 110.581,
+      "error": null
+    },
+    {
+      "index": 89,
+      "context_preview": "all her life , mother had looked at least ten years younger than her real age , due to good genes and a healthy lifestyle . her hair had given up its dark brilliance and was now white . she seemed sma...",
+      "target": "beth",
+      "prediction": "beth",
+      "correct": true,
+      "time": 16.273,
+      "error": null
+    },
+    {
+      "index": 90,
+      "context_preview": "in high school i had taken all the ap courses i could , while jessi had taken only the classes she was required to in order to graduate . `` oh , by the way who is your friend here , kels ? '' caught ...",
+      "target": "jessi",
+      "prediction": "kels",
+      "correct": false,
+      "time": 14.15,
+      "error": null
+    },
+    {
+      "index": 91,
+      "context_preview": "weldon harper also receives reports , i 'm sure . in fact , hancock notified wlodek through channels of the attempt in new mexico . we received certain information from him that was quite helpful . we...",
+      "target": "things",
+      "prediction": "it",
+      "correct": false,
+      "time": 16.836,
+      "error": null
+    },
+    {
+      "index": 92,
+      "context_preview": "`` yes , more penguins , please . '' i want to release some of the tension , so i do a little penguin walk after i put the plates down . i 'm rewarded with a whoop of laughter from jett and then i hea...",
+      "target": "penguin",
+      "prediction": "bird",
+      "correct": false,
+      "time": 14.286,
+      "error": null
+    },
+    {
+      "index": 93,
+      "context_preview": "they were just coming around a bend when zanas heard it , the roar of water hitting earth close by . she led them forward past a patch of the biggest plants she had ever seen . they were taller than t...",
+      "target": "flower",
+      "prediction": "",
+      "correct": false,
+      "time": 110.799,
+      "error": null
+    },
+    {
+      "index": 94,
+      "context_preview": "at eighty-three years old , fate had lived the longest of any overseer ever . he warned addy that moving the estate would take a toll since his health was bad , but she did n't expect him to miss spea...",
+      "target": "addy",
+      "prediction": "everyone",
+      "correct": false,
+      "time": 10.963,
+      "error": null
+    },
+    {
+      "index": 95,
+      "context_preview": "the prison where he was being kept was melted down until it looked just like the metal you 're standing on . '' seven scuffed her padded shoes on the lump of copper metal she 'd just stepped on . she ...",
+      "target": "tower",
+      "prediction": "tower",
+      "correct": true,
+      "time": 11.789,
+      "error": null
+    },
+    {
+      "index": 96,
+      "context_preview": "`` very well , dr. pazzo , '' she said , `` is there anything else ? '' he straightened his shoulders and looked up at her brightly . `` well , not as a requirement , but maybe a favor ? i 'd really l...",
+      "target": "books",
+      "prediction": "the",
+      "correct": false,
+      "time": 13.235,
+      "error": null
+    },
+    {
+      "index": 97,
+      "context_preview": "headed down the hallway . he was n't particularly surprised to hear footsteps following him . connor 's hand flew out and grabbed his arm right before eric went into his office . `` do you think i do ...",
+      "target": "connor",
+      "prediction": "connor",
+      "correct": true,
+      "time": 11.543,
+      "error": null
+    },
+    {
+      "index": 98,
+      "context_preview": "we shared one of those nervous giggles that turns into full-on laughter , and by the time we got to the union , i was wiping tears away . `` i swear , i 'm not normally this weird , '' she said as we ...",
+      "target": "available",
+      "prediction": "available",
+      "correct": true,
+      "time": 9.172,
+      "error": null
+    },
+    {
+      "index": 99,
+      "context_preview": "but soon after her marriage to the wealthy greg , she had dropped all her ambitions and devoted her time to the `` good life . '' greg was lenient toward everything she did . he kept busy with his inh...",
+      "target": "greg",
+      "prediction": "greg",
+      "correct": true,
+      "time": 33.304,
+      "error": null
+    }
+  ]
+}
