@@ -32,3 +32,7 @@ also could you make a thorough report in 'report.md' and it's short descriptive 
 ----------------------------
 
 Then in the end also make a streamlit dashboard with dropdown to show LLM of choice and with the dataset are in _rsc/lambada-dataset folder and _rsc/rejected-data1,  explain the working principle of each of the choice of LLM, comparision in table, workflow diagram with mermaid diagram rendered and saved in png and displayed in the dashboard, show benchmark comparision their metrics of each LLM under drop down to select in the dashboard with their metrics of performance under LAMBADA or other dropdown choice of benchmark as well.
+
+----------------------------
+
+everything is great just problem with the deepseek-r1-distill-qwen-32b and ministral-14b-2512 error_rate, they got 0% and 20% respectively. Is there any config issue or is it normal? If so, should i change the SLM to something else may or we can adjust the accuracy by few tweaks? If so, please do it. the output of the runtime are in results/runtime.md

@@ -13,8 +13,13 @@ MODELS = [
 ]
 
 TEMPERATURE = 0.0
-MAX_TOKENS = 10
+MAX_TOKENS = 50
+MAX_TOKENS_REASONING = 4096
 NUM_SAMPLES = 100
+
+REASONING_MODELS = [
+    "deepseek/deepseek-r1-distill-qwen-32b",
+]
 
 DATASET_DIR = "_rsc/lambada-dataset"
 REJECTED_DIR = "_rsc/rejected-data1/rejected"

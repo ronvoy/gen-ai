@@ -18,9 +18,21 @@ from config import (
     MODELS,
     TEMPERATURE,
     MAX_TOKENS,
+    MAX_TOKENS_REASONING,
     NUM_SAMPLES,
     DATASET_FILES,
     RESULTS_DIR,
+    REASONING_MODELS,
+)
+
+FEW_SHOT_EXAMPLES = (
+    "Below are examples of the task:\n\n"
+    "Passage: she picked up the phone and dialed his\n"
+    "Answer: number\n\n"
+    "Passage: he could n't believe his eyes when he saw her standing at the\n"
+    "Answer: door\n\n"
+    "Passage: `` i 'm sorry , '' she whispered , and he could see the tears in her\n"
+    "Answer: eyes\n\n"
 )
 
 
@@ -48,7 +60,58 @@ def normalize_word(word):
     return re.sub(r"^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$", "", word.lower())
 
 
-def query_model(model, context, api_key, temperature=0.0, max_tokens=10):
+def extract_prediction(raw_text):
+    """Extract the predicted word from a model response.
+
+    Handles multiple response formats:
+      - Plain single word
+      - <think>...</think> followed by the answer
+      - "Answer: word" format
+      - Reasoning text with a final standalone word
+    """
+    text = raw_text.strip()
+    if not text:
+        return ""
+
+    # 1) If response contains <think>...</think>, grab content AFTER the closing tag
+    if "<think>" in text:
+        after_think = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
+        if after_think:
+            text = after_think
+        else:
+            # Think tag was never closed (token budget ran out) — look for
+            # any text after a closing tag fragment, or take the last word
+            # from inside the think block as a fallback.
+            closed = re.search(r"</think>\s*(.*)", text, flags=re.DOTALL)
+            if closed and closed.group(1).strip():
+                text = closed.group(1).strip()
+            else:
+                # Last resort: extract last standalone word from the thinking
+                inner = re.sub(r"</?think>", "", text).strip()
+                # Look for patterns like 'the answer is "word"' or 'answer: word'
+                answer_pat = re.search(
+                    r'(?:answer|word|prediction|next word)[:\s]*["\']?(\w+)["\']?\s*$',
+                    inner, re.IGNORECASE,
+                )
+                if answer_pat:
+                    return normalize_word(answer_pat.group(1))
+                # Try the very last word of the thinking content
+                words = inner.split()
+                if words:
+                    return normalize_word(words[-1])
+                return ""
+
+    # 2) Handle "Answer: word" format
+    answer_match = re.search(r'(?:answer|word)[:\s]+["\']?(\S+)["\']?', text, re.IGNORECASE)
+    if answer_match:
+        return normalize_word(answer_match.group(1))
+
+    # 3) Plain response — take the first word
+    first = text.split()[0] if text.split() else ""
+    return normalize_word(first)
+
+
+def query_model(model, context, api_key, temperature=0.0, max_tokens=50):
     """Send a single LAMBADA prompt to OpenRouter and return the prediction."""
     headers = {
         "Authorization": f"Bearer {api_key}",
@@ -56,41 +119,44 @@ def query_model(model, context, api_key, temperature=0.0, max_tokens=10):
         "HTTP-Referer": "https://github.com/lambada-eval",
     }
 
+    is_reasoning = model in REASONING_MODELS
+    effective_max_tokens = MAX_TOKENS_REASONING if is_reasoning else max_tokens
+
     prompt = (
-        "Complete the following passage with the next single word. "
-        "Only respond with that one word, nothing else.\n\n"
-        f"Passage: {context}"
+        "You are given a passage from a novel. Your task is to predict the "
+        "very next single word that continues the passage. Respond with ONLY "
+        "that one word — no punctuation, no explanation, nothing else.\n\n"
+        + FEW_SHOT_EXAMPLES
+        + "Now predict the next word:\n\n"
+        f"Passage: {context}\n"
+        "Answer:"
     )
 
     payload = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": temperature,
-        "max_tokens": max_tokens,
+        "max_tokens": effective_max_tokens,
     }
 
     start = time.time()
     try:
         resp = requests.post(
-            OPENROUTER_BASE_URL, headers=headers, json=payload, timeout=120
+            OPENROUTER_BASE_URL, headers=headers, json=payload, timeout=180
         )
         elapsed = time.time() - start
         resp.raise_for_status()
         data = resp.json()
 
         raw = data["choices"][0]["message"]["content"].strip()
-        # Some models wrap the answer in <think>...</think> tags; strip those
-        raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
-        # Take only the first word
-        prediction = raw.split()[0] if raw.split() else ""
-        prediction = normalize_word(prediction)
+        prediction = extract_prediction(raw)
         return prediction, elapsed, None
     except Exception as e:
         elapsed = time.time() - start
         return "", elapsed, str(e)
 
 
-def evaluate_model(model, passages, api_key, temperature=0.0, max_tokens=10):
+def evaluate_model(model, passages, api_key, temperature=0.0, max_tokens=50):
     """Run LAMBADA evaluation for one model across all sampled passages."""
     results = []
     correct = 0
