@@ -205,7 +205,7 @@ _MERMAID_BLOCK = re.compile(
 )
 
 
-def render_report_html():
+def render_report_html(script_root=""):
     if not os.path.exists(REPORT_PATH):
         return "<p>report.md not found.</p>"
 
@@ -229,8 +229,10 @@ def render_report_html():
         extensions=["tables", "fenced_code", "toc", "sane_lists"],
     )
 
-    # refactor diagram route.
-    html = html.replace("diagrams/", "/diagrams/")
+    # Point report images at the served diagrams route, honouring the
+    # app's base URI (e.g. /gen-ai) when mounted under a sub-path.
+    html = html.replace('src="../diagrams/', f'src="{script_root}/diagrams/')
+    html = html.replace('src="diagrams/', f'src="{script_root}/diagrams/')
 
     # put the mermaid blocks back as live diagrams.
     for i, code in enumerate(blocks):
@@ -327,7 +329,7 @@ def history_delete():
 
 @app.route("/docs")
 def docs():
-    return render_template("docs.html", content=render_report_html())
+    return render_template("docs.html", content=render_report_html(request.script_root))
 
 
 @app.route("/diagrams/<path:filename>")

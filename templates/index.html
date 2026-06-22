@@ -31,7 +31,7 @@
         <button type="submit" id="run-btn" class="btn btn-primary flex-fill">Run Benchmark</button>
         <button type="button" id="finetune-btn" class="btn btn-outline-primary"
                 data-bs-toggle="collapse" data-bs-target="#finetune">Fine Tune</button>
-        <a href="/history" class="btn btn-outline-secondary">History</a>
+        <a href="{{ url_for('history') }}" class="btn btn-outline-secondary">History</a>
       </div>
     </form>
 
@@ -236,9 +236,9 @@
     const samples = document.getElementById('samples').value;
     const params = gatherParams();
     if (model === 'all') {
-      runBenchmark('/run_all', { samples, ...params }, 'all models');
+      runBenchmark(SCRIPT_ROOT + '/run_all', { samples, ...params }, 'all models');
     } else {
-      runBenchmark('/run', { model, samples, ...params }, 'the selected model');
+      runBenchmark(SCRIPT_ROOT + '/run', { model, samples, ...params }, 'the selected model');
     }
   });
 

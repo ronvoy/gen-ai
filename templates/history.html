@@ -8,7 +8,7 @@
     <h3 class="mb-1">Run History</h3>
     <p class="text-muted mb-0">Past benchmark runs with their metrics and charts.</p>
   </div>
-  <a href="/" class="btn btn-outline-primary">New Run</a>
+  <a href="{{ url_for('index') }}" class="btn btn-outline-primary">New Run</a>
 </div>
 
 {% if not runs %}
@@ -92,7 +92,7 @@
       const id = btn.dataset.run;
       btn.disabled = true;
       try {
-        const res = await fetch('/history/delete', {
+        const res = await fetch(SCRIPT_ROOT + '/history/delete', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ id })

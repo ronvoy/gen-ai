@@ -22,11 +22,11 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="/">LAMBADA Benchmark</a>
+      <a class="navbar-brand" href="{{ url_for('index') }}">LAMBADA Benchmark</a>
       <div class="navbar-nav">
-        <a class="nav-link {% block nav_home %}{% endblock %}" href="/">Benchmark</a>
-        <a class="nav-link {% block nav_history %}{% endblock %}" href="/history">History</a>
-        <a class="nav-link {% block nav_docs %}{% endblock %}" href="/docs">Docs</a>
+        <a class="nav-link {% block nav_home %}{% endblock %}" href="{{ url_for('index') }}">Benchmark</a>
+        <a class="nav-link {% block nav_history %}{% endblock %}" href="{{ url_for('history') }}">History</a>
+        <a class="nav-link {% block nav_docs %}{% endblock %}" href="{{ url_for('docs') }}">Docs</a>
       </div>
     </div>
   </nav>
@@ -36,6 +36,7 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>const SCRIPT_ROOT = "{{ request.script_root }}";</script>
   {% block scripts %}{% endblock %}
 </body>
 </html>
