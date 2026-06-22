@@ -1,10 +1,3 @@
-"""
-LAMBADA Benchmark Evaluation Script
-
-Evaluates language models on the LAMBADA word-prediction task
-using the OpenRouter API.
-"""
-
 import os
 import json
 import time
@@ -17,23 +10,47 @@ from config import (
     OPENROUTER_BASE_URL,
     MODELS,
     TEMPERATURE,
+    TOP_P,
     MAX_TOKENS,
     MAX_TOKENS_REASONING,
+    FREQUENCY_PENALTY,
+    PRESENCE_PENALTY,
+    FEW_SHOT_COUNT,
     NUM_SAMPLES,
     DATASET_FILES,
     RESULTS_DIR,
     REASONING_MODELS,
 )
 
-FEW_SHOT_EXAMPLES = (
-    "Below are examples of the task:\n\n"
-    "Passage: she picked up the phone and dialed his\n"
-    "Answer: number\n\n"
-    "Passage: he could n't believe his eyes when he saw her standing at the\n"
-    "Answer: door\n\n"
-    "Passage: `` i 'm sorry , '' she whispered , and he could see the tears in her\n"
-    "Answer: eyes\n\n"
-)
+FEW_SHOT_POOL = [
+    ("she picked up the phone and dialed his", "number"),
+    ("he could n't believe his eyes when he saw her standing at the", "door"),
+    ("`` i 'm sorry , '' she whispered , and he could see the tears in her", "eyes"),
+    ("the rain had stopped and the sun broke through the", "clouds"),
+    ("he reached into his pocket and pulled out a folded piece of", "paper"),
+]
+
+
+def build_few_shot(few_shot):
+    """Build the few-shot block using the first `few_shot` worked examples."""
+    if few_shot <= 0:
+        return ""
+    block = "Below are examples of the task:\n\n"
+    for context, answer in FEW_SHOT_POOL[:few_shot]:
+        block += f"Passage: {context}\nAnswer: {answer}\n\n"
+    return block
+
+
+def default_params():
+    """Decoding parameters from config, used when none are supplied."""
+    return {
+        "temperature": TEMPERATURE,
+        "top_p": TOP_P,
+        "max_tokens": MAX_TOKENS,
+        "frequency_penalty": FREQUENCY_PENALTY,
+        "presence_penalty": PRESENCE_PENALTY,
+        "few_shot": FEW_SHOT_COUNT,
+    }
 
 
 def load_dataset(filepath, num_samples=None, seed=42):
@@ -79,7 +96,7 @@ def extract_prediction(raw_text):
         if after_think:
             text = after_think
         else:
-            # Think tag was never closed (token budget ran out) — look for
+            # Think tag was never closed (token budget ran out) - look for
             # any text after a closing tag fragment, or take the last word
             # from inside the think block as a fallback.
             closed = re.search(r"</think>\s*(.*)", text, flags=re.DOTALL)
@@ -106,13 +123,16 @@ def extract_prediction(raw_text):
     if answer_match:
         return normalize_word(answer_match.group(1))
 
-    # 3) Plain response — take the first word
+    # 3) Plain response - take the first word
     first = text.split()[0] if text.split() else ""
     return normalize_word(first)
 
 
-def query_model(model, context, api_key, temperature=0.0, max_tokens=50):
+def query_model(model, context, api_key, params=None):
     """Send a single LAMBADA prompt to OpenRouter and return the prediction."""
+    if params is None:
+        params = default_params()
+
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -120,13 +140,15 @@ def query_model(model, context, api_key, temperature=0.0, max_tokens=50):
     }
 
     is_reasoning = model in REASONING_MODELS
-    effective_max_tokens = MAX_TOKENS_REASONING if is_reasoning else max_tokens
+    effective_max_tokens = (
+        MAX_TOKENS_REASONING if is_reasoning else params["max_tokens"]
+    )
 
     prompt = (
         "You are given a passage from a novel. Your task is to predict the "
         "very next single word that continues the passage. Respond with ONLY "
-        "that one word — no punctuation, no explanation, nothing else.\n\n"
-        + FEW_SHOT_EXAMPLES
+        "that one word, no punctuation, no explanation, nothing else.\n\n"
+        + build_few_shot(params["few_shot"])
         + "Now predict the next word:\n\n"
         f"Passage: {context}\n"
         "Answer:"
@@ -135,8 +157,11 @@ def query_model(model, context, api_key, temperature=0.0, max_tokens=50):
     payload = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": temperature,
+        "temperature": params["temperature"],
+        "top_p": params["top_p"],
         "max_tokens": effective_max_tokens,
+        "frequency_penalty": params["frequency_penalty"],
+        "presence_penalty": params["presence_penalty"],
     }
 
     start = time.time()
@@ -156,8 +181,11 @@ def query_model(model, context, api_key, temperature=0.0, max_tokens=50):
         return "", elapsed, str(e)
 
 
-def evaluate_model(model, passages, api_key, temperature=0.0, max_tokens=50):
+def evaluate_model(model, passages, api_key, params=None):
     """Run LAMBADA evaluation for one model across all sampled passages."""
+    if params is None:
+        params = default_params()
+
     results = []
     correct = 0
     total = 0
@@ -166,7 +194,7 @@ def evaluate_model(model, passages, api_key, temperature=0.0, max_tokens=50):
 
     for i, p in enumerate(passages):
         prediction, elapsed, error = query_model(
-            model, p["context"], api_key, temperature, max_tokens
+            model, p["context"], api_key, params
         )
         target = normalize_word(p["target"])
         is_correct = prediction == target
@@ -211,6 +239,7 @@ def evaluate_model(model, passages, api_key, temperature=0.0, max_tokens=50):
         "avg_response_time": round(avg_time, 3),
         "total_time": round(total_time, 2),
         "errors": errors,
+        "params": params,
         "results": results,
     }
 
@@ -235,7 +264,7 @@ def run_evaluation(split="test"):
     for model in MODELS:
         print(f"\nEvaluating: {model}")
         print("-" * 40)
-        result = evaluate_model(model, passages, OPENROUTER_API_KEY, TEMPERATURE, MAX_TOKENS)
+        result = evaluate_model(model, passages, OPENROUTER_API_KEY, default_params())
         all_results.append(result)
 
         safe_name = model.replace("/", "_")

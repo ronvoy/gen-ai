@@ -17,9 +17,7 @@ def main():
     print("  LAMBADA Benchmark Evaluation Pipeline")
     print("=" * 60)
 
-    # ------------------------------------------------------------------
-    # Step 1 — Configuration
-    # ------------------------------------------------------------------
+    # config
     print("\n[Step 1/4] Validating configuration...")
     from config import OPENROUTER_API_KEY, MODELS, DATASET_FILES
 
@@ -36,9 +34,7 @@ def main():
         status = "OK" if exists else "MISSING"
         print(f"  Dataset [{split}]: {status}  ({path})")
 
-    # ------------------------------------------------------------------
-    # Step 2 — Evaluation
-    # ------------------------------------------------------------------
+    # evaluate
     print("\n[Step 2/4] Running LAMBADA evaluation...")
     from evaluate_lambada import run_evaluation
 
@@ -46,35 +42,34 @@ def main():
     if not results:
         print("WARNING: No evaluation results were produced.")
 
-    # ------------------------------------------------------------------
-    # Step 3 — Diagrams
-    # ------------------------------------------------------------------
+    # diagrams
     print("\n[Step 3/4] Generating diagrams...")
     from generate_diagrams import generate_all_diagrams
 
     generate_all_diagrams("test")
 
-    # ------------------------------------------------------------------
-    # Step 4 — Reports
-    # ------------------------------------------------------------------
+    # reports
     print("\n[Step 4/4] Generating reports...")
     from generate_report import generate_all_reports
 
     generate_all_reports("test")
 
-    # ------------------------------------------------------------------
-    # Done
-    # ------------------------------------------------------------------
+    print("\n[Step 5/5] Building presentation...")
+    from make_pptx import build as build_pptx
+
+    build_pptx("test")
+
+    # results summary
     print("\n" + "=" * 60)
     print("  Pipeline Complete!")
     print("=" * 60)
     print("\nOutputs:")
-    print("  results/          — JSON evaluation results")
-    print("  diagrams/         — PNG charts and workflow diagrams")
-    print("  report/report.md  — Full evaluation report")
-    print("  report/slide.md   — Presentation slides")
-    print("\nTo launch the interactive dashboard:")
-    print("  streamlit run app.py")
+    print("  results/          - JSON evaluation results")
+    print("  diagrams/         - PNG charts and workflow diagrams")
+    print("  report.md         - Full evaluation report")
+    print("  report/slide.pptx - Presentation")
+    print("\nTo launch the web app:")
+    print("  ./run.sh")
 
 
 if __name__ == "__main__":

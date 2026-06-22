@@ -7,19 +7,54 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 MODELS = [
-    "x-ai/grok-3-mini",
-    "mistralai/ministral-14b-2512",
-    "deepseek/deepseek-r1-distill-qwen-32b",
+    "microsoft/phi-4-mini-instruct",
+    "meta-llama/llama-3.2-3b-instruct",
+    "mistralai/ministral-8b-2512",
 ]
 
 TEMPERATURE = 0.0
-MAX_TOKENS = 100
+TOP_P = 1.0
+MAX_TOKENS = 32
 MAX_TOKENS_REASONING = 8096
-NUM_SAMPLES = 100
+FREQUENCY_PENALTY = 0.0
+PRESENCE_PENALTY = 0.0
+FEW_SHOT_COUNT = 3
 
-REASONING_MODELS = [
-    "deepseek/deepseek-r1-distill-qwen-32b",
-]
+NUM_SAMPLES = 100
+MIN_SAMPLES = 1
+MAX_SAMPLES = 1000
+
+REASONING_MODELS = []
+
+PRESETS = {
+    "optimal": {
+        "label": "Optimal",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 16,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "few_shot": 5,
+    },
+    "balanced": {
+        "label": "Balanced",
+        "temperature": 0.3,
+        "top_p": 0.9,
+        "max_tokens": 32,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "few_shot": 3,
+    },
+    "creative": {
+        "label": "Creative",
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "max_tokens": 48,
+        "frequency_penalty": 0.3,
+        "presence_penalty": 0.3,
+        "few_shot": 1,
+    },
+}
 
 DATASET_DIR = "_rsc/lambada-dataset"
 REJECTED_DIR = "_rsc/rejected-data1/rejected"
@@ -35,53 +70,130 @@ DATASET_FILES = {
 }
 
 MODEL_INFO = {
-    "x-ai/grok-3-mini": {
-        "name": "Grok-3-Mini",
-        "developer": "xAI",
-        "params": "~3B (estimated)",
-        "architecture": "Transformer decoder-only with Mixture of Experts (MoE)",
+    "microsoft/phi-4-mini-instruct": {
+        "name": "Phi-4-Mini",
+        "developer": "Microsoft",
+        "params": "3.8B",
+        "architecture": "Dense decoder-only transformer with Grouped Query Attention",
+        "technique": "Curated and synthetic data training",
         "description": (
-            "Grok-3-Mini is a compact reasoning model from xAI designed for fast inference "
-            "while retaining strong logical and analytical capabilities. It leverages a Mixture "
-            "of Experts architecture to activate only a subset of parameters per token, achieving "
-            "high throughput. The model is trained with reinforcement learning from human feedback "
-            "(RLHF) and excels at chain-of-thought reasoning, code generation, and structured tasks."
+            "Phi-4-Mini is a 3.8 billion parameter model from Microsoft. The Phi family is "
+            "built around data quality rather than raw scale: it is trained on filtered web "
+            "data and synthetic textbook-style material, which lets a small model punch above "
+            "its weight on reasoning and language tasks. It is a dense decoder-only transformer "
+            "with grouped query attention and a 128k token vocabulary."
         ),
-        "strengths": "Fast inference, strong reasoning, efficient MoE routing, good at code and logic",
-        "weaknesses": "Smaller capacity may limit performance on knowledge-intensive tasks",
-        "color": "#4CAF50",
-    },
-    "mistralai/ministral-14b-2512": {
-        "name": "Ministral-14B",
-        "developer": "Mistral AI",
-        "params": "14B",
-        "architecture": "Transformer decoder-only with Sliding Window Attention (SWA)",
-        "description": (
-            "Ministral-14B is a 14-billion parameter model from Mistral AI, part of the Ministral "
-            "family optimized for edge deployment and efficient inference. It uses Sliding Window "
-            "Attention to handle long contexts efficiently, combined with Grouped Query Attention "
-            "(GQA) for reduced memory footprint. The model supports multiple languages and is "
-            "fine-tuned for instruction following with strong performance across general NLP tasks."
+        "technique_detail": (
+            "The Phi approach focuses on the training data. Instead of scraping ever larger "
+            "corpora, the team curates high-signal web text and generates synthetic examples "
+            "that resemble textbook explanations. A smaller model trained on cleaner data "
+            "learns more per parameter, so Phi-4-Mini stays cheap to run while remaining "
+            "competitive on language understanding."
         ),
-        "strengths": "Multilingual support, efficient attention, balanced size-performance trade-off",
-        "weaknesses": "Mid-range size may underperform larger models on complex reasoning",
+        "key_properties": [
+            "Dense decoder-only transformer, no expert routing.",
+            "Grouped Query Attention for a smaller key-value cache.",
+            "Trained on curated web plus synthetic textbook-quality data.",
+            "Small footprint suited to edge and low-latency serving.",
+        ],
+        "flow_mermaid": (
+            "graph TD\n"
+            "    A[Input Tokens] --> B[Token Embedding + RoPE]\n"
+            "    B --> C[Decoder Layer x N]\n"
+            "    C --> D[Grouped Query Attention]\n"
+            "    D --> E[SwiGLU Feed Forward]\n"
+            "    E --> F[RMSNorm + Residual]\n"
+            "    F --> C\n"
+            "    F --> G[Final RMSNorm]\n"
+            "    G --> H[LM Head]\n"
+            "    H --> I[Softmax to Next Token]"
+        ),
+        "strengths": "Strong reasoning for its size, fast, cheap to serve",
+        "weaknesses": "Limited world knowledge compared to larger models",
         "color": "#2196F3",
     },
-    "deepseek/deepseek-r1-distill-qwen-32b": {
-        "name": "DeepSeek-R1-Distill-Qwen-32B",
-        "developer": "DeepSeek",
-        "params": "32B",
-        "architecture": "Qwen-based transformer with distilled reasoning from DeepSeek-R1",
+    "meta-llama/llama-3.2-3b-instruct": {
+        "name": "Llama-3.2-3B",
+        "developer": "Meta",
+        "params": "3B",
+        "architecture": "Dense decoder-only transformer with Grouped Query Attention",
+        "technique": "Compact dense transformer",
         "description": (
-            "DeepSeek-R1-Distill-Qwen-32B is a 32-billion parameter model created by distilling "
-            "the reasoning capabilities of the full DeepSeek-R1 model into the Qwen-2.5 architecture. "
-            "This knowledge distillation process transfers advanced chain-of-thought reasoning patterns "
-            "into a more compact model. It inherits Qwen's efficient transformer design with RoPE "
-            "positional embeddings and SwiGLU activations, while gaining DeepSeek-R1's strong "
-            "multi-step reasoning and mathematical problem-solving abilities."
+            "Llama-3.2-3B is a 3 billion parameter instruction-tuned model from Meta, aimed at "
+            "on-device and low-cost deployment. It follows the standard Llama recipe: a dense "
+            "decoder-only transformer with rotary position embeddings, grouped query attention, "
+            "and SwiGLU feed-forward layers. The smaller Llama 3.2 models were partly built by "
+            "pruning and distilling from larger Llama 3.1 models."
         ),
-        "strengths": "Strong reasoning via distillation, large context window, excellent at complex tasks",
-        "weaknesses": "Largest model of the three, slower inference, higher API cost",
+        "technique_detail": (
+            "Llama-3.2-3B keeps the well-tested dense transformer design and makes it small. "
+            "Rotary embeddings encode position, grouped query attention shrinks the key-value "
+            "cache, and SwiGLU activations improve the feed-forward layers. The result is a "
+            "predictable, easy-to-serve model that runs comfortably on modest hardware."
+        ),
+        "key_properties": [
+            "Dense decoder-only transformer.",
+            "Rotary position embeddings (RoPE) for length generalisation.",
+            "Grouped Query Attention and SwiGLU feed-forward layers.",
+            "Distilled and pruned from larger Llama 3.1 checkpoints.",
+        ],
+        "flow_mermaid": (
+            "graph TD\n"
+            "    A[Input Tokens] --> B[Token Embedding + RoPE]\n"
+            "    B --> C[Decoder Layer x N]\n"
+            "    C --> D[Multi-Head Attention with GQA]\n"
+            "    D --> E[SwiGLU Feed Forward]\n"
+            "    E --> F[RMSNorm + Residual]\n"
+            "    F --> C\n"
+            "    F --> G[Final RMSNorm]\n"
+            "    G --> H[LM Head]\n"
+            "    H --> I[Softmax to Next Token]"
+        ),
+        "strengths": "Very small, broad ecosystem support, runs on-device",
+        "weaknesses": "Lower ceiling on complex reasoning tasks",
+        "color": "#4CAF50",
+    },
+    "mistralai/ministral-8b-2512": {
+        "name": "Ministral-8B",
+        "developer": "Mistral AI",
+        "params": "8B",
+        "architecture": "Decoder-only transformer with Sliding Window Attention",
+        "technique": "Sliding Window Attention + GQA",
+        "description": (
+            "Ministral-8B is an 8 billion parameter model from Mistral AI, part of the Ministral "
+            "family built for edge use. It uses interleaved sliding window attention so each "
+            "layer only attends to a local window of recent tokens, which keeps memory and "
+            "compute low on long inputs. Grouped query attention further reduces the key-value "
+            "cache, and the model handles long contexts efficiently."
+        ),
+        "technique_detail": (
+            "Standard attention compares every token with every other token, which grows "
+            "quadratically with length. Sliding window attention limits each layer to a fixed "
+            "window of recent tokens, and stacking layers lets information travel further than "
+            "any single window. Grouped query attention shares key-value heads to cut memory, "
+            "giving fast decoding on long passages."
+        ),
+        "key_properties": [
+            "Interleaved sliding window attention for local context.",
+            "Grouped Query Attention for a smaller key-value cache.",
+            "Deep stacking propagates context beyond a single window.",
+            "Tuned for efficient long-context inference at the edge.",
+        ],
+        "flow_mermaid": (
+            "graph TD\n"
+            "    A[Input Tokens] --> B[Token Embedding + RoPE]\n"
+            "    B --> C[Decoder Layer x N]\n"
+            "    C --> D[Sliding Window Attention]\n"
+            "    D --> E[Grouped Query Attention]\n"
+            "    E --> F[SwiGLU Feed Forward]\n"
+            "    F --> G[RMSNorm + Residual]\n"
+            "    G --> C\n"
+            "    G --> H[Final RMSNorm]\n"
+            "    H --> I[LM Head]\n"
+            "    I --> J[Softmax to Next Token]"
+        ),
+        "strengths": "Efficient long context, balanced size and quality",
+        "weaknesses": "Distant context can fade across windows",
         "color": "#FF9800",
     },
 }
