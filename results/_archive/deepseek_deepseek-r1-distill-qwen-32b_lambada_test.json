@@ -1,0 +1,236 @@
+{
+  "model": "deepseek/deepseek-r1-distill-qwen-32b",
+  "total": 25,
+  "correct": 0,
+  "accuracy": 0.0,
+  "avg_response_time": 0.295,
+  "total_time": 7.36,
+  "errors": 25,
+  "results": [
+    {
+      "index": 0,
+      "context_preview": "`` gruber , it 's good to talk to you . when i am overcome with the duties of the day , it is pleasant to take a few moments to listen to your philosophy of life . '' `` ah , first minister , it is no...",
+      "target": "philosopher",
+      "prediction": "",
+      "correct": false,
+      "time": 0.284,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 1,
+      "context_preview": "most of the time . `` aye , papa . may i kiss mama good night ? '' ewan smiled . `` of course . '' crispen hurried back over to mairin and allowed her to sweep him into a hug . she kissed the top of h...",
+      "target": "ewan",
+      "prediction": "",
+      "correct": false,
+      "time": 0.259,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 2,
+      "context_preview": "` curtain goes up again in two minutes , ' said salzella . ` i 'd better go and round up the orchestra . they 'll all be in the stab in the back over the road . the swine can get through half a pint b...",
+      "target": "salzella",
+      "prediction": "",
+      "correct": false,
+      "time": 0.325,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 3,
+      "context_preview": "`` you mean , it 's a sweatshirt you stole and never gave back , '' he corrected . it was one of the few things i had taken with me when i left home . i had been leaving the life we planned , but i 'd...",
+      "target": "sweatshirt",
+      "prediction": "",
+      "correct": false,
+      "time": 0.271,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 4,
+      "context_preview": "that was when he caught her smiling over the rim of her glass and realized that any illusion he 'd ever had of being in charge of their evening was just that-an illusion . because in a matter of sente...",
+      "target": "megan",
+      "prediction": "",
+      "correct": false,
+      "time": 0.247,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 5,
+      "context_preview": "the maitre d’ waited as kathy sat before helping her move closer to the table . `` thank you , '' kathy said . the maitre d’ looked at john and smiled . `` i understand you 're celebrating a special o...",
+      "target": "reservation",
+      "prediction": "",
+      "correct": false,
+      "time": 0.375,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 6,
+      "context_preview": "tanner 's muffled shouting seemed to hurt his ears , as he covered them , backing away momentarily , dropping a length of garden hose which hit the floor with a strange heavy thud . tanner saw that it...",
+      "target": "tanner",
+      "prediction": "",
+      "correct": false,
+      "time": 0.338,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 7,
+      "context_preview": "she was free-free to love ammar as she knew now she wanted to , love him fully and deeply and completely . and she wanted to tell him so . she watched the room darken and twilight settle on the rollin...",
+      "target": "ammar",
+      "prediction": "",
+      "correct": false,
+      "time": 0.242,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 8,
+      "context_preview": "she could n't blame mack for treating her as someone he had to take care of when she did n't act like a partner , but she had stood on her own and she liked herself . she did n't want to go back . a t...",
+      "target": "mack",
+      "prediction": "",
+      "correct": false,
+      "time": 0.275,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 9,
+      "context_preview": "he thought she must be wearing nearly ten sheer layers , and while he could n't see anything but material , he could n't seem to stop trying . he looked back up into eyes that knew exactly what he was...",
+      "target": "reference",
+      "prediction": "",
+      "correct": false,
+      "time": 0.249,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 10,
+      "context_preview": "`` you think of everything , do n't you ? '' i laugh . `` i try to , '' he says immodestly . `` i get it from dervish and our chess games . he 's always nagging me to maximise my potential and use my ...",
+      "target": "chess",
+      "prediction": "",
+      "correct": false,
+      "time": 0.408,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 11,
+      "context_preview": "todd replied : no i thought you looked familiar but i ca n't recall . the stranger told todd : i 'm enoch ; we met in your dream . todd looked back again , this time he realized it really was enoch ; ...",
+      "target": "dreaming",
+      "prediction": "",
+      "correct": false,
+      "time": 0.275,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 12,
+      "context_preview": "evalle could count her friends on one hand , and none of them would help kizira find her . `` who told you we 'd be together ? '' tristan asked . `` vladimir quinn . '' evalle swung around , slamming ...",
+      "target": "tristan",
+      "prediction": "",
+      "correct": false,
+      "time": 0.262,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 13,
+      "context_preview": "`` very soon , '' orin said , `` but first is there any way that i can let hardin stay the night ? '' `` he is n't from here ? '' ret looked at me as if for the first time . `` no , i 'll explain tomo...",
+      "target": "orin",
+      "prediction": "",
+      "correct": false,
+      "time": 0.247,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 14,
+      "context_preview": "katrina walked through the house turning on the lights as she went . `` we need you to get your things , we should n't stay here very long . where is your room ? '' asked vasquez . `` up the stairs to...",
+      "target": "vasquez",
+      "prediction": "",
+      "correct": false,
+      "time": 0.431,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 15,
+      "context_preview": "parked near the waiting helicopter and got out . they could hear the groan of the organ and the sound of people singing inside the church . no crowds . no media . it was a dignified scene . there was ...",
+      "target": "helicopter",
+      "prediction": "",
+      "correct": false,
+      "time": 0.234,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 16,
+      "context_preview": "`` what a boor , '' she exclaimed , her fingers crumpling the sides of the paper . `` what 's wrong , dear ? '' natasha said , dropping her pen and looking at her angry daughter . she was immediately ...",
+      "target": "article",
+      "prediction": "",
+      "correct": false,
+      "time": 0.374,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 17,
+      "context_preview": "we were about halfway through our meal when we hit a lull in our conversation . i had n't meant to pry , but suddenly i heard myself asking , `` i was wondering what it was about christmas that you di...",
+      "target": "christmas",
+      "prediction": "",
+      "correct": false,
+      "time": 0.406,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 18,
+      "context_preview": "sarah 's next call was to rome 's hotel in los angeles ; he was n't in , but she had n't expected him to be at that time of day . she left a message that she was beginning labor and told him which hos...",
+      "target": "baby",
+      "prediction": "",
+      "correct": false,
+      "time": 0.233,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 19,
+      "context_preview": "you break breeding rules , you no breed any more . '' `` you think you get kari at breeding ? '' `` who knows ? that 's the whole point . you got ta tell noy you wan na breed to give yourself , not fo...",
+      "target": "breed",
+      "prediction": "",
+      "correct": false,
+      "time": 0.242,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 20,
+      "context_preview": "he paused without turning around . `` you ... '' fin paused , suddenly hesitant , and licked her lips . `` you 're still moving in are n't you ? '' turning , ryan grinned crookedly , but it did n't wi...",
+      "target": "fin",
+      "prediction": "",
+      "correct": false,
+      "time": 0.274,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 21,
+      "context_preview": "the park had not been overly crowded for this event and there were lots of pathways through the corporate tents , and lots of ways through the park to the parking lots and streets . a few people even ...",
+      "target": "tents",
+      "prediction": "",
+      "correct": false,
+      "time": 0.347,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 22,
+      "context_preview": "katie kept checking her phone and trying to fix her ponytail so it was just messy enough to show people that she did n't care . i mostly ignored them as zack kept sliding his hand up her thigh and try...",
+      "target": "latter",
+      "prediction": "",
+      "correct": false,
+      "time": 0.265,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 23,
+      "context_preview": "as dagdron climbed down the tree , the faintest sound of a twig snapping caught his attention . he glanced toward the clearing and saw a cloaked figure on the border , looking after the enchanters . t...",
+      "target": "clearing",
+      "prediction": "",
+      "correct": false,
+      "time": 0.249,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "index": 24,
+      "context_preview": "`` wow , captain , can i call you scott ? '' affirmed . `` they actually pay you for this ! by the way , call me rachael . '' `` okay , rachael , but only up here . yeah , this is what every kid dream...",
+      "target": "drive",
+      "prediction": "",
+      "correct": false,
+      "time": 0.248,
+      "error": "404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions"
+    }
+  ]
+}
