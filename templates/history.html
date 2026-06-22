@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block nav_history %}active{% endblock %}
+{% block title %}History - LAMBADA Benchmark{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-end mb-4">
+  <div>
+    <h3 class="mb-1">Run History</h3>
+    <p class="text-muted mb-0">Past benchmark runs with their metrics and charts.</p>
+  </div>
+  <a href="/" class="btn btn-outline-primary">New Run</a>
+</div>
+
+{% if not runs %}
+<div class="alert alert-light border text-muted">No runs recorded yet. Start one from the Benchmark tab.</div>
+{% endif %}
+
+{% for run in runs %}
+<div class="card mb-4" data-run-card="{{ run.id }}">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <span class="fw-semibold">{{ run.timestamp }}</span>
+        <span class="badge text-bg-secondary ms-2">{{ 'All models' if run.type == 'all' else 'Single model' }}</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <span class="text-muted small">{{ run.samples }} samples</span>
+        <button type="button" class="btn btn-sm btn-outline-danger delete-run" data-run="{{ run.id }}">Delete</button>
+      </div>
+    </div>
+
+    <div class="table-responsive mb-3">
+      <table class="table table-sm table-bordered align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>Model</th><th>Accuracy (%)</th><th>Correct</th>
+            <th>Total</th><th>Avg time (s)</th><th>Errors</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for m in run.models %}
+          <tr>
+            <td>{{ m.name }}</td>
+            <td>{{ m.accuracy }}</td>
+            <td>{{ m.correct }}</td>
+            <td>{{ m.total }}</td>
+            <td>{{ m.avg_response_time }}</td>
+            <td>{{ m.errors }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-12 col-lg-6"><canvas class="acc-chart" data-run="{{ run.id }}"></canvas></div>
+      <div class="col-12 col-lg-6"><canvas class="time-chart" data-run="{{ run.id }}"></canvas></div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  const runs = {{ runs | tojson }};
+  const byId = Object.fromEntries(runs.map(r => [r.id, r]));
+
+  function barChart(canvas, labels, data, label, color, maxY) {
+    const opts = { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } };
+    if (maxY) opts.scales.y.max = maxY;
+    new Chart(canvas, {
+      type: 'bar',
+      data: { labels, datasets: [{ label, data, backgroundColor: color }] },
+      options: opts
+    });
+  }
+
+  document.querySelectorAll('.acc-chart').forEach(c => {
+    const run = byId[c.dataset.run];
+    barChart(c, run.models.map(m => m.name), run.models.map(m => m.accuracy), 'Accuracy (%)', '#4c6ef5', 100);
+  });
+  document.querySelectorAll('.time-chart').forEach(c => {
+    const run = byId[c.dataset.run];
+    barChart(c, run.models.map(m => m.name), run.models.map(m => m.avg_response_time), 'Avg time (s)', '#f76707');
+  });
+
+  document.querySelectorAll('.delete-run').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      if (!confirm('Delete this run from history?')) return;
+      const id = btn.dataset.run;
+      btn.disabled = true;
+      try {
+        const res = await fetch('/history/delete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id })
+        });
+        if (!res.ok) throw new Error('Delete failed.');
+        const card = document.querySelector(`[data-run-card="${id}"]`);
+        if (card) card.remove();
+      } catch (err) {
+        alert(err.message);
+        btn.disabled = false;
+      }
+    });
+  });
+</script>
+{% endblock %}

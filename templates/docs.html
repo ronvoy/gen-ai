@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block nav_docs %}active{% endblock %}
+{% block title %}Docs - LAMBADA Benchmark{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-body report">
+    {{ content | safe }}
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+</script>
+{% endblock %}

@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+  <h3 class="mb-1">Small Language Model Benchmark</h3>
+  <p class="text-muted mb-0">
+    Pick a model and run the LAMBADA word-prediction task through the OpenRouter API.
+    Results are saved to the results folder and shown below.
+  </p>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <form id="run-form" class="row g-3 align-items-end">
+      <div class="col-12 col-md-5">
+        <label for="model" class="form-label">Model</label>
+        <select id="model" name="model" class="form-select">
+          {% for m in models %}
+          <option value="{{ m.id }}">{{ m.name }}</option>
+          {% endfor %}
+          <option value="all">All models</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="samples" class="form-label">Samples ({{ min_samples }}-{{ max_samples }})</label>
+        <input type="number" id="samples" name="samples" class="form-control"
+               min="{{ min_samples }}" max="{{ max_samples }}" step="1" value="50">
+      </div>
+      <div class="col-12 col-md-4 d-flex gap-2">
+        <button type="submit" id="run-btn" class="btn btn-primary flex-fill">Run Benchmark</button>
+        <button type="button" id="finetune-btn" class="btn btn-outline-primary"
+                data-bs-toggle="collapse" data-bs-target="#finetune">Fine Tune</button>
+        <a href="/history" class="btn btn-outline-secondary">History</a>
+      </div>
+    </form>
+
+    <div class="collapse mt-3" id="finetune">
+      <div class="border rounded p-3 bg-light">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="fw-semibold">Hyperparameters</span>
+          <div class="btn-group btn-group-sm" role="group">
+            {% for key, p in presets.items() %}
+            <button type="button" class="btn btn-outline-secondary preset-btn" data-preset="{{ key }}">{{ p.label }}</button>
+            {% endfor %}
+          </div>
+        </div>
+        <p class="text-muted small mb-3">
+          These control decoding, not model weights. The Optimal preset uses greedy decoding
+          with more worked examples, which is the most reliable for single-word prediction.
+        </p>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label small mb-0">Temperature <span class="text-muted" id="temperature-val"></span></label>
+            <input type="range" class="form-range tune" id="temperature" min="0" max="2" step="0.05" value="{{ defaults.temperature }}">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label small mb-0">Top-p <span class="text-muted" id="top_p-val"></span></label>
+            <input type="range" class="form-range tune" id="top_p" min="0" max="1" step="0.05" value="{{ defaults.top_p }}">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label small mb-0">Max tokens <span class="text-muted" id="max_tokens-val"></span></label>
+            <input type="range" class="form-range tune" id="max_tokens" min="1" max="128" step="1" value="{{ defaults.max_tokens }}">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label small mb-0">Few-shot examples <span class="text-muted" id="few_shot-val"></span></label>
+            <input type="range" class="form-range tune" id="few_shot" min="0" max="5" step="1" value="{{ defaults.few_shot }}">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label small mb-0">Frequency penalty <span class="text-muted" id="frequency_penalty-val"></span></label>
+            <input type="range" class="form-range tune" id="frequency_penalty" min="-2" max="2" step="0.1" value="{{ defaults.frequency_penalty }}">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label small mb-0">Presence penalty <span class="text-muted" id="presence_penalty-val"></span></label>
+            <input type="range" class="form-range tune" id="presence_penalty" min="-2" max="2" step="0.1" value="{{ defaults.presence_penalty }}">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="status" class="mt-3 small"></div>
+  </div>
+</div>
+
+<h5 class="mb-3">Metrics</h5>
+<div class="table-responsive mb-4">
+  <table class="table table-sm table-bordered bg-white align-middle" id="metrics-table">
+    <thead class="table-light">
+      <tr>
+        <th>Model</th>
+        <th>Developer</th>
+        <th>Params</th>
+        <th>Accuracy (%)</th>
+        <th>Correct</th>
+        <th>Total</th>
+        <th>Avg time (s)</th>
+        <th>Errors</th>
+      </tr>
+    </thead>
+    <tbody id="metrics-body"></tbody>
+  </table>
+</div>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-6">
+    <div class="card h-100"><div class="card-body">
+      <h6 class="card-title">Accuracy</h6>
+      <canvas id="accuracy-chart"></canvas>
+    </div></div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="card h-100"><div class="card-body">
+      <h6 class="card-title">Average response time (s)</h6>
+      <canvas id="time-chart"></canvas>
+    </div></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  const initialMetrics = {{ metrics | tojson }};
+  let accuracyChart, timeChart;
+
+  function renderTable(rows) {
+    const body = document.getElementById('metrics-body');
+    if (!rows.length) {
+      body.innerHTML = '<tr><td colspan="8" class="text-muted text-center">No results yet. Run a benchmark to populate this table.</td></tr>';
+      return;
+    }
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td>${r.name}</td>
+        <td>${r.developer || ''}</td>
+        <td>${r.params || ''}</td>
+        <td>${r.accuracy}</td>
+        <td>${r.correct}</td>
+        <td>${r.total}</td>
+        <td>${r.avg_response_time}</td>
+        <td>${r.errors}</td>
+      </tr>`).join('');
+  }
+
+  function renderCharts(rows) {
+    const labels = rows.map(r => r.name);
+    const accData = rows.map(r => r.accuracy);
+    const timeData = rows.map(r => r.avg_response_time);
+
+    if (accuracyChart) accuracyChart.destroy();
+    if (timeChart) timeChart.destroy();
+
+    accuracyChart = new Chart(document.getElementById('accuracy-chart'), {
+      type: 'bar',
+      data: { labels, datasets: [{ label: 'Accuracy (%)', data: accData, backgroundColor: '#4c6ef5' }] },
+      options: { scales: { y: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } }
+    });
+
+    timeChart = new Chart(document.getElementById('time-chart'), {
+      type: 'bar',
+      data: { labels, datasets: [{ label: 'Avg time (s)', data: timeData, backgroundColor: '#f76707' }] },
+      options: { scales: { y: { beginAtZero: true } }, plugins: { legend: { display: false } } }
+    });
+  }
+
+  function refresh(rows) {
+    renderTable(rows);
+    renderCharts(rows);
+  }
+
+  const presets = {{ presets | tojson }};
+  const tuneIds = ['temperature', 'top_p', 'max_tokens', 'few_shot', 'frequency_penalty', 'presence_penalty'];
+
+  function syncLabels() {
+    tuneIds.forEach(id => {
+      const el = document.getElementById(id);
+      document.getElementById(id + '-val').textContent = el.value;
+    });
+  }
+
+  tuneIds.forEach(id => document.getElementById(id).addEventListener('input', syncLabels));
+
+  document.querySelectorAll('.preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = presets[btn.dataset.preset];
+      tuneIds.forEach(id => { if (p[id] !== undefined) document.getElementById(id).value = p[id]; });
+      syncLabels();
+    });
+  });
+
+  function gatherParams() {
+    const params = {};
+    tuneIds.forEach(id => { params[id] = document.getElementById(id).value; });
+    return params;
+  }
+
+  const runBtn = document.getElementById('run-btn');
+  const status = document.getElementById('status');
+
+  function setBusy(busy) {
+    runBtn.disabled = busy;
+    runBtn.textContent = busy ? 'Running...' : 'Run Benchmark';
+  }
+
+  async function runBenchmark(url, body, label) {
+    const samples = document.getElementById('samples').value;
+    setBusy(true);
+    status.className = 'mt-3 small text-muted';
+    status.textContent = `Running ${label} on ${samples} samples. Reasoning models can take several minutes, please wait.`;
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Run failed.');
+      status.className = 'mt-3 small text-success';
+      if (data.ran) {
+        status.textContent = `Done. Ran ${data.ran.join(', ')} on ${data.samples} samples.`;
+      } else {
+        status.textContent = `Done. ${data.name}: ${data.accuracy}% accuracy over ${data.total} samples, ${data.avg_response_time}s average.`;
+      }
+      refresh(data.metrics);
+    } catch (err) {
+      status.className = 'mt-3 small text-danger';
+      status.textContent = err.message;
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  document.getElementById('run-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const model = document.getElementById('model').value;
+    const samples = document.getElementById('samples').value;
+    const params = gatherParams();
+    if (model === 'all') {
+      runBenchmark('/run_all', { samples, ...params }, 'all models');
+    } else {
+      runBenchmark('/run', { model, samples, ...params }, 'the selected model');
+    }
+  });
+
+  syncLabels();
+  refresh(initialMetrics);
+</script>
+{% endblock %}
