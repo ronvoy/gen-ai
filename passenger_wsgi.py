@@ -234,6 +234,14 @@ def render_report_html(script_root=""):
     html = html.replace('src="../diagrams/', f'src="{script_root}/diagrams/')
     html = html.replace('src="diagrams/', f'src="{script_root}/diagrams/')
 
+    # Style Markdown tables with Bootstrap and make them scroll on small screens.
+    html = html.replace(
+        "<table>",
+        '<div class="table-responsive">'
+        '<table class="table table-bordered table-sm align-middle">',
+    )
+    html = html.replace("</table>", "</table></div>")
+
     # put the mermaid blocks back as live diagrams.
     for i, code in enumerate(blocks):
         html = html.replace(
@@ -329,7 +337,44 @@ def history_delete():
 
 @app.route("/docs")
 def docs():
-    return render_template("docs.html", content=render_report_html(request.script_root))
+    sr = request.script_root
+    report_html = os.path.join(BASE_DIR, "report.html")
+
+    # Prefer the exported report.html; fall back to rendering report.md.
+    if not os.path.exists(report_html):
+        return render_template("docs.html", content=render_report_html(sr))
+
+    with open(report_html, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # The VS Code export points Mermaid and KaTeX at local file:// paths that
+    # do not exist on the server. Swap Mermaid for a CDN and drop KaTeX (the
+    # report has no math).
+    html = re.sub(
+        r"file:/+[^\"']*?mermaid[^\"']*?\.js",
+        "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js",
+        html,
+    )
+    html = re.sub(r"<link[^>]*katex[^>]*>", "", html)
+
+    # Serve report images through the app, honouring the base URI (e.g. /gen-ai).
+    html = html.replace('src="../diagrams/', f'src="{sr}/diagrams/')
+    html = html.replace('src="diagrams/', f'src="{sr}/diagrams/')
+
+    # Inject a slim nav bar so the app tabs stay reachable from the report.
+    nav = (
+        '<nav style="background:#212529;padding:10px 16px;'
+        'font-family:Arial,Helvetica,sans-serif;font-size:15px;">'
+        f'<a href="{sr}/" style="color:#fff;margin-right:18px;'
+        'text-decoration:none;font-weight:600;">LAMBADA Benchmark</a>'
+        f'<a href="{sr}/" style="color:#cbd3da;margin-right:14px;text-decoration:none;">Benchmark</a>'
+        f'<a href="{sr}/history" style="color:#cbd3da;margin-right:14px;text-decoration:none;">History</a>'
+        f'<a href="{sr}/docs" style="color:#fff;text-decoration:none;">Docs</a>'
+        "</nav>"
+    )
+    html = re.sub(r"(<body[^>]*>)", lambda m: m.group(1) + nav, html, count=1)
+
+    return html
 
 
 @app.route("/diagrams/<path:filename>")
