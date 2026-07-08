@@ -9,7 +9,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 MODELS = [
-    "microsoft/phi-4-mini-instruct",
+    "google/gemma-3-4b-it",
     "meta-llama/llama-3.2-3b-instruct",
     "mistralai/ministral-8b-2512",
 ]
@@ -72,46 +72,49 @@ DATASET_FILES = {
 }
 
 MODEL_INFO = {
-    "microsoft/phi-4-mini-instruct": {
-        "name": "Phi-4-Mini",
-        "developer": "Microsoft",
-        "params": "3.8B",
-        "architecture": "Dense decoder-only transformer with Grouped Query Attention",
-        "technique": "Curated and synthetic data training",
+    "google/gemma-3-4b-it": {
+        "name": "Gemma-3-4B",
+        "developer": "Google",
+        "params": "4B",
+        "architecture": "Dense decoder-only transformer with interleaved local/global attention",
+        "technique": "Knowledge distillation + local/global attention interleaving",
         "description": (
-            "Phi-4-Mini is a 3.8 billion parameter model from Microsoft. The Phi family is "
-            "built around data quality rather than raw scale: it is trained on filtered web "
-            "data and synthetic textbook-style material, which lets a small model punch above "
-            "its weight on reasoning and language tasks. It is a dense decoder-only transformer "
-            "with grouped query attention and a 128k token vocabulary."
+            "Gemma-3-4B is a 4 billion parameter instruction-tuned model from Google, built "
+            "with the same research that powers Gemini. It is a dense decoder-only transformer "
+            "that interleaves several local sliding-window attention layers with an occasional "
+            "global attention layer, which keeps memory low while still letting information "
+            "flow across a long context (up to 128k tokens). The small Gemma 3 models are "
+            "trained with knowledge distillation from larger teacher models."
         ),
         "technique_detail": (
-            "The Phi approach focuses on the training data. Instead of scraping ever larger "
-            "corpora, the team curates high-signal web text and generates synthetic examples "
-            "that resemble textbook explanations. A smaller model trained on cleaner data "
-            "learns more per parameter, so Phi-4-Mini stays cheap to run while remaining "
-            "competitive on language understanding."
+            "Gemma 3 alternates attention types across depth: most layers only look at a "
+            "local window of nearby tokens (cheap), and every few layers one global layer "
+            "lets any token attend to the whole context (expressive). Combined with grouped "
+            "query attention and QK-norm for stable training, and with distillation - the "
+            "small model learns to match a larger teacher's output distribution rather than "
+            "raw text alone - it delivers strong quality per parameter at edge-friendly cost."
         ),
         "key_properties": [
             "Dense decoder-only transformer, no expert routing.",
-            "Grouped Query Attention for a smaller key-value cache.",
-            "Trained on curated web plus synthetic textbook-quality data.",
-            "Small footprint suited to edge and low-latency serving.",
+            "5:1 interleaving of local sliding-window and global attention layers.",
+            "Grouped Query Attention with QK-norm; 128k-token context window.",
+            "Distilled from larger Gemma/Gemini-family teacher models.",
         ],
         "flow_mermaid": (
             "graph TD\n"
             "    A[Input Tokens] --> B[Token Embedding + RoPE]\n"
             "    B --> C[Decoder Layer x N]\n"
-            "    C --> D[Grouped Query Attention]\n"
-            "    D --> E[SwiGLU Feed Forward]\n"
-            "    E --> F[RMSNorm + Residual]\n"
-            "    F --> C\n"
-            "    F --> G[Final RMSNorm]\n"
-            "    G --> H[LM Head]\n"
-            "    H --> I[Softmax to Next Token]"
+            "    C --> D[Local Sliding-Window Attention x5]\n"
+            "    D --> E[Global Attention x1]\n"
+            "    E --> F[GeGLU Feed Forward]\n"
+            "    F --> G[RMSNorm + Residual]\n"
+            "    G --> C\n"
+            "    G --> H[Final RMSNorm]\n"
+            "    H --> I[LM Head]\n"
+            "    I --> J[Softmax to Next Token]"
         ),
-        "strengths": "Strong reasoning for its size, fast, cheap to serve",
-        "weaknesses": "Limited world knowledge compared to larger models",
+        "strengths": "Strong quality per parameter, long context, cheap to serve",
+        "weaknesses": "Global reasoning can lag models with full attention everywhere",
         "color": "#2196F3",
     },
     "meta-llama/llama-3.2-3b-instruct": {

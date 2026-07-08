@@ -1,0 +1,417 @@
+{% extends "base.html" %}
+{% block title %}MMLU Benchmark{% endblock %}
+{% block nav_mmlu %}active{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+  <h3 class="mb-1">MMLU Benchmark - Knowledge &amp; Reasoning</h3>
+  <p class="text-muted mb-0">
+    Multiple-choice questions across the 57 MMLU subjects, fetched live from the free
+    Hugging Face datasets-server API. Each model must reason step by step before
+    answering; the reasoning is parsed, scored for consistency, and shown per question below.
+  </p>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <form id="mmlu-form">
+      <div class="row g-3 align-items-end">
+        <div class="col-12 col-md-4">
+          <label for="model" class="form-label">Model</label>
+          <select id="model" class="form-select">
+            {% for m in models %}
+            <option value="{{ m.id }}">{{ m.name }}</option>
+            {% endfor %}
+            <option value="all">All models (full ranking)</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-3">
+          <label for="questions" class="form-label">Questions / subject ({{ min_questions }}-{{ max_questions }})</label>
+          <input type="number" id="questions" class="form-control"
+                 min="{{ min_questions }}" max="{{ max_questions }}" step="1" value="3">
+        </div>
+        <div class="col-12 col-md-5 d-flex gap-2">
+          <button type="submit" id="run-btn" class="btn btn-primary flex-fill">Run MMLU</button>
+          <button type="button" class="btn btn-outline-primary"
+                  data-bs-toggle="collapse" data-bs-target="#mmlu-tune">Decoding</button>
+        </div>
+      </div>
+
+      <div class="mt-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+          <span class="fw-semibold">Subjects <span class="text-muted small" id="subject-count"></span></span>
+          <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-outline-secondary group-btn" data-group="all">All 57</button>
+            {% for key, g in groups.items() %}
+            <button type="button" class="btn btn-outline-secondary group-btn" data-group="{{ key }}">{{ g.label }}</button>
+            {% endfor %}
+            <button type="button" class="btn btn-outline-secondary group-btn" data-group="none">Clear</button>
+          </div>
+        </div>
+        <div class="row g-3">
+          {% for key, g in groups.items() %}
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="border rounded p-2 bg-light h-100">
+              <div class="form-check mb-1">
+                <input class="form-check-input cat-toggle" type="checkbox" id="cat-{{ key }}" data-group="{{ key }}">
+                <label class="form-check-label fw-semibold small" for="cat-{{ key }}">{{ g.label }} ({{ g.subjects | length }})</label>
+              </div>
+              <div style="max-height: 180px; overflow-y: auto;">
+                {% for s in g.subjects %}
+                <div class="form-check">
+                  <input class="form-check-input subject-box" type="checkbox"
+                         value="{{ s }}" id="s-{{ s }}" data-group="{{ key }}">
+                  <label class="form-check-label small" for="s-{{ s }}">{{ s.replace('_', ' ') }}</label>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="collapse mt-3" id="mmlu-tune">
+        <div class="border rounded p-3 bg-light">
+          <span class="fw-semibold">Decoding parameters</span>
+          <p class="text-muted small mb-2">
+            MMLU uses greedy decoding by default and a larger token budget than LAMBADA
+            so the model has room to write its reasoning before committing to a letter.
+          </p>
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <label class="form-label small mb-0">Temperature <span class="text-muted" id="temperature-val"></span></label>
+              <input type="range" class="form-range tune" id="temperature" min="0" max="2" step="0.05" value="{{ defaults.temperature }}">
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="form-label small mb-0">Top-p <span class="text-muted" id="top_p-val"></span></label>
+              <input type="range" class="form-range tune" id="top_p" min="0" max="1" step="0.05" value="{{ defaults.top_p }}">
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="form-label small mb-0">Max tokens <span class="text-muted" id="max_tokens-val"></span></label>
+              <input type="range" class="form-range tune" id="max_tokens" min="64" max="1024" step="32" value="{{ defaults.max_tokens }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div id="status" class="mt-3 small"></div>
+  </div>
+</div>
+
+<h5 class="mb-2">Model ranking</h5>
+<p class="text-muted small mb-2">
+  Composite score = 0.70 &times; accuracy + 0.15 &times; reasoning consistency + 0.15 &times; relative speed.
+  Per-dimension ranks are shown in parentheses (1 = best).
+</p>
+<div class="table-responsive mb-4">
+  <table class="table table-sm table-bordered bg-white align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>#</th>
+        <th>Model</th>
+        <th>Accuracy (%)</th>
+        <th>STEM</th>
+        <th>Human.</th>
+        <th>Social</th>
+        <th>Other</th>
+        <th>Reasoning consist. (%)</th>
+        <th>Avg words</th>
+        <th>Avg time (s)</th>
+        <th>Composite</th>
+        <th>Errors</th>
+      </tr>
+    </thead>
+    <tbody id="ranking-body"></tbody>
+  </table>
+</div>
+
+<div class="row g-4 mb-4">
+  <div class="col-12 col-lg-6">
+    <div class="card h-100"><div class="card-body">
+      <h6 class="card-title">Accuracy by model</h6>
+      <canvas id="accuracy-chart"></canvas>
+    </div></div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="card h-100"><div class="card-body">
+      <h6 class="card-title">Accuracy by category</h6>
+      <canvas id="category-chart"></canvas>
+    </div></div>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <div class="d-flex flex-wrap align-items-end gap-2 mb-2">
+      <div>
+        <h5 class="mb-1">Questions, answers &amp; model reasoning</h5>
+        <p class="text-muted small mb-0">Every question the selected model saw, its pick vs the correct answer, and the parsed reasoning behind it.</p>
+      </div>
+      <div class="ms-auto d-flex gap-2">
+        <select id="detail-model" class="form-select form-select-sm" style="width:auto;">
+          {% for m in models %}
+          <option value="{{ m.id }}">{{ m.name }}</option>
+          {% endfor %}
+        </select>
+        <button type="button" id="detail-btn" class="btn btn-sm btn-outline-primary">Load Q/A</button>
+      </div>
+    </div>
+    <div id="detail-status" class="small text-muted"></div>
+    <div class="accordion mt-2" id="detail-accordion"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  const initialRanking = {{ ranking | tojson }};
+  const CATS = { stem: 'STEM', humanities: 'Humanities', social_sciences: 'Social Sciences', other: 'Other' };
+  const VERDICTS = {
+    'sound':           { label: 'Sound reasoning', cls: 'success' },
+    'right-weak-link': { label: 'Correct, weakly supported', cls: 'info' },
+    'lucky-guess':     { label: 'Correct, no reasoning', cls: 'warning' },
+    'flawed-reasoning':{ label: 'Flawed reasoning', cls: 'danger' },
+    'blind-guess':     { label: 'Wrong, no reasoning', cls: 'secondary' },
+    'no-answer':       { label: 'No answer parsed', cls: 'dark' }
+  };
+  let accuracyChart, categoryChart;
+
+  function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+  const pct = v => (v == null ? '-' : (v * 100).toFixed(1));
+
+  // ---- ranking table + charts ----
+
+  function renderRanking(rows) {
+    const body = document.getElementById('ranking-body');
+    if (!rows.length) {
+      body.innerHTML = '<tr><td colspan="12" class="text-muted text-center">No MMLU results yet. Select subjects and run the benchmark.</td></tr>';
+      renderCharts(rows);
+      return;
+    }
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td class="fw-semibold">${r.rank}</td>
+        <td>${esc(r.name)} <span class="text-muted small">${esc(r.params || '')}</span></td>
+        <td>${pct(r.accuracy)} <span class="text-muted small">(${r.ranks.accuracy})</span></td>
+        <td>${pct(r.category_accuracy.stem)}</td>
+        <td>${pct(r.category_accuracy.humanities)}</td>
+        <td>${pct(r.category_accuracy.social_sciences)}</td>
+        <td>${pct(r.category_accuracy.other)}</td>
+        <td>${pct(r.consistency_rate)} <span class="text-muted small">(${r.ranks.reasoning})</span></td>
+        <td>${r.avg_reasoning_words}</td>
+        <td>${r.avg_response_time} <span class="text-muted small">(${r.ranks.speed})</span></td>
+        <td class="fw-semibold">${r.composite_score}</td>
+        <td>${r.errors}</td>
+      </tr>`).join('');
+    renderCharts(rows);
+  }
+
+  function renderCharts(rows) {
+    if (accuracyChart) accuracyChart.destroy();
+    if (categoryChart) categoryChart.destroy();
+    if (!rows.length) return;
+
+    const labels = rows.map(r => r.name);
+    accuracyChart = new Chart(document.getElementById('accuracy-chart'), {
+      type: 'bar',
+      data: { labels, datasets: [{ label: 'Accuracy (%)', data: rows.map(r => r.accuracy * 100), backgroundColor: '#4c6ef5' }] },
+      options: { scales: { y: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } }
+    });
+
+    const colors = ['#4c6ef5', '#f76707', '#37b24d', '#ae3ec9'];
+    categoryChart = new Chart(document.getElementById('category-chart'), {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: Object.keys(CATS).map((cat, i) => ({
+          label: CATS[cat],
+          data: rows.map(r => r.category_accuracy[cat] != null ? r.category_accuracy[cat] * 100 : null),
+          backgroundColor: colors[i]
+        }))
+      },
+      options: { scales: { y: { beginAtZero: true, max: 100 } } }
+    });
+  }
+
+  // ---- subject selection ----
+
+  const subjectBoxes = [...document.querySelectorAll('.subject-box')];
+
+  function selectedSubjects() {
+    return subjectBoxes.filter(b => b.checked).map(b => b.value);
+  }
+  function updateCount() {
+    document.getElementById('subject-count').textContent = `(${selectedSubjects().length} selected)`;
+  }
+  subjectBoxes.forEach(b => b.addEventListener('change', updateCount));
+
+  document.querySelectorAll('.group-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const g = btn.dataset.group;
+      subjectBoxes.forEach(b => {
+        if (g === 'all') b.checked = true;
+        else if (g === 'none') b.checked = false;
+        else b.checked = b.dataset.group === g;
+      });
+      document.querySelectorAll('.cat-toggle').forEach(t => {
+        t.checked = g === 'all' || t.dataset.group === g;
+      });
+      updateCount();
+    });
+  });
+
+  document.querySelectorAll('.cat-toggle').forEach(t => {
+    t.addEventListener('change', () => {
+      subjectBoxes.filter(b => b.dataset.group === t.dataset.group)
+                  .forEach(b => { b.checked = t.checked; });
+      updateCount();
+    });
+  });
+
+  // ---- decoding sliders ----
+
+  const tuneIds = ['temperature', 'top_p', 'max_tokens'];
+  function syncLabels() {
+    tuneIds.forEach(id => {
+      document.getElementById(id + '-val').textContent = document.getElementById(id).value;
+    });
+  }
+  tuneIds.forEach(id => document.getElementById(id).addEventListener('input', syncLabels));
+
+  // ---- run ----
+
+  const runBtn = document.getElementById('run-btn');
+  const status = document.getElementById('status');
+
+  document.getElementById('mmlu-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const subjects = selectedSubjects();
+    if (!subjects.length) {
+      status.className = 'mt-3 small text-danger';
+      status.textContent = 'Select at least one subject (or use a preset group button).';
+      return;
+    }
+    const model = document.getElementById('model').value;
+    const questions = document.getElementById('questions').value;
+    const params = {};
+    tuneIds.forEach(id => { params[id] = document.getElementById(id).value; });
+
+    runBtn.disabled = true;
+    runBtn.textContent = 'Running...';
+    status.className = 'mt-3 small text-muted';
+    status.textContent = `Running ${model === 'all' ? 'all models' : 'the selected model'} on ${subjects.length} subject(s) x ${questions} question(s). Models write out their reasoning, so this takes a while - please wait.`;
+
+    try {
+      const res = await fetch(SCRIPT_ROOT + '/mmlu/run', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model, subjects, questions, ...params })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Run failed.');
+      status.className = 'mt-3 small text-success';
+      status.textContent = `Done. Ran ${data.ran.join(', ')} on ${data.subjects.length} subject(s), ${data.questions} question(s) each.`;
+      renderRanking(data.ranking);
+      const detailModel = model === 'all' ? document.getElementById('detail-model').value : model;
+      document.getElementById('detail-model').value = detailModel;
+      loadDetails(detailModel);
+    } catch (err) {
+      status.className = 'mt-3 small text-danger';
+      status.textContent = err.message;
+    } finally {
+      runBtn.disabled = false;
+      runBtn.textContent = 'Run MMLU';
+    }
+  });
+
+  // ---- Q/A + reasoning viewer ----
+
+  const detailStatus = document.getElementById('detail-status');
+  const accordion = document.getElementById('detail-accordion');
+
+  async function loadDetails(modelId) {
+    detailStatus.textContent = 'Loading...';
+    accordion.innerHTML = '';
+    try {
+      const res = await fetch(SCRIPT_ROOT + '/mmlu/details?model=' + encodeURIComponent(modelId));
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Could not load details.');
+      renderDetails(data);
+    } catch (err) {
+      detailStatus.textContent = err.message;
+    }
+  }
+
+  function renderDetails(data) {
+    const bySubject = {};
+    data.results.forEach(r => (bySubject[r.subject] = bySubject[r.subject] || []).push(r));
+    const subjects = Object.keys(bySubject).sort();
+    const rs = data.reasoning || {};
+    detailStatus.innerHTML =
+      `<strong>${esc(data.name)}</strong> - ${subjects.length} subject(s), ${data.results.length} question(s). ` +
+      `Reasoning given on ${pct(rs.reasoning_rate)}% of answers, consistent with the chosen option on ${pct(rs.consistency_rate)}%.`;
+
+    accordion.innerHTML = subjects.map((s, si) => {
+      const items = bySubject[s];
+      const acc = data.subject_accuracy[s] || {};
+      const qHtml = items.map(q => {
+        const v = VERDICTS[q.analysis?.verdict] || VERDICTS['no-answer'];
+        const opts = q.choices.map((c, i) => {
+          const L = 'ABCD'[i];
+          let cls = 'list-group-item py-1 small';
+          let badge = '';
+          if (L === q.correct_letter) { cls += ' list-group-item-success'; badge = ' <span class="badge bg-success">correct answer</span>'; }
+          if (L === q.predicted_letter && !q.correct) { cls += ' list-group-item-danger'; badge += ' <span class="badge bg-danger">model\'s pick</span>'; }
+          if (L === q.predicted_letter && q.correct) { badge += ' <span class="badge bg-primary">model\'s pick</span>'; }
+          return `<li class="${cls}"><strong>${L}.</strong> ${esc(c)}${badge}</li>`;
+        }).join('');
+        return `
+          <div class="border rounded p-3 mb-2 ${q.correct ? '' : 'border-danger-subtle'}">
+            <div class="d-flex justify-content-between flex-wrap gap-1 mb-1">
+              <span class="fw-semibold small">Q${q.index + 1}. ${esc(q.question)}</span>
+              <span>
+                <span class="badge bg-${q.correct ? 'success' : 'danger'}">${q.correct ? 'correct' : 'wrong'}</span>
+                <span class="badge bg-${v.cls}">${v.label}</span>
+                <span class="badge bg-light text-dark">${q.time}s</span>
+              </span>
+            </div>
+            <ul class="list-group list-group-flush mb-2">${opts}</ul>
+            <div class="small"><span class="fw-semibold">Model reasoning:</span>
+              <blockquote class="border-start border-3 ps-2 mb-0 text-muted">${q.reasoning ? esc(q.reasoning) : '<em>none produced</em>'}</blockquote>
+            </div>
+            ${q.error ? `<div class="small text-danger mt-1">API error: ${esc(q.error)}</div>` : ''}
+          </div>`;
+      }).join('');
+      return `
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subj-${si}">
+              <span class="text-capitalize">${esc(s.replaceAll('_', ' '))}</span>
+              <span class="badge bg-${(acc.accuracy ?? 0) >= 0.5 ? 'success' : 'danger'} ms-2">${acc.correct ?? 0}/${acc.total ?? items.length} correct</span>
+              <span class="badge bg-light text-dark ms-1">${CATS[items[0].category] || ''}</span>
+            </button>
+          </h2>
+          <div id="subj-${si}" class="accordion-collapse collapse" data-bs-parent="#detail-accordion">
+            <div class="accordion-body">${qHtml}</div>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  document.getElementById('detail-btn').addEventListener('click', () =>
+    loadDetails(document.getElementById('detail-model').value));
+
+  // ---- init ----
+  document.querySelector('.group-btn[data-group="stem"]')?.click();
+  syncLabels();
+  updateCount();
+  renderRanking(initialRanking);
+  if (initialRanking.length) loadDetails(document.getElementById('detail-model').value);
+</script>
+{% endblock %}

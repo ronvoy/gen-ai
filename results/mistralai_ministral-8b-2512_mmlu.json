@@ -1,0 +1,2320 @@
+{
+  "model": "mistralai/ministral-8b-2512",
+  "benchmark": "mmlu",
+  "subjects": [
+    "abstract_algebra",
+    "astronomy",
+    "college_biology",
+    "college_chemistry",
+    "college_computer_science",
+    "college_mathematics",
+    "college_physics",
+    "computer_security",
+    "conceptual_physics",
+    "electrical_engineering",
+    "elementary_mathematics",
+    "high_school_biology",
+    "high_school_chemistry",
+    "high_school_computer_science",
+    "high_school_mathematics",
+    "high_school_physics",
+    "high_school_statistics",
+    "machine_learning"
+  ],
+  "questions_per_subject": 5,
+  "total": 90,
+  "correct": 68,
+  "accuracy": 0.7556,
+  "avg_response_time": 1.577,
+  "total_time": 141.93,
+  "errors": 0,
+  "subject_accuracy": {
+    "abstract_algebra": {
+      "category": "stem",
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4
+    },
+    "astronomy": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "college_biology": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "college_chemistry": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "college_computer_science": {
+      "category": "stem",
+      "correct": 3,
+      "total": 5,
+      "accuracy": 0.6
+    },
+    "college_mathematics": {
+      "category": "stem",
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4
+    },
+    "college_physics": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "computer_security": {
+      "category": "stem",
+      "correct": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "conceptual_physics": {
+      "category": "stem",
+      "correct": 3,
+      "total": 5,
+      "accuracy": 0.6
+    },
+    "electrical_engineering": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "elementary_mathematics": {
+      "category": "stem",
+      "correct": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "high_school_biology": {
+      "category": "stem",
+      "correct": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "high_school_chemistry": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "high_school_computer_science": {
+      "category": "stem",
+      "correct": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    "high_school_mathematics": {
+      "category": "stem",
+      "correct": 3,
+      "total": 5,
+      "accuracy": 0.6
+    },
+    "high_school_physics": {
+      "category": "stem",
+      "correct": 3,
+      "total": 5,
+      "accuracy": 0.6
+    },
+    "high_school_statistics": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "machine_learning": {
+      "category": "stem",
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    }
+  },
+  "category_accuracy": {
+    "stem": {
+      "correct": 68,
+      "total": 90,
+      "accuracy": 0.7556
+    }
+  },
+  "reasoning": {
+    "reasoning_rate": 1.0,
+    "consistency_rate": 0.5556,
+    "avg_reasoning_words": 59.4
+  },
+  "params": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 384
+  },
+  "results": [
+    {
+      "subject": "abstract_algebra",
+      "category": "stem",
+      "index": 0,
+      "question": "Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.",
+      "choices": [
+        "0",
+        "4",
+        "2",
+        "6"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "1. First, note that √18 = 3√2, so √18 is already in Q(√2). Thus the extension is Q(√2, √3).\n2. The minimal polynomial of √2 over Q is x²−2, degree 2.\n3. The minimal polynomial of √3 over Q(√2) is x²−3, which is irreducible over Q(√2) (since 3 is not a square in Q(√2)).\n4. Therefore the degree of the extension Q(√2, √3) over Q is 2×2 = 4.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 69,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.869,
+      "error": null
+    },
+    {
+      "subject": "abstract_algebra",
+      "category": "stem",
+      "index": 1,
+      "question": "Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.",
+      "choices": [
+        "8",
+        "2",
+        "24",
+        "120"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "",
+      "correct": false,
+      "reasoning": "1. The cycle decomposition of p is (1,2,5,4)(2,3), which simplifies to (1,5,4)(3) (since (2,3) cancels the 2 in (1,2,5,4)).\n2. The order of p is the least common multiple of its cycle lengths: lcm(3,1) = 3.\n3. The index of the subgroup generated by p in S₅ is |S₅|/|⟨p⟩| = 120/3 = 40, but wait—this is incorrect because p is actually (1,2,5,4)(2,3) = (1,5,4)(3), which has order 3, but the subgroup generated by p has order 3, so index is 120/3 = 40, which is not an option. Re-examining: p = (1,2,5,4)(2,3) = (1,5,4)(3) (order 3), but the subgroup ⟨p⟩ has order 3, so index is 120/3 = 40, which is not listed. Wait, the question is about the index of ⟨p⟩ in S₅, but none of the options match 40. Reconsidering the cycle decomposition: p = (1,2,5,4)(2,3) = (1,5,4)(3) (order 3), but the subgroup generated by p has order 3, so index is 120/3 = 40, which is not an option. Alternatively, perhaps the question means the index of the subgroup generated by p in S₅, but none",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 179,
+        "consistent": false,
+        "verdict": "no-answer"
+      },
+      "time": 4.674,
+      "error": null
+    },
+    {
+      "subject": "abstract_algebra",
+      "category": "stem",
+      "index": 2,
+      "question": "Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5",
+      "choices": [
+        "0",
+        "1",
+        "0,1",
+        "0,4"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "We test each element of ℤ₅ for roots of f(x) = x⁵ + 3x³ + x² + 2x in ℤ₅.\n- f(0) = 0 + 0 + 0 + 0 = 0, so 0 is a root.\n- f(1) = 1 + 3 + 1 + 2 = 7 ≡ 2 mod 5 ≠ 0.\n- f(4) = 4⁵ + 3·4³ + 4² + 2·4 ≡ 1 + 3·4 + 1 + 3 ≡ 1 + 12 + 1 + 3 ≡ 1 + 2 + 1 + 3 ≡ 7 ≡ 2 mod 5 ≠ 0.\nOnly 0 satisfies f(x) = 0 in ℤ₅.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 105,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 2.821,
+      "error": null
+    },
+    {
+      "subject": "abstract_algebra",
+      "category": "stem",
+      "index": 3,
+      "question": "Statement 1 | A factor group of a non-Abelian group is non-Abelian. Statement 2 | If K is a normal subgroup of H and H is a normal subgroup of G, then K is a normal subgroup of G.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "D",
+      "correct": false,
+      "reasoning": "1. A factor group (quotient group) G/N is Abelian if and only if the commutator subgroup of G is contained in N. Since non-Abelian groups have nontrivial commutator subgroups, their factor groups can be Abelian (e.g., S₃ has an Abelian factor group of order 3). Thus Statement 1 is false.\n2. Normality is transitive: if K ≰ H ≰ G and H is normal in G, then K is normal in G by the third isomorphism theorem. Thus Statement 2 is true.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 82,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 3.214,
+      "error": null
+    },
+    {
+      "subject": "abstract_algebra",
+      "category": "stem",
+      "index": 4,
+      "question": "Find the product of the given polynomials in the given polynomial ring. f(x) = 4x - 5, g(x) = 2x^2 - 4x + 2 in Z_8[x].",
+      "choices": [
+        "2x^2 + 5",
+        "6x^2 + 4x + 6",
+        "0",
+        "x^2 + 1"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Compute the product in ℤ₈[x] by expanding f(x)·g(x) = (4x−5)(2x²−4x+2).\nFirst expand: 8x³ − 16x² + 8x − 10x² + 20x − 10 = 8x³ − 26x² + 28x − 10.\nReduce coefficients modulo 8: 8 ≡ 0, −26 ≡ 2, 28 ≡ 4, −10 ≡ 6 → 0x³ + 2x² + 4x + 6.\nSimplify to 2x² + 4x + 6, which matches option B.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 66,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 2.942,
+      "error": null
+    },
+    {
+      "subject": "astronomy",
+      "category": "stem",
+      "index": 0,
+      "question": "What is true for a type-Ia (\"type one-a\") supernova?",
+      "choices": [
+        "This type occurs in binary systems.",
+        "This type occurs in young galaxies.",
+        "This type produces gamma-ray bursts.",
+        "This type produces high amounts of X-rays."
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Type-Ia supernovae arise from the thermonuclear explosion of a white dwarf in a binary system, where it accretes mass from a companion star until it reaches the Chandrasekhar limit. They are not tied to young galaxies, do not produce gamma-ray bursts (associated with collapsar events), and are not primarily X-ray emitters.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 51,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 2.405,
+      "error": null
+    },
+    {
+      "subject": "astronomy",
+      "category": "stem",
+      "index": 1,
+      "question": "If you know both the actual brightness of an object and its apparent brightness from your location then with no other information you can estimate:",
+      "choices": [
+        "Its speed relative to you",
+        "Its composition",
+        "Its size",
+        "Its distance from you"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "Apparent brightness depends on actual luminosity and distance via the inverse-square law (brightness ∝ luminosity / distance²). Knowing both values lets you solve for distance without needing size, speed, or composition.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 31,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.79,
+      "error": null
+    },
+    {
+      "subject": "astronomy",
+      "category": "stem",
+      "index": 2,
+      "question": "Why is the sky blue?",
+      "choices": [
+        "Because the molecules that compose the Earth's atmosphere have a blue-ish color.",
+        "Because the sky reflects the color of the Earth's oceans.",
+        "Because the atmosphere preferentially scatters short wavelengths.",
+        "Because the Earth's atmosphere preferentially absorbs all other colors."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Sunlight appears white but contains all visible wavelengths. Shorter (blue) wavelengths scatter more strongly in Earth’s atmosphere due to Rayleigh scattering. This scattering makes the sky appear blue, not because of color in molecules, ocean reflection, or absorption of other colors.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 41,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.885,
+      "error": null
+    },
+    {
+      "subject": "astronomy",
+      "category": "stem",
+      "index": 3,
+      "question": "You’ve made a scientific theory that there is an attractive force between all objects. When will your theory be proven to be correct?",
+      "choices": [
+        "The first time you drop a bowling ball and it falls to the ground proving your hypothesis.",
+        "After you’ve repeated your experiment many times.",
+        "You can never prove your theory to be correct only “yet to be proven wrong”.",
+        "When you and many others have tested the hypothesis."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Scientific theories are never definitively \"proven\" but are supported by repeated, consistent evidence. A single experiment (A) is insufficient. While many tests (D) strengthen confidence, no finite number of trials can guarantee absolute truth. The philosophical principle of falsifiability (Popper) states theories are only \"yet to be proven wrong\" (C) until contradicted.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 52,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 2.28,
+      "error": null
+    },
+    {
+      "subject": "astronomy",
+      "category": "stem",
+      "index": 4,
+      "question": "Which of the following is/are true?",
+      "choices": [
+        "Titan is the only outer solar system moon with a thick atmosphere",
+        "Titan is the only outer solar system moon with evidence for recent geologic activity",
+        "Titan's atmosphere is composed mostly of hydrocarbons",
+        "A and D"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "C",
+      "correct": false,
+      "reasoning": "Titan is indeed the only outer solar system moon with a thick atmosphere (mostly nitrogen) and its atmosphere contains significant hydrocarbons (like methane). However, it also shows evidence of recent geologic activity (e.g., cryovolcanism, surface reshaping). Option A is partially correct but oversimplifies by omitting hydrocarbons, while C is true but incomplete about geologic activity. Option D combines A and D, but D itself is not a standalone correct choice—it incorrectly pairs A with itself. Only C is fully accurate among the options.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 83,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.746,
+      "error": null
+    },
+    {
+      "subject": "college_biology",
+      "category": "stem",
+      "index": 0,
+      "question": "Based on the characteristic population curves that result from plotting population growth of a species, the most effective means of controlling the mosquito population is to",
+      "choices": [
+        "maintain the population at a point corresponding to the midpoint of its logistic curve",
+        "opt for zero population control once the K value of the curve has been reached",
+        "reduce the carrying capacity cif the environment to lower the K value",
+        "increase the mortality rate"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Mosquito populations follow a logistic growth curve where K is the carrying capacity. Lowering K (e.g., by reducing habitat or resources) directly limits population size without requiring constant intervention. Increasing mortality or maintaining mid-logistic levels are less sustainable or effective than altering environmental limits. Zero control after reaching K is ineffective since populations rebound.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 54,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.28,
+      "error": null
+    },
+    {
+      "subject": "college_biology",
+      "category": "stem",
+      "index": 1,
+      "question": "A frameshift mutation is created when",
+      "choices": [
+        "telomeric sequences are removed from DNA",
+        "a codon's nucleotide sequence changes so that it calls for production of a different amino acid than the original one",
+        "a base pair is either inserted or deleted in a gene",
+        "a codon's nucleotide sequence is changed so that instead of coding for a given amino acid it acts to terminate translation"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "A frameshift mutation shifts the reading frame of codons by inserting or deleting a base pair, altering all downstream codons. Option A refers to telomere shortening, unrelated to frameshifts. Option B describes a missense mutation, not a frameshift. Option D describes a nonsense mutation, not a frameshift.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 47,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.015,
+      "error": null
+    },
+    {
+      "subject": "college_biology",
+      "category": "stem",
+      "index": 2,
+      "question": "To prevent desiccation and injury, the embryos of terrestrial vertebrates are encased within a fluid secreted by the",
+      "choices": [
+        "amnion",
+        "chorion",
+        "allantois",
+        "yolk sac"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "The amnion is the membrane that forms a fluid-filled cavity around the embryo to protect it from desiccation and physical damage. The chorion supports gas exchange, the allantois stores waste and aids in respiration, and the yolk sac provides nutrients.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 40,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.017,
+      "error": null
+    },
+    {
+      "subject": "college_biology",
+      "category": "stem",
+      "index": 3,
+      "question": "Which of the following is a second messenger that stimulates release of calcium ions into the cytoplasm?",
+      "choices": [
+        "Prostaglandins",
+        "Inositol triphosphate",
+        "Cyclic AMP",
+        "Calmodulin"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Second messengers relay signals from receptors to cellular targets. Inositol triphosphate (IP₃) binds ER receptors, triggering Ca²⁺ release into the cytoplasm. Prostaglandins are lipid mediators, cyclic AMP activates protein kinases, and calmodulin binds Ca²⁺ but does not release it.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 39,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.993,
+      "error": null
+    },
+    {
+      "subject": "college_biology",
+      "category": "stem",
+      "index": 4,
+      "question": "Synthesis of an RNA/DNA hybrid from a single-stranded RNA template requires",
+      "choices": [
+        "a DNA or RNA primer and reverse transcriptase",
+        "a DNA or RNA primer and DNA polymerase",
+        "RNase only",
+        "reverse transcriptase only"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "D",
+      "correct": false,
+      "reasoning": "The process described is reverse transcription, where RNA is used as a template to synthesize a DNA/RNA hybrid. Reverse transcriptase is the enzyme that catalyzes this reaction, and it does not require a primer (though some variants can initiate synthesis de novo). DNA polymerase is not involved in RNA-to-DNA synthesis, and RNase would degrade RNA rather than synthesize DNA/RNA hybrids.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 60,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.229,
+      "error": null
+    },
+    {
+      "subject": "college_chemistry",
+      "category": "stem",
+      "index": 0,
+      "question": "The rate, r, of a zero-order chemical reaction A → B can be expressed as which of the following?",
+      "choices": [
+        "r = k ln[A]",
+        "r = k [A]^2",
+        "r = k [A]",
+        "r = k"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "A zero-order reaction’s rate is independent of concentration, so it does not depend on [A]. The rate law simplifies to r = k, where k is the rate constant.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 29,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.876,
+      "error": null
+    },
+    {
+      "subject": "college_chemistry",
+      "category": "stem",
+      "index": 1,
+      "question": "Infrared (IR) spectroscopy is useful for determining certain aspects of the structure of organic molecules because",
+      "choices": [
+        "all molecular bonds absorb IR radiation",
+        "IR peak intensities are related to molecular mass",
+        "most organic functional groups absorb in a characteristic region of the IR spectrum",
+        "each element absorbs at a characteristic wavelength"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "IR spectroscopy detects vibrational modes of bonds, and different functional groups (e.g., C=O, O–H) absorb at predictable wavenumbers. While all bonds *can* absorb IR, not all do so strongly or usefully. Mass and elemental absorption are irrelevant here. The key utility lies in functional group fingerprint regions.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 47,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.238,
+      "error": null
+    },
+    {
+      "subject": "college_chemistry",
+      "category": "stem",
+      "index": 2,
+      "question": "What is the maximum number of phases that can be at equilibrium with each other in a three component mixture?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "The Gibbs phase rule for a three-component system is I + F = C + 2, where I is the number of phases, F is the degrees of freedom, and C is the number of components (3). At equilibrium, F = 0 (invariant condition), so I = C + 2 = 5. This is the maximum number of phases possible.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 60,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.125,
+      "error": null
+    },
+    {
+      "subject": "college_chemistry",
+      "category": "stem",
+      "index": 3,
+      "question": "When the following equation is balanced, which of the following is true?\n__ MnO4− + __ I− + __ H+ <-> __ Mn2+ + __ IO3− + __ H2O",
+      "choices": [
+        "The I− : IO3− ratio is 3:1.",
+        "The MnO4- : I- ratio is 6:5.",
+        "The MnO4- : Mn2+ ratio is 3:1.",
+        "The H+ : I− ratio is 2:1."
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "1. Balance the redox half-reactions: MnO4− gains 5e− to form Mn2+, and I− loses 1e− per atom to form IO3− (total 6e− for 6I−).\n2. LCM of 5 and 6 gives coefficients: 6 MnO4− + 10 I− + 16 H+ → 6 Mn2+ + 5 IO3− + 8 H2O.\n3. Check ratios: MnO4−:I− = 6:10 = 3:5, I−:IO3− = 10:5 = 2:1, MnO4−:Mn2+ = 6:6 = 1:1, H+:I− = 16:10 = 8:5.\n4. Only option A’s ratio (3:1) matches the I−:IO3− ratio when simplified (10:5 → 2:1, but none of the other options fit).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 94,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 3.656,
+      "error": null
+    },
+    {
+      "subject": "college_chemistry",
+      "category": "stem",
+      "index": 4,
+      "question": "The equation ΔH = ΔU + PΔV is applicable",
+      "choices": [
+        "always",
+        "only for constant pressure processes",
+        "only for constant temperature processes",
+        "only for constant volume processes"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "The equation relates enthalpy change (ΔH) to internal energy change (ΔU) via work done by pressure-volume expansion (PΔV). It holds true under any conditions where pressure and volume changes are considered, but specifically derives from the first law of thermodynamics under **constant pressure** (since ΔH = q_p, and q_p = ΔU + PΔV). It is not restricted to constant temperature or volume.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 62,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.19,
+      "error": null
+    },
+    {
+      "subject": "college_computer_science",
+      "category": "stem",
+      "index": 0,
+      "question": "The access matrix approach to protection has the difficulty that",
+      "choices": [
+        "the matrix, if stored directly, is large and can be clumsy to manage",
+        "it is not capable of expressing complex protection requirements",
+        "deciding whether a process has access to a resource is undecidable",
+        "there is no way to express who has rights to change the access matrix itself"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "The access matrix explicitly represents subjects (processes) and objects (resources) with associated permissions, which can become unwieldy when scaled. Storing the full matrix directly leads to inefficiency and complexity, especially as the number of subjects/objects grows. While other issues (like undecidability or lack of self-modification support) exist in theory, the primary practical challenge is the matrix’s size and management burden. Options B, C, and D describe theoretical or secondary limitations, not the core difficulty.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 74,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.532,
+      "error": null
+    },
+    {
+      "subject": "college_computer_science",
+      "category": "stem",
+      "index": 1,
+      "question": "An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?",
+      "choices": [
+        "{-6,-2, -1, 1, 2, 6}",
+        "{-6, -2, -1, 0, 1, 2, 6}",
+        "{-6, -3, -2, -1, 1, 2, 3, 6}",
+        "{-6, -3, -2, -1, 0, 1, 2, 3, 6}"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "The set of all common divisors of two integers must be closed under negation (since divisors come in ± pairs) and must include ±1. It cannot contain 0 because division by zero is undefined. The set must also be symmetric and include all divisors of the greatest common divisor (GCD) of the two numbers. Option A fits these criteria perfectly, while B and D include 0, and C lacks ±6 (the GCD must have all its divisors represented).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 78,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.597,
+      "error": null
+    },
+    {
+      "subject": "college_computer_science",
+      "category": "stem",
+      "index": 2,
+      "question": "In the NoNicks operating system, the time required by a single file-read operation has four nonoverlapping components:\ndisk seek time-25 msec\ndisk latency time-8 msec\ndisk transfer time- 1 msec per 1,000 bytes\noperating system overhead-1 msec per 1,000 bytes + 10 msec\nIn version 1 of the system, the file read retrieved blocks of 1,000 bytes. In version 2, the file read (along with the underlying layout on disk) was modified to retrieve blocks of 4,000 bytes. The ratio of-the time required to read a large file under version 2 to the time required to read the same large file under version 1 is approximately",
+      "choices": [
+        "1:4",
+        "1:3.5",
+        "1:1",
+        "1.1:1"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "1. For version 1 (1,000-byte blocks), each block adds 25 + 8 + 1 + 11 = 45 msec (fixed overhead per block).\n2. For version 2 (4,000-byte blocks), each block adds 25 + 8 + 4 + 11 = 48 msec (slightly higher transfer overhead).\n3. The number of blocks read is 4× smaller in version 2, but each block takes ~3% longer.\n4. Net effect: ~4× fewer blocks × 1.03 ≈ 4× speedup, so ratio ≈ 1:4.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 79,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 2.275,
+      "error": null
+    },
+    {
+      "subject": "college_computer_science",
+      "category": "stem",
+      "index": 3,
+      "question": "You want to cluster 7 points into 3 clusters using the k-Means Clustering algorithm. Suppose after the first iteration, clusters C1, C2 and C3 contain the following two-dimensional points: C1 contains the 2 points: {(0,6), (6,0)} C2 contains the 3 points: {(2,2), (4,4), (6,6)} C3 contains the 2 points: {(5,5), (7,7)} What are the cluster centers computed for these 3 clusters?",
+      "choices": [
+        "C1: (3,3), C2: (4,4), C3: (6,6)",
+        "C1: (3,3), C2: (6,6), C3: (12,12)",
+        "C1: (6,6), C2: (12,12), C3: (12,12)",
+        "C1: (0,0), C2: (48,48), C3: (35,35)"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "1. The k-Means algorithm computes cluster centers as the mean of all points in each cluster.\n2. For C1 with points (0,6) and (6,0), the mean is ((0+6)/2, (6+0)/2) = (3,3).\n3. For C2 with points (2,2), (4,4), (6,6), the mean is ((2+4+6)/3, (2+4+6)/3) = (4,4).\n4. For C3 with points (5,5) and (7,7), the mean is ((5+7)/2, (5+7)/2) = (6,6).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 61,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 2.367,
+      "error": null
+    },
+    {
+      "subject": "college_computer_science",
+      "category": "stem",
+      "index": 4,
+      "question": "Any set of Boolean operators that is sufficient to represent all Boolean expressions is said to be complete. Which of the following is NOT complete?",
+      "choices": [
+        "{AND, NOT}",
+        "{NOT, OR}",
+        "{AND, OR}",
+        "{NAND}"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "A set of Boolean operators is complete if it can express all possible Boolean functions. {AND, NOT} (A) is complete because NOT can negate AND results to form OR and XOR. {NOT, OR} (B) is also complete since NOT can invert OR to form AND and XOR. {AND, OR} (C) is complete because they can combine to form NOT via De Morgan’s laws. {NAND} (D) alone is complete because it can simulate AND, OR, and NOT via NAND operations, so it cannot be the incomplete set.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 86,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 3.066,
+      "error": null
+    },
+    {
+      "subject": "college_mathematics",
+      "category": "stem",
+      "index": 0,
+      "question": "Let k be the number of real solutions of the equation e^x + x - 2 = 0 in the interval [0, 1], and let n be the number of real solutions that are not in [0, 1]. Which of the following is true?",
+      "choices": [
+        "k = 0 and n = 1",
+        "k = 1 and n = 0",
+        "k = n = 1",
+        "k > 1"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Define f(x) = e^x + x - 2. At x=0, f(0) = 1 + 0 - 2 = -1; at x=1, f(1) = e + 1 - 2 ≈ 1.718 > 0. By the Intermediate Value Theorem, there is at least one root in [0,1]. The derivative f'(x) = e^x + 1 > 0 for all x, so f is strictly increasing and thus has exactly one root in [0,1]. Outside [0,1], f(x) never crosses zero again because it is always increasing and already positive for x > 1 (f(1) > 0 and f'(x) > 0).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 96,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 2.26,
+      "error": null
+    },
+    {
+      "subject": "college_mathematics",
+      "category": "stem",
+      "index": 1,
+      "question": "Up to isomorphism, how many additive abelian groups G of order 16 have the property that x + x + x + x = 0 for each x in G ?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "C",
+      "correct": false,
+      "reasoning": "The condition x + x + x + x = 0 for all x ∈ G means 4x = 0, so the exponent of G divides 4. By the classification of finite abelian groups, G must be a direct sum of cyclic groups of orders dividing 4 (i.e., 1, 2, or 4). The possible invariant factors for |G|=16 are (16), (8,2), (4,4), (4,2,2), (2,2,2,2), but only (4,4) and (2,2,2,2) satisfy 4x=0 for all x. These correspond to G ≅ C₄ × C₄ and G ≅ C₂ × C₂ × C₂ × C₂, respectively. Thus there are exactly two such groups up to isomorphism.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 103,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 2.215,
+      "error": null
+    },
+    {
+      "subject": "college_mathematics",
+      "category": "stem",
+      "index": 2,
+      "question": "Suppose P is the set of polynomials with coefficients in Z_5 and degree less than or equal to 7. If the operator D sends p(x) in P to its derivative p′(x), what are the dimensions of the null space n and range r of D?",
+      "choices": [
+        "n = 1 and r = 6",
+        "n = 1 and r = 7",
+        "n = 2 and r = 5",
+        "n = 2 and r = 6"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "B",
+      "correct": false,
+      "reasoning": "1. The space P consists of polynomials of degree ≤7 over Z₅, so its dimension is 8 (constant term through x⁷).\n2. The derivative operator D kills only constant polynomials (degree 0), so the null space has dimension 1.\n3. The range of D is the space of polynomials of degree ≤6 (since D(x⁷)=7x⁶=2x⁶ in Z₅), giving dimension 7.\n4. By rank–nullity, 1 + 7 = 8 matches the dimension of P.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 72,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.574,
+      "error": null
+    },
+    {
+      "subject": "college_mathematics",
+      "category": "stem",
+      "index": 3,
+      "question": "The shortest distance from the curve xy = 8 to the origin is",
+      "choices": [
+        "4",
+        "8",
+        "16",
+        "2sqrt(2)"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "",
+      "correct": false,
+      "reasoning": "The distance from the origin to a point (x,y) on xy=8 is √(x²+y²). Substitute y=8/x to get √(x²+(8/x)²). Minimize this by setting the derivative to zero, yielding x=2 (or x=-2). The minimal distance is √(4+16)=√20=2√5, but wait—this contradicts the options. Revisiting, the correct minimal distance is actually 4√2/2=2√2 (using polar coordinates or symmetry). However, the correct minimal distance is actually 4 (when x=2, y=4, distance=√(4+16)=√20≈4.47, but the minimal distance is actually 4√2/2=2√2 is incorrect; the correct minimal distance is 4√2/2=2√2 is wrong; the correct minimal distance is 4√2/2=2√2 is not matching. Wait, the correct minimal distance is actually 4 (when x=2, y=4, distance=√(4+16)=√20≈4.47, but the minimal distance is actually 4√2/2=2√2 is incorrect. The correct minimal distance is 4√2/2=2√2 is wrong. The correct minimal distance is 4√2/2=2√2 is not matching. Wait, the correct minimal distance is actually 4 (when x=2, y=4, distance=√(4+16)=√20≈4.47, but the minimal distance is actually 4√",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 148,
+        "consistent": false,
+        "verdict": "no-answer"
+      },
+      "time": 3.128,
+      "error": null
+    },
+    {
+      "subject": "college_mathematics",
+      "category": "stem",
+      "index": 4,
+      "question": "There are 25 suitcases, 5 of which are damaged. Three suitcases are selected at random. What is the probability that exactly 2 are damaged?",
+      "choices": [
+        "2/69",
+        "1/30",
+        "2/23",
+        "12/125"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "This is a hypergeometric probability problem. We choose 2 damaged suitcases out of 5 and 1 good suitcase out of 20, divided by the total ways to choose any 3 suitcases out of 25. The calculation is C(5,2)·C(20,1)/C(25,3) = 10·20/2300 = 200/2300 = 2/23.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 44,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.363,
+      "error": null
+    },
+    {
+      "subject": "college_physics",
+      "category": "stem",
+      "index": 0,
+      "question": "The quantum efficiency of a photon detector is 0.1. If 100 photons are sent into the detector, one after the other, the detector will detect photons",
+      "choices": [
+        "an average of 10 times, with an rms deviation of about 4",
+        "an average of 10 times, with an rms deviation of about 3",
+        "an average of 10 times, with an rms deviation of about 1",
+        "an average of 10 times, with an rms deviation of about 0.1"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Quantum efficiency (η=0.1) means each photon has a 10% chance of detection. For 100 independent trials, the mean detected photons is 100×0.1=10. The standard deviation (rms deviation) is √(100×0.1×0.9)=√9≈3.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 29,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.152,
+      "error": null
+    },
+    {
+      "subject": "college_physics",
+      "category": "stem",
+      "index": 1,
+      "question": "White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is",
+      "choices": [
+        "500 nm",
+        "550 nm",
+        "600 nm",
+        "650 nm"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Thin-film interference occurs when light reflects off the top and bottom surfaces of the oil layer. Constructive interference (strong reflection) happens when the path difference is an integer multiple of the wavelength in the oil. For normal incidence, the condition simplifies to 2nt = mλ, where n = 1.5, t = 500 nm, and λ is the wavelength in the oil. Solving for λ ≈ 600 nm (m=1) gives the strongest reflection among the choices.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 75,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 3.771,
+      "error": null
+    },
+    {
+      "subject": "college_physics",
+      "category": "stem",
+      "index": 2,
+      "question": "Which of the following is true about any system that undergoes a reversible thermodynamic process?",
+      "choices": [
+        "There are no changes in the internal energy of the system.",
+        "The temperature of the system remains constant during the process.",
+        "The entropy of the system and its environment remains unchanged.",
+        "The entropy of the system and its environment must increase."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "A reversible process is an idealized, infinitely slow change where the system remains in equilibrium at every step. By definition, entropy change of the *universe* (system + surroundings) is zero for a reversible process. Options A and B are false because internal energy can change and temperature need not stay constant. Option D is false because entropy must *not* increase for reversibility.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 62,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.092,
+      "error": null
+    },
+    {
+      "subject": "college_physics",
+      "category": "stem",
+      "index": 3,
+      "question": "The best type of laser with which to do spectroscopy over a range of visible wavelengths is",
+      "choices": [
+        "a dye laser",
+        "a helium-neon laser",
+        "an excimer laser",
+        "a ruby laser"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Spectroscopy requires tunable wavelengths across the visible spectrum. Dye lasers are widely tunable (covering hundreds of nm) by adjusting dye concentration or excitation wavelength, unlike fixed-wavelength He-Ne, excimer, or ruby lasers.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 31,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.049,
+      "error": null
+    },
+    {
+      "subject": "college_physics",
+      "category": "stem",
+      "index": 4,
+      "question": "Excited states of the helium atom can be characterized as para- (antiparallel electron spins) and ortho- (parallel electron spins). The observation that an ortho- state has lower energy than the corresponding para- state can be understood in terms of which of the following?",
+      "choices": [
+        "The Heisenberg uncertainty principle",
+        "The Pauli exclusion principle",
+        "The Bohr model of the atom",
+        "Nuclear hyperfine coupling"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "D",
+      "correct": false,
+      "reasoning": "Ortho- and para- states arise from electron spin alignment in helium’s ground-state configuration (1s²). The lower energy of ortho- (parallel spins) vs. para- (antiparallel) violates Pauli’s exclusion principle, which forbids two electrons in the same orbital from having parallel spins. This apparent contradiction is resolved by considering nuclear spin coupling (hyperfine interactions) that splits energy levels, lowering the ortho- state’s energy. The Heisenberg uncertainty principle and Bohr model do not explain spin-dependent energy shifts, nor does Pauli exclusion directly account for this ordering.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 83,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.525,
+      "error": null
+    },
+    {
+      "subject": "computer_security",
+      "category": "stem",
+      "index": 0,
+      "question": "Which of the following styles of fuzzer is more likely to explore paths covering every line of code in the following program?",
+      "choices": [
+        "Generational",
+        "Blackbox",
+        "Whitebox",
+        "Mutation-based"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Generational fuzzers generate inputs from scratch but lack code-aware guidance. Blackbox fuzzers explore without internal knowledge. Mutation-based fuzzers perturb existing inputs but don’t guarantee full code coverage. Whitebox fuzzers use program analysis (e.g., control-flow graphs) to systematically explore every line, making them best suited for exhaustive path coverage.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 48,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.978,
+      "error": null
+    },
+    {
+      "subject": "computer_security",
+      "category": "stem",
+      "index": 1,
+      "question": "Assume that a TLS connection has been established successfully between a client and a server. Establishing the session included checking the server certificate and executing a DiffieHelmann exchange, but the client did not provide a client certificate. Further, assume that the client and server are honest, that the client and server don’t leak their keys, and that the cryptography is good. Which of the following attacks does TLS protect against?\n1. An attacker replaying bytes that a client sent earlier.\n2. An attacker impersonating the server.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "1. TLS protects against replay attacks because it uses message authentication codes (MACs) and sequence numbers to ensure freshness of each message.\n2. TLS also protects against server impersonation because the client verifies the server’s certificate (including its public key) during the handshake, and the Diffie-Hellman key exchange ensures forward secrecy.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 51,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.967,
+      "error": null
+    },
+    {
+      "subject": "computer_security",
+      "category": "stem",
+      "index": 2,
+      "question": "MIT’s Kerberos KDC server has a maximum ticket lifetime of 24 hours (for most user principals). What ensures that an expired Kerberos ticket can no longer be used?",
+      "choices": [
+        "The Kerberos server (KDC) refuses to establish new connections between clients and servers for expired tickets.",
+        "When a client connects to a server, the server sets a 24-hour timer to terminate the connection, which ensures a client cannot remain connected past the ticket’s maximum lifetime.",
+        "When a client connects to a server, the server compares the ticket’s expiration time to the server’s current clock, and refuses to authenticate the user if the ticket expiration time is in the past.",
+        "When a client connects to a server, the server sends a query to the KDC to check if the ticket is still valid with respect to the KDC’s clock, and refuses to authenticate the user if the KDC reports that the ticket is expired."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Kerberos tickets include an expiration timestamp embedded in the ticket itself. Servers validate tickets by checking this timestamp against their local clock, not by querying the KDC. The KDC only issues tickets, not ongoing validation. Thus, the server’s local clock and ticket comparison are the key enforcement mechanism.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 48,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.281,
+      "error": null
+    },
+    {
+      "subject": "computer_security",
+      "category": "stem",
+      "index": 3,
+      "question": "In Message Condentiality, the transmitted message must make sense to only intended",
+      "choices": [
+        "Receiver",
+        "Sender",
+        "Modulor",
+        "Translator"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Message confidentiality ensures only the authorized recipient can understand the content. The term \"intended\" refers to the person who should receive and decrypt the message. \"Receiver\" is the standard term for this role in security contexts. \"Sender\" is the originator, \"Modulor\" is not a security term, and \"Translator\" is irrelevant here.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 51,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.043,
+      "error": null
+    },
+    {
+      "subject": "computer_security",
+      "category": "stem",
+      "index": 4,
+      "question": "Which of the following is a remote Trojan?",
+      "choices": [
+        "Troya",
+        "DaCryptic",
+        "BankerA",
+        "Game-Troj"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "A remote Trojan (also called a remote access Trojan or RAT) is designed to give attackers control over an infected system remotely. Troya is a well-known RAT family, while DaCryptic is a ransomware variant, BankerA is a banking Trojan, and Game-Troj is a game-related Trojan. Only Troya fits the remote Trojan category.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 52,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.123,
+      "error": null
+    },
+    {
+      "subject": "conceptual_physics",
+      "category": "stem",
+      "index": 0,
+      "question": "A 10-N force at an angle 45° above the horizontal has a horizontal component of about",
+      "choices": [
+        "7 N",
+        "5 N",
+        "10 N",
+        "12 N"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "The horizontal component of a force is found by multiplying the total force by the cosine of the angle. For 45°, cos(45°) ≈ 0.707. Thus, 10 N × 0.707 ≈ 7.07 N, which rounds to about 7 N.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 38,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.402,
+      "error": null
+    },
+    {
+      "subject": "conceptual_physics",
+      "category": "stem",
+      "index": 1,
+      "question": "A completely submerged object always displaces its own",
+      "choices": [
+        "weight of fluid.",
+        "volume of fluid.",
+        "density of fluid.",
+        "All of these."
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "Archimedes’ principle states that the buoyant force equals the weight of the displaced fluid, not the object’s volume or density. The volume displaced equals the object’s own volume when fully submerged, but the key quantity is the *weight* (mass × gravity) of the displaced fluid.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 45,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.042,
+      "error": null
+    },
+    {
+      "subject": "conceptual_physics",
+      "category": "stem",
+      "index": 2,
+      "question": "When a diver points a flashlight upward toward the surface of the water at an angle 20° from the normal, the beam of light",
+      "choices": [
+        "totally internally reflects",
+        "passes into the air above",
+        "is absorbed",
+        "None of these"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Light travels from water (n ≈ 1.33) to air (n ≈ 1.00). The critical angle for water-air is ~48.8°, so an incident angle of 20° (less than critical) means the beam refracts out into air rather than reflecting internally.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 39,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.181,
+      "error": null
+    },
+    {
+      "subject": "conceptual_physics",
+      "category": "stem",
+      "index": 3,
+      "question": "According to four-dimensional geometry, the angles of a triangle add to 180°",
+      "choices": [
+        "always.",
+        "sometimes.",
+        "never.",
+        "on planet Earth only."
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "C",
+      "correct": false,
+      "reasoning": "In Euclidean (flat) geometry, triangles sum to 180°, but in non-Euclidean geometries (e.g., spherical or hyperbolic), the sum varies. Four-dimensional geometry includes curved spaces where triangles can exceed or fall short of 180°.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 33,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.124,
+      "error": null
+    },
+    {
+      "subject": "conceptual_physics",
+      "category": "stem",
+      "index": 4,
+      "question": "A voltage will be induced in a wire loop when the magnetic field within that loop",
+      "choices": [
+        "changes",
+        "aligns with the electric field",
+        "is at right angles to the electric field",
+        "converts to magnetic energy"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Faraday’s law of induction states that a voltage (EMF) is generated in a loop when the magnetic flux through it changes over time. This requires a change in the magnetic field (strength, orientation, or area), not alignment with electric fields or conversion to energy.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 44,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.013,
+      "error": null
+    },
+    {
+      "subject": "electrical_engineering",
+      "category": "stem",
+      "index": 0,
+      "question": "The Barkhausen criterion for an oscillator",
+      "choices": [
+        "Loop gain should be unity",
+        "Loop gain should be less than unity",
+        "The phase of a feedback signal with respect to input should be 0° or 360°",
+        "Both A and C"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "The Barkhausen criterion states two key conditions for sustained oscillation: loop gain must equal unity (A) and the feedback phase shift must be an integer multiple of 360° (effectively 0° or 360°) (C). Both conditions together ensure stable oscillation.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 39,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.998,
+      "error": null
+    },
+    {
+      "subject": "electrical_engineering",
+      "category": "stem",
+      "index": 1,
+      "question": "Potentiometer method of DC voltage measurement is more accurate than direct measurement using a voltmeter because",
+      "choices": [
+        "It loads the circuit moderately.",
+        "It loads the circuit to maximum extent.",
+        "It uses centre zero galvanometer instead of voltmeter.",
+        "It does not load the circuit at all."
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "The potentiometer method compares voltages by balancing against a known voltage, eliminating loading effects on the circuit under test. Direct voltmeter measurement draws current, causing voltage drops and errors. Option D is correct because the potentiometer’s null-balance principle ensures no current flows through the test circuit, avoiding loading errors.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 49,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.027,
+      "error": null
+    },
+    {
+      "subject": "electrical_engineering",
+      "category": "stem",
+      "index": 2,
+      "question": "Which of these sets of logic gates are designated as universal gates?",
+      "choices": [
+        "NOR, NAND.",
+        "XOR, NOR, NAND.",
+        "OR, NOT, AND.",
+        "NOR, NAND, XNOR."
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Universal gates can implement any Boolean function without needing additional gates. NAND and NOR are both universal because any logic function can be constructed using only these two. XOR and XNOR are not universal alone, and the basic AND/OR/NOT gates (option C) are not sufficient on their own. Option D includes XNOR, which is not universal.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 56,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.067,
+      "error": null
+    },
+    {
+      "subject": "electrical_engineering",
+      "category": "stem",
+      "index": 3,
+      "question": "A single phase one pulse controlled circuit has a resistance R and counter emf E load 400 sin(314 t) as the source voltage. For a load counter emf of 200 V, the range of firing angle control is",
+      "choices": [
+        "30° to 150°.",
+        "30° to 180°.",
+        "60° to 120°.",
+        "60° to 180°."
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "B",
+      "correct": false,
+      "reasoning": "1. The source voltage is 400 sin(314 t), so peak voltage is 400 V.\n2. The counter emf (back emf) is fixed at 200 V (peak), so conduction begins when the source voltage exceeds 200 V.\n3. The earliest conduction angle occurs when 400 sin(θ) = 200 → θ = 30°.\n4. The latest conduction angle is 180° (full half-cycle) for a single-pulse controlled circuit.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 65,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.61,
+      "error": null
+    },
+    {
+      "subject": "electrical_engineering",
+      "category": "stem",
+      "index": 4,
+      "question": "A box which tells the effect of inputs on control sub system is known as",
+      "choices": [
+        "Data Box.",
+        "Logical box.",
+        "Decision box.",
+        "State box."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "In control system diagrams (e.g., block diagrams or statecharts), a \"decision box\" explicitly represents conditional logic or branching based on input conditions, directly mapping inputs to control subsystem behavior. The other options are generic or unrelated: data boxes store info, logical boxes imply generic operations, and state boxes track system states rather than input-driven control effects.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 56,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 3.354,
+      "error": null
+    },
+    {
+      "subject": "elementary_mathematics",
+      "category": "stem",
+      "index": 0,
+      "question": "What is the value of p in 24 = 2p?",
+      "choices": [
+        "p = 4",
+        "p = 8",
+        "p = 12",
+        "p = 24"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Divide both sides of the equation by 2 to isolate p: 24 ÷ 2 = 2p ÷ 2 → 12 = p.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 22,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.681,
+      "error": null
+    },
+    {
+      "subject": "elementary_mathematics",
+      "category": "stem",
+      "index": 1,
+      "question": "Ms. Perez drove a total of 40 miles in 5 days. She drove the same number of miles each day. How many miles did Ms. Perez drive each day?",
+      "choices": [
+        "5",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "To find the miles driven each day, divide the total miles (40) by the number of days (5). 40 ÷ 5 = 8.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 23,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.654,
+      "error": null
+    },
+    {
+      "subject": "elementary_mathematics",
+      "category": "stem",
+      "index": 2,
+      "question": "Find the quotient of −40 ÷ (−8).",
+      "choices": [
+        "1 over 5",
+        "−5",
+        "−1 over 5",
+        "5"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "Dividing two negative numbers yields a positive result. −40 ÷ (−8) simplifies to 40 ÷ 8, which equals 5.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 19,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.62,
+      "error": null
+    },
+    {
+      "subject": "elementary_mathematics",
+      "category": "stem",
+      "index": 3,
+      "question": "A soccer team has $90.00 to buy soccer balls. If one soccer ball costs $15.60, what is the greatest number of soccer balls the team can buy?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Divide the total money ($90.00) by the cost per ball ($15.60) to find how many balls can be bought: 90 ÷ 15.6 ≈ 5.77. Since only whole balls can be purchased, the greatest whole number less than or equal to 5.77 is 5.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 43,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.147,
+      "error": null
+    },
+    {
+      "subject": "elementary_mathematics",
+      "category": "stem",
+      "index": 4,
+      "question": "You and three friends go to a concert. The total cost for four tickets is $112. Write and solve an equation to find the cost of one ticket t.",
+      "choices": [
+        "4t = 112; $448",
+        "4t = 112; $28",
+        "t over 4 = 112; $448",
+        "t over 4 = 112; $28"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "There are four tickets totaling $112, so the equation is 4 × t = 112. Solving for t gives t = 112 ÷ 4 = 28.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 26,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.842,
+      "error": null
+    },
+    {
+      "subject": "high_school_biology",
+      "category": "stem",
+      "index": 0,
+      "question": "In a population of giraffes, an environmental change occurs that favors individuals that are tallest. As a result, more of the taller individuals are able to obtain nutrients and survive to pass along their genetic information. This is an example of",
+      "choices": [
+        "directional selection.",
+        "stabilizing selection.",
+        "sexual selection.",
+        "disruptive selection."
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "The environmental change favors the *extreme* trait (tallest giraffes), shifting the population’s average height upward over time. This is classic directional selection, not stabilizing (which favors intermediates), sexual (mate choice), or disruptive (which favors both extremes).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 36,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.788,
+      "error": null
+    },
+    {
+      "subject": "high_school_biology",
+      "category": "stem",
+      "index": 1,
+      "question": "Which of the changes below following the start codon in an mRNA would most likely have the greatest deleterious effect?",
+      "choices": [
+        "a deletion of a single nucleotide",
+        "a deletion of a nucleotide triplet",
+        "a single nucleotide substitution of the nucleotide occupying the first codon position",
+        "a single nucleotide substitution of the nucleotide occupying the third codon position"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "A single nucleotide deletion (A) would cause a frameshift, drastically altering all downstream codons. A triplet deletion (B) restores the reading frame but skips an amino acid, often less harmful. A substitution in the first position (C) changes the codon’s identity, frequently altering the encoded amino acid. A substitution in the third position (D) is most likely a silent mutation due to the wobble effect, causing minimal or no change.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 70,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.887,
+      "error": null
+    },
+    {
+      "subject": "high_school_biology",
+      "category": "stem",
+      "index": 2,
+      "question": "The energy given up by electrons as they move through the electron transport chain is used to",
+      "choices": [
+        "break down glucose",
+        "make glucose",
+        "produce ATP",
+        "make NADH"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Electrons lose energy in the electron transport chain, which pumps protons across the inner mitochondrial membrane to create a proton gradient. This gradient drives ATP synthase to produce ATP. The other options (glucose breakdown, glucose synthesis, NADH production) are not the direct outcome of this energy release.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 47,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.846,
+      "error": null
+    },
+    {
+      "subject": "high_school_biology",
+      "category": "stem",
+      "index": 3,
+      "question": "During the period when life is believed to have begun, the atmosphere on primitive Earth contained abundant amounts of all the following gases EXCEPT",
+      "choices": [
+        "oxygen",
+        "hydrogen",
+        "ammonia",
+        "methane"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Early Earth’s atmosphere lacked free oxygen (O₂) because photosynthesis hadn’t evolved yet. Hydrogen, ammonia (NH₃), and methane (CH₄) were common in the reducing atmosphere formed by volcanic outgassing and chemical reactions.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 31,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.818,
+      "error": null
+    },
+    {
+      "subject": "high_school_biology",
+      "category": "stem",
+      "index": 4,
+      "question": "Convergent evolution is best exemplified by which of the following?",
+      "choices": [
+        "The pectoral fins of fish and the front legs of cats",
+        "The presence of a notochord in all chordate embryos",
+        "The wings of an insect and the wings of a bird",
+        "The leaves of an oak tree and the spines of a cactus"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Convergent evolution occurs when unrelated species develop similar traits due to similar environmental pressures. The pectoral fins of fish and cat legs (A) are homologous, not analogous. All chordates share a notochord (B), which is a shared ancestral trait, not convergent. The oak leaves and cactus spines (D) are analogous but represent different adaptations (photosynthesis vs. defense). Insect and bird wings (C) evolved independently in very different lineages but serve the same function, making them the classic example of convergent evolution.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 81,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.736,
+      "error": null
+    },
+    {
+      "subject": "high_school_chemistry",
+      "category": "stem",
+      "index": 0,
+      "question": "London dispersion forces are caused by",
+      "choices": [
+        "temporary dipoles created by the position of electrons around the nuclei in a molecule",
+        "the three-dimensional intermolecular bonding present in all covalent substances",
+        "the uneven electron-to-proton ratio found on individual atoms of a molecule",
+        "the electronegativity differences between the different atoms in a molecule"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "London dispersion forces arise from instantaneous, temporary electron fluctuations creating uneven electron distributions (dipoles) in nonpolar molecules. These temporary dipoles induce dipoles in neighboring molecules, leading to weak attractions. Options B, C, and D describe covalent bonding, electron-to-proton ratios, and electronegativity—none of which directly explain temporary dipoles.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 47,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.092,
+      "error": null
+    },
+    {
+      "subject": "high_school_chemistry",
+      "category": "stem",
+      "index": 1,
+      "question": "Carbon has an atomic radius of 77 pm and a first ionization energy of 1086 kJ/mol.",
+      "choices": [
+        "70 pm, 1402 kJ/mol",
+        "86 pm, 898 kJ/mol",
+        "135 pm, 523 kJ/mol",
+        "40 pm, 995 kJ/mol"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "B",
+      "correct": false,
+      "reasoning": "The question provides carbon’s atomic radius (77 pm) and first ionization energy (1086 kJ/mol). Moving left in period 2, boron (atomic number 5) has a smaller radius (~86 pm) and lower ionization energy (~898 kJ/mol) due to weaker nuclear attraction on outer electrons. Other options do not match this trend.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 50,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.167,
+      "error": null
+    },
+    {
+      "subject": "high_school_chemistry",
+      "category": "stem",
+      "index": 2,
+      "question": "An unknown substance is found to have a high melting point. In addition, it is a poor conductor of electricity and does not dissolve in water. The substance most likely contains",
+      "choices": [
+        "ionic bonding",
+        "nonpolar covalent bonding",
+        "covalent network bonding",
+        "metallic bonding"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "High melting points suggest strong bonds. Poor electrical conductivity and insolubility in water rule out ionic and metallic bonding. Nonpolar covalent bonds are weak individually, so covalent network bonding (e.g., diamond or silicon dioxide) fits the strong, nonconductive, insoluble profile.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 40,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.927,
+      "error": null
+    },
+    {
+      "subject": "high_school_chemistry",
+      "category": "stem",
+      "index": 3,
+      "question": "The net ionic equation expected when solutions of NH4Br and AgNO3 are mixed together is",
+      "choices": [
+        "Ag+(aq) + Br-(aq) → AgBr(s)",
+        "NH4+(aq) + Ag+(aq) → Ag(NH4)3+2(aq)",
+        "Br-(aq) + NO3-(aq) → NO3Br(aq)",
+        "NH4Br(aq) + NO3-(aq) → NH4NO3(aq) + Br-(aq)"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "NH4Br and AgNO3 dissociate into NH4+, Br-, Ag+, and NO3- ions. Only Ag+ and Br- form an insoluble precipitate (AgBr), so the net ionic equation focuses on that reaction. NH4+ and NO3- remain aqueous and are spectators. Option C and D are incorrect because NO3Br is not a real compound, and D is a molecular equation, not ionic.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 58,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 3.647,
+      "error": null
+    },
+    {
+      "subject": "high_school_chemistry",
+      "category": "stem",
+      "index": 4,
+      "question": "The symbol for antimony is",
+      "choices": [
+        "W",
+        "Sb",
+        "Fe",
+        "An"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Antimony’s chemical symbol is derived from its Latin name *stibium*, which is abbreviated as **Sb**. W is tungsten, Fe is iron, and An is not a valid symbol.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 28,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.837,
+      "error": null
+    },
+    {
+      "subject": "high_school_computer_science",
+      "category": "stem",
+      "index": 0,
+      "question": "Let x = 1. What is x << 3 in Python 3?",
+      "choices": [
+        "1",
+        "3",
+        "8",
+        "16"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "The left-shift operator `<<` multiplies the number by 2 raised to the power of the shift amount. For x = 1, shifting left by 3 (1 << 3) equals 1 * 2³ = 8.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 34,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.777,
+      "error": null
+    },
+    {
+      "subject": "high_school_computer_science",
+      "category": "stem",
+      "index": 1,
+      "question": "In Python 3, which of the following function convert a string to an int in python?",
+      "choices": [
+        "int(x [,base])",
+        "long(x [,base] )",
+        "float(x)",
+        "str(x)"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "The built-in `int()` function in Python 3 converts a string (or other types) to an integer, optionally with a base for numeric string parsing. `long()` was removed in Python 3 (replaced by `int`), `float()` converts to a floating-point number, and `str()` converts to a string. Only option A matches the required behavior.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 52,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.958,
+      "error": null
+    },
+    {
+      "subject": "high_school_computer_science",
+      "category": "stem",
+      "index": 2,
+      "question": "A user enters a Web address in a browser, and a request for a file is sent to a Web server. Which of the following best describes how the file is sent to the user?",
+      "choices": [
+        "The file is broken into packets for transmission. The packets must be reassembled upon receipt.",
+        "The file is broken into packets for transmission. The user's browser must request each packet in order until all packets are received.",
+        "The server attempts to connect directly to the user's computer. If the connection is successful, the entire file is sent. If the connection is unsuccessful, an error message is sent to the user.",
+        "The server repeatedly attempts to connect directly to the user's computer until a connection is made. Once the connection is made, the entire file is sent."
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Web communication uses TCP/IP, which breaks data into packets for efficient transmission. Packets are reassembled at the destination (user’s device) to reconstruct the original file. This matches the description in option A. Options B, C, and D incorrectly describe the process (e.g., sequential packet requests, direct connection attempts, or repeated connection retries).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 52,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.004,
+      "error": null
+    },
+    {
+      "subject": "high_school_computer_science",
+      "category": "stem",
+      "index": 3,
+      "question": "Digital images are often represented by the red, green, and blue values (an RGB triplet) of each individual pixel in the image. A photographer is manipulating a digital image and overwriting the original image. Which of the following describes a lossless transformation of the digital image?",
+      "choices": [
+        "Compressing the image in a way that may lose information but will suffer only a small loss of image quality.",
+        "Creating the gray scale of an image by averaging the amounts of red, green, and blue in each pixel and assigning this new value to the corresponding pixel in the new image. The new value of each pixel represents a shade of gray, ranging from white to black.",
+        "Creating the negative of an image by creating a new RGB triplet for each pixel in which each value is calculated by subtracting the original value from 255. The negative of an image is reversed from the original; light areas appear dark, and colors are reversed.",
+        "Modifying part of the image by taking the pixels in one part of the picture and copying them to the pixels in another part of the picture."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "A lossless transformation preserves all original data exactly. Option A risks losing info. Option B discards color info (averaging RGB), losing detail. Option C inverts values but keeps all original data intact (still lossless). Option D copies pixels without altering them, so no data is lost—this is also lossless. However, the question asks for a transformation that *overwrites* the original image while remaining lossless. Option C explicitly creates a new image with recalculated values but retains all original data (just rearranged), while Option D is a direct copy (no transformation). The question emphasizes *manipulating* (not just copying), so Option C is the intended answer.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 104,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 4.429,
+      "error": null
+    },
+    {
+      "subject": "high_school_computer_science",
+      "category": "stem",
+      "index": 4,
+      "question": "A programmer is writing a program that is intended to be able to process large amounts of data. Which of the following considerations is LEAST likely to affect the ability of the program to process larger data sets?",
+      "choices": [
+        "How long the program takes to run",
+        "How many programming statements the program contains",
+        "How much memory the program requires as it runs",
+        "How much storage space the program requires as it runs"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Processing large data sets primarily depends on runtime efficiency (time), memory usage (RAM), and storage needs (disk). While the number of programming statements can influence complexity, it doesn’t directly correlate with handling large data volumes. The other options directly impact scalability.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 41,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.867,
+      "error": null
+    },
+    {
+      "subject": "high_school_mathematics",
+      "category": "stem",
+      "index": 0,
+      "question": "If a pentagon P with vertices at (– 2, – 4), (– 4, 1), (–1, 4), (2, 4), and (3, 0) is reflected across the line y = x to get a new pentagon, P’, then one of the vertices of P’ is",
+      "choices": [
+        "(0, – 3)",
+        "(4, 1)",
+        "(2, 2)",
+        "(– 4, –2)"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "Reflecting a point (a, b) across y = x swaps its coordinates to (b, a). Applying this to each vertex of P gives P’ vertices (–4, –2), (1, –4), (4, –1), (4, 2), and (0, 3). Among the choices, (0, –3) is not in the list, but (4, 1) is not either—wait, none match exactly. Checking again, (4, –1) is not listed, but (–4, –2) is the reflection of (–2, –4), which is option D.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 75,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 2.5,
+      "error": null
+    },
+    {
+      "subject": "high_school_mathematics",
+      "category": "stem",
+      "index": 1,
+      "question": "The length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.",
+      "choices": [
+        "2500",
+        "2",
+        "50",
+        "25"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "Let width = *w*, then length = 2*w*. Diagonal *d* relates to sides by *d² = w² + (2w)²* = 5*w²*. Given *d = 5√5*, so *5w² = (5√5)² = 125* → *w² = 25* → *w = 5*. Area = *w × length = 5 × 10 = 50*.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 50,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.426,
+      "error": null
+    },
+    {
+      "subject": "high_school_mathematics",
+      "category": "stem",
+      "index": 2,
+      "question": "A positive integer n is called “powerful” if, for every prime factor p of n, p^2 is also a factor of n. An example of a powerful number is",
+      "choices": [
+        "392",
+        "336",
+        "300",
+        "297"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "C",
+      "correct": false,
+      "reasoning": "A powerful number requires every prime factor to appear at least squared. Factorizing each option:\n- 392 = 2³ × 7¹ → 7 lacks a square factor.\n- 336 = 2⁴ × 3¹ × 7¹ → 3 and 7 lack squares.\n- 300 = 2² × 3¹ × 5² → 3 lacks a square.\n- 297 = 3³ × 7¹ → 7 lacks a square.\nWait, none seem powerful—recheck 300: actually 300 = 2² × 3¹ × 5² → 3 is missing a square. Hmm, none fit. Wait, 300’s prime factors are 2, 3, 5. 2² and 5² are present, but 3¹ is not squared. So none qualify. But 300 is the closest (only one prime factor fails). Alternatively, perhaps the question expects 300 as the intended answer despite the flaw. Re-examining the options, 300 is the only one with two squared primes (2² and 5²), even if 3 is not squared. Alternatively, perhaps the question has an error. Given the options, 300 is the most plausible “powerful” candidate.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 169,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 2.809,
+      "error": null
+    },
+    {
+      "subject": "high_school_mathematics",
+      "category": "stem",
+      "index": 3,
+      "question": "At breakfast, lunch, and dinner, Joe randomly chooses with equal probabilities either an apple, an orange, or a banana to eat. On a given day, what is the probability that Joe will eat at least two different kinds of fruit?",
+      "choices": [
+        "\\frac{7}{9}",
+        "\\frac{8}{9}",
+        "\\frac{5}{9}",
+        "\\frac{9}{11}"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "There are 3 fruits (apple, orange, banana) and 3 meals, each with 3 choices, so total outcomes = 3^3 = 27. The only way Joe doesn’t eat at least two kinds is if he picks the same fruit all three times (3 such outcomes: all apple, all orange, all banana). Thus, favorable outcomes = 27 − 3 = 24, and probability = 24/27 = 8/9.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 65,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 1.522,
+      "error": null
+    },
+    {
+      "subject": "high_school_mathematics",
+      "category": "stem",
+      "index": 4,
+      "question": "Suppose $f(x)$ is a function that has this property: For all real numbers $a$ and $b$ such that $a<b$, the portion of the graph of $y=f(x)$ between $x=a$ and $x=b$ lies below the line segment whose endpoints are $(a,f(a))$ and $(b,f(b))$. (A function with this property is called strictly convex.) Given that $f(x)$ passes through $(-2,5)$ and $(2,9)$, what is the range of all possible values for $f(1)$? Express your answer in interval notation.",
+      "choices": [
+        "(-inf, 10)",
+        "(-inf, 9)",
+        "(-inf, 8)",
+        "(-inf, 7)"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "1. The function is strictly convex, so the line segment between any two points on its graph lies *above* the graph (not below).\n2. For points (-2,5) and (2,9), the line segment’s equation is y = 2x + 9 (slope = (9–5)/(2–(–2)) = 2, intercept = 5 + 2·2 = 9).\n3. At x = 1, the line gives y = 2·1 + 9 = 11, but the graph must lie *below* this line, so f(1) < 11.\n4. No lower bound is given, so f(1) can be arbitrarily negative.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 90,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 2.102,
+      "error": null
+    },
+    {
+      "subject": "high_school_physics",
+      "category": "stem",
+      "index": 0,
+      "question": "The plates of a capacitor are charged to a potential difference of 5 V. If the capacitance is 2 mF, what is the charge on the positive plate?",
+      "choices": [
+        "0.005 C",
+        "0.01 C",
+        "0.02 C",
+        "0.5 C"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "Use Q = CV, where Q is charge, C is capacitance (2 mF = 0.002 F), and V is voltage (5 V). Multiply: 0.002 × 5 = 0.01 C.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 29,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.898,
+      "error": null
+    },
+    {
+      "subject": "high_school_physics",
+      "category": "stem",
+      "index": 1,
+      "question": "Which of these quantities decreases as the inverse square of distance for distances far from the objects producing the fields?",
+      "choices": [
+        "the electric field produced by a finite-length charged rod",
+        "the electric field produced by an infinitely long charged cylinder",
+        "the electric field produced by an infinite plane of charge",
+        "the magnetic field produced by an infinitely long, straight current-carrying wire"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "Only point charges or spherical charge distributions produce electric fields that fall off as 1/r² at large distances. A finite rod’s field is more complex (not pure inverse-square at all distances), an infinite cylinder’s field falls as 1/r, an infinite plane’s field is constant, and a current-carrying wire’s magnetic field falls as 1/r. None of these match the inverse-square law except a point charge, but the question’s options imply we must pick the closest physical scenario where the field *approximates* that behavior far away—here, the finite rod’s field *approaches* 1/r² at large distances.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 93,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.537,
+      "error": null
+    },
+    {
+      "subject": "high_school_physics",
+      "category": "stem",
+      "index": 2,
+      "question": "A solid, metal object is isolated from other charges and has charge distributed on its surface. The charge distribution is not uniform. It may be correctly concluded that the",
+      "choices": [
+        "electric field outside the object is zero",
+        "the electric field outside the object is equal to the electric field inside the object",
+        "the electric field outside the object is directly proportional to the distance away from the center of mass of the object",
+        "the electric field outside the object, but very close to the surface, is equal to the surface charge density at any location divided by the permittivity of free space"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "For a conductor in electrostatic equilibrium, excess charge resides entirely on the outer surface. The electric field just outside the surface is given by σ/ε₀ (Gauss’s law), where σ is the local surface charge density. This holds regardless of non-uniformity. The field inside is zero, and outside it is not proportional to distance or zero everywhere.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 56,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 0.987,
+      "error": null
+    },
+    {
+      "subject": "high_school_physics",
+      "category": "stem",
+      "index": 3,
+      "question": "Standing waves are produced by a 100-Hz generator in a string of fixed length. The tension in the string is increased until a new set of standing waves is produced. Will the wavelength of the new standing waves be greater than or less than the wavelength of the original standing waves?",
+      "choices": [
+        "Less, because the tension in the string varies directly with the wave speed, which varies inversely with the wavelength.",
+        "Greater, because the tension in the string varies directly with the wave speed, which varies inversely with the wavelength.",
+        "Greater, because the tension in the string varies directly with the wave speed, which varies directly with the wavelength.",
+        "Less, because the tension in the string varies directly with the wave speed, which varies directly with the wavelength."
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "B",
+      "correct": false,
+      "reasoning": "Increasing tension raises wave speed (v = √(T/μ)). Since frequency (f = 100 Hz) stays constant, λ = v/f must increase. The correct relationship is T ∝ v² and v ∝ λ, so higher T → longer λ.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 38,
+        "consistent": false,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.1,
+      "error": null
+    },
+    {
+      "subject": "high_school_physics",
+      "category": "stem",
+      "index": 4,
+      "question": "Two identical capacitors are hooked in parallel to an external circuit. Which of the following quantities must be the same for both capacitors? I. the charge stored on the capacitor II.  the voltage across the capacitor III. the capacitance of the capacitor",
+      "choices": [
+        "I only",
+        "II only",
+        "II and III only",
+        "(E) I, II, and III"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "C",
+      "correct": false,
+      "reasoning": "In parallel, capacitors share the same voltage (II) because they are connected across the same two nodes. Since they are identical, their capacitance (III) is the same. The total charge divides between them, so the charge on each (I) depends on their individual capacitances and the shared voltage—it is not necessarily equal unless they are the same value (which they are here, but the question asks what *must* be the same in general parallel configurations). However, for identical capacitors in parallel, I is also true. But the question implies \"must be the same\" in all cases, so only II and III are universally true regardless of whether they are identical or not.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 112,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.666,
+      "error": null
+    },
+    {
+      "subject": "high_school_statistics",
+      "category": "stem",
+      "index": 0,
+      "question": "The weight of an aspirin tablet is 300 milligrams according to the bottle label. An FDA investigator weighs a simple random sample of seven tablets, obtains weights of 299, 300, 305, 302, 299, 301, and 303, and runs a hypothesis test of the manufacturer's claim. Which of the following gives the P-value of this test?",
+      "choices": [
+        "P(t > 1.54) with df = 6",
+        "2P(t > 1.54) with df = 6",
+        "P(t > 1.54) with df = 7",
+        "2P(t > 1.54) with df = 7"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "1. The sample size is 7, so degrees of freedom = 7 – 1 = 6.\n2. The test is two-sided (claim vs. alternative μ ≠ 300), so the P-value is twice the tail probability of the t-statistic.\n3. The t-statistic’s absolute value corresponds to t > 1.54 (or t < –1.54), giving P = 2·P(t > 1.54) with df = 6.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 62,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.832,
+      "error": null
+    },
+    {
+      "subject": "high_school_statistics",
+      "category": "stem",
+      "index": 1,
+      "question": "The waiting times for a new roller coaster ride are normally distributed with a mean of 35 minutes and a standard deviation of 10 minutes. If there are 150,000 riders the first summer, which of the following is the shortest time interval associated with 100,000 riders?",
+      "choices": [
+        "0 to 31.7 minutes",
+        "31.7 to 39.3 minutes",
+        "25.3 to 44.7 minutes",
+        "25.3 to 35 minutes"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "We want the interval containing the bottom 100,000 riders (66.7% of 150,000). A z-score of –1 corresponds to the 15.9th percentile, so the 66.7th percentile lies at z ≈ –0.43. Converting back gives 35 – (0.43×10) ≈ 30.7 minutes. The only choice with a lower bound below ~31.7 is A.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 50,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 1.471,
+      "error": null
+    },
+    {
+      "subject": "high_school_statistics",
+      "category": "stem",
+      "index": 2,
+      "question": "All of the following statements are true for all discrete random variables except for which one?",
+      "choices": [
+        "The possible outcomes must all be numerical.",
+        "The possible outcomes must be mutually exclusive.",
+        "The mean (expected value) always equals the sum of the products obtained by multiplying each value by its corresponding probability.",
+        "Approximately 95% of the outcomes will be within two standard deviations of the mean."
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "Discrete random variables have countable outcomes (A is true). Their outcomes are mutually exclusive by definition (B is true). The mean equals the sum of value × probability (C is true). However, the 95% rule applies to normal distributions, not all discrete variables (D is false).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 46,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.911,
+      "error": null
+    },
+    {
+      "subject": "high_school_statistics",
+      "category": "stem",
+      "index": 3,
+      "question": "Which of the following is a true statement about hypothesis testing?",
+      "choices": [
+        "If there is sufficient evidence to reject a null hypothesis at the 10% level, then there is sufficient evidence to reject it at the 5% level.",
+        "Whether to use a one- or a two-sided test is typically decided after the data are gathered.",
+        "If a hypothesis test is conducted at the 1% level, there is a 1% chance of rejecting the null hypothesis.",
+        "The power of a test concerns its ability to detect an alternative hypothesis."
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "Rejecting at 10% does not imply rejection at 5% (A is false). Test direction is chosen before data collection (B is false). A 1% significance level means a 1% chance of rejecting *if the null is true*, not in general (C is false). Power measures the probability of correctly rejecting a false null, i.e., detecting an alternative (D is true).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 60,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.324,
+      "error": null
+    },
+    {
+      "subject": "high_school_statistics",
+      "category": "stem",
+      "index": 4,
+      "question": "An outlier is an observation that",
+      "choices": [
+        "is seen more frequently than the other observations in the data set",
+        "is seen less frequently than the other observations in the data set",
+        "is always smaller than the other observations in the data set",
+        "is significantly different from the other observations in the data set"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "An outlier stands apart from the rest of the data by being unusually large or small, or by having a distinct value. It is not about frequency (A or B) or always being smaller (C). The defining trait is its deviation from the rest.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 44,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.851,
+      "error": null
+    },
+    {
+      "subject": "machine_learning",
+      "category": "stem",
+      "index": 0,
+      "question": "Statement 1| Linear regression estimator has the smallest variance among all unbiased estimators. Statement 2| The coefficients α assigned to the classifiers assembled by AdaBoost are always non-negative.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "A",
+      "correct": false,
+      "reasoning": "1. Statement 1 refers to the Gauss-Markov theorem, which states that under its assumptions (linearity, exogeneity, homoskedasticity, no perfect multicollinearity), the OLS estimator is the best linear unbiased estimator (BLUE) with the smallest variance among all unbiased estimators. This holds true.\n2. AdaBoost assigns weights (α) to weak learners based on their performance, and these weights are always positive (non-negative) because they reflect how much each classifier improves the overall model. However, they can be zero if a classifier performs no better than random guessing, but the statement says \"always non-negative,\" which is technically correct (zero is non-negative).",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 98,
+        "consistent": true,
+        "verdict": "flawed-reasoning"
+      },
+      "time": 2.301,
+      "error": null
+    },
+    {
+      "subject": "machine_learning",
+      "category": "stem",
+      "index": 1,
+      "question": "Statement 1| RoBERTa pretrains on a corpus that is approximate 10x larger than the corpus BERT pretrained on. Statement 2| ResNeXts in 2018 usually used tanh activation functions.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "correct_letter": "C",
+      "predicted_letter": "C",
+      "correct": true,
+      "reasoning": "RoBERTa’s pretraining corpus (~160 GB) is indeed roughly 10× larger than BERT’s (~16 GB), so Statement 1 is true. ResNeXt architectures typically use ReLU (not tanh) activations in their residual blocks, making Statement 2 false.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 35,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.082,
+      "error": null
+    },
+    {
+      "subject": "machine_learning",
+      "category": "stem",
+      "index": 2,
+      "question": "Statement 1| Support vector machines, like logistic regression models, give a probability distribution over the possible labels given an input example. Statement 2| We would expect the support vectors to remain the same in general as we move from a linear kernel to higher order polynomial kernels.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "correct_letter": "B",
+      "predicted_letter": "B",
+      "correct": true,
+      "reasoning": "1. **Statement 1**: SVMs do *not* inherently output probability distributions (they provide decision functions). Logistic regression does. Thus, Statement 1 is false.\n2. **Statement 2**: Support vectors are data points closest to the decision boundary. Changing the kernel (e.g., from linear to polynomial) alters the boundary shape, so support vectors typically change. Thus, Statement 2 is false.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 57,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.355,
+      "error": null
+    },
+    {
+      "subject": "machine_learning",
+      "category": "stem",
+      "index": 3,
+      "question": "A machine learning problem involves four attributes plus a class. The attributes have 3, 2, 2, and 2 possible values each. The class has 3 possible values. How many maximum possible different examples are there?",
+      "choices": [
+        "12",
+        "24",
+        "48",
+        "72"
+      ],
+      "correct_letter": "D",
+      "predicted_letter": "D",
+      "correct": true,
+      "reasoning": "Each attribute’s possible values multiply to give total combinations. For attributes (3 × 2 × 2 × 2 = 24) and class (3), the total distinct examples is 24 × 3 = 72.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 33,
+        "consistent": false,
+        "verdict": "right-weak-link"
+      },
+      "time": 0.996,
+      "error": null
+    },
+    {
+      "subject": "machine_learning",
+      "category": "stem",
+      "index": 4,
+      "question": "As of 2020, which architecture is best for classifying high-resolution images?",
+      "choices": [
+        "convolutional networks",
+        "graph networks",
+        "fully connected networks",
+        "RBF networks"
+      ],
+      "correct_letter": "A",
+      "predicted_letter": "A",
+      "correct": true,
+      "reasoning": "High-resolution images require capturing spatial hierarchies and local patterns efficiently. Convolutional networks (CNNs) excel at this by using filters to detect features at multiple scales. Graph networks and fully connected networks lack this spatial reasoning, while RBF networks are not designed for image classification. CNNs dominate in computer vision tasks like high-res image classification.",
+      "analysis": {
+        "has_reasoning": true,
+        "word_count": 54,
+        "consistent": true,
+        "verdict": "sound"
+      },
+      "time": 1.116,
+      "error": null
+    }
+  ]
+}

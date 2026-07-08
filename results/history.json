@@ -1,5 +1,31 @@
 [
   {
+    "id": "20260708055656446536",
+    "timestamp": "2026-07-08 05:56:56",
+    "type": "mmlu-single",
+    "samples": 4,
+    "params": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 384,
+      "benchmark": "mmlu",
+      "subjects": "2 subject(s), 2 q each"
+    },
+    "models": [
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "name": "Llama-3.2-3B",
+        "developer": "Meta",
+        "params": "3B",
+        "accuracy": 100.0,
+        "correct": 4,
+        "total": 4,
+        "avg_response_time": 0.934,
+        "errors": 0
+      }
+    ]
+  },
+  {
     "id": "20260622182408963191",
     "timestamp": "2026-06-22 18:24:08",
     "type": "all",

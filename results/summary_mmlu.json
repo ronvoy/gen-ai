@@ -1,0 +1,181 @@
+{
+  "benchmark": "mmlu",
+  "ranking": [
+    {
+      "model": "mistralai/ministral-8b-2512",
+      "name": "Ministral-8B",
+      "params": "8B",
+      "accuracy": 0.7556,
+      "avg_response_time": 1.577,
+      "consistency_rate": 0.5556,
+      "reasoning_rate": 1.0,
+      "avg_reasoning_words": 59.4,
+      "category_accuracy": {
+        "stem": 0.7556
+      },
+      "composite_score": 0.7177,
+      "ranks": {
+        "accuracy": 1,
+        "speed": 2,
+        "reasoning": 1
+      },
+      "subjects": [
+        "abstract_algebra",
+        "astronomy",
+        "college_biology",
+        "college_chemistry",
+        "college_computer_science",
+        "college_mathematics",
+        "college_physics",
+        "computer_security",
+        "conceptual_physics",
+        "electrical_engineering",
+        "elementary_mathematics",
+        "high_school_biology",
+        "high_school_chemistry",
+        "high_school_computer_science",
+        "high_school_mathematics",
+        "high_school_physics",
+        "high_school_statistics",
+        "machine_learning"
+      ],
+      "total": 90,
+      "correct": 68,
+      "errors": 0,
+      "rank": 1
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "name": "Gemma-3-4B",
+      "params": "4B",
+      "accuracy": 0.6111,
+      "avg_response_time": 3.57,
+      "consistency_rate": 0.4778,
+      "reasoning_rate": 1.0,
+      "avg_reasoning_words": 64.0,
+      "category_accuracy": {
+        "stem": 0.6111
+      },
+      "composite_score": 0.546,
+      "ranks": {
+        "accuracy": 2,
+        "speed": 3,
+        "reasoning": 2
+      },
+      "subjects": [
+        "abstract_algebra",
+        "astronomy",
+        "college_biology",
+        "college_chemistry",
+        "college_computer_science",
+        "college_mathematics",
+        "college_physics",
+        "computer_security",
+        "conceptual_physics",
+        "electrical_engineering",
+        "elementary_mathematics",
+        "high_school_biology",
+        "high_school_chemistry",
+        "high_school_computer_science",
+        "high_school_mathematics",
+        "high_school_physics",
+        "high_school_statistics",
+        "machine_learning"
+      ],
+      "total": 90,
+      "correct": 55,
+      "errors": 0,
+      "rank": 2
+    },
+    {
+      "model": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Llama-3.2-3B",
+      "params": "3B",
+      "accuracy": 0.4667,
+      "avg_response_time": 1.109,
+      "consistency_rate": 0.4556,
+      "reasoning_rate": 1.0,
+      "avg_reasoning_words": 63.9,
+      "category_accuracy": {
+        "stem": 0.4667
+      },
+      "composite_score": 0.545,
+      "ranks": {
+        "accuracy": 3,
+        "speed": 1,
+        "reasoning": 3
+      },
+      "subjects": [
+        "abstract_algebra",
+        "astronomy",
+        "college_biology",
+        "college_chemistry",
+        "college_computer_science",
+        "college_mathematics",
+        "college_physics",
+        "computer_security",
+        "conceptual_physics",
+        "electrical_engineering",
+        "elementary_mathematics",
+        "high_school_biology",
+        "high_school_chemistry",
+        "high_school_computer_science",
+        "high_school_mathematics",
+        "high_school_physics",
+        "high_school_statistics",
+        "machine_learning"
+      ],
+      "total": 90,
+      "correct": 42,
+      "errors": 0,
+      "rank": 3
+    }
+  ],
+  "models": [
+    {
+      "model": "google/gemma-3-4b-it",
+      "accuracy": 0.6111,
+      "correct": 55,
+      "total": 90,
+      "avg_response_time": 3.57,
+      "errors": 0
+    },
+    {
+      "model": "meta-llama/llama-3.2-3b-instruct",
+      "accuracy": 0.4667,
+      "correct": 42,
+      "total": 90,
+      "avg_response_time": 1.109,
+      "errors": 0
+    },
+    {
+      "model": "mistralai/ministral-8b-2512",
+      "accuracy": 0.7556,
+      "correct": 68,
+      "total": 90,
+      "avg_response_time": 1.577,
+      "errors": 0
+    }
+  ],
+  "subjects": [
+    "abstract_algebra",
+    "astronomy",
+    "college_biology",
+    "college_chemistry",
+    "college_computer_science",
+    "college_mathematics",
+    "college_physics",
+    "computer_security",
+    "conceptual_physics",
+    "electrical_engineering",
+    "elementary_mathematics",
+    "high_school_biology",
+    "high_school_chemistry",
+    "high_school_computer_science",
+    "high_school_mathematics",
+    "high_school_physics",
+    "high_school_statistics",
+    "machine_learning"
+  ],
+  "questions_per_subject": 5
+}

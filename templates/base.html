@@ -33,9 +33,10 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('index') }}">LAMBADA Benchmark</a>
+      <a class="navbar-brand" href="{{ url_for('index') }}">SLM Benchmark</a>
       <div class="navbar-nav">
-        <a class="nav-link {% block nav_home %}{% endblock %}" href="{{ url_for('index') }}">Benchmark</a>
+        <a class="nav-link {% block nav_home %}{% endblock %}" href="{{ url_for('index') }}">LAMBADA</a>
+        <a class="nav-link {% block nav_mmlu %}{% endblock %}" href="{{ url_for('mmlu') }}">MMLU</a>
         <a class="nav-link {% block nav_history %}{% endblock %}" href="{{ url_for('history') }}">History</a>
         <a class="nav-link {% block nav_docs %}{% endblock %}" href="{{ url_for('docs') }}">Docs</a>
       </div>

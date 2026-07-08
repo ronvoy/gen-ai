@@ -196,6 +196,101 @@ def parse_run_request(data):
     return num_samples, params
 
 
+# MMLU benchmark
+
+def _mmlu_results_path(model_id):
+    safe = model_id.replace("/", "_")
+    return os.path.join(BASE_DIR, RESULTS_DIR, f"{safe}_mmlu.json")
+
+
+def _mmlu_summary_path():
+    return os.path.join(BASE_DIR, RESULTS_DIR, "summary_mmlu.json")
+
+
+def load_mmlu_result(model_id):
+    path = _mmlu_results_path(model_id)
+    if not os.path.exists(path):
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def rebuild_mmlu_summary():
+    """Recompute the MMLU ranking summary from the per-model result files."""
+    from evaluate_slm_mmlu import build_mmlu_summary
+
+    results = [r for r in (load_mmlu_result(m) for m in MODELS) if r]
+    summary = build_mmlu_summary(results)
+    os.makedirs(os.path.join(BASE_DIR, RESULTS_DIR), exist_ok=True)
+    with open(_mmlu_summary_path(), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    return summary
+
+
+def collect_mmlu_metrics():
+    """Return the current MMLU ranking rows for the web page."""
+    return rebuild_mmlu_summary().get("ranking", [])
+
+
+def run_mmlu_benchmark(model_id, subjects, questions, params=None):
+    """Run MMLU for one model, save its result file, refresh the summary."""
+    from config import OPENROUTER_API_KEY
+    from evaluate_slm_mmlu import (
+        load_mmlu_tasks, evaluate_model_mmlu, mmlu_default_params,
+    )
+
+    if not OPENROUTER_API_KEY:
+        raise RuntimeError("OPENROUTER_API_KEY is not set. Add it to your .env file.")
+
+    tasks = load_mmlu_tasks(subjects, questions, BASE_DIR)
+    if not tasks:
+        raise RuntimeError("No questions loaded for the selected subjects.")
+
+    result = evaluate_model_mmlu(
+        model_id, tasks, OPENROUTER_API_KEY, params or mmlu_default_params()
+    )
+
+    os.makedirs(os.path.join(BASE_DIR, RESULTS_DIR), exist_ok=True)
+    with open(_mmlu_results_path(model_id), "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
+
+    rebuild_mmlu_summary()
+    return result
+
+
+def parse_mmlu_request(data):
+    """Pull subjects, question count and decoding params from a request body."""
+    from evaluate_slm_mmlu import (
+        resolve_subjects, mmlu_default_params, MIN_QUESTIONS,
+    )
+
+    subjects = resolve_subjects(data.get("subjects", "stem"))
+    if not subjects:
+        raise ValueError("No valid MMLU subjects selected.")
+
+    try:
+        questions = int(data.get("questions", 5))
+    except (TypeError, ValueError):
+        questions = 5
+    # Web runs are synchronous, so cap per-subject questions at 50 to keep
+    # request times manageable (the CLI script allows up to 100).
+    questions = _clamp(questions, MIN_QUESTIONS, 50)
+
+    params = mmlu_default_params()
+    for key, low, high, cast in (
+        ("temperature", 0.0, 2.0, float),
+        ("top_p", 0.0, 1.0, float),
+        ("max_tokens", 64, 1024, int),
+    ):
+        if data.get(key) not in (None, ""):
+            try:
+                params[key] = _clamp(cast(data.get(key)), low, high)
+            except (TypeError, ValueError):
+                pass
+
+    return subjects, questions, params
+
+
 # mermaid renderer
 
 _MERMAID_BLOCK = re.compile(
@@ -319,6 +414,90 @@ def run_all():
     })
 
 
+@app.route("/mmlu")
+def mmlu():
+    from evaluate_slm_mmlu import (
+        SUBJECT_GROUPS, CATEGORY_LABELS, mmlu_default_params, MIN_QUESTIONS,
+    )
+
+    model_choices = [{"id": m, "name": _short(m)} for m in MODELS]
+    groups = {
+        key: {"label": CATEGORY_LABELS[key], "subjects": subjects}
+        for key, subjects in SUBJECT_GROUPS.items()
+        if key != "all"
+    }
+    return render_template(
+        "mmlu.html",
+        models=model_choices,
+        groups=groups,
+        ranking=collect_mmlu_metrics(),
+        defaults=mmlu_default_params(),
+        min_questions=MIN_QUESTIONS,
+        max_questions=50,
+    )
+
+
+@app.route("/mmlu/run", methods=["POST"])
+def mmlu_run():
+    data = request.get_json(silent=True) or request.form
+    model_id = data.get("model")
+
+    try:
+        subjects, questions, params = parse_mmlu_request(data)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+
+    targets = MODELS if model_id == "all" else [model_id]
+    if any(m not in MODELS for m in targets):
+        return jsonify({"error": "Unknown model selected."}), 400
+
+    results = []
+    try:
+        for m in targets:
+            results.append(run_mmlu_benchmark(m, subjects, questions, params))
+    except Exception as exc:
+        return jsonify({"error": str(exc)}), 500
+
+    run_params = dict(params)
+    run_params["benchmark"] = "mmlu"
+    run_params["subjects"] = f"{len(subjects)} subject(s), {questions} q each"
+    append_history(
+        "mmlu-all" if model_id == "all" else "mmlu-single",
+        results[0]["total"], results, run_params,
+    )
+
+    return jsonify({
+        "ran": [_short(r["model"]) for r in results],
+        "subjects": subjects,
+        "questions": questions,
+        "ranking": collect_mmlu_metrics(),
+    })
+
+
+@app.route("/mmlu/metrics")
+def mmlu_metrics():
+    return jsonify(collect_mmlu_metrics())
+
+
+@app.route("/mmlu/details")
+def mmlu_details():
+    """Per-question record (Q/A, model answer, reasoning) for one model."""
+    model_id = request.args.get("model")
+    if model_id not in MODELS:
+        return jsonify({"error": "Unknown model."}), 400
+    result = load_mmlu_result(model_id)
+    if not result:
+        return jsonify({"error": "No MMLU results for this model yet."}), 404
+    return jsonify({
+        "model": model_id,
+        "name": _short(model_id),
+        "subjects": result.get("subjects", []),
+        "subject_accuracy": result.get("subject_accuracy", {}),
+        "reasoning": result.get("reasoning", {}),
+        "results": result.get("results", []),
+    })
+
+
 @app.route("/history")
 def history():
     return render_template("history.html", runs=load_history())
@@ -367,7 +546,8 @@ def docs():
         'font-family:Arial,Helvetica,sans-serif;font-size:15px;">'
         f'<a href="{sr}/" style="color:#fff;margin-right:18px;'
         'text-decoration:none;font-weight:600;">LAMBADA Benchmark</a>'
-        f'<a href="{sr}/" style="color:#cbd3da;margin-right:14px;text-decoration:none;">Benchmark</a>'
+        f'<a href="{sr}/" style="color:#cbd3da;margin-right:14px;text-decoration:none;">LAMBADA</a>'
+        f'<a href="{sr}/mmlu" style="color:#cbd3da;margin-right:14px;text-decoration:none;">MMLU</a>'
         f'<a href="{sr}/history" style="color:#cbd3da;margin-right:14px;text-decoration:none;">History</a>'
         f'<a href="{sr}/docs" style="color:#fff;text-decoration:none;">Docs</a>'
         "</nav>"

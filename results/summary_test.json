@@ -2,15 +2,6 @@
   "split": "test",
   "models": [
     {
-      "model": "microsoft/phi-4-mini-instruct",
-      "name": "Phi-4-Mini",
-      "accuracy": 0.15,
-      "correct": 150,
-      "total": 1000,
-      "avg_response_time": 0.644,
-      "errors": 0
-    },
-    {
       "model": "meta-llama/llama-3.2-3b-instruct",
       "name": "Llama-3.2-3B",
       "accuracy": 0.208,
