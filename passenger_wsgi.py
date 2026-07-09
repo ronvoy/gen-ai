@@ -13,19 +13,67 @@ Passenger; it also runs directly with `python passenger_wsgi.py`.
 import os
 import re
 import json
+import uuid
+import threading
 from datetime import datetime
 
 from flask import Flask, render_template, request, jsonify, send_from_directory, abort
 
 from config import (
     MODELS, MODEL_INFO, DATASET_FILES, RESULTS_DIR, DIAGRAMS_DIR,
-    PRESETS, MIN_SAMPLES, MAX_SAMPLES,
+    PRESETS, MMLU_PRESETS, MIN_SAMPLES, MAX_SAMPLES,
 )
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPORT_PATH = os.path.join(BASE_DIR, "report.md")
 
 app = Flask(__name__)
+
+
+# ---------------------------------------------------------------------------
+# Background jobs (live terminal output)
+#
+# Each run executes in a daemon thread and appends log lines to an in-memory
+# job record. The browser polls /progress/<job_id> and renders the lines in
+# a terminal panel while the benchmark is still running.
+# ---------------------------------------------------------------------------
+
+JOBS = {}
+_JOBS_LOCK = threading.Lock()
+_MAX_JOBS = 20
+
+
+def _start_job(task):
+    """Run `task(log)` in a background thread; return its job id.
+
+    `task` receives a `log(line)` callable and its return value becomes the
+    job's final payload, delivered to the client on the last progress poll.
+    """
+    job_id = uuid.uuid4().hex
+    job = {"lines": [], "done": False, "error": None, "payload": None}
+
+    with _JOBS_LOCK:
+        if len(JOBS) >= _MAX_JOBS:
+            for old_id in [k for k, j in JOBS.items() if j["done"]]:
+                JOBS.pop(old_id, None)
+                if len(JOBS) < _MAX_JOBS:
+                    break
+        JOBS[job_id] = job
+
+    def log(line):
+        job["lines"].append(f"[{datetime.now().strftime('%H:%M:%S')}] {line}")
+
+    def worker():
+        try:
+            job["payload"] = task(log)
+        except Exception as exc:
+            job["error"] = str(exc)
+            log(f"ERROR: {exc}")
+        finally:
+            job["done"] = True
+
+    threading.Thread(target=worker, daemon=True).start()
+    return job_id
 
 
 # helpers
@@ -137,10 +185,12 @@ def append_history(run_type, samples, model_results, params=None):
 
 # run benchmark for each model
 
-def run_single_benchmark(model_id, num_samples, params=None, split="test"):
+def run_single_benchmark(model_id, num_samples, params=None, split="test", log=None):
     """Run LAMBADA for one model, save its result file, refresh the summary."""
     from config import OPENROUTER_API_KEY
     from evaluate_lambada import load_dataset, evaluate_model
+
+    log = log or (lambda line: None)
 
     if not OPENROUTER_API_KEY:
         raise RuntimeError("OPENROUTER_API_KEY is not set. Add it to your .env file.")
@@ -152,14 +202,38 @@ def run_single_benchmark(model_id, num_samples, params=None, split="test"):
     if not os.path.exists(abs_path):
         raise RuntimeError(f"Dataset file not found: {abs_path}")
 
+    log(f"Loading LAMBADA {split} split...")
     passages = load_dataset(abs_path, num_samples)
-    result = evaluate_model(model_id, passages, OPENROUTER_API_KEY, params)
+    log(f"Loaded {len(passages)} passages.")
+    log(f"Evaluating {_short(model_id)} via OpenRouter...")
+
+    def progress(done, total, sample, correct):
+        mark = "✗"
+        if sample["error"]:
+            mark = "!"
+        elif sample["correct"]:
+            mark = "✓"
+        line = (
+            f"[{done}/{total}] {mark} target=\"{sample['target']}\" "
+            f"predicted=\"{sample['prediction'] or '-'}\" {sample['time']}s "
+            f"| accuracy {correct / done:.1%}"
+        )
+        if sample["error"]:
+            line += f" | error: {sample['error']}"
+        log(line)
+
+    result = evaluate_model(model_id, passages, OPENROUTER_API_KEY, params, progress)
 
     os.makedirs(os.path.join(BASE_DIR, RESULTS_DIR), exist_ok=True)
     with open(_results_path(model_id, split), "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
 
     rebuild_summary(split)
+    log(
+        f"Done: {_short(model_id)} - accuracy {result['accuracy']:.1%} "
+        f"({result['correct']}/{result['total']}), "
+        f"avg {result['avg_response_time']}s, {result['errors']} error(s)."
+    )
     return result
 
 
@@ -232,22 +306,42 @@ def collect_mmlu_metrics():
     return rebuild_mmlu_summary().get("ranking", [])
 
 
-def run_mmlu_benchmark(model_id, subjects, questions, params=None):
+def run_mmlu_benchmark(model_id, subjects, questions, params=None, log=None):
     """Run MMLU for one model, save its result file, refresh the summary."""
     from config import OPENROUTER_API_KEY
     from evaluate_slm_mmlu import (
         load_mmlu_tasks, evaluate_model_mmlu, mmlu_default_params,
     )
 
+    log = log or (lambda line: None)
+
     if not OPENROUTER_API_KEY:
         raise RuntimeError("OPENROUTER_API_KEY is not set. Add it to your .env file.")
 
+    log(f"Fetching MMLU questions: {len(subjects)} subject(s) x {questions} each...")
     tasks = load_mmlu_tasks(subjects, questions, BASE_DIR)
     if not tasks:
         raise RuntimeError("No questions loaded for the selected subjects.")
+    log(f"Loaded {len(tasks)} questions.")
+    log(f"Evaluating {_short(model_id)} via OpenRouter (reasoning enabled)...")
+
+    def progress(model, done, total, correct, question=None):
+        if not question:
+            return
+        mark = "!" if question["error"] else ("✓" if question["correct"] else "✗")
+        line = (
+            f"[{done}/{total}] {mark} {question['subject'].replace('_', ' ')} "
+            f"Q{question['index'] + 1}: picked {question['predicted_letter'] or '?'} "
+            f"(correct {question['correct_letter']}) {question['time']}s "
+            f"| accuracy {correct / done:.1%}"
+        )
+        if question["error"]:
+            line += f" | error: {question['error']}"
+        log(line)
 
     result = evaluate_model_mmlu(
-        model_id, tasks, OPENROUTER_API_KEY, params or mmlu_default_params()
+        model_id, tasks, OPENROUTER_API_KEY,
+        params or mmlu_default_params(), progress,
     )
 
     os.makedirs(os.path.join(BASE_DIR, RESULTS_DIR), exist_ok=True)
@@ -255,6 +349,10 @@ def run_mmlu_benchmark(model_id, subjects, questions, params=None):
         json.dump(result, f, indent=2, ensure_ascii=False)
 
     rebuild_mmlu_summary()
+    log(
+        f"Done: {_short(model_id)} - accuracy {result['accuracy']:.1%}, "
+        f"avg {result['avg_response_time']}s, {result['errors']} error(s)."
+    )
     return result
 
 
@@ -272,8 +370,8 @@ def parse_mmlu_request(data):
         questions = int(data.get("questions", 5))
     except (TypeError, ValueError):
         questions = 5
-    # Web runs are synchronous, so cap per-subject questions at 50 to keep
-    # request times manageable (the CLI script allows up to 100).
+    # Cap per-subject questions at 50 for web runs to keep run times
+    # manageable (the CLI script allows up to 100).
     questions = _clamp(questions, MIN_QUESTIONS, 50)
 
     params = mmlu_default_params()
@@ -381,16 +479,14 @@ def run():
 
     num_samples, params = parse_run_request(data)
 
-    try:
-        result = run_single_benchmark(model_id, num_samples, params)
-    except Exception as exc:
-        return jsonify({"error": str(exc)}), 500
+    def task(log):
+        result = run_single_benchmark(model_id, num_samples, params, log=log)
+        append_history("single", num_samples, [result], params)
+        metric = _metric_from_result(result)
+        metric["metrics"] = collect_metrics()
+        return metric
 
-    append_history("single", num_samples, [result], params)
-
-    metric = _metric_from_result(result)
-    metric["metrics"] = collect_metrics()
-    return jsonify(metric)
+    return jsonify({"job_id": _start_job(task)})
 
 
 @app.route("/run_all", methods=["POST"])
@@ -398,19 +494,39 @@ def run_all():
     data = request.get_json(silent=True) or request.form
     num_samples, params = parse_run_request(data)
 
-    results = []
+    def task(log):
+        results = []
+        for i, model_id in enumerate(MODELS):
+            log(f"--- Model {i + 1}/{len(MODELS)}: {_short(model_id)} ---")
+            results.append(
+                run_single_benchmark(model_id, num_samples, params, log=log)
+            )
+        append_history("all", num_samples, results, params)
+        return {
+            "ran": [_short(r["model"]) for r in results],
+            "samples": num_samples,
+            "metrics": collect_metrics(),
+        }
+
+    return jsonify({"job_id": _start_job(task)})
+
+
+@app.route("/progress/<job_id>")
+def job_progress(job_id):
+    """Incremental log lines (and, once done, the payload) for a run job."""
+    job = JOBS.get(job_id)
+    if not job:
+        return jsonify({"error": "Unknown or expired job."}), 404
     try:
-        for model_id in MODELS:
-            results.append(run_single_benchmark(model_id, num_samples, params))
-    except Exception as exc:
-        return jsonify({"error": str(exc)}), 500
-
-    append_history("all", num_samples, results, params)
-
+        offset = max(0, int(request.args.get("offset", 0)))
+    except (TypeError, ValueError):
+        offset = 0
     return jsonify({
-        "ran": [_short(r["model"]) for r in results],
-        "samples": num_samples,
-        "metrics": collect_metrics(),
+        "lines": job["lines"][offset:],
+        "next_offset": len(job["lines"]),
+        "done": job["done"],
+        "error": job["error"],
+        "payload": job["payload"] if job["done"] else None,
     })
 
 
@@ -431,6 +547,7 @@ def mmlu():
         models=model_choices,
         groups=groups,
         ranking=collect_mmlu_metrics(),
+        presets=MMLU_PRESETS,
         defaults=mmlu_default_params(),
         min_questions=MIN_QUESTIONS,
         max_questions=50,
@@ -451,27 +568,28 @@ def mmlu_run():
     if any(m not in MODELS for m in targets):
         return jsonify({"error": "Unknown model selected."}), 400
 
-    results = []
-    try:
-        for m in targets:
-            results.append(run_mmlu_benchmark(m, subjects, questions, params))
-    except Exception as exc:
-        return jsonify({"error": str(exc)}), 500
+    def task(log):
+        results = []
+        for i, m in enumerate(targets):
+            if len(targets) > 1:
+                log(f"--- Model {i + 1}/{len(targets)}: {_short(m)} ---")
+            results.append(run_mmlu_benchmark(m, subjects, questions, params, log=log))
 
-    run_params = dict(params)
-    run_params["benchmark"] = "mmlu"
-    run_params["subjects"] = f"{len(subjects)} subject(s), {questions} q each"
-    append_history(
-        "mmlu-all" if model_id == "all" else "mmlu-single",
-        results[0]["total"], results, run_params,
-    )
+        run_params = dict(params)
+        run_params["benchmark"] = "mmlu"
+        run_params["subjects"] = f"{len(subjects)} subject(s), {questions} q each"
+        append_history(
+            "mmlu-all" if model_id == "all" else "mmlu-single",
+            results[0]["total"], results, run_params,
+        )
+        return {
+            "ran": [_short(r["model"]) for r in results],
+            "subjects": subjects,
+            "questions": questions,
+            "ranking": collect_mmlu_metrics(),
+        }
 
-    return jsonify({
-        "ran": [_short(r["model"]) for r in results],
-        "subjects": subjects,
-        "questions": questions,
-        "ranking": collect_mmlu_metrics(),
-    })
+    return jsonify({"job_id": _start_job(task)})
 
 
 @app.route("/mmlu/metrics")

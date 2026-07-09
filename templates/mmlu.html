@@ -73,10 +73,20 @@
 
       <div class="collapse mt-3" id="mmlu-tune">
         <div class="border rounded p-3 bg-light">
-          <span class="fw-semibold">Decoding parameters</span>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="fw-semibold">Decoding parameters</span>
+            <div class="btn-group btn-group-sm" role="group">
+              {% for key, p in presets.items() %}
+              <button type="button" class="btn btn-outline-secondary preset-btn" data-preset="{{ key }}">{{ p.label }}</button>
+              {% endfor %}
+            </div>
+          </div>
           <p class="text-muted small mb-2">
             MMLU uses greedy decoding by default and a larger token budget than LAMBADA
             so the model has room to write its reasoning before committing to a letter.
+            <strong>Optimal</strong> gives the most reasoning room (most reliable accuracy),
+            <strong>Normal</strong> matches the defaults, and <strong>Best Performance</strong>
+            caps the reasoning budget so runs finish faster.
           </p>
           <div class="row g-3">
             <div class="col-12 col-md-4">
@@ -95,6 +105,16 @@
         </div>
       </div>
     </form>
+
+    <div class="mt-3">
+      <div class="terminal-header">
+        <span class="dot" style="background:#ff5f57"></span>
+        <span class="dot" style="background:#febc2e"></span>
+        <span class="dot" style="background:#28c840"></span>
+        <span>mmlu — benchmark output</span>
+      </div>
+      <div class="terminal" id="terminal"></div>
+    </div>
 
     <div id="status" class="mt-3 small"></div>
   </div>
@@ -274,8 +294,9 @@
     });
   });
 
-  // ---- decoding sliders ----
+  // ---- decoding sliders + presets ----
 
+  const presets = {{ presets | tojson }};
   const tuneIds = ['temperature', 'top_p', 'max_tokens'];
   function syncLabels() {
     tuneIds.forEach(id => {
@@ -283,6 +304,63 @@
     });
   }
   tuneIds.forEach(id => document.getElementById(id).addEventListener('input', syncLabels));
+
+  document.querySelectorAll('.preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = presets[btn.dataset.preset];
+      tuneIds.forEach(id => { if (p[id] !== undefined) document.getElementById(id).value = p[id]; });
+      syncLabels();
+    });
+  });
+
+  // ---- terminal panel ----
+
+  const term = document.getElementById('terminal');
+
+  function termLine(text, cls) {
+    const span = document.createElement('span');
+    span.className = 't-line' + (cls ? ' ' + cls : '');
+    span.textContent = text;
+    term.appendChild(span);
+    term.scrollTop = term.scrollHeight;
+  }
+
+  function termClear() { term.innerHTML = ''; }
+
+  function lineClass(text) {
+    if (text.includes(' ✓ ')) return 't-ok';
+    if (text.includes(' ✗ ') || text.includes(' ! ') || text.includes('ERROR')) return 't-bad';
+    if (text.includes('---') || /Fetching|Loaded|Evaluating/.test(text)) return 't-muted';
+    return '';
+  }
+
+  function termIdle() {
+    termClear();
+    const line = document.createElement('span');
+    line.className = 't-line t-muted';
+    line.textContent = '$ Ready. Pick subjects above and press Run MMLU - live processing output streams here. ';
+    const cursor = document.createElement('span');
+    cursor.className = 'blink';
+    cursor.textContent = '▊';
+    line.appendChild(cursor);
+    term.appendChild(line);
+  }
+
+  async function pollJob(jobId) {
+    let offset = 0;
+    for (;;) {
+      const res = await fetch(SCRIPT_ROOT + '/progress/' + jobId + '?offset=' + offset);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Progress polling failed.');
+      (data.lines || []).forEach(l => termLine(l, lineClass(l)));
+      offset = data.next_offset;
+      if (data.done) {
+        if (data.error) throw new Error(data.error);
+        return data.payload;
+      }
+      await new Promise(r => setTimeout(r, 800));
+    }
+  }
 
   // ---- run ----
 
@@ -304,8 +382,10 @@
 
     runBtn.disabled = true;
     runBtn.textContent = 'Running...';
+    termClear();
+    termLine(`$ run mmlu ${model === 'all' ? 'all models' : model} - ${subjects.length} subject(s) x ${questions} question(s)`, 't-muted');
     status.className = 'mt-3 small text-muted';
-    status.textContent = `Running ${model === 'all' ? 'all models' : 'the selected model'} on ${subjects.length} subject(s) x ${questions} question(s). Models write out their reasoning, so this takes a while - please wait.`;
+    status.textContent = `Running ${model === 'all' ? 'all models' : 'the selected model'} on ${subjects.length} subject(s) x ${questions} question(s). Watch the terminal above for live progress.`;
 
     try {
       const res = await fetch(SCRIPT_ROOT + '/mmlu/run', {
@@ -313,8 +393,9 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ model, subjects, questions, ...params })
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Run failed.');
+      const start = await res.json();
+      if (!res.ok) throw new Error(start.error || 'Run failed.');
+      const data = await pollJob(start.job_id);
       status.className = 'mt-3 small text-success';
       status.textContent = `Done. Ran ${data.ran.join(', ')} on ${data.subjects.length} subject(s), ${data.questions} question(s) each.`;
       renderRanking(data.ranking);
@@ -322,6 +403,7 @@
       document.getElementById('detail-model').value = detailModel;
       loadDetails(detailModel);
     } catch (err) {
+      termLine('ERROR: ' + err.message, 't-bad');
       status.className = 'mt-3 small text-danger';
       status.textContent = err.message;
     } finally {
@@ -410,6 +492,7 @@
   // ---- init ----
   document.querySelector('.group-btn[data-group="stem"]')?.click();
   syncLabels();
+  termIdle();
   updateCount();
   renderRanking(initialRanking);
   if (initialRanking.length) loadDetails(document.getElementById('detail-model').value);

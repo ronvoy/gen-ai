@@ -28,6 +28,9 @@ MAX_SAMPLES = 1000
 
 REASONING_MODELS = []
 
+# Fine-tuning presets: Optimal favours accuracy (greedy decoding, most
+# worked examples), Normal is the balanced default, and Best Performance
+# trims the token/example budget for the fastest, cheapest runs.
 PRESETS = {
     "optimal": {
         "label": "Optimal",
@@ -38,8 +41,8 @@ PRESETS = {
         "presence_penalty": 0.0,
         "few_shot": 5,
     },
-    "balanced": {
-        "label": "Balanced",
+    "normal": {
+        "label": "Normal",
         "temperature": 0.3,
         "top_p": 0.9,
         "max_tokens": 32,
@@ -47,14 +50,38 @@ PRESETS = {
         "presence_penalty": 0.0,
         "few_shot": 3,
     },
-    "creative": {
-        "label": "Creative",
-        "temperature": 0.8,
+    "best": {
+        "label": "Best Performance",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 8,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "few_shot": 2,
+    },
+}
+
+# Same three presets for the MMLU decoding panel. Optimal gives the model
+# the most room to reason, Normal matches the defaults, Best Performance
+# caps the reasoning budget so runs finish faster.
+MMLU_PRESETS = {
+    "optimal": {
+        "label": "Optimal",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 512,
+    },
+    "normal": {
+        "label": "Normal",
+        "temperature": 0.2,
         "top_p": 0.95,
-        "max_tokens": 48,
-        "frequency_penalty": 0.3,
-        "presence_penalty": 0.3,
-        "few_shot": 1,
+        "max_tokens": 384,
+    },
+    "best": {
+        "label": "Best Performance",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 192,
     },
 }
 

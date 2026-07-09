@@ -181,8 +181,12 @@ def query_model(model, context, api_key, params=None):
         return "", elapsed, str(e)
 
 
-def evaluate_model(model, passages, api_key, params=None):
-    """Run LAMBADA evaluation for one model across all sampled passages."""
+def evaluate_model(model, passages, api_key, params=None, progress=None):
+    """Run LAMBADA evaluation for one model across all sampled passages.
+
+    `progress`, when given, is called after every sample as
+    progress(done, total, sample_record, correct_so_far).
+    """
     if params is None:
         params = default_params()
 
@@ -221,6 +225,9 @@ def evaluate_model(model, passages, api_key, params=None):
                 "error": error,
             }
         )
+
+        if progress:
+            progress(i + 1, len(passages), results[-1], correct)
 
         if (i + 1) % 10 == 0:
             print(

@@ -476,6 +476,9 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
     aggregate reasoning metrics, and the full per-question record (question,
     options, model answer, correct answer, reasoning text and its analysis)
     for display in the web app.
+
+    `progress`, when given, is called after every question as
+    progress(model, done, total, correct_so_far, question_record).
     """
     if params is None:
         params = mmlu_default_params()
@@ -526,8 +529,8 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
             "error": error,
         })
 
-        if progress and (i + 1) % 5 == 0:
-            progress(model, i + 1, len(tasks), correct)
+        if progress:
+            progress(model, i + 1, len(tasks), correct, per_question[-1])
 
     total = len(per_question)
     for stats in subject_stats.values():
@@ -655,8 +658,9 @@ def build_mmlu_summary(results):
 # CLI entry point
 # ---------------------------------------------------------------------------
 
-def _progress(model, done, total, correct):
-    print(f"  [{model}] {done}/{total} - accuracy so far: {correct / done:.2%}")
+def _progress(model, done, total, correct, question=None):
+    if done % 5 == 0 or done == total:
+        print(f"  [{model}] {done}/{total} - accuracy so far: {correct / done:.2%}")
 
 
 def run_mmlu_evaluation(subject_selection=None, questions_per_subject=None,

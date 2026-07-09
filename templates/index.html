@@ -46,8 +46,10 @@
           </div>
         </div>
         <p class="text-muted small mb-3">
-          These control decoding, not model weights. The Optimal preset uses greedy decoding
-          with more worked examples, which is the most reliable for single-word prediction.
+          These control decoding, not model weights. <strong>Optimal</strong> uses greedy decoding
+          with the most worked examples (most reliable accuracy), <strong>Normal</strong> is the
+          balanced default, and <strong>Best Performance</strong> trims the token and example
+          budget for the fastest, cheapest runs.
         </p>
         <div class="row g-3">
           <div class="col-12 col-md-6">
@@ -76,6 +78,16 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="mt-3">
+      <div class="terminal-header">
+        <span class="dot" style="background:#ff5f57"></span>
+        <span class="dot" style="background:#febc2e"></span>
+        <span class="dot" style="background:#28c840"></span>
+        <span>lambada — benchmark output</span>
+      </div>
+      <div class="terminal" id="terminal"></div>
     </div>
 
     <div id="status" class="mt-3 small"></div>
@@ -197,6 +209,55 @@
   const runBtn = document.getElementById('run-btn');
   const status = document.getElementById('status');
 
+  // ---- terminal panel ----
+
+  const term = document.getElementById('terminal');
+
+  function termLine(text, cls) {
+    const span = document.createElement('span');
+    span.className = 't-line' + (cls ? ' ' + cls : '');
+    span.textContent = text;
+    term.appendChild(span);
+    term.scrollTop = term.scrollHeight;
+  }
+
+  function termClear() { term.innerHTML = ''; }
+
+  function lineClass(text) {
+    if (text.includes(' ✓ ')) return 't-ok';
+    if (text.includes(' ✗ ') || text.includes(' ! ') || text.includes('ERROR')) return 't-bad';
+    if (text.includes('---') || /Loading|Loaded|Evaluating/.test(text)) return 't-muted';
+    return '';
+  }
+
+  function termIdle() {
+    termClear();
+    const line = document.createElement('span');
+    line.className = 't-line t-muted';
+    line.textContent = '$ Ready. Configure the run above and press Run Benchmark - live processing output streams here. ';
+    const cursor = document.createElement('span');
+    cursor.className = 'blink';
+    cursor.textContent = '▊';
+    line.appendChild(cursor);
+    term.appendChild(line);
+  }
+
+  async function pollJob(jobId) {
+    let offset = 0;
+    for (;;) {
+      const res = await fetch(SCRIPT_ROOT + '/progress/' + jobId + '?offset=' + offset);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Progress polling failed.');
+      (data.lines || []).forEach(l => termLine(l, lineClass(l)));
+      offset = data.next_offset;
+      if (data.done) {
+        if (data.error) throw new Error(data.error);
+        return data.payload;
+      }
+      await new Promise(r => setTimeout(r, 800));
+    }
+  }
+
   function setBusy(busy) {
     runBtn.disabled = busy;
     runBtn.textContent = busy ? 'Running...' : 'Run Benchmark';
@@ -205,16 +266,19 @@
   async function runBenchmark(url, body, label) {
     const samples = document.getElementById('samples').value;
     setBusy(true);
+    termClear();
+    termLine(`$ run ${label} - ${samples} samples`, 't-muted');
     status.className = 'mt-3 small text-muted';
-    status.textContent = `Running ${label} on ${samples} samples. Reasoning models can take several minutes, please wait.`;
+    status.textContent = `Running ${label} on ${samples} samples. Watch the terminal above for live progress.`;
     try {
       const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Run failed.');
+      const start = await res.json();
+      if (!res.ok) throw new Error(start.error || 'Run failed.');
+      const data = await pollJob(start.job_id);
       status.className = 'mt-3 small text-success';
       if (data.ran) {
         status.textContent = `Done. Ran ${data.ran.join(', ')} on ${data.samples} samples.`;
@@ -223,6 +287,7 @@
       }
       refresh(data.metrics);
     } catch (err) {
+      termLine('ERROR: ' + err.message, 't-bad');
       status.className = 'mt-3 small text-danger';
       status.textContent = err.message;
     } finally {
@@ -243,6 +308,7 @@
   });
 
   syncLabels();
+  termIdle();
   refresh(initialMetrics);
 </script>
 {% endblock %}
