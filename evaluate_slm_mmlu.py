@@ -51,7 +51,7 @@ QUESTIONS_PER_SUBJECT = 5
 # MODELS_TO_RUN - which models to benchmark. Options:
 #   "all"              -> every model in config.MODELS
 #   or an explicit list of OpenRouter ids, e.g.
-#   ["microsoft/phi-4-mini-instruct"]
+#   ["google/gemma-3-4b-it"]
 MODELS_TO_RUN = "all"
 
 # Decoding parameters used for MMLU (independent from the LAMBADA defaults:
