@@ -27,18 +27,19 @@
     <body for="html-export">
       <div class="crossnote markdown-preview  ">
       
-<h1 id="lambada-benchmark-evaluation-report">LAMBADA Benchmark Evaluation Report </h1>
-<p>Evaluating small language models on long-range word prediction</p>
+<h1 id="lambada--mmlu-benchmark-evaluation-report">LAMBADA &amp; MMLU Benchmark Evaluation Report </h1>
+<p>Evaluating small language models on long-range word prediction (LAMBADA) and multi-subject knowledge &amp; reasoning (MMLU)</p>
 <p>Submitted to: Prof. Anna Corazza<br>
 Submitted by: Francesco Ventimiglia, Danilo Rodriguez, Rohan Baidya<br>
 Github link: <a href="https://github.com/ronvoy/gen-ai">https://github.com/ronvoy/gen-ai</a><br>
 Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 <h2 id="1-introduction">1. Introduction </h2>
 <ul>
-<li>We test three small language models on the LAMBADA benchmark.</li>
-<li>LAMBADA asks the model to predict the final word of a passage, guessable only from the full context.</li>
-<li>This makes it a focused test of long-range context.</li>
+<li>We test three small language models on two complementary benchmarks.</li>
+<li>LAMBADA asks the model to predict the final word of a passage, guessable only from the full context - a focused test of long-range context handling.</li>
+<li>MMLU (Massive Multitask Language Understanding) is a multiple-choice knowledge and reasoning test spanning 57 subjects in four categories (STEM, Humanities, Social Sciences, Other); the model must write short step-by-step reasoning before committing to an answer letter.</li>
 <li>All models run through the OpenRouter API for a hardware-neutral comparison.</li>
+<li>Both benchmarks share one web app with live terminal output, run history, presets, and charts.</li>
 </ul>
 <h2 id="2-small-language-models-used">2. Small Language Models Used </h2>
 <h3 id="21-models-at-glance">2.1 Models at Glance </h3>
@@ -49,6 +50,7 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 <th>Model</th>
 <th>Developer</th>
 <th>Parameters</th>
+<th>OpenRouter id</th>
 <th>Architecture</th>
 <th>Key Technique</th>
 </tr>
@@ -56,17 +58,19 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 <tbody>
 <tr>
 <td>1</td>
-<td>Phi-4-Mini</td>
-<td>Microsoft</td>
-<td>3.8B</td>
-<td>Dense decoder-only transformer with Grouped Query Attention</td>
-<td>Curated and synthetic data training</td>
+<td>Gemma-3-4B</td>
+<td>Google</td>
+<td>4B</td>
+<td><code>google/gemma-3-4b-it</code></td>
+<td>Dense decoder-only transformer with interleaved local/global attention</td>
+<td>Knowledge distillation + local/global attention interleaving</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Llama-3.2-3B</td>
 <td>Meta</td>
 <td>3B</td>
+<td><code>meta-llama/llama-3.2-3b-instruct</code></td>
 <td>Dense decoder-only transformer with Grouped Query Attention</td>
 <td>Compact dense transformer</td>
 </tr>
@@ -75,39 +79,42 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 <td>Ministral-8B</td>
 <td>Mistral AI</td>
 <td>8B</td>
+<td><code>mistralai/ministral-8b-2512</code></td>
 <td>Decoder-only transformer with Sliding Window Attention</td>
 <td>Sliding Window Attention + GQA</td>
 </tr>
 </tbody>
 </table>
-<h3 id="22-phi-4-mini-microsoft">2.2 Phi-4-Mini (Microsoft) </h3>
+<h3 id="22-gemma-3-4b-google">2.2 Gemma-3-4B (Google) </h3>
 <ul>
-<li>3.8B dense decoder-only transformer from Microsoft.</li>
-<li>Built around data quality over scale, using filtered web and synthetic textbook-style data.</li>
-<li>Grouped query attention and a 128k vocabulary.</li>
+<li>4B instruction-tuned dense decoder-only transformer from Google, built with the same research that powers Gemini.</li>
+<li>Interleaves several local sliding-window attention layers with an occasional global attention layer, keeping memory low while information still flows across a long context (up to 128k tokens).</li>
+<li>The small Gemma 3 models are trained with knowledge distillation from larger teacher models.</li>
 </ul>
-<p><strong>Working technique - Curated and synthetic data training:</strong></p>
+<p><strong>Working technique - Knowledge distillation + local/global attention interleaving:</strong></p>
 <ul>
-<li>Cleaner training data lets a small model learn more per parameter.</li>
-<li>Stays cheap to run while staying competitive on language tasks.</li>
+<li>Most layers only look at a local window of nearby tokens (cheap); every few layers one global layer lets any token attend to the whole context (expressive).</li>
+<li>Distillation teaches the small model to match a larger teacher's output distribution rather than raw text alone, delivering strong quality per parameter at edge-friendly cost.</li>
 </ul>
 <p>Key properties:</p>
 <ul>
-<li>Dense transformer, no expert routing.</li>
-<li>Grouped Query Attention for a smaller KV cache.</li>
-<li>Small footprint for edge and low-latency use.</li>
+<li>Dense decoder-only transformer, no expert routing.</li>
+<li>5:1 interleaving of local sliding-window and global attention layers.</li>
+<li>Grouped Query Attention with QK-norm; 128k-token context window.</li>
+<li>Distilled from larger Gemma/Gemini-family teacher models.</li>
 </ul>
-<h4 id="process-flow---phi-4-mini-inference">Process flow - Phi-4-Mini inference </h4>
+<h4 id="process-flow---gemma-3-4b-inference">Process flow - Gemma-3-4B inference </h4>
 <div class="mermaid">graph TD
     A[Input Tokens] --&gt; B[Token Embedding + RoPE]
     B --&gt; C[Decoder Layer x N]
-    C --&gt; D[Grouped Query Attention]
-    D --&gt; E[SwiGLU Feed Forward]
-    E --&gt; F[RMSNorm + Residual]
-    F --&gt; C
-    F --&gt; G[Final RMSNorm]
-    G --&gt; H[LM Head]
-    H --&gt; I[Softmax to Next Token]
+    C --&gt; D[Local Sliding-Window Attention x5]
+    D --&gt; E[Global Attention x1]
+    E --&gt; F[GeGLU Feed Forward]
+    F --&gt; G[RMSNorm + Residual]
+    G --&gt; C
+    G --&gt; H[Final RMSNorm]
+    H --&gt; I[LM Head]
+    I --&gt; J[Softmax to Next Token]
 </div><h3 id="23-llama-32-3b-meta">2.3 Llama-3.2-3B (Meta) </h3>
 <ul>
 <li>3B instruction-tuned model from Meta for on-device, low-cost use.</li>
@@ -166,12 +173,13 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
     G --&gt; H[Final RMSNorm]
     H --&gt; I[LM Head]
     I --&gt; J[Softmax to Next Token]
-</div><h2 id="3-dataset-overview">3. Dataset Overview </h2>
+</div><h2 id="3-lambada-benchmark">3. LAMBADA Benchmark </h2>
+<h3 id="31-dataset-overview">3.1 Dataset Overview </h3>
 <ul>
 <li>LAMBADA is drawn from the BookCorpus.</li>
 <li>Each passage is chosen so the final word is predictable from the full passage but not from the last sentence alone.</li>
 </ul>
-<h3 id="31-splits">3.1 Splits </h3>
+<h4 id="splits">Splits </h4>
 <table>
 <thead>
 <tr>
@@ -220,7 +228,7 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 </tr>
 </tbody>
 </table>
-<h3 id="32-properties">3.2 Properties </h3>
+<h4 id="properties">Properties </h4>
 <table>
 <thead>
 <tr>
@@ -251,8 +259,7 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 </tr>
 </tbody>
 </table>
-<h2 id="4-benchmark-method">4. Benchmark Method </h2>
-<h3 id="41-metrics">4.1 Metrics </h3>
+<h3 id="32-metrics">3.2 Metrics </h3>
 <table>
 <thead>
 <tr>
@@ -284,7 +291,7 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 </tr>
 </tbody>
 </table>
-<h3 id="42-scoring-flow">4.2 Scoring Flow </h3>
+<h3 id="33-scoring-flow">3.3 Scoring Flow </h3>
 <div class="mermaid">graph TD
     A[Passage] --&gt; B[Remove last word]
     B --&gt; C[Build prompt with few-shot examples]
@@ -296,7 +303,7 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
     G --&gt;|No| I[Incorrect]
     H --&gt; J[Accuracy and latency]
     I --&gt; J
-</div><h3 id="43-fine-tuning-parameters">4.3 Fine-Tuning Parameters </h3>
+</div><h3 id="34-fine-tuning-parameters">3.4 Fine-Tuning Parameters </h3>
 <ul>
 <li>The Fine Tune panel exposes decoding parameters; it does not change model weights.</li>
 <li>For single-word prediction, greedy decoding with more examples works best.</li>
@@ -342,9 +349,9 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 </tr>
 </tbody>
 </table>
-<p>Presets: Optimal (greedy, five examples), Balanced (mild sampling), Creative (high temperature).</p>
-<h2 id="5-results">5. Results </h2>
-<p>Latest run on 50 sampled passages from the test split.</p>
+<p>Presets (see Section 6): Optimal (greedy decoding, five worked examples - most reliable accuracy), Normal (balanced defaults), Best Performance (trimmed token and example budget for the fastest, cheapest runs).</p>
+<h3 id="35-results">3.5 Results </h3>
+<p>Latest saved metrics per model on the test split.</p>
 <table>
 <thead>
 <tr>
@@ -353,115 +360,517 @@ Site Link: <a href="https://unina.cc/gen-ai">https://unina.cc/gen-ai</a></p>
 <th>Correct</th>
 <th>Total</th>
 <th>Avg Latency (s)</th>
-<th>Error Rate (%)</th>
-<th>Throughput (samples/s)</th>
+<th>Errors</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Phi-4-Mini</td>
-<td>30.0</td>
-<td>15</td>
+<td>Gemma-3-4B</td>
+<td>22.0</td>
+<td>11</td>
 <td>50</td>
-<td>0.630</td>
-<td>0.0</td>
-<td>1.59</td>
+<td>0.579</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Llama-3.2-3B</td>
-<td>24.0</td>
-<td>12</td>
-<td>50</td>
-<td>0.553</td>
-<td>0.0</td>
-<td>1.81</td>
+<td>20.8</td>
+<td>208</td>
+<td>1000</td>
+<td>0.577</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Ministral-8B</td>
-<td>52.0</td>
-<td>26</td>
-<td>50</td>
-<td>0.859</td>
-<td>0.0</td>
-<td>1.16</td>
+<td>38.1</td>
+<td>381</td>
+<td>1000</td>
+<td>0.731</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
-<p>Best accuracy: Ministral-8B at 52.0 percent.</p>
-<p>Fastest: Llama-3.2-3B at 0.553 s per query.</p>
-<h4 id="per-model-statistics">Per-Model Statistics </h4>
+<p>Best accuracy: Ministral-8B at 38.1 percent. Fastest: Llama-3.2-3B at 0.577 s per query, with Gemma-3-4B essentially tied at 0.579 s.</p>
+<h4 id="charts">Charts </h4>
+<p>Accuracy per model:</p>
+<p><img src="diagram-lambada/lambada-acc.png" alt="LAMBADA accuracy by model"></p>
+<p>Average response time per model:</p>
+<p><img src="diagram-lambada/lambada-resp-time.png" alt="LAMBADA average response time"></p>
+<h3 id="36-slm-web-app">3.6 SLM Web App </h3>
+<p>The LAMBADA run panel: model and sample-count inputs, Run Benchmark and Fine Tune (presets) buttons, the live terminal streaming per-sample processing output (green = correct prediction, red = wrong), and the metrics table below with the latest saved results for all three models.</p>
+<p><img src="diagram-lambada/lambada-ui.png" alt="LAMBADA run panel UI"></p>
+<h2 id="4-mmlu-benchmark">4. MMLU Benchmark </h2>
+<p>How the MMLU benchmark runs in this project, from a click on "Run MMLU" (or <code>./run_mmlu.sh</code>) to the ranking table, charts, and per-question reasoning shown in the web app. For every question the model must first write short step-by-step reasoning and then commit to one of four options (A-D); both the final letter and the reasoning text are parsed and evaluated.</p>
+<h3 id="41-workflow-diagram">4.1 Workflow Diagram </h3>
+<div class="mermaid">graph TD
+    A[Set parameters: subjects, questions per subject, models, decoding] --&gt; B[Trigger run: web UI, run_mmlu.sh, or evaluate_slm_mmlu.py]
+    B --&gt; C[Resolve subject selection: all / group preset / explicit list]
+    C --&gt; D{Subject cached locally?}
+    D --&gt;|No| E[Fetch 100 test rows from free HF datasets-server API]
+    E --&gt; F[Cache rows in _rsc/mmlu-dataset]
+    D --&gt;|Yes| F
+    F --&gt; G[Take first N questions per subject - deterministic]
+    G --&gt; H[Build chain-of-thought prompt: worked example + Reasoning/Answer format]
+    H --&gt; I[Query model via OpenRouter API]
+    I --&gt; J[Parse response: answer letter + reasoning text]
+    J --&gt; K[Analyze reasoning: length, consistency with chosen option, verdict]
+    K --&gt; L{Predicted letter equals correct letter?}
+    L --&gt;|Yes| M[Count as correct]
+    L --&gt;|No| N[Count as incorrect]
+    M --&gt; O[Aggregate: overall, per-subject and per-category accuracy, latency, reasoning rates]
+    N --&gt; O
+    O --&gt; P[Rank models: accuracy, speed, reasoning consistency, composite score]
+    P --&gt; Q[Save per-model results JSON and summary_mmlu.json]
+    Q --&gt; R[Append run to history]
+    R --&gt; S[Web app: ranking table, charts, and per-question Q/A + reasoning viewer]
+</div><h3 id="42-chronological-steps">4.2 Chronological Steps </h3>
 <table>
 <thead>
 <tr>
-<th>Statistic</th>
-<th>Phi-4-Mini</th>
-<th>Llama-3.2-3B</th>
-<th>Ministral-8B</th>
+<th>#</th>
+<th>Step</th>
+<th>What happens</th>
+<th>Where (file / function)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Parameters</td>
+<td>Read subjects, questions per subject, models, decoding params (all documented at the top of the script and shell runner)</td>
+<td><code>evaluate_slm_mmlu.py</code> (RUN PARAMETERS), <code>run_mmlu.sh</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Trigger</td>
+<td>User clicks Run MMLU, runs <code>./run_mmlu.sh</code>, or <code>python evaluate_slm_mmlu.py</code></td>
+<td><code>passenger_wsgi.py</code> (<code>/mmlu/run</code>) or <code>run_mmlu_evaluation</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Resolve subjects</td>
+<td>Turn "all", a group preset, or a list into valid subject names</td>
+<td><code>resolve_subjects</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Fetch questions</td>
+<td>Download the first 100 test rows per subject from the free Hugging Face datasets-server API (cais/mmlu, fallback tasksource/mmlu); no API key needed</td>
+<td><code>_download_subject</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Cache</td>
+<td>Store rows in <code>_rsc/mmlu-dataset/&lt;subject&gt;.json</code> so reruns are offline and repeatable</td>
+<td><code>fetch_subject_questions</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sample</td>
+<td>Take the first N questions per subject (deterministic, no randomness)</td>
+<td><code>fetch_subject_questions</code>, <code>load_mmlu_tasks</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Build prompt</td>
+<td>Chain-of-thought prompt: one worked example, strict <code>Reasoning:</code> then <code>Answer: &lt;letter&gt;</code> output format</td>
+<td><code>build_mmlu_prompt</code>, <code>WORKED_EXAMPLE</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Query model</td>
+<td>Send the prompt to the chosen model through OpenRouter</td>
+<td><code>query_model_mmlu</code> (HTTP POST)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Parse</td>
+<td>Extract the answer letter AND the reasoning text (handles <code>Reasoning:/Answer:</code>, <code>&lt;think&gt;</code> blocks, "the answer is (B)", bare letters, truncation)</td>
+<td><code>parse_mmlu_response</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Evaluate reasoning</td>
+<td>Score the reasoning: is it present, how long, does it actually support the chosen option; assign a verdict</td>
+<td><code>analyze_reasoning</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Compare</td>
+<td>Exact match: predicted letter equals the correct letter</td>
+<td><code>evaluate_model_mmlu</code></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Aggregate</td>
+<td>Overall / per-subject / per-category accuracy, latency, errors, reasoning rates</td>
+<td><code>evaluate_model_mmlu</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Rank</td>
+<td>Per-dimension ranks and composite score across all evaluated models</td>
+<td><code>build_mmlu_summary</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Save</td>
+<td>Write <code>results/&lt;model&gt;_mmlu.json</code> and <code>results/summary_mmlu.json</code></td>
+<td><code>run_mmlu_evaluation</code> / <code>run_mmlu_benchmark</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td>History</td>
+<td>Append the run (models, subjects, question count, params) to history</td>
+<td><code>passenger_wsgi.append_history</code></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Present</td>
+<td>Ranking table, accuracy charts, and the per-question Q/A + reasoning accordion</td>
+<td><code>templates/mmlu.html</code> (Chart.js)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43-components">4.3 Components </h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>File</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Run parameters</td>
+<td><code>evaluate_slm_mmlu.py</code> (top), <code>run_mmlu.sh</code> (top)</td>
+<td>Subject selection ("all", group presets, or explicit list), questions per subject (1-100), models, decoding params - every option listed in comments</td>
+</tr>
+<tr>
+<td>Subject catalogue</td>
+<td><code>MMLU_SUBJECTS</code>, <code>SUBJECT_GROUPS</code>, <code>CATEGORY_LABELS</code></td>
+<td>The 57 subjects mapped to their official categories; group presets derived from the mapping</td>
+</tr>
+<tr>
+<td>Dataset fetcher</td>
+<td><code>fetch_subject_questions</code>, <code>_download_subject</code></td>
+<td>Free HF datasets-server API client with source fallback and local JSON cache</td>
+</tr>
+<tr>
+<td>Task loader</td>
+<td><code>load_mmlu_tasks</code></td>
+<td>Flattens subjects x questions into one ordered task list</td>
+</tr>
+<tr>
+<td>Prompt builder</td>
+<td><code>build_mmlu_prompt</code>, <code>WORKED_EXAMPLE</code></td>
+<td>Chain-of-thought prompt with a worked example enforcing a parseable format</td>
+</tr>
+<tr>
+<td>Model client</td>
+<td><code>query_model_mmlu</code></td>
+<td>OpenRouter chat-completions call with timing and error capture</td>
+</tr>
+<tr>
+<td>Response parser</td>
+<td><code>parse_mmlu_response</code></td>
+<td>Splits a raw response into (answer letter, reasoning text)</td>
+</tr>
+<tr>
+<td>Reasoning analyzer</td>
+<td><code>analyze_reasoning</code></td>
+<td>Heuristic quality check: presence, word count, consistency, verdict</td>
+</tr>
+<tr>
+<td>Evaluator</td>
+<td><code>evaluate_model_mmlu</code></td>
+<td>Runs all tasks for one model; aggregates accuracy and reasoning metrics</td>
+</tr>
+<tr>
+<td>Ranker</td>
+<td><code>build_mmlu_summary</code></td>
+<td>Per-dimension ranks + composite score across models</td>
+</tr>
+<tr>
+<td>CLI runner</td>
+<td><code>run_mmlu_evaluation</code>, <code>_parse_cli</code>, <code>run_mmlu.sh</code></td>
+<td>One-shot terminal pipeline: setup, install, run, print ranking</td>
+</tr>
+<tr>
+<td>Web routes</td>
+<td><code>passenger_wsgi.py</code>: <code>/mmlu</code>, <code>/mmlu/run</code>, <code>/mmlu/metrics</code>, <code>/mmlu/details</code>, <code>/progress/&lt;job_id&gt;</code></td>
+<td>Online runs, live progress feed, ranking JSON, and the per-question detail feed</td>
+</tr>
+<tr>
+<td>Web page</td>
+<td><code>templates/mmlu.html</code></td>
+<td>Subject picker with presets, decoding sliders + presets, live terminal, ranking table, charts, Q/A + reasoning viewer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-metrics-produced">4.4 Metrics Produced </h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Accuracy</td>
-<td>30.0%</td>
-<td>24.0%</td>
-<td>52.0%</td>
+<td>correct letters / total questions (exact match)</td>
 </tr>
 <tr>
-<td>Correct</td>
-<td>15 / 50</td>
-<td>12 / 50</td>
-<td>26 / 50</td>
+<td>Category accuracy</td>
+<td>Accuracy aggregated over STEM / Humanities / Social Sciences / Other</td>
 </tr>
 <tr>
-<td>Mean latency</td>
-<td>0.630s</td>
-<td>0.553s</td>
-<td>0.859s</td>
+<td>Subject accuracy</td>
+<td>correct / total per individual subject</td>
 </tr>
 <tr>
-<td>Median latency</td>
-<td>0.608s</td>
-<td>0.535s</td>
-<td>0.639s</td>
+<td>Average response time</td>
+<td>Mean wall-clock seconds per API call</td>
 </tr>
 <tr>
 <td>Errors</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>Count of failed or timed-out API calls</td>
+</tr>
+<tr>
+<td>Reasoning rate</td>
+<td>Share of answers that came with a non-trivial explanation (&gt;= 5 words)</td>
+</tr>
+<tr>
+<td>Reasoning consistency</td>
+<td>Share of answers whose reasoning actually supports the chosen option (names the letter or reuses the choice's key words)</td>
+</tr>
+<tr>
+<td>Avg reasoning words</td>
+<td>Mean length of the parsed reasoning text</td>
+</tr>
+<tr>
+<td>Composite score</td>
+<td>0.70 x accuracy + 0.15 x reasoning consistency + 0.15 x relative speed (fastest avg time / model's avg time)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="51-accuracy">5.1 Accuracy </h3>
-<p><img src="diagrams/accuracy_comparison.png" alt="accuracy_comparison.png"></p>
-<h3 id="52-response-time">5.2 Response Time </h3>
-<p><img src="diagrams/response_time.png" alt="response_time.png"></p>
-<h3 id="53-combined-metrics">5.3 Combined Metrics </h3>
-<p><img src="diagrams/combined_metrics.png" alt="combined_metrics.png"></p>
+<h3 id="45-reasoning-verdicts-per-question">4.5 Reasoning Verdicts (per question) </h3>
+<table>
+<thead>
+<tr>
+<th>Verdict</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sound</td>
+<td>Correct answer, and the reasoning clearly supports it</td>
+</tr>
+<tr>
+<td>right-weak-link</td>
+<td>Correct answer, reasoning present but does not clearly support the pick</td>
+</tr>
+<tr>
+<td>lucky-guess</td>
+<td>Correct answer with no real reasoning</td>
+</tr>
+<tr>
+<td>flawed-reasoning</td>
+<td>Reasoned its way to a wrong answer</td>
+</tr>
+<tr>
+<td>blind-guess</td>
+<td>Wrong answer and no reasoning</td>
+</tr>
+<tr>
+<td>no-answer</td>
+<td>No A-D letter could be parsed (API error or malformed output)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="46-results">4.6 Results </h3>
+<p>Latest full run: all 57 subjects x 5 questions = 285 questions per model, zero API errors.</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Model</th>
+<th>Accuracy (%)</th>
+<th>STEM</th>
+<th>Human.</th>
+<th>Social</th>
+<th>Other</th>
+<th>Reasoning consist. (%)</th>
+<th>Avg words</th>
+<th>Avg time (s)</th>
+<th>Composite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Ministral-8B</td>
+<td>78.9</td>
+<td>78.9</td>
+<td>73.9</td>
+<td>83.3</td>
+<td>80.0</td>
+<td>69.1</td>
+<td>54.1</td>
+<td>1.537</td>
+<td>0.731</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Llama-3.2-3B</td>
+<td>55.8</td>
+<td>43.3</td>
+<td>63.1</td>
+<td>63.3</td>
+<td>58.6</td>
+<td>59.7</td>
+<td>61.8</td>
+<td>0.768</td>
+<td>0.630</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gemma-3-4B</td>
+<td>63.9</td>
+<td>61.1</td>
+<td>61.5</td>
+<td>73.3</td>
+<td>61.4</td>
+<td>64.6</td>
+<td>59.3</td>
+<td>2.502</td>
+<td>0.590</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Ministral-8B leads every category and the composite score.</li>
+<li>Gemma-3-4B is second on accuracy and reasoning consistency, but its 2.5 s average latency drops it below the much faster Llama-3.2-3B on the composite ranking.</li>
+</ul>
+<p>Models are ranked per dimension (1 = best) on accuracy, speed, and reasoning consistency, then ordered by the composite score. Accuracy dominates the composite (70%); reasoning quality and latency (15% each) break ties, which mirrors how small language models are picked in practice: quality first, then cost and latency.</p>
+<h4 id="charts-1">Charts </h4>
+<p>Overall accuracy per model, driving the composite ranking:</p>
+<p><img src="diagram-mmlu/mmlu-metric-composite.png" alt="MMLU accuracy by model"></p>
+<p>Subject-category accuracy (STEM / Humanities / Social Sciences / Other) per model:</p>
+<p><img src="diagram-mmlu/mmlu-metric-subjects.png" alt="MMLU accuracy by category"></p>
+<h3 id="47-mmlu-web-app">4.7 MMLU Web App </h3>
+<p>The MMLU run panel: model and questions-per-subject inputs, subject picker with category presets, and the live terminal that streams processing output below the input fields before and during a run.</p>
+<p><img src="diagram-mmlu/mmlu-ui.png" alt="MMLU run panel UI"></p>
+<p>The Q/A section lists every question the selected model saw, grouped per subject with a correct-count badge and category tag:</p>
+<p><img src="diagram-mmlu/mmlu-qa-1.png" alt="MMLU Q/A subject accordion"></p>
+<p>Expanding a subject shows each question with the model's pick vs the correct answer, its parsed reasoning, the reasoning verdict, and per-question latency:</p>
+<p><img src="diagram-mmlu/mmlu-qa-2.png" alt="MMLU Q/A question detail with reasoning"></p>
+<h2 id="5-fine-tuning-presets">5. Fine-Tuning Presets </h2>
+<p>Both benchmark pages expose one-click presets over the decoding parameters. They control decoding, not model weights.</p>
+<h3 id="51-lambada-presets-presets-in-configpy">5.1 LAMBADA Presets (<code>PRESETS</code> in <a href="http://config.py">config.py</a>) </h3>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Temperature</th>
+<th>Top-p</th>
+<th>Max tokens</th>
+<th>Few-shot</th>
+<th>Intent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Optimal</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>16</td>
+<td>5</td>
+<td>Greedy decoding with the most worked examples - most reliable accuracy</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td>0.3</td>
+<td>0.9</td>
+<td>32</td>
+<td>3</td>
+<td>Balanced default</td>
+</tr>
+<tr>
+<td>Best Performance</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>8</td>
+<td>2</td>
+<td>Trimmed token and example budget - fastest, cheapest runs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-mmlu-presets-mmlu_presets-in-configpy">5.2 MMLU Presets (<code>MMLU_PRESETS</code> in <a href="http://config.py">config.py</a>) </h3>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Temperature</th>
+<th>Top-p</th>
+<th>Max tokens</th>
+<th>Intent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Optimal</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>512</td>
+<td>Most reasoning room - most reliable accuracy</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td>0.2</td>
+<td>0.95</td>
+<td>384</td>
+<td>Matches the defaults</td>
+</tr>
+<tr>
+<td>Best Performance</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>192</td>
+<td>Caps the reasoning budget so runs finish faster</td>
+</tr>
+</tbody>
+</table>
 <h2 id="6-project-workflow">6. Project Workflow </h2>
 <div class="mermaid">graph TD
-    A[Load configuration] --&gt; B[Load LAMBADA dataset]
-    B --&gt; C[Sample N passages]
-    C --&gt; D[Run each model via OpenRouter]
-    D --&gt; E1[Phi-4-Mini]
+    A[Load configuration] --&gt; B[Load LAMBADA dataset / fetch MMLU subjects]
+    B --&gt; C[Sample N passages or N questions per subject]
+    C --&gt; D[Run each model via OpenRouter in a background job]
+    D --&gt; E1[Gemma-3-4B]
     D --&gt; E2[Llama-3.2-3B]
     D --&gt; E3[Ministral-8B]
-    E1 --&gt; F[Collect predictions]
-    E2 --&gt; F[Collect predictions]
-    E3 --&gt; F[Collect predictions]
-    F --&gt; G[Compute metrics]
+    E1 --&gt; F[Collect predictions + stream progress to terminal]
+    E2 --&gt; F[Collect predictions + stream progress to terminal]
+    E3 --&gt; F[Collect predictions + stream progress to terminal]
+    F --&gt; G[Compute metrics and rankings]
     G --&gt; H[Save results JSON and history]
     H --&gt; I[Charts, report, presentation]
 </div><h2 id="7-conclusion">7. Conclusion </h2>
 <ul>
-<li>Ministral-8B was the most accurate; Llama-3.2-3B was the fastest.</li>
-<li>LAMBADA rewards real use of context over surface patterns.</li>
-<li>The usual trade-off holds: stronger context handling helps accuracy, smaller models answer faster.</li>
+<li>Ministral-8B was the most accurate on both benchmarks (38.1% LAMBADA, 78.9% MMLU); Llama-3.2-3B was consistently the fastest.</li>
+<li>Gemma-3-4B is competitive on accuracy and reasoning quality but pays for it in latency.</li>
+<li>LAMBADA rewards real use of context over surface patterns; MMLU adds breadth of knowledge and rewards reasoning that actually supports the answer.</li>
+<li>The usual trade-off holds: stronger context handling and reasoning help accuracy, smaller models answer faster.</li>
+<li>Live terminal streaming and the Optimal / Normal / Best Performance presets make runs observable in real time and easy to reproduce.</li>
 </ul>
 <hr>
 <ul>
 <li>Paperno, D. et al. (2016). The LAMBADA dataset. Proceedings of ACL 2016.</li>
-<li>Microsoft (2024). Phi-4 technical report.</li>
+<li>Hendrycks, D. et al. (2021). Measuring Massive Multitask Language Understanding. Proceedings of ICLR 2021.</li>
+<li>Google (2025). Gemma 3 technical report.</li>
 <li>Meta (2024). Llama 3.2 model card.</li>
 <li>Mistral AI (2024). Ministral model family.</li>
 </ul>
