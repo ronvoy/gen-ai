@@ -5,6 +5,7 @@ import random
 import re
 import requests
 
+from openrouter_client import post_with_retry
 from config import (
     OPENROUTER_API_KEY,
     OPENROUTER_BASE_URL,
@@ -20,6 +21,8 @@ from config import (
     DATASET_FILES,
     RESULTS_DIR,
     REASONING_MODELS,
+    OPENROUTER_MAX_RETRIES,
+    OPENROUTER_PROVIDER_SORT,
 )
 
 FEW_SHOT_POOL = [
@@ -162,12 +165,19 @@ def query_model(model, context, api_key, params=None):
         "max_tokens": effective_max_tokens,
         "frequency_penalty": params["frequency_penalty"],
         "presence_penalty": params["presence_penalty"],
+        "provider": {"sort": OPENROUTER_PROVIDER_SORT, "allow_fallbacks": True},
     }
+
+    def log_retry(attempt, wait_seconds, status_code):
+        print(
+            f"    ! {model} got HTTP {status_code} - retrying in "
+            f"{wait_seconds:.1f}s (attempt {attempt}/{OPENROUTER_MAX_RETRIES})"
+        )
 
     start = time.time()
     try:
-        resp = requests.post(
-            OPENROUTER_BASE_URL, headers=headers, json=payload, timeout=180
+        resp = post_with_retry(
+            OPENROUTER_BASE_URL, headers, payload, timeout=180, on_retry=log_retry
         )
         elapsed = time.time() - start
         resp.raise_for_status()

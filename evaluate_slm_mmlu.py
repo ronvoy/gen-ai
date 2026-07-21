@@ -20,12 +20,15 @@ import time
 
 import requests
 
+from openrouter_client import post_with_retry
 from config import (
     OPENROUTER_API_KEY,
     OPENROUTER_BASE_URL,
     MODELS,
     MODEL_INFO,
     RESULTS_DIR,
+    OPENROUTER_MAX_RETRIES,
+    OPENROUTER_PROVIDER_SORT,
 )
 
 # ===========================================================================
@@ -455,12 +458,20 @@ def query_model_mmlu(model, prompt, api_key, params=None):
         "temperature": params["temperature"],
         "top_p": params["top_p"],
         "max_tokens": params["max_tokens"],
+        "provider": {"sort": OPENROUTER_PROVIDER_SORT, "allow_fallbacks": True},
     }
+
+    def log_retry(attempt, wait_seconds, status_code):
+        print(
+            f"    ! {model} got HTTP {status_code} - retrying in "
+            f"{wait_seconds:.1f}s (attempt {attempt}/{OPENROUTER_MAX_RETRIES})"
+        )
 
     start = time.time()
     try:
-        resp = requests.post(OPENROUTER_BASE_URL, headers=headers, json=payload,
-                             timeout=180)
+        resp = post_with_retry(
+            OPENROUTER_BASE_URL, headers, payload, timeout=180, on_retry=log_retry
+        )
         elapsed = time.time() - start
         resp.raise_for_status()
         raw = resp.json()["choices"][0]["message"]["content"].strip()

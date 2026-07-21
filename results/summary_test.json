@@ -4,10 +4,10 @@
     {
       "model": "google/gemma-3-4b-it",
       "name": "Gemma-3-4B",
-      "accuracy": 0.22,
-      "correct": 11,
-      "total": 50,
-      "avg_response_time": 0.579,
+      "accuracy": 0.219,
+      "correct": 219,
+      "total": 1000,
+      "avg_response_time": 1.198,
       "errors": 0
     },
     {

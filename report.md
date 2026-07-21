@@ -200,11 +200,11 @@ Latest saved metrics per model on the test split.
 
 | Model | Accuracy (%) | Correct | Total | Avg Latency (s) | Errors |
 |-------|-------------|---------|-------|-----------------|--------|
-| Gemma-3-4B | 22.0 | 11 | 50 | 0.579 | 0 |
+| Gemma-3-4B | 21.9 | 219 | 1000 | 1.198 | 0 |
 | Llama-3.2-3B | 20.8 | 208 | 1000 | 0.577 | 0 |
 | Ministral-8B | 38.1 | 381 | 1000 | 0.731 | 0 |
 
-Best accuracy: Ministral-8B at 38.1 percent. Fastest: Llama-3.2-3B at 0.577 s per query, with Gemma-3-4B essentially tied at 0.579 s.
+Best accuracy: Ministral-8B at 38.1 percent. Fastest: Llama-3.2-3B at 0.577 s per query. Gemma-3-4B's accuracy holds steady at 21.9 percent on the full 1,000-sample test split (consistent with its earlier 50-sample estimate of 22.0 percent), but at this sample size it is now clearly the slowest model at 1.198 s per query, well behind Llama-3.2-3B and Ministral-8B.
 
 #### Charts
 

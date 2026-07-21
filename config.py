@@ -8,6 +8,19 @@ load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
+# Retry/backoff for 429 (rate limit) and 5xx responses from OpenRouter.
+# Retry-After header is honored when present; otherwise exponential backoff
+# up to OPENROUTER_RETRY_MAX_DELAY, capped at OPENROUTER_MAX_RETRIES attempts.
+OPENROUTER_MAX_RETRIES = 6
+OPENROUTER_RETRY_BASE_DELAY = 2.0
+OPENROUTER_RETRY_MAX_DELAY = 30.0
+
+# Route to the provider currently serving each model fastest rather than the
+# cheapest one. Price-sorted routing (OpenRouter's default) tends to land on
+# whichever backend is busiest/cheapest, which is what actually causes most
+# sustained 429s here - it is provider congestion, not an account limit.
+OPENROUTER_PROVIDER_SORT = "throughput"
+
 MODELS = [
     "google/gemma-3-4b-it",
     "meta-llama/llama-3.2-3b-instruct",

@@ -1,5 +1,58 @@
 [
   {
+    "id": "20260721123811565367",
+    "timestamp": "2026-07-21 12:38:11",
+    "type": "single",
+    "samples": 1000,
+    "params": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 32,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "few_shot": 3
+    },
+    "models": [
+      {
+        "model": "google/gemma-3-4b-it",
+        "name": "Gemma-3-4B",
+        "developer": "Google",
+        "params": "4B",
+        "accuracy": 21.9,
+        "correct": 219,
+        "total": 1000,
+        "avg_response_time": 1.198,
+        "errors": 0
+      }
+    ]
+  },
+  {
+    "id": "20260721101523258124",
+    "timestamp": "2026-07-21 10:15:23",
+    "type": "mmlu-single",
+    "samples": 3,
+    "params": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 384,
+      "benchmark": "mmlu",
+      "subjects": "1 subject(s), 3 q each"
+    },
+    "models": [
+      {
+        "model": "google/gemma-3-4b-it",
+        "name": "Gemma-3-4B",
+        "developer": "Google",
+        "params": "4B",
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 3,
+        "avg_response_time": 9.466,
+        "errors": 0
+      }
+    ]
+  },
+  {
     "id": "20260713222540797961",
     "timestamp": "2026-07-13 22:25:40",
     "type": "single",
