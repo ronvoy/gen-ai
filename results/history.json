@@ -1,5 +1,101 @@
 [
   {
+    "id": "20260807010922230124",
+    "timestamp": "2026-08-07 01:09:22",
+    "type": "mmlu-all",
+    "samples": 2850,
+    "params": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 384,
+      "benchmark": "mmlu",
+      "subjects": "57 subject(s), 50 q each"
+    },
+    "models": [
+      {
+        "model": "google/gemma-3-4b-it",
+        "name": "Gemma-3-4B",
+        "developer": "Google",
+        "params": "4B",
+        "accuracy": 60.8,
+        "correct": 1733,
+        "total": 2850,
+        "avg_response_time": 9.416,
+        "errors": 12
+      },
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "name": "Llama-3.2-3B",
+        "developer": "Meta",
+        "params": "3B",
+        "accuracy": 54.5,
+        "correct": 1552,
+        "total": 2850,
+        "avg_response_time": 0.799,
+        "errors": 0
+      },
+      {
+        "model": "mistralai/ministral-8b-2512",
+        "name": "Ministral-8B",
+        "developer": "Mistral AI",
+        "params": "8B",
+        "accuracy": 79.5,
+        "correct": 2267,
+        "total": 2850,
+        "avg_response_time": 1.482,
+        "errors": 0
+      }
+    ]
+  },
+  {
+    "id": "20260807010133933547",
+    "timestamp": "2026-08-07 01:01:33",
+    "type": "mmlu-all",
+    "samples": 2850,
+    "params": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 384,
+      "benchmark": "mmlu",
+      "subjects": "57 subject(s), 50 q each"
+    },
+    "models": [
+      {
+        "model": "google/gemma-3-4b-it",
+        "name": "Gemma-3-4B",
+        "developer": "Google",
+        "params": "4B",
+        "accuracy": 60.4,
+        "correct": 1721,
+        "total": 2850,
+        "avg_response_time": 9.276,
+        "errors": 12
+      },
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "name": "Llama-3.2-3B",
+        "developer": "Meta",
+        "params": "3B",
+        "accuracy": 54.6,
+        "correct": 1555,
+        "total": 2850,
+        "avg_response_time": 0.784,
+        "errors": 0
+      },
+      {
+        "model": "mistralai/ministral-8b-2512",
+        "name": "Ministral-8B",
+        "developer": "Mistral AI",
+        "params": "8B",
+        "accuracy": 79.7,
+        "correct": 2270,
+        "total": 2850,
+        "avg_response_time": 1.492,
+        "errors": 0
+      }
+    ]
+  },
+  {
     "id": "20260721123811565367",
     "timestamp": "2026-07-21 12:38:11",
     "type": "single",
