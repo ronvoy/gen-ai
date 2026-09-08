@@ -5,7 +5,7 @@ import random
 import re
 import requests
 
-from openrouter_client import post_with_retry
+from openrouter_client import THROTTLE, post_with_retry
 from config import (
     OPENROUTER_API_KEY,
     OPENROUTER_BASE_URL,
@@ -203,6 +203,7 @@ def evaluate_model(model, passages, api_key, params=None, progress=None):
     results = []
     correct = 0
     total = 0
+    answered = 0          # passages the API actually returned a response for
     total_time = 0.0
     errors = 0
 
@@ -219,6 +220,8 @@ def evaluate_model(model, passages, api_key, params=None, progress=None):
         total_time += elapsed
         if error:
             errors += 1
+        else:
+            answered += 1
 
         results.append(
             {
@@ -245,17 +248,24 @@ def evaluate_model(model, passages, api_key, params=None, progress=None):
                 f"- Accuracy so far: {correct / total:.2%}"
             )
 
-    accuracy = correct / total if total > 0 else 0
+    # Scored over passages the API answered: a refused request (429, timeout)
+    # is a serving failure, not a wrong prediction, and counting it as one
+    # deflates the score during a rate-limit streak.
+    accuracy = correct / answered if answered > 0 else 0
     avg_time = total_time / total if total > 0 else 0
 
     return {
         "model": model,
         "total": total,
+        "answered": answered,
         "correct": correct,
         "accuracy": round(accuracy, 4),
+        "accuracy_including_errors": round(
+            correct / total, 4) if total else 0,
         "avg_response_time": round(avg_time, 3),
         "total_time": round(total_time, 2),
         "errors": errors,
+        "throttle": THROTTLE.stats(),
         "params": params,
         "results": results,
     }

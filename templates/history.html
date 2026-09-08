@@ -1,51 +1,116 @@
 {% extends "base.html" %}
 {% block nav_history %}active{% endblock %}
-{% block title %}History - LAMBADA Benchmark{% endblock %}
+{% block navm_history %}active{% endblock %}
+{% block nav_current %}History{% endblock %}
+{% block title %}History - SLM Benchmark{% endblock %}
 
 {% block content %}
-<div class="d-flex justify-content-between align-items-end mb-4">
+<div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4">
   <div>
     <h3 class="mb-1">Run History</h3>
-    <p class="text-muted mb-0">Past benchmark runs with their metrics and charts.</p>
+    <p class="text-muted small mb-0">
+      Every saved run, newest first. Extended runs carry the full metric
+      taxonomy and link through to the Analysis view.
+    </p>
   </div>
-  <a href="{{ url_for('index') }}" class="btn btn-outline-primary">New Run</a>
+  <a href="{{ url_for('index') }}" class="btn btn-outline-primary btn-sm">New Run</a>
 </div>
 
 {% if not runs %}
-<div class="alert alert-light border text-muted">No runs recorded yet. Start one from the Benchmark tab.</div>
+<div class="alert alert-light border text-muted">
+  No runs recorded yet. Start one from the LAMBADA or MMLU tab, or run
+  <code>python run_benchmark.py --benchmark mmlu --calibration</code> for an extended run.
+</div>
 {% endif %}
 
 {% for run in runs %}
 <div class="card mb-4" data-run-card="{{ run.id }}">
   <div class="card-body">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div>
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+      <div class="min-width-0">
         <span class="fw-semibold">{{ run.timestamp }}</span>
-        <span class="badge text-bg-secondary ms-2">{{ 'All models' if run.type == 'all' else 'Single model' }}</span>
+        {% if run.extended %}
+          <span class="badge text-bg-primary ms-1">{{ run.benchmark | upper }} · extended</span>
+          {% if run.comparable is defined and not run.comparable %}
+            <span class="badge text-bg-warning-subtle text-warning-emphasis border border-warning-subtle ms-1">confounded</span>
+          {% endif %}
+        {% else %}
+          <span class="badge text-bg-secondary ms-1">{{ 'All models' if run.type == 'all' else 'Single model' }}</span>
+        {% endif %}
       </div>
-      <div class="d-flex align-items-center gap-3">
-        <span class="text-muted small">{{ run.samples }} samples</span>
+      <div class="d-flex align-items-center gap-2">
+        <span class="text-muted small">{{ run.samples }} items</span>
+        {% if run.extended %}
+        <a class="btn btn-sm btn-outline-secondary"
+           href="{{ url_for('analysis_export', benchmark=run.benchmark or 'mmlu') }}">JSON</a>
+        {% endif %}
         <button type="button" class="btn btn-sm btn-outline-danger delete-run" data-run="{{ run.id }}">Delete</button>
       </div>
     </div>
+
+    {% if run.extended %}
+    <!-- Which metric families this run actually populated, and the passes that
+         produced them. Makes it obvious why an old run has no calibration. -->
+    <div class="mb-3">
+      {% for fam, ok in (run.families or {}).items() %}
+        <span class="cfg-chip {{ 'on' if ok else '' }}">
+          {{ fam.replace('_', ' ') }}{{ ' ✓' if ok else ' ✗' }}</span>
+      {% endfor %}
+    </div>
+    <div class="mb-3">
+      {% for k, v in (run.params or {}).items() %}
+        {% if v is not none and v != false and v != [] %}
+        <span class="cfg-chip">{{ k }}={{ v if v is not sameas true else 'on' }}</span>
+        {% endif %}
+      {% endfor %}
+      {% if run.parallelism %}
+        <span class="cfg-chip {{ 'on' if run.parallelism.controlled else '' }}">
+          TP{{ run.parallelism.tensor_parallel }}·PP{{ run.parallelism.pipeline_parallel }}·DP{{ run.parallelism.data_parallel }}·SP{{ run.parallelism.sequence_parallel }}·CP{{ run.parallelism.context_parallel }}·EP{{ run.parallelism.expert_parallel }}
+          {{ '(controlled)' if run.parallelism.controlled else '(provider-chosen)' }}
+        </span>
+      {% endif %}
+    </div>
+    {% endif %}
 
     <div class="table-responsive mb-3">
       <table class="table table-sm table-bordered align-middle mb-0">
         <thead class="table-light">
           <tr>
-            <th>Model</th><th>Accuracy (%)</th><th>Correct</th>
-            <th>Total</th><th>Avg time (s)</th><th>Errors</th>
+            {% if run.extended %}<th>#</th>{% endif %}
+            <th>Model</th><th>Accuracy (%)</th><th class="d-none d-sm-table-cell">Correct</th>
+            <th class="d-none d-sm-table-cell">Total</th><th>Avg time (s)</th>
+            {% if run.extended %}
+              <th class="d-none d-md-table-cell">Composite</th>
+              <th class="d-none d-lg-table-cell">$ / correct</th>
+              <th class="d-none d-lg-table-cell">Provider</th>
+            {% else %}
+              <th>Errors</th>
+            {% endif %}
           </tr>
         </thead>
         <tbody>
           {% for m in run.models %}
+          {# Entries written by the web app and by run_benchmark.py carry
+             slightly different model dicts, so every extended-only field is
+             read defensively rather than assumed present. #}
           <tr>
-            <td>{{ m.name }}</td>
+            {% if run.extended %}<td>{{ m.get('rank') or '-' }}</td>{% endif %}
+            <td class="small">{{ m.name }}</td>
             <td>{{ m.accuracy }}</td>
-            <td>{{ m.correct }}</td>
-            <td>{{ m.total }}</td>
+            <td class="d-none d-sm-table-cell">{{ m.correct }}</td>
+            <td class="d-none d-sm-table-cell">{{ m.total }}</td>
             <td>{{ m.avg_response_time }}</td>
-            <td>{{ m.errors }}</td>
+            {% if run.extended %}
+              <td class="d-none d-md-table-cell">
+                {% if m.get('composite_score') is not none %}{{ '%.3f' % m.get('composite_score') }}
+                {% else %}-{% endif %}</td>
+              <td class="d-none d-lg-table-cell small">
+                {% if m.get('cost_per_correct_usd') %}{{ '$%.6f' % m.get('cost_per_correct_usd') }}
+                {% else %}-{% endif %}</td>
+              <td class="d-none d-lg-table-cell small text-muted">{{ m.get('provider') or '-' }}</td>
+            {% else %}
+              <td>{{ m.errors }}</td>
+            {% endif %}
           </tr>
           {% endfor %}
         </tbody>
@@ -56,6 +121,48 @@
       <div class="col-12 col-lg-6"><canvas class="acc-chart" data-run="{{ run.id }}"></canvas></div>
       <div class="col-12 col-lg-6"><canvas class="time-chart" data-run="{{ run.id }}"></canvas></div>
     </div>
+
+    {% if run.metrics %}
+    <!-- Full stage 1-9 breakdown for this run, one collapsible per model.
+         The blocks are stored with the history entry, so an older run keeps
+         showing the numbers it actually produced rather than the latest ones. -->
+    <div class="m-section mt-3">
+      <button class="m-head collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#ext-{{ run.id }}" aria-expanded="false"
+              aria-controls="ext-{{ run.id }}">
+        <span class="m-ico">📊</span>
+        <span class="flex-grow-1">Extended analysis
+          <span class="m-sub d-block">
+            Stages 1-9 for {{ run.metrics | length }} model(s) - quality, calibration,
+            consistency, robustness, latency, tokens, cost, reliability
+          </span></span>
+        <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+             viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd"
+             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+      </button>
+      <div class="collapse" id="ext-{{ run.id }}">
+        <div class="m-body pt-2">
+          <ul class="nav nav-pills nav-fill mb-2 small" role="tablist">
+            {% for model_id in run.metrics %}
+            <li class="nav-item">
+              <button class="nav-link py-1 px-2 {{ 'active' if loop.first }}"
+                      data-bs-toggle="pill" data-bs-target="#mm-{{ run.id }}-{{ loop.index }}"
+                      type="button">{{ model_id.split('/')[-1] }}</button>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="tab-content">
+            {% for model_id in run.metrics %}
+            <div class="tab-pane fade {{ 'show active' if loop.first }}"
+                 id="mm-{{ run.id }}-{{ loop.index }}"
+                 data-metrics-run="{{ run.id }}" data-metrics-model="{{ model_id }}"
+                 data-uid="{{ run.id }}-{{ loop.index }}"></div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
@@ -63,9 +170,27 @@
 
 {% block scripts %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+{% include "_metric_render.html" %}
 <script>
   const runs = {{ runs | tojson }};
   const byId = Object.fromEntries(runs.map(r => [r.id, r]));
+
+  // Extended blocks are rendered lazily: a History page with several runs
+  // would otherwise build thousands of nodes up front for panels nobody opens.
+  const rendered = new Set();
+  function renderPane(pane) {
+    if (rendered.has(pane.id)) return;
+    const run = byId[pane.dataset.metricsRun];
+    const blocks = run && run.metrics && run.metrics[pane.dataset.metricsModel];
+    if (!blocks) { pane.innerHTML = '<p class="small text-muted">No extended metrics stored for this model.</p>'; return; }
+    pane.innerHTML = renderModelMetrics(blocks, pane.dataset.uid);
+    rendered.add(pane.id);
+  }
+  document.querySelectorAll('[id^="ext-"]').forEach(wrap => {
+    wrap.addEventListener('show.bs.collapse', () => {
+      wrap.querySelectorAll('[data-metrics-run]').forEach(renderPane);
+    });
+  });
 
   function barChart(canvas, labels, data, label, color, maxY) {
     const opts = { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } };

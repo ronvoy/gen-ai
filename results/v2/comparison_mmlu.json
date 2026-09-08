@@ -1,0 +1,113 @@
+{
+  "benchmark": "mmlu",
+  "ranking": [
+    {
+      "model": "mistralai/ministral-8b-2512",
+      "quality": 0.8125,
+      "calibration_score": null,
+      "robustness_score": 0.8558,
+      "efficiency_score": 0.588,
+      "reliability_score": 0.9688,
+      "components_used": [
+        "efficiency",
+        "quality",
+        "reliability",
+        "robustness"
+      ],
+      "composite_score": 0.8121,
+      "mean_latency_s": 2.5475,
+      "ttft_mean_s": 1.1829,
+      "cost_total_usd": 0.001379,
+      "cost_per_correct_usd": 5.3e-05,
+      "cost_per_1m_tokens_usd": 0.1574,
+      "total_tokens": 8761,
+      "success_rate": 0.9688,
+      "rank": 1
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "quality": 0.7188,
+      "calibration_score": null,
+      "robustness_score": 0.8369,
+      "efficiency_score": 0.7159,
+      "reliability_score": 1.0,
+      "components_used": [
+        "efficiency",
+        "quality",
+        "reliability",
+        "robustness"
+      ],
+      "composite_score": 0.7724,
+      "mean_latency_s": 2.0923,
+      "ttft_mean_s": 0.7901,
+      "cost_total_usd": 0.000759,
+      "cost_per_correct_usd": 3.3e-05,
+      "cost_per_1m_tokens_usd": 0.0795,
+      "total_tokens": 9540,
+      "success_rate": 1.0,
+      "rank": 2
+    },
+    {
+      "model": "meta-llama/llama-3.2-3b-instruct",
+      "quality": 0.5312,
+      "calibration_score": 0.7015,
+      "robustness_score": 1.0,
+      "efficiency_score": 1.0,
+      "reliability_score": 0.9688,
+      "components_used": [
+        "calibration",
+        "efficiency",
+        "quality",
+        "reliability",
+        "robustness"
+      ],
+      "composite_score": 0.7177,
+      "mean_latency_s": 1.4979,
+      "ttft_mean_s": 0.7703,
+      "cost_total_usd": 0.001401,
+      "cost_per_correct_usd": 8.2e-05,
+      "cost_per_1m_tokens_usd": 0.1507,
+      "total_tokens": 9297,
+      "success_rate": 1.0,
+      "rank": 3
+    }
+  ],
+  "comparable": true,
+  "comparability_note": "all models share one run configuration - differences are attributable to the models",
+  "composite_weights": {
+    "quality": 0.5,
+    "calibration": 0.15,
+    "robustness": 0.15,
+    "efficiency": 0.1,
+    "reliability": 0.1
+  },
+  "provider_capabilities": {
+    "google/gemma-3-4b-it": {
+      "reachable": true,
+      "provider": "DeepInfra",
+      "logprobs": false,
+      "streaming_ttft": true,
+      "usage_accounting": true,
+      "cost_accounting": true,
+      "error": null
+    },
+    "meta-llama/llama-3.2-3b-instruct": {
+      "reachable": true,
+      "provider": "Parasail",
+      "logprobs": true,
+      "streaming_ttft": true,
+      "usage_accounting": true,
+      "cost_accounting": true,
+      "error": null
+    },
+    "mistralai/ministral-8b-2512": {
+      "reachable": true,
+      "provider": "Mistral",
+      "logprobs": false,
+      "streaming_ttft": true,
+      "usage_accounting": true,
+      "cost_accounting": true,
+      "error": null
+    }
+  }
+}

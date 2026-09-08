@@ -1,0 +1,354 @@
+"""Generate the report's results tables from results/v2/*.json.
+
+Keeps §7.5 of report.md in sync with whatever the last extended run actually
+produced, so the report cannot drift from the data. Run after run_benchmark.py:
+
+    python make_results_section.py           # print the markdown
+    python make_results_section.py --write   # splice it into report.md
+"""
+
+import argparse
+import glob
+import json
+import os
+import re
+
+RESULTS_V2 = os.path.join("results", "v2")
+REPORT = "report.md"
+
+SHORT = {
+    "google/gemma-3-4b-it": "Gemma-3-4B",
+    "meta-llama/llama-3.2-3b-instruct": "Llama-3.2-3B",
+    "mistralai/ministral-8b-2512": "Ministral-8B",
+}
+
+
+def dig(d, path, default=None):
+    cur = d
+    for part in path.split("."):
+        if not isinstance(cur, dict) or part not in cur:
+            return default
+        cur = cur[part]
+    return cur if cur is not None else default
+
+
+def fmt(v, spec="{:.3f}", dash="-"):
+    if v is None:
+        return dash
+    try:
+        return spec.format(v)
+    except (TypeError, ValueError):
+        return str(v)
+
+
+def pct(v, dash="-"):
+    return dash if v is None else f"{v * 100:.1f}%"
+
+
+def load(benchmark):
+    out = []
+    for path in sorted(glob.glob(os.path.join(RESULTS_V2, f"*_{benchmark}_v2.json"))):
+        with open(path, "r", encoding="utf-8") as fh:
+            out.append(json.load(fh))
+    return out
+
+
+def load_comparison(benchmark):
+    path = os.path.join(RESULTS_V2, f"comparison_{benchmark}.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, "r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def name(m):
+    return SHORT.get(m.get("model", ""), m.get("model", "").split("/")[-1])
+
+
+# ---------------------------------------------------------------------------
+# Table builders - one per stage group
+# ---------------------------------------------------------------------------
+
+def quality_table(models, benchmark):
+    key = "overall_accuracy" if benchmark == "mmlu" else "last_word_accuracy"
+    ci_key = key + "_ci95"
+    rows = ["| Model | Accuracy | 95% CI | Macro (subject) | Normalised | Error rate | Parse fail |",
+            "|---|---|---|---|---|---|---|"]
+    for m in models:
+        tq = m.get("task_quality", {})
+        ci = tq.get(ci_key) or []
+        ci_txt = f"{ci[0]*100:.1f}–{ci[1]*100:.1f}%" if len(ci) == 2 else "-"
+        # MMLU reports parse_failure_rate, LAMBADA empty_prediction_rate.
+        # Tested against None, not truthiness: a rate of 0.0 is a real
+        # measurement and must not fall through to the other field.
+        fail = tq.get("parse_failure_rate")
+        if fail is None:
+            fail = tq.get("empty_prediction_rate")
+        rows.append(
+            f"| {name(m)} | **{pct(tq.get(key))}** | {ci_txt} | "
+            f"{pct(tq.get('macro_accuracy_subject'))} | "
+            f"{pct(tq.get('normalised_accuracy'))} | "
+            f"{pct(tq.get('error_rate'))} | {pct(fail)} |"
+        )
+    return "\n".join(rows)
+
+
+def calibration_table(models):
+    """Stage 2 table, with the serving provider alongside.
+
+    The provider column is not decoration: whether this stage yields any
+    numbers at all is a property of the provider OpenRouter routed to, not of
+    the model. Printing them side by side is what makes an empty row
+    interpretable instead of mysterious.
+    """
+    rows = ["| Model | Provider | Available | Coverage | P(correct) | NLL | Perplexity | ECE | Brier |",
+            "|---|---|---|---|---|---|---|---|---|"]
+    for m in models:
+        p = m.get("probability", {})
+        prov = ", ".join(
+            (m.get("reliability", {}).get("providers_used") or {}).keys()) or "-"
+        if not p.get("available"):
+            rows.append(f"| {name(m)} | {prov} | no | - | - | - | - | - | - |")
+            continue
+        rows.append(
+            f"| {name(m)} | {prov} | yes | {pct(p.get('coverage'))} | "
+            f"{fmt(p.get('correct_option_probability'), '{:.4f}')} | "
+            f"{fmt(p.get('nll'), '{:.4f}')} | {fmt(p.get('perplexity'))} | "
+            f"{fmt(p.get('ece'), '{:.4f}')} | {fmt(p.get('brier_score'), '{:.4f}')} |"
+        )
+    return "\n".join(rows)
+
+
+def consistency_table(models):
+    rows = ["| Model | Answer stability | Majority-vote acc. | Single-sample acc. | Self-consistency gain | Mean agreement |",
+            "|---|---|---|---|---|---|"]
+    any_data = False
+    for m in models:
+        c = m.get("consistency", {})
+        if not c.get("available"):
+            rows.append(f"| {name(m)} | - | - | - | - | - |")
+            continue
+        any_data = True
+        sc = c.get("self_consistency", {})
+        rows.append(
+            f"| {name(m)} | {pct(c.get('answer_stability'))} | "
+            f"{pct(sc.get('majority_vote_accuracy'))} | "
+            f"{pct(sc.get('mean_single_sample_accuracy'))} | "
+            f"{fmt(sc.get('self_consistency_gain'), '{:+.4f}')} | "
+            f"{pct(sc.get('mean_agreement'))} |"
+        )
+    return "\n".join(rows) if any_data else None
+
+
+def robustness_table(models):
+    variants = []
+    for m in models:
+        variants += list((m.get("robustness", {}).get("variants") or {}).keys())
+    variants = sorted(set(variants))
+    if not variants:
+        return None
+    head = "| Model | Score | " + " | ".join(v.replace("_", " ") for v in variants) + " | Worst |"
+    sep = "|---" * (len(variants) + 3) + "|"
+    rows = [head, sep]
+    for m in models:
+        r = m.get("robustness", {})
+        if not r.get("available"):
+            rows.append(f"| {name(m)} |" + " - |" * (len(variants) + 2))
+            continue
+        cells = []
+        for v in variants:
+            d = (r.get("variants") or {}).get(v)
+            cells.append(f"{d['accuracy_drop']:+.3f}" if d and d.get("accuracy_drop") is not None else "-")
+        rows.append(
+            f"| {name(m)} | {fmt(r.get('robustness_score'))} | " + " | ".join(cells) +
+            f" | {(r.get('worst_variant') or '-').replace('_', ' ')} |"
+        )
+    return "\n".join(rows)
+
+
+def context_table(models):
+    rows = ["| Model | Full | Last sentence | Last 10 words | No context | Utilisation | Ratio |",
+            "|---|---|---|---|---|---|---|"]
+    any_data = False
+    for m in models:
+        c = m.get("context", {})
+        if not c.get("available") or not c.get("ablations"):
+            continue
+        any_data = True
+        ab = c["ablations"]
+        full = dig(ab, "last_sentence.full_accuracy")
+        rows.append(
+            f"| {name(m)} | {pct(full)} | "
+            f"{pct(dig(ab, 'last_sentence.ablated_accuracy'))} | "
+            f"{pct(dig(ab, 'last_10_words.ablated_accuracy'))} | "
+            f"{pct(dig(ab, 'no_context.ablated_accuracy'))} | "
+            f"{fmt(c.get('context_utilization'), '{:+.4f}')} | "
+            f"{fmt(c.get('utilization_ratio'), '{:.3f}')} |"
+        )
+    return "\n".join(rows) if any_data else None
+
+
+def performance_table(models):
+    rows = ["| Model | TTFT mean | TTFT p95 | TPOT mean | E2E mean | E2E p95 | Decode tok/s |",
+            "|---|---|---|---|---|---|---|"]
+    for m in models:
+        a = m.get("api_performance", {})
+        rows.append(
+            f"| {name(m)} | {fmt(dig(a, 'latency.ttft.mean'), '{:.3f} s')} | "
+            f"{fmt(dig(a, 'latency.ttft.p95'), '{:.3f} s')} | "
+            f"{fmt(dig(a, 'latency.tpot.mean'), '{:.4f} s')} | "
+            f"{fmt(dig(a, 'latency.e2e.mean'), '{:.3f} s')} | "
+            f"{fmt(dig(a, 'latency.e2e.p95'), '{:.3f} s')} | "
+            f"{fmt(dig(a, 'throughput.decode_tokens_per_s'), '{:.1f}')} |"
+        )
+    return "\n".join(rows)
+
+
+def tokens_cost_table(models):
+    rows = ["| Model | Prompt tok | Completion tok | Reasoning tok | Tokens/item | Tokens/correct | Total cost | $/1M tok | $/correct |",
+            "|---|---|---|---|---|---|---|---|---|"]
+    for m in models:
+        t = m.get("token_efficiency", {})
+        e = m.get("economics", {})
+        rows.append(
+            f"| {name(m)} | {fmt(t.get('prompt_tokens_total'), '{:,}')} | "
+            f"{fmt(t.get('completion_tokens_total'), '{:,}')} | "
+            f"{fmt(t.get('reasoning_tokens_total'), '{:,}')} | "
+            f"{fmt(t.get('tokens_per_item'), '{:.1f}')} | "
+            f"{fmt(t.get('tokens_per_correct_answer'), '{:.1f}')} | "
+            f"{fmt(e.get('total_usd'), '${:.6f}')} | "
+            f"{fmt(e.get('cost_per_1m_tokens_usd'), '${:.4f}')} | "
+            f"{fmt(e.get('cost_per_correct_answer_usd'), '${:.6f}')} |"
+        )
+    return "\n".join(rows)
+
+
+def reliability_table(models):
+    rows = ["| Model | Provider | Success | Failure | Invalid output | Timeout | 429 | Retries | Failover |",
+            "|---|---|---|---|---|---|---|---|---|"]
+    for m in models:
+        r = m.get("reliability", {})
+        prov = ", ".join((r.get("providers_used") or {}).keys()) or "-"
+        rows.append(
+            f"| {name(m)} | {prov} | {pct(r.get('success_rate'))} | "
+            f"{pct(r.get('failure_rate'))} | {pct(r.get('invalid_output_rate'))} | "
+            f"{pct(r.get('timeout_rate'))} | {pct(r.get('rate_limit_rate'))} | "
+            f"{r.get('retry_total', '-')} | "
+            f"{'yes' if r.get('provider_failover') else 'no'} |"
+        )
+    return "\n".join(rows)
+
+
+def ranking_table(comparison):
+    if not comparison or not comparison.get("ranking"):
+        return None
+    rows = ["| # | Model | Quality | Calibration | Robustness | Efficiency | Reliability | Composite |",
+            "|---|---|---|---|---|---|---|---|"]
+    for r in comparison["ranking"]:
+        rows.append(
+            f"| {r['rank']} | {SHORT.get(r['model'], r['model'].split('/')[-1])} | "
+            f"{fmt(r.get('quality'))} | {fmt(r.get('calibration_score'))} | "
+            f"{fmt(r.get('robustness_score'))} | {fmt(r.get('efficiency_score'))} | "
+            f"{fmt(r.get('reliability_score'))} | **{fmt(r.get('composite_score'))}** |"
+        )
+    return "\n".join(rows)
+
+
+# ---------------------------------------------------------------------------
+
+def build_section():
+    parts = ["### 7.5 Extended Framework — Full Run Results\n"]
+
+    for benchmark, label in (("mmlu", "MMLU"), ("lambada", "LAMBADA")):
+        models = load(benchmark)
+        if not models:
+            continue
+        cfg = (models[0].get("config") or {})
+        ds = cfg.get("dataset") or {}
+        ev = cfg.get("evaluation") or {}
+        n = ds.get("n_items") or dig(models[0], "task_quality.n_questions") \
+            or dig(models[0], "task_quality.n_passages")
+
+        passes = ["main"]
+        if ev.get("request_logprobs"):
+            passes.append("calibration")
+        if (ev.get("repeats_for_consistency") or 1) > 1:
+            passes.append(f"{ev['repeats_for_consistency']} repeats")
+        if ev.get("robustness_variants"):
+            passes.append("robustness")
+        if ev.get("context_ablations"):
+            passes.append("context ablation")
+
+        parts.append(f"\n#### {label}\n")
+        parts.append(
+            f"{n} items per model, {len(models)} "            f"model{'s' if len(models) != 1 else ''}. "
+            f"Passes: {', '.join(passes)}. "
+            f"Decoding: temperature {dig(cfg, 'decoding.temperature')}, "
+            f"max_tokens {dig(cfg, 'decoding.max_tokens')}.\n"
+        )
+
+        parts.append(f"\n**Stage 1 — Task Quality**\n\n{quality_table(models, benchmark)}\n")
+        parts.append(f"\n**Stage 2 — Probabilistic Quality**\n\n{calibration_table(models)}\n")
+
+        # Coverage is a property of the routed provider, not of the model, and
+        # the routing can differ between two runs minutes apart. Say so next to
+        # the table rather than leaving an empty row to be misread as "this
+        # model has no probabilities".
+        covered = [m for m in models if dig(m, "probability.available")]
+        if len(covered) < len(models):
+            missing = ", ".join(name(m) for m in models if m not in covered)
+            parts.append(
+                f"\nStage 2 is available only where the routed provider returns token "
+                f"log-probabilities. In this run it was unavailable for: {missing}. "
+                f"This is a property of the *provider*, not the model — the same model "
+                f"can yield calibration on one run and none on the next, so the "
+                f"provider is listed alongside every row.\n")
+
+        t = consistency_table(models)
+        if t:
+            parts.append(f"\n**Stage 3 — Reasoning & Consistency**\n\n{t}\n")
+        t = context_table(models)
+        if t:
+            parts.append(f"\n**Stage 4 — Context Behavior**\n\n{t}\n")
+        t = robustness_table(models)
+        if t:
+            parts.append(
+                f"\n**Stage 5 — Robustness** (accuracy drop vs the clean baseline; "
+                f"negative means the variant scored *higher*)\n\n{t}\n")
+
+        parts.append(f"\n**Stage 6 — API Performance**\n\n{performance_table(models)}\n")
+        parts.append(f"\n**Stages 7 & 8 — Token Efficiency and Economics**\n\n{tokens_cost_table(models)}\n")
+        parts.append(f"\n**Stage 9 — Reliability**\n\n{reliability_table(models)}\n")
+
+        rank = ranking_table(load_comparison(benchmark))
+        if rank:
+            parts.append(f"\n**Composite ranking**\n\n{rank}\n")
+            comp = load_comparison(benchmark)
+            parts.append(f"\n{comp.get('comparability_note', '')}\n")
+
+    return "\n".join(parts)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--write", action="store_true", help="splice into report.md")
+    args = ap.parse_args()
+
+    section = build_section()
+    if not args.write:
+        print(section)
+        return
+
+    text = open(REPORT, encoding="utf-8").read()
+    # Replace everything from the 7.5 heading up to the next heading of the
+    # same or higher level.
+    pattern = re.compile(r"### 7\.5 .*?(?=\n### |\n## )", re.S)
+    if not pattern.search(text):
+        raise SystemExit("could not find section 7.5 in report.md")
+    text = pattern.sub(section.rstrip() + "\n\n", text, count=1)
+    open(REPORT, "w", encoding="utf-8").write(text)
+    print(f"report.md updated ({len(section)} chars written into 7.5)")
+
+
+if __name__ == "__main__":
+    main()

@@ -5,18 +5,18 @@
       "model": "mistralai/ministral-8b-2512",
       "name": "Ministral-8B",
       "params": "8B",
-      "accuracy": 0.7954,
-      "avg_response_time": 1.482,
-      "consistency_rate": 0.6951,
+      "accuracy": 0.7937,
+      "avg_response_time": 1.406,
+      "consistency_rate": 0.6965,
       "reasoning_rate": 1.0,
       "avg_reasoning_words": 55.7,
       "category_accuracy": {
-        "stem": 0.8067,
-        "humanities": 0.7508,
-        "social_sciences": 0.8183,
-        "other": 0.8029
+        "stem": 0.7989,
+        "humanities": 0.7692,
+        "social_sciences": 0.8167,
+        "other": 0.79
       },
-      "composite_score": 0.7419,
+      "composite_score": 0.734,
       "ranks": {
         "accuracy": 1,
         "speed": 2,
@@ -82,7 +82,7 @@
         "world_religions"
       ],
       "total": 2850,
-      "correct": 2267,
+      "correct": 2262,
       "errors": 0,
       "rank": 1
     },
@@ -90,18 +90,18 @@
       "model": "meta-llama/llama-3.2-3b-instruct",
       "name": "Llama-3.2-3B",
       "params": "3B",
-      "accuracy": 0.5446,
-      "avg_response_time": 0.799,
-      "consistency_rate": 0.6032,
-      "reasoning_rate": 0.9944,
-      "avg_reasoning_words": 61.0,
+      "accuracy": 0.5474,
+      "avg_response_time": 0.693,
+      "consistency_rate": 0.5965,
+      "reasoning_rate": 0.9947,
+      "avg_reasoning_words": 61.1,
       "category_accuracy": {
-        "stem": 0.4144,
-        "humanities": 0.5785,
-        "social_sciences": 0.605,
-        "other": 0.6286
+        "stem": 0.42,
+        "humanities": 0.5831,
+        "social_sciences": 0.62,
+        "other": 0.6157
       },
-      "composite_score": 0.6217,
+      "composite_score": 0.6227,
       "ranks": {
         "accuracy": 3,
         "speed": 1,
@@ -167,7 +167,7 @@
         "world_religions"
       ],
       "total": 2850,
-      "correct": 1552,
+      "correct": 1560,
       "errors": 0,
       "rank": 2
     },
@@ -175,18 +175,18 @@
       "model": "google/gemma-3-4b-it",
       "name": "Gemma-3-4B",
       "params": "4B",
-      "accuracy": 0.6081,
-      "avg_response_time": 9.416,
-      "consistency_rate": 0.6495,
-      "reasoning_rate": 0.9958,
-      "avg_reasoning_words": 58.6,
+      "accuracy": 0.6118,
+      "avg_response_time": 2.21,
+      "consistency_rate": 0.6488,
+      "reasoning_rate": 0.9996,
+      "avg_reasoning_words": 58.8,
       "category_accuracy": {
-        "stem": 0.5533,
-        "humanities": 0.6185,
-        "social_sciences": 0.6567,
-        "other": 0.6271
+        "stem": 0.5484,
+        "humanities": 0.62,
+        "social_sciences": 0.6683,
+        "other": 0.6371
       },
-      "composite_score": 0.5358,
+      "composite_score": 0.5726,
       "ranks": {
         "accuracy": 2,
         "speed": 3,
@@ -252,34 +252,34 @@
         "world_religions"
       ],
       "total": 2850,
-      "correct": 1733,
-      "errors": 12,
+      "correct": 1743,
+      "errors": 1,
       "rank": 3
     }
   ],
   "models": [
     {
       "model": "google/gemma-3-4b-it",
-      "accuracy": 0.6081,
-      "correct": 1733,
+      "accuracy": 0.6118,
+      "correct": 1743,
       "total": 2850,
-      "avg_response_time": 9.416,
-      "errors": 12
+      "avg_response_time": 2.21,
+      "errors": 1
     },
     {
       "model": "meta-llama/llama-3.2-3b-instruct",
-      "accuracy": 0.5446,
-      "correct": 1552,
+      "accuracy": 0.5474,
+      "correct": 1560,
       "total": 2850,
-      "avg_response_time": 0.799,
+      "avg_response_time": 0.693,
       "errors": 0
     },
     {
       "model": "mistralai/ministral-8b-2512",
-      "accuracy": 0.7954,
-      "correct": 2267,
+      "accuracy": 0.7937,
+      "correct": 2262,
       "total": 2850,
-      "avg_response_time": 1.482,
+      "avg_response_time": 1.406,
       "errors": 0
     }
   ]

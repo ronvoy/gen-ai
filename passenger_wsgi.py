@@ -22,10 +22,12 @@ from flask import Flask, render_template, request, jsonify, send_from_directory,
 from config import (
     MODELS, MODEL_INFO, DATASET_FILES, RESULTS_DIR, DIAGRAMS_DIR,
     PRESETS, MMLU_PRESETS, MIN_SAMPLES, MAX_SAMPLES,
+    DECODING_PARAMS, EVAL_PASSES,
 )
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPORT_PATH = os.path.join(BASE_DIR, "report.md")
+RESULTS_V2_DIR = os.path.join(RESULTS_DIR, "v2")
 
 app = Flask(__name__)
 
@@ -165,16 +167,40 @@ def load_history():
         return []
 
 
-def append_history(run_type, samples, model_results, params=None):
-    """Append a run record and return the stored entry."""
+def append_history(run_type, samples, model_results, params=None,
+                   benchmark="lambada", passes=None):
+    """Append a run record and return the stored entry.
+
+    Extended stage 1-9 blocks travel with the entry, so the History tab can
+    show the full breakdown per run without re-reading results/v2 - and so a
+    later run cannot overwrite the numbers an older entry is displaying.
+    """
+    extended = {}
+    for r in model_results:
+        blocks = r.get("extended")
+        if blocks:
+            extended[r["model"]] = blocks
+
     entry = {
         "id": datetime.now().strftime("%Y%m%d%H%M%S%f"),
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "type": run_type,
+        "benchmark": benchmark,
         "samples": samples,
         "params": params or {},
+        "passes": passes or {},
         "models": [_metric_from_result(r) for r in model_results],
     }
+    if extended:
+        entry["extended"] = True
+        entry["metrics"] = extended
+        first = next(iter(extended.values()))
+        entry["families"] = {
+            k: bool(first.get(k) and first[k].get("available") is not False)
+            for k in EXTENDED_KEYS if k in first
+        }
+        entry["parallelism"] = (first.get("config") or {}).get("parallelism", {})
+
     history = load_history()
     history.insert(0, entry)
     os.makedirs(os.path.join(BASE_DIR, RESULTS_DIR), exist_ok=True)
@@ -185,7 +211,8 @@ def append_history(run_type, samples, model_results, params=None):
 
 # run benchmark for each model
 
-def run_single_benchmark(model_id, num_samples, params=None, split="test", log=None):
+def run_single_benchmark(model_id, num_samples, params=None, split="test", log=None,
+                         passes=None):
     """Run LAMBADA for one model, save its result file, refresh the summary."""
     from config import OPENROUTER_API_KEY
     from evaluate_lambada import load_dataset, evaluate_model
@@ -229,6 +256,10 @@ def run_single_benchmark(model_id, num_samples, params=None, split="test", log=N
         json.dump(result, f, indent=2, ensure_ascii=False)
 
     rebuild_summary(split)
+
+    result["extended"] = build_extended_for_run(
+        model_id, "lambada", passages, params or {}, passes or {}, log,
+    )
     log(
         f"Done: {_short(model_id)} - accuracy {result['accuracy']:.1%} "
         f"({result['correct']}/{result['total']}), "
@@ -262,12 +293,16 @@ def parse_run_request(data):
 
     _num("temperature", 0.0, 2.0, float)
     _num("top_p", 0.0, 1.0, float)
+    _num("top_k", 0, 100, int)
+    _num("min_p", 0.0, 1.0, float)
     _num("max_tokens", 1, 512, int)
     _num("frequency_penalty", -2.0, 2.0, float)
     _num("presence_penalty", -2.0, 2.0, float)
+    _num("repetition_penalty", 0.5, 2.0, float)
+    _num("seed", 0, 9999, int)
     _num("few_shot", 0, 5, int)
 
-    return num_samples, params
+    return num_samples, params, parse_passes(data)
 
 
 # MMLU benchmark
@@ -306,14 +341,22 @@ def collect_mmlu_metrics():
     return rebuild_mmlu_summary().get("ranking", [])
 
 
-def run_mmlu_benchmark(model_id, subjects, questions, params=None, log=None):
-    """Run MMLU for one model, save its result file, refresh the summary."""
+def run_mmlu_benchmark(model_id, subjects, questions, params=None, log=None,
+                       passes=None):
+    """Run MMLU for one model through the extended (stage 1-9) pipeline.
+
+    Every web run now produces the full metric taxonomy, not just accuracy:
+    the classic result file is still written so the ranking table and Q/A
+    viewer keep working, and the extended block is written alongside it and
+    attached to the history entry.
+    """
     from config import OPENROUTER_API_KEY
     from evaluate_slm_mmlu import (
         load_mmlu_tasks, evaluate_model_mmlu, mmlu_default_params,
     )
 
     log = log or (lambda line: None)
+    passes = passes or {}
 
     if not OPENROUTER_API_KEY:
         raise RuntimeError("OPENROUTER_API_KEY is not set. Add it to your .env file.")
@@ -353,7 +396,106 @@ def run_mmlu_benchmark(model_id, subjects, questions, params=None, log=None):
         f"Done: {_short(model_id)} - accuracy {result['accuracy']:.1%}, "
         f"avg {result['avg_response_time']}s, {result['errors']} error(s)."
     )
+
+    result["extended"] = build_extended_for_run(
+        model_id, "mmlu", tasks, params or mmlu_default_params(),
+        passes, log,
+    )
     return result
+
+
+def build_extended_for_run(model_id, benchmark, items, params, passes, log):
+    """Run the extended stage 1-9 pipeline for one model and return its blocks.
+
+    Deliberately a second pass rather than a rewrite of the classic evaluator:
+    the extended pipeline needs streaming (for TTFT/TPOT) and an optional
+    single-token scoring call, neither of which the original evaluator does.
+    Failures here are logged and swallowed - an extended-metrics problem must
+    never lose a completed accuracy run.
+    """
+    try:
+        import time as _time
+        from benchmark_config import DecodingConfig, EvaluationConfig, hosted_api_config
+        from metrics import aggregate
+        from run_benchmark import run_lambada_item, run_mmlu_item
+        from config import OPENROUTER_API_KEY
+
+        want_calibration = bool(passes.get("calibration", True))
+        repeats = int(passes.get("repeats", 1) or 1)
+
+        log(f"Extended metrics: streaming pass over {len(items)} item(s)"
+            + (" + calibration" if want_calibration else "") + "...")
+
+        cfg = hosted_api_config(model_id, benchmark)
+        cfg.decoding = DecodingConfig(
+            temperature=params.get("temperature", 0.0),
+            top_p=params.get("top_p", 1.0),
+            max_tokens=params.get("max_tokens", 384),
+            seed=params.get("seed"),
+            few_shot=params.get("few_shot", 0),
+        )
+        cfg.evaluation = EvaluationConfig(
+            request_logprobs=want_calibration,
+            repeats_for_consistency=repeats,
+        )
+        cfg.dataset.n_items = len(items)
+
+        start = _time.perf_counter()
+        records = []
+        for i, item in enumerate(items, 1):
+            if benchmark == "mmlu":
+                rec = run_mmlu_item(model_id, item, OPENROUTER_API_KEY, params,
+                                    with_calibration=want_calibration)
+            else:
+                rec = run_lambada_item(model_id, item, OPENROUTER_API_KEY, params,
+                                       with_calibration=want_calibration)
+            records.append(rec)
+            if i % 10 == 0 or i == len(items):
+                log(f"  extended {i}/{len(items)}")
+
+        answer_sets = correct_answers = None
+        if repeats > 1:
+            key = "predicted_letter" if benchmark == "mmlu" else "prediction"
+            log(f"  consistency: {repeats - 1} extra repeat(s)")
+            answer_sets = [[r.get(key)] for r in records]
+            for _ in range(repeats - 1):
+                for j, item in enumerate(items):
+                    rec = (run_mmlu_item(model_id, item, OPENROUTER_API_KEY, params)
+                           if benchmark == "mmlu" else
+                           run_lambada_item(model_id, item, OPENROUTER_API_KEY, params))
+                    answer_sets[j].append(rec.get(key))
+            correct_answers = [
+                r.get("correct_letter") if benchmark == "mmlu"
+                else _norm_word(r.get("target", "")) for r in records
+            ]
+
+        wall = _time.perf_counter() - start
+        builder = (aggregate.build_mmlu_metrics if benchmark == "mmlu"
+                   else aggregate.build_lambada_metrics)
+        blocks = builder(model_id, records, run_config=cfg, wall_seconds=wall,
+                         answer_sets=answer_sets, correct_answers=correct_answers)
+
+        os.makedirs(os.path.join(BASE_DIR, RESULTS_V2_DIR), exist_ok=True)
+        out = os.path.join(BASE_DIR, RESULTS_V2_DIR,
+                           f"{model_id.replace('/', '_')}_{benchmark}_v2.json")
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(blocks, f, indent=2, ensure_ascii=False)
+
+        log(f"Extended metrics saved: stages "
+            f"{', '.join(k for k in blocks if k in EXTENDED_KEYS)}")
+        return blocks
+    except Exception as exc:                       # never lose the main run
+        log(f"! extended metrics unavailable: {exc}")
+        return None
+
+
+EXTENDED_KEYS = ("task_quality", "probability", "consistency", "context",
+                 "robustness", "api_performance", "token_efficiency",
+                 "economics", "reliability", "tokenization")
+
+
+def _norm_word(word):
+    return re.sub(r"^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$", "", (word or "").lower())
 
 
 def parse_mmlu_request(data):
@@ -375,10 +517,18 @@ def parse_mmlu_request(data):
     questions = _clamp(questions, MIN_QUESTIONS, 50)
 
     params = mmlu_default_params()
+    # Full decoding surface. Ranges mirror config.DECODING_PARAMS so the UI and
+    # the server agree on what is acceptable.
     for key, low, high, cast in (
         ("temperature", 0.0, 2.0, float),
         ("top_p", 0.0, 1.0, float),
-        ("max_tokens", 64, 1024, int),
+        ("top_k", 0, 100, int),
+        ("min_p", 0.0, 1.0, float),
+        ("max_tokens", 8, 1024, int),
+        ("frequency_penalty", -2.0, 2.0, float),
+        ("presence_penalty", -2.0, 2.0, float),
+        ("repetition_penalty", 0.5, 2.0, float),
+        ("seed", 0, 9999, int),
     ):
         if data.get(key) not in (None, ""):
             try:
@@ -386,7 +536,28 @@ def parse_mmlu_request(data):
             except (TypeError, ValueError):
                 pass
 
-    return subjects, questions, params
+    passes = parse_passes(data)
+    return subjects, questions, params, passes
+
+
+def parse_passes(data):
+    """Which extended evaluation passes to run. Calibration is on by default."""
+    def flag(name, default):
+        v = data.get(name, default)
+        if isinstance(v, str):
+            return v.lower() in ("1", "true", "yes", "on")
+        return bool(v)
+
+    try:
+        repeats = _clamp(int(data.get("repeats", 1) or 1), 1, 5)
+    except (TypeError, ValueError):
+        repeats = 1
+    return {
+        "calibration": flag("calibration", True),
+        "robustness": flag("robustness", False),
+        "context": flag("context", False),
+        "repeats": repeats,
+    }
 
 
 # mermaid renderer
@@ -459,6 +630,8 @@ def index():
         models=model_choices,
         metrics=collect_metrics(),
         presets=PRESETS,
+        decoding_params=DECODING_PARAMS,
+        eval_passes=EVAL_PASSES,
         defaults=default_params(),
         min_samples=MIN_SAMPLES,
         max_samples=MAX_SAMPLES,
@@ -477,11 +650,13 @@ def run():
     if model_id not in MODELS:
         return jsonify({"error": "Unknown model selected."}), 400
 
-    num_samples, params = parse_run_request(data)
+    num_samples, params, passes = parse_run_request(data)
 
     def task(log):
-        result = run_single_benchmark(model_id, num_samples, params, log=log)
-        append_history("single", num_samples, [result], params)
+        result = run_single_benchmark(model_id, num_samples, params, log=log,
+                                      passes=passes)
+        append_history("single", num_samples, [result], params,
+                       benchmark="lambada", passes=passes)
         metric = _metric_from_result(result)
         metric["metrics"] = collect_metrics()
         return metric
@@ -492,16 +667,18 @@ def run():
 @app.route("/run_all", methods=["POST"])
 def run_all():
     data = request.get_json(silent=True) or request.form
-    num_samples, params = parse_run_request(data)
+    num_samples, params, passes = parse_run_request(data)
 
     def task(log):
         results = []
         for i, model_id in enumerate(MODELS):
             log(f"--- Model {i + 1}/{len(MODELS)}: {_short(model_id)} ---")
             results.append(
-                run_single_benchmark(model_id, num_samples, params, log=log)
+                run_single_benchmark(model_id, num_samples, params, log=log,
+                                     passes=passes)
             )
-        append_history("all", num_samples, results, params)
+        append_history("all", num_samples, results, params,
+                       benchmark="lambada", passes=passes)
         return {
             "ran": [_short(r["model"]) for r in results],
             "samples": num_samples,
@@ -548,6 +725,8 @@ def mmlu():
         groups=groups,
         ranking=collect_mmlu_metrics(),
         presets=MMLU_PRESETS,
+        decoding_params=DECODING_PARAMS,
+        eval_passes=EVAL_PASSES,
         defaults=mmlu_default_params(),
         min_questions=MIN_QUESTIONS,
         max_questions=50,
@@ -560,7 +739,7 @@ def mmlu_run():
     model_id = data.get("model")
 
     try:
-        subjects, questions, params = parse_mmlu_request(data)
+        subjects, questions, params, passes = parse_mmlu_request(data)
     except ValueError as exc:
         return jsonify({"error": str(exc)}), 400
 
@@ -573,7 +752,8 @@ def mmlu_run():
         for i, m in enumerate(targets):
             if len(targets) > 1:
                 log(f"--- Model {i + 1}/{len(targets)}: {_short(m)} ---")
-            results.append(run_mmlu_benchmark(m, subjects, questions, params, log=log))
+            results.append(run_mmlu_benchmark(
+                m, subjects, questions, params, log=log, passes=passes))
 
         run_params = dict(params)
         run_params["benchmark"] = "mmlu"
@@ -581,6 +761,7 @@ def mmlu_run():
         append_history(
             "mmlu-all" if model_id == "all" else "mmlu-single",
             results[0]["total"], results, run_params,
+            benchmark="mmlu", passes=passes,
         )
         return {
             "ran": [_short(r["model"]) for r in results],
@@ -637,8 +818,11 @@ def docs():
     sr = request.script_root
     report_html = os.path.join(BASE_DIR, "report.html")
 
-    # Prefer the exported report.html; fall back to rendering report.md.
-    if not os.path.exists(report_html):
+    # Render report.md directly whenever it is newer than the exported
+    # report.html, so the Docs tab never serves a stale export after the
+    # report has been updated.
+    if (not os.path.exists(report_html)
+            or os.path.getmtime(REPORT_PATH) > os.path.getmtime(report_html)):
         return render_template("docs.html", content=render_report_html(sr))
 
     with open(report_html, "r", encoding="utf-8") as f:
@@ -681,6 +865,120 @@ def diagrams(filename):
     if not os.path.exists(os.path.join(directory, filename)):
         abort(404)
     return send_from_directory(directory, filename)
+
+
+# Figure folders referenced from report.md by relative path
+# (diagram-lambada/, diagram-mmlu/, diagram-analysis/). Without this the
+# report renders correctly as a file but every image 404s in the Docs tab.
+FIGURE_DIRS = ("diagram-lambada", "diagram-mmlu", "diagram-analysis")
+
+
+@app.route("/<folder>/<path:filename>")
+def report_figures(folder, filename):
+    # Whitelisted rather than routed by converter: the folder names contain
+    # hyphens, which werkzeug's any() converter cannot parse unquoted.
+    if folder not in FIGURE_DIRS:
+        abort(404)
+    directory = os.path.join(BASE_DIR, folder)
+    if not os.path.exists(os.path.join(directory, filename)):
+        abort(404)
+    return send_from_directory(directory, filename)
+
+
+# ---------------------------------------------------------------------------
+# Extended metric analysis (results/v2)
+#
+# Serves the full metric taxonomy produced by run_benchmark.py. The templates
+# render whatever blocks are present and show an explicit "not available"
+# notice with the recorded reason for the rest, so the UI can never imply a
+# measurement that was not taken.
+# ---------------------------------------------------------------------------
+
+
+def _v2_dir():
+    return os.path.join(BASE_DIR, RESULTS_V2_DIR)
+
+
+def load_v2_results(benchmark="mmlu"):
+    """Every per-model v2 result file for a benchmark, newest run first."""
+    directory = _v2_dir()
+    if not os.path.isdir(directory):
+        return []
+    out = []
+    for name in sorted(os.listdir(directory)):
+        if not name.endswith(f"_{benchmark}_v2.json"):
+            continue
+        try:
+            with open(os.path.join(directory, name), "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (ValueError, OSError):
+            continue
+        info = MODEL_INFO.get(data.get("model"), {})
+        data["display_name"] = info.get("name", _short(data.get("model", "")))
+        data["developer"] = info.get("developer", "")
+        data["param_count"] = info.get("params", "")
+        data["colour"] = info.get("color", "#6c757d")
+        out.append(data)
+    out.sort(key=lambda d: (d.get("config") or {}).get("timestamp", ""), reverse=True)
+    return out
+
+
+def load_v2_comparison(benchmark="mmlu"):
+    path = os.path.join(_v2_dir(), f"comparison_{benchmark}.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (ValueError, OSError):
+        return None
+
+
+def v2_available_benchmarks():
+    """Which benchmarks actually have extended results on disk."""
+    directory = _v2_dir()
+    if not os.path.isdir(directory):
+        return []
+    found = []
+    for benchmark in ("mmlu", "lambada"):
+        if any(n.endswith(f"_{benchmark}_v2.json") for n in os.listdir(directory)):
+            found.append(benchmark)
+    return found
+
+
+@app.route("/analysis/data")
+def analysis_data():
+    """JSON API behind the analysis view - also what the History tab links to."""
+    benchmark = request.args.get("benchmark", "mmlu")
+    if benchmark not in ("mmlu", "lambada"):
+        return jsonify({"error": "unknown benchmark"}), 400
+    return jsonify({
+        "benchmark": benchmark,
+        "available_benchmarks": v2_available_benchmarks(),
+        "results": load_v2_results(benchmark),
+        "comparison": load_v2_comparison(benchmark),
+    })
+
+
+@app.route("/analysis/export/<benchmark>")
+def analysis_export(benchmark):
+    """Download the full extended result set as one JSON file."""
+    if benchmark not in ("mmlu", "lambada"):
+        abort(404)
+    payload = {
+        "benchmark": benchmark,
+        "exported_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "results": load_v2_results(benchmark),
+        "comparison": load_v2_comparison(benchmark),
+    }
+    return app.response_class(
+        json.dumps(payload, indent=2, ensure_ascii=False),
+        mimetype="application/json",
+        headers={
+            "Content-Disposition":
+                f"attachment; filename=slm-analysis-{benchmark}.json"
+        },
+    )
 
 
 # Phusion Passenger entry point.

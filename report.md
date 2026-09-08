@@ -435,6 +435,248 @@ graph TD
     H --> I[Charts, report, presentation]
 ```
 
+### 6.12 Benchmark Architecture - Ten Stages, Nine of Them Measurable
+
+The evaluation is organised into ten stages. **Stages 1-9 form the OpenRouter
+benchmark; stage 10 is excluded from it entirely** and documented as a separate
+self-hosted study. The definition lives in `metrics/taxonomy.py`, which the
+runner, the web UI and this report all read, so there is one statement of what
+is measured and one statement of what is not.
+
+| Stage | Layer | Purpose | MMLU | LAMBADA | OpenRouter |
+|---|---|---|---|---|---|
+| 1 | **Task Quality** | Measure model capability | yes | yes | **yes** |
+| 2 | **Probabilistic Quality** | Confidence and probability quality | yes | yes | **conditional** |
+| 3 | **Reasoning & Consistency** | Stability and reasoning reliability | yes | yes | **yes** |
+| 4 | **Context Behavior** | Context usage and dependency | experimental | yes | **yes** |
+| 5 | **Robustness** | Resistance to prompt/input changes | yes | yes | **yes** |
+| 6 | **API Performance** | Inference-service performance | yes | yes | **yes** |
+| 7 | **Token Efficiency** | Token consumption and efficiency | yes | yes | **yes** |
+| 8 | **Economics** | Monetary efficiency | yes | yes | **yes** |
+| 9 | **Reliability** | Operational stability | yes | yes | **yes** |
+| 10 | ~~Hardware & Distributed~~ | Inference infrastructure | - | - | **no - excluded** |
+
+#### Stage detail
+
+| Stage | Subsections | Primary metrics |
+|---|---|---|
+| **1 Task Quality** | Core performance | Accuracy, Exact Match, Error Rate, Normalised Accuracy, Parse-Failure Rate |
+| | MMLU domain | Macro Accuracy, Subject Accuracy, Category Accuracy, Wilson CI |
+| | LAMBADA word prediction | Last-Word Accuracy, Exact Target Match, Stem Match |
+| | Language modeling *(conditional)* | Perplexity, NLL, Cross Entropy |
+| **2 Probabilistic** | Probability | Correct-Option Probability, Target Probability, Log Probability, Target Rank, MRR |
+| | Uncertainty | Entropy, Normalised Entropy |
+| | Calibration | Confidence, ECE, MCE, Brier Score, Confidence-Accuracy Correlation |
+| **3 Consistency** | Answer stability | Prediction Stability, Answer Agreement |
+| | Self-consistency | Majority-Vote Accuracy, Self-Consistency Gain |
+| | Reproducibility | Seed Stability, Run-to-Run Variance |
+| **4 Context** | Utilization / dependency | Context Utilization, Context Sensitivity, Ablation Drop |
+| | Position / length | Position Sensitivity, Context-Length Sensitivity |
+| **5 Robustness** | Prompt / semantic | Prompt Variation, Paraphrase Consistency |
+| | Perturbation | Typographical, Formatting, Noise, Case |
+| | MMLU choice | Option-Order Robustness, Answer-Position Bias |
+| **6 API Performance** | Latency | TTFT, TPOT, E2E, P50/P95/P99 |
+| | Throughput | Output tok/s, Prompt tok/s, Total tok/s, Requests/s |
+| **7 Token Efficiency** | Usage | Prompt, Completion, Reasoning, Cached tokens |
+| | Aggregate | Total Tokens, Tokens/Item, Tokens/Correct Answer |
+| **8 Economics** | Cost | Cost/Request, Cost/1K tokens, Cost/1M tokens |
+| | Quality-adjusted | Cost/Correct Answer, Correct Answers per Dollar |
+| **9 Reliability** | API | Failure Rate, Timeout Rate, Rate-Limit (429) Rate |
+| | Output | Invalid Output Rate |
+| | Operational | Retry Rate, Provider Failover |
+
+#### Priority bands
+
+| Band | Stages | When produced |
+|---|---|---|
+| **P0** | 1 Task Quality, 6 API Performance, 7 Token Efficiency, 8 Economics, 9 Reliability | every run, no extra API calls |
+| **P1** | 2 Probabilistic, 3 Consistency, 4 Context, 5 Robustness | needs an extra pass (calibration / repeats / ablation / perturbation) |
+
+#### What was corrected against measurement
+
+The architecture above differs from the first draft in four places, each because
+a live probe contradicted the assumption:
+
+| Item | Assumed | Measured | Consequence |
+|---|---|---|---|
+| LAMBADA perplexity / NLL | unconditional (stage 1) | derived from log-probabilities | moved to **conditional**; it inherits stage 2's provider dependency and cannot be promised per run |
+| LAMBADA target probability / rank | doubtful | **works** - target "number" returned at rank 1, logprob -0.01 | kept, via the same single-token scoring trick as MMLU |
+| Reasoning-token accounting | conditional | returned in `completion_tokens_details` | promoted to **fully available**; 0 is a real answer for a non-reasoning model |
+| Reliability (stage 9) | listed but unimplemented | 429s, retries and provider failover are all visible client-side | **implemented** - `metrics/reliability.py` |
+
+#### Stage 10, and why it is not here
+
+Nothing in stage 10 - TP/PP/DP/SP/CP/EP degrees, GPU utilisation, VRAM, KV
+cache, memory bandwidth, FLOPs/MFU/HFU, communication overhead, pipeline
+bubble, power and energy - can be observed through a hosted inference API. The
+benchmark is one tenant on a shared, auto-scaled backend whose parallelism
+layout and batch composition are chosen by the provider and never exposed to
+the caller. Any number reported for those fields would be fabricated.
+
+They remain in the schema (`benchmark_config.py`, `metrics/taxonomy.py`
+`EXCLUDED_STAGE`) as **configuration variables and a documented exclusion**, so
+the same suite can be re-run against a self-hosted vLLM backend where they
+become settable and measurable. Sections 6.13-6.14 describe that path.
+
+### 6.13 Configuration Variables vs Metrics
+
+**TP, PP, DP, SP, CP and EP are configuration variables, not model-quality
+scores.** This is enforced structurally rather than by convention:
+
+| | Configuration variable | Metric |
+|---|---|---|
+| Nature | an input we **choose** | an output we **observe** |
+| Examples | TP, PP, DP, SP, CP, EP, dtype, batch size, temperature | accuracy, ECE, TTFT, VRAM |
+| Implemented in | `benchmark_config.py` → `RunConfig` | `metrics/` → result blocks |
+| Role in analysis | independent variable | dependent variable |
+
+Folding a parallelism degree into the same dictionary as an accuracy score
+invites a category error — ranking models on a composite that silently blends a
+hardware layout with a quality measurement. A parallelism degree is not a
+virtue. The pipeline therefore keeps three things distinct:
+
+```
+RunConfig        →  independent variables (what we chose)
+metrics/*        →  dependent variables   (what we observed)
+analyse_sweep()  →  the relationship between them
+```
+
+Every result file is stamped with the full `RunConfig` that produced it, and
+`build_comparison()` refuses to rank models whose configurations differ,
+reporting `comparable: false` instead of publishing a confounded ranking.
+
+The six degrees, as configuration:
+
+| Degree | Splits | Helps | Costs | Communication |
+|---|---|---|---|---|
+| **TP** Tensor Parallel | each weight matrix across GPUs | latency; fits large models | all-reduce every layer | heavy — wants NVLink |
+| **PP** Pipeline Parallel | layers across GPUs | memory; cheap comms | pipeline bubbles at low batch | light, point-to-point |
+| **DP** Data Parallel | requests across replicas | throughput | memory ×N, no latency gain | none at inference |
+| **SP** Sequence Parallel | sequence dim in the regions TP leaves replicated | activation memory | only meaningful with TP>1 | moderate |
+| **CP** Context Parallel | sequence dim inside attention (ring/Ulysses) | very long contexts | complexity | heavy |
+| **EP** Expert Parallel | MoE experts across GPUs | MoE capacity | inert for dense models | all-to-all |
+
+All three models here are dense, so EP is recorded as `1` — present in the
+schema to state that explicitly rather than leave it absent. `world_size` is
+`TP × PP × DP × CP`; SP and EP re-partition work already counted.
+
+### 6.14 What a Parallelism Sweep Measures
+
+`build_parallelism_sweep()` varies one degree with everything else pinned;
+`analyse_sweep()` then separates two questions that must not be conflated:
+
+| Expected to move | Expected to stay flat |
+|---|---|
+| TTFT, TPOT, E2E | overall and macro accuracy |
+| prefill / decode throughput | NLL, ECE, Brier |
+| VRAM, KV cache | last-word accuracy |
+| communication overhead, energy, cost | |
+
+Parallelism changes the order of arithmetic, not the semantics of the model, so
+**quality should not move**. `analyse_sweep()` flags any quality drift beyond
+0.5 percentage points as `unexpected` — that is a bug or serving
+non-determinism to investigate, not a finding to report.
+
+Illustrative output from a tensor-parallel sweep:
+
+```
+TP1  speedup=1.00  ideal=1.0  efficiency=1.00  comm_overhead=0.00
+TP2  speedup=1.73  ideal=2.0  efficiency=0.87  comm_overhead=0.13
+TP4  speedup=2.80  ideal=4.0  efficiency=0.70  comm_overhead=0.30
+
+quality_drift: overall_accuracy spread = 0.004  →  flagged: []
+```
+
+Doubling to TP2 returns 1.73× (87% efficient); TP4 returns only 2.80× (70%),
+the shortfall being all-reduce traffic. Accuracy moved 0.4 pp — within noise,
+which is the correct outcome.
+
+### 6.15 Measurability: What This Deployment Can and Cannot Observe
+
+The benchmark runs against OpenRouter — third-party, auto-scaled GPUs. That
+imposes a hard boundary, and the honest response is to record it rather than
+fill the gap with plausible numbers.
+
+| Metric family | Status | Reason |
+|---|---|---|
+| Accuracy family | measured | needs only the answer |
+| Consistency, robustness, context, tokenization | measured | prompt manipulation and repeat calls |
+| TTFT / TPOT / E2E, throughput | measured | from the streamed response, client-side |
+| Token counts, monetary cost | provider-reported | returned in the API `usage` payload |
+| Calibration (ECE, Brier, NLL, PPL) | **partial — 1 of 3 models** | only some upstream providers forward `logprobs` |
+| VRAM, KV cache | analytic only | computed from published architecture, labelled `analytic_model` |
+| Energy | unavailable | requires NVML/RAPL on the serving host |
+| Communication overhead | unavailable | we do not own the interconnect |
+| TP/PP/DP/SP/CP/EP effects | unavailable | the provider selects the layout; it is neither settable nor visible |
+
+Every numeric field carries a `source` tag — `measured`, `provider_reported`,
+`analytic_model`, or `unavailable` with a reason string. Unmeasurable blocks are
+emitted as `{"available": false, "reason": "..."}` and never as zeros, because
+a fabricated calibration figure is worse than a missing one.
+
+To convert the bottom four rows into measurements, `local_vllm_config()`
+provides the local-backend path, where the six degrees become real knobs and
+VRAM, KV cache, energy and communication overhead become directly observable.
+
+### 6.16 Obtaining Probabilities from a Chat API
+
+Calibration needs token probabilities, which chat completions do not return by
+default. Two obstacles were found empirically and both shape the design.
+
+**First: `logprobs` support is provider-dependent, not model-dependent.**
+Measured via `probe_capabilities()`:
+
+| Model | Serving provider | `logprobs` |
+|---|---|---|
+| Llama-3.2-3B | Parasail | yes |
+| Gemma-3-4B | DeepInfra | no |
+| Ministral-8B | Mistral | no |
+
+**Second — and subtler: with `max_tokens > 1` the provider returns
+log-probabilities for the final token only**, which is the end-of-sequence
+marker. Its distribution says nothing about the answer:
+
+```
+max_tokens = 2  → tok[0] = '<|eot_id|>'   top: eot −0.20, '.' −1.70, …    unusable
+max_tokens = 1  → tok[0] = 'A'            top: A −0.00, B −10.13,
+                                               C −10.50, D −11.13          usable
+```
+
+The resolution is **single-token constrained scoring** (`score_options()`): pose
+the question with `max_tokens=1` so the single generated token *is* the answer
+letter, and read P(A), P(B), P(C), P(D) from its `top_logprobs`. This is the
+letter-scoring protocol used by `lm-evaluation-harness`.
+
+The harness therefore runs two passes per question, because they answer
+different questions and neither substitutes for the other:
+
+| Pass | Prompt | Yields | Budget |
+|---|---|---|---|
+| Reasoning | chain-of-thought, then a letter | accuracy as the model would really be used | ~384 tokens |
+| Scoring | direct answer, `max_tokens=1` | the option distribution → all calibration metrics | 1 token |
+
+### 6.17 Composite Score, Revised
+
+The original composite (§6.5) weighted accuracy, reasoning consistency and
+speed. The extended framework replaces it with:
+
+```
+composite = 0.55 × quality
+          + 0.15 × calibration   (1 − ECE)
+          + 0.15 × robustness    (1 − mean relative accuracy drop)
+          + 0.15 × efficiency    (fastest model's latency / this model's)
+```
+
+Weights are **renormalised over whichever components are actually available**,
+so a model is never penalised for a study that was not run or for a provider
+that withholds log-probabilities. Each ranking row lists its
+`components_used`, making the basis of every score auditable.
+
+Calibration is included because it is what makes a small model useful in
+practice: an SLM that reliably knows when it is unsure can escalate those cases
+to a larger model, which is the dominant deployment pattern for models of this
+size.
+
 ## 7. Results
 
 ### 7.1 LAMBADA — Results (test split)
@@ -504,6 +746,273 @@ Expanding a subject shows each question with the model's pick vs the correct ans
 
 ![MMLU Q/A question detail with reasoning](diagram-mmlu/mmlu-qa-2.png)
 
+### 7.5 Extended Framework — Full Run Results
+
+
+#### MMLU
+
+32 items per model, 3 models. Passes: main, calibration, 2 repeats, robustness. Decoding: temperature 0.0, max_tokens 384.
+
+
+**Stage 1 — Task Quality**
+
+| Model | Accuracy | 95% CI | Macro (subject) | Normalised | Error rate | Parse fail |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | **71.9%** | 54.6–84.4% | 71.9% | 62.5% | 28.1% | 0.0% |
+| Llama-3.2-3B | **53.1%** | 36.4–69.1% | 53.1% | 37.5% | 46.9% | 3.1% |
+| Ministral-8B | **81.2%** | 64.7–91.1% | 81.2% | 75.0% | 18.8% | 3.1% |
+
+
+**Stage 2 — Probabilistic Quality**
+
+| Model | Provider | Available | Coverage | P(correct) | NLL | Perplexity | ECE | Brier |
+|---|---|---|---|---|---|---|---|---|
+| Gemma-3-4B | DeepInfra | no | - | - | - | - | - | - |
+| Llama-3.2-3B | Parasail, Cloudflare | yes | 96.9% | 0.5996 | 0.9504 | 2.587 | 0.2985 | 0.2909 |
+| Ministral-8B | Mistral | no | - | - | - | - | - | - |
+
+
+Stage 2 is available only where the routed provider returns token log-probabilities. In this run it was unavailable for: Gemma-3-4B, Ministral-8B. This is a property of the *provider*, not the model — the same model can yield calibration on one run and none on the next, so the provider is listed alongside every row.
+
+
+**Stage 3 — Reasoning & Consistency**
+
+| Model | Answer stability | Majority-vote acc. | Single-sample acc. | Self-consistency gain | Mean agreement |
+|---|---|---|---|---|---|
+| Gemma-3-4B | 93.8% | 71.9% | 71.9% | +0.0000 | 96.9% |
+| Llama-3.2-3B | 90.6% | 56.2% | 54.7% | +0.0156 | 95.3% |
+| Ministral-8B | 90.6% | 84.4% | 82.8% | +0.0156 | 95.3% |
+
+
+**Stage 5 — Robustness** (accuracy drop vs the clean baseline; negative means the variant scored *higher*)
+
+| Model | Score | option reorder | prompt terse | prompt verbose | typo noise | Worst |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | 0.837 | +0.031 | +0.094 | +0.312 | +0.031 | prompt verbose |
+| Llama-3.2-3B | 1.000 | -0.031 | -0.062 | -0.062 | +0.062 | typo noise |
+| Ministral-8B | 0.856 | -0.031 | +0.062 | +0.438 | +0.000 | prompt verbose |
+
+
+**Stage 6 — API Performance**
+
+| Model | TTFT mean | TTFT p95 | TPOT mean | E2E mean | E2E p95 | Decode tok/s |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | 0.790 s | 1.014 s | 0.0173 s | 2.092 s | 3.332 s | 64.2 |
+| Llama-3.2-3B | 0.770 s | 1.192 s | 0.0090 s | 1.498 s | 2.385 s | 122.5 |
+| Ministral-8B | 1.183 s | 2.270 s | 0.0129 s | 2.547 s | 7.903 s | 86.5 |
+
+
+**Stages 7 & 8 — Token Efficiency and Economics**
+
+| Model | Prompt tok | Completion tok | Reasoning tok | Tokens/item | Tokens/correct | Total cost | $/1M tok | $/correct |
+|---|---|---|---|---|---|---|---|---|
+| Gemma-3-4B | 7,119 | 2,421 | 0 | 298.1 | 414.8 | $0.000759 | $0.0795 | $0.000033 |
+| Llama-3.2-3B | 6,683 | 2,614 | 0 | 290.5 | 546.9 | $0.001401 | $0.1507 | $0.000082 |
+| Ministral-8B | 6,412 | 2,349 | 0 | 273.8 | 337.0 | $0.001379 | $0.1574 | $0.000053 |
+
+
+**Stage 9 — Reliability**
+
+| Model | Provider | Success | Failure | Invalid output | Timeout | 429 | Retries | Failover |
+|---|---|---|---|---|---|---|---|---|
+| Gemma-3-4B | DeepInfra | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
+| Llama-3.2-3B | Parasail, Cloudflare | 100.0% | 0.0% | 3.1% | 0.0% | 0.0% | 0 | yes |
+| Ministral-8B | Mistral | 96.9% | 3.1% | 0.0% | 0.0% | 0.0% | 0 | no |
+
+
+**Composite ranking**
+
+| # | Model | Quality | Calibration | Robustness | Efficiency | Reliability | Composite |
+|---|---|---|---|---|---|---|---|
+| 1 | Ministral-8B | 0.812 | - | 0.856 | 0.588 | 0.969 | **0.812** |
+| 2 | Gemma-3-4B | 0.719 | - | 0.837 | 0.716 | 1.000 | **0.772** |
+| 3 | Llama-3.2-3B | 0.531 | 0.702 | 1.000 | 1.000 | 0.969 | **0.718** |
+
+
+all models share one run configuration - differences are attributable to the models
+
+
+#### LAMBADA
+
+30 items per model, 3 models. Passes: main, calibration, 2 repeats, robustness, context ablation. Decoding: temperature 0.0, max_tokens 384.
+
+
+**Stage 1 — Task Quality**
+
+| Model | Accuracy | 95% CI | Macro (subject) | Normalised | Error rate | Parse fail |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | **16.7%** | 7.3–33.6% | - | - | 83.3% | 0.0% |
+| Llama-3.2-3B | **16.7%** | 7.3–33.6% | - | - | 83.3% | 0.0% |
+| Ministral-8B | **46.7%** | 30.2–63.9% | - | - | 53.3% | 0.0% |
+
+
+**Stage 2 — Probabilistic Quality**
+
+| Model | Provider | Available | Coverage | P(correct) | NLL | Perplexity | ECE | Brier |
+|---|---|---|---|---|---|---|---|---|
+| Gemma-3-4B | DeepInfra | no | - | - | - | - | - | - |
+| Llama-3.2-3B | Cloudflare | no | - | - | - | - | - | - |
+| Ministral-8B | Mistral | no | - | - | - | - | - | - |
+
+
+Stage 2 is available only where the routed provider returns token log-probabilities. In this run it was unavailable for: Gemma-3-4B, Llama-3.2-3B, Ministral-8B. This is a property of the *provider*, not the model — the same model can yield calibration on one run and none on the next, so the provider is listed alongside every row.
+
+
+**Stage 3 — Reasoning & Consistency**
+
+| Model | Answer stability | Majority-vote acc. | Single-sample acc. | Self-consistency gain | Mean agreement |
+|---|---|---|---|---|---|
+| Gemma-3-4B | 100.0% | 16.7% | 16.7% | +0.0000 | 100.0% |
+| Llama-3.2-3B | 100.0% | 16.7% | 16.7% | +0.0000 | 100.0% |
+| Ministral-8B | 100.0% | 46.7% | 46.7% | +0.0000 | 100.0% |
+
+
+**Stage 4 — Context Behavior**
+
+| Model | Full | Last sentence | Last 10 words | No context | Utilisation | Ratio |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | 16.7% | 0.0% | 0.0% | 0.0% | +0.1667 | 1.000 |
+| Llama-3.2-3B | 16.7% | 0.0% | 0.0% | 0.0% | +0.1667 | 1.000 |
+| Ministral-8B | 46.7% | 0.0% | 0.0% | 0.0% | +0.4667 | 1.000 |
+
+
+**Stage 5 — Robustness** (accuracy drop vs the clean baseline; negative means the variant scored *higher*)
+
+| Model | Score | casing | typo | Worst |
+|---|---|---|---|---|
+| Gemma-3-4B | 0.400 | +0.100 | +0.100 | typo |
+| Llama-3.2-3B | 1.000 | -0.033 | -0.067 | casing |
+| Ministral-8B | 0.893 | +0.000 | +0.100 | typo |
+
+
+**Stage 6 — API Performance**
+
+| Model | TTFT mean | TTFT p95 | TPOT mean | E2E mean | E2E p95 | Decode tok/s |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | 0.918 s | 2.007 s | 0.0055 s | 0.924 s | 2.012 s | 1307.6 |
+| Llama-3.2-3B | 0.486 s | 0.700 s | 0.0363 s | 0.525 s | 1.014 s | 2308.1 |
+| Ministral-8B | 0.498 s | 0.627 s | 0.0246 s | 0.547 s | 0.758 s | 1499.9 |
+
+
+**Stages 7 & 8 — Token Efficiency and Economics**
+
+| Model | Prompt tok | Completion tok | Reasoning tok | Tokens/item | Tokens/correct | Total cost | $/1M tok | $/correct |
+|---|---|---|---|---|---|---|---|---|
+| Gemma-3-4B | 6,405 | 64 | 0 | 215.6 | 1293.8 | $0.000650 | $0.1005 | $0.000130 |
+| Llama-3.2-3B | 7,101 | 85 | 0 | 239.5 | 1437.2 | $0.000761 | $0.1060 | $0.000152 |
+| Ministral-8B | 6,197 | 89 | 0 | 209.5 | 449.0 | $0.000996 | $0.1584 | $0.000071 |
+
+
+**Stage 9 — Reliability**
+
+| Model | Provider | Success | Failure | Invalid output | Timeout | 429 | Retries | Failover |
+|---|---|---|---|---|---|---|---|---|
+| Gemma-3-4B | DeepInfra | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
+| Llama-3.2-3B | Cloudflare | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
+| Ministral-8B | Mistral | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
+
+
+**Composite ranking**
+
+| # | Model | Quality | Calibration | Robustness | Efficiency | Reliability | Composite |
+|---|---|---|---|---|---|---|---|
+| 1 | Ministral-8B | 0.467 | - | 0.893 | 0.959 | 1.000 | **0.662** |
+| 2 | Llama-3.2-3B | 0.167 | - | 1.000 | 1.000 | 1.000 | **0.510** |
+| 3 | Gemma-3-4B | 0.167 | - | 0.400 | 0.690 | 1.000 | **0.367** |
+
+
+all models share one run configuration - differences are attributable to the models
+
+
+### 7.6 Extended Analysis — Figures
+
+The web app renders every stage of the taxonomy for each saved run, as
+collapsible panels inside the History tab. The figures below are captured from
+that view.
+
+> Figure files live in `diagram-analysis/` and are referenced by exact name.
+> `diagram-analysis/README.md` lists what each one should show and where in the
+> UI to capture it. A file that has not been added yet renders as a broken
+> image; adding the PNG is the only step required.
+
+#### The run record
+
+![History page with a saved extended run](diagram-analysis/analysis-01-history-overview.png)
+*Fig. 7.1 — A run card: benchmark badge, metric-family chips, decoding/parallelism
+chips and the ranking table.*
+
+![Extended analysis panel with per-model tabs](diagram-analysis/analysis-02-extended-collapsed.png)
+*Fig. 7.2 — The extended-analysis container. Blocks are stored with the history
+entry, so an older run keeps showing the numbers it actually produced.*
+
+![All nine stages listed](diagram-analysis/analysis-03-stage-list.png)
+*Fig. 7.3 — Stages 1–9. Families with no data carry an `n/a` badge rather than
+being hidden, so an absent measurement is visible as an absence.*
+
+#### Stages 1–5: model behaviour
+
+![Task quality metrics](diagram-analysis/analysis-04-task-quality.png)
+*Fig. 7.4 — Stage 1. Overall and macro accuracy, Wilson confidence intervals,
+per-subject and per-category tables, and the option-position bias.*
+
+![Calibration metrics where log-probabilities are available](diagram-analysis/analysis-05-calibration.png)
+*Fig. 7.5 — Stage 2 on a provider that returns log-probabilities: NLL,
+perplexity, ECE, Brier score and the reliability-bin table.*
+
+![Calibration marked unavailable](diagram-analysis/analysis-06-calibration-unavailable.png)
+*Fig. 7.6 — The same stage on a provider that does not. The block reports
+`available: false` with its reason instead of substituting zeros — the
+difference this project treats as non-negotiable.*
+
+![Consistency metrics](diagram-analysis/analysis-07-consistency.png)
+*Fig. 7.7 — Stage 3. Answer stability across repeats, majority-vote accuracy and
+the self-consistency gain.*
+
+![Context ablation results](diagram-analysis/analysis-08-context.png)
+*Fig. 7.8 — Stage 4 (LAMBADA). Accuracy under progressive context ablation, and
+the utilisation ratio derived from it.*
+
+![Robustness deltas](diagram-analysis/analysis-09-robustness.png)
+*Fig. 7.9 — Stage 5. Per-variant accuracy drop with the broke/fixed split and
+flip rate, which is what separates genuine robustness from offsetting errors.*
+
+#### Stages 6–9: serving behaviour
+
+![Latency and throughput](diagram-analysis/analysis-10-api-performance.png)
+*Fig. 7.10 — Stage 6. TTFT, TPOT and end-to-end latency with p50/p95/p99, plus
+prefill and decode throughput.*
+
+![Token accounting](diagram-analysis/analysis-11-token-efficiency.png)
+*Fig. 7.11 — Stage 7. Prompt, completion, reasoning and cached tokens, and
+tokens per correct answer.*
+
+![Cost metrics](diagram-analysis/analysis-12-economics.png)
+*Fig. 7.12 — Stage 8. Provider-reported spend, normalised per request, per
+million tokens and per correct answer.*
+
+![Reliability metrics](diagram-analysis/analysis-13-reliability.png)
+*Fig. 7.13 — Stage 9. Success, failure, timeout and rate-limit rates, retry
+counts and provider-failover detection.*
+
+#### Configuration and interface
+
+![Run configuration panel](diagram-analysis/analysis-14-run-config.png)
+*Fig. 7.14 — The run configuration, rendered apart from the measured blocks and
+labelled as input. TP/PP/DP/SP/CP/EP appear as chips; on a hosted endpoint they
+read `provider-chosen`, which encodes "unknown", not "one GPU".*
+
+![Decoding parameter panel](diagram-analysis/analysis-15-decoding-panel.png)
+*Fig. 7.15 — The decoding panel: nine parameters with inline explanations, five
+presets, and the extended-pass selector with its live API-call estimate.*
+
+![Mobile subject selector](diagram-analysis/analysis-16-mobile-subjects.png)
+*Fig. 7.16 — Subject categories at phone width, two per row, each reporting its
+selected count while collapsed.*
+
+![Navigation modal](diagram-analysis/analysis-17-nav-modal.png)
+*Fig. 7.17 — Navigation, consolidated into a single modal reachable from the
+hamburger control on every viewport.*
+
 ## 8. Discussion of the Results
 
 ### 8.1 Why These LAMBADA Results?
@@ -561,3 +1070,10 @@ Ministral-8B has the highest reasoning consistency (69.1%); Gemma-3-4B is close 
 - Google (2025). Gemma 3 technical report.
 - Meta (2024). Llama 3.2 model card.
 - Mistral AI (2024). Ministral model family.
+- Guo, C. et al. (2017). On Calibration of Modern Neural Networks. Proceedings of ICML 2017. — ECE and reliability diagrams (§6.12).
+- Brier, G. W. (1950). Verification of Forecasts Expressed in Terms of Probability. Monthly Weather Review. — the proper scoring rule used in §6.12.
+- Wilson, E. B. (1927). Probable Inference, the Law of Succession, and Statistical Inference. JASA. — the small-sample confidence interval used throughout §7.
+- Wang, X. et al. (2023). Self-Consistency Improves Chain of Thought Reasoning in Language Models. Proceedings of ICLR 2023. — majority-vote decoding (§6.12, Consistency).
+- Gao, L. et al. (2024). A Framework for Few-Shot Language Model Evaluation (`lm-evaluation-harness`). — the letter-scoring protocol adopted in §6.16.
+- Shoeybi, M. et al. (2019). Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism. — tensor and pipeline parallelism (§6.13).
+- Kwon, W. et al. (2023). Efficient Memory Management for Large Language Model Serving with PagedAttention (vLLM). Proceedings of SOSP 2023. — KV-cache mechanics and the local-backend path (§6.15).

@@ -1,0 +1,345 @@
+{# Shared metric renderer.
+
+   Turns a stage 1-9 metric block into collapsible HTML. Included by
+   history.html; kept in its own file so the renderer has one home rather than
+   being duplicated per page.
+
+   The renderer is generic on purpose: it walks whatever keys a block contains,
+   so a metric added to metrics/ appears here without editing this template.
+   META only supplies formatting and the plain-language hint. #}
+<script>
+const PCT  = v => (v * 100).toFixed(1) + '%';
+const F3   = v => Number(v).toFixed(3);
+const F4   = v => Number(v).toFixed(4);
+const SEC  = v => Number(v).toFixed(3) + ' s';
+const USD  = v => '$' + Number(v).toFixed(6);
+const INT  = v => Number(v).toLocaleString();
+const TOKS = v => Number(v).toFixed(1) + ' tok/s';
+
+const META = {
+  // 1 task quality
+  overall_accuracy:        [PCT, 'Share of all questions answered correctly (micro).', 'up'],
+  macro_accuracy_subject:  [PCT, 'Mean of per-subject accuracies - big subjects cannot dominate.', 'up'],
+  macro_accuracy_category: [PCT, 'Mean of per-category accuracies.', 'up'],
+  normalised_accuracy:     [PCT, '(acc - 25%) / 75%. How far above coin-flipping, honestly.', 'up'],
+  random_baseline:         [PCT, 'What a coin-flipper scores on a 4-option question.', null],
+  error_rate:              [PCT, '1 - accuracy.', 'down'],
+  parse_failure_rate:      [PCT, 'Answers with no extractable letter - disobedience, not ignorance.', 'down'],
+  last_word_accuracy:      [PCT, 'Normalised exact match on the final word.', 'up'],
+  exact_target_match:      [PCT, 'Byte-identical match, case and punctuation included.', 'up'],
+  stem_match_accuracy:     [PCT, 'Credits right word / wrong inflection.', 'up'],
+  empty_prediction_rate:   [PCT, 'Responses that produced no word at all.', 'down'],
+  n_questions: [INT, 'Questions asked.', null],
+  n_passages:  [INT, 'Passages evaluated.', null],
+  n_subjects:  [INT, 'Distinct subjects covered.', null],
+
+  // 2 probability & calibration
+  correct_option_probability: [F4, 'Mean probability mass on the right answer.', 'up'],
+  log_probability:  [F4, 'Mean log P(correct).', 'up'],
+  nll:              [F4, 'How surprised the model was by the truth.', 'down'],
+  cross_entropy:    [F4, 'Cross entropy against the one-hot truth.', 'down'],
+  perplexity:       [F3, 'exp(NLL). 1.0 = certain and right; 4.0 = guessing on 4 options.', 'down'],
+  entropy:          [F4, 'Spread of the predictive distribution. High = unsure.', null],
+  normalised_entropy: [F4, 'Entropy scaled 0-1 by the number of options.', null],
+  ece:              [F4, 'Does stated confidence match reality?', 'down'],
+  mce:              [F4, 'Worst single confidence bin. Tail miscalibration.', 'down'],
+  brier_score:      [F4, 'Squared error of confidence vs outcome. A proper scoring rule.', 'down'],
+  multiclass_brier: [F4, 'Brier over the full option distribution.', 'down'],
+  confidence_accuracy_corr: [F4, 'Does its confidence carry any signal? Near 0 = no.', 'up'],
+  coverage:         [PCT, 'Share of items for which probabilities were returned.', 'up'],
+  mean_reciprocal_rank: [F4, 'Mean 1/rank of the target. Rewards "nearly right".', 'up'],
+  hit_rate_at_1:  [PCT, 'Target was the top prediction.', 'up'],
+  hit_rate_at_5:  [PCT, 'Target appeared in the top 5.', 'up'],
+  hit_rate_at_10: [PCT, 'Target appeared in the top 10.', 'up'],
+  mean_target_rank: [F3, 'Average position of the target among ranked predictions.', 'down'],
+  target_out_of_topk_rate: [PCT, 'Target never appeared in the returned top-k.', 'down'],
+
+  // 3 consistency
+  answer_stability: [PCT, 'Items where every repeat gave an identical answer.', 'up'],
+  majority_vote_accuracy: [PCT, 'Accuracy taking the most common of k samples.', 'up'],
+  mean_single_sample_accuracy: [PCT, 'Average accuracy of one sample.', 'up'],
+  self_consistency_gain: [F4, 'Majority-vote minus single-sample.', 'up'],
+  mean_agreement: [PCT, 'How dominant the winning answer was.', 'up'],
+  accuracy_std: [F4, 'Accuracy spread across seeds. Compare against model gaps.', 'down'],
+  accuracy_range: [F4, 'Best minus worst seed.', 'down'],
+  ci95_halfwidth: [F4, '95% confidence half-width across seeds.', 'down'],
+  n_seeds: [INT, 'Independent seeds run.', null],
+
+  // 4 context
+  context_utilization: [F4, 'Accuracy(full) - accuracy(last sentence).', 'up'],
+  utilization_ratio: [F4, 'Share of skill depending on the wider passage.', 'up'],
+  context_sensitivity: [F4, 'Accuracy(full) - accuracy(no context).', 'up'],
+  full_accuracy: [PCT, 'Accuracy with the complete passage.', 'up'],
+  ablated_accuracy: [PCT, 'Accuracy with the passage cut down.', null],
+  context_gain: [F4, 'What the removed context was worth.', 'up'],
+  shortest_vs_longest: [F4, 'Short-passage minus long-passage accuracy.', 'down'],
+  span: [F4, 'Best minus worst bucket.', null],
+
+  // 5 robustness
+  robustness_score: [F3, '1 - mean relative accuracy drop.', 'up'],
+  worst_accuracy_drop: [F4, 'Largest loss from any single perturbation.', 'down'],
+  mean_flip_rate: [PCT, 'Answers that changed at all.', 'down'],
+  baseline_accuracy: [PCT, 'Accuracy on the clean input.', 'up'],
+  variant_accuracy: [PCT, 'Accuracy on the perturbed input.', 'up'],
+  accuracy_drop: [F4, 'baseline - variant.', 'down'],
+  relative_drop: [F4, 'Drop as a share of the baseline.', 'down'],
+  flip_rate: [PCT, '(broke + fixed) / n.', 'down'],
+  broke: [INT, 'Was right, became wrong.', 'down'],
+  fixed: [INT, 'Was wrong, became right - accidental, not skill.', null],
+
+  // 6 api performance
+  mean: [SEC, 'Arithmetic mean.', 'down'],
+  p50: [SEC, 'Median.', 'down'],
+  p95: [SEC, '95th percentile - the tail users feel.', 'down'],
+  p99: [SEC, '99th percentile.', 'down'],
+  std: [SEC, 'Standard deviation.', 'down'],
+  min: [SEC, 'Fastest observed.', null],
+  max: [SEC, 'Slowest observed.', null],
+  prefill_tokens_per_s: [TOKS, 'Prompt tokens/s. Includes network RTT, so a lower bound.', 'up'],
+  decode_tokens_per_s: [TOKS, 'Generated tokens/s during decode.', 'up'],
+  total_tokens_per_s: [TOKS, 'All tokens/s across the run.', 'up'],
+  requests_per_s: [v => Number(v).toFixed(3) + ' req/s', 'Whole-run request throughput.', 'up'],
+  items_per_s: [v => Number(v).toFixed(3) + ' /s', 'Items completed per second.', 'up'],
+  wall_seconds: [v => Number(v).toFixed(1) + ' s', 'Total wall-clock time.', 'down'],
+
+  // 7 token efficiency
+  prompt_tokens_total: [INT, 'Total prompt tokens billed.', null],
+  completion_tokens_total: [INT, 'Total generated tokens billed.', null],
+  total_tokens: [INT, 'Prompt + completion.', null],
+  mean_prompt_tokens: [v => Number(v).toFixed(1), 'Average prompt length.', null],
+  mean_completion_tokens: [v => Number(v).toFixed(1), 'Average response length.', null],
+  tokens_per_item: [v => Number(v).toFixed(1), 'Tokens consumed per question/passage.', 'down'],
+  tokens_per_correct_answer: [v => Number(v).toFixed(1), 'Tokens per USEFUL answer.', 'down'],
+  reasoning_tokens_total: [INT, 'Tokens spent on hidden reasoning. 0 for non-reasoning models.', null],
+  mean_reasoning_tokens: [v => Number(v).toFixed(1), 'Average reasoning tokens per item.', null],
+  reasoning_token_share: [PCT, 'Share of output spent on reasoning.', null],
+  cached_prompt_tokens_total: [INT, 'Prompt tokens served from the provider cache.', 'up'],
+  prompt_cache_hit_rate: [PCT, 'Share of prompt tokens that hit the cache (cheaper).', 'up'],
+
+  // 8 economics
+  total_usd: [USD, 'Actual spend, reported by the provider.', 'down'],
+  mean_per_request_usd: [v => '$' + Number(v).toExponential(2), 'Cost per request.', 'down'],
+  per_1k_requests_usd: [v => '$' + Number(v).toFixed(4), 'Cost per 1 000 requests.', 'down'],
+  cost_per_correct_answer_usd: [USD, 'Money per USEFUL answer - the figure that should drive model choice.', 'down'],
+  cost_per_1k_tokens_usd: [v => '$' + Number(v).toFixed(6), 'Blended cost per 1 000 tokens.', 'down'],
+  cost_per_1m_tokens_usd: [v => '$' + Number(v).toFixed(4), 'Blended cost per 1 000 000 tokens.', 'down'],
+  correct_answers_per_usd: [v => Number(v).toLocaleString(), 'Correct answers bought per dollar.', 'up'],
+  n_requests: [INT, 'Requests counted.', null],
+
+  // 9 reliability
+  success_rate: [PCT, 'Requests that returned without error.', 'up'],
+  failure_rate: [PCT, 'Requests that errored even after retries.', 'down'],
+  invalid_output_rate: [PCT, 'Responses that arrived but carried no usable answer.', 'down'],
+  timeout_rate: [PCT, 'Requests that timed out.', 'down'],
+  rate_limit_rate: [PCT, 'Requests rejected with HTTP 429.', 'down'],
+  server_error_rate: [PCT, 'Requests that hit a 5xx.', 'down'],
+  retry_total: [INT, 'Total retry attempts across the run.', 'down'],
+  retried_request_rate: [PCT, 'Share of requests that needed at least one retry.', 'down'],
+  retries_per_request: [F4, 'Mean retries per request.', 'down'],
+  successful_requests: [INT, 'Requests that completed.', 'up'],
+  provider_failover: [null, 'More than one provider served this run - figures may mix backends.', null],
+  reproducibility_score: [F4, '1.0 = identical output for identical input.', 'up'],
+
+  // tokenization
+  tokens_per_target_word: [F3, 'Tokens needed per gold word (with its leading space).', 'down'],
+  fragmentation_rate: [PCT, 'Targets needing more than one token.', 'down'],
+  subword_exact_match: [PCT, 'Match at token level rather than string level.', 'up'],
+};
+
+// Stage order, matching metrics/taxonomy.py.
+const FAMILIES = [
+  ['task_quality',     '1. Task Quality',           '🎯', 'Was the answer right?'],
+  ['probability',      '2. Probabilistic Quality',  '📈', 'Was its confidence earned?'],
+  ['consistency',      '3. Reasoning & Consistency','🔁', 'Would it answer the same way again?'],
+  ['context',          '4. Context Behavior',       '📖', 'Is it actually reading the passage?'],
+  ['robustness',       '5. Robustness',             '🛡️', 'Does the score survive input changes?'],
+  ['api_performance',  '6. API Performance',        '⚡', 'How fast did the service respond?'],
+  ['token_efficiency', '7. Token Efficiency',       '🔤', 'How many tokens did it consume?'],
+  ['economics',        '8. Economics',              '💰', 'What did it cost?'],
+  ['reliability',      '9. Reliability',            '🧯', 'Did the calls actually succeed?'],
+  ['tokenization',     '+ Tokenization',            '✂️', 'Is the tokenizer handicapping it?'],
+];
+
+const humanise = k => k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+const esc = s => String(s).replace(/[&<>"']/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function kvCard(key, value) {
+  const meta = META[key];
+  let shown;
+  if (value === null || value === undefined) shown = '<span class="v na">not available</span>';
+  else if (typeof value === 'boolean') shown = `<span class="v">${value ? 'yes' : 'no'}</span>`;
+  else if (typeof value === 'number' && meta && meta[0]) {
+    try { shown = `<span class="v">${esc(meta[0](value))}</span>`; }
+    catch { shown = `<span class="v">${esc(value)}</span>`; }
+  }
+  else shown = `<span class="v">${esc(value)}</span>`;
+  const hint = meta && meta[1] ? `<div class="hint">${esc(meta[1])}</div>` : '';
+  const arrow = meta && meta[2]
+    ? `<span title="${meta[2] === 'up' ? 'higher is better' : 'lower is better'}"
+             style="color:#adb5bd">${meta[2] === 'up' ? '↑' : '↓'}</span>` : '';
+  return `<div class="kv"><div class="k">${esc(humanise(key))} ${arrow}</div>${shown}${hint}</div>`;
+}
+
+function srcTag(source) {
+  if (!source) return '';
+  return `<span class="src-tag src-${esc(source)}">${esc(source.replace(/_/g,' '))}</span>`;
+}
+
+function unavailable(reason) {
+  return `<div class="unavail-note"><strong>Not available.</strong>
+    ${esc(reason || 'not recorded for this run')}
+    <div class="mt-1" style="font-size:.78rem;">Reported as absent rather than zero -
+    a fabricated value would be worse than a missing one.</div></div>`;
+}
+
+function renderBlock(block, depth = 0) {
+  if (block === null || block === undefined) return unavailable();
+  if (block.available === false) return unavailable(block.reason);
+
+  const SKIP = ['available','reason','source','caveat','note','assumptions',
+                'reliability_bins','bins','interpretation','failover_warning'];
+  const scalars = [], nested = [];
+  for (const [k, v] of Object.entries(block)) {
+    if (SKIP.includes(k)) continue;
+    if (v && typeof v === 'object' && !Array.isArray(v)) nested.push([k, v]);
+    else if (Array.isArray(v)) { if (v.length && typeof v[0] !== 'object') scalars.push([k, v.join(', ')]); }
+    else scalars.push([k, v]);
+  }
+
+  let html = '';
+  if (scalars.length) html += `<div class="kv-grid mb-2">${scalars.map(([k,v]) => kvCard(k,v)).join('')}</div>`;
+  if (block.source) html += `<div class="mb-2">source: ${srcTag(block.source)}</div>`;
+  if (block.caveat) html += `<p class="small text-muted mb-2">${esc(block.caveat)}</p>`;
+  if (block.note)   html += `<p class="small text-muted mb-2">${esc(block.note)}</p>`;
+  if (block.failover_warning)
+    html += `<div class="alert alert-warning py-2 px-3 small mb-2">${esc(block.failover_warning)}</div>`;
+  if (block.interpretation) html += `<p class="small text-muted mb-2">${esc(block.interpretation)}</p>`;
+
+  const COL_ORDER = ['accuracy','ci95','ci_width','correct','total','n','mean','std',
+    'min','p50','p95','p99','max','baseline_accuracy','variant_accuracy','accuracy_drop',
+    'relative_drop','broke','fixed','flip_rate','full_accuracy','ablated_accuracy',
+    'context_gain','utilization_ratio','word_range','n_items'];
+
+  for (const [key, obj] of nested) {
+    const rows = Object.entries(obj);
+    const tabular = rows.length >= 1 && rows.every(([, v]) =>
+      v && typeof v === 'object' && !Array.isArray(v) &&
+      Object.values(v).some(x => typeof x !== 'object'));
+    if (tabular && depth < 2) {
+      const cols = [...new Set(rows.flatMap(([, v]) =>
+        Object.keys(v).filter(c => typeof v[c] !== 'object' && c !== 'metric' && c !== 'source')))]
+        .sort((a,b) => {
+          const ia = COL_ORDER.indexOf(a), ib = COL_ORDER.indexOf(b);
+          if (ia === -1 && ib === -1) return a.localeCompare(b);
+          if (ia === -1) return 1; if (ib === -1) return -1; return ia - ib;
+        });
+      html += `<div class="mt-2"><div class="fw-semibold small mb-1">${esc(humanise(key))}</div>
+        <div class="table-responsive"><table class="table table-sm table-hover mb-0" style="font-size:.8rem;">
+        <thead><tr><th>${esc(humanise(key).replace(/s$/,''))}</th>
+        ${cols.map(c => `<th class="text-end">${esc(humanise(c))}</th>`).join('')}</tr></thead><tbody>
+        ${rows.map(([name, v]) => `<tr><td>${esc(name.replace(/_/g,' '))}</td>${
+          cols.map(c => {
+            let cell = v[c];
+            if (cell === null || cell === undefined) cell = '<span class="text-muted">-</span>';
+            else if (Array.isArray(cell)) cell = cell.map(x => typeof x === 'number' ? x.toFixed(3) : x).join(' - ');
+            else if (typeof cell === 'number' && META[c] && META[c][0]) {
+              try { cell = META[c][0](cell); } catch { /* leave raw */ }
+            }
+            else if (typeof cell === 'boolean') cell = cell ? 'yes' : 'no';
+            return `<td class="text-end">${cell}</td>`;
+          }).join('')}</tr>`).join('')}
+        </tbody></table></div></div>`;
+    } else {
+      html += `<div class="mt-2 ps-2 border-start">
+        <div class="fw-semibold small mb-1">${esc(humanise(key))}</div>
+        ${renderBlock(obj, depth + 1)}</div>`;
+    }
+  }
+
+  const bins = block.reliability_bins || block.bins;
+  if (Array.isArray(bins) && bins.length) {
+    const filled = bins.filter(b => b.count);
+    if (filled.length) {
+      html += `<div class="mt-2"><div class="fw-semibold small mb-1">Reliability bins</div>
+        <div class="table-responsive"><table class="table table-sm mb-0" style="font-size:.78rem;">
+        <thead><tr><th>Confidence</th><th class="text-end">n</th><th class="text-end">Avg conf.</th>
+        <th class="text-end">Accuracy</th><th class="text-end">Gap</th></tr></thead><tbody>
+        ${filled.map(b => `<tr><td>${b.range[0]}-${b.range[1]}</td><td class="text-end">${b.count}</td>
+          <td class="text-end">${b.avg_confidence?.toFixed(3) ?? '-'}</td>
+          <td class="text-end">${b.accuracy?.toFixed(3) ?? '-'}</td>
+          <td class="text-end ${b.gap > 0.15 ? 'text-danger' : ''}">${b.gap?.toFixed(3) ?? '-'}</td></tr>`).join('')}
+        </tbody></table></div>
+        <p class="small text-muted mt-1 mb-0">Perfect calibration means gap ~ 0 in every bin.</p></div>`;
+    }
+  }
+  return html || `<p class="small text-muted mb-0">No values recorded.</p>`;
+}
+
+// Configuration is rendered apart from the measured blocks and labelled as
+// input, so a parallelism degree is never read as a score.
+function renderConfig(cfg) {
+  if (!cfg) return unavailable('no run configuration recorded');
+  const par = cfg.parallelism || {};
+  const chips = [['TP',par.tensor_parallel],['PP',par.pipeline_parallel],['DP',par.data_parallel],
+                 ['SP',par.sequence_parallel],['CP',par.context_parallel],['EP',par.expert_parallel]]
+    .map(([n,v]) => `<span class="cfg-chip ${v>1?'on':''}">${n}=${v ?? 1}</span>`).join('');
+  const world = (par.tensor_parallel ?? 1)*(par.pipeline_parallel ?? 1)*
+                (par.data_parallel ?? 1)*(par.context_parallel ?? 1);
+  const sect = (title, obj) => obj ? `<div class="mt-2">
+      <div class="fw-semibold small mb-1">${esc(title)}</div><div>${
+      Object.entries(obj).filter(([,v]) => v !== null && v !== '' && !(Array.isArray(v) && !v.length))
+        .map(([k,v]) => `<span class="cfg-chip">${esc(k)}=${esc(Array.isArray(v)?v.join('|'):v)}</span>`)
+        .join('')}</div></div>` : '';
+  return `<div class="alert alert-secondary py-2 px-3 small mb-3">
+      <strong>These are inputs, not scores.</strong> Parallelism degrees and decoding
+      settings describe how the run was configured - recorded for reproducibility,
+      never folded into a quality metric.</div>
+    <div class="fw-semibold small mb-1">Parallelism <span class="text-muted fw-normal">(world size ${world})</span></div>
+    <div class="mb-1">${chips}</div>
+    <div class="small ${par.controlled ? 'text-success' : 'text-muted'} mb-2">
+      ${par.controlled ? 'Controlled: set by the operator and sweepable.'
+        : 'Not controlled: hosted endpoint - the provider chooses the layout, so 1/false encodes "unknown", not "one GPU".'}
+    </div>
+    ${sect('Serving', cfg.serving)}${sect('Decoding', cfg.decoding)}
+    ${sect('Dataset', cfg.dataset)}${sect('Evaluation passes', cfg.evaluation)}
+    <div class="mt-2 text-muted" style="font-size:.72rem;">run_id: <code>${esc(cfg.run_id || '-')}</code>
+      &middot; ${esc(cfg.timestamp || '')}</div>`;
+}
+
+/* Render every stage for one model inside a run. `uid` must be unique across
+   the page, since History shows many runs at once. */
+function renderModelMetrics(blocks, uid) {
+  const fams = FAMILIES.filter(([k]) => blocks[k] !== undefined).map(([key,label,ico,sub], i) => {
+    const id = `m-${uid}-${i}`;
+    const missing = blocks[key] && blocks[key].available === false;
+    return `<div class="m-section">
+      <button class="m-head collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#${id}" aria-expanded="false" aria-controls="${id}">
+        <span class="m-ico">${ico}</span>
+        <span class="flex-grow-1">${esc(label)}
+          ${missing ? '<span class="badge text-bg-light text-muted border ms-1" style="font-size:.6rem;">n/a</span>' : ''}
+          <span class="m-sub d-block">${esc(sub)}</span></span>
+        <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+             viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd"
+             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+      </button>
+      <div class="collapse" id="${id}"><div class="m-body">${renderBlock(blocks[key])}</div></div>
+    </div>`;
+  }).join('');
+
+  const cfgId = `m-${uid}-cfg`;
+  return fams + `<div class="m-section">
+      <button class="m-head collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#${cfgId}" aria-expanded="false" aria-controls="${cfgId}">
+        <span class="m-ico">🔧</span>
+        <span class="flex-grow-1">Run Configuration
+          <span class="m-sub d-block">Independent variables - TP/PP/DP/SP/CP/EP, decoding, dataset</span></span>
+        <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+             viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd"
+             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+      </button>
+      <div class="collapse" id="${cfgId}"><div class="m-body">${renderConfig(blocks.config)}</div></div>
+    </div>`;
+}
+</script>

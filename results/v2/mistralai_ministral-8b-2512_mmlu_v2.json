@@ -1,0 +1,910 @@
+{
+  "model": "mistralai/ministral-8b-2512",
+  "benchmark": "mmlu",
+  "task_quality": {
+    "overall_accuracy": 0.793,
+    "overall_accuracy_ci95": [
+      0.7777,
+      0.8075
+    ],
+    "macro_accuracy_subject": 0.793,
+    "macro_accuracy_category": 0.7927,
+    "normalised_accuracy": 0.724,
+    "random_baseline": 0.25,
+    "error_rate": 0.207,
+    "parse_failure_rate": 0.0056,
+    "subject_accuracy": {
+      "abstract_algebra": {
+        "correct": 32,
+        "total": 50,
+        "accuracy": 0.64,
+        "ci95": [
+          0.5014,
+          0.7586
+        ],
+        "ci_width": 0.2572
+      },
+      "astronomy": {
+        "correct": 42,
+        "total": 50,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7149,
+          0.9166
+        ],
+        "ci_width": 0.2018
+      },
+      "college_biology": {
+        "correct": 45,
+        "total": 50,
+        "accuracy": 0.9,
+        "ci95": [
+          0.7864,
+          0.9565
+        ],
+        "ci_width": 0.1701
+      },
+      "college_chemistry": {
+        "correct": 33,
+        "total": 50,
+        "accuracy": 0.66,
+        "ci95": [
+          0.5215,
+          0.7756
+        ],
+        "ci_width": 0.2541
+      },
+      "college_computer_science": {
+        "correct": 36,
+        "total": 50,
+        "accuracy": 0.72,
+        "ci95": [
+          0.5833,
+          0.8253
+        ],
+        "ci_width": 0.2419
+      },
+      "college_mathematics": {
+        "correct": 35,
+        "total": 50,
+        "accuracy": 0.7,
+        "ci95": [
+          0.5625,
+          0.809
+        ],
+        "ci_width": 0.2465
+      },
+      "college_physics": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "computer_security": {
+        "correct": 48,
+        "total": 50,
+        "accuracy": 0.96,
+        "ci95": [
+          0.8654,
+          0.989
+        ],
+        "ci_width": 0.1236
+      },
+      "conceptual_physics": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "electrical_engineering": {
+        "correct": 38,
+        "total": 50,
+        "accuracy": 0.76,
+        "ci95": [
+          0.6259,
+          0.857
+        ],
+        "ci_width": 0.2312
+      },
+      "elementary_mathematics": {
+        "correct": 47,
+        "total": 50,
+        "accuracy": 0.94,
+        "ci95": [
+          0.8378,
+          0.9794
+        ],
+        "ci_width": 0.1416
+      },
+      "high_school_biology": {
+        "correct": 42,
+        "total": 50,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7149,
+          0.9166
+        ],
+        "ci_width": 0.2018
+      },
+      "high_school_chemistry": {
+        "correct": 41,
+        "total": 50,
+        "accuracy": 0.82,
+        "ci95": [
+          0.692,
+          0.9023
+        ],
+        "ci_width": 0.2103
+      },
+      "high_school_computer_science": {
+        "correct": 46,
+        "total": 50,
+        "accuracy": 0.92,
+        "ci95": [
+          0.8116,
+          0.9685
+        ],
+        "ci_width": 0.1568
+      },
+      "high_school_mathematics": {
+        "correct": 41,
+        "total": 50,
+        "accuracy": 0.82,
+        "ci95": [
+          0.692,
+          0.9023
+        ],
+        "ci_width": 0.2103
+      },
+      "high_school_physics": {
+        "correct": 39,
+        "total": 50,
+        "accuracy": 0.78,
+        "ci95": [
+          0.6476,
+          0.8725
+        ],
+        "ci_width": 0.2249
+      },
+      "high_school_statistics": {
+        "correct": 35,
+        "total": 50,
+        "accuracy": 0.7,
+        "ci95": [
+          0.5625,
+          0.809
+        ],
+        "ci_width": 0.2465
+      },
+      "machine_learning": {
+        "correct": 36,
+        "total": 50,
+        "accuracy": 0.72,
+        "ci95": [
+          0.5833,
+          0.8253
+        ],
+        "ci_width": 0.2419
+      },
+      "formal_logic": {
+        "correct": 37,
+        "total": 50,
+        "accuracy": 0.74,
+        "ci95": [
+          0.6045,
+          0.8413
+        ],
+        "ci_width": 0.2368
+      },
+      "high_school_european_history": {
+        "correct": 37,
+        "total": 50,
+        "accuracy": 0.74,
+        "ci95": [
+          0.6045,
+          0.8413
+        ],
+        "ci_width": 0.2368
+      },
+      "high_school_us_history": {
+        "correct": 40,
+        "total": 50,
+        "accuracy": 0.8,
+        "ci95": [
+          0.6696,
+          0.8876
+        ],
+        "ci_width": 0.2179
+      },
+      "high_school_world_history": {
+        "correct": 42,
+        "total": 50,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7149,
+          0.9166
+        ],
+        "ci_width": 0.2018
+      },
+      "international_law": {
+        "correct": 44,
+        "total": 50,
+        "accuracy": 0.88,
+        "ci95": [
+          0.7619,
+          0.9438
+        ],
+        "ci_width": 0.1819
+      },
+      "jurisprudence": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "logical_fallacies": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "moral_disputes": {
+        "correct": 33,
+        "total": 50,
+        "accuracy": 0.66,
+        "ci95": [
+          0.5215,
+          0.7756
+        ],
+        "ci_width": 0.2541
+      },
+      "moral_scenarios": {
+        "correct": 18,
+        "total": 50,
+        "accuracy": 0.36,
+        "ci95": [
+          0.2414,
+          0.4986
+        ],
+        "ci_width": 0.2572
+      },
+      "philosophy": {
+        "correct": 40,
+        "total": 50,
+        "accuracy": 0.8,
+        "ci95": [
+          0.6696,
+          0.8876
+        ],
+        "ci_width": 0.2179
+      },
+      "prehistory": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "professional_law": {
+        "correct": 24,
+        "total": 50,
+        "accuracy": 0.48,
+        "ci95": [
+          0.348,
+          0.6149
+        ],
+        "ci_width": 0.2669
+      },
+      "world_religions": {
+        "correct": 42,
+        "total": 50,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7149,
+          0.9166
+        ],
+        "ci_width": 0.2018
+      },
+      "econometrics": {
+        "correct": 32,
+        "total": 50,
+        "accuracy": 0.64,
+        "ci95": [
+          0.5014,
+          0.7586
+        ],
+        "ci_width": 0.2572
+      },
+      "high_school_geography": {
+        "correct": 42,
+        "total": 50,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7149,
+          0.9166
+        ],
+        "ci_width": 0.2018
+      },
+      "high_school_government_and_politics": {
+        "correct": 48,
+        "total": 50,
+        "accuracy": 0.96,
+        "ci95": [
+          0.8654,
+          0.989
+        ],
+        "ci_width": 0.1236
+      },
+      "high_school_macroeconomics": {
+        "correct": 42,
+        "total": 50,
+        "accuracy": 0.84,
+        "ci95": [
+          0.7149,
+          0.9166
+        ],
+        "ci_width": 0.2018
+      },
+      "high_school_microeconomics": {
+        "correct": 44,
+        "total": 50,
+        "accuracy": 0.88,
+        "ci95": [
+          0.7619,
+          0.9438
+        ],
+        "ci_width": 0.1819
+      },
+      "high_school_psychology": {
+        "correct": 49,
+        "total": 50,
+        "accuracy": 0.98,
+        "ci95": [
+          0.895,
+          0.9965
+        ],
+        "ci_width": 0.1014
+      },
+      "human_sexuality": {
+        "correct": 46,
+        "total": 50,
+        "accuracy": 0.92,
+        "ci95": [
+          0.8116,
+          0.9685
+        ],
+        "ci_width": 0.1568
+      },
+      "professional_psychology": {
+        "correct": 40,
+        "total": 50,
+        "accuracy": 0.8,
+        "ci95": [
+          0.6696,
+          0.8876
+        ],
+        "ci_width": 0.2179
+      },
+      "public_relations": {
+        "correct": 31,
+        "total": 50,
+        "accuracy": 0.62,
+        "ci95": [
+          0.4815,
+          0.7414
+        ],
+        "ci_width": 0.2599
+      },
+      "security_studies": {
+        "correct": 32,
+        "total": 50,
+        "accuracy": 0.64,
+        "ci95": [
+          0.5014,
+          0.7586
+        ],
+        "ci_width": 0.2572
+      },
+      "sociology": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "us_foreign_policy": {
+        "correct": 47,
+        "total": 50,
+        "accuracy": 0.94,
+        "ci95": [
+          0.8378,
+          0.9794
+        ],
+        "ci_width": 0.1416
+      },
+      "anatomy": {
+        "correct": 34,
+        "total": 50,
+        "accuracy": 0.68,
+        "ci95": [
+          0.5419,
+          0.7924
+        ],
+        "ci_width": 0.2505
+      },
+      "business_ethics": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "clinical_knowledge": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "college_medicine": {
+        "correct": 48,
+        "total": 50,
+        "accuracy": 0.96,
+        "ci95": [
+          0.8654,
+          0.989
+        ],
+        "ci_width": 0.1236
+      },
+      "global_facts": {
+        "correct": 24,
+        "total": 50,
+        "accuracy": 0.48,
+        "ci95": [
+          0.348,
+          0.6149
+        ],
+        "ci_width": 0.2669
+      },
+      "human_aging": {
+        "correct": 39,
+        "total": 50,
+        "accuracy": 0.78,
+        "ci95": [
+          0.6476,
+          0.8725
+        ],
+        "ci_width": 0.2249
+      },
+      "management": {
+        "correct": 45,
+        "total": 50,
+        "accuracy": 0.9,
+        "ci95": [
+          0.7864,
+          0.9565
+        ],
+        "ci_width": 0.1701
+      },
+      "marketing": {
+        "correct": 46,
+        "total": 50,
+        "accuracy": 0.92,
+        "ci95": [
+          0.8116,
+          0.9685
+        ],
+        "ci_width": 0.1568
+      },
+      "medical_genetics": {
+        "correct": 47,
+        "total": 50,
+        "accuracy": 0.94,
+        "ci95": [
+          0.8378,
+          0.9794
+        ],
+        "ci_width": 0.1416
+      },
+      "miscellaneous": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86,
+        "ci95": [
+          0.7381,
+          0.9305
+        ],
+        "ci_width": 0.1924
+      },
+      "nutrition": {
+        "correct": 41,
+        "total": 50,
+        "accuracy": 0.82,
+        "ci95": [
+          0.692,
+          0.9023
+        ],
+        "ci_width": 0.2103
+      },
+      "professional_accounting": {
+        "correct": 36,
+        "total": 50,
+        "accuracy": 0.72,
+        "ci95": [
+          0.5833,
+          0.8253
+        ],
+        "ci_width": 0.2419
+      },
+      "professional_medicine": {
+        "correct": 40,
+        "total": 50,
+        "accuracy": 0.8,
+        "ci95": [
+          0.6696,
+          0.8876
+        ],
+        "ci_width": 0.2179
+      },
+      "virology": {
+        "correct": 27,
+        "total": 50,
+        "accuracy": 0.54,
+        "ci95": [
+          0.404,
+          0.6703
+        ],
+        "ci_width": 0.2663
+      }
+    },
+    "category_accuracy": {
+      "stem": {
+        "correct": 722,
+        "total": 900,
+        "accuracy": 0.8022,
+        "ci95": [
+          0.7749,
+          0.8269
+        ],
+        "ci_width": 0.052
+      },
+      "humanities": {
+        "correct": 486,
+        "total": 650,
+        "accuracy": 0.7477,
+        "ci95": [
+          0.7129,
+          0.7796
+        ],
+        "ci_width": 0.0666
+      },
+      "social_sciences": {
+        "correct": 496,
+        "total": 600,
+        "accuracy": 0.8267,
+        "ci95": [
+          0.7943,
+          0.8549
+        ],
+        "ci_width": 0.0605
+      },
+      "other": {
+        "correct": 556,
+        "total": 700,
+        "accuracy": 0.7943,
+        "ci95": [
+          0.7628,
+          0.8226
+        ],
+        "ci_width": 0.0598
+      }
+    },
+    "option_bias": {
+      "predicted_share": {
+        "A": 0.2196,
+        "B": 0.2723,
+        "C": 0.2516,
+        "D": 0.2509
+      },
+      "gold_share": {
+        "A": 0.2379,
+        "B": 0.2516,
+        "C": 0.2477,
+        "D": 0.2628
+      },
+      "total_variation_distance": 0.0274,
+      "most_favoured_letter": "B"
+    },
+    "n_questions": 2850,
+    "n_subjects": 57
+  },
+  "probability": {
+    "available": false,
+    "reason": "provider did not return token logprobs for this model",
+    "coverage": 0.0
+  },
+  "consistency": {
+    "available": false,
+    "reason": "repeat/seed runs not enabled for this evaluation"
+  },
+  "robustness": {
+    "available": false,
+    "reason": "robustness sweep not enabled for this evaluation"
+  },
+  "api_performance": {
+    "available": true,
+    "latency": {
+      "ttft": {
+        "metric": "TTFT (s)",
+        "mean": 0.4135,
+        "std": 0.5063,
+        "min": 0.2393,
+        "p50": 0.3134,
+        "p95": 0.9887,
+        "p99": 1.6599,
+        "max": 13.468,
+        "n": 2850,
+        "source": "measured"
+      },
+      "e2e": {
+        "metric": "End-to-end (s)",
+        "mean": 1.3714,
+        "std": 1.0654,
+        "min": 0.487,
+        "p50": 1.1224,
+        "p95": 2.7382,
+        "p99": 4.7685,
+        "max": 22.6215,
+        "n": 2850,
+        "source": "measured"
+      },
+      "tpot": {
+        "metric": "TPOT (s/token)",
+        "mean": 0.0105,
+        "std": 0.0071,
+        "min": 0.0003,
+        "p50": 0.0092,
+        "p95": 0.0187,
+        "p99": 0.0295,
+        "max": 0.2076,
+        "n": 2850,
+        "source": "measured"
+      }
+    },
+    "throughput": {
+      "prefill_tokens_per_s": 718.13,
+      "decode_tokens_per_s": 114.44,
+      "total_tokens_per_s": 185.02,
+      "requests_per_s": 0.5568,
+      "items_per_s": 0.5568
+    },
+    "wall_seconds": 5118.19,
+    "source": "measured",
+    "caveat": "TTFT includes network round-trip and provider queueing, so TTFT-derived prefill throughput is a lower bound on true prefill speed"
+  },
+  "token_efficiency": {
+    "available": true,
+    "prompt_tokens_total": 688211,
+    "completion_tokens_total": 258736,
+    "total_tokens": 946947,
+    "mean_prompt_tokens": 241.5,
+    "mean_completion_tokens": 90.8,
+    "tokens_per_item": 332.3,
+    "tokens_per_correct_answer": 419.0,
+    "source": "provider_reported",
+    "reasoning_tokens_total": 0,
+    "mean_reasoning_tokens": 0.0,
+    "reasoning_token_share": 0.0,
+    "cached_prompt_tokens_total": 466048,
+    "prompt_cache_hit_rate": 0.6772
+  },
+  "economics": {
+    "available": true,
+    "total_usd": 0.116086,
+    "mean_per_request_usd": 4.073e-05,
+    "per_1k_requests_usd": 0.0407,
+    "cost_per_correct_answer_usd": 5.1e-05,
+    "n_requests": 2850,
+    "source": "provider_reported",
+    "cost_per_1k_tokens_usd": 0.000123,
+    "cost_per_1m_tokens_usd": 0.1226,
+    "correct_answers_per_usd": 19468.3
+  },
+  "reliability": {
+    "available": true,
+    "n_requests": 2850,
+    "successful_requests": 2850,
+    "success_rate": 1.0,
+    "failure_rate": 0,
+    "invalid_output_rate": 0.0056,
+    "timeout_rate": 0,
+    "rate_limit_rate": 0,
+    "server_error_rate": 0,
+    "error_classes": {},
+    "retry_total": 0,
+    "retried_request_rate": 0,
+    "retries_per_request": 0.0,
+    "providers_used": {
+      "Mistral": 2850
+    },
+    "provider_failover": false,
+    "source": "measured"
+  },
+  "config": {
+    "run_id": "mistralai_ministral-8b-2512_mmlu_TP1_PP1_DP1_SP1_CP1_EP1_20260908-043122",
+    "timestamp": "2026-09-08T04:31:22",
+    "schema_version": "2.0",
+    "model": "mistralai/ministral-8b-2512",
+    "parallelism": {
+      "tensor_parallel": 1,
+      "pipeline_parallel": 1,
+      "data_parallel": 1,
+      "sequence_parallel": 1,
+      "context_parallel": 1,
+      "expert_parallel": 1,
+      "controlled": false,
+      "note": "hosted endpoint: layout chosen by the provider, not observable or settable from the client"
+    },
+    "serving": {
+      "backend": "openrouter",
+      "dtype": "unknown",
+      "quantization": null,
+      "kv_cache_dtype": "unknown",
+      "max_batch_size": null,
+      "max_model_len": null,
+      "gpu_memory_utilization": null,
+      "enable_prefix_caching": null,
+      "speculative_decoding": false,
+      "device": "remote",
+      "device_tdp_watts": null,
+      "controlled": false
+    },
+    "decoding": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": null,
+      "max_tokens": 384,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "seed": 42,
+      "few_shot": 0
+    },
+    "dataset": {
+      "benchmark": "mmlu",
+      "split": "test",
+      "subjects": [],
+      "n_items": 2850,
+      "questions_per_subject": null,
+      "sample_seed": 42,
+      "prompt_template": "baseline"
+    },
+    "evaluation": {
+      "request_logprobs": true,
+      "top_logprobs": 5,
+      "stream_for_latency": true,
+      "repeats_for_consistency": 1,
+      "seeds_for_stability": [],
+      "robustness_variants": [],
+      "context_ablations": [],
+      "calibration_bins": 10
+    },
+    "environment": {
+      "python": "3.10.20",
+      "platform": "macOS-26.6.2-x86_64-i386-64bit",
+      "processor": "i386",
+      "git_commit": "2949ebc"
+    },
+    "notes": ""
+  },
+  "taxonomy": {
+    "deployment": "openrouter_hosted_api",
+    "stages": [
+      {
+        "stage": 1,
+        "layer": "Task Quality",
+        "key": "task_quality",
+        "priority": "P0",
+        "openrouter": "yes",
+        "requires": null
+      },
+      {
+        "stage": 2,
+        "layer": "Probabilistic Quality",
+        "key": "probability",
+        "priority": "P1",
+        "openrouter": "conditional",
+        "requires": "provider that returns token log-probabilities"
+      },
+      {
+        "stage": 3,
+        "layer": "Reasoning & Consistency",
+        "key": "consistency",
+        "priority": "P1",
+        "openrouter": "yes",
+        "requires": "repeats > 1 and/or multiple seeds"
+      },
+      {
+        "stage": 4,
+        "layer": "Context Behavior",
+        "key": "context",
+        "priority": "P1",
+        "openrouter": "yes",
+        "requires": "context ablation pass"
+      },
+      {
+        "stage": 5,
+        "layer": "Robustness",
+        "key": "robustness",
+        "priority": "P1",
+        "openrouter": "yes",
+        "requires": "robustness pass"
+      },
+      {
+        "stage": 6,
+        "layer": "API Performance",
+        "key": "api_performance",
+        "priority": "P0",
+        "openrouter": "yes",
+        "requires": null
+      },
+      {
+        "stage": 7,
+        "layer": "Token Efficiency",
+        "key": "token_efficiency",
+        "priority": "P0",
+        "openrouter": "yes",
+        "requires": null
+      },
+      {
+        "stage": 8,
+        "layer": "Economics",
+        "key": "economics",
+        "priority": "P0",
+        "openrouter": "yes",
+        "requires": null
+      },
+      {
+        "stage": 9,
+        "layer": "Reliability",
+        "key": "reliability",
+        "priority": "P0",
+        "openrouter": "yes",
+        "requires": null
+      }
+    ],
+    "excluded": {
+      "stage": 10,
+      "layer": "Hardware & Distributed",
+      "reason": "The benchmark is a client of a shared, auto-scaled third-party endpoint. Parallelism layout, GPU telemetry and power draw are chosen and held by the provider; none of them is exposed to the caller. Any figure reported here would be fabricated.",
+      "path_to_measure": "Run the same suite against a self-hosted vLLM backend (benchmark_config.local_vllm_config), where TP/PP/DP/SP/CP/EP become settable variables and VRAM, KV cache, communication overhead and energy become directly measurable."
+    }
+  }
+}

@@ -20,7 +20,7 @@ import time
 
 import requests
 
-from openrouter_client import post_with_retry
+from openrouter_client import THROTTLE, post_with_retry, preflight
 from config import (
     OPENROUTER_API_KEY,
     OPENROUTER_BASE_URL,
@@ -175,12 +175,17 @@ def mmlu_default_params():
 
 
 def resolve_subjects(selection):
-    """Turn a selection ("all", a group name, or a list) into subject names."""
+    """Turn a selection into subject names.
+
+    Accepts "all", a group name ("stem"), a list, or a comma-separated string
+    ("astronomy,philosophy") so a hand-picked spread of subjects can be given
+    on the command line.
+    """
     if isinstance(selection, str):
         key = selection.strip().lower()
         if key in SUBJECT_GROUPS:
             return list(SUBJECT_GROUPS[key])
-        selection = [key]
+        selection = [part for part in key.split(",") if part.strip()]
     subjects = []
     for s in selection:
         name = str(s).strip().lower()
@@ -498,6 +503,7 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
     subject_stats = {}
     correct = 0
     errors = 0
+    answered = 0          # questions the API actually returned a response for
     total_time = 0.0
     reasoned = 0
     consistent = 0
@@ -513,6 +519,7 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
 
         correct += int(is_correct)
         errors += int(bool(error))
+        answered += int(not error)
         total_time += elapsed
         reasoned += int(analysis["has_reasoning"])
         consistent += int(analysis["consistent"])
@@ -523,6 +530,7 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
             {"category": task["category"], "correct": 0, "total": 0},
         )
         stats["total"] += 1
+        stats["answered"] = stats.get("answered", 0) + int(not error)
         stats["correct"] += int(is_correct)
 
         per_question.append({
@@ -545,7 +553,8 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
 
     total = len(per_question)
     for stats in subject_stats.values():
-        stats["accuracy"] = round(stats["correct"] / stats["total"], 4)
+        denom = stats.get("answered") or stats["total"]
+        stats["accuracy"] = round(stats["correct"] / denom, 4)
 
     category_stats = {}
     for stats in subject_stats.values():
@@ -554,8 +563,10 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
         )
         cat["correct"] += stats["correct"]
         cat["total"] += stats["total"]
+        cat["answered"] = cat.get("answered", 0) + stats.get("answered", stats["total"])
     for cat in category_stats.values():
-        cat["accuracy"] = round(cat["correct"] / cat["total"], 4)
+        denom = cat.get("answered") or cat["total"]
+        cat["accuracy"] = round(cat["correct"] / denom, 4)
 
     return {
         "model": model,
@@ -566,10 +577,21 @@ def evaluate_model_mmlu(model, tasks, api_key, params=None, progress=None):
         ),
         "total": total,
         "correct": correct,
-        "accuracy": round(correct / total, 4) if total else 0,
+        # Accuracy is scored over questions the API actually answered. A
+        # request the provider refused (429, timeout) says nothing about what
+        # the model knows, and counting it as a wrong answer silently deflates
+        # the score - during a rate-limit streak, by a lot. `errors` and
+        # `accuracy_including_errors` keep the other view available.
+        "answered": answered,
+        "accuracy": round(correct / answered, 4) if answered else 0,
+        "accuracy_including_errors": round(correct / total, 4) if total else 0,
         "avg_response_time": round(total_time / total, 3) if total else 0,
         "total_time": round(total_time, 2),
         "errors": errors,
+        "error_rate": round(errors / total, 4) if total else 0,
+        # How much of the wall time went to provider rate limiting rather than
+        # inference - otherwise a throttled run just looks like a slow model.
+        "throttle": THROTTLE.stats(),
         "subject_accuracy": subject_stats,
         "category_accuracy": category_stats,
         "reasoning": {
@@ -695,6 +717,27 @@ def run_mmlu_evaluation(subject_selection=None, questions_per_subject=None,
     tasks = load_mmlu_tasks(subjects, n)
     print(f"Loaded {len(tasks)} questions "
           f"(cached under {MMLU_CACHE_DIR}, source: free HF datasets-server)")
+
+    # Sample each provider's current willingness to serve before committing.
+    # A large run against a throttled provider still completes - requests are
+    # retried rather than dropped - but it can take hours, and that is worth
+    # knowing in the first ten seconds rather than the first hour.
+    print(f"\nPre-flight check ({len(tasks)} questions x {len(models)} model(s) "
+          f"= {len(tasks) * len(models)} requests):")
+    throttled = []
+    for m in models:
+        if not preflight(m, OPENROUTER_API_KEY).get("healthy"):
+            throttled.append(m)
+    if throttled:
+        print(f"\n  WARNING: {len(throttled)} of {len(models)} model(s) are being "
+              f"rate-limited upstream right now.")
+        print( "  Nothing will be lost - failed requests are retried and excluded "
+               "from the accuracy denominator -")
+        print( "  but throughput for those models will be low until the provider "
+               "recovers. To run only the healthy ones:")
+        healthy = [m for m in models if m not in throttled]
+        if healthy:
+            print(f"    run_mmlu_evaluation(models={healthy!r})")
 
     os.makedirs(RESULTS_DIR, exist_ok=True)
     all_results = []

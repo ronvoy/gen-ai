@@ -47,20 +47,149 @@
     .report th { background: #f8f9fa; white-space: nowrap; }
     .report .mermaid { text-align: center; margin: 1.25rem 0; }
     .report .mermaid svg { max-width: 460px !important; height: auto; }
+
+    /* ---- hamburger nav modal ---- */
+    .nav-modal-link {
+      display: flex; align-items: center; gap: .85rem;
+      padding: .9rem 1rem; border-radius: 10px; text-decoration: none;
+      color: #212529; border: 1px solid #e6e8ec; background: #fff;
+      transition: background .12s ease, border-color .12s ease;
+    }
+    .nav-modal-link:hover, .nav-modal-link:focus { background: #f1f3f5; border-color: #ced4da; color: #212529; }
+    .nav-modal-link.active { background: #e7f1ff; border-color: #9ec5fe; color: #0a58ca; }
+    .nav-modal-link .nav-ico {
+      width: 38px; height: 38px; flex: 0 0 38px; border-radius: 9px;
+      display: grid; place-items: center; font-size: 1.05rem; background: #f1f3f5;
+    }
+    .nav-modal-link.active .nav-ico { background: #cfe2ff; }
+    .nav-modal-link .nav-sub { font-size: .78rem; color: #6c757d; }
+    .nav-modal-link.active .nav-sub { color: #0a58ca; opacity: .85; }
+    .hamburger-btn { border-color: rgba(255,255,255,.35); }
+
+    /* ---- collapsible metric containers (analysis view) ---- */
+    .m-section { border: 1px solid #e6e8ec; border-radius: 10px; background: #fff; margin-bottom: .75rem; overflow: hidden; }
+    .m-head {
+      width: 100%; border: 0; background: #fff; text-align: left;
+      padding: .8rem 1rem; display: flex; align-items: center; gap: .65rem;
+      font-weight: 600; font-size: .95rem; color: #212529;
+    }
+    .m-head:hover { background: #f8f9fa; }
+    .m-head .chev { margin-left: auto; transition: transform .18s ease; color: #adb5bd; flex: 0 0 auto; }
+    .m-head[aria-expanded="true"] .chev { transform: rotate(90deg); }
+    .m-head .m-sub { font-weight: 400; font-size: .8rem; color: #6c757d; }
+    .m-body { padding: 0 1rem 1rem; }
+    .m-ico { width: 30px; height: 30px; flex: 0 0 30px; border-radius: 8px; display: grid; place-items: center; font-size: .9rem; background: #f1f3f5; }
+
+    .kv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .6rem; }
+    .kv {
+      border: 1px solid #eceef1; border-radius: 8px; padding: .55rem .7rem; background: #fbfcfd;
+      min-width: 0;
+    }
+    .kv .k { font-size: .72rem; color: #6c757d; text-transform: uppercase; letter-spacing: .3px;
+             display: flex; align-items: center; gap: .3rem; }
+    .kv .v { font-size: 1.12rem; font-weight: 600; color: #212529; word-break: break-word; }
+    .kv .v.na { color: #adb5bd; font-weight: 500; font-size: .95rem; }
+    .kv .hint { font-size: .7rem; color: #868e96; margin-top: .1rem; line-height: 1.3; }
+
+    .src-tag { font-size: .62rem; padding: .1rem .35rem; border-radius: 4px; font-weight: 600;
+               text-transform: uppercase; letter-spacing: .3px; }
+    .src-measured { background: #d1e7dd; color: #0f5132; }
+    .src-provider_reported { background: #cff4fc; color: #055160; }
+    .src-analytic_model { background: #fff3cd; color: #664d03; }
+    .src-unavailable { background: #f8d7da; color: #842029; }
+
+    .unavail-note { border: 1px dashed #dee2e6; border-radius: 8px; padding: .7rem .85rem;
+                    background: #fbfcfd; color: #6c757d; font-size: .85rem; }
+    .cfg-chip { display: inline-flex; align-items: center; gap: .3rem; font-size: .74rem;
+                background: #eef1f4; border: 1px solid #dde1e6; border-radius: 20px;
+                padding: .16rem .6rem; margin: 0 .25rem .3rem 0; font-family: SFMono-Regular, Menlo, monospace; }
+    .cfg-chip.on { background: #d1e7dd; border-color: #a3cfbb; color: #0f5132; }
+
+    /* Horizontal-overflow guard. A single wide child (button group, table,
+       long token string) otherwise widens the whole document on a phone and
+       clips the navbar - including the hamburger. */
+    html, body { max-width: 100%; overflow-x: hidden; }
+    .quick-select-scroll {
+      overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin; padding-bottom: 2px;
+    }
+    .quick-select-scroll::-webkit-scrollbar { height: 4px; }
+    .quick-select-scroll::-webkit-scrollbar-thumb { background: #ced4da; border-radius: 2px; }
+    .table-responsive { max-width: 100%; }
+    pre, code { overflow-wrap: anywhere; }
+
+    .min-w-0 { min-width: 0; }
+    .cat-label { font-size: .82rem; line-height: 1.15; }
+
+    @media (max-width: 576px) {
+      /* Two subject categories per row: the checkbox stays on its own line
+         above the label so neither gets squeezed at ~180px of column width. */
+      .cat-head { flex-wrap: wrap; row-gap: .15rem; }
+      .cat-head .form-check { margin-bottom: 0; }
+      .cat-label { font-size: .78rem; }
+      .m-sub { font-size: .7rem; }
+      .kv-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: .45rem; }
+      .kv .v { font-size: 1rem; }
+      .m-head { padding: .7rem .8rem; font-size: .9rem; }
+      .m-body { padding: 0 .8rem .8rem; }
+      main { padding-left: .75rem; padding-right: .75rem; }
+      .table-responsive table { font-size: .82rem; }
+      h3 { font-size: 1.35rem; }
+      .metric-value { font-size: 1.35rem; }
+      .terminal { height: 160px; font-size: .72rem; }
+      .nav-modal-link { padding: .8rem .85rem; }
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="{{ url_for('index') }}">SLM Benchmark</a>
-      <div class="navbar-nav">
-        <a class="nav-link {% block nav_home %}{% endblock %}" href="{{ url_for('index') }}">LAMBADA</a>
-        <a class="nav-link {% block nav_mmlu %}{% endblock %}" href="{{ url_for('mmlu') }}">MMLU</a>
-        <a class="nav-link {% block nav_history %}{% endblock %}" href="{{ url_for('history') }}">History</a>
-        <a class="nav-link {% block nav_docs %}{% endblock %}" href="{{ url_for('docs') }}">Docs</a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="d-none d-md-inline text-secondary small">{% block nav_current %}{% endblock %}</span>
+        <button class="btn btn-outline-light btn-sm hamburger-btn" type="button"
+                data-bs-toggle="modal" data-bs-target="#navModal" aria-label="Open navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
+
+  <!-- Navigation modal: single tap-target list, works identically on phone and desktop -->
+  <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="navModalLabel">Navigate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-grid gap-2">
+          <a class="nav-modal-link {% block navm_home %}{% endblock %}" href="{{ url_for('index') }}">
+            <span class="nav-ico">📖</span>
+            <span><span class="d-block fw-semibold">LAMBADA</span>
+                  <span class="nav-sub">Last-word prediction over long context</span></span>
+          </a>
+          <a class="nav-modal-link {% block navm_mmlu %}{% endblock %}" href="{{ url_for('mmlu') }}">
+            <span class="nav-ico">🎓</span>
+            <span><span class="d-block fw-semibold">MMLU</span>
+                  <span class="nav-sub">57-subject knowledge &amp; reasoning</span></span>
+          </a>
+          <a class="nav-modal-link {% block navm_history %}{% endblock %}" href="{{ url_for('history') }}">
+            <span class="nav-ico">🕘</span>
+            <span><span class="d-block fw-semibold">History</span>
+                  <span class="nav-sub">Saved runs with full stage 1-9 analysis</span></span>
+          </a>
+          <a class="nav-modal-link {% block navm_docs %}{% endblock %}" href="{{ url_for('docs') }}">
+            <span class="nav-ico">📄</span>
+            <span><span class="d-block fw-semibold">Docs</span>
+                  <span class="nav-sub">Full evaluation report</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <main class="container py-4">
     {% block content %}{% endblock %}

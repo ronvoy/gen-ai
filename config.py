@@ -74,29 +74,98 @@ PRESETS = {
     },
 }
 
-# Same three presets for the MMLU decoding panel. Optimal gives the model
-# the most room to reason, Normal matches the defaults, Best Performance
-# caps the reasoning budget so runs finish faster.
+# MMLU decoding presets. Each names the trade-off it makes so the panel is
+# self-explanatory: greedy/deterministic for benchmarking, sampled for
+# diversity studies, capped budgets for cheap runs.
 MMLU_PRESETS = {
     "optimal": {
         "label": "Optimal",
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "max_tokens": 512,
+        "hint": "Greedy, most reasoning room. Most reliable accuracy.",
+        "temperature": 0.0, "top_p": 1.0, "top_k": 0, "max_tokens": 512,
+        "frequency_penalty": 0.0, "presence_penalty": 0.0, "repetition_penalty": 1.0,
+        "min_p": 0.0, "seed": 42,
     },
     "normal": {
         "label": "Normal",
-        "temperature": 0.2,
-        "top_p": 0.95,
-        "max_tokens": 384,
+        "hint": "Light sampling. Matches the saved-run defaults.",
+        "temperature": 0.2, "top_p": 0.95, "top_k": 0, "max_tokens": 384,
+        "frequency_penalty": 0.0, "presence_penalty": 0.0, "repetition_penalty": 1.0,
+        "min_p": 0.0, "seed": 42,
     },
     "best": {
-        "label": "Best Performance",
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "max_tokens": 192,
+        "label": "Fast / Cheap",
+        "hint": "Capped reasoning budget. Fastest and cheapest per question.",
+        "temperature": 0.0, "top_p": 1.0, "top_k": 0, "max_tokens": 192,
+        "frequency_penalty": 0.0, "presence_penalty": 0.0, "repetition_penalty": 1.0,
+        "min_p": 0.0, "seed": 42,
+    },
+    "deterministic": {
+        "label": "Deterministic",
+        "hint": "Greedy with a fixed seed - for reproducibility and seed-stability studies.",
+        "temperature": 0.0, "top_p": 1.0, "top_k": 1, "max_tokens": 384,
+        "frequency_penalty": 0.0, "presence_penalty": 0.0, "repetition_penalty": 1.0,
+        "min_p": 0.0, "seed": 42,
+    },
+    "creative": {
+        "label": "Exploratory",
+        "hint": "Sampled. Use with repeats>1 to measure self-consistency.",
+        "temperature": 0.8, "top_p": 0.9, "top_k": 40, "max_tokens": 512,
+        "frequency_penalty": 0.1, "presence_penalty": 0.1, "repetition_penalty": 1.05,
+        "min_p": 0.05, "seed": None,
     },
 }
+
+# Full decoding parameter surface exposed by the web panel. Each entry drives
+# one control and its explanation, so adding a parameter here adds it to the UI
+# without touching the template.
+DECODING_PARAMS = [
+    {"id": "temperature", "label": "Temperature", "min": 0.0, "max": 2.0, "step": 0.05,
+     "default": 0.0, "type": "range",
+     "hint": "Randomness. 0 = always take the most likely token (best for benchmarking)."},
+    {"id": "top_p", "label": "Top-p (nucleus)", "min": 0.0, "max": 1.0, "step": 0.05,
+     "default": 1.0, "type": "range",
+     "hint": "Sample only from the smallest set of tokens whose probabilities sum to p."},
+    {"id": "top_k", "label": "Top-k", "min": 0, "max": 100, "step": 1,
+     "default": 0, "type": "range",
+     "hint": "Consider only the k most likely tokens. 0 disables the limit."},
+    {"id": "min_p", "label": "Min-p", "min": 0.0, "max": 1.0, "step": 0.01,
+     "default": 0.0, "type": "range",
+     "hint": "Drop tokens below this fraction of the top token's probability."},
+    {"id": "max_tokens", "label": "Max tokens", "min": 8, "max": 1024, "step": 8,
+     "default": 384, "type": "range",
+     "hint": "Output budget. Too low truncates reasoning before the answer letter."},
+    {"id": "frequency_penalty", "label": "Frequency penalty", "min": -2.0, "max": 2.0,
+     "step": 0.1, "default": 0.0, "type": "range",
+     "hint": "Penalises tokens by how often they have already appeared."},
+    {"id": "presence_penalty", "label": "Presence penalty", "min": -2.0, "max": 2.0,
+     "step": 0.1, "default": 0.0, "type": "range",
+     "hint": "Penalises tokens that have appeared at all, regardless of count."},
+    {"id": "repetition_penalty", "label": "Repetition penalty", "min": 0.5, "max": 2.0,
+     "step": 0.05, "default": 1.0, "type": "range",
+     "hint": "Divides the logit of already-seen tokens. 1.0 = off."},
+    {"id": "seed", "label": "Seed", "min": 0, "max": 9999, "step": 1,
+     "default": 42, "type": "number",
+     "hint": "Fixed seed makes a run repeatable where the provider honours it. Blank = random."},
+]
+
+# Extra evaluation passes offered in the web panel. These map onto the
+# run_benchmark.py flags of the same name.
+EVAL_PASSES = [
+    {"id": "calibration", "label": "Calibration pass", "default": True,
+     "cost": "+1 call/item (1 token each)",
+     "hint": "Single-token scoring to recover ECE, Brier, NLL and target rank. "
+             "Only yields numbers for providers that return log-probabilities."},
+    {"id": "robustness", "label": "Robustness sweep", "default": False,
+     "cost": "+2-4 calls/item",
+     "hint": "Prompt variation, option reordering and typo noise, scored as accuracy deltas."},
+    {"id": "context", "label": "Context ablations", "default": False,
+     "cost": "+3 calls/item (LAMBADA)",
+     "hint": "Re-runs with the passage cut down, to measure real context utilisation."},
+    {"id": "repeats", "label": "Consistency repeats", "default": 1,
+     "type": "number", "min": 1, "max": 5,
+     "cost": "x(N-1) extra calls",
+     "hint": "Repeat each item N times to measure answer stability and self-consistency."},
+]
 
 DATASET_DIR = "_rsc/lambada-dataset"
 REJECTED_DIR = "_rsc/rejected-data1/rejected"

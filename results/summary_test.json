@@ -4,28 +4,28 @@
     {
       "model": "google/gemma-3-4b-it",
       "name": "Gemma-3-4B",
-      "accuracy": 0.219,
-      "correct": 219,
+      "accuracy": 0.1802,
+      "correct": 180,
       "total": 1000,
-      "avg_response_time": 1.198,
-      "errors": 0
+      "avg_response_time": 1.812,
+      "errors": 1
     },
     {
       "model": "meta-llama/llama-3.2-3b-instruct",
       "name": "Llama-3.2-3B",
-      "accuracy": 0.208,
-      "correct": 208,
+      "accuracy": 0.224,
+      "correct": 224,
       "total": 1000,
-      "avg_response_time": 0.577,
+      "avg_response_time": 0.349,
       "errors": 0
     },
     {
       "model": "mistralai/ministral-8b-2512",
       "name": "Ministral-8B",
-      "accuracy": 0.381,
-      "correct": 381,
+      "accuracy": 0.395,
+      "correct": 395,
       "total": 1000,
-      "avg_response_time": 0.731,
+      "avg_response_time": 0.518,
       "errors": 0
     }
   ]

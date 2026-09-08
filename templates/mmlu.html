@@ -40,30 +40,56 @@
       <div class="mt-3">
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
           <span class="fw-semibold">Subjects <span class="text-muted small" id="subject-count"></span></span>
-          <div class="btn-group btn-group-sm" role="group">
-            <button type="button" class="btn btn-outline-secondary group-btn" data-group="all">All 57</button>
-            {% for key, g in groups.items() %}
-            <button type="button" class="btn btn-outline-secondary group-btn" data-group="{{ key }}">{{ g.label }}</button>
-            {% endfor %}
-            <button type="button" class="btn btn-outline-secondary group-btn" data-group="none">Clear</button>
+          <!-- Scrolls sideways rather than widening the page: a fixed btn-group of
+               six items is wider than a phone viewport and would force the whole
+               document to overflow horizontally. -->
+          <div class="quick-select-scroll">
+            <div class="btn-group btn-group-sm flex-nowrap" role="group">
+              <button type="button" class="btn btn-outline-secondary group-btn" data-group="all">All 57</button>
+              {% for key, g in groups.items() %}
+              <button type="button" class="btn btn-outline-secondary group-btn text-nowrap" data-group="{{ key }}">{{ g.label }}</button>
+              {% endfor %}
+              <button type="button" class="btn btn-outline-secondary group-btn" data-group="none">Clear</button>
+            </div>
           </div>
         </div>
-        <div class="row g-3">
+        <!-- Category accordions: collapsed by default so the form stays short on
+             mobile; the header keeps the select-all checkbox and a live count so
+             a category can be chosen without ever expanding it. -->
+        <div class="row g-2">
           {% for key, g in groups.items() %}
-          <div class="col-12 col-md-6 col-xl-3">
-            <div class="border rounded p-2 bg-light h-100">
-              <div class="form-check mb-1">
-                <input class="form-check-input cat-toggle" type="checkbox" id="cat-{{ key }}" data-group="{{ key }}">
-                <label class="form-check-label fw-semibold small" for="cat-{{ key }}">{{ g.label }} ({{ g.subjects | length }})</label>
-              </div>
-              <div style="max-height: 180px; overflow-y: auto;">
-                {% for s in g.subjects %}
-                <div class="form-check">
-                  <input class="form-check-input subject-box" type="checkbox"
-                         value="{{ s }}" id="s-{{ s }}" data-group="{{ key }}">
-                  <label class="form-check-label small" for="s-{{ s }}">{{ s.replace('_', ' ') }}</label>
+          <!-- col-6 keeps two categories per row even on a phone; the header
+               stacks vertically below 576px so the label and count still fit. -->
+          <div class="col-6 col-lg-3">
+            <div class="m-section mb-0 h-100">
+              <div class="cat-head d-flex align-items-center gap-2 px-2 px-sm-3 py-2">
+                <div class="form-check mb-0 flex-shrink-0">
+                  <input class="form-check-input cat-toggle" type="checkbox" id="cat-{{ key }}" data-group="{{ key }}">
+                  <label class="form-check-label visually-hidden" for="cat-{{ key }}">Select all {{ g.label }}</label>
                 </div>
-                {% endfor %}
+                <button class="btn btn-link p-0 text-decoration-none text-body flex-grow-1 text-start d-flex align-items-center gap-2 min-w-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#subj-group-{{ key }}"
+                        aria-expanded="false" aria-controls="subj-group-{{ key }}">
+                  <span class="m-ico d-none d-sm-grid">{{ {'stem':'🔬','humanities':'📜','social_sciences':'🏛️','other':'🩺'}.get(key,'📚') }}</span>
+                  <span class="flex-grow-1 min-w-0">
+                    <span class="fw-semibold cat-label d-block">{{ g.label }}</span>
+                    <span class="m-sub"><span class="cat-count" data-group="{{ key }}">0</span>/{{ g.subjects | length }}</span>
+                  </span>
+                  <svg class="chev flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="collapse" id="subj-group-{{ key }}">
+                <div class="px-2 px-sm-3 pb-3" style="max-height: 220px; overflow-y: auto;">
+                  {% for s in g.subjects %}
+                  <div class="form-check">
+                    <input class="form-check-input subject-box" type="checkbox"
+                           value="{{ s }}" id="s-{{ s }}" data-group="{{ key }}">
+                    <label class="form-check-label small" for="s-{{ s }}">{{ s.replace('_', ' ') }}</label>
+                  </div>
+                  {% endfor %}
+                </div>
               </div>
             </div>
           </div>
@@ -73,47 +99,105 @@
 
       <div class="collapse mt-3" id="mmlu-tune">
         <div class="border rounded p-3 bg-light">
-          <div class="d-flex justify-content-between align-items-center mb-2">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
             <span class="fw-semibold">Decoding parameters</span>
-            <div class="btn-group btn-group-sm" role="group">
-              {% for key, p in presets.items() %}
-              <button type="button" class="btn btn-outline-secondary preset-btn" data-preset="{{ key }}">{{ p.label }}</button>
-              {% endfor %}
+            <div class="quick-select-scroll">
+              <div class="btn-group btn-group-sm flex-nowrap" role="group">
+                {% for key, p in presets.items() %}
+                <button type="button" class="btn btn-outline-secondary preset-btn text-nowrap"
+                        data-preset="{{ key }}" title="{{ p.hint | default('') }}">{{ p.label }}</button>
+                {% endfor %}
+              </div>
             </div>
           </div>
-          <p class="text-muted small mb-2">
+          <p class="text-muted small mb-2" id="preset-hint">
             MMLU uses greedy decoding by default and a larger token budget than LAMBADA
             so the model has room to write its reasoning before committing to a letter.
-            <strong>Optimal</strong> gives the most reasoning room (most reliable accuracy),
-            <strong>Normal</strong> matches the defaults, and <strong>Best Performance</strong>
-            caps the reasoning budget so runs finish faster.
+            Hover a preset to see the trade-off it makes.
           </p>
+
           <div class="row g-3">
-            <div class="col-12 col-md-4">
-              <label class="form-label small mb-0">Temperature <span class="text-muted" id="temperature-val"></span></label>
-              <input type="range" class="form-range tune" id="temperature" min="0" max="2" step="0.05" value="{{ defaults.temperature }}">
+            {% for p in decoding_params %}
+            <div class="col-6 col-md-4">
+              <label class="form-label small mb-0 d-flex justify-content-between" for="{{ p.id }}">
+                <span>{{ p.label }}</span>
+                <span class="text-muted fw-semibold" id="{{ p.id }}-val"></span>
+              </label>
+              {% if p.type == 'number' %}
+              <input type="number" class="form-control form-control-sm tune" id="{{ p.id }}"
+                     min="{{ p.min }}" max="{{ p.max }}" step="{{ p.step }}"
+                     value="{{ defaults.get(p.id, p.default) }}" placeholder="random">
+              {% else %}
+              <input type="range" class="form-range tune" id="{{ p.id }}"
+                     min="{{ p.min }}" max="{{ p.max }}" step="{{ p.step }}"
+                     value="{{ defaults.get(p.id, p.default) }}">
+              {% endif %}
+              <div class="text-muted" style="font-size:.7rem; line-height:1.25;">{{ p.hint }}</div>
             </div>
-            <div class="col-12 col-md-4">
-              <label class="form-label small mb-0">Top-p <span class="text-muted" id="top_p-val"></span></label>
-              <input type="range" class="form-range tune" id="top_p" min="0" max="1" step="0.05" value="{{ defaults.top_p }}">
+            {% endfor %}
+          </div>
+
+          <!-- Extended passes. Calibration is on by default: every run should
+               produce the full stage 1-9 taxonomy, not just accuracy. Each
+               control states its own API-call cost. -->
+          <hr class="my-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="fw-semibold small">Extended analysis passes</span>
+            <span class="badge text-bg-light border text-muted" id="call-estimate">1x calls</span>
+          </div>
+          <div class="row g-2">
+            {% for p in eval_passes %}
+            <div class="col-12 col-md-6">
+              <div class="border rounded bg-white p-2 h-100">
+                {% if p.type == 'number' %}
+                <label class="form-label small mb-1 d-flex justify-content-between" for="pass-{{ p.id }}">
+                  <span class="fw-semibold">{{ p.label }}</span>
+                  <span class="text-muted" style="font-size:.7rem;">{{ p.cost }}</span>
+                </label>
+                <input type="number" class="form-control form-control-sm pass-input" id="pass-{{ p.id }}"
+                       data-pass="{{ p.id }}" min="{{ p.min }}" max="{{ p.max }}" value="{{ p.default }}">
+                {% else %}
+                <div class="form-check mb-1">
+                  <input class="form-check-input pass-input" type="checkbox" id="pass-{{ p.id }}"
+                         data-pass="{{ p.id }}" {{ 'checked' if p.default else '' }}>
+                  <label class="form-check-label small fw-semibold" for="pass-{{ p.id }}">
+                    {{ p.label }}
+                    <span class="text-muted fw-normal" style="font-size:.7rem;">{{ p.cost }}</span>
+                  </label>
+                </div>
+                {% endif %}
+                <div class="text-muted" style="font-size:.7rem; line-height:1.25;">{{ p.hint }}</div>
+              </div>
             </div>
-            <div class="col-12 col-md-4">
-              <label class="form-label small mb-0">Max tokens <span class="text-muted" id="max_tokens-val"></span></label>
-              <input type="range" class="form-range tune" id="max_tokens" min="64" max="1024" step="32" value="{{ defaults.max_tokens }}">
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     </form>
 
+    <!-- Live output, collapsed until asked for. It auto-expands when a run
+         starts so real-time progress is never hidden behind a click, and the
+         status dot keeps reporting state while collapsed. -->
     <div class="mt-3">
-      <div class="terminal-header">
+      <button class="terminal-header w-100 border-0 text-start" type="button" id="terminal-toggle"
+              data-bs-toggle="collapse" data-bs-target="#terminal-wrap"
+              aria-expanded="false" aria-controls="terminal-wrap"
+              style="cursor:pointer; border-radius:6px;">
         <span class="dot" style="background:#ff5f57"></span>
         <span class="dot" style="background:#febc2e"></span>
         <span class="dot" style="background:#28c840"></span>
         <span>mmlu — benchmark output</span>
+        <span class="ms-auto d-flex align-items-center gap-2">
+          <span id="term-state" class="text-secondary" style="font-size:.7rem;">idle</span>
+          <svg id="term-chev" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+               viewBox="0 0 16 16" fill="currentColor" style="transition:transform .18s ease;">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </span>
+      </button>
+      <div class="collapse" id="terminal-wrap">
+        <div class="terminal" id="terminal" style="border-radius:0 0 6px 6px;"></div>
       </div>
-      <div class="terminal" id="terminal"></div>
     </div>
 
     <div id="status" class="mt-3 small"></div>
@@ -268,8 +352,21 @@
   }
   function updateCount() {
     document.getElementById('subject-count').textContent = `(${selectedSubjects().length} selected)`;
+    // Per-category counts + indeterminate state on the group checkbox, so a
+    // collapsed accordion still reports exactly what is selected inside it.
+    document.querySelectorAll('.cat-count').forEach(el => {
+      const g = el.dataset.group;
+      const boxes = subjectBoxes.filter(b => b.dataset.group === g);
+      const on = boxes.filter(b => b.checked).length;
+      el.textContent = on;
+      const toggle = document.getElementById('cat-' + g);
+      if (toggle) {
+        toggle.checked = on > 0 && on === boxes.length;
+        toggle.indeterminate = on > 0 && on < boxes.length;
+      }
+    });
   }
-  subjectBoxes.forEach(b => b.addEventListener('change', updateCount));
+  subjectBoxes.forEach(b => b.addEventListener('change', () => { updateCount(); updateCallEstimate(); }));
 
   document.querySelectorAll('.group-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -283,6 +380,7 @@
         t.checked = g === 'all' || t.dataset.group === g;
       });
       updateCount();
+  updateCallEstimate();
     });
   });
 
@@ -297,25 +395,95 @@
   // ---- decoding sliders + presets ----
 
   const presets = {{ presets | tojson }};
-  const tuneIds = ['temperature', 'top_p', 'max_tokens'];
+  const tuneIds = {{ decoding_params | map(attribute='id') | list | tojson }};
+
   function syncLabels() {
     tuneIds.forEach(id => {
-      document.getElementById(id + '-val').textContent = document.getElementById(id).value;
+      const el = document.getElementById(id);
+      const out = document.getElementById(id + '-val');
+      if (el && out) out.textContent = el.value === '' ? 'random' : el.value;
     });
   }
-  tuneIds.forEach(id => document.getElementById(id).addEventListener('input', syncLabels));
+  tuneIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', syncLabels);
+  });
 
   document.querySelectorAll('.preset-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const p = presets[btn.dataset.preset];
-      tuneIds.forEach(id => { if (p[id] !== undefined) document.getElementById(id).value = p[id]; });
+      tuneIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && p[id] !== undefined && p[id] !== null) el.value = p[id];
+        else if (el && p[id] === null) el.value = '';   // seed: null = random
+      });
       syncLabels();
+      const hint = document.getElementById('preset-hint');
+      if (hint && p.hint) hint.textContent = p.hint;
+      document.querySelectorAll('.preset-btn').forEach(b =>
+        b.classList.toggle('active', b === btn));
     });
+  });
+
+  // ---- extended passes + live call-cost estimate ----
+
+  function passValues() {
+    const out = {};
+    document.querySelectorAll('.pass-input').forEach(el => {
+      out[el.dataset.pass] = el.type === 'checkbox' ? el.checked : Number(el.value);
+    });
+    return out;
+  }
+  // Mirrors estimate_calls() in run_benchmark.py: the user should see the
+  // multiplier before spending it, not after.
+  function updateCallEstimate() {
+    const p = passValues();
+    let mult = 1;
+    if (p.calibration) mult += 1;
+    if ((p.repeats || 1) > 1) mult += (p.repeats - 1);
+    if (p.robustness) mult += 4;
+    if (p.context) mult += 3;
+    const badge = document.getElementById('call-estimate');
+    const items = selectedSubjects().length * Number(document.getElementById('questions').value || 0);
+    const models = document.getElementById('model').value === 'all' ? 3 : 1;
+    if (badge) {
+      badge.textContent = `${mult}x calls` + (items ? ` ≈ ${mult * items * models} requests` : '');
+      badge.className = 'badge border ' + (mult > 5 ? 'text-bg-warning' : 'text-bg-light text-muted');
+    }
+  }
+  document.querySelectorAll('.pass-input').forEach(el =>
+    el.addEventListener('change', updateCallEstimate));
+  ['questions', 'model'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', updateCallEstimate);
   });
 
   // ---- terminal panel ----
 
   const term = document.getElementById('terminal');
+  const termWrapEl = document.getElementById('terminal-wrap');
+  const termStateEl = document.getElementById('term-state');
+  const termChev = document.getElementById('term-chev');
+  const termCollapse = new bootstrap.Collapse(termWrapEl, { toggle: false });
+
+  termWrapEl.addEventListener('show.bs.collapse', () => {
+    termChev.style.transform = 'rotate(90deg)';
+  });
+  termWrapEl.addEventListener('hidden.bs.collapse', () => {
+    termChev.style.transform = 'rotate(0deg)';
+  });
+
+  function setTermState(text, cls) {
+    termStateEl.textContent = text;
+    termStateEl.className = cls || 'text-secondary';
+    termStateEl.style.fontSize = '.7rem';
+  }
+  // Opened automatically when a run starts: live progress should never be
+  // hidden behind a click the user did not know to make.
+  function openTerminal() {
+    termCollapse.show();
+    term.scrollTop = term.scrollHeight;
+  }
 
   function termLine(text, cls) {
     const span = document.createElement('span');
@@ -383,6 +551,8 @@
     runBtn.disabled = true;
     runBtn.textContent = 'Running...';
     termClear();
+    openTerminal();
+    setTermState('running', 'text-warning');
     termLine(`$ run mmlu ${model === 'all' ? 'all models' : model} - ${subjects.length} subject(s) x ${questions} question(s)`, 't-muted');
     status.className = 'mt-3 small text-muted';
     status.textContent = `Running ${model === 'all' ? 'all models' : 'the selected model'} on ${subjects.length} subject(s) x ${questions} question(s). Watch the terminal above for live progress.`;
@@ -391,11 +561,12 @@
       const res = await fetch(SCRIPT_ROOT + '/mmlu/run', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model, subjects, questions, ...params })
+        body: JSON.stringify({ model, subjects, questions, ...params, ...passValues() })
       });
       const start = await res.json();
       if (!res.ok) throw new Error(start.error || 'Run failed.');
       const data = await pollJob(start.job_id);
+      setTermState('done', 'text-success');
       status.className = 'mt-3 small text-success';
       status.textContent = `Done. Ran ${data.ran.join(', ')} on ${data.subjects.length} subject(s), ${data.questions} question(s) each.`;
       renderRanking(data.ranking);
@@ -403,6 +574,7 @@
       document.getElementById('detail-model').value = detailModel;
       loadDetails(detailModel);
     } catch (err) {
+      setTermState('failed', 'text-danger');
       termLine('ERROR: ' + err.message, 't-bad');
       status.className = 'mt-3 small text-danger';
       status.textContent = err.message;

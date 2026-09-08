@@ -81,13 +81,25 @@
     </div>
 
     <div class="mt-3">
-      <div class="terminal-header">
+      <button class="terminal-header w-100 border-0 text-start" type="button"
+              data-bs-toggle="collapse" data-bs-target="#terminal-wrap"
+              aria-expanded="false" aria-controls="terminal-wrap"
+              style="cursor:pointer; border-radius:6px;">
         <span class="dot" style="background:#ff5f57"></span>
         <span class="dot" style="background:#febc2e"></span>
         <span class="dot" style="background:#28c840"></span>
         <span>lambada — benchmark output</span>
+        <span class="ms-auto d-flex align-items-center gap-2">
+          <span id="term-state" class="text-secondary" style="font-size:.7rem;">idle</span>
+          <svg id="term-chev" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+               viewBox="0 0 16 16" fill="currentColor" style="transition:transform .18s ease;">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </span>
+      </button>
+      <div class="collapse" id="terminal-wrap">
+        <div class="terminal" id="terminal" style="border-radius:0 0 6px 6px;"></div>
       </div>
-      <div class="terminal" id="terminal"></div>
     </div>
 
     <div id="status" class="mt-3 small"></div>
@@ -212,6 +224,21 @@
   // ---- terminal panel ----
 
   const term = document.getElementById('terminal');
+  const termWrapEl = document.getElementById('terminal-wrap');
+  const termStateEl = document.getElementById('term-state');
+  const termChev = document.getElementById('term-chev');
+  const termCollapse = new bootstrap.Collapse(termWrapEl, { toggle: false });
+
+  termWrapEl.addEventListener('show.bs.collapse', () => { termChev.style.transform = 'rotate(90deg)'; });
+  termWrapEl.addEventListener('hidden.bs.collapse', () => { termChev.style.transform = 'rotate(0deg)'; });
+
+  function setTermState(text, cls) {
+    termStateEl.textContent = text;
+    termStateEl.className = cls || 'text-secondary';
+    termStateEl.style.fontSize = '.7rem';
+  }
+  // Auto-expanded on run so live progress is never hidden behind a click.
+  function openTerminal() { termCollapse.show(); term.scrollTop = term.scrollHeight; }
 
   function termLine(text, cls) {
     const span = document.createElement('span');
@@ -267,6 +294,8 @@
     const samples = document.getElementById('samples').value;
     setBusy(true);
     termClear();
+    openTerminal();
+    setTermState('running', 'text-warning');
     termLine(`$ run ${label} - ${samples} samples`, 't-muted');
     status.className = 'mt-3 small text-muted';
     status.textContent = `Running ${label} on ${samples} samples. Watch the terminal above for live progress.`;
@@ -279,6 +308,7 @@
       const start = await res.json();
       if (!res.ok) throw new Error(start.error || 'Run failed.');
       const data = await pollJob(start.job_id);
+      setTermState('done', 'text-success');
       status.className = 'mt-3 small text-success';
       if (data.ran) {
         status.textContent = `Done. Ran ${data.ran.join(', ')} on ${data.samples} samples.`;
@@ -287,6 +317,7 @@
       }
       refresh(data.metrics);
     } catch (err) {
+      setTermState('failed', 'text-danger');
       termLine('ERROR: ' + err.message, 't-bad');
       status.className = 'mt-3 small text-danger';
       status.textContent = err.message;
