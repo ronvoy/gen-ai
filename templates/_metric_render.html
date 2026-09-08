@@ -307,9 +307,41 @@ function renderConfig(cfg) {
       &middot; ${esc(cfg.timestamp || '')}</div>`;
 }
 
+/* Two-pass reconciliation.
+
+   A run makes two independent trips to the API: the scored pass (non-streamed,
+   chain-of-thought, feeds the ranking table) and the extended pass (streamed,
+   needed for TTFT/TPOT and the calibration scoring). At temperature 0 they
+   should agree, and they nearly do - the residual gap is serving
+   non-determinism, which is a stage-3 observation rather than an error.
+
+   Showing both numbers with no explanation reads as a contradiction, so the
+   delta is stated once, up front, instead of being left for the reader to
+   discover by noticing two accuracies for one run. */
+function passReconciliation(blocks, headlineAccuracy) {
+  if (headlineAccuracy === null || headlineAccuracy === undefined) return '';
+  const tq = blocks.task_quality || {};
+  const ext = tq.overall_accuracy ?? tq.last_word_accuracy;
+  if (ext === null || ext === undefined) return '';
+  const delta = Math.abs(ext - headlineAccuracy);
+  if (delta < 1e-9) return '';
+  const pp = (delta * 100).toFixed(2);
+  const notable = delta > 0.02;
+  return `<div class="alert ${notable ? 'alert-warning' : 'alert-secondary'} py-2 px-3 small mb-3">
+    <strong>Two measurement passes.</strong>
+    Scored pass ${(headlineAccuracy * 100).toFixed(1)}% ·
+    extended pass ${(ext * 100).toFixed(1)}% ·
+    <strong>Δ ${pp} pp</strong>.
+    Every figure below comes from the extended pass. The gap is run-to-run
+    variance in the serving stack at temperature 0${notable
+      ? ' — larger than the usual sub-1pp, so treat small differences between models with matching caution.'
+      : ', which is the expected sub-1pp order.'}
+  </div>`;
+}
+
 /* Render every stage for one model inside a run. `uid` must be unique across
    the page, since History shows many runs at once. */
-function renderModelMetrics(blocks, uid) {
+function renderModelMetrics(blocks, uid, headlineAccuracy) {
   const fams = FAMILIES.filter(([k]) => blocks[k] !== undefined).map(([key,label,ico,sub], i) => {
     const id = `m-${uid}-${i}`;
     const missing = blocks[key] && blocks[key].available === false;
@@ -329,7 +361,7 @@ function renderModelMetrics(blocks, uid) {
   }).join('');
 
   const cfgId = `m-${uid}-cfg`;
-  return fams + `<div class="m-section">
+  return passReconciliation(blocks, headlineAccuracy) + fams + `<div class="m-section">
       <button class="m-head collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#${cfgId}" aria-expanded="false" aria-controls="${cfgId}">
         <span class="m-ico">🔧</span>

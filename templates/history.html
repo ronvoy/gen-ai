@@ -183,7 +183,11 @@
     const run = byId[pane.dataset.metricsRun];
     const blocks = run && run.metrics && run.metrics[pane.dataset.metricsModel];
     if (!blocks) { pane.innerHTML = '<p class="small text-muted">No extended metrics stored for this model.</p>'; return; }
-    pane.innerHTML = renderModelMetrics(blocks, pane.dataset.uid);
+    // The ranking table's accuracy for this model, so the extended panel can
+    // state the two-pass delta instead of silently disagreeing with it.
+    const row = (run.models || []).find(m => m.model === pane.dataset.metricsModel);
+    const headline = row && typeof row.accuracy === 'number' ? row.accuracy / 100 : null;
+    pane.innerHTML = renderModelMetrics(blocks, pane.dataset.uid, headline);
     rendered.add(pane.id);
   }
   document.querySelectorAll('[id^="ext-"]').forEach(wrap => {

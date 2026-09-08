@@ -202,6 +202,32 @@ def append_history(run_type, samples, model_results, params=None,
         entry["parallelism"] = (first.get("config") or {}).get("parallelism", {})
 
     history = load_history()
+
+    # Collapse a re-entrant write of the same run. The classic pass and the
+    # extended pass finish seconds apart and both want to record the run; two
+    # entries with slightly different accuracies for one click is a
+    # contradiction on screen, not two results. The newer entry wins and
+    # inherits whatever blocks the older one had.
+    now = datetime.now()
+    for i, prev in enumerate(history[:3]):
+        if (prev.get("type") == entry["type"]
+                and prev.get("samples") == entry["samples"]
+                and prev.get("params") == entry["params"]):
+            try:
+                age = (now - datetime.strptime(
+                    prev["timestamp"], "%Y-%m-%d %H:%M:%S")).total_seconds()
+            except (ValueError, KeyError):
+                age = 1e9
+            if age <= 120:
+                if not entry.get("metrics") and prev.get("metrics"):
+                    entry["metrics"] = prev["metrics"]
+                    entry["extended"] = True
+                    entry["families"] = prev.get("families", {})
+                    entry["parallelism"] = prev.get("parallelism", {})
+                entry["id"] = prev.get("id", entry["id"])
+                history.pop(i)
+                break
+
     history.insert(0, entry)
     os.makedirs(os.path.join(BASE_DIR, RESULTS_DIR), exist_ok=True)
     with open(_history_path(), "w", encoding="utf-8") as f:

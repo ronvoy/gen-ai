@@ -3,72 +3,68 @@
   "ranking": [
     {
       "model": "mistralai/ministral-8b-2512",
-      "quality": 0.8125,
+      "quality": 0.793,
       "calibration_score": null,
-      "robustness_score": 0.8558,
-      "efficiency_score": 0.588,
-      "reliability_score": 0.9688,
+      "robustness_score": null,
+      "efficiency_score": 0.4756,
+      "reliability_score": 0.9944,
       "components_used": [
         "efficiency",
         "quality",
-        "reliability",
-        "robustness"
+        "reliability"
       ],
-      "composite_score": 0.8121,
-      "mean_latency_s": 2.5475,
-      "ttft_mean_s": 1.1829,
-      "cost_total_usd": 0.001379,
-      "cost_per_correct_usd": 5.3e-05,
-      "cost_per_1m_tokens_usd": 0.1574,
-      "total_tokens": 8761,
-      "success_rate": 0.9688,
+      "composite_score": 0.7764,
+      "mean_latency_s": 1.3714,
+      "ttft_mean_s": 0.4135,
+      "cost_total_usd": 0.116086,
+      "cost_per_correct_usd": 5.1e-05,
+      "cost_per_1m_tokens_usd": 0.1226,
+      "total_tokens": 946947,
+      "success_rate": 1.0,
       "rank": 1
     },
     {
-      "model": "google/gemma-3-4b-it",
-      "quality": 0.7188,
+      "model": "meta-llama/llama-3.2-3b-instruct",
+      "quality": 0.5467,
       "calibration_score": null,
-      "robustness_score": 0.8369,
-      "efficiency_score": 0.7159,
-      "reliability_score": 1.0,
+      "robustness_score": null,
+      "efficiency_score": 1.0,
+      "reliability_score": 0.8828,
       "components_used": [
         "efficiency",
         "quality",
-        "reliability",
-        "robustness"
+        "reliability"
       ],
-      "composite_score": 0.7724,
-      "mean_latency_s": 2.0923,
-      "ttft_mean_s": 0.7901,
-      "cost_total_usd": 0.000759,
-      "cost_per_correct_usd": 3.3e-05,
-      "cost_per_1m_tokens_usd": 0.0795,
-      "total_tokens": 9540,
+      "composite_score": 0.6595,
+      "mean_latency_s": 0.6522,
+      "ttft_mean_s": 0.3296,
+      "cost_total_usd": 0.129379,
+      "cost_per_correct_usd": 8.3e-05,
+      "cost_per_1m_tokens_usd": 0.1453,
+      "total_tokens": 890595,
       "success_rate": 1.0,
       "rank": 2
     },
     {
-      "model": "meta-llama/llama-3.2-3b-instruct",
-      "quality": 0.5312,
-      "calibration_score": 0.7015,
-      "robustness_score": 1.0,
-      "efficiency_score": 1.0,
-      "reliability_score": 0.9688,
+      "model": "google/gemma-3-4b-it",
+      "quality": 0.6035,
+      "calibration_score": null,
+      "robustness_score": null,
+      "efficiency_score": 0.3726,
+      "reliability_score": 0.9961,
       "components_used": [
-        "calibration",
         "efficiency",
         "quality",
-        "reliability",
-        "robustness"
+        "reliability"
       ],
-      "composite_score": 0.7177,
-      "mean_latency_s": 1.4979,
-      "ttft_mean_s": 0.7703,
-      "cost_total_usd": 0.001401,
-      "cost_per_correct_usd": 8.2e-05,
-      "cost_per_1m_tokens_usd": 0.1507,
-      "total_tokens": 9297,
-      "success_rate": 1.0,
+      "composite_score": 0.6266,
+      "mean_latency_s": 1.7502,
+      "ttft_mean_s": 0.5818,
+      "cost_total_usd": 0.079664,
+      "cost_per_correct_usd": 4.6e-05,
+      "cost_per_1m_tokens_usd": 0.0821,
+      "total_tokens": 970488,
+      "success_rate": 0.9986,
       "rank": 3
     }
   ],
@@ -82,32 +78,8 @@
     "reliability": 0.1
   },
   "provider_capabilities": {
-    "google/gemma-3-4b-it": {
-      "reachable": true,
-      "provider": "DeepInfra",
-      "logprobs": false,
-      "streaming_ttft": true,
-      "usage_accounting": true,
-      "cost_accounting": true,
-      "error": null
-    },
-    "meta-llama/llama-3.2-3b-instruct": {
-      "reachable": true,
-      "provider": "Parasail",
-      "logprobs": true,
-      "streaming_ttft": true,
-      "usage_accounting": true,
-      "cost_accounting": true,
-      "error": null
-    },
-    "mistralai/ministral-8b-2512": {
-      "reachable": true,
-      "provider": "Mistral",
-      "logprobs": false,
-      "streaming_ttft": true,
-      "usage_accounting": true,
-      "cost_accounting": true,
-      "error": null
-    }
+    "google/gemma-3-4b-it": {},
+    "meta-llama/llama-3.2-3b-instruct": {},
+    "mistralai/ministral-8b-2512": {}
   }
 }
