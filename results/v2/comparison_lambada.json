@@ -9,10 +9,15 @@
       "efficiency_score": 0.6225,
       "reliability_score": 1.0,
       "components_used": [
-        "efficiency",
         "quality",
+        "efficiency",
         "reliability"
       ],
+      "effective_weights": {
+        "quality": 0.7143,
+        "efficiency": 0.1429,
+        "reliability": 0.1429
+      },
       "composite_score": 0.5168,
       "mean_latency_s": 0.5687,
       "ttft_mean_s": 0.537,
@@ -31,10 +36,15 @@
       "efficiency_score": 1.0,
       "reliability_score": 1.0,
       "components_used": [
-        "efficiency",
         "quality",
+        "efficiency",
         "reliability"
       ],
+      "effective_weights": {
+        "quality": 0.7143,
+        "efficiency": 0.1429,
+        "reliability": 0.1429
+      },
       "composite_score": 0.4464,
       "mean_latency_s": 0.354,
       "ttft_mean_s": 0.3447,
@@ -53,10 +63,15 @@
       "efficiency_score": 0.657,
       "reliability_score": 0.999,
       "components_used": [
-        "efficiency",
         "quality",
+        "efficiency",
         "reliability"
       ],
+      "effective_weights": {
+        "quality": 0.7143,
+        "efficiency": 0.1429,
+        "reliability": 0.1429
+      },
       "composite_score": 0.3651,
       "mean_latency_s": 0.5388,
       "ttft_mean_s": 0.5311,
@@ -77,9 +92,20 @@
     "efficiency": 0.1,
     "reliability": 0.1
   },
-  "provider_capabilities": {
-    "google/gemma-3-4b-it": {},
-    "meta-llama/llama-3.2-3b-instruct": {},
-    "mistralai/ministral-8b-2512": {}
-  }
+  "components_used": [
+    "quality",
+    "efficiency",
+    "reliability"
+  ],
+  "components_missing": [
+    "calibration",
+    "robustness"
+  ],
+  "components_uniform": true,
+  "effective_weights": {
+    "quality": 0.7143,
+    "efficiency": 0.1429,
+    "reliability": 0.1429
+  },
+  "composite_note": "composite renormalised over quality, efficiency, reliability; calibration, robustness not measured in this run and excluded rather than scored zero"
 }

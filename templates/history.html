@@ -13,7 +13,13 @@
       taxonomy and link through to the Analysis view.
     </p>
   </div>
-  <a href="{{ url_for('index') }}" class="btn btn-outline-primary btn-sm">New Run</a>
+  <div class="d-flex gap-2">
+    <button type="button" id="toggle-all" class="btn btn-outline-secondary btn-sm"
+            data-state="collapsed">
+      <span id="toggle-all-label">Expand all</span>
+    </button>
+    <a href="{{ url_for('index') }}" class="btn btn-outline-primary btn-sm">New Run</a>
+  </div>
 </div>
 
 {% if not runs %}
@@ -49,13 +55,19 @@
     </div>
 
     {% if run.extended %}
-    <!-- Which metric families this run actually populated, and the passes that
-         produced them. Makes it obvious why an old run has no calibration. -->
+    <!-- Only the families this run actually populated. A row of crossed-out chips for
+         stages that were never requested reads as failure rather than as a
+         choice; what was omitted, and why, is in the caveats note at the end
+         of the extended panel instead. -->
     <div class="mb-3">
-      {% for fam, ok in (run.families or {}).items() %}
-        <span class="cfg-chip {{ 'on' if ok else '' }}">
-          {{ fam.replace('_', ' ') }}{{ ' ✓' if ok else ' ✗' }}</span>
+      {% for fam, ok in (run.families or {}).items() if ok %}
+        <span class="cfg-chip on">{{ fam.replace('_', ' ') }} ✓</span>
       {% endfor %}
+      {% set omitted = (run.families or {}).values() | reject | list | length %}
+      {% if omitted %}
+        <span class="cfg-chip" title="See the caveats note inside Extended analysis">
+          {{ omitted }} stage{{ 's' if omitted > 1 }} not run</span>
+      {% endif %}
     </div>
     <div class="mb-3">
       {% for k, v in (run.params or {}).items() %}
@@ -89,6 +101,7 @@
           </tr>
         </thead>
         <tbody>
+          {# Rows arrive already ordered by rank from enrich_history_models. #}
           {% for m in run.models %}
           {# Entries written by the web app and by run_benchmark.py carry
              slightly different model dicts, so every extended-only field is
@@ -117,6 +130,23 @@
       </table>
     </div>
 
+    {# The composite is renormalised over whichever components were measured,
+       so the number means nothing without knowing which those were. #}
+    {% if run.extended and run.get('composite_components') %}
+    <p class="text-muted small mb-3">
+      {% if run.get('composite_uniform') is sameas false %}
+        <span class="text-warning-emphasis">⚠ Models in this run were scored over
+        different component sets, so their composites use different effective
+        weights and are not directly comparable.</span>
+      {% else %}
+        Composite weighted over
+        <strong>{{ run.get('composite_components') | join(', ') }}</strong>{% if run.get('composite_missing') %} —
+        {{ run.get('composite_missing') | join(' and ') }} not measured in this run,
+        so the weight is redistributed over the rest rather than scored zero{% endif %}.
+      {% endif %}
+    </p>
+    {% endif %}
+
     <div class="row g-3">
       <div class="col-12 col-lg-6"><canvas class="acc-chart" data-run="{{ run.id }}"></canvas></div>
       <div class="col-12 col-lg-6"><canvas class="time-chart" data-run="{{ run.id }}"></canvas></div>
@@ -142,6 +172,34 @@
       </button>
       <div class="collapse" id="ext-{{ run.id }}">
         <div class="m-body pt-2">
+          {% set omitted = (run.families or {}).values() | reject | list | length %}
+          {% if omitted %}
+          <!-- The empty stages are skipped passes, not impossible measurements,
+               so the view offers to run them rather than only explaining them. -->
+          <div class="border rounded bg-light p-2 mb-3">
+            <div class="d-flex flex-wrap align-items-center gap-2">
+              <div class="flex-grow-1 min-width-0">
+                <span class="fw-semibold small">{{ omitted }} stage{{ 's' if omitted > 1 }} have no data</span>
+                <span class="d-block text-muted" style="font-size:.75rem;">
+                  Probabilistic quality, consistency and robustness need extra passes over
+                  the dataset. Run them now on a sample to fill those sections.
+                </span>
+              </div>
+              <div class="d-flex align-items-center gap-1 flex-shrink-0">
+                <label class="text-muted" style="font-size:.72rem;" for="sec-n-{{ run.id }}">sample</label>
+                <input type="number" class="form-control form-control-sm" style="width:5rem;"
+                       id="sec-n-{{ run.id }}" value="25" min="5" max="200" step="5">
+                <button type="button" class="btn btn-sm btn-primary secondary-btn"
+                        data-run="{{ run.id }}" data-benchmark="{{ run.benchmark or 'mmlu' }}">
+                  Run secondary analysis
+                </button>
+              </div>
+            </div>
+            <div class="mt-2 d-none" id="sec-log-{{ run.id }}">
+              <div class="terminal" style="height:130px;" id="sec-term-{{ run.id }}"></div>
+            </div>
+          </div>
+          {% endif %}
           <ul class="nav nav-pills nav-fill mb-2 small" role="tablist">
             {% for model_id in run.metrics %}
             <li class="nav-item">
@@ -193,6 +251,97 @@
   document.querySelectorAll('[id^="ext-"]').forEach(wrap => {
     wrap.addEventListener('show.bs.collapse', () => {
       wrap.querySelectorAll('[data-metrics-run]').forEach(renderPane);
+    });
+  });
+
+  // ---- expand / collapse all -------------------------------------------
+  // Nested panels only exist once their parent has rendered, so expanding is
+  // done in two waves: outer containers first, then everything they created.
+  const toggleAllBtn = document.getElementById('toggle-all');
+  const toggleAllLabel = document.getElementById('toggle-all-label');
+
+  function allCollapsibles() {
+    return [...document.querySelectorAll('.collapse')]
+      .filter(el => !el.id.startsWith('navModal'));
+  }
+  function setAll(show) {
+    allCollapsibles().forEach(el => {
+      bootstrap.Collapse.getOrCreateInstance(el, { toggle: false })[show ? 'show' : 'hide']();
+    });
+  }
+  if (toggleAllBtn) {
+    toggleAllBtn.addEventListener('click', () => {
+      const expanding = toggleAllBtn.dataset.state === 'collapsed';
+      if (expanding) {
+        document.querySelectorAll('[id^="ext-"]').forEach(wrap =>
+          wrap.querySelectorAll('[data-metrics-run]').forEach(renderPane));
+        setAll(true);
+        // Panels created by the render above are only in the DOM now.
+        setTimeout(() => setAll(true), 60);
+      } else {
+        setAll(false);
+      }
+      toggleAllBtn.dataset.state = expanding ? 'expanded' : 'collapsed';
+      toggleAllLabel.textContent = expanding ? 'Collapse all' : 'Expand all';
+      toggleAllBtn.classList.toggle('btn-outline-secondary', !expanding);
+      toggleAllBtn.classList.toggle('btn-secondary', expanding);
+    });
+  }
+
+  // ---- secondary analysis ----------------------------------------------
+  document.querySelectorAll('.secondary-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const id = btn.dataset.run;
+      const benchmark = btn.dataset.benchmark;
+      const sample = Number(document.getElementById('sec-n-' + id).value) || 25;
+      const logWrap = document.getElementById('sec-log-' + id);
+      const term = document.getElementById('sec-term-' + id);
+      const line = (t, cls) => {
+        const s = document.createElement('span');
+        s.className = 't-line' + (cls ? ' ' + cls : '');
+        s.textContent = t;
+        term.appendChild(s);
+        term.scrollTop = term.scrollHeight;
+      };
+
+      logWrap.classList.remove('d-none');
+      term.innerHTML = '';
+      btn.disabled = true;
+      const original = btn.textContent;
+      btn.textContent = 'Running…';
+      line(`$ secondary analysis — ${benchmark}, ${sample} sampled item(s)`, 't-muted');
+
+      try {
+        const res = await fetch(`${SCRIPT_ROOT}/history/${id}/secondary`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sample, repeats: 3, calibration: true, robustness: true,
+            context: benchmark === 'lambada'
+          })
+        });
+        const start = await res.json();
+        if (!res.ok) throw new Error(start.error || 'Failed to start.');
+
+        let offset = 0;
+        for (;;) {
+          const p = await (await fetch(
+            `${SCRIPT_ROOT}/progress/${start.job_id}?offset=${offset}`)).json();
+          (p.lines || []).forEach(l => line(l, /stage \d/.test(l) ? 't-ok' : null));
+          offset = p.next_offset;
+          if (p.done) {
+            if (p.error) throw new Error(p.error);
+            line('Done — reloading to show the new stages.', 't-ok');
+            setTimeout(() => window.location.reload(), 1200);
+            return;
+          }
+          await new Promise(r => setTimeout(r, 900));
+        }
+      } catch (err) {
+        line('ERROR: ' + err.message, 't-bad');
+        btn.disabled = false;
+        btn.textContent = original;
+      }
     });
   });
 

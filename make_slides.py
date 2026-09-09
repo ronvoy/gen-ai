@@ -671,21 +671,31 @@ def s_results_ranking(prs, benchmark, label_):
     if not comp or not comp.get("ranking"):
         return
     s = section_slide(prs, "Results", f"{label_} — composite ranking")
-    rows = [["#", "Model", "Quality", "Robustness", "Efficiency", "Reliability", "Composite"]]
+
+    # Only the components that were actually scored get a column. A column of
+    # "n/a" implies an input to the composite that does not exist.
+    cols = [c for c in R.COMPONENT_COLUMNS
+            if any(r.get(c[2]) is not None for r in comp["ranking"])]
+    rows = [["#", "Model"] + [c[1] for c in cols] + ["Composite"]]
     for r in comp["ranking"]:
-        f = lambda v: R.fmt(v) if v is not None else "n/a"
-        rows.append([str(r["rank"]), r["model"].split("/")[-1],
-                     f(r.get("quality")), f(r.get("robustness_score")),
-                     f(r.get("efficiency_score")), f(r.get("reliability_score")),
-                     f(r.get("composite_score"))])
-    table(s, rows, M, Inches(1.95), CW, col_w=[6, 28, 13, 15, 13, 13, 14],
-          font=13, row_h=0.46, emphasise=6)
-    w = comp.get("composite_weights", {})
-    text(s, "composite  =  " + "   +   ".join(f"{v:.2f} · {k}" for k, v in w.items()),
+        rows.append([str(r["rank"]), r["model"].split("/")[-1]]
+                    + [R.fmt(r.get(c[2])) for c in cols]
+                    + [R.fmt(r.get("composite_score"))])
+    body = 100 - 6 - 28
+    col_w = [6, 28] + [body // (len(cols) + 1)] * (len(cols) + 1)
+    col_w[-1] += 100 - sum(col_w)
+    table(s, rows, M, Inches(1.95), CW, col_w=col_w,
+          font=13, row_h=0.46, emphasise=len(cols) + 2)
+
+    eff = comp.get("effective_weights") or comp.get("composite_weights", {})
+    text(s, "composite  =  " + "   +   ".join(f"{v:.3f} · {k}" for k, v in eff.items()),
          M, Inches(4.15), CW, Inches(0.40), size=13, bold=True, color=ACCENT)
-    text(s, "Calibration is absent because the routed providers returned no log-probabilities. "
-            "Rather than scoring it zero, the weight is redistributed over the components that "
-            "were measured, and each row records which those were.\n"
+    missing = comp.get("components_missing") or []
+    text(s, (f"{' and '.join(missing).capitalize()} could not be measured — the routed "
+             f"providers returned no log-probabilities and no robustness pass was run. "
+             f"Rather than scoring them zero, their weight is redistributed over the "
+             f"components that were measured, so the weights above are the applied ones, "
+             f"not the nominal 0.50/0.15/0.15/0.10/0.10.\n" if missing else "")
             + comp.get("comparability_note", ""),
          M, Inches(4.70), CW, Inches(1.50), size=13, spacing=1.3)
 

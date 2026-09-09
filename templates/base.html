@@ -108,7 +108,17 @@
     /* Horizontal-overflow guard. A single wide child (button group, table,
        long token string) otherwise widens the whole document on a phone and
        clips the navbar - including the hamburger. */
-    html, body { max-width: 100%; overflow-x: hidden; }
+    /* `clip`, not `hidden`. overflow-x:hidden turns the element into a scroll
+       container, and position:sticky anchors to its nearest scrolling
+       ancestor — so a hidden <body> silently breaks the sticky navbar.
+       overflow-x:clip suppresses the same overflow without creating one. */
+    html, body { max-width: 100%; overflow-x: clip; }
+    @supports not (overflow-x: clip) {
+      /* Older engines: keep the horizontal-overflow guard off the scroll
+         ancestors so sticky still works, and contain it at the wrapper. */
+      html, body { overflow-x: visible; }
+      main { overflow-x: hidden; }
+    }
     .quick-select-scroll {
       overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch;
       scrollbar-width: thin; padding-bottom: 2px;
@@ -120,6 +130,24 @@
 
     .min-w-0 { min-width: 0; }
     .cat-label { font-size: .82rem; line-height: 1.15; }
+
+    /* Sticky navigation. z-index sits below Bootstrap's modal (1055) so the
+       nav modal still overlays it correctly. */
+    .navbar.sticky-nav { position: sticky; top: 0; z-index: 1030; }
+
+    /* Back-to-top. Hidden until the page is scrolled, so it never covers
+       content on a short page. */
+    #to-top {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 1020;
+      width: 42px; height: 42px; border-radius: 50%;
+      display: none; align-items: center; justify-content: center;
+      border: 1px solid #ced4da; background: rgba(255,255,255,.94);
+      color: #495057; box-shadow: 0 2px 10px rgba(0,0,0,.12);
+      cursor: pointer; padding: 0;
+    }
+    #to-top:hover { background: #fff; color: #0d6efd; border-color: #9ec5fe; }
+    #to-top.show { display: flex; }
+    @media (max-width: 576px) { #to-top { right: .7rem; bottom: .7rem; } }
 
     @media (max-width: 576px) {
       /* Two subject categories per row: the checkbox stays on its own line
@@ -142,7 +170,7 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark sticky-nav">
     <div class="container">
       <a class="navbar-brand" href="{{ url_for('index') }}">SLM Benchmark</a>
       <div class="d-flex align-items-center gap-2">
@@ -195,7 +223,25 @@
     {% block content %}{% endblock %}
   </main>
 
+  <button id="to-top" type="button" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+    </svg>
+  </button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Back-to-top: revealed once the page has scrolled a screenful.
+    (function () {
+      const btn = document.getElementById('to-top');
+      if (!btn) return;
+      const toggle = () => btn.classList.toggle('show', window.scrollY > 300);
+      window.addEventListener('scroll', toggle, { passive: true });
+      toggle();
+      btn.addEventListener('click', () =>
+        window.scrollTo({ top: 0, behavior: 'smooth' }));
+    })();
+  </script>
   <script>const SCRIPT_ROOT = "{{ request.script_root }}";</script>
   {% block scripts %}{% endblock %}
 </body>

@@ -155,6 +155,68 @@ def collect_metrics(split="test"):
     return models
 
 
+def _dig(data, dotted, default=None):
+    cur = data
+    for part in dotted.split("."):
+        if not isinstance(cur, dict) or part not in cur:
+            return default
+        cur = cur[part]
+    return default if cur is None else cur
+
+
+def enrich_history_models(entry):
+    """Fill the extended columns of an entry's model rows from its own blocks.
+
+    The classic runner records only name/accuracy/time, so composite,
+    cost-per-correct and provider render as "-". Every one of those values is
+    already inside the stage blocks stored with the entry, so they are derived
+    here rather than left blank or dropped from the table.
+    """
+    blocks_by_model = entry.get("metrics") or {}
+    if not blocks_by_model:
+        return entry
+
+    # Composite comes from the comparison built over this entry's own blocks,
+    # so it reflects the run being displayed rather than the newest one on disk.
+    ranks = {}
+    try:
+        from metrics import aggregate
+        comp = aggregate.build_comparison(
+            list(blocks_by_model.values()), entry.get("benchmark", "mmlu"))
+        ranks = {r["model"]: r for r in comp.get("ranking", [])}
+        entry["comparable"] = comp.get("comparable")
+        # The composite is renormalised over whatever was measured, so the
+        # table needs to say which components that was - and warn when the
+        # models in one run were not scored over the same set.
+        entry["composite_components"] = comp.get("components_used")
+        entry["composite_missing"] = comp.get("components_missing")
+        entry["composite_uniform"] = comp.get("components_uniform")
+    except Exception:
+        ranks = {}
+
+    for row in entry.get("models", []):
+        blocks = blocks_by_model.get(row.get("model"))
+        if not blocks:
+            continue
+        rank = ranks.get(row["model"], {})
+        row.setdefault("rank", rank.get("rank"))
+        row.setdefault("composite_score", rank.get("composite_score"))
+        row.setdefault("components_used", rank.get("components_used", []))
+        row.setdefault("cost_per_correct_usd",
+                       _dig(blocks, "economics.cost_per_correct_answer_usd"))
+        row.setdefault("cost_total_usd", _dig(blocks, "economics.total_usd"))
+        row.setdefault("ttft_mean", _dig(blocks, "api_performance.latency.ttft.mean"))
+        providers = _dig(blocks, "reliability.providers_used", {}) or {}
+        row.setdefault("provider", ", ".join(providers) or None)
+
+    # Present the table in rank order. Left in insertion order the # column
+    # reads 3, 2, 1. Unranked rows (a classic run, or a model whose blocks are
+    # missing) sort last instead of failing the comparison against None.
+    if any(r.get("rank") for r in entry.get("models", [])):
+        entry["models"].sort(key=lambda r: (r.get("rank") is None, r.get("rank") or 0))
+    return entry
+
+
 def load_history():
     """Return the saved run history, most recent first."""
     path = _history_path()
@@ -162,9 +224,10 @@ def load_history():
         return []
     try:
         with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+            history = json.load(f)
     except (ValueError, OSError):
         return []
+    return [enrich_history_models(e) for e in history]
 
 
 def append_history(run_type, samples, model_results, params=None,
@@ -828,6 +891,218 @@ def history():
     return render_template("history.html", runs=load_history())
 
 
+@app.route("/history/<run_id>/secondary", methods=["POST"])
+def history_secondary(run_id):
+    """Fill a saved run's empty stages by running the passes it skipped.
+
+    Stages 2 (probability), 3 (consistency) and 5 (robustness) are empty in most
+    runs not because the metrics are unobtainable but because their extra passes
+    were not requested. This re-runs exactly those passes over a *sample* of the
+    original dataset and merges the resulting blocks back into the stored entry.
+
+    A sample rather than the full set: robustness alone is four extra calls per
+    item, so re-running 2,850 questions would cost more than the original
+    benchmark. The sample size is recorded in each block it produces so nobody
+    mistakes it for full-dataset coverage.
+    """
+    data = request.get_json(silent=True) or {}
+    history = load_history()
+    entry = next((e for e in history if e.get("id") == run_id), None)
+    if not entry:
+        return jsonify({"error": "Unknown run."}), 404
+    if not entry.get("metrics"):
+        return jsonify({"error": "This run has no extended blocks to extend."}), 400
+
+    benchmark = entry.get("benchmark") or "mmlu"
+    try:
+        sample = _clamp(int(data.get("sample", 25)), 5, 200)
+        repeats = _clamp(int(data.get("repeats", 3)), 1, 5)
+    except (TypeError, ValueError):
+        sample, repeats = 25, 3
+    want = {
+        "calibration": bool(data.get("calibration", True)),
+        "repeats": repeats,
+        "robustness": bool(data.get("robustness", True)),
+        "context": bool(data.get("context", benchmark == "lambada")),
+    }
+    models = [m["model"] for m in entry.get("models", [])
+              if m.get("model") in entry["metrics"]]
+
+    def task(log):
+        merged = run_secondary_analysis(entry, models, benchmark, sample, want, log)
+        # Persist against the raw file so the enrichment pass does not
+        # overwrite what we just computed.
+        with open(_history_path(), "r", encoding="utf-8") as f:
+            raw = json.load(f)
+        for e in raw:
+            if e.get("id") == run_id:
+                for model, blocks in merged.items():
+                    e.setdefault("metrics", {})[model] = blocks
+                first = next(iter(merged.values()), {})
+                e["families"] = {
+                    k: bool(first.get(k) and first[k].get("available") is not False)
+                    for k in EXTENDED_KEYS if k in first
+                }
+                e["secondary_analysis"] = {
+                    "at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "sample": sample, "passes": want,
+                }
+        with open(_history_path(), "w", encoding="utf-8") as f:
+            json.dump(raw, f, indent=2, ensure_ascii=False)
+        log("Secondary analysis merged into history.")
+        return {"run_id": run_id, "sample": sample,
+                "models": list(merged), "passes": want}
+
+    return jsonify({"job_id": _start_job(task)})
+
+
+def run_secondary_analysis(entry, models, benchmark, sample, want, log):
+    """Run the skipped passes on `sample` items and return merged blocks."""
+    import random
+    import time as _time
+
+    from config import OPENROUTER_API_KEY
+    from metrics import consistency as consistency_mod
+    from metrics import robustness as robustness_mod
+    from metrics import calibration as calibration_mod
+    from metrics import context as context_mod
+    from run_benchmark import run_lambada_item, run_mmlu_item
+
+    if not OPENROUTER_API_KEY:
+        raise RuntimeError("OPENROUTER_API_KEY is not set.")
+
+    # Rebuild the original item set, then take a deterministic sample so the
+    # study is repeatable.
+    if benchmark == "mmlu":
+        from evaluate_slm_mmlu import load_mmlu_tasks, resolve_subjects
+        subjects = resolve_subjects("all")
+        per = max(1, sample // max(len(subjects), 1) + 1)
+        items = load_mmlu_tasks(subjects, per, BASE_DIR)
+    else:
+        from evaluate_lambada import load_dataset
+        path = DATASET_FILES.get("test")
+        abs_path = path if os.path.isabs(path) else os.path.join(BASE_DIR, path)
+        items = load_dataset(abs_path, sample * 3)
+    random.Random(42).shuffle(items)
+    items = items[:sample]
+    log(f"Secondary analysis on {len(items)} sampled item(s), "
+        f"{len(models)} model(s).")
+
+    params = {"temperature": 0.0, "top_p": 1.0,
+              "max_tokens": 384 if benchmark == "mmlu" else 32, "few_shot": 3}
+    run_item = run_mmlu_item if benchmark == "mmlu" else run_lambada_item
+    answer_key = "predicted_letter" if benchmark == "mmlu" else "prediction"
+    merged = {}
+
+    for model in models:
+        blocks = dict(entry["metrics"][model])
+        log(f"--- {_short(model)} ---")
+        t0 = _time.perf_counter()
+
+        base = [run_item(model, it, OPENROUTER_API_KEY, params,
+                         with_calibration=want["calibration"]) for it in items]
+        log(f"  base pass: {len(base)} item(s)")
+
+        # Stage 2 — probability, from the single-token scoring pass.
+        if want["calibration"]:
+            probs = [r.get("correct_option_prob") for r in base]
+            dists = [r.get("option_probs") or [] for r in base]
+            correct = [bool(r.get("correct")) for r in base]
+            idx = None
+            if benchmark == "mmlu":
+                idx = ["ABCD".index(r["correct_letter"])
+                       if r.get("correct_letter") in "ABCD" else None for r in base]
+            ranks = [r.get("target_rank") for r in base]
+            block = calibration_mod.summarise_probability_block(
+                probs, dists, correct, correct_indices=idx,
+                ranks=ranks if any(x is not None for x in ranks) else None)
+            if block.get("available"):
+                block["sampled"] = len(items)
+                blocks["probability"] = block
+                log(f"  stage 2 probability: coverage {block['coverage']:.0%}")
+            else:
+                log("  stage 2 probability: provider returned no logprobs")
+
+        # Stage 3 — consistency, from repeated asks.
+        if want["repeats"] > 1:
+            sets = [[r.get(answer_key)] for r in base]
+            for k in range(want["repeats"] - 1):
+                log(f"  repeat {k + 2}/{want['repeats']}")
+                for j, it in enumerate(items):
+                    sets[j].append(
+                        run_item(model, it, OPENROUTER_API_KEY, params).get(answer_key))
+            gold = [r.get("correct_letter") for r in base] if benchmark == "mmlu" \
+                else [_norm_word(r.get("target", "")) for r in base]
+            block = consistency_mod.build_consistency_block(sets, gold)
+            block["sampled"] = len(items)
+            blocks["consistency"] = block
+            log(f"  stage 3 consistency: stability {block.get('answer_stability')}")
+
+        # Stage 5 — robustness, from the perturbation sweep.
+        if want["robustness"]:
+            baseline = [bool(r.get("correct")) for r in base]
+            variants = {}
+            if benchmark == "mmlu":
+                for tpl in ("terse", "verbose"):
+                    log(f"  robustness: prompt_{tpl}")
+                    got = [run_item(model, it, OPENROUTER_API_KEY, params,
+                                    template=tpl) for it in items]
+                    variants[f"prompt_{tpl}"] = robustness_mod.robustness_delta(
+                        baseline, [bool(r.get("correct")) for r in got])
+                log("  robustness: option_reorder")
+                got = []
+                for it in items:
+                    ch, gold_i = robustness_mod.reorder_options(
+                        it["choices"], it["answer"], "reverse")
+                    got.append(run_item(model, {**it, "choices": ch, "answer": gold_i},
+                                        OPENROUTER_API_KEY, params))
+                variants["option_reorder"] = robustness_mod.robustness_delta(
+                    baseline, [bool(r.get("correct")) for r in got])
+                log("  robustness: typo_noise")
+                got = [run_item(model,
+                                {**it, "question": robustness_mod.typo_perturb(
+                                    it["question"], 0.08, 7)},
+                                OPENROUTER_API_KEY, params) for it in items]
+                variants["typo_noise"] = robustness_mod.robustness_delta(
+                    baseline, [bool(r.get("correct")) for r in got])
+            else:
+                for nm, fn in (("typo", robustness_mod.typo_perturb),
+                               ("casing", robustness_mod.casing_noise)):
+                    log(f"  robustness: {nm}")
+                    got = [run_item(model, it, OPENROUTER_API_KEY, params,
+                                    context_override=fn(it["context"], seed=11))
+                           for it in items]
+                    variants[nm] = robustness_mod.robustness_delta(
+                        baseline, [bool(r.get("correct")) for r in got])
+            block = robustness_mod.build_robustness_block(variants)
+            block["sampled"] = len(items)
+            blocks["robustness"] = block
+            log(f"  stage 5 robustness: score {block.get('robustness_score')}")
+
+        # Stage 4 — context ablation, LAMBADA only.
+        if want["context"] and benchmark == "lambada":
+            abl = {"full": [bool(r.get("correct")) for r in base]}
+            for nm in ("last_sentence", "last_10_words", "no_context"):
+                log(f"  context ablation: {nm}")
+                fn = context_mod.CONTEXT_ABLATIONS[nm]
+                abl[nm] = [bool(run_item(model, it, OPENROUTER_API_KEY, params,
+                                         context_override=fn(it["context"])).get("correct"))
+                           for it in items]
+            block = context_mod.build_context_block(abl, base)
+            block["sampled"] = len(items)
+            blocks["context"] = block
+            log(f"  stage 4 context: utilisation {block.get('context_utilization')}")
+
+        blocks["secondary_analysis"] = {
+            "sampled_items": len(items),
+            "wall_seconds": round(_time.perf_counter() - t0, 1),
+            "note": ("computed on a sample of the dataset, not the full run — "
+                     "treat as indicative"),
+        }
+        merged[model] = blocks
+    return merged
+
+
 @app.route("/history/delete", methods=["POST"])
 def history_delete():
     data = request.get_json(silent=True) or request.form
@@ -844,9 +1119,9 @@ def docs():
     sr = request.script_root
     report_html = os.path.join(BASE_DIR, "report.html")
 
-    # Render report.md directly whenever it is newer than the exported
-    # report.html, so the Docs tab never serves a stale export after the
-    # report has been updated.
+    # Both files come from `make_docs.py`, which writes the markdown first and
+    # the HTML second. Falling back to a live markdown render whenever the HTML
+    # is the older of the two keeps the tab correct if report.md is hand-edited.
     if (not os.path.exists(report_html)
             or os.path.getmtime(REPORT_PATH) > os.path.getmtime(report_html)):
         return render_template("docs.html", content=render_report_html(sr))
@@ -854,9 +1129,9 @@ def docs():
     with open(report_html, "r", encoding="utf-8") as f:
         html = f.read()
 
-    # The VS Code export points Mermaid and KaTeX at local file:// paths that
-    # do not exist on the server. Swap Mermaid for a CDN and drop KaTeX (the
-    # report has no math).
+    # A no-op for the generated page, which already points at a CDN — but a
+    # hand-exported report.html (e.g. from VS Code) hard-codes file:// paths
+    # for Mermaid and KaTeX that do not resolve on the server.
     html = re.sub(
         r"file:/+[^\"']*?mermaid[^\"']*?\.js",
         "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js",
@@ -868,12 +1143,17 @@ def docs():
     html = html.replace('src="../diagrams/', f'src="{sr}/diagrams/')
     html = html.replace('src="diagrams/', f'src="{sr}/diagrams/')
 
-    # Inject a slim nav bar so the app tabs stay reachable from the report.
+    # This branch serves the *exported* report.html, which does not extend
+    # base.html — so the sticky nav and back-to-top button have to be injected
+    # here too, or the Docs tab would be the one page without them.
+    # nowrap + overflow-x keeps this to a single row on a narrow phone; left to
+    # wrap it becomes two lines and the sticky bar eats a third of the screen.
     nav = (
-        '<nav style="background:#212529;padding:10px 16px;'
-        'font-family:Arial,Helvetica,sans-serif;font-size:15px;">'
+        '<nav style="background:#212529;padding:10px 16px;position:sticky;top:0;'
+        'z-index:1030;font-family:Arial,Helvetica,sans-serif;font-size:15px;'
+        'white-space:nowrap;overflow-x:auto;">'
         f'<a href="{sr}/" style="color:#fff;margin-right:18px;'
-        'text-decoration:none;font-weight:600;">LAMBADA Benchmark</a>'
+        'text-decoration:none;font-weight:600;">SLM Benchmark</a>'
         f'<a href="{sr}/" style="color:#cbd3da;margin-right:14px;text-decoration:none;">LAMBADA</a>'
         f'<a href="{sr}/mmlu" style="color:#cbd3da;margin-right:14px;text-decoration:none;">MMLU</a>'
         f'<a href="{sr}/history" style="color:#cbd3da;margin-right:14px;text-decoration:none;">History</a>'
@@ -881,6 +1161,27 @@ def docs():
         "</nav>"
     )
     html = re.sub(r"(<body[^>]*>)", lambda m: m.group(1) + nav, html, count=1)
+
+    to_top = (
+        '<button id="to-top" type="button" aria-label="Back to top" title="Back to top" '
+        'style="position:fixed;right:1rem;bottom:1rem;z-index:1020;width:42px;height:42px;'
+        'border-radius:50%;display:none;align-items:center;justify-content:center;'
+        'border:1px solid #ced4da;background:rgba(255,255,255,.94);color:#495057;'
+        'box-shadow:0 2px 10px rgba(0,0,0,.12);cursor:pointer;padding:0;">'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" '
+        'viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" '
+        'd="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 '
+        '0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/></svg></button>'
+        '<script>(function(){var b=document.getElementById("to-top");if(!b)return;'
+        'var t=function(){b.style.display=window.scrollY>300?"flex":"none";};'
+        'window.addEventListener("scroll",t,{passive:true});t();'
+        'b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});'
+        "})();</script>"
+    )
+    if "</body>" in html:
+        html = html.replace("</body>", to_top + "</body>", 1)
+    else:
+        html += to_top
 
     return html
 

@@ -715,12 +715,67 @@
           "coverage": 0.0
         },
         "consistency": {
-          "available": false,
-          "reason": "repeat/seed runs not enabled for this evaluation"
+          "available": true,
+          "answer_stability": 1.0,
+          "self_consistency": {
+            "majority_vote_accuracy": 1.0,
+            "mean_single_sample_accuracy": 1.0,
+            "self_consistency_gain": 0.0,
+            "mean_agreement": 1.0,
+            "k_samples": 2,
+            "n_items": 6
+          },
+          "sampled": 6
         },
         "robustness": {
-          "available": false,
-          "reason": "robustness sweep not enabled for this evaluation"
+          "available": true,
+          "variants": {
+            "prompt_terse": {
+              "baseline_accuracy": 1.0,
+              "variant_accuracy": 0.8333,
+              "accuracy_drop": 0.1667,
+              "relative_drop": 0.1667,
+              "broke": 1,
+              "fixed": 0,
+              "flip_rate": 0.1667,
+              "n_items": 6
+            },
+            "prompt_verbose": {
+              "baseline_accuracy": 1.0,
+              "variant_accuracy": 0.5,
+              "accuracy_drop": 0.5,
+              "relative_drop": 0.5,
+              "broke": 3,
+              "fixed": 0,
+              "flip_rate": 0.5,
+              "n_items": 6
+            },
+            "option_reorder": {
+              "baseline_accuracy": 1.0,
+              "variant_accuracy": 1.0,
+              "accuracy_drop": 0.0,
+              "relative_drop": 0.0,
+              "broke": 0,
+              "fixed": 0,
+              "flip_rate": 0.0,
+              "n_items": 6
+            },
+            "typo_noise": {
+              "baseline_accuracy": 1.0,
+              "variant_accuracy": 0.8333,
+              "accuracy_drop": 0.1667,
+              "relative_drop": 0.1667,
+              "broke": 1,
+              "fixed": 0,
+              "flip_rate": 0.1667,
+              "n_items": 6
+            }
+          },
+          "robustness_score": 0.7916,
+          "worst_variant": "prompt_verbose",
+          "worst_accuracy_drop": 0.5,
+          "mean_flip_rate": 0.2083,
+          "sampled": 6
         },
         "api_performance": {
           "available": true,
@@ -971,6 +1026,11 @@
             "reason": "The benchmark is a client of a shared, auto-scaled third-party endpoint. Parallelism layout, GPU telemetry and power draw are chosen and held by the provider; none of them is exposed to the caller. Any figure reported here would be fabricated.",
             "path_to_measure": "Run the same suite against a self-hosted vLLM backend (benchmark_config.local_vllm_config), where TP/PP/DP/SP/CP/EP become settable variables and VRAM, KV cache, communication overhead and energy become directly measurable."
           }
+        },
+        "secondary_analysis": {
+          "sampled_items": 6,
+          "wall_seconds": 104.3,
+          "note": "computed on a sample of the dataset, not the full run — treat as indicative"
         }
       },
       "meta-llama/llama-3.2-3b-instruct": {
@@ -1622,17 +1682,196 @@
           "n_subjects": 57
         },
         "probability": {
-          "available": false,
-          "reason": "provider did not return token logprobs for this model",
-          "coverage": 0.0
+          "available": true,
+          "coverage": 0.1667,
+          "correct_option_probability": 0.6331,
+          "log_probability": -0.4571,
+          "nll": 0.4571,
+          "perplexity": 1.5794,
+          "cross_entropy": 0.4571,
+          "brier_score": 0.1346,
+          "confidence_accuracy_corr": null,
+          "entropy": 1.0204,
+          "normalised_entropy": 0.736,
+          "ece": 0.3669,
+          "mce": 0.3669,
+          "reliability_bins": [
+            {
+              "bin": 1,
+              "range": [
+                0.0,
+                0.1
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 2,
+              "range": [
+                0.1,
+                0.2
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 3,
+              "range": [
+                0.2,
+                0.3
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 4,
+              "range": [
+                0.3,
+                0.4
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 5,
+              "range": [
+                0.4,
+                0.5
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 6,
+              "range": [
+                0.5,
+                0.6
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 7,
+              "range": [
+                0.6,
+                0.7
+              ],
+              "count": 1,
+              "avg_confidence": 0.6331,
+              "accuracy": 1.0,
+              "gap": 0.3669
+            },
+            {
+              "bin": 8,
+              "range": [
+                0.7,
+                0.8
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 9,
+              "range": [
+                0.8,
+                0.9
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            },
+            {
+              "bin": 10,
+              "range": [
+                0.9,
+                1.0
+              ],
+              "count": 0,
+              "avg_confidence": null,
+              "accuracy": null,
+              "gap": null
+            }
+          ],
+          "multiclass_brier": 0.1899,
+          "sampled": 6
         },
         "consistency": {
-          "available": false,
-          "reason": "repeat/seed runs not enabled for this evaluation"
+          "available": true,
+          "answer_stability": 1.0,
+          "self_consistency": {
+            "majority_vote_accuracy": 0.6667,
+            "mean_single_sample_accuracy": 0.6667,
+            "self_consistency_gain": 0.0,
+            "mean_agreement": 1.0,
+            "k_samples": 2,
+            "n_items": 6
+          },
+          "sampled": 6
         },
         "robustness": {
-          "available": false,
-          "reason": "robustness sweep not enabled for this evaluation"
+          "available": true,
+          "variants": {
+            "prompt_terse": {
+              "baseline_accuracy": 0.6667,
+              "variant_accuracy": 0.8333,
+              "accuracy_drop": -0.1667,
+              "relative_drop": -0.25,
+              "broke": 1,
+              "fixed": 2,
+              "flip_rate": 0.5,
+              "n_items": 6
+            },
+            "prompt_verbose": {
+              "baseline_accuracy": 0.6667,
+              "variant_accuracy": 0.3333,
+              "accuracy_drop": 0.3333,
+              "relative_drop": 0.5,
+              "broke": 2,
+              "fixed": 0,
+              "flip_rate": 0.3333,
+              "n_items": 6
+            },
+            "option_reorder": {
+              "baseline_accuracy": 0.6667,
+              "variant_accuracy": 0.8333,
+              "accuracy_drop": -0.1667,
+              "relative_drop": -0.25,
+              "broke": 0,
+              "fixed": 1,
+              "flip_rate": 0.1667,
+              "n_items": 6
+            },
+            "typo_noise": {
+              "baseline_accuracy": 0.6667,
+              "variant_accuracy": 0.8333,
+              "accuracy_drop": -0.1667,
+              "relative_drop": -0.25,
+              "broke": 0,
+              "fixed": 1,
+              "flip_rate": 0.1667,
+              "n_items": 6
+            }
+          },
+          "robustness_score": 1.0,
+          "worst_variant": "prompt_verbose",
+          "worst_accuracy_drop": 0.3333,
+          "mean_flip_rate": 0.2917,
+          "sampled": 6
         },
         "api_performance": {
           "available": true,
@@ -1881,6 +2120,11 @@
             "reason": "The benchmark is a client of a shared, auto-scaled third-party endpoint. Parallelism layout, GPU telemetry and power draw are chosen and held by the provider; none of them is exposed to the caller. Any figure reported here would be fabricated.",
             "path_to_measure": "Run the same suite against a self-hosted vLLM backend (benchmark_config.local_vllm_config), where TP/PP/DP/SP/CP/EP become settable variables and VRAM, KV cache, communication overhead and energy become directly measurable."
           }
+        },
+        "secondary_analysis": {
+          "sampled_items": 6,
+          "wall_seconds": 41.0,
+          "note": "computed on a sample of the dataset, not the full run — treat as indicative"
         }
       },
       "mistralai/ministral-8b-2512": {
@@ -2537,12 +2781,67 @@
           "coverage": 0.0
         },
         "consistency": {
-          "available": false,
-          "reason": "repeat/seed runs not enabled for this evaluation"
+          "available": true,
+          "answer_stability": 0.8333,
+          "self_consistency": {
+            "majority_vote_accuracy": 0.8333,
+            "mean_single_sample_accuracy": 0.9167,
+            "self_consistency_gain": -0.0833,
+            "mean_agreement": 0.9167,
+            "k_samples": 2,
+            "n_items": 6
+          },
+          "sampled": 6
         },
         "robustness": {
-          "available": false,
-          "reason": "robustness sweep not enabled for this evaluation"
+          "available": true,
+          "variants": {
+            "prompt_terse": {
+              "baseline_accuracy": 0.8333,
+              "variant_accuracy": 0.8333,
+              "accuracy_drop": 0.0,
+              "relative_drop": 0.0,
+              "broke": 0,
+              "fixed": 0,
+              "flip_rate": 0.0,
+              "n_items": 6
+            },
+            "prompt_verbose": {
+              "baseline_accuracy": 0.8333,
+              "variant_accuracy": 0.1667,
+              "accuracy_drop": 0.6667,
+              "relative_drop": 0.8,
+              "broke": 4,
+              "fixed": 0,
+              "flip_rate": 0.6667,
+              "n_items": 6
+            },
+            "option_reorder": {
+              "baseline_accuracy": 0.8333,
+              "variant_accuracy": 1.0,
+              "accuracy_drop": -0.1667,
+              "relative_drop": -0.2,
+              "broke": 0,
+              "fixed": 1,
+              "flip_rate": 0.1667,
+              "n_items": 6
+            },
+            "typo_noise": {
+              "baseline_accuracy": 0.8333,
+              "variant_accuracy": 1.0,
+              "accuracy_drop": -0.1667,
+              "relative_drop": -0.2,
+              "broke": 0,
+              "fixed": 1,
+              "flip_rate": 0.1667,
+              "n_items": 6
+            }
+          },
+          "robustness_score": 0.9,
+          "worst_variant": "prompt_verbose",
+          "worst_accuracy_drop": 0.6667,
+          "mean_flip_rate": 0.25,
+          "sampled": 6
         },
         "api_performance": {
           "available": true,
@@ -2791,14 +3090,19 @@
             "reason": "The benchmark is a client of a shared, auto-scaled third-party endpoint. Parallelism layout, GPU telemetry and power draw are chosen and held by the provider; none of them is exposed to the caller. Any figure reported here would be fabricated.",
             "path_to_measure": "Run the same suite against a self-hosted vLLM backend (benchmark_config.local_vllm_config), where TP/PP/DP/SP/CP/EP become settable variables and VRAM, KV cache, communication overhead and energy become directly measurable."
           }
+        },
+        "secondary_analysis": {
+          "sampled_items": 6,
+          "wall_seconds": 56.3,
+          "note": "computed on a sample of the dataset, not the full run — treat as indicative"
         }
       }
     },
     "families": {
       "task_quality": true,
       "probability": false,
-      "consistency": false,
-      "robustness": false,
+      "consistency": true,
+      "robustness": true,
       "api_performance": true,
       "token_efficiency": true,
       "economics": true,
@@ -2813,6 +3117,16 @@
       "expert_parallel": 1,
       "controlled": false,
       "note": "hosted endpoint: layout chosen by the provider, not observable or settable from the client"
+    },
+    "secondary_analysis": {
+      "at": "2026-09-09 10:51:13",
+      "sample": 6,
+      "passes": {
+        "calibration": true,
+        "repeats": 2,
+        "robustness": true,
+        "context": false
+      }
     }
   },
   {

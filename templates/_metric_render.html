@@ -146,19 +146,45 @@ const META = {
   subword_exact_match: [PCT, 'Match at token level rather than string level.', 'up'],
 };
 
-// Stage order, matching metrics/taxonomy.py.
+/* Stage order, matching metrics/taxonomy.py. The leading number is assigned at
+   render time from the stages that actually carry data, so a panel never shows
+   "1, 6, 7, 8, 9" with gaps where a study was not run. The canonical stage
+   number is kept in `stage` for the caveats note. */
 const FAMILIES = [
-  ['task_quality',     '1. Task Quality',           '🎯', 'Was the answer right?'],
-  ['probability',      '2. Probabilistic Quality',  '📈', 'Was its confidence earned?'],
-  ['consistency',      '3. Reasoning & Consistency','🔁', 'Would it answer the same way again?'],
-  ['context',          '4. Context Behavior',       '📖', 'Is it actually reading the passage?'],
-  ['robustness',       '5. Robustness',             '🛡️', 'Does the score survive input changes?'],
-  ['api_performance',  '6. API Performance',        '⚡', 'How fast did the service respond?'],
-  ['token_efficiency', '7. Token Efficiency',       '🔤', 'How many tokens did it consume?'],
-  ['economics',        '8. Economics',              '💰', 'What did it cost?'],
-  ['reliability',      '9. Reliability',            '🧯', 'Did the calls actually succeed?'],
-  ['tokenization',     '+ Tokenization',            '✂️', 'Is the tokenizer handicapping it?'],
+  ['task_quality',     'Task Quality',            '🎯', 'Was the answer right?', 1],
+  ['probability',      'Probabilistic Quality',   '📈', 'Was its confidence earned?', 2],
+  ['consistency',      'Reasoning & Consistency', '🔁', 'Would it answer the same way again?', 3],
+  ['context',          'Context Behavior',        '📖', 'Is it actually reading the passage?', 4],
+  ['robustness',       'Robustness',              '🛡️', 'Does the score survive input changes?', 5],
+  ['api_performance',  'API Performance',         '⚡', 'How fast did the service respond?', 6],
+  ['token_efficiency', 'Token Efficiency',        '🔤', 'How many tokens did it consume?', 7],
+  ['economics',        'Economics',               '💰', 'What did it cost?', 8],
+  ['reliability',      'Reliability',             '🧯', 'Did the calls actually succeed?', 9],
+  ['tokenization',     'Tokenization',            '✂️', 'Is the tokenizer handicapping it?', null],
 ];
+
+/* Why a stage is absent, for the caveats note. Each of these is recoverable —
+   they are empty because the pass was not run, not because the metric is
+   impossible — which is what the secondary-analysis button addresses. */
+const ABSENCE_REASON = {
+  probability:
+    'Needs token log-probabilities, which only some upstream providers return. ' +
+    'OpenRouter routed these models to providers that do not, so no distribution ' +
+    'was recoverable and the block is marked unavailable rather than zero-filled.',
+  consistency:
+    'Needs each item asked more than once (--repeats N). The run used a single ' +
+    'pass, so answer stability and self-consistency have nothing to compare against.',
+  robustness:
+    'Needs the perturbation sweep (--robustness): the same items re-asked with ' +
+    'reworded prompts, reordered options and injected typos. Not run here.',
+  context:
+    'Needs the context-ablation sweep (--context), which re-asks each item with ' +
+    'the passage progressively cut down. Only meaningful for LAMBADA, where the ' +
+    'dataset is built so the answer depends on the wider passage.',
+  tokenization:
+    'LAMBADA-only: it measures how the gold word is split into tokens, which has ' +
+    'no analogue for a multiple-choice letter.',
+};
 
 const humanise = k => k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 const esc = s => String(s).replace(/[&<>"']/g, c =>
@@ -341,37 +367,88 @@ function passReconciliation(blocks, headlineAccuracy) {
 
 /* Render every stage for one model inside a run. `uid` must be unique across
    the page, since History shows many runs at once. */
-function renderModelMetrics(blocks, uid, headlineAccuracy) {
-  const fams = FAMILIES.filter(([k]) => blocks[k] !== undefined).map(([key,label,ico,sub], i) => {
-    const id = `m-${uid}-${i}`;
-    const missing = blocks[key] && blocks[key].available === false;
-    return `<div class="m-section">
+const CHEV = `<svg class="chev" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+     viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd"
+     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>`;
+
+function panel(id, ico, title, sub, bodyHtml, extraClass = '') {
+  return `<div class="m-section ${extraClass}">
       <button class="m-head collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#${id}" aria-expanded="false" aria-controls="${id}">
         <span class="m-ico">${ico}</span>
-        <span class="flex-grow-1">${esc(label)}
-          ${missing ? '<span class="badge text-bg-light text-muted border ms-1" style="font-size:.6rem;">n/a</span>' : ''}
+        <span class="flex-grow-1">${title}
           <span class="m-sub d-block">${esc(sub)}</span></span>
-        <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-             viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd"
-             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+        ${CHEV}
       </button>
-      <div class="collapse" id="${id}"><div class="m-body">${renderBlock(blocks[key])}</div></div>
+      <div class="collapse" id="${id}"><div class="m-body">${bodyHtml}</div></div>
     </div>`;
+}
+
+/* A stage is shown only when it carries data. An empty panel is noise: it
+   invites a click that reveals nothing. What was left out — and why — is
+   collected into a single caveats note at the end instead. */
+function isPopulated(block) {
+  return block !== undefined && block !== null && block.available !== false;
+}
+
+function caveatsNote(blocks, uid, benchmark) {
+  const omitted = FAMILIES.filter(([k]) => !isPopulated(blocks[k]))
+    .filter(([k]) => ABSENCE_REASON[k]);
+  if (!omitted.length) return '';
+
+  const rows = omitted.map(([key, label, ico, sub, stage]) => {
+    const present = blocks[key] !== undefined;
+    const state = present ? 'ran, produced no data' : 'not part of this run';
+    return `<tr>
+      <td class="text-nowrap">${stage ? 'Stage ' + stage : '—'}</td>
+      <td class="fw-semibold text-nowrap">${ico} ${esc(label)}</td>
+      <td class="small text-muted text-nowrap">${state}</td>
+      <td class="small">${esc(ABSENCE_REASON[key])}</td>
+    </tr>`;
   }).join('');
 
-  const cfgId = `m-${uid}-cfg`;
-  return passReconciliation(blocks, headlineAccuracy) + fams + `<div class="m-section">
-      <button class="m-head collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#${cfgId}" aria-expanded="false" aria-controls="${cfgId}">
-        <span class="m-ico">🔧</span>
-        <span class="flex-grow-1">Run Configuration
-          <span class="m-sub d-block">Independent variables - TP/PP/DP/SP/CP/EP, decoding, dataset</span></span>
-        <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-             viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd"
-             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
-      </button>
-      <div class="collapse" id="${cfgId}"><div class="m-body">${renderConfig(blocks.config)}</div></div>
-    </div>`;
+  const body = `
+    <p class="small text-muted mb-2">
+      These stages are hidden above because they hold no data for this run. Each is
+      <strong>recoverable</strong> — it was skipped, not proven impossible — so it is
+      listed here rather than silently dropped.
+    </p>
+    <div class="table-responsive">
+      <table class="table table-sm align-middle mb-2" style="font-size:.82rem;">
+        <thead><tr><th>#</th><th>Stage</th><th>Status</th><th>Why it is absent</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <p class="small mb-0">
+      Every optional pass costs an extra trip over the dataset, which is why they are
+      opt-in. Use <strong>Run secondary analysis</strong> on this run to fill them from a
+      sample, or re-run the benchmark with
+      <code>--calibration --repeats 3 --robustness${benchmark === 'lambada' ? ' --context' : ''}</code>.
+    </p>`;
+
+  return panel(`m-${uid}-caveats`, 'ℹ️',
+               `Caveats — ${omitted.length} stage${omitted.length > 1 ? 's' : ''} not shown`,
+               'Why probabilistic quality, consistency, robustness' +
+               (blocks.context === undefined ? ' and context behaviour' : '') +
+               ' are absent',
+               body);
+}
+
+function renderModelMetrics(blocks, uid, headlineAccuracy) {
+  const shown = FAMILIES.filter(([k]) => isPopulated(blocks[k]));
+  const fams = shown.map(([key, labelText, ico, sub], i) => {
+    // Displayed numbering is positional over the stages actually present, so
+    // there are no gaps; the canonical stage number lives in the caveats table.
+    const n = key === 'tokenization' ? '+' : (i + 1) + '.';
+    return panel(`m-${uid}-${i}`, ico, `${n} ${esc(labelText)}`, sub,
+                 renderBlock(blocks[key]));
+  }).join('');
+
+  const cfg = panel(`m-${uid}-cfg`, '🔧', 'Run Configuration',
+                    'Independent variables - TP/PP/DP/SP/CP/EP, decoding, dataset',
+                    renderConfig(blocks.config));
+
+  return passReconciliation(blocks, headlineAccuracy) + fams + cfg
+         + caveatsNote(blocks, uid, blocks.benchmark);
 }
 </script>

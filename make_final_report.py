@@ -1,4 +1,4 @@
-"""Assemble `extended-final-report.md` from report.md plus live result data.
+"""Assemble `extended-final-report.md` from report-full.md plus live result data.
 
 Generated rather than hand-written so the numbers can never drift from
 results/v2. Re-run after any benchmark run:
@@ -6,7 +6,7 @@ results/v2. Re-run after any benchmark run:
     python make_final_report.py
 
 Sections 1-6 (research question, protocol, models, methodology) are carried
-over verbatim from report.md. Everything from the workflow onward is rebuilt
+over verbatim from report-full.md. Everything from the workflow onward is rebuilt
 from the result files.
 """
 
@@ -18,7 +18,9 @@ from datetime import datetime
 
 import make_results_section as R
 
-REPORT = "report.md"
+# The full academic report. report.md is now the lean Docs view, so the
+# methodology sections are carried over from the preserved full version.
+REPORT = "report-full.md"
 OUT = "extended-final-report.md"
 FIGDIR = "diagram-analysis"
 
@@ -29,12 +31,12 @@ def load_all(benchmark):
 
 
 def carry_over_methodology():
-    """Sections 1-6 of report.md, verbatim."""
+    """Sections 1-6 of report-full.md, verbatim."""
     text = open(REPORT, encoding="utf-8").read()
     start = text.find("## 1. Research Question")
     end = text.find("## 7. Results")
     if start < 0 or end < 0:
-        raise SystemExit("could not locate sections 1-6 in report.md")
+        raise SystemExit("could not locate sections 1-6 in report-full.md")
     return text[start:end].rstrip()
 
 
@@ -98,7 +100,7 @@ flowchart TD
     K -->|no| K1[comparable = false<br/>refuse to rank]
     K -->|yes| L[Write results/v2 · history · comparison]
     L --> M[Web view: History → Extended analysis]
-    L --> N[report.md · extended-final-report.md · slides]
+    L --> N[report-full.md · extended-final-report.md · slides]
 
     X[10 Hardware and Distributed<br/>TP·PP·DP·SP·CP·EP · VRAM · energy]
     X -.->|not observable through a hosted API| Y[Self-hosted vLLM path only]

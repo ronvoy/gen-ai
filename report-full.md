@@ -1,14 +1,11 @@
-# LAMBADA & MMLU — Extended Final Report
+# LAMBADA & MMLU Benchmark Evaluation Report
 
-Small language models evaluated across a nine-stage benchmark: task quality, probabilistic quality, consistency, context behaviour, robustness, API performance, token efficiency, economics and reliability.
+Evaluating small language models on long-range word prediction (LAMBADA) and multi-subject knowledge & reasoning (MMLU) — architecture, fine-tuning parameters, metrics, and results explained in full.
 
-Submitted to: Prof. Anna Corazza  
-Submitted by: Francesco Ventimiglia, Danilo Rodriguez, Rohan Baidya  
-GitHub: https://github.com/ronvoy/gen-ai  
-Site: https://unina.cc/gen-ai  
-Generated: 2026-09-09 13:33
-
----
+Submitted to: Prof. Anna Corazza
+Submitted by: Francesco Ventimiglia, Danilo Rodriguez, Rohan Baidya
+Github link: https://github.com/ronvoy/gen-ai
+Site Link: https://unina.cc/gen-ai
 
 ## 1. Research Question
 
@@ -680,174 +677,176 @@ practice: an SLM that reliably knows when it is unsure can escalate those cases
 to a larger model, which is the dominant deployment pattern for models of this
 size.
 
----
+## 7. Results
 
-## 7. End-to-End Workflow
+### 7.1 LAMBADA — Results (test split)
 
-The pipeline below is what one benchmark run actually executes. Stages 1-9 are
-produced by every run; stage 10 is shown greyed because it is *excluded by
-design* — nothing in it is observable through a hosted inference API.
+Latest saved metrics per model on the test split.
 
-```mermaid
-flowchart TD
-    A[Select models and benchmark] --> B[Build RunConfig<br/>parallelism · serving · decoding · dataset · passes]
-    B --> C{Pre-flight probe<br/>per model}
-    C -->|throttled| C1[Warn: provider rate-limiting<br/>run continues, nothing dropped]
-    C -->|healthy| D[Load dataset<br/>MMLU: HF datasets-server · LAMBADA: local splits]
-    C1 --> D
-    D --> E[Estimate API calls<br/>show multiplier before spending]
-    E --> F[Scored pass<br/>chain-of-thought, non-streamed]
-    F --> G[Extended pass<br/>streamed: TTFT / TPOT / tokens / cost]
-    G --> H{Optional passes}
-    H -->|--calibration| H1[Single-token scoring<br/>max_tokens=1 → option probabilities]
-    H -->|--repeats N| H2[Repeat items → stability]
-    H -->|--robustness| H3[Prompt / reorder / typo variants]
-    H -->|--context| H4[Context ablations · LAMBADA]
-    H1 --> I
-    H2 --> I
-    H3 --> I
-    H4 --> I
-    H --> I[Compute metric blocks]
+| Model | Accuracy (%) | Correct | Total | Avg Latency (s) | Errors |
+|-------|-------------|---------|-------|-----------------|--------|
+| Gemma-3-4B | 21.9 | 219 | 1000 | 1.198 | 0 |
+| Llama-3.2-3B | 20.8 | 208 | 1000 | 0.577 | 0 |
+| Ministral-8B | 38.1 | 381 | 1000 | 0.731 | 0 |
 
-    I --> S1[1 Task Quality]
-    I --> S2[2 Probabilistic Quality]
-    I --> S3[3 Reasoning and Consistency]
-    I --> S4[4 Context Behavior]
-    I --> S5[5 Robustness]
-    I --> S6[6 API Performance]
-    I --> S7[7 Token Efficiency]
-    I --> S8[8 Economics]
-    I --> S9[9 Reliability]
+Best accuracy: Ministral-8B at 38.1 percent. Fastest: Llama-3.2-3B at 0.577 s per query. Gemma-3-4B's accuracy holds steady at 21.9 percent on the full 1,000-sample test split (consistent with its earlier 50-sample estimate of 22.0 percent), but at this sample size it is now clearly the slowest model at 1.198 s per query, well behind Llama-3.2-3B and Ministral-8B.
 
-    S1 --> J[Aggregate and rank<br/>weights renormalised over available components]
-    S2 --> J
-    S3 --> J
-    S4 --> J
-    S5 --> J
-    S6 --> J
-    S7 --> J
-    S8 --> J
-    S9 --> J
+**Charts**
 
-    J --> K{Configs identical?}
-    K -->|no| K1[comparable = false<br/>refuse to rank]
-    K -->|yes| L[Write results/v2 · history · comparison]
-    L --> M[Web view: History → Extended analysis]
-    L --> N[report-full.md · extended-final-report.md · slides]
+Accuracy per model:
 
-    X[10 Hardware and Distributed<br/>TP·PP·DP·SP·CP·EP · VRAM · energy]
-    X -.->|not observable through a hosted API| Y[Self-hosted vLLM path only]
+![LAMBADA accuracy by model](diagram-lambada/lambada-acc.png)
 
-    style X fill:#f1f3f5,stroke:#adb5bd,color:#868e96
-    style Y fill:#f1f3f5,stroke:#adb5bd,color:#868e96
-    style K1 fill:#fff3cd,stroke:#ffc107
-    style C1 fill:#fff3cd,stroke:#ffc107
-```
+Average response time per model:
 
-### 7.1 The two measurement passes
+![LAMBADA average response time](diagram-lambada/lambada-resp-time.png)
 
-A run makes two independent trips to the API per item, and the distinction
-matters when reading any table below.
+### 7.2 LAMBADA — SLM Web App
 
-| Pass | Prompt | Streamed | Produces | Why it exists |
-|---|---|---|---|---|
-| **Scored** | chain-of-thought, then a letter/word | no | the headline accuracy and reasoning analysis | it is how the model would really be used |
-| **Extended** | identical prompt | yes | TTFT, TPOT, throughput, tokens, cost, reliability | latency is unmeasurable without streaming |
-| **Calibration** (optional) | direct answer, `max_tokens=1` | no | option probabilities → NLL, ECE, Brier, target rank | providers only return usable log-probabilities for a single generated token |
+The LAMBADA run panel: model and sample-count inputs, Run Benchmark and Fine Tune (presets) buttons, the live terminal streaming per-sample processing output (green = correct prediction, red = wrong), and the metrics table below with the latest saved results for all three models.
 
-Because the scored and extended passes are separate API calls, their accuracies
-differ slightly even at temperature 0. That residual is serving
-non-determinism, and the web view states the delta explicitly rather than
-showing two numbers and leaving the reader to notice.
+![LAMBADA run panel UI](diagram-lambada/lambada-ui.png)
+
+### 7.3 MMLU — Results
+
+Latest full run: all 57 subjects x 5 questions = 285 questions per model, zero API errors.
+
+| Rank | Model | Accuracy (%) | STEM | Human. | Social | Other | Reasoning consist. (%) | Avg words | Avg time (s) | Composite |
+|------|-------|-------------|------|--------|--------|-------|------------------------|-----------|--------------|-----------|
+| 1 | Ministral-8B | 78.9 | 78.9 | 73.9 | 83.3 | 80.0 | 69.1 | 54.1 | 1.537 | 0.731 |
+| 2 | Llama-3.2-3B | 55.8 | 43.3 | 63.1 | 63.3 | 58.6 | 59.7 | 61.8 | 0.768 | 0.630 |
+| 3 | Gemma-3-4B | 63.9 | 61.1 | 61.5 | 73.3 | 61.4 | 64.6 | 59.3 | 2.502 | 0.590 |
+
+- Ministral-8B leads every category and the composite score.
+- Gemma-3-4B is second on accuracy and reasoning consistency, but its 2.5 s average latency drops it below the much faster Llama-3.2-3B on the composite ranking.
+
+Models are ranked per dimension (1 = best) on accuracy, speed, and reasoning consistency, then ordered by the composite score. Accuracy dominates the composite (70%); reasoning quality and latency (15% each) break ties, which mirrors how small language models are picked in practice: quality first, then cost and latency. See Section 6.5 for the fully worked composite-score calculation.
+
+**Charts**
+
+Overall accuracy per model, driving the composite ranking:
+
+![MMLU accuracy by model](diagram-mmlu/mmlu-metric-composite.png)
+
+Subject-category accuracy (STEM / Humanities / Social Sciences / Other) per model:
+
+![MMLU accuracy by category](diagram-mmlu/mmlu-metric-subjects.png)
+
+### 7.4 MMLU — Web App
+
+The MMLU run panel: model and questions-per-subject inputs, subject picker with category presets, and the live terminal that streams processing output below the input fields before and during a run.
+
+![MMLU run panel UI](diagram-mmlu/mmlu-ui.png)
+
+The Q/A section lists every question the selected model saw, grouped per subject with a correct-count badge and category tag:
+
+![MMLU Q/A subject accordion](diagram-mmlu/mmlu-qa-1.png)
+
+Expanding a subject shows each question with the model's pick vs the correct answer, its parsed reasoning, the reasoning verdict, and per-question latency:
+
+![MMLU Q/A question detail with reasoning](diagram-mmlu/mmlu-qa-2.png)
+
+### 7.5 Extended Framework — Full Run Results
 
 
----
+#### MMLU
 
-## 8. MMLU — Results
-
-**2,850 items per model · 3 models · 8,550 scored items.** Passes: scored, extended, calibration. Decoding: temperature 0.0, max_tokens 384.
+32 items per model, 3 models. Passes: main, calibration, 2 repeats, robustness. Decoding: temperature 0.0, max_tokens 384.
 
 
-### 8.1 Stage 1 — Task Quality
+**Stage 1 — Task Quality**
 
 | Model | Accuracy | 95% CI | Macro (subject) | Normalised | Error rate | Parse fail |
 |---|---|---|---|---|---|---|
-| Gemma-3-4B | **60.4%** | 58.5–62.1% | 60.4% | 47.1% | 39.6% | 0.4% |
-| Llama-3.2-3B | **54.7%** | 52.8–56.5% | 54.7% | 39.6% | 45.3% | 11.7% |
-| Ministral-8B | **79.3%** | 77.8–80.8% | 79.3% | 72.4% | 20.7% | 0.6% |
+| Gemma-3-4B | **71.9%** | 54.6–84.4% | 71.9% | 62.5% | 28.1% | 0.0% |
+| Llama-3.2-3B | **53.1%** | 36.4–69.1% | 53.1% | 37.5% | 46.9% | 3.1% |
+| Ministral-8B | **81.2%** | 64.7–91.1% | 81.2% | 75.0% | 18.8% | 3.1% |
 
 
-### 8.2 Stage 2 — Probabilistic Quality
+**Stage 2 — Probabilistic Quality**
 
 | Model | Provider | Available | Coverage | P(correct) | NLL | Perplexity | ECE | Brier |
 |---|---|---|---|---|---|---|---|---|
 | Gemma-3-4B | DeepInfra | no | - | - | - | - | - | - |
-| Llama-3.2-3B | Cloudflare | no | - | - | - | - | - | - |
+| Llama-3.2-3B | Parasail, Cloudflare | yes | 96.9% | 0.5996 | 0.9504 | 2.587 | 0.2985 | 0.2909 |
 | Ministral-8B | Mistral | no | - | - | - | - | - | - |
 
 
-Unavailable for: Gemma-3-4B, Llama-3.2-3B, Ministral-8B. Log-probability support is a property of the **provider** OpenRouter routed to, not of the model — the same model yields calibration on one run and none on the next. The provider is listed beside every row for exactly this reason.
+Stage 2 is available only where the routed provider returns token log-probabilities. In this run it was unavailable for: Gemma-3-4B, Ministral-8B. This is a property of the *provider*, not the model — the same model can yield calibration on one run and none on the next, so the provider is listed alongside every row.
 
 
-### 8.6 Stage 6 — API Performance
+**Stage 3 — Reasoning & Consistency**
+
+| Model | Answer stability | Majority-vote acc. | Single-sample acc. | Self-consistency gain | Mean agreement |
+|---|---|---|---|---|---|
+| Gemma-3-4B | 93.8% | 71.9% | 71.9% | +0.0000 | 96.9% |
+| Llama-3.2-3B | 90.6% | 56.2% | 54.7% | +0.0156 | 95.3% |
+| Ministral-8B | 90.6% | 84.4% | 82.8% | +0.0156 | 95.3% |
+
+
+**Stage 5 — Robustness** (accuracy drop vs the clean baseline; negative means the variant scored *higher*)
+
+| Model | Score | option reorder | prompt terse | prompt verbose | typo noise | Worst |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | 0.837 | +0.031 | +0.094 | +0.312 | +0.031 | prompt verbose |
+| Llama-3.2-3B | 1.000 | -0.031 | -0.062 | -0.062 | +0.062 | typo noise |
+| Ministral-8B | 0.856 | -0.031 | +0.062 | +0.438 | +0.000 | prompt verbose |
+
+
+**Stage 6 — API Performance**
 
 | Model | TTFT mean | TTFT p95 | TPOT mean | E2E mean | E2E p95 | Decode tok/s |
 |---|---|---|---|---|---|---|
-| Gemma-3-4B | 0.582 s | 1.387 s | 0.0141 s | 1.750 s | 3.117 s | 80.0 |
-| Llama-3.2-3B | 0.330 s | 0.734 s | 0.0040 s | 0.652 s | 1.171 s | 257.3 |
-| Ministral-8B | 0.413 s | 0.989 s | 0.0105 s | 1.371 s | 2.738 s | 114.4 |
+| Gemma-3-4B | 0.790 s | 1.014 s | 0.0173 s | 2.092 s | 3.332 s | 64.2 |
+| Llama-3.2-3B | 0.770 s | 1.192 s | 0.0090 s | 1.498 s | 2.385 s | 122.5 |
+| Ministral-8B | 1.183 s | 2.270 s | 0.0129 s | 2.547 s | 7.903 s | 86.5 |
 
 
-### 8.7 Stages 7 & 8 — Token Efficiency and Economics
+**Stages 7 & 8 — Token Efficiency and Economics**
 
 | Model | Prompt tok | Completion tok | Reasoning tok | Tokens/item | Tokens/correct | Total cost | $/1M tok | $/correct |
 |---|---|---|---|---|---|---|---|---|
-| Gemma-3-4B | 731,647 | 238,841 | 0 | 340.5 | 564.2 | $0.079664 | $0.0821 | $0.000046 |
-| Llama-3.2-3B | 676,638 | 213,957 | 0 | 312.5 | 571.6 | $0.129379 | $0.1453 | $0.000083 |
-| Ministral-8B | 688,211 | 258,736 | 0 | 332.3 | 419.0 | $0.116086 | $0.1226 | $0.000051 |
+| Gemma-3-4B | 7,119 | 2,421 | 0 | 298.1 | 414.8 | $0.000759 | $0.0795 | $0.000033 |
+| Llama-3.2-3B | 6,683 | 2,614 | 0 | 290.5 | 546.9 | $0.001401 | $0.1507 | $0.000082 |
+| Ministral-8B | 6,412 | 2,349 | 0 | 273.8 | 337.0 | $0.001379 | $0.1574 | $0.000053 |
 
 
-### 8.8 Stage 9 — Reliability
+**Stage 9 — Reliability**
 
 | Model | Provider | Success | Failure | Invalid output | Timeout | 429 | Retries | Failover |
 |---|---|---|---|---|---|---|---|---|
-| Gemma-3-4B | DeepInfra | 99.9% | 0.1% | 0.2% | 0.0% | 0.1% | 40 | no |
-| Llama-3.2-3B | Cloudflare | 100.0% | 0.0% | 11.7% | 0.0% | 0.0% | 0 | no |
-| Ministral-8B | Mistral | 100.0% | 0.0% | 0.6% | 0.0% | 0.0% | 0 | no |
+| Gemma-3-4B | DeepInfra | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
+| Llama-3.2-3B | Parasail, Cloudflare | 100.0% | 0.0% | 3.1% | 0.0% | 0.0% | 0 | yes |
+| Ministral-8B | Mistral | 96.9% | 3.1% | 0.0% | 0.0% | 0.0% | 0 | no |
 
 
-### 8.10 Composite Ranking
+**Composite ranking**
 
-| # | Model | Quality | Efficiency | Reliability | Composite |
-|---|---|---|---|---|---|
-| 1 | Ministral-8B | 0.793 | 0.476 | 0.994 | **0.776** |
-| 2 | Llama-3.2-3B | 0.547 | 1.000 | 0.883 | **0.659** |
-| 3 | Gemma-3-4B | 0.604 | 0.373 | 0.996 | **0.627** |
+| # | Model | Quality | Calibration | Robustness | Efficiency | Reliability | Composite |
+|---|---|---|---|---|---|---|---|
+| 1 | Ministral-8B | 0.812 | - | 0.856 | 0.588 | 0.969 | **0.812** |
+| 2 | Gemma-3-4B | 0.719 | - | 0.837 | 0.716 | 1.000 | **0.772** |
+| 3 | Llama-3.2-3B | 0.531 | 0.702 | 1.000 | 1.000 | 0.969 | **0.718** |
 
 
 all models share one run configuration - differences are attributable to the models
 
 
-Weights are renormalised over the components a run actually produced, and each row lists which those were, so a model is never penalised for a study that was not run.
+#### LAMBADA
+
+30 items per model, 3 models. Passes: main, calibration, 2 repeats, robustness, context ablation. Decoding: temperature 0.0, max_tokens 384.
 
 
----
-
-## 9. LAMBADA — Results
-
-**1,000 items per model · 3 models · 3,000 scored items.** Passes: scored, extended, calibration. Decoding: temperature 0.0, max_tokens 8.
-
-
-### 9.1 Stage 1 — Task Quality
+**Stage 1 — Task Quality**
 
 | Model | Accuracy | 95% CI | Macro (subject) | Normalised | Error rate | Parse fail |
 |---|---|---|---|---|---|---|
-| Gemma-3-4B | **18.0%** | 15.7–20.5% | - | - | 82.0% | 0.1% |
-| Llama-3.2-3B | **22.5%** | 20.0–25.2% | - | - | 77.5% | 0.0% |
-| Ministral-8B | **39.9%** | 36.9–43.0% | - | - | 60.1% | 0.0% |
+| Gemma-3-4B | **16.7%** | 7.3–33.6% | - | - | 83.3% | 0.0% |
+| Llama-3.2-3B | **16.7%** | 7.3–33.6% | - | - | 83.3% | 0.0% |
+| Ministral-8B | **46.7%** | 30.2–63.9% | - | - | 53.3% | 0.0% |
 
 
-### 9.2 Stage 2 — Probabilistic Quality
+**Stage 2 — Probabilistic Quality**
 
 | Model | Provider | Available | Coverage | P(correct) | NLL | Perplexity | ECE | Brier |
 |---|---|---|---|---|---|---|---|---|
@@ -856,441 +855,225 @@ Weights are renormalised over the components a run actually produced, and each r
 | Ministral-8B | Mistral | no | - | - | - | - | - | - |
 
 
-Unavailable for: Gemma-3-4B, Llama-3.2-3B, Ministral-8B. Log-probability support is a property of the **provider** OpenRouter routed to, not of the model — the same model yields calibration on one run and none on the next. The provider is listed beside every row for exactly this reason.
+Stage 2 is available only where the routed provider returns token log-probabilities. In this run it was unavailable for: Gemma-3-4B, Llama-3.2-3B, Ministral-8B. This is a property of the *provider*, not the model — the same model can yield calibration on one run and none on the next, so the provider is listed alongside every row.
 
 
-### 9.6 Stage 6 — API Performance
+**Stage 3 — Reasoning & Consistency**
+
+| Model | Answer stability | Majority-vote acc. | Single-sample acc. | Self-consistency gain | Mean agreement |
+|---|---|---|---|---|---|
+| Gemma-3-4B | 100.0% | 16.7% | 16.7% | +0.0000 | 100.0% |
+| Llama-3.2-3B | 100.0% | 16.7% | 16.7% | +0.0000 | 100.0% |
+| Ministral-8B | 100.0% | 46.7% | 46.7% | +0.0000 | 100.0% |
+
+
+**Stage 4 — Context Behavior**
+
+| Model | Full | Last sentence | Last 10 words | No context | Utilisation | Ratio |
+|---|---|---|---|---|---|---|
+| Gemma-3-4B | 16.7% | 0.0% | 0.0% | 0.0% | +0.1667 | 1.000 |
+| Llama-3.2-3B | 16.7% | 0.0% | 0.0% | 0.0% | +0.1667 | 1.000 |
+| Ministral-8B | 46.7% | 0.0% | 0.0% | 0.0% | +0.4667 | 1.000 |
+
+
+**Stage 5 — Robustness** (accuracy drop vs the clean baseline; negative means the variant scored *higher*)
+
+| Model | Score | casing | typo | Worst |
+|---|---|---|---|---|
+| Gemma-3-4B | 0.400 | +0.100 | +0.100 | typo |
+| Llama-3.2-3B | 1.000 | -0.033 | -0.067 | casing |
+| Ministral-8B | 0.893 | +0.000 | +0.100 | typo |
+
+
+**Stage 6 — API Performance**
 
 | Model | TTFT mean | TTFT p95 | TPOT mean | E2E mean | E2E p95 | Decode tok/s |
 |---|---|---|---|---|---|---|
-| Gemma-3-4B | 0.531 s | 1.335 s | 0.0071 s | 0.539 s | 1.336 s | 587.5 |
-| Llama-3.2-3B | 0.345 s | 0.663 s | 0.0070 s | 0.354 s | 0.665 s | 673.9 |
-| Ministral-8B | 0.537 s | 1.292 s | 0.0195 s | 0.569 s | 1.316 s | 816.3 |
+| Gemma-3-4B | 0.918 s | 2.007 s | 0.0055 s | 0.924 s | 2.012 s | 1307.6 |
+| Llama-3.2-3B | 0.486 s | 0.700 s | 0.0363 s | 0.525 s | 1.014 s | 2308.1 |
+| Ministral-8B | 0.498 s | 0.627 s | 0.0246 s | 0.547 s | 0.758 s | 1499.9 |
 
 
-### 9.7 Stages 7 & 8 — Token Efficiency and Economics
+**Stages 7 & 8 — Token Efficiency and Economics**
 
 | Model | Prompt tok | Completion tok | Reasoning tok | Tokens/item | Tokens/correct | Total cost | $/1M tok | $/correct |
 |---|---|---|---|---|---|---|---|---|
-| Gemma-3-4B | 188,663 | 2,122 | 0 | 190.8 | 1059.9 | $0.019178 | $0.1005 | $0.000107 |
-| Llama-3.2-3B | 211,997 | 2,586 | 0 | 214.6 | 953.7 | $0.022783 | $0.1062 | $0.000101 |
-| Ministral-8B | 181,752 | 2,638 | 0 | 184.4 | 462.1 | $0.038396 | $0.2082 | $0.000096 |
+| Gemma-3-4B | 6,405 | 64 | 0 | 215.6 | 1293.8 | $0.000650 | $0.1005 | $0.000130 |
+| Llama-3.2-3B | 7,101 | 85 | 0 | 239.5 | 1437.2 | $0.000761 | $0.1060 | $0.000152 |
+| Ministral-8B | 6,197 | 89 | 0 | 209.5 | 449.0 | $0.000996 | $0.1584 | $0.000071 |
 
 
-### 9.8 Stage 9 — Reliability
+**Stage 9 — Reliability**
 
 | Model | Provider | Success | Failure | Invalid output | Timeout | 429 | Retries | Failover |
 |---|---|---|---|---|---|---|---|---|
-| Gemma-3-4B | DeepInfra | 100.0% | 0.0% | 0.1% | 0.0% | 0.0% | 0 | no |
+| Gemma-3-4B | DeepInfra | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
 | Llama-3.2-3B | Cloudflare | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
 | Ministral-8B | Mistral | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0 | no |
 
 
-### 9.9 Tokenization
+**Composite ranking**
 
-| Model | Tokenizer | Exact? | Tokens/word | Fragmented | 1 token | 2 tokens | 3+ tokens |
+| # | Model | Quality | Calibration | Robustness | Efficiency | Reliability | Composite |
 |---|---|---|---|---|---|---|---|
-| Gemma-3-4B | `cl100k_base` | **no** | 1.446 | 40.6% | 23.6% | 10.6% | 2.6% |
-| Llama-3.2-3B | `cl100k_base` | **no** | 1.446 | 40.6% | 29.5% | 13.4% | 2.6% |
-| Ministral-8B | `mistralai/Ministral-8B-Instruct-2410` | yes | 1.520 | 45.8% | 44.3% | 34.8% | 34.5% |
-
-
-> **Caveat.** Gemma-3-4B, Llama-3.2-3B fell back to `cl100k_base` because their Hugging Face tokenizers are gated. Their fragmentation *rates* therefore describe how a generic BPE vocabulary splits the targets, not their own. The accuracy trend across buckets remains valid within each model — each is bucketed consistently — but the rates are not comparable across models unless both are marked exact.
-
-
-### 9.10 Composite Ranking
-
-| # | Model | Quality | Efficiency | Reliability | Composite |
-|---|---|---|---|---|---|
-| 1 | Ministral-8B | 0.399 | 0.623 | 1.000 | **0.517** |
-| 2 | Llama-3.2-3B | 0.225 | 1.000 | 1.000 | **0.446** |
-| 3 | Gemma-3-4B | 0.180 | 0.657 | 0.999 | **0.365** |
+| 1 | Ministral-8B | 0.467 | - | 0.893 | 0.959 | 1.000 | **0.662** |
+| 2 | Llama-3.2-3B | 0.167 | - | 1.000 | 1.000 | 1.000 | **0.510** |
+| 3 | Gemma-3-4B | 0.167 | - | 0.400 | 0.690 | 1.000 | **0.367** |
 
 
 all models share one run configuration - differences are attributable to the models
 
 
-Weights are renormalised over the components a run actually produced, and each row lists which those were, so a model is never penalised for a study that was not run.
+### 7.6 Extended Analysis — Figures
 
+The web app renders every stage of the taxonomy for each saved run, as
+collapsible panels inside the History tab. The figures below are captured from
+that view.
 
----
+> Figure files live in `diagram-analysis/` and are referenced by exact name.
+> `diagram-analysis/README.md` lists what each one should show and where in the
+> UI to capture it. A file that has not been added yet renders as a broken
+> image; adding the PNG is the only step required.
 
-## 10. Component Reference
+#### The run record
 
-Every metric the benchmark produces, what it means in plain terms, and how to read it. Stage numbers match `metrics/taxonomy.py`.
+![History page with a saved extended run](diagram-analysis/analysis-01-history-overview.png)
+*Fig. 7.1 — A run card: benchmark badge, metric-family chips, decoding/parallelism
+chips and the ranking table.*
 
+![Extended analysis panel with per-model tabs](diagram-analysis/analysis-02-extended-collapsed.png)
+*Fig. 7.2 — The extended-analysis container. Blocks are stored with the history
+entry, so an older run keeps showing the numbers it actually produced.*
 
-### 10.1 Stage 1 — Task Quality
+![All nine stages listed](diagram-analysis/analysis-03-stage-list.png)
+*Fig. 7.3 — Stages 1–9. Families with no data carry an `n/a` badge rather than
+being hidden, so an absent measurement is visible as an absence.*
 
-*Measure model capability. Priority P0; OpenRouter observability: **yes**.*
+#### Stages 1–5: model behaviour
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Core Task Performance | Accuracy, Exact Match, Error Rate, Normalised Accuracy, Parse-Failure Rate | yes |
-| MMLU Domain Performance *(MMLU only)* | Macro Accuracy, Subject Accuracy, Category Accuracy, Wilson CI | yes |
-| LAMBADA Word Prediction *(LAMBADA only)* | Last-Word Accuracy, Exact Target Match, Stem Match | yes |
-| Language Modeling | Perplexity, NLL, Cross Entropy | conditional — derived from logprobs - same provider dependency as stage 2 |
+![Task quality metrics](diagram-analysis/analysis-04-task-quality.png)
+*Fig. 7.4 — Stage 1. Overall and macro accuracy, Wilson confidence intervals,
+per-subject and per-category tables, and the option-position bias.*
 
-### 10.2 Stage 2 — Probabilistic Quality
+![Calibration metrics where log-probabilities are available](diagram-analysis/analysis-05-calibration.png)
+*Fig. 7.5 — Stage 2 on a provider that returns log-probabilities: NLL,
+perplexity, ECE, Brier score and the reliability-bin table.*
 
-*Measure confidence and probability quality. Priority P1; OpenRouter observability: **conditional**; requires provider that returns token log-probabilities.*
+![Calibration marked unavailable](diagram-analysis/analysis-06-calibration-unavailable.png)
+*Fig. 7.6 — The same stage on a provider that does not. The block reports
+`available: false` with its reason instead of substituting zeros — the
+difference this project treats as non-negotiable.*
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Probability | Correct-Option Probability, Target Probability, Log Probability, Target Rank, Probability Margin | conditional |
-| Uncertainty | Entropy, Normalised Entropy, Prediction Entropy | conditional |
-| Calibration | Confidence, ECE, MCE, Brier Score, Confidence-Accuracy Correlation | conditional |
+![Consistency metrics](diagram-analysis/analysis-07-consistency.png)
+*Fig. 7.7 — Stage 3. Answer stability across repeats, majority-vote accuracy and
+the self-consistency gain.*
 
-### 10.3 Stage 3 — Reasoning & Consistency
+![Context ablation results](diagram-analysis/analysis-08-context.png)
+*Fig. 7.8 — Stage 4 (LAMBADA). Accuracy under progressive context ablation, and
+the utilisation ratio derived from it.*
 
-*Measure stability and reasoning reliability. Priority P1; OpenRouter observability: **yes**; requires repeats > 1 and/or multiple seeds.*
+![Robustness deltas](diagram-analysis/analysis-09-robustness.png)
+*Fig. 7.9 — Stage 5. Per-variant accuracy drop with the broke/fixed split and
+flip rate, which is what separates genuine robustness from offsetting errors.*
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Answer Stability | Prediction Stability, Answer Agreement | yes |
-| Self-Consistency | Self-Consistency Accuracy, Majority-Vote Accuracy | yes |
-| Reproducibility | Seed Stability, Prediction Variance, Run-to-Run Variance | yes |
+#### Stages 6–9: serving behaviour
 
-### 10.4 Stage 4 — Context Behavior
+![Latency and throughput](diagram-analysis/analysis-10-api-performance.png)
+*Fig. 7.10 — Stage 6. TTFT, TPOT and end-to-end latency with p50/p95/p99, plus
+prefill and decode throughput.*
 
-*Measure context usage and dependency. Priority P1; OpenRouter observability: **yes**; requires context ablation pass.*
+![Token accounting](diagram-analysis/analysis-11-token-efficiency.png)
+*Fig. 7.11 — Stage 7. Prompt, completion, reasoning and cached tokens, and
+tokens per correct answer.*
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Context Utilization | Context Utilization, Context Sensitivity | yes |
-| Context Dependency | Context Gain, Context Ablation Drop, Long-Range Dependency | yes |
-| Context Position | Position Sensitivity, Lost-in-the-Middle Sensitivity | yes |
-| Context Length | Context-Length Sensitivity, Long-Context Retention | yes |
+![Cost metrics](diagram-analysis/analysis-12-economics.png)
+*Fig. 7.12 — Stage 8. Provider-reported spend, normalised per request, per
+million tokens and per correct answer.*
 
-### 10.5 Stage 5 — Robustness
+![Reliability metrics](diagram-analysis/analysis-13-reliability.png)
+*Fig. 7.13 — Stage 9. Success, failure, timeout and rate-limit rates, retry
+counts and provider-failover detection.*
 
-*Measure resistance to prompt and input changes. Priority P1; OpenRouter observability: **yes**; requires robustness pass.*
+#### Configuration and interface
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Prompt Robustness | Prompt Variation Accuracy, Prompt Stability | yes |
-| Semantic Robustness | Paraphrase Accuracy, Paraphrase Consistency | yes |
-| Input Perturbation | Typographical, Formatting, Noise, Case Robustness | yes |
-| MMLU Choice Robustness *(MMLU only)* | Option-Order Robustness, Answer-Position Bias | yes |
-| Distribution Robustness | OOD Accuracy, OOD Perplexity | yes — uses the LAMBADA control/rejected splits as the OOD set |
+![Run configuration panel](diagram-analysis/analysis-14-run-config.png)
+*Fig. 7.14 — The run configuration, rendered apart from the measured blocks and
+labelled as input. TP/PP/DP/SP/CP/EP appear as chips; on a hosted endpoint they
+read `provider-chosen`, which encodes "unknown", not "one GPU".*
 
-### 10.6 Stage 6 — API Performance
+![Decoding parameter panel](diagram-analysis/analysis-15-decoding-panel.png)
+*Fig. 7.15 — The decoding panel: nine parameters with inline explanations, five
+presets, and the extended-pass selector with its live API-call estimate.*
 
-*Measure inference-service performance. Priority P0; OpenRouter observability: **yes**.*
+![Mobile subject selector](diagram-analysis/analysis-16-mobile-subjects.png)
+*Fig. 7.16 — Subject categories at phone width, two per row, each reporting its
+selected count while collapsed.*
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Initial Latency | TTFT | yes |
-| Generation Latency | TPOT | yes |
-| End-to-End Latency | E2E Latency | yes |
-| Latency Distribution | P50, P95, P99 | yes |
-| Throughput | Output Tokens/sec, Prompt Tokens/sec, Total Tokens/sec | yes |
-| Request Throughput | Requests/sec, Items/sec | yes |
+![Navigation modal](diagram-analysis/analysis-17-nav-modal.png)
+*Fig. 7.17 — Navigation, consolidated into a single modal reachable from the
+hamburger control on every viewport.*
 
-### 10.7 Stage 7 — Token Efficiency
+## 8. Discussion of the Results
 
-*Measure token consumption and efficiency. Priority P0; OpenRouter observability: **yes**.*
+### 8.1 Why These LAMBADA Results?
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Input Usage | Prompt Tokens | yes |
-| Output Usage | Completion Tokens | yes |
-| Reasoning Usage | Reasoning Tokens | yes — returned in completion_tokens_details; 0 for non-reasoning models |
-| Cached Input | Cached Prompt Tokens | yes — returned in prompt_tokens_details when the provider supports caching |
-| Aggregate Usage | Total Tokens, Tokens/Question, Tokens/Correct Answer | yes |
+- Accuracy gap (38.1% Ministral vs. 20.8–21.9% for the other two) matches the compression story: Ministral is the only model not distilled or pruned from a larger checkpoint. LAMBADA specifically punishes compression, because the correct word is very often a rare proper noun or specific detail that a distilled/pruned model is more likely to have smoothed over.
+- LAMBADA gives no multiple-choice options — the model must generate the exact right token from the full vocabulary with nothing to recognize from, stressing raw language-modeling precision more than instruction-following, which is exactly where heavy pruning tends to cost the most.
+- Gemma-3-4B's latency (1.198s, more than double Llama's 0.577s) is not primarily an architecture story here: this evaluation's own retry log shows Gemma's run hit a sustained string of HTTP 429 rate-limit responses from its OpenRouter-hosted provider, each costing up to ~60s in retries before succeeding — inflating its measured average well above its likely "clean" speed (~0.58s, based on an earlier 50-sample dry run before that congestion).
+- All three models finished at 0 recorded errors — the retry-with-backoff logic added after that congestion was diagnosed always eventually succeeded rather than giving up.
 
-### 10.8 Stage 8 — Economics
+### 8.2 Why These MMLU Results?
 
-*Measure monetary efficiency. Priority P0; OpenRouter observability: **yes**.*
+- Ministral-8B's win here is even larger than on LAMBADA (78.9% vs. runner-up 63.9%): MMLU tests knowledge breadth across 57 subjects, and raw parameter count (8B vs. 3–4B) tracks especially closely with how much factual knowledge a model can store — more so than with pure language-modeling fluency.
+- Category accuracy reveals unevenness the headline number hides: Llama-3.2-3B swings from 43.3% (STEM) to 63.3% (Social Sciences) — a 20-point gap between its weakest and strongest domains. Ministral-8B's own spread is much tighter (73.9%–83.3%, a 9.4-point gap) — evidence of more consistent competence, not just a higher average.
+- Reasoning length is not reasoning quality: Ministral writes the shortest average explanation (54.1 words) yet the most consistent one (69.1%); Llama writes the longest (61.8 words) yet the least consistent (59.7%) — verbosity doesn't buy correctness.
+- The composite ranking keeps Llama-3.2-3B ahead of Gemma-3-4B (0.630 vs. 0.590) despite Gemma's higher raw accuracy (63.9% vs. 55.8%) — because Gemma's 2.502s average latency is more than 3x Llama's, and speed carries 15% of the score. This is the clearest illustration in this study of how weighting can reorder a leaderboard relative to accuracy alone.
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| Request Cost | Cost/Request | yes |
-| Token Cost | Cost/1K Tokens, Cost/1M Tokens | yes |
-| Quality-Adjusted Cost | Cost/Correct Answer, Quality per Dollar | yes |
+### 8.3 Comments and Discussions
 
-### 10.9 Stage 9 — Reliability
+**Accuracy & knowledge depth**
 
-*Measure operational stability. Priority P0; OpenRouter observability: **yes**.*
+Ministral-8B leads both benchmarks (38.1% LAMBADA, 78.9% MMLU) — the only model not distilled or pruned from a larger checkpoint, so it keeps more raw capacity for precise recall. Gemma-3-4B and Llama-3.2-3B are both compressed from bigger teacher/checkpoint models — a cost that shows up most on exact recall of rare words or facts.
 
-| Subsection | Metrics | Observable |
-|---|---|---|
-| API Reliability | Failure Rate, API Error Rate, Timeout Rate, Rate-Limit (429) Rate | yes |
-| Output Reliability | Invalid Output Rate | yes |
-| Reproducibility | Run Variance, Seed Variance, Reproducibility Score | yes |
-| Operational Stability | Retry Rate, Provider Failover Count | yes — retries and provider identity are visible client-side; upstream OOM is not |
+**Speed & latency**
 
-### 10.10 Stage 10 — Hardware & Distributed (excluded)
+Llama-3.2-3B is fastest on both benchmarks (0.577s LAMBADA, 0.768s MMLU) — the smallest, most compressed model. Gemma-3-4B is the slowest despite being smaller than Ministral-8B — interleaved global-attention layers, fewer OpenRouter hosting providers, and (on its LAMBADA run specifically) transient provider rate-limit congestion all inflate its latency.
 
-The benchmark is a client of a shared, auto-scaled third-party endpoint. Parallelism layout, GPU telemetry and power draw are chosen and held by the provider; none of them is exposed to the caller. Any figure reported here would be fabricated.
+**Reasoning quality (MMLU)**
 
-**To measure it:** Run the same suite against a self-hosted vLLM backend (benchmark_config.local_vllm_config), where TP/PP/DP/SP/CP/EP become settable variables and VRAM, KV cache, communication overhead and energy become directly measurable.
+Ministral-8B has the highest reasoning consistency (69.1%); Gemma-3-4B is close behind (64.6%) despite its latency cost; Llama-3.2-3B is lowest (59.7%) despite being fastest. Speed, accuracy, and reasoning quality don't move together — the composite score (70/15/15) exists precisely to weigh that trade-off.
 
-| Subsection | Metrics |
-|---|---|
-| Tensor Parallelism | TP Degree, TP Speedup |
-| Pipeline Parallelism | PP Degree, PP Speedup |
-| Data/Sequence/Context/Expert Parallelism | DP, SP, CP, EP |
-| Hardware Telemetry | GPU Utilization, VRAM, KV Cache, Memory Bandwidth |
-| Compute Efficiency | FLOPs, MFU, HFU |
-| Distributed Scaling | Communication Overhead, Parallel Efficiency, Pipeline Bubble |
-| Energy | Joules/token, Tokens/Watt, GPU Power |
+**Use-case perspective**
 
----
+- Ministral-8B: best when accuracy and reasoning quality matter most and an 8B footprint is affordable.
+- Llama-3.2-3B: best for latency-sensitive or edge deployment.
+- Gemma-3-4B: strong quality-per-parameter on paper, but the weakest speed/cost trade-off in this specific hosted (OpenRouter) setup.
 
-## 11. Metric Glossary
+## 9. Conclusions
 
-Each metric in plain language, with the direction that counts as good.
+**Does a larger, non-distilled model beat smaller, compressed ones across both benchmarks?**
 
+- Yes — in raw accuracy and knowledge depth: Ministral-8B wins LAMBADA (38.1%) and MMLU (78.9%).
+- No — in latency and cost-efficiency: Llama-3.2-3B, the smallest and most compressed model, is consistently the fastest.
 
-### Accuracy family
+**For this evaluation:**
 
-| Metric | What it means | Good |
-|---|---|---|
-| **Overall accuracy** | Correct ÷ questions answered. The headline number. | higher |
-| **Macro accuracy** | Average of per-subject accuracies, so a large subject cannot dominate. | higher |
-| **Normalised accuracy** | (acc − chance) ÷ (1 − chance). Restates a score as distance above guessing. | higher |
-| **Wilson 95% CI** | Confidence interval that stays inside [0,1] at small n, unlike the normal approximation. | narrower |
-| **Error rate** | 1 − accuracy, framed as a budget. | lower |
-| **Parse-failure rate** | Answers with no extractable letter. An instruction-following failure, not ignorance. | lower |
-| **Option-position bias** | Distance between the letters the model picks and the letters that are correct. | lower |
-
-### Probability & calibration
-
-| Metric | What it means | Good |
-|---|---|---|
-| **P(correct option)** | Probability mass placed on the right answer. | higher |
-| **NLL** | How surprised the model was by the truth. What language models are trained to minimise. | lower |
-| **Perplexity** | exp(NLL). 1.0 = certain and right; 4.0 ≈ guessing among four options. | lower |
-| **Entropy** | How spread out its belief was. High = unsure. | context |
-| **ECE** | Expected Calibration Error — does stated confidence match observed accuracy? | lower |
-| **MCE** | The worst single confidence bin. Tail miscalibration. | lower |
-| **Brier score** | Squared error of confidence against outcome. A proper scoring rule: cannot be gamed by hedging. | lower |
-| **Confidence↔accuracy correlation** | Whether its confidence carries any signal at all. | higher |
-| **Target rank / MRR** | Where the right answer sat among ranked predictions; MRR rewards 'nearly right'. | higher |
-
-### Consistency
-
-| Metric | What it means | Good |
-|---|---|---|
-| **Answer stability** | Share of items where every repeat gave the identical answer. | higher |
-| **Self-consistency gain** | Majority-vote accuracy minus single-sample accuracy. | higher |
-| **Seed stability** | Accuracy spread across independent seeds. Compare against model gaps before ranking. | lower |
-
-### Context (LAMBADA)
-
-| Metric | What it means | Good |
-|---|---|---|
-| **Context utilisation** | Accuracy with the full passage minus accuracy with only the last sentence. | higher |
-| **Utilisation ratio** | Share of the model's skill that depends on the wider passage. 1.0 = entirely. | higher |
-| **Position sensitivity** | Accuracy bucketed by passage length — a 'lost in the middle' probe. | flat |
-
-### Robustness
-
-| Metric | What it means | Good |
-|---|---|---|
-| **Accuracy drop** | Baseline accuracy minus perturbed accuracy. | lower |
-| **Flip rate** | Share of answers that changed at all. Catches offsetting errors that leave accuracy flat. | lower |
-| **Broke / fixed** | Answers that went right→wrong and wrong→right. Both are instability. | lower |
-| **Robustness score** | 1 − mean relative drop across all perturbations. | higher |
-
-### Tokenization (LAMBADA)
-
-| Metric | What it means | Good |
-|---|---|---|
-| **Tokens per target word** | How many tokens the tokenizer needs for the gold word, with its leading space. | lower |
-| **Fragmentation rate** | Share of targets needing more than one token — mechanically harder to produce. | lower |
-| **Accuracy by fragmentation** | Accuracy split by 1 / 2 / 3+ token targets. Separates tokenizer handicap from comprehension. | flat |
-
-### API performance
-
-| Metric | What it means | Good |
-|---|---|---|
-| **TTFT** | Time to first token. Prefill plus queueing plus network — what makes a chat feel responsive. | lower |
-| **TPOT** | Time per output token after the first. The steady-state generation rate. | lower |
-| **E2E latency** | Total wait for the complete answer. | lower |
-| **p95 / p99** | Tail latency. For serving, the tail is the user experience; the mean hides it. | lower |
-| **Decode throughput** | Generated tokens per second. | higher |
-
-### Token efficiency & economics
-
-| Metric | What it means | Good |
-|---|---|---|
-| **Prompt / completion tokens** | What was billed, as reported by the provider. | lower |
-| **Reasoning tokens** | Tokens spent on hidden reasoning. 0 is a real answer for a non-reasoning model. | lower |
-| **Cached prompt tokens** | Prompt tokens served from the provider's cache, and therefore cheaper. | higher |
-| **Tokens per correct answer** | Token cost of a *useful* answer, not just any answer. | lower |
-| **Cost per 1M tokens** | Blended price actually paid, comparable against list prices. | lower |
-| **Cost per correct answer** | Money per useful answer. **The figure that should drive model choice** — a cheaper model that is wrong twice as often is not cheaper. | lower |
-
-### Reliability
-
-| Metric | What it means | Good |
-|---|---|---|
-| **Success / failure rate** | Requests that returned, versus those that errored even after retries. | higher / lower |
-| **Invalid output rate** | A 200 response carrying nothing usable. A model problem, not a transport one. | lower |
-| **Timeout / 429 rate** | Failures bucketed by class, separating 'provider overloaded' from 'provider broken'. | lower |
-| **Retry rate** | How hard the client had to try. Invisible in an accuracy table. | lower |
-| **Provider failover** | Whether more than one backend served the run — if so, latency and calibration mix two stacks. | no |
+- Ministral-8B is the strongest choice when accuracy and reasoning quality matter most.
+- Llama-3.2-3B is preferable for latency-sensitive or edge deployment.
+- Gemma-3-4B sits in between — competitive in quality-per-parameter terms, but currently the weakest on measured speed via this hosted setup.
+- LAMBADA rewards real use of context; MMLU rewards breadth of knowledge and reasoning that actually supports the answer — together they separate raw language modeling from broader competence.
 
 ---
 
-## 12. Figures
-
-Screenshots live in `diagram-analysis/` and are referenced by exact filename. `diagram-analysis/README.md` records what each should show and where in the UI to capture it. A file that has not been added yet renders as a broken image; adding the PNG is the only step required.
-
-
-![The History tab: one card per run, with metric-family chips, configuration chips and the ranking table](diagram-analysis/analysis-01-history-overview.png)
-*Fig. 1 — The History tab: one card per run, with metric-family chips, configuration chips and the ranking table*
-
-
-![The extended-analysis container with its per-model tabs](diagram-analysis/analysis-02-extended-collapsed.png)
-*Fig. 2 — The extended-analysis container with its per-model tabs*
-
-
-![All nine stages collapsed; families with no data carry an n/a badge](diagram-analysis/analysis-03-stage-list.png)
-*Fig. 3 — All nine stages collapsed; families with no data carry an n/a badge*
-
-
-![Stage 1 — accuracy, Wilson intervals, per-subject and per-category tables, option bias](diagram-analysis/analysis-04-task-quality.png)
-*Fig. 4 — Stage 1 — accuracy, Wilson intervals, per-subject and per-category tables, option bias*
-
-
-![Stage 2 where the provider returns log-probabilities: NLL, perplexity, ECE, Brier, reliability bins](diagram-analysis/analysis-05-calibration.png)
-*Fig. 5 — Stage 2 where the provider returns log-probabilities: NLL, perplexity, ECE, Brier, reliability bins*
-
-
-![Stage 2 where it does not: an explicit unavailability notice with its reason](diagram-analysis/analysis-06-calibration-unavailable.png)
-*Fig. 6 — Stage 2 where it does not: an explicit unavailability notice with its reason*
-
-
-![Stage 3 — answer stability, majority-vote accuracy, self-consistency gain](diagram-analysis/analysis-07-consistency.png)
-*Fig. 7 — Stage 3 — answer stability, majority-vote accuracy, self-consistency gain*
-
-
-![Stage 4 — context ablation table and utilisation ratio (LAMBADA)](diagram-analysis/analysis-08-context.png)
-*Fig. 8 — Stage 4 — context ablation table and utilisation ratio (LAMBADA)*
-
-
-![Stage 5 — per-variant accuracy drop with the broke/fixed split and flip rate](diagram-analysis/analysis-09-robustness.png)
-*Fig. 9 — Stage 5 — per-variant accuracy drop with the broke/fixed split and flip rate*
-
-
-![Stage 6 — TTFT, TPOT and E2E with p50/p95/p99, plus throughput](diagram-analysis/analysis-10-api-performance.png)
-*Fig. 10 — Stage 6 — TTFT, TPOT and E2E with p50/p95/p99, plus throughput*
-
-
-![Stage 7 — prompt, completion, reasoning and cached tokens; tokens per correct answer](diagram-analysis/analysis-11-token-efficiency.png)
-*Fig. 11 — Stage 7 — prompt, completion, reasoning and cached tokens; tokens per correct answer*
-
-
-![Stage 8 — spend per request, per million tokens and per correct answer](diagram-analysis/analysis-12-economics.png)
-*Fig. 12 — Stage 8 — spend per request, per million tokens and per correct answer*
-
-
-![Stage 9 — success, failure, timeout and rate-limit rates; retries and failover](diagram-analysis/analysis-13-reliability.png)
-*Fig. 13 — Stage 9 — success, failure, timeout and rate-limit rates; retries and failover*
-
-
-![The run configuration, labelled as input, with TP/PP/DP/SP/CP/EP chips](diagram-analysis/analysis-14-run-config.png)
-*Fig. 14 — The run configuration, labelled as input, with TP/PP/DP/SP/CP/EP chips*
-
-
-![The decoding panel: nine parameters, five presets, and the extended-pass selector with its live call estimate](diagram-analysis/analysis-15-decoding-panel.png)
-*Fig. 15 — The decoding panel: nine parameters, five presets, and the extended-pass selector with its live call estimate*
-
-
-![Subject categories at phone width, two per row, each reporting its selected count](diagram-analysis/analysis-16-mobile-subjects.png)
-*Fig. 16 — Subject categories at phone width, two per row, each reporting its selected count*
-
-
-![Navigation consolidated into a single modal from the hamburger control](diagram-analysis/analysis-17-nav-modal.png)
-*Fig. 17 — Navigation consolidated into a single modal from the hamburger control*
-
-
-![The two-pass reconciliation banner: scored pass, extended pass, and the delta between them](diagram-analysis/analysis-18-two-pass-delta.png)
-*Fig. 18 — The two-pass reconciliation banner: scored pass, extended pass, and the delta between them*
-
-
-![The pre-flight probe warning that a provider is rate-limiting before a long run starts](diagram-analysis/analysis-19-preflight.png)
-*Fig. 19 — The pre-flight probe warning that a provider is rate-limiting before a long run starts*
-
-
----
-
-## 13. Discussion — What the Nine Stages Revealed
-
-Each finding below is one that **accuracy alone could not have surfaced**. That is the argument for the extra stages.
-
-
-### 13.1 Disobedience is not ignorance
-
-**Llama-3.2-3B failed to emit a parseable answer on 11.7% of MMLU questions.** Its accuracy of 54.7% therefore understates what it knows: roughly one question in 9 was scored wrong because the output format was not followed, not because the answer was wrong. Stage 1 separates the two because the fixes differ — a better prompt or constrained decoding addresses the first; nothing addresses the second. The other models sit at Ministral-8B 0.6%, Gemma-3-4B 0.4%.
-
-
-### 13.2 Serving failures hide inside an accuracy table
-
-Stage 9 recorded conditions invisible to every other metric: **Gemma-3-4B** (0.1% transport failures, 40 retries). A run that silently retried dozens of requests produces the same accuracy figure as a clean one, so without this stage the difference between 'the model was wrong' and 'the provider refused' is unrecoverable after the fact.
-
-
-### 13.3 Part of the LAMBADA gap is the tokenizer, not comprehension
-
-Splitting LAMBADA accuracy by how many tokens the gold word needs:
-
-| Model | 1-token targets | 3+-token targets | Collapse |
-|---|---|---|---|
-| Llama-3.2-3B | 29.5% | 2.6% | +26.9 pp |
-| Gemma-3-4B | 23.6% | 2.6% | +21.0 pp |
-| Ministral-8B | 44.3% | 34.5% | +9.8 pp |
-
-A multi-token target must be produced correctly several times over, so this is a mechanical handicap rather than a comprehension one. Llama-3.2-3B loses 27 percentage points across the buckets; Ministral-8B loses 10. Comparing raw LAMBADA scores without this split treats a vocabulary difference as a capability difference.
-
-
-### 13.4 Cheapest per token is not cheapest per answer
-
-**Gemma-3-4B** has the lowest price per million tokens ($0.0821), but **Gemma-3-4B** delivers the lowest cost per *correct* answer ($0.000046 vs $0.000083 for Llama-3.2-3B — 1.8x more). Accuracy converts token price into value: a model that is wrong more often spends its savings on wrong answers. Cost per correct answer is the figure that should drive selection.
-
-
-### 13.5 The speed/quality trade is not subtle
-
-**Llama-3.2-3B** answers in 0.652s mean end-to-end at 54.7% accuracy; **Gemma-3-4B** takes 1.750s (2.7x longer) for 60.4%. Which is preferable is a deployment decision, not a benchmark one — which is why the composite exposes its components rather than collapsing them into a single verdict.
-
-
----
-
-## 14. Limitations
-
-Stated plainly, because a benchmark that hides its limits is worth less than
-one that reports fewer numbers honestly.
-
-| Limitation | Effect | Mitigation in place |
-|---|---|---|
-| **Stage 10 is unmeasurable** | TP/PP/DP/SP/CP/EP, VRAM, KV cache, energy and communication overhead cannot be observed through a hosted API | Recorded as configuration with `controlled: false`, excluded from every score, and reproducible on the self-hosted vLLM path |
-| **Calibration depends on the provider** | Stage 2 yields numbers only when the routed provider returns log-probabilities — and routing changes between runs | Provider printed beside every row; blocks marked `available: false` with a reason rather than zero-filled |
-| **Two API passes per item** | Scored and extended passes differ slightly at temperature 0 | The delta is displayed explicitly in the web view and attributed to serving non-determinism |
-| **Tokenizer fallback** | Gated Hugging Face repos force a generic BPE vocabulary for some models | `tokenizer_exact: false` recorded; cross-model fragmentation rates flagged as not comparable |
-| **Sample size** | 2,850 MMLU questions and 1,000 LAMBADA passages give roughly ±2 pp and ±3 pp at 95% confidence | Wilson intervals reported beside every accuracy; differences inside the interval are not claimed as findings |
-| **Optional stages not always run** | consistency, probability, robustness were unavailable in this run | Each costs an extra pass over the dataset; the runner prints the multiplier before spending, and absent stages are marked, never inferred |
-| **Deterministic paraphrasing** | Robustness paraphrases are rule-based, not model-generated | Keeps the benchmark reproducible; a learned paraphraser would make it non-repeatable |
-
-## 15. Conclusions
-
-**Does a larger, non-distilled model beat smaller compressed ones?**
-
-On task quality, yes and consistently: Ministral-8B leads both benchmarks. But
-the nine-stage view shows the answer is not one-dimensional — the smaller models
-win on latency and, in one case, on cost per correct answer, and the ranking
-between second and third place changes depending on whether reliability is
-counted.
-
-**What the extra stages bought.** Five findings in §13 are invisible to
-accuracy alone: an instruction-following failure mistaken for ignorance, serving
-failures hidden inside a clean-looking score, a tokenizer handicap mistaken for
-a comprehension gap, a token price that inverts once accuracy is accounted for,
-and a speed/quality trade that no single number can adjudicate.
-
-**The methodological point.** Configuration and measurement are kept apart
-throughout: parallelism degrees and decoding settings are inputs recorded in a
-run manifest, never folded into a score. That separation is what allows the
-comparison layer to refuse a ranking when two runs are not comparable — and
-refusing is the correct output in that case.
+- Paperno, D. et al. (2016). The LAMBADA dataset. Proceedings of ACL 2016.
+- Hendrycks, D. et al. (2021). Measuring Massive Multitask Language Understanding. Proceedings of ICLR 2021.
+- Google (2025). Gemma 3 technical report.
+- Meta (2024). Llama 3.2 model card.
+- Mistral AI (2024). Ministral model family.
+- Guo, C. et al. (2017). On Calibration of Modern Neural Networks. Proceedings of ICML 2017. — ECE and reliability diagrams (§6.12).
+- Brier, G. W. (1950). Verification of Forecasts Expressed in Terms of Probability. Monthly Weather Review. — the proper scoring rule used in §6.12.
+- Wilson, E. B. (1927). Probable Inference, the Law of Succession, and Statistical Inference. JASA. — the small-sample confidence interval used throughout §7.
+- Wang, X. et al. (2023). Self-Consistency Improves Chain of Thought Reasoning in Language Models. Proceedings of ICLR 2023. — majority-vote decoding (§6.12, Consistency).
+- Gao, L. et al. (2024). A Framework for Few-Shot Language Model Evaluation (`lm-evaluation-harness`). — the letter-scoring protocol adopted in §6.16.
+- Shoeybi, M. et al. (2019). Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism. — tensor and pipeline parallelism (§6.13).
+- Kwon, W. et al. (2023). Efficient Memory Management for Large Language Model Serving with PagedAttention (vLLM). Proceedings of SOSP 2023. — KV-cache mechanics and the local-backend path (§6.15).

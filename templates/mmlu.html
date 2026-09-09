@@ -206,8 +206,11 @@
 
 <h5 class="mb-2">Model ranking</h5>
 <p class="text-muted small mb-2">
-  Composite score = 0.70 &times; accuracy + 0.15 &times; reasoning consistency + 0.15 &times; relative speed.
+  Quick score = 0.70 &times; accuracy + 0.15 &times; reasoning consistency + 0.15 &times; relative speed.
   Per-dimension ranks are shown in parentheses (1 = best).
+  <br>This is the run page's own summary and is <em>not</em> the composite shown in
+  History, which is weighted over the nine-stage taxonomy and renormalised over
+  whichever stages were measured. The two are different numbers.
 </p>
 <div class="table-responsive mb-4">
   <table class="table table-sm table-bordered bg-white align-middle">
@@ -223,7 +226,7 @@
         <th>Reasoning consist. (%)</th>
         <th>Avg words</th>
         <th>Avg time (s)</th>
-        <th>Composite</th>
+        <th>Quick score</th>
         <th>Errors</th>
       </tr>
     </thead>
