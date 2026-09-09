@@ -6,7 +6,7 @@ Submitted to: Prof. Anna Corazza
 Submitted by: Francesco Ventimiglia, Danilo Rodriguez, Rohan Baidya  
 GitHub: https://github.com/ronvoy/gen-ai  
 Site: https://unina.cc/gen-ai  
-Generated: 2026-09-09 13:33
+Generated: 2026-09-09 17:30
 
 ---
 
@@ -915,7 +915,127 @@ Weights are renormalised over the components a run actually produced, and each r
 
 ---
 
-## 10. Component Reference
+## 10. Statistical Significance and Variance
+
+An accuracy table says Ministral scored 79.3% and Gemma 60.4%. It does not say whether that gap could be noise, nor which of the things that vary across items actually moves the result. Both are computed from the per-item records.
+
+
+### 10.1 Method
+
+| Test | Question it answers | Why this one | Reported |
+|---|---|---|---|
+| **Cochran's Q** | Do the models differ at all? | The omnibus. Running three pairwise tests and quoting the smallest p-value would be fishing; Q licenses the pairwise step. | Q, df, p |
+| **McNemar** | Is the gap between two models real? | The models answered *identical* items, so the comparison is paired. An unpaired two-proportion test discards that pairing and inflates the variance. Only discordant items carry information. | b, c, χ², p, Δ ± CI, odds ratio |
+| **Holm–Bonferroni** | Did we get a false positive from testing three pairs? | Controls the family-wise error rate like Bonferroni, but rejects at least as often, so it costs no power. | adjusted p |
+| **χ² independence** | Does a factor change accuracy? | Tests whether correctness is independent of the level an item falls in. Reported with **Cramér's V**, because at thousands of items a trivial association is still significant. | χ², df, p, V, effect |
+| **Variance decomposition** | Is the per-subject spread real? | 57 subjects × 50 questions: some spread is genuine difficulty, some is what 50 coin flips do. Subtracting the expected binomial variance leaves the real part. | observed SD, true SD, between-share |
+| **Oracle ceiling** | What would picking the best model per item buy? | The gap between the best single model and any-model-correct is headroom that individual accuracies cannot show. | best, oracle, headroom |
+
+
+All statistics are pure-stdlib implementations (`metrics/significance.py`), pinned against SciPy and statsmodels by `tests/test_significance.py` so the report can be regenerated on a host where SciPy cannot be installed.
+
+
+### 10.2 Are the model differences real?
+
+
+**MMLU** — Cochran's Q = 594.659 (df 2), p < 0.0001. The models differ; pairwise tests follow.
+
+| Pair | Δ accuracy | 95% CI | Only A right | Only B right | Odds ratio | p (Holm) | Verdict |
+|---|---|---|---|---|---|---|---|
+| Gemma-3-4B vs Llama-3.2-3B | +0.0642 | +0.044 to +0.084 | 520 | 337 | 1.543 | < 0.0001 | **significant** |
+| Gemma-3-4B vs Ministral-8B | -0.1821 | -0.201 to -0.163 | 163 | 682 | 0.239 | < 0.0001 | **significant** |
+| Llama-3.2-3B vs Ministral-8B | -0.2463 | -0.266 to -0.227 | 136 | 838 | 0.162 | < 0.0001 | **significant** |
+
+
+**LAMBADA** — Cochran's Q = 173.547 (df 2), p < 0.0001. The models differ; pairwise tests follow.
+
+| Pair | Δ accuracy | 95% CI | Only A right | Only B right | Odds ratio | p (Holm) | Verdict |
+|---|---|---|---|---|---|---|---|
+| Gemma-3-4B vs Llama-3.2-3B | -0.0440 | -0.073 to -0.015 | 89 | 133 | 0.669 | 0.0039 | **significant** |
+| Gemma-3-4B vs Ministral-8B | -0.2150 | -0.248 to -0.182 | 58 | 273 | 0.212 | < 0.0001 | **significant** |
+| Llama-3.2-3B vs Ministral-8B | -0.1710 | -0.205 to -0.137 | 84 | 255 | 0.329 | < 0.0001 | **significant** |
+
+
+### 10.3 Do the models fail on the same items?
+
+High overlap means the items are hard; disjoint failures mean the models have different competences and routing would pay.
+
+| Benchmark | Pair | Agreement | Both wrong | φ |
+|---|---|---|---|---|
+| MMLU | Gemma-3-4B vs Llama-3.2-3B | 69.9% | 27.0% | 0.389 |
+| MMLU | Gemma-3-4B vs Ministral-8B | 70.3% | 14.9% | 0.350 |
+| MMLU | Llama-3.2-3B vs Ministral-8B | 65.8% | 15.9% | 0.324 |
+| LAMBADA | Gemma-3-4B vs Llama-3.2-3B | 77.8% | 68.7% | 0.316 |
+| LAMBADA | Gemma-3-4B vs Ministral-8B | 66.9% | 54.7% | 0.271 |
+| LAMBADA | Llama-3.2-3B vs Ministral-8B | 66.1% | 52.1% | 0.253 |
+
+| Benchmark | Best single model | Best | Oracle (any correct) | Headroom | No model correct |
+|---|---|---|---|---|---|
+| MMLU | Ministral-8B | 79.4% | 87.8% | +8.4% | 12.2% |
+| LAMBADA | Ministral-8B | 39.5% | 51.5% | +12.0% | 48.5% |
+
+
+### 10.4 Which factors move the outcome?
+
+Significance and size are different questions. At thousands of items almost any factor reaches p < 0.05, so Cramér's V decides whether it matters.
+
+| Benchmark | Factor | Levels | Accuracy spread | χ² | p | V | Effect |
+|---|---|---|---|---|---|---|---|
+| MMLU | subject category | 4 | 11.3% | 74.819 | < 0.0001 | 0.0935 | negligible |
+| MMLU | correct-option position | 4 | 7.0% | 26.694 | < 0.0001 | 0.0559 | negligible |
+| LAMBADA | passage length (true) | 4 | 14.9% | 13.89 | 0.0031 | 0.068 | negligible |
+| LAMBADA | target fragmentation — Gemma-3-4B | 3 | 21.0% | 32.295 | < 0.0001 | 0.1797 | small |
+| LAMBADA | target fragmentation — Llama-3.2-3B | 3 | 26.7% | 42.351 | < 0.0001 | 0.2058 | small |
+| LAMBADA | target fragmentation — Ministral-8B | 3 | 13.1% | 10.715 | 0.0047 | 0.1035 | small |
+
+**MMLU — accuracy by subject category**
+
+| humanities | other | social_sciences | stem |
+|---|---|---|---|
+| 65.7% | 68.1% | 70.2% | 58.9% |
+
+**MMLU — accuracy by correct-option position**
+
+| answer = A | answer = B | answer = C | answer = D |
+|---|---|---|---|
+| 66.7% | 64.8% | 68.1% | 61.1% |
+
+**LAMBADA — accuracy by passage length (true)**
+
+| Q1 <=72w | Q2 73-87w | Q3 88-102w | Q4 >102w |
+|---|---|---|---|
+| 25.4% | 26.8% | 37.1% | 22.2% |
+
+
+### 10.5 How much of the MMLU subject spread is real?
+
+| Quantity | Value | Reading |
+|---|---|---|
+| Subjects | 57 | ~50 questions each |
+| Observed SD across subjects | 13.3 pp | raw spread |
+| Sampling (binomial) variance | 0.00140 | what 50 draws do on their own |
+| True between-subject SD | 12.8 pp | after removing that |
+| Between-group share | **0.921** | share of spread that is real |
+
+
+Under a null of identical subjects this share averages about 0.08 and rarely passes 0.3, so **0.92 is decisive**: subject difficulty is a real, large effect and the per-subject table can be read. Hardest: moral_scenarios (37%), abstract_algebra (39%), high_school_physics (41%). Easiest: high_school_psychology (87%), marketing (86%), high_school_government_and_politics (85%).
+
+
+
+### 10.6 What this changes
+
+- **Every pairwise gap survives correction on both benchmarks.** The ranking is not an artefact of sampling — at these item counts the differences are far larger than the paired intervals.
+- **Tokenization matters; passage length barely does.** Length reaches significance (p = 0.0031) but with V = 0.068 — negligible, and the accuracy is not even monotonic in length. Target fragmentation reaches V = 0.2058 on the worst-affected model, two to three times the length effect. The LAMBADA gap is mostly a vocabulary handicap, not a context-window one.
+- **Subject category is significant but small.** p < 0.0001 with V = 0.0935 (negligible) across an 11.3% spread — a good illustration of why V is reported: with 8,550 pooled items, significance alone would have overstated it.
+- **A measurable option-position effect.** Accuracy varies with *where the correct answer sits*: answer = C scores 68.1%, answer = D 61.1% (p < 0.0001, V = 0.0559). Small, but it is a property of the harness, not the knowledge being tested — which is why the robustness stage permutes options.
+- **MMLU: routing headroom of 8.4%.** Some model answers 87.8% of items correctly, against 79.4% for the best single model. The failures are only partly shared — 12.2% defeat all three.
+- **LAMBADA: routing headroom of 12.0%.** Some model answers 51.5% of items correctly, against 39.5% for the best single model. The failures are only partly shared — 48.5% defeat all three.
+- **One correction.** Section 3's context-behaviour table previously bucketed items by the length of a stored *preview* string, which is truncated to a fixed 203 characters — so it ranked items by mean word length and correlated −0.20 with true passage length. It has been recomputed from the reconstructed dataset split (verified target-by-target against the stored results), and `metrics/context.py` now refuses to compute the metric from a preview at all. The conclusion was unchanged, but it had been reached from the wrong variable.
+
+
+---
+
+## 11. Component Reference
 
 Every metric the benchmark produces, what it means in plain terms, and how to read it. Stage numbers match `metrics/taxonomy.py`.
 
@@ -1038,7 +1158,7 @@ The benchmark is a client of a shared, auto-scaled third-party endpoint. Paralle
 
 ---
 
-## 11. Metric Glossary
+## 12. Metric Glossary
 
 Each metric in plain language, with the direction that counts as good.
 
@@ -1135,7 +1255,7 @@ Each metric in plain language, with the direction that counts as good.
 
 ---
 
-## 12. Figures
+## 13. Figures
 
 Screenshots live in `diagram-analysis/` and are referenced by exact filename. `diagram-analysis/README.md` records what each should show and where in the UI to capture it. A file that has not been added yet renders as a broken image; adding the PNG is the only step required.
 
@@ -1218,7 +1338,7 @@ Screenshots live in `diagram-analysis/` and are referenced by exact filename. `d
 
 ---
 
-## 13. Discussion — What the Nine Stages Revealed
+## 14. Discussion — What the Nine Stages Revealed
 
 Each finding below is one that **accuracy alone could not have surfaced**. That is the argument for the extra stages.
 
@@ -1258,7 +1378,7 @@ A multi-token target must be produced correctly several times over, so this is a
 
 ---
 
-## 14. Limitations
+## 15. Limitations
 
 Stated plainly, because a benchmark that hides its limits is worth less than
 one that reports fewer numbers honestly.
@@ -1273,7 +1393,7 @@ one that reports fewer numbers honestly.
 | **Optional stages not always run** | consistency, probability, robustness were unavailable in this run | Each costs an extra pass over the dataset; the runner prints the multiplier before spending, and absent stages are marked, never inferred |
 | **Deterministic paraphrasing** | Robustness paraphrases are rule-based, not model-generated | Keeps the benchmark reproducible; a learned paraphraser would make it non-repeatable |
 
-## 15. Conclusions
+## 16. Conclusions
 
 **Does a larger, non-distilled model beat smaller compressed ones?**
 

@@ -145,12 +145,31 @@ def position_sensitivity(
     Approximates a "lost in the middle" probe without needing needle
     insertion: if accuracy falls sharply in the longest bucket, the model is
     losing information over distance.
+
+    Requires a real measure of length - `context_words` or a full `context`.
+    It must NOT fall back to `context_preview`: that field is truncated to a
+    fixed character budget, so its word count measures mean word length rather
+    than passage length. On the LAMBADA test set it correlates -0.20 with the
+    true length, i.e. bucketing by it is worse than not bucketing at all.
+    Rather than compute a plausible-looking wrong number, this returns a
+    refusal that names the missing field.
     """
-    rows = [
-        (len((r.get("context_preview") or r.get("context") or "").split()),
-         bool(r.get("correct")))
-        for r in records
-    ]
+    rows = []
+    for r in records:
+        if isinstance(r.get("context_words"), int):
+            words = r["context_words"]
+        elif r.get("context"):
+            words = len(r["context"].split())
+        else:
+            return {
+                "available": False,
+                "reason": "no untruncated passage length available; records "
+                          "carry only context_preview, which is cut to a fixed "
+                          "character budget and does not measure length",
+                "fix": "store context_words per item when running the benchmark",
+            }
+        rows.append((words, bool(r.get("correct"))))
+
     rows = [r for r in rows if r[0] > 0]
     if len(rows) < n_buckets:
         return None
@@ -173,6 +192,8 @@ def position_sensitivity(
 
     accs = [b["accuracy"] for b in buckets.values()]
     return {
+        "available": True,
+        "length_source": "context_words",
         "buckets": buckets,
         "shortest_vs_longest": round(accs[0] - accs[-1], 4) if len(accs) >= 2 else None,
         "span": round(max(accs) - min(accs), 4) if accs else None,

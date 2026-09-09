@@ -2,7 +2,7 @@
 
 Small language models evaluated across nine measurable stages over the OpenRouter API. This page covers the workflow, what each metric means, and the measured results.
 
-*Generated 2026-09-09 13:33 from `results/v2`. The full academic write-up is in `extended-final-report.md`.*
+*Generated 2026-09-09 17:28 from `results/v2`. The full academic write-up is in `extended-final-report.md`.*
 
 ---
 
@@ -301,9 +301,9 @@ The nominal weighting is 0.50·quality + 0.15·calibration + 0.15·robustness + 
 
 | Model | Q1 (shortest) | Q2 | Q3 | Q4 (longest) | Span |
 |---|---|---|---|---|---|
-| Gemma-3-4B | 17.6% | 18.4% | 21.2% | 14.8% | 6.4% |
-| Llama-3.2-3B | 23.2% | 23.6% | 24.0% | 19.2% | 4.8% |
-| Ministral-8B | 44.4% | 36.8% | 40.4% | 38.0% | 7.6% |
+| Gemma-3-4B | 16.8% | 18.8% | 17.6% | 18.8% | 2.0% |
+| Llama-3.2-3B | 19.2% | 21.2% | 21.2% | 28.0% | 8.8% |
+| Ministral-8B | 37.6% | 38.8% | 36.4% | 45.2% | 8.8% |
 
 
 **Tokenization** — how much of the gap is the vocabulary rather than comprehension.
@@ -352,5 +352,125 @@ The nominal weighting is 0.50·quality + 0.15·calibration + 0.15·robustness + 
 - **Cost is provider-reported per request**, not estimated. Ministral-8B gives the cheapest correct answer at $0.000096, against $0.000107 for Gemma-3-4B (1.1×). Gemma-3-4B has the cheapest *tokens* but not the cheapest *answers* — accuracy converts token price into value.
 - **Latency is client-measured from the streamed response.** Llama-3.2-3B is fastest end-to-end at 0.354 s mean; p95 is reported alongside because the tail, not the mean, is what a user experiences.
 - **Blank stages are absences, not zeros.** Probabilistic quality, reasoning and consistency, robustness carry no data here: calibration needs a provider that returns token log-probabilities, and this run was routed to Cloudflare, DeepInfra, Mistral; reasoning and consistency, robustness each need an additional pass over the dataset, which multiplies the API spend. Each is stored as unavailable with its reason rather than filled with 0, so a gap in coverage can never be mistaken for a poor score. The History view can run them after the fact via **Secondary analysis**.
-- **Passage length is not the binding constraint.** Sorting passages by word count into quartiles moves accuracy by at most 7.6% (Ministral-8B), and not monotonically — so the failures are comprehension, not a lost-in-the-middle effect. This comes free from the scored pass: no extra requests, just the existing results bucketed by input length.
+- **Passage length is not the binding constraint.** Sorting passages by true word count into quartiles moves accuracy by at most 8.8% (Llama-3.2-3B), and not monotonically. §4.4 tests this rather than eyeballing it: length is significant but negligible in size (V = 0.068), while target fragmentation is two to three times larger. The failures are a vocabulary handicap, not a lost-in-the-middle effect. Lengths come from the reconstructed dataset split — the per-item records store only a fixed-length preview, whose word count is *not* passage length (see §4.6).
 - **Part of the LAMBADA spread is the tokenizer.** On targets needing 3+ tokens, Ministral-8B holds 34.5% while Llama-3.2-3B falls to 2.6% — a mechanical handicap, since a multi-token word must be produced correctly several times over. Note Gemma-3-4B, Llama-3.2-3B fell back to a generic BPE vocabulary (their tokenizers are gated), so their fragmentation rates are indicative rather than exact.
+
+
+---
+
+## 4. Statistical Significance and Variance
+
+An accuracy table says Ministral scored 79.3% and Gemma 60.4%. It does not say whether that gap could be noise, nor which of the things that vary across items actually moves the result. Both are computed from the per-item records.
+
+
+### 4.1 Method
+
+| Test | Question it answers | Why this one | Reported |
+|---|---|---|---|
+| **Cochran's Q** | Do the models differ at all? | The omnibus. Running three pairwise tests and quoting the smallest p-value would be fishing; Q licenses the pairwise step. | Q, df, p |
+| **McNemar** | Is the gap between two models real? | The models answered *identical* items, so the comparison is paired. An unpaired two-proportion test discards that pairing and inflates the variance. Only discordant items carry information. | b, c, χ², p, Δ ± CI, odds ratio |
+| **Holm–Bonferroni** | Did we get a false positive from testing three pairs? | Controls the family-wise error rate like Bonferroni, but rejects at least as often, so it costs no power. | adjusted p |
+| **χ² independence** | Does a factor change accuracy? | Tests whether correctness is independent of the level an item falls in. Reported with **Cramér's V**, because at thousands of items a trivial association is still significant. | χ², df, p, V, effect |
+| **Variance decomposition** | Is the per-subject spread real? | 57 subjects × 50 questions: some spread is genuine difficulty, some is what 50 coin flips do. Subtracting the expected binomial variance leaves the real part. | observed SD, true SD, between-share |
+| **Oracle ceiling** | What would picking the best model per item buy? | The gap between the best single model and any-model-correct is headroom that individual accuracies cannot show. | best, oracle, headroom |
+
+
+All statistics are pure-stdlib implementations (`metrics/significance.py`), pinned against SciPy and statsmodels by `tests/test_significance.py` so the report can be regenerated on a host where SciPy cannot be installed.
+
+
+### 4.2 Are the model differences real?
+
+
+**MMLU** — Cochran's Q = 594.659 (df 2), p < 0.0001. The models differ; pairwise tests follow.
+
+| Pair | Δ accuracy | 95% CI | Only A right | Only B right | Odds ratio | p (Holm) | Verdict |
+|---|---|---|---|---|---|---|---|
+| Gemma-3-4B vs Llama-3.2-3B | +0.0642 | +0.044 to +0.084 | 520 | 337 | 1.543 | < 0.0001 | **significant** |
+| Gemma-3-4B vs Ministral-8B | -0.1821 | -0.201 to -0.163 | 163 | 682 | 0.239 | < 0.0001 | **significant** |
+| Llama-3.2-3B vs Ministral-8B | -0.2463 | -0.266 to -0.227 | 136 | 838 | 0.162 | < 0.0001 | **significant** |
+
+
+**LAMBADA** — Cochran's Q = 173.547 (df 2), p < 0.0001. The models differ; pairwise tests follow.
+
+| Pair | Δ accuracy | 95% CI | Only A right | Only B right | Odds ratio | p (Holm) | Verdict |
+|---|---|---|---|---|---|---|---|
+| Gemma-3-4B vs Llama-3.2-3B | -0.0440 | -0.073 to -0.015 | 89 | 133 | 0.669 | 0.0039 | **significant** |
+| Gemma-3-4B vs Ministral-8B | -0.2150 | -0.248 to -0.182 | 58 | 273 | 0.212 | < 0.0001 | **significant** |
+| Llama-3.2-3B vs Ministral-8B | -0.1710 | -0.205 to -0.137 | 84 | 255 | 0.329 | < 0.0001 | **significant** |
+
+
+### 4.3 Do the models fail on the same items?
+
+High overlap means the items are hard; disjoint failures mean the models have different competences and routing would pay.
+
+| Benchmark | Pair | Agreement | Both wrong | φ |
+|---|---|---|---|---|
+| MMLU | Gemma-3-4B vs Llama-3.2-3B | 69.9% | 27.0% | 0.389 |
+| MMLU | Gemma-3-4B vs Ministral-8B | 70.3% | 14.9% | 0.350 |
+| MMLU | Llama-3.2-3B vs Ministral-8B | 65.8% | 15.9% | 0.324 |
+| LAMBADA | Gemma-3-4B vs Llama-3.2-3B | 77.8% | 68.7% | 0.316 |
+| LAMBADA | Gemma-3-4B vs Ministral-8B | 66.9% | 54.7% | 0.271 |
+| LAMBADA | Llama-3.2-3B vs Ministral-8B | 66.1% | 52.1% | 0.253 |
+
+| Benchmark | Best single model | Best | Oracle (any correct) | Headroom | No model correct |
+|---|---|---|---|---|---|
+| MMLU | Ministral-8B | 79.4% | 87.8% | +8.4% | 12.2% |
+| LAMBADA | Ministral-8B | 39.5% | 51.5% | +12.0% | 48.5% |
+
+
+### 4.4 Which factors move the outcome?
+
+Significance and size are different questions. At thousands of items almost any factor reaches p < 0.05, so Cramér's V decides whether it matters.
+
+| Benchmark | Factor | Levels | Accuracy spread | χ² | p | V | Effect |
+|---|---|---|---|---|---|---|---|
+| MMLU | subject category | 4 | 11.3% | 74.819 | < 0.0001 | 0.0935 | negligible |
+| MMLU | correct-option position | 4 | 7.0% | 26.694 | < 0.0001 | 0.0559 | negligible |
+| LAMBADA | passage length (true) | 4 | 14.9% | 13.89 | 0.0031 | 0.068 | negligible |
+| LAMBADA | target fragmentation — Gemma-3-4B | 3 | 21.0% | 32.295 | < 0.0001 | 0.1797 | small |
+| LAMBADA | target fragmentation — Llama-3.2-3B | 3 | 26.7% | 42.351 | < 0.0001 | 0.2058 | small |
+| LAMBADA | target fragmentation — Ministral-8B | 3 | 13.1% | 10.715 | 0.0047 | 0.1035 | small |
+
+**MMLU — accuracy by subject category**
+
+| humanities | other | social_sciences | stem |
+|---|---|---|---|
+| 65.7% | 68.1% | 70.2% | 58.9% |
+
+**MMLU — accuracy by correct-option position**
+
+| answer = A | answer = B | answer = C | answer = D |
+|---|---|---|---|
+| 66.7% | 64.8% | 68.1% | 61.1% |
+
+**LAMBADA — accuracy by passage length (true)**
+
+| Q1 <=72w | Q2 73-87w | Q3 88-102w | Q4 >102w |
+|---|---|---|---|
+| 25.4% | 26.8% | 37.1% | 22.2% |
+
+
+### 4.5 How much of the MMLU subject spread is real?
+
+| Quantity | Value | Reading |
+|---|---|---|
+| Subjects | 57 | ~50 questions each |
+| Observed SD across subjects | 13.3 pp | raw spread |
+| Sampling (binomial) variance | 0.00140 | what 50 draws do on their own |
+| True between-subject SD | 12.8 pp | after removing that |
+| Between-group share | **0.921** | share of spread that is real |
+
+
+Under a null of identical subjects this share averages about 0.08 and rarely passes 0.3, so **0.92 is decisive**: subject difficulty is a real, large effect and the per-subject table can be read. Hardest: moral_scenarios (37%), abstract_algebra (39%), high_school_physics (41%). Easiest: high_school_psychology (87%), marketing (86%), high_school_government_and_politics (85%).
+
+
+
+### 4.6 What this changes
+
+- **Every pairwise gap survives correction on both benchmarks.** The ranking is not an artefact of sampling — at these item counts the differences are far larger than the paired intervals.
+- **Tokenization matters; passage length barely does.** Length reaches significance (p = 0.0031) but with V = 0.068 — negligible, and the accuracy is not even monotonic in length. Target fragmentation reaches V = 0.2058 on the worst-affected model, two to three times the length effect. The LAMBADA gap is mostly a vocabulary handicap, not a context-window one.
+- **Subject category is significant but small.** p < 0.0001 with V = 0.0935 (negligible) across an 11.3% spread — a good illustration of why V is reported: with 8,550 pooled items, significance alone would have overstated it.
+- **A measurable option-position effect.** Accuracy varies with *where the correct answer sits*: answer = C scores 68.1%, answer = D 61.1% (p < 0.0001, V = 0.0559). Small, but it is a property of the harness, not the knowledge being tested — which is why the robustness stage permutes options.
+- **MMLU: routing headroom of 8.4%.** Some model answers 87.8% of items correctly, against 79.4% for the best single model. The failures are only partly shared — 12.2% defeat all three.
+- **LAMBADA: routing headroom of 12.0%.** Some model answers 51.5% of items correctly, against 39.5% for the best single model. The failures are only partly shared — 48.5% defeat all three.
+- **One correction.** Section 3's context-behaviour table previously bucketed items by the length of a stored *preview* string, which is truncated to a fixed 203 characters — so it ranked items by mean word length and correlated −0.20 with true passage length. It has been recomputed from the reconstructed dataset split (verified target-by-target against the stored results), and `metrics/context.py` now refuses to compute the metric from a preview at all. The conclusion was unchanged, but it had been reached from the wrong variable.

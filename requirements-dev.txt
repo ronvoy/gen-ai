@@ -1,0 +1,14 @@
+# Development dependencies — report, slide and figure generation, plus the
+# checks that validate them. None of this is installed on the server.
+#
+#   pip install -r requirements.txt -r requirements-dev.txt
+
+-r requirements.txt
+
+# make_slides.py — builds extended-final-presentation.pptx
+python-pptx>=0.6.23
+
+# Cross-checks metrics/significance.py against a reference implementation.
+# The module itself is pure stdlib on purpose, so the server never needs these.
+scipy>=1.11.0
+statsmodels>=0.14.0

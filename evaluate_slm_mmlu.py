@@ -7,7 +7,7 @@ asks each configured model to answer with explicit step-by-step reasoning,
 parses BOTH the final answer letter and the reasoning text, evaluates the
 quality/consistency of that reasoning, and ranks the models across several
 performance dimensions (accuracy, per-category accuracy, speed, reasoning
-consistency, composite score).
+consistency, quick score).
 
 Run directly:  python evaluate_slm_mmlu.py
 or through the web app (passenger_wsgi.py -> /mmlu).
@@ -612,12 +612,17 @@ def build_mmlu_summary(results):
     """Rank models across performance dimensions and build the summary dict.
 
     Per-dimension ranks (1 = best) for accuracy, speed and reasoning
-    consistency, plus a composite score:
-        composite = 0.70 * accuracy
-                  + 0.15 * reasoning consistency rate
-                  + 0.15 * relative speed (fastest model / this model)
+    consistency, plus a QUICK SCORE:
+        quick_score = 0.70 * accuracy
+                    + 0.15 * reasoning consistency rate
+                    + 0.15 * relative speed (fastest model / this model)
     Accuracy dominates; reasoning quality and latency break ties, mirroring
     how SLMs are chosen in practice (quality first, then cost/latency).
+
+    Deliberately NOT called a composite: metrics.aggregate.build_comparison
+    produces a different number under that name, weighted over the nine-stage
+    taxonomy and renormalised over the stages a run actually measured. Keeping
+    one label for both would invite reading one number as the other.
     """
     results = [r for r in results if r.get("total")]
     if not results:
@@ -764,7 +769,7 @@ def run_mmlu_evaluation(subject_selection=None, questions_per_subject=None,
               encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
 
-    print(f"\n{'=' * 60}\nRanking (composite = 0.70 accuracy + 0.15 reasoning "
+    print(f"\n{'=' * 60}\nRanking (quick score = 0.70 accuracy + 0.15 reasoning "
           f"consistency + 0.15 speed)\n{'=' * 60}")
     for row in summary["ranking"]:
         print(f"  #{row['rank']} {row['name']:<15} "

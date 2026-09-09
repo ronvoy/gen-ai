@@ -25,42 +25,45 @@
   "context": {
     "available": true,
     "position_sensitivity": {
+      "available": true,
+      "length_source": "context_words",
       "buckets": {
         "q1": {
           "word_range": [
-            31,
-            41
+            58,
+            65
           ],
           "n": 250,
-          "accuracy": 0.444
+          "accuracy": 0.376
         },
         "q2": {
           "word_range": [
-            41,
-            44
+            65,
+            70
           ],
           "n": 250,
-          "accuracy": 0.368
+          "accuracy": 0.388
         },
         "q3": {
           "word_range": [
-            44,
-            46
+            70,
+            78
           ],
           "n": 250,
-          "accuracy": 0.404
+          "accuracy": 0.364
         },
         "q4": {
           "word_range": [
-            46,
-            55
+            78,
+            126
           ],
           "n": 250,
-          "accuracy": 0.38
+          "accuracy": 0.452
         }
       },
-      "shortest_vs_longest": 0.064,
-      "span": 0.076
+      "shortest_vs_longest": -0.076,
+      "span": 0.088,
+      "superseded_note": "recomputed from true passage length; the earlier value bucketed by the truncated context_preview and is not comparable"
     }
   },
   "robustness": {

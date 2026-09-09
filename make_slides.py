@@ -29,6 +29,7 @@ from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.util import Emu, Inches, Pt
 
 import make_results_section as R
+from metrics import significance as SIG
 
 OUT = "extended-final-presentation.pptx"
 FIGDIR = "diagram-analysis"
@@ -700,6 +701,127 @@ def s_results_ranking(prs, benchmark, label_):
          M, Inches(4.70), CW, Inches(1.50), size=13, spacing=1.3)
 
 
+def significance(benchmark):
+    path = f"results/v2/significance_{benchmark}.json"
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _p(p):
+    """`p < 0.0001` or `p = 0.0031` - never `p = < 0.0001`."""
+    t = SIG.format_p(p)
+    return f"p {t}" if t.startswith("<") else f"p = {t}"
+
+
+def s_significance_method(prs):
+    s = section_slide(prs, "Analysis", "Are the differences real?")
+    text(s, "The models answered identical items, so every comparison is paired. "
+            "That is what makes McNemar the right test: an unpaired two-proportion "
+            "test would discard the pairing and overstate the variance.",
+         M, Inches(1.75), CW, Inches(0.75), size=14)
+    rows = [["Test", "Question", "Why this one"],
+            ["Cochran's Q", "Do the k models differ at all?",
+             "Omnibus first, so pairwise tests are not p-hacking"],
+            ["McNemar", "Is a given pair's gap real?",
+             "Paired; only discordant items carry information"],
+            ["Holm-Bonferroni", "False positive across 3 pairs?",
+             "Controls family-wise error without Bonferroni's power loss"],
+            ["Chi-square + Cramer's V", "Does a factor move accuracy?",
+             "At 1000s of items everything is significant; V says if it matters"],
+            ["Variance decomposition", "Is the subject spread real?",
+             "Removes the binomial noise of ~50 questions per subject"],
+            ["Oracle ceiling", "What would per-item routing buy?",
+             "Headroom that individual accuracies cannot show"]]
+    table(s, rows, M, Inches(2.65), CW, col_w=[20, 32, 48], font=12, row_h=0.44)
+    text(s, "Pure-stdlib implementations, pinned against SciPy and statsmodels by "
+            "tests/test_significance.py so the report regenerates on a host where "
+            "SciPy cannot be installed.",
+         M, Inches(5.95), CW, Inches(0.5), size=12, color=MUTED)
+
+
+def s_significance_pairwise(prs, benchmark, label_):
+    d = significance(benchmark)
+    if not d:
+        return
+    s = section_slide(prs, "Analysis", f"{label_} — paired significance")
+    q = d.get("omnibus") or {}
+    if q.get("available"):
+        text(s, f"Cochran's Q = {q['q_statistic']}  (df {q['df']}),  {_p(q['p_value'])}"
+                f"   —   the models differ; pairwise tests follow",
+             M, Inches(1.75), CW, Inches(0.4), size=14, bold=True, color=ACCENT)
+    rows = [["Pair", "Delta acc.", "95% CI", "Only A", "Only B", "p (Holm)", "Verdict"]]
+    for r in d["pairwise_mcnemar"]:
+        ci = r["delta_ci95"]
+        rows.append([f"{r['model_a']} vs {r['model_b']}",
+                     f"{r['accuracy_delta']:+.4f}",
+                     f"{ci[0]:+.3f} to {ci[1]:+.3f}",
+                     str(r["only_a_correct"]), str(r["only_b_correct"]),
+                     SIG.format_p(r["p_adjusted"]),
+                     "significant" if r["significant_adjusted"] else "n.s."])
+    table(s, rows, M, Inches(2.35), CW, col_w=[30, 12, 18, 8, 8, 12, 12],
+          font=12, row_h=0.44)
+
+    o = d.get("oracle") or {}
+    notes = []
+    if all(r["significant_adjusted"] for r in d["pairwise_mcnemar"]):
+        notes.append("Every gap survives Holm correction: the ranking is not a "
+                     "sampling artefact.")
+    notes.append("Only discordant items count. 'Only A' and 'Only B' are the items "
+                 "one model got right and the other did not - items both answered "
+                 "the same way carry no information about which is better.")
+    if o:
+        notes.append(f"An ideal per-item router would reach {o['oracle_accuracy']*100:.1f}% "
+                     f"against {o['best_single_accuracy']*100:.1f}% for the best single "
+                     f"model - {o['headroom']*100:.1f} points of headroom, with "
+                     f"{o['none_correct']*100:.1f}% of items defeating all three.")
+    label(s, "Reading it", M, Inches(4.35))
+    bullets(s, notes, M, Inches(4.67), CW, Inches(1.9), size=13)
+
+
+def s_significance_factors(prs):
+    s = section_slide(prs, "Analysis", "Which parameters move the outcome?")
+    text(s, "Significance and effect size are different questions. Cramer's V is "
+            "reported alongside every p-value because at thousands of items a "
+            "negligible association is still significant.",
+         M, Inches(1.75), CW, Inches(0.6), size=14)
+    rows = [["Benchmark", "Factor", "Spread", "p", "V", "Effect"]]
+    for bench, lab in (("mmlu", "MMLU"), ("lambada", "LAMBADA")):
+        d = significance(bench)
+        if not d:
+            continue
+        for name, f in (d.get("factors") or {}).items():
+            if f.get("available"):
+                rows.append([lab, name, f"{f['spread']*100:.1f} pp",
+                             SIG.format_p(f["p_value"]), f"{f['cramers_v']:.3f}",
+                             f["effect"]])
+        for m, f in (d.get("fragmentation_by_model") or {}).items():
+            if f.get("available"):
+                rows.append([lab, f"target fragmentation - {m}",
+                             f"{f['spread']*100:.1f} pp", SIG.format_p(f["p_value"]),
+                             f"{f['cramers_v']:.3f}", f["effect"]])
+    table(s, rows, M, Inches(2.5), CW, col_w=[14, 38, 12, 14, 10, 12],
+          font=12, row_h=0.40)
+
+    d = significance("mmlu")
+    v = (d or {}).get("subject_variance") or {}
+    notes = []
+    if v.get("available"):
+        notes.append(f"MMLU subject spread is real, not noise: observed SD "
+                     f"{v['observed_sd']*100:.1f} pp, and after removing the binomial "
+                     f"variance of ~50 questions per subject, {v['between_share']*100:.0f}% "
+                     f"of it survives (a null of identical subjects averages ~8%).")
+    notes.append("LAMBADA: target fragmentation outweighs passage length two to "
+                 "three times over. The gap is a vocabulary handicap, not a "
+                 "context-window one.")
+    notes.append("MMLU: the correct option's position shifts accuracy by 7 points - "
+                 "a property of the harness, not of the knowledge tested, which is "
+                 "why the robustness stage permutes options.")
+    label(s, "Reading it", M, Inches(5.05))
+    bullets(s, notes, M, Inches(5.37), CW, Inches(1.5), size=13)
+
+
 def s_results_figures(prs):
     figs = [
         ("analysis-01-history-overview.png", "The run record",
@@ -906,6 +1028,11 @@ def main():
         s_results_systems(prs, bench, lab)
         s_results_ranking(prs, bench, lab)
     s_results_figures(prs)
+
+    s_significance_method(prs)
+    for bench, lab in (("mmlu", "MMLU"), ("lambada", "LAMBADA")):
+        s_significance_pairwise(prs, bench, lab)
+    s_significance_factors(prs)
 
     s_discussion(prs)
     s_discussion_tokenizer(prs)

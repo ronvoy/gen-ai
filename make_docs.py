@@ -18,6 +18,7 @@ import os
 from datetime import datetime
 
 import make_results_section as R
+from metrics import significance as S
 from metrics import taxonomy
 
 MD_OUT = "report.md"
@@ -235,6 +236,218 @@ def components_section():
 # 3. Results
 # ---------------------------------------------------------------------------
 
+def significance(benchmark):
+    p = f"results/v2/significance_{benchmark}.json"
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
+# ---------------------------------------------------------------------------
+# 4. Significance and variance
+# ---------------------------------------------------------------------------
+
+METHOD_TABLE = """| Test | Question it answers | Why this one | Reported |
+|---|---|---|---|
+| **Cochran's Q** | Do the models differ at all? | The omnibus. Running three pairwise tests and quoting the smallest p-value would be fishing; Q licenses the pairwise step. | Q, df, p |
+| **McNemar** | Is the gap between two models real? | The models answered *identical* items, so the comparison is paired. An unpaired two-proportion test discards that pairing and inflates the variance. Only discordant items carry information. | b, c, χ², p, Δ ± CI, odds ratio |
+| **Holm–Bonferroni** | Did we get a false positive from testing three pairs? | Controls the family-wise error rate like Bonferroni, but rejects at least as often, so it costs no power. | adjusted p |
+| **χ² independence** | Does a factor change accuracy? | Tests whether correctness is independent of the level an item falls in. Reported with **Cramér's V**, because at thousands of items a trivial association is still significant. | χ², df, p, V, effect |
+| **Variance decomposition** | Is the per-subject spread real? | 57 subjects × 50 questions: some spread is genuine difficulty, some is what 50 coin flips do. Subtracting the expected binomial variance leaves the real part. | observed SD, true SD, between-share |
+| **Oracle ceiling** | What would picking the best model per item buy? | The gap between the best single model and any-model-correct is headroom that individual accuracies cannot show. | best, oracle, headroom |
+"""
+
+
+def significance_section():
+    mmlu, lam = significance("mmlu"), significance("lambada")
+    if not mmlu and not lam:
+        return ""
+
+    out = ["## 4. Statistical Significance and Variance\n",
+           "An accuracy table says Ministral scored 79.3% and Gemma 60.4%. It "
+           "does not say whether that gap could be noise, nor which of the "
+           "things that vary across items actually moves the result. Both are "
+           "computed from the per-item records.\n",
+           "\n### 4.1 Method\n", METHOD_TABLE,
+           "\nAll statistics are pure-stdlib implementations "
+           "(`metrics/significance.py`), pinned against SciPy and statsmodels "
+           "by `tests/test_significance.py` so the report can be regenerated "
+           "on a host where SciPy cannot be installed.\n"]
+
+    # --- 4.2 pairwise ---
+    out.append("\n### 4.2 Are the model differences real?\n")
+    for d, label in ((mmlu, "MMLU"), (lam, "LAMBADA")):
+        if not d:
+            continue
+        q = d.get("omnibus") or {}
+        if q.get("available"):
+            out.append(f"\n**{label}** — Cochran's Q = {q['q_statistic']} "
+                       f"(df {q['df']}), {p_str(q['p_value'])}. "
+                       f"{'The models differ; pairwise tests follow.' if q['significant'] else 'No overall difference; treat the pairwise tests as exploratory.'}\n")
+        rows = ["| Pair | Δ accuracy | 95% CI | Only A right | Only B right | Odds ratio | p (Holm) | Verdict |",
+                "|---|---|---|---|---|---|---|---|"]
+        for r in d.get("pairwise_mcnemar", []):
+            ci = r["delta_ci95"]
+            rows.append(
+                f"| {r['model_a']} vs {r['model_b']} | {r['accuracy_delta']:+.4f} | "
+                f"{ci[0]:+.3f} to {ci[1]:+.3f} | {r['only_a_correct']} | "
+                f"{r['only_b_correct']} | {fmt_or(r['odds_ratio'])} | "
+                f"{S.format_p(r['p_adjusted'])} | "
+                f"{'**significant**' if r['significant_adjusted'] else 'not significant'} |")
+        out.append("\n".join(rows) + "\n")
+
+    # --- 4.3 overlap ---
+    out.append("\n### 4.3 Do the models fail on the same items?\n")
+    out.append("High overlap means the items are hard; disjoint failures mean "
+               "the models have different competences and routing would pay.\n")
+    rows = ["| Benchmark | Pair | Agreement | Both wrong | φ |", "|---|---|---|---|---|"]
+    for d, label in ((mmlu, "MMLU"), (lam, "LAMBADA")):
+        for o in (d or {}).get("error_overlap", []):
+            rows.append(f"| {label} | {o['model_a']} vs {o['model_b']} | "
+                        f"{R.pct(o['agreement'])} | {R.pct(o['shared_failure_rate'])} | "
+                        f"{fmt_or(o['phi'])} |")
+    out.append("\n".join(rows))
+
+    rows = ["\n| Benchmark | Best single model | Best | Oracle (any correct) | Headroom | No model correct |",
+            "|---|---|---|---|---|---|"]
+    for d, label in ((mmlu, "MMLU"), (lam, "LAMBADA")):
+        o = (d or {}).get("oracle")
+        if o:
+            rows.append(f"| {label} | {o['best_single_model']} | "
+                        f"{R.pct(o['best_single_accuracy'])} | {R.pct(o['oracle_accuracy'])} | "
+                        f"+{R.pct(o['headroom'])} | {R.pct(o['none_correct'])} |")
+    out.append("\n".join(rows))
+
+    # --- 4.4 factors ---
+    out.append("\n\n### 4.4 Which factors move the outcome?\n")
+    out.append("Significance and size are different questions. At thousands of "
+               "items almost any factor reaches p < 0.05, so Cramér's V decides "
+               "whether it matters.\n")
+    rows = ["| Benchmark | Factor | Levels | Accuracy spread | χ² | p | V | Effect |",
+            "|---|---|---|---|---|---|---|---|"]
+    for d, label in ((mmlu, "MMLU"), (lam, "LAMBADA")):
+        for name, f in ((d or {}).get("factors") or {}).items():
+            if not f.get("available"):
+                continue
+            rows.append(f"| {label} | {name} | {len(f['levels'])} | "
+                        f"{R.pct(f['spread'])} | {f['chi2']} | "
+                        f"{S.format_p(f['p_value'])} | {f['cramers_v']} | {f['effect']} |")
+        for m, f in ((d or {}).get("fragmentation_by_model") or {}).items():
+            if f.get("available"):
+                rows.append(f"| {label} | target fragmentation — {m} | "
+                            f"{len(f['levels'])} | {R.pct(f['spread'])} | {f['chi2']} | "
+                            f"{S.format_p(f['p_value'])} | {f['cramers_v']} | {f['effect']} |")
+    out.append("\n".join(rows))
+
+    for d, label in ((mmlu, "MMLU"), (lam, "LAMBADA")):
+        for name, f in ((d or {}).get("factors") or {}).items():
+            if f.get("available"):
+                levels = sorted(f["levels"])
+                out.append(f"\n**{label} — accuracy by {name}**\n")
+                out.append("| " + " | ".join(levels) + " |")
+                out.append("|" + "---|" * len(levels))
+                out.append("| " + " | ".join(R.pct(f["accuracy_by_level"][g])
+                                             for g in levels) + " |")
+
+    # --- 4.5 variance ---
+    v = (mmlu or {}).get("subject_variance")
+    if v and v.get("available"):
+        out.append("\n\n### 4.5 How much of the MMLU subject spread is real?\n")
+        out.append(f"| Quantity | Value | Reading |\n|---|---|---|\n"
+                   f"| Subjects | {v['n_groups']} | ~50 questions each |\n"
+                   f"| Observed SD across subjects | {v['observed_sd']*100:.1f} pp | raw spread |\n"
+                   f"| Sampling (binomial) variance | {v['sampling_variance']:.5f} | what 50 draws do on their own |\n"
+                   f"| True between-subject SD | {v['true_sd']*100:.1f} pp | after removing that |\n"
+                   f"| Between-group share | **{v['between_share']:.3f}** | share of spread that is real |\n")
+        out.append(f"\nUnder a null of identical subjects this share averages "
+                   f"about 0.08 and rarely passes 0.3, so **{v['between_share']:.2f} "
+                   f"is decisive**: subject difficulty is a real, large effect and "
+                   f"the per-subject table can be read. Hardest: "
+                   + ", ".join(f"{g} ({p*100:.0f}%)" for g, p in v["hardest"])
+                   + ". Easiest: "
+                   + ", ".join(f"{g} ({p*100:.0f}%)" for g, p in v["easiest"]) + ".\n")
+
+    out.append("\n" + significance_reading(mmlu, lam))
+    return "\n".join(out)
+
+
+def fmt_or(v):
+    return f"{v:.3f}" if isinstance(v, (int, float)) else "-"
+
+
+def p_str(p):
+    """`p < 0.0001` or `p = 0.0031` - never `p = < 0.0001`."""
+    text = S.format_p(p)
+    return f"p {text}" if text.startswith("<") else f"p = {text}"
+
+
+def significance_reading(mmlu, lam):
+    lines = ["\n### 4.6 What this changes\n"]
+
+    allsig = all(r["significant_adjusted"]
+                 for d in (mmlu, lam) if d
+                 for r in d["pairwise_mcnemar"])
+    if allsig:
+        lines.append(
+            "- **Every pairwise gap survives correction on both benchmarks.** "
+            "The ranking is not an artefact of sampling — at these item counts "
+            "the differences are far larger than the paired intervals.")
+
+    if lam:
+        length = (lam.get("factors") or {}).get("passage length (true)")
+        frag = lam.get("fragmentation_by_model") or {}
+        if length and length.get("available") and frag:
+            worst = max(frag.values(), key=lambda f: f.get("cramers_v") or 0)
+            lines.append(
+                f"- **Tokenization matters; passage length barely does.** "
+                f"Length reaches significance ({p_str(length['p_value'])}) "
+                f"but with V = {length['cramers_v']} — negligible, and the "
+                f"accuracy is not even monotonic in length. Target fragmentation "
+                f"reaches V = {worst['cramers_v']} on the worst-affected model, "
+                f"two to three times the length effect. The LAMBADA gap is "
+                f"mostly a vocabulary handicap, not a context-window one.")
+
+    if mmlu:
+        cat = (mmlu.get("factors") or {}).get("subject category")
+        if cat and cat.get("available"):
+            lines.append(
+                f"- **Subject category is significant but small.** "
+                f"{p_str(cat['p_value'])} with V = {cat['cramers_v']} "
+                f"({cat['effect']}) across an {R.pct(cat['spread'])} spread — a "
+                f"good illustration of why V is reported: with 8,550 pooled "
+                f"items, significance alone would have overstated it.")
+        pos = (mmlu.get("factors") or {}).get("correct-option position")
+        if pos and pos.get("available"):
+            worst_letter = min(pos["accuracy_by_level"].items(), key=lambda kv: kv[1])
+            best_letter = max(pos["accuracy_by_level"].items(), key=lambda kv: kv[1])
+            lines.append(
+                f"- **A measurable option-position effect.** Accuracy varies with "
+                f"*where the correct answer sits*: {best_letter[0]} scores "
+                f"{R.pct(best_letter[1])}, {worst_letter[0]} {R.pct(worst_letter[1])} "
+                f"({p_str(pos['p_value'])}, V = {pos['cramers_v']}). Small, "
+                f"but it is a property of the harness, not the knowledge being "
+                f"tested — which is why the robustness stage permutes options.")
+
+    for d, label in ((mmlu, "MMLU"), (lam, "LAMBADA")):
+        o = (d or {}).get("oracle")
+        if o and o["headroom"] > 0.02:
+            lines.append(
+                f"- **{label}: routing headroom of {R.pct(o['headroom'])}.** "
+                f"Some model answers {R.pct(o['oracle_accuracy'])} of items "
+                f"correctly, against {R.pct(o['best_single_accuracy'])} for the "
+                f"best single model. The failures are only partly shared — "
+                f"{R.pct(o['none_correct'])} defeat all three.")
+
+    lines.append(
+        "- **One correction.** Section 3's context-behaviour table previously "
+        "bucketed items by the length of a stored *preview* string, which is "
+        "truncated to a fixed 203 characters — so it ranked items by mean word "
+        "length and correlated −0.20 with true passage length. It has been "
+        "recomputed from the reconstructed dataset split (verified target-by-"
+        "target against the stored results), and `metrics/context.py` now "
+        "refuses to compute the metric from a preview at all. The conclusion "
+        "was unchanged, but it had been reached from the wrong variable.")
+    return "\n".join(lines) + "\n"
+
+
 def lambada_quality_table(models):
     rows = ["| Model | Last-word accuracy | 95% CI | Exact match | Stem match | Error rate | Empty output |",
             "|---|---|---|---|---|---|---|"]
@@ -438,11 +651,15 @@ def interpretation(models, comp, bench, key):
         worst = max(spans, key=lambda x: x[1])
         lines.append(
             f"- **Passage length is not the binding constraint.** Sorting "
-            f"passages by word count into quartiles moves accuracy by at most "
-            f"{R.pct(worst[1])} ({worst[0]}), and not monotonically — so the "
-            f"failures are comprehension, not a lost-in-the-middle effect. This "
-            f"comes free from the scored pass: no extra requests, just the "
-            f"existing results bucketed by input length.")
+            f"passages by true word count into quartiles moves accuracy by at "
+            f"most {R.pct(worst[1])} ({worst[0]}), and not monotonically. "
+            f"§4.4 tests this rather than eyeballing it: length is significant "
+            f"but negligible in size (V = 0.068), while target fragmentation is "
+            f"two to three times larger. The failures are a vocabulary "
+            f"handicap, not a lost-in-the-middle effect. Lengths come from the "
+            f"reconstructed dataset split — the per-item records store only a "
+            f"fixed-length preview, whose word count is *not* passage length "
+            f"(see §4.6).")
 
     tok = [m for m in models if (m.get("tokenization") or {}).get("available")]
     if tok:
@@ -611,6 +828,8 @@ def main():
         components_section(),
         "\n---\n",
         results_section(),
+        "\n---\n",
+        significance_section(),
     ]
     md_text = "\n".join(parts)
     open(MD_OUT, "w", encoding="utf-8").write(md_text)

@@ -1,0 +1,242 @@
+{
+  "benchmark": "lambada",
+  "n_items": 1000,
+  "models": [
+    "Gemma-3-4B",
+    "Llama-3.2-3B",
+    "Ministral-8B"
+  ],
+  "accuracy": {
+    "Gemma-3-4B": 0.18,
+    "Llama-3.2-3B": 0.224,
+    "Ministral-8B": 0.395
+  },
+  "omnibus": {
+    "available": true,
+    "k_models": 3,
+    "n_items": 1000,
+    "q_statistic": 173.547,
+    "df": 2,
+    "p_value": 2.064093058069361e-38,
+    "significant": true,
+    "per_model_correct": {
+      "Gemma-3-4B": 180,
+      "Llama-3.2-3B": 224,
+      "Ministral-8B": 395
+    }
+  },
+  "pairwise_mcnemar": [
+    {
+      "n": 1000,
+      "both_correct": 91,
+      "both_wrong": 687,
+      "only_a_correct": 89,
+      "only_b_correct": 133,
+      "discordant": 222,
+      "statistic": 8.3288,
+      "p_value": 0.003902080640728011,
+      "test": "chi-square (continuity-corrected)",
+      "accuracy_delta": -0.044,
+      "delta_ci95": [
+        -0.0731,
+        -0.0149
+      ],
+      "odds_ratio": 0.669,
+      "significant": true,
+      "model_a": "Gemma-3-4B",
+      "model_b": "Llama-3.2-3B",
+      "p_adjusted": 0.003902080640728011,
+      "significant_adjusted": true
+    },
+    {
+      "n": 1000,
+      "both_correct": 122,
+      "both_wrong": 547,
+      "only_a_correct": 58,
+      "only_b_correct": 273,
+      "discordant": 331,
+      "statistic": 138.3565,
+      "p_value": 6.090106228825706e-32,
+      "test": "chi-square (continuity-corrected)",
+      "accuracy_delta": -0.215,
+      "delta_ci95": [
+        -0.2481,
+        -0.1819
+      ],
+      "odds_ratio": 0.212,
+      "significant": true,
+      "model_a": "Gemma-3-4B",
+      "model_b": "Ministral-8B",
+      "p_adjusted": 1.8270318686477118e-31,
+      "significant_adjusted": true
+    },
+    {
+      "n": 1000,
+      "both_correct": 140,
+      "both_wrong": 521,
+      "only_a_correct": 84,
+      "only_b_correct": 255,
+      "discordant": 339,
+      "statistic": 85.2507,
+      "p_value": 2.6283042886489575e-20,
+      "test": "chi-square (continuity-corrected)",
+      "accuracy_delta": -0.171,
+      "delta_ci95": [
+        -0.2055,
+        -0.1365
+      ],
+      "odds_ratio": 0.329,
+      "significant": true,
+      "model_a": "Llama-3.2-3B",
+      "model_b": "Ministral-8B",
+      "p_adjusted": 5.256608577297915e-20,
+      "significant_adjusted": true
+    }
+  ],
+  "error_overlap": [
+    {
+      "model_a": "Gemma-3-4B",
+      "model_b": "Llama-3.2-3B",
+      "agreement": 0.778,
+      "shared_failure_rate": 0.687,
+      "jaccard_failures": 0.7558,
+      "phi": 0.3164
+    },
+    {
+      "model_a": "Gemma-3-4B",
+      "model_b": "Ministral-8B",
+      "agreement": 0.669,
+      "shared_failure_rate": 0.547,
+      "jaccard_failures": 0.623,
+      "phi": 0.271
+    },
+    {
+      "model_a": "Llama-3.2-3B",
+      "model_b": "Ministral-8B",
+      "agreement": 0.661,
+      "shared_failure_rate": 0.521,
+      "jaccard_failures": 0.6058,
+      "phi": 0.2528
+    }
+  ],
+  "oracle": {
+    "best_single_model": "Ministral-8B",
+    "best_single_accuracy": 0.395,
+    "oracle_accuracy": 0.515,
+    "headroom": 0.12,
+    "all_models_correct": 0.069,
+    "none_correct": 0.485
+  },
+  "factors": {
+    "passage length (true)": {
+      "available": true,
+      "levels": [
+        "Q1 <=72w",
+        "Q2 73-87w",
+        "Q3 88-102w",
+        "Q4 >102w"
+      ],
+      "n": 3000,
+      "accuracy_by_level": {
+        "Q1 <=72w": 0.2542,
+        "Q2 73-87w": 0.2683,
+        "Q3 88-102w": 0.3709,
+        "Q4 >102w": 0.2222
+      },
+      "n_by_level": {
+        "Q1 <=72w": 1770,
+        "Q2 73-87w": 954,
+        "Q3 88-102w": 213,
+        "Q4 >102w": 63
+      },
+      "chi2": 13.89,
+      "df": 3,
+      "p_value": 0.003059215632556357,
+      "cramers_v": 0.068,
+      "effect": "negligible",
+      "significant": true,
+      "spread": 0.1487
+    }
+  },
+  "fragmentation_by_model": {
+    "Gemma-3-4B": {
+      "available": true,
+      "levels": [
+        "1 token",
+        "2 tokens",
+        "3+ tokens"
+      ],
+      "n": 1000,
+      "accuracy_by_level": {
+        "1 token": 0.2357,
+        "2 tokens": 0.1063,
+        "3+ tokens": 0.0256
+      },
+      "n_by_level": {
+        "1 token": 594,
+        "2 tokens": 367,
+        "3+ tokens": 39
+      },
+      "chi2": 32.295,
+      "df": 2,
+      "p_value": 9.71200766014449e-08,
+      "cramers_v": 0.1797,
+      "effect": "small",
+      "significant": true,
+      "spread": 0.21
+    },
+    "Llama-3.2-3B": {
+      "available": true,
+      "levels": [
+        "1 token",
+        "2 tokens",
+        "3+ tokens"
+      ],
+      "n": 1000,
+      "accuracy_by_level": {
+        "1 token": 0.2929,
+        "2 tokens": 0.1335,
+        "3+ tokens": 0.0256
+      },
+      "n_by_level": {
+        "1 token": 594,
+        "2 tokens": 367,
+        "3+ tokens": 39
+      },
+      "chi2": 42.351,
+      "df": 2,
+      "p_value": 6.36292833972721e-10,
+      "cramers_v": 0.2058,
+      "effect": "small",
+      "significant": true,
+      "spread": 0.2673
+    },
+    "Ministral-8B": {
+      "available": true,
+      "levels": [
+        "1 token",
+        "2 tokens",
+        "3+ tokens"
+      ],
+      "n": 1000,
+      "accuracy_by_level": {
+        "1 token": 0.441,
+        "2 tokens": 0.345,
+        "3+ tokens": 0.3103
+      },
+      "n_by_level": {
+        "1 token": 542,
+        "2 tokens": 400,
+        "3+ tokens": 58
+      },
+      "chi2": 10.715,
+      "df": 2,
+      "p_value": 0.0047137709909846085,
+      "cramers_v": 0.1035,
+      "effect": "small",
+      "significant": true,
+      "spread": 0.1306
+    }
+  },
+  "length_note": "passage length is measured from the reconstructed dataset split (deterministic given n and seed, and verified target-by-target against the stored results), not from the truncated preview held in the per-item records"
+}

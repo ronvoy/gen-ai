@@ -1,0 +1,348 @@
+{
+  "benchmark": "mmlu",
+  "n_items": 2850,
+  "models": [
+    "Gemma-3-4B",
+    "Llama-3.2-3B",
+    "Ministral-8B"
+  ],
+  "accuracy": {
+    "Gemma-3-4B": 0.6116,
+    "Llama-3.2-3B": 0.5474,
+    "Ministral-8B": 0.7937
+  },
+  "omnibus": {
+    "available": true,
+    "k_models": 3,
+    "n_items": 2850,
+    "q_statistic": 594.659,
+    "df": 2,
+    "p_value": 7.436986129626654e-130,
+    "significant": true,
+    "per_model_correct": {
+      "Gemma-3-4B": 1743,
+      "Llama-3.2-3B": 1560,
+      "Ministral-8B": 2262
+    }
+  },
+  "pairwise_mcnemar": [
+    {
+      "n": 2850,
+      "both_correct": 1223,
+      "both_wrong": 770,
+      "only_a_correct": 520,
+      "only_b_correct": 337,
+      "discordant": 857,
+      "statistic": 38.6511,
+      "p_value": 5.067446956611766e-10,
+      "test": "chi-square (continuity-corrected)",
+      "accuracy_delta": 0.0642,
+      "delta_ci95": [
+        0.0442,
+        0.0842
+      ],
+      "odds_ratio": 1.543,
+      "significant": true,
+      "model_a": "Gemma-3-4B",
+      "model_b": "Llama-3.2-3B",
+      "p_adjusted": 5.067446956611766e-10,
+      "significant_adjusted": true
+    },
+    {
+      "n": 2850,
+      "both_correct": 1580,
+      "both_wrong": 425,
+      "only_a_correct": 163,
+      "only_b_correct": 682,
+      "discordant": 845,
+      "statistic": 317.5432,
+      "p_value": 4.9665276149776845e-71,
+      "test": "chi-square (continuity-corrected)",
+      "accuracy_delta": -0.1821,
+      "delta_ci95": [
+        -0.2009,
+        -0.1633
+      ],
+      "odds_ratio": 0.239,
+      "significant": true,
+      "model_a": "Gemma-3-4B",
+      "model_b": "Ministral-8B",
+      "p_adjusted": 9.933055229955369e-71,
+      "significant_adjusted": true
+    },
+    {
+      "n": 2850,
+      "both_correct": 1424,
+      "both_wrong": 452,
+      "only_a_correct": 136,
+      "only_b_correct": 838,
+      "discordant": 974,
+      "statistic": 504.5185,
+      "p_value": 9.8820918998286e-112,
+      "test": "chi-square (continuity-corrected)",
+      "accuracy_delta": -0.2463,
+      "delta_ci95": [
+        -0.2658,
+        -0.2269
+      ],
+      "odds_ratio": 0.162,
+      "significant": true,
+      "model_a": "Llama-3.2-3B",
+      "model_b": "Ministral-8B",
+      "p_adjusted": 2.96462756994858e-111,
+      "significant_adjusted": true
+    }
+  ],
+  "error_overlap": [
+    {
+      "model_a": "Gemma-3-4B",
+      "model_b": "Llama-3.2-3B",
+      "agreement": 0.6993,
+      "shared_failure_rate": 0.2702,
+      "jaccard_failures": 0.4733,
+      "phi": 0.389
+    },
+    {
+      "model_a": "Gemma-3-4B",
+      "model_b": "Ministral-8B",
+      "agreement": 0.7035,
+      "shared_failure_rate": 0.1491,
+      "jaccard_failures": 0.3346,
+      "phi": 0.3498
+    },
+    {
+      "model_a": "Llama-3.2-3B",
+      "model_b": "Ministral-8B",
+      "agreement": 0.6582,
+      "shared_failure_rate": 0.1586,
+      "jaccard_failures": 0.317,
+      "phi": 0.3238
+    }
+  ],
+  "oracle": {
+    "best_single_model": "Ministral-8B",
+    "best_single_accuracy": 0.7937,
+    "oracle_accuracy": 0.8779,
+    "headroom": 0.0842,
+    "all_models_correct": 0.4084,
+    "none_correct": 0.1221
+  },
+  "factors": {
+    "subject category": {
+      "available": true,
+      "levels": [
+        "stem",
+        "humanities",
+        "social_sciences",
+        "other"
+      ],
+      "n": 8550,
+      "accuracy_by_level": {
+        "stem": 0.5889,
+        "humanities": 0.6574,
+        "social_sciences": 0.7017,
+        "other": 0.681
+      },
+      "n_by_level": {
+        "stem": 2700,
+        "humanities": 1950,
+        "social_sciences": 1800,
+        "other": 2100
+      },
+      "chi2": 74.819,
+      "df": 3,
+      "p_value": 3.9626859758756566e-16,
+      "cramers_v": 0.0935,
+      "effect": "negligible",
+      "significant": true,
+      "spread": 0.1128
+    },
+    "correct-option position": {
+      "available": true,
+      "levels": [
+        "answer = B",
+        "answer = C",
+        "answer = D",
+        "answer = A"
+      ],
+      "n": 8550,
+      "accuracy_by_level": {
+        "answer = B": 0.6485,
+        "answer = C": 0.6808,
+        "answer = D": 0.6106,
+        "answer = A": 0.6667
+      },
+      "n_by_level": {
+        "answer = B": 2151,
+        "answer = C": 2118,
+        "answer = D": 2247,
+        "answer = A": 2034
+      },
+      "chi2": 26.694,
+      "df": 3,
+      "p_value": 6.823672517204498e-06,
+      "cramers_v": 0.0559,
+      "effect": "negligible",
+      "significant": true,
+      "spread": 0.0702
+    }
+  },
+  "subject_variance": {
+    "available": true,
+    "n_groups": 57,
+    "mean_accuracy": 0.6509,
+    "observed_variance": 0.01779,
+    "sampling_variance": 0.001398,
+    "between_group_variance": 0.016392,
+    "between_share": 0.9214,
+    "observed_sd": 0.1334,
+    "true_sd": 0.128,
+    "hardest": [
+      [
+        "moral_scenarios",
+        0.373
+      ],
+      [
+        "abstract_algebra",
+        0.387
+      ],
+      [
+        "high_school_physics",
+        0.413
+      ]
+    ],
+    "easiest": [
+      [
+        "high_school_psychology",
+        0.867
+      ],
+      [
+        "marketing",
+        0.86
+      ],
+      [
+        "high_school_government_and_politics",
+        0.853
+      ]
+    ]
+  },
+  "subject_variance_by_model": {
+    "Gemma-3-4B": {
+      "available": true,
+      "n_groups": 57,
+      "mean_accuracy": 0.6116,
+      "observed_variance": 0.021599,
+      "sampling_variance": 0.004327,
+      "between_group_variance": 0.017273,
+      "between_share": 0.7997,
+      "observed_sd": 0.147,
+      "true_sd": 0.1314,
+      "hardest": [
+        [
+          "high_school_physics",
+          0.22
+        ],
+        [
+          "abstract_algebra",
+          0.32
+        ],
+        [
+          "college_chemistry",
+          0.32
+        ]
+      ],
+      "easiest": [
+        [
+          "high_school_government_and_politics",
+          0.9
+        ],
+        [
+          "marketing",
+          0.86
+        ],
+        [
+          "high_school_us_history",
+          0.8
+        ]
+      ]
+    },
+    "Llama-3.2-3B": {
+      "available": true,
+      "n_groups": 57,
+      "mean_accuracy": 0.5474,
+      "observed_variance": 0.031566,
+      "sampling_variance": 0.004335,
+      "between_group_variance": 0.027231,
+      "between_share": 0.8627,
+      "observed_sd": 0.1777,
+      "true_sd": 0.165,
+      "hardest": [
+        [
+          "college_mathematics",
+          0.12
+        ],
+        [
+          "high_school_mathematics",
+          0.12
+        ],
+        [
+          "elementary_mathematics",
+          0.16
+        ]
+      ],
+      "easiest": [
+        [
+          "high_school_psychology",
+          0.84
+        ],
+        [
+          "marketing",
+          0.8
+        ],
+        [
+          "computer_security",
+          0.78
+        ]
+      ]
+    },
+    "Ministral-8B": {
+      "available": true,
+      "n_groups": 57,
+      "mean_accuracy": 0.7937,
+      "observed_variance": 0.015074,
+      "sampling_variance": 0.002979,
+      "between_group_variance": 0.012095,
+      "between_share": 0.8024,
+      "observed_sd": 0.1228,
+      "true_sd": 0.11,
+      "hardest": [
+        [
+          "moral_scenarios",
+          0.44
+        ],
+        [
+          "global_facts",
+          0.52
+        ],
+        [
+          "professional_law",
+          0.58
+        ]
+      ],
+      "easiest": [
+        [
+          "high_school_psychology",
+          0.98
+        ],
+        [
+          "high_school_government_and_politics",
+          0.98
+        ],
+        [
+          "elementary_mathematics",
+          0.98
+        ]
+      ]
+    }
+  }
+}

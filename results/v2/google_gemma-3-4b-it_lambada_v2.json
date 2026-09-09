@@ -25,42 +25,45 @@
   "context": {
     "available": true,
     "position_sensitivity": {
+      "available": true,
+      "length_source": "context_words",
       "buckets": {
         "q1": {
           "word_range": [
-            31,
-            41
+            58,
+            65
+          ],
+          "n": 250,
+          "accuracy": 0.168
+        },
+        "q2": {
+          "word_range": [
+            65,
+            70
+          ],
+          "n": 250,
+          "accuracy": 0.188
+        },
+        "q3": {
+          "word_range": [
+            70,
+            78
           ],
           "n": 250,
           "accuracy": 0.176
         },
-        "q2": {
-          "word_range": [
-            41,
-            44
-          ],
-          "n": 250,
-          "accuracy": 0.184
-        },
-        "q3": {
-          "word_range": [
-            44,
-            46
-          ],
-          "n": 250,
-          "accuracy": 0.212
-        },
         "q4": {
           "word_range": [
-            46,
-            55
+            78,
+            126
           ],
           "n": 250,
-          "accuracy": 0.148
+          "accuracy": 0.188
         }
       },
-      "shortest_vs_longest": 0.028,
-      "span": 0.064
+      "shortest_vs_longest": -0.02,
+      "span": 0.02,
+      "superseded_note": "recomputed from true passage length; the earlier value bucketed by the truncated context_preview and is not comparable"
     }
   },
   "robustness": {

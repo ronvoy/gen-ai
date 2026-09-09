@@ -231,6 +231,11 @@ def evaluate_model(model, passages, api_key, params=None, progress=None):
                     if len(p["context"]) > 200
                     else p["context"]
                 ),
+                # The preview is cut to a fixed character budget, so counting
+                # its words measures word length, not passage length. Store the
+                # true count: the context-behaviour metrics need it, and
+                # recovering it later means reconstructing the dataset split.
+                "context_words": len(p["context"].split()),
                 "target": p["target"],
                 "prediction": prediction,
                 "correct": is_correct,

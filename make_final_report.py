@@ -21,6 +21,8 @@ import make_results_section as R
 # The full academic report. report.md is now the lean Docs view, so the
 # methodology sections are carried over from the preserved full version.
 REPORT = "report-full.md"
+
+from make_docs import significance_section  # noqa: E402
 OUT = "extended-final-report.md"
 FIGDIR = "diagram-analysis"
 
@@ -233,7 +235,7 @@ def component_reference():
     """Descriptive table for every metric, stage by stage."""
     from metrics import taxonomy
 
-    rows = ["## 10. Component Reference\n",
+    rows = ["## 11. Component Reference\n",
             "Every metric the benchmark produces, what it means in plain terms, "
             "and how to read it. Stage numbers match `metrics/taxonomy.py`.\n"]
 
@@ -333,7 +335,7 @@ def metric_glossary():
         ]),
     ]
 
-    out = ["## 11. Metric Glossary\n",
+    out = ["## 12. Metric Glossary\n",
            "Each metric in plain language, with the direction that counts as good.\n"]
     for title, items in groups:
         out.append(f"\n### {title}\n")
@@ -366,7 +368,7 @@ def figures_section():
         (18, "two-pass-delta", "The two-pass reconciliation banner: scored pass, extended pass, and the delta between them"),
         (19, "preflight", "The pre-flight probe warning that a provider is rate-limiting before a long run starts"),
     ]
-    out = ["## 12. Figures\n",
+    out = ["## 13. Figures\n",
            f"Screenshots live in `{FIGDIR}/` and are referenced by exact filename. "
            f"`{FIGDIR}/README.md` records what each should show and where in the UI "
            f"to capture it. A file that has not been added yet renders as a broken "
@@ -387,7 +389,7 @@ def discussion_section():
         k = "overall_accuracy" if b == "mmlu" else "last_word_accuracy"
         return (d[m]["task_quality"] or {}).get(k)
 
-    lines = ["## 13. Discussion — What the Nine Stages Revealed\n",
+    lines = ["## 14. Discussion — What the Nine Stages Revealed\n",
              "Each finding below is one that **accuracy alone could not have "
              "surfaced**. That is the argument for the extra stages.\n"]
 
@@ -505,7 +507,7 @@ def limitations_section():
         for k in ("probability", "consistency", "robustness", "context"):
             if k in m and (m[k] or {}).get("available") is False:
                 missing.add(k)
-    return f"""## 14. Limitations
+    return f"""## 15. Limitations
 
 Stated plainly, because a benchmark that hides its limits is worth less than
 one that reports fewer numbers honestly.
@@ -520,7 +522,7 @@ one that reports fewer numbers honestly.
 | **Optional stages not always run** | {', '.join(sorted(missing)) or 'none'} were unavailable in this run | Each costs an extra pass over the dataset; the runner prints the multiplier before spending, and absent stages are marked, never inferred |
 | **Deterministic paraphrasing** | Robustness paraphrases are rule-based, not model-generated | Keeps the benchmark reproducible; a learned paraphraser would make it non-repeatable |
 
-## 15. Conclusions
+## 16. Conclusions
 
 **Does a larger, non-distilled model beat smaller compressed ones?**
 
@@ -564,6 +566,10 @@ def main():
         results_section("mmlu", 8, "MMLU"),
         "\n---\n",
         results_section("lambada", 9, "LAMBADA"),
+        "\n---\n",
+        # Shared with the Docs view rather than duplicated: one implementation,
+        # so the two documents can never disagree about a p-value.
+        significance_section().replace("## 4. ", "## 10. ").replace("### 4.", "### 10."),
         "\n---\n",
         component_reference(),
         "\n---\n",
