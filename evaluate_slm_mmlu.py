@@ -10,7 +10,7 @@ performance dimensions (accuracy, per-category accuracy, speed, reasoning
 consistency, quick score).
 
 Run directly:  python evaluate_slm_mmlu.py
-or through the web app (passenger_wsgi.py -> /mmlu).
+or through the web app (app.py -> /mmlu).
 """
 
 import os

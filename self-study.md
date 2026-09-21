@@ -817,7 +817,7 @@ flowchart TD
 | Evaluator | `evaluate_model_mmlu` | Runs all tasks for one model; aggregates accuracy + reasoning |
 | Ranker | `build_mmlu_summary` | Per-dimension ranks + composite score across models |
 | CLI runner | `run_mmlu_evaluation`, `run_mmlu.sh` | One-shot terminal pipeline: setup, install, run, print ranking |
-| Web routes | `passenger_wsgi.py` | Online runs, live progress feed, ranking JSON, detail feed |
+| Web routes | `app.py` | Online runs, live progress feed, ranking JSON, detail feed |
 | Web page | `templates/mmlu.html` | Subject picker, terminal, ranking table, charts, Q/A viewer |
 
 ```mermaid

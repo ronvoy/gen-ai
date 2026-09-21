@@ -13,3 +13,5 @@ __pycache__
 _logs
 *.sh
 lambada-dataset
+!run_cpanel.sh
+!run_local.sh

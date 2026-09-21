@@ -40,9 +40,44 @@ render fine — but no run will start.
 
 ## 4. Passenger
 
-Point the application root at this directory. Passenger imports
-`passenger_wsgi.py` and looks for a module-level `application`; it is defined at
-the bottom of that file. No `app.run()` is involved in production.
+The Flask app is `app.py`, which defines a module-level `application`.
+`passenger_wsgi.py` is a two-line shim that re-exports it for plain Passenger.
+No `app.run()` is involved in production.
+
+In cPanel → *Setup Python App*:
+
+| Setting                  | Value            |
+| ------------------------ | ---------------- |
+| Application root         | this directory   |
+| Application startup file | `app.py`         |
+| Application Entry point  | `application`    |
+
+**The startup file must not be `passenger_wsgi.py`.** cPanel overwrites
+`passenger_wsgi.py` with its own stub that loads whatever the startup file is;
+pointed at itself, the stub recurses until Python gives up (see
+Troubleshooting).
+
+## 5. One-shot deploy: `run_cpanel.sh`
+
+From the application root in the cPanel Terminal (or over SSH):
+
+```bash
+./run_cpanel.sh            # install deps, repair the stub if needed, verify, restart
+./run_cpanel.sh check      # verify only
+./run_cpanel.sh restart    # touch tmp/restart.txt
+./run_cpanel.sh serve      # Flask dev server on 127.0.0.1:8008 for a tunnelled smoke test
+```
+
+It finds the cPanel virtualenv from the app path (`VENV=...` overrides), runs
+`check_deploy.py` with that interpreter, and rewrites a self-loading
+`passenger_wsgi.py` stub into the shim (keeping a `.cpanel.bak`).
+
+For local development use `./run_local.sh` instead: one run creates `.venv`,
+installs everything (`requirements.txt` + `requirements-dev.txt`, so report
+and slide generation work too), creates `.env` from `.env.example` if missing,
+and serves `app.py` on `127.0.0.1:8008` (`PORT=...` to change,
+`SKIP_INSTALL=1` to skip pip). `./run_local.sh check` runs the pre-flight with
+that venv.
 
 ---
 
@@ -85,6 +120,36 @@ script produces no output at all, this is why.
 3. If they differ, either set the app to the installed version, or destroy and
    recreate the virtualenv on the configured one.
 4. Restart the app (`touch tmp/restart.txt`) and re-run `check_deploy.py`.
+
+### `RecursionError` / traceback looping through `load_source` and `<module>`
+
+```
+  File "passenger_wsgi.py", line 13, in load_source
+    loader.exec_module(module)
+  File "passenger_wsgi.py", line 16, in <module>
+  File "passenger_wsgi.py", line 13, in load_source
+  ...
+RecursionError: maximum recursion depth exceeded
+```
+
+**This is not this project's `passenger_wsgi.py`.** Those line numbers belong to
+the stub cPanel writes into the application root when you save *Setup Python
+App*:
+
+```python
+wsgi = load_source('wsgi', 'passenger_wsgi.py')   # the "Application startup file"
+application = wsgi.application
+```
+
+With the startup file set to `passenger_wsgi.py` the stub loads itself,
+forever. Nothing from `app.py` is ever imported, so no application error can
+appear in the log.
+
+**Fix.** Set *Application startup file* to `app.py` and *Application Entry
+point* to `application`, save (cPanel rewrites the stub to point at `app.py`),
+then restart. `./run_cpanel.sh` detects the self-loading stub and replaces it
+with the shim in the meantime; `check_deploy.py` reports it as
+`passenger_wsgi.py does not load itself`.
 
 ### A route 500s but the site loads
 

@@ -3,7 +3,7 @@
 `report.md` §7.6 references every file below by exact name. Drop a PNG in with
 the matching filename and it appears in the report automatically — in the
 rendered Markdown, in the exported `report.html`, and in the web app's **Docs**
-tab (served by the `report_figures` route in `passenger_wsgi.py`).
+tab (served by the `report_figures` route in `app.py`).
 
 Nothing else needs editing. A missing file simply shows as a broken image until
 you add it.

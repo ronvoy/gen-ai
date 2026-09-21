@@ -134,7 +134,8 @@ def check_imports():
 # ---------------------------------------------------------------------------
 
 REQUIRED_FILES = [
-    ("passenger_wsgi.py", "Passenger's entry point; must be at the app root"),
+    ("app.py", "the Flask app; cPanel's startup file, must be at the app root"),
+    ("passenger_wsgi.py", "Passenger's entry point (a shim, or cPanel's stub)"),
     ("config.py", "model list and API configuration"),
     ("templates/base.html", "every page extends it"),
     ("report.md", "the /docs view; regenerate with make_docs.py"),
@@ -176,15 +177,35 @@ def check_config():
         check("config imports", False, str(exc))
 
 
+def check_passenger_stub():
+    """cPanel overwrites passenger_wsgi.py with a stub that loads the
+    "Application startup file". If that setting is passenger_wsgi.py the stub
+    loads itself and the app dies with RecursionError before a single line of
+    app.py is imported. Catch it here rather than in the Passenger error page.
+    """
+    path = os.path.join(BASE_DIR, "passenger_wsgi.py")
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    self_loading = ("load_source(" in text
+                    and "'passenger_wsgi.py'" in text.replace('"', "'"))
+    check("passenger_wsgi.py does not load itself", not self_loading,
+          "cPanel's stub points at passenger_wsgi.py. In Setup Python App set "
+          "'Application startup file' to app.py and 'Application Entry point' "
+          "to application, then restart (or run ./run_cpanel.sh)")
+
+
 def check_app():
     print("\nWSGI application")
+    check_passenger_stub()
     try:
         sys.path.insert(0, BASE_DIR)
-        import passenger_wsgi
-        app = getattr(passenger_wsgi, "application", None) or getattr(
-            passenger_wsgi, "app", None)
-        if not check("passenger_wsgi exposes an application", app is not None,
-                     "Passenger imports passenger_wsgi and looks for a module-"
+        import app as app_module
+        app = getattr(app_module, "application", None) or getattr(
+            app_module, "app", None)
+        if not check("app.py exposes an application", app is not None,
+                     "Passenger/cPanel import app.py and look for a module-"
                      "level 'application'; without it the request 500s"):
             return
         client = app.test_client()
@@ -193,7 +214,7 @@ def check_app():
             check(f"GET {route}", r.status_code == 200,
                   f"returned {r.status_code}", ok_detail=f"{len(r.data):,} bytes")
     except Exception as exc:
-        check("passenger_wsgi imports", False, f"{type(exc).__name__}: {exc}")
+        check("app.py imports", False, f"{type(exc).__name__}: {exc}")
 
 
 def main():
